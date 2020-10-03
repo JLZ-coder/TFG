@@ -1,0 +1,39 @@
+/* =============================================================================
+   App specific CSS file.
+   ========================================================================== */
+
+/* universal */
+
+
+form .lateral_form_label{
+  margin: 10px 0px;
+}
+
+.lateral_form{
+  margin: 0px 15px;
+}
+
+.bmd-label-static {
+    font-size: 14px !important;
+}
+
+select.form-control{
+    height: 34px !important;
+} 
+
+.btn.btn-custom {color: #fff;
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);}
+
+
+
+.btn.btn-custom:hover {
+    color: #fff;
+    background-color: #9124a3;
+    border-color: #701c7e;
+}
+
+.logo-inia{
+  margin-top:10px;
+}

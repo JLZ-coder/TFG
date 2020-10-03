@@ -1,0 +1,6 @@
+1 - Web scraping actualizar, aumentar el numero de especies
+	Respecto a los brotes no hay nada que relacione una especie con un brote
+
+2 - Mejorar con probabilidad los posibles brotes, el trabajo anterior 
+
+3 - Interfaz web, tener como un reproductor para la ver la evolucion del mapa
