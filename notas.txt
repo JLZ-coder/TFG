@@ -1,5 +1,6 @@
 1 - Web scraping actualizar, aumentar el numero de especies
 	Respecto a los brotes no hay nada que relacione una especie con un brote
+	En excel que es la R de algunas columnas?
 
 2 - Mejorar con probabilidad los posibles brotes, el trabajo anterior 
 
