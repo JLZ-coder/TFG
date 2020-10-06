@@ -1,7 +1,15 @@
-1 - Web scraping actualizar, aumentar el numero de especies
-	Respecto a los brotes no hay nada que relacione una especie con un brote
-	En excel que es la R de algunas columnas?
-
 2 - Mejorar con probabilidad los posibles brotes, el trabajo anterior 
 
 3 - Interfaz web, tener como un reproductor para la ver la evolucion del mapa
+
+
+
+
+Tareas principales:
+
+Fase 1
+- BD de comarcas
+- BD de humedales
+- BD de temmperatura, medias de cada mes
+- Web scraping de brotes, quitar los resolved y hacer que los estados y demas 
+caracteristicas cambien.
