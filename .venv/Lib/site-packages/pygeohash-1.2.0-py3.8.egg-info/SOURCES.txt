@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pygeohash/__init__.py
+pygeohash/distances.py
+pygeohash/geohash.py
+pygeohash/stats.py
+pygeohash.egg-info/PKG-INFO
+pygeohash.egg-info/SOURCES.txt
+pygeohash.egg-info/dependency_links.txt
+pygeohash.egg-info/top_level.txt
