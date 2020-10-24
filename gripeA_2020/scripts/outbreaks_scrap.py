@@ -60,11 +60,11 @@ def get_ob_page(cty, id, lista, disease, year):
         hash = geohash.encode(float(ob[8]), float(ob[9]))
 
         if ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() == 0:
-            #print("Ignorando caso resuelto")
+            print("Ignorando caso resuelto")
             pass
 
         elif ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() != 0:
-            #print("Borrando caso resuelto {}".format(id))
+            print("Borrando caso resuelto {}".format(id))
             outbreaks.delete_one({'oiedid': id})
 
         else:
@@ -96,7 +96,7 @@ def get_ob_page(cty, id, lista, disease, year):
                 outbreak["deaths"] = ""
                 outbreak["preventive_killed"] = ""
 
-            #print("Metiendo caso sin resolver {}".format(id))
+            print("Metiendo caso sin resolver {}".format(id))
             outbreaks.insert_one(outbreak)
 
 
@@ -116,7 +116,7 @@ def get_cty_obs(code, id, disease, year):
     p = re.compile('outbreak_report\("([A-Z]{3})",([0-9]+)\)', re.DOTALL & re.MULTILINE * re.IGNORECASE)
     ob_list = p.findall(r.content.decode('latin1'))
 # cogiendo informacion de 'url', pagina que sale al pulsar el boton de lupa en la pagina principal
-    print('Getting data for outbreak of disease {} in country {}\n'.format(id, code))
+    print('Getting data for outbreak of disease {} in country {}'.format(id, code))
     # total = len(ob_list)
     # count = 1
 # itera en la lista de brotes de un pais
@@ -168,17 +168,20 @@ def main(argv):
         r = requests.post(url, data=payload)
         # p busca patrones en 'r'
         p = re.compile(
-            "outbreak_country\">[ \t\r\n]+([A-Za-z \-.']+)[^(]*\('([A-Z]{3})',([0-9]+)\);", re.DOTALL & re.MULTILINE)
+           # "outbreak_country\">[ \t\r\n]+([A-Za-z \-.']+)[^(]*\('([A-Z]{3})',([0-9]+)\);"
+           "color='red'>[ \t\r\n]+([A-Za-z \-.']+)[^(]*\('([A-Z]{3})',([0-9]+)\);"
+            , re.DOTALL & re.MULTILINE)
         # m son las palabras que concuerdan con la busqueda de 'p'
         m = p.findall(r.content.decode('latin1'))
         # oblist [('Afghanistan', 'AFG', '25887'), ...] cty, code, id
         oblist = oblist + m
 
+        counter = 1
         for obs in oblist:
-            cty, code, id = obs
-            print("Outbreak {} of {}".format(counter, len(oblist)))
-            if(code in asian_countries) or (code in european_countries):
-                print("Getting Outbreaks in {}".format(cty))
+            stat, code, id = obs
+            print("\nOutbreak {} of {}".format(counter, len(oblist)))
+            if((code in asian_countries) or (code in european_countries)) and (stat == "Continuing"):
+                print("Getting Continuing Outbreak {} in {}".format(id, code))
                 get_cty_obs(code, id, disease, year)
             counter += 1
 
