@@ -65,7 +65,7 @@ def get_ob_page(cty, id, lista, disease, year):
 
         elif ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() != 0:
             print("Borrando caso resuelto {}".format(id))
-            outbreaks.delete_one({'oiedid': id})
+            outbreaks.delete_one({'oieid':  id})
 
         else:
             outbreak = {}
@@ -97,6 +97,7 @@ def get_ob_page(cty, id, lista, disease, year):
                 outbreak["preventive_killed"] = ""
 
             print("Metiendo caso sin resolver {}".format(id))
+            outbreaks.delete_one({'oieid': id})
             outbreaks.insert_one(outbreak)
 
 
@@ -175,6 +176,8 @@ def main(argv):
         m = p.findall(r.content.decode('latin1'))
         # oblist [('Afghanistan', 'AFG', '25887'), ...] cty, code, id
         oblist = oblist + m
+
+        #outbreaks.delete_many({'oieid': '1000097712'})
 
         counter = 1
         for obs in oblist:
