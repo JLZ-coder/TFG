@@ -1,14 +1,23 @@
 import pymongo
 from pymongo import MongoClient
+import pandas as pd
 
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 outbreaks = db.outbreaks
 migrations = db.migrations
 
-especies = [1340, 1610]
+#Leemos el archivo de todas las especies
+file="Especies.xlsx"
 
-for especie in especies:
+df = pd.read_excel(file)
+
+#Borramos columna de nombres
+#df.drop(['Nombre científico', 'Nombre común'], axis='columns', inplace=True)
+especies = df['codigo anilla']
+
+
+for especie in especies: 
 	nodos = []
 	query = "CREATE "
 	data_migrations = migrations.find({"Especie": especie})
