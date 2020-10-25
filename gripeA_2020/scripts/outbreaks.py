@@ -85,16 +85,16 @@ def get_ob_page(cty, id, lista, disease, year):
             outbreak["geohash"] = hash
             if len(anlist) > 0:
                 outbreak["species"] = anlist[0][0]
-                outbreak["at_risk"] = anlist[0][1]
-                outbreak["cases"] = anlist[0][2]
-                outbreak["deaths"] = anlist[0][3]
-                outbreak["preventive_killed"] = anlist[0][4]
+                outbreak["at_risk"] = anlist[0][1] or "0"
+                outbreak["cases"] = anlist[0][2] or "0"
+                outbreak["deaths"] = anlist[0][3] or "0"
+                outbreak["preventive_killed"] = anlist[0][4] or "0"
             else:
                 outbreak["species"] = ""
-                outbreak["at_risk"] = ""
-                outbreak["cases"] = ""
-                outbreak["deaths"] = ""
-                outbreak["preventive_killed"] = ""
+                outbreak["at_risk"] = "0"
+                outbreak["cases"] = "0"
+                outbreak["deaths"] = "0"
+                outbreak["preventive_killed"] = "0"
 
             print("Metiendo caso sin resolver {}".format(id))
             outbreaks.delete_one({'oieid': id})
@@ -174,10 +174,8 @@ def main(argv):
             , re.DOTALL & re.MULTILINE)
         # m son las palabras que concuerdan con la busqueda de 'p'
         m = p.findall(r.content.decode('latin1'))
-        # oblist [('Afghanistan', 'AFG', '25887'), ...] cty, code, id
+        # oblist [('Continuing', 'AFG', '25887'), ...] stat, code, id
         oblist = oblist + m
-
-        #outbreaks.delete_many({'oieid': '1000097712'})
 
         counter = 1
         for obs in oblist:
