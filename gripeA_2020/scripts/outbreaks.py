@@ -55,50 +55,52 @@ def get_ob_page(cty, id, lista, disease, year):
     ob, anlist = extract_data(r.content.decode('latin1'))
 # extrae los detalles en la pagina de 'url', ob
 
-    if  ob[0] != "" and ob[8] != "" and ob[9] != "":
+    if ob[2] != "" and ob[0] != "" and ob[8] != "" and ob[9] != "":
+        end = datetime.strptime(ob[2], "%d/%m/%Y")
         start = datetime.strptime(ob[0], "%d/%m/%Y")
         hash = geohash.encode(float(ob[8]), float(ob[9]))
 
-        if ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() == 0:
-            print("Ignorando caso resuelto")
-            pass
+        # if ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() == 0:
+        #     print("Ignorando caso resuelto")
+        #     pass
 
-        elif ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() != 0:
-            print("Borrando caso resuelto {}".format(id))
-            outbreaks.delete_one({'oieid':  id})
+        # elif ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() != 0:
+        #     print("Borrando caso resuelto {}".format(id))
+        #     outbreaks.delete_one({'oieid':  id})
 
+        # else:
+        outbreak = {}
+        outbreak["oieid"] = id
+        outbreak["diseade_id"] = disease
+        outbreak["country"] = cty
+        outbreak["start"] = start
+        outbreak["end"] = end
+        outbreak["status"] = ob[1]
+        outbreak["city"] = ob[3]
+        outbreak["district"] = ob[4]
+        outbreak["subdistrict"] = ob[5]
+        outbreak["epiunit"] = ob[6]
+        outbreak["location"] = ob[7]
+        outbreak["lat"] = ob[8]
+        outbreak["long"] = ob[9]
+        outbreak["affected_population"] = ob[10]
+        outbreak["geohash"] = hash
+        if len(anlist) > 0:
+            outbreak["species"] = anlist[0][0]
+            outbreak["at_risk"] = anlist[0][1] or "0"
+            outbreak["cases"] = anlist[0][2] or "0"
+            outbreak["deaths"] = anlist[0][3] or "0"
+            outbreak["preventive_killed"] = anlist[0][4] or "0"
         else:
-            outbreak = {}
-            outbreak["oieid"] = id
-            outbreak["diseade_id"] = disease
-            outbreak["country"] = cty
-            outbreak["start"] = start
-            outbreak["status"] = ob[1]
-            outbreak["city"] = ob[3]
-            outbreak["district"] = ob[4]
-            outbreak["subdistrict"] = ob[5]
-            outbreak["epiunit"] = ob[6]
-            outbreak["location"] = ob[7]
-            outbreak["lat"] = ob[8]
-            outbreak["long"] = ob[9]
-            outbreak["affected_population"] = ob[10]
-            outbreak["geohash"] = hash
-            if len(anlist) > 0:
-                outbreak["species"] = anlist[0][0]
-                outbreak["at_risk"] = anlist[0][1] or "0"
-                outbreak["cases"] = anlist[0][2] or "0"
-                outbreak["deaths"] = anlist[0][3] or "0"
-                outbreak["preventive_killed"] = anlist[0][4] or "0"
-            else:
-                outbreak["species"] = ""
-                outbreak["at_risk"] = "0"
-                outbreak["cases"] = "0"
-                outbreak["deaths"] = "0"
-                outbreak["preventive_killed"] = "0"
+            outbreak["species"] = ""
+            outbreak["at_risk"] = "0"
+            outbreak["cases"] = "0"
+            outbreak["deaths"] = "0"
+            outbreak["preventive_killed"] = "0"
 
-            print("Metiendo caso sin resolver {}".format(id))
-            outbreaks.delete_one({'oieid': id})
-            outbreaks.insert_one(outbreak)
+        print("Metiendo caso {}".format(id))
+        outbreaks.delete_one({'oieid': id})
+        outbreaks.insert_one(outbreak)
 
 
 # lista los brotes que ha habido en un pais
@@ -119,7 +121,7 @@ def get_cty_obs(code, id, disease, year):
 # cogiendo informacion de 'url', pagina que sale al pulsar el boton de lupa en la pagina principal
     print('Getting data for outbreak of disease {} in country {}'.format(id, code))
     # total = len(ob_list)
-    # count = 1
+    # count = 0
 # itera en la lista de brotes de un pais
     for ob in ob_list:
         cty, id = ob
@@ -151,6 +153,8 @@ def main(argv):
     disease_type_hidden = 0  # Terrestrial
     # disease_id_hidden = 1 # FMD
 
+    outbreaks.delete_many({})
+
     for disease_id in diseases:
         oblist = []
         disease = disease_id
@@ -181,7 +185,7 @@ def main(argv):
         for obs in oblist:
             stat, code, id = obs
             print("\nOutbreak {} of {}".format(counter, len(oblist)))
-            if((code in asian_countries) or (code in european_countries)) and (stat == "Continuing"):
+            if(code in european_countries):
                 print("Getting Continuing Outbreak {} in {}".format(id, code))
                 get_cty_obs(code, id, disease, year)
             counter += 1
