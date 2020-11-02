@@ -18,55 +18,84 @@ df = pd.read_excel(file)
 especies = df['codigo anilla']
 
 # os.remove("sample.txt")
-text_file = open("sample.txt", "a")
+text_file = open("sample.txt", "w")
 
 nodos = []
+migra = ""
 for especie in especies:
 	if migrations.find({"Especie": especie}).count() > 0:
+		# data_migrations = migrations.find({"Especie": especie})
+		# for migration in data_migrations:
+		# 	nodos.append(migration['geohash'][:4])
+		# 	nodos.append(migration['geohashR'][:4])
+
+		aux_migra = "CREATE "
+		valores = {}
+		lista = []
 		data_migrations = migrations.find({"Especie": especie})
 		for migration in data_migrations:
 			nodos.append(migration['geohash'][:4])
 			nodos.append(migration['geohashR'][:4])
-
-query = "CREATE "
-# Borramos los nodos repetidos.
-nodos2 = list(set(nodos))
-for nodo in nodos2:
-	query += "({}:".format(nodo)
-	query += "Region{location:"
-	query += "'{}'".format(nodo)
-	query += "}),\n"
-
-query = query[:-2]
-query += "\n"
-n = text_file.write(query)
-text_file.close()
-
-for especie in especies:
-	if migrations.find({"Especie": especie}).count() > 0:
-		query = "CREATE "
-		valores = {}
-		lista = []
-
-		data_migrations = migrations.find({"Especie": especie})
-		for migration in data_migrations:
-			stringAux = "{}-{}".format(migration['geohash'][:4], migration['geohashR'][:4])
-			if stringAux not in lista:
-				lista.append(stringAux)
-				valores[stringAux]=1
-			else:
-				valores[stringAux]+=1
+			if migration['geohash'][:4] != migration['geohashR'][:4]:
+				stringAux = "{}-{}".format(migration['geohash'][:4], migration['geohashR'][:4])
+				if stringAux not in lista:
+					lista.append(stringAux)
+					valores[stringAux]=1
+				else:
+					valores[stringAux]+=1
 
 		for element in lista :
 			regiones = element.split('-')
-			query += "({}) -[:MIGRA{}".format(regiones[0], especie)
-			query += "{valor:"
-			query += "{}".format(valores[element])
-			query += "}]-> "
-			query += "({}),\n".format(regiones[1])
+			aux_migra += "({}) -[:MIGRA{}".format(regiones[0], especie)
+			aux_migra += "{valor:"
+			aux_migra += "{}".format(valores[element])
+			aux_migra += "}]-> "
+			aux_migra += "({}),\n".format(regiones[1])
 
-		query = query[:-2]
-		query += "\n"
-		n = text_file.write(query)
-	# print(query)
+		aux_migra = aux_migra[:-2]
+		aux_migra += "\n"
+		migra += aux_migra
+
+crea = "CREATE "
+# Borramos los nodos repetidos.
+nodos2 = list(set(nodos))
+for nodo in nodos2:
+	crea += "({}:".format(nodo)
+	crea += "Region{location:"
+	crea += "'{}'".format(nodo)
+	crea += "}),\n"
+
+crea = crea[:-2]
+crea += "\n"
+query = crea + migra
+n = text_file.write(query)
 text_file.close()
+
+# for especie in especies:
+# 	if migrations.find({"Especie": especie}).count() > 0:
+# 		crea = "CREATE "
+# 		valores = {}
+# 		lista = []
+
+# 		data_migrations = migrations.find({"Especie": especie})
+# 		for migration in data_migrations:
+# 			stringAux = "{}-{}".format(migration['geohash'][:4], migration['geohashR'][:4])
+# 			if stringAux not in lista:
+# 				lista.append(stringAux)
+# 				valores[stringAux]=1
+# 			else:
+# 				valores[stringAux]+=1
+
+# 		for element in lista :
+# 			regiones = element.split('-')
+# 			query += "({}) -[:MIGRA{}".format(regiones[0], especie)
+# 			query += "{valor:"
+# 			query += "{}".format(valores[element])
+# 			query += "}]-> "
+# 			query += "({}),\n".format(regiones[1])
+
+# 		query = query[:-2]
+# 		query += "\n"
+# 		n = text_file.write(query)
+# 	# print(query)
+# text_file.close()
