@@ -26,8 +26,10 @@ provincia = []
 CODAUTO = []
 comAutonoma = []
 CPROyMUN = []
+coordenadas = []
 
 for comarca in leer['features']:
+    coordenadas.append(comarca['geometry']['coordinates'])
     CPRO.append(comarca['properties']['CPRO'])
     provincia.append(comarca['properties']['provincia'])
     CODAUTO.append(comarca['properties']['CODAUTO'])
@@ -40,6 +42,7 @@ df['provincia'] = provincia
 df['CODAUTO'] = CODAUTO
 df['comAutonoma'] = comAutonoma
 df['CPROyMUN'] = CPROyMUN
+df['coordinates'] = coordenadas
 #Insercion de los datos en la base de datos
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
@@ -49,4 +52,3 @@ records = df.to_dict(orient='records')
 
 
 comarca.insert_many(records)
-print(records)
