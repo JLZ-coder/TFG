@@ -47,8 +47,8 @@ df['coordinates'] = coordenadas
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 comarca = db.comarcas
-records = df.to_dict(orient='records')  
+records = df.to_dict(orient='records')
 
 
-
+comarca.delete_many({})
 comarca.insert_many(records)

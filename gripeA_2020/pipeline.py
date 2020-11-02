@@ -10,6 +10,8 @@ import pygeohash as geohash
 from datetime import datetime
 import math
 
+
+# graph = Graph("bolt://localhost:7687", auth=("neo4j", "ed4r;bnf"))
 # Realiza el scraping de la web de wahis para recoger los brotes
 
 # GLOBALS
@@ -80,7 +82,32 @@ def genera_Brotes():
             '"city": "'+ it['city'] +'", "geohash": "'+ it['geohash'][0:4] + '", "species":"'+ it['species'] +'",' +
             '"at_risk": '+ it['at_risk'] +', "cases": '+ it['cases'] +', "deaths": '+ it['deaths'] +', "preventive_killed": '+
             it['preventive_killed'] +'} }')
-            
+        else:
+            geojson[it['geohash'][0:4]]['properties']['at_risk'] = int(geojson[it['geohash'][0:4]]['properties']['at_risk']) + int(it['at_risk'])
+            geojson[it['geohash'][0:4]]['properties']['cases'] = int(geojson[it['geohash'][0:4]]['properties']['cases']) + int(it['cases'])
+            geojson[it['geohash'][0:4]]['properties']['deaths'] = int(geojson[it['geohash'][0:4]]['properties']['deaths']) + int(it['deaths'])
+            geojson[it['geohash'][0:4]]['properties']['preventive_killed'] = int(geojson[it['geohash'][0:4]]['properties']['preventive_killed']) + int(it['preventive_killed'])
+
+
+        print (geojson[it['geohash'][0:4]])
+
+    return geojson
+
+def genera_aristas(brotes):
+
+    cursor = outbreaks.find({})
+    #print (math.floor(datetime.now().timestamp() * 1000))
+    geojson = []
+    #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
+    for it in cursor:
+        if it['geohash'][0:4] not in geojson:
+            geojson[it['geohash'][0:4]] = json.loads('{ "type": "Feature", "geometry": { "type": "Point",'+
+            '"Coordinates": ['+ it['lat'] +', '+ it['long'] +', 0] }, '+
+            '"properties": { "disease": "'+ diseases[it['diseade_id']] +'", "country": "'+ it['country'] +'",'+
+            '"start": "'+ str(math.floor(it['start'].timestamp() * 1000)) +'",'+
+            '"city": "'+ it['city'] +'", "geohash": "'+ it['geohash'][0:4] + '", "species":"'+ it['species'] +'",' +
+            '"at_risk": '+ it['at_risk'] +', "cases": '+ it['cases'] +', "deaths": '+ it['deaths'] +', "preventive_killed": '+
+            it['preventive_killed'] +'} }')
         else:
             geojson[it['geohash'][0:4]]['properties']['at_risk'] = int(geojson[it['geohash'][0:4]]['properties']['at_risk']) + int(it['at_risk'])
             geojson[it['geohash'][0:4]]['properties']['cases'] = int(geojson[it['geohash'][0:4]]['properties']['cases']) + int(it['cases'])
