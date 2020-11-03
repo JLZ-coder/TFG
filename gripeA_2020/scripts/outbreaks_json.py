@@ -26,19 +26,41 @@ diseases = {
 def main(argv):
     cursor = outbreaks.find({})
     #print (math.floor(datetime.now().timestamp() * 1000))
-
+    feat_col = {
+        "type": "FeatureCollection",
+        "features": []
+    }
     #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
     i = 1
     for it in cursor:
-        geojson = json.loads('{ "type": "Feature", "geometry": { "type": "Point",'+
-        '"Coordinates": ['+ it['lat'] +', '+ it['long'] +', 0] }, '+
-        '"properties": { "id": '+ str(i) +', "disease": "'+ diseases[it['diseade_id']] +'", "country": "'+ it['country'] +'",'+
-        '"start": "'+ str(math.floor(it['start'].timestamp() * 1000)) +'", "end": '+ str(math.floor(it['end'].timestamp() * 1000)) + ','
-        '"city": "'+ it['city'] +'", "species":"'+ it['species'] +'",' +
-        '"at_risk": '+ it['at_risk'] +', "cases": '+ it['cases'] +', "deaths": '+ it['deaths'] +', "preventive_killed": '+
-        it['preventive_killed'] +'} }')
+
+        feat = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [float(it['long']), float(it['lat'])]
+            },
+            "properties": {
+                "id": i,
+                "disease": diseases[it['disease_id']],
+                "country": it['country'],
+                "start": math.floor(it['start'].timestamp() * 1000),
+                "end": math.floor(it['end'].timestamp() * 1000),
+                "city": it['city'],
+                "species": it['species'],
+                "at_risk": int(it['at_risk']),
+                "cases": int(it['cases']),
+                "deaths": int(it['deaths']),
+                "preventive_killed": int(it['preventive_killed'])
+            }
+        }
+        feat_col["features"].append(feat)
         i += 1
-        print (geojson)
+
+    # text_file = open("brotes.txt", "w")
+    # n = text_file.write(json.dumps(feat_col))
+    # text_file.close()
+    # print (json.dumps(feat_col))
 
 
 

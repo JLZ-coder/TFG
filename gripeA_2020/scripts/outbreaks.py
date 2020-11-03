@@ -71,7 +71,7 @@ def get_ob_page(cty, id, lista, disease, year):
         # else:
         outbreak = {}
         outbreak["oieid"] = id
-        outbreak["diseade_id"] = disease
+        outbreak["disease_id"] = disease
         outbreak["country"] = cty
         outbreak["start"] = start
         outbreak["end"] = end
