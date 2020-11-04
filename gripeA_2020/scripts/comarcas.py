@@ -3,7 +3,7 @@ import pymongo
 from pymongo import MongoClient
 import json
 import geohash
-
+import geojsonComarcas 
 #Leemos los dos archivos 
 
 file = "Comarcas_ganaderas.xlsx"
@@ -43,6 +43,9 @@ df['CODAUTO'] = CODAUTO
 df['comAutonoma'] = comAutonoma
 df['CPROyMUN'] = CPROyMUN
 df['coordinates'] = coordenadas
+
+#funcion para generar el cuadrante de cada comarca
+df = geojsonComarcas.coordinatesFunc(df)
 #Insercion de los datos en la base de datos
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
