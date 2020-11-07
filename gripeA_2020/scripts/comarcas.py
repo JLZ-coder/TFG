@@ -2,9 +2,9 @@ import pandas as pd
 import pymongo
 from pymongo import MongoClient
 import json
-import geohash
-import geojsonComarcas 
-#Leemos los dos archivos 
+import pygeohash as geohash
+import geojsonComarcas
+#Leemos los dos archivos
 
 file = "Comarcas_ganaderas.xlsx"
 df = pd.read_excel(file)

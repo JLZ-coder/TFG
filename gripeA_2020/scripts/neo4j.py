@@ -70,32 +70,3 @@ crea += "\n"
 query = crea + migra
 n = text_file.write(query)
 text_file.close()
-
-# for especie in especies:
-# 	if migrations.find({"Especie": especie}).count() > 0:
-# 		crea = "CREATE "
-# 		valores = {}
-# 		lista = []
-
-# 		data_migrations = migrations.find({"Especie": especie})
-# 		for migration in data_migrations:
-# 			stringAux = "{}-{}".format(migration['geohash'][:4], migration['geohashR'][:4])
-# 			if stringAux not in lista:
-# 				lista.append(stringAux)
-# 				valores[stringAux]=1
-# 			else:
-# 				valores[stringAux]+=1
-
-# 		for element in lista :
-# 			regiones = element.split('-')
-# 			query += "({}) -[:MIGRA{}".format(regiones[0], especie)
-# 			query += "{valor:"
-# 			query += "{}".format(valores[element])
-# 			query += "}]-> "
-# 			query += "({}),\n".format(regiones[1])
-
-# 		query = query[:-2]
-# 		query += "\n"
-# 		n = text_file.write(query)
-# 	# print(query)
-# text_file.close()

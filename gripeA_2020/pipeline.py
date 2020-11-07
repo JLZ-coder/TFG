@@ -9,10 +9,8 @@ from pymongo import MongoClient
 import pygeohash as geohash
 from datetime import datetime
 import math
+from neo4j import GraphDatabase
 
-
-# graph = Graph("bolt://localhost:7687", auth=("neo4j", "ed4r;bnf"))
-# Realiza el scraping de la web de wahis para recoger los brotes
 
 # GLOBALS
 client = MongoClient('mongodb://localhost:27017/')
@@ -23,6 +21,47 @@ diseases = {
     '201' : "Low Path Avian influenza",
     '1164' : "Highly pathogenic influenza A viruses"
 }
+com = db.comarcas
+
+def geohashEsp():
+    cursor = com.find({})
+    geoESP = set()
+    geoComar = {}
+
+    for it in cursor:
+        geo = geohash.encode(float(it['YCoord']), float(it['XCoord']))
+        geoESP.add(geo[0:3])
+
+        if geo[0:4] not in geoComar:
+            geoComar[geo[0:4]] = [it['CPROyMUN']]
+        else:
+            geoComar[geo[0:4]].append(it['CPROyMUN'])
+
+    return geoESP, geoComar
+
+def migraHaciaEsp(geoESP):
+    driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
+
+    startPoints = set()
+    for geo in geoESP:
+        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location'.format(geo)).value()
+        startPoints.update(response)
+
+    driver.close()
+    cursor = com.find({})
+    geoESP = set()
+    geoComar = {}
+
+    for it in cursor:
+        geo = geohash.encode(float(it['YCoord']), float(it['XCoord']))
+        geoESP.add(geo[0:3])
+
+        if geo[0:4] not in geoComar:
+            geoComar[geo[0:4]] = [it['CPROyMUN']]
+        else:
+            geoComar[geo[0:4]].append(it['CPROyMUN'])
+
+    return geoESP, geoComar
 
 def genera_Brotes():
     # {'_id': ObjectId('5f9465f402f12b902433b244'), 
@@ -122,8 +161,9 @@ def genera_aristas(brotes):
 
 
 def main(argv):
-    brotes = genera_Brotes()
-
+    # brotes = genera_Brotes()
+    geoESP, geoComar = geohashEsp()
+    migraHaciaEsp(geoESP)
 
 
 if __name__ == "__main__":
