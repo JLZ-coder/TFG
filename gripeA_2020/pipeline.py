@@ -48,22 +48,10 @@ def migraHaciaEsp(geoESP):
         startPoints.update(response)
 
     driver.close()
-    cursor = com.find({})
-    geoESP = set()
-    geoComar = {}
 
-    for it in cursor:
-        geo = geohash.encode(float(it['YCoord']), float(it['XCoord']))
-        geoESP.add(geo[0:3])
+    return startPoints
 
-        if geo[0:4] not in geoComar:
-            geoComar[geo[0:4]] = [it['CPROyMUN']]
-        else:
-            geoComar[geo[0:4]].append(it['CPROyMUN'])
-
-    return geoESP, geoComar
-
-def genera_Brotes():
+def genera_Brotes(startPoints):
     # {'_id': ObjectId('5f9465f402f12b902433b244'), 
     # 'oieid': '1000097712', 
     # 'diseade_id': '15',  ESTE
@@ -106,55 +94,46 @@ def genera_Brotes():
     #             'preventive_killed': '49550'  cambiar
     #         }
     # }
-
     geojson = {}
-    cursor = outbreaks.find({})
-    #print (math.floor(datetime.now().timestamp() * 1000))
+    for geo in startPoints:
+        cursor = outbreaks.find({
+            "geohash": {
+                "$regex": '{}.*'.format(geo)
+            }
+        })
 
-    #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
-    for it in cursor:
-        if it['geohash'][0:4] not in geojson:
-            geojson[it['geohash'][0:4]] = json.loads('{ "type": "Feature", "geometry": { "type": "Point",'+
-            '"Coordinates": ['+ it['lat'] +', '+ it['long'] +', 0] }, '+
-            '"properties": { "disease": "'+ diseases[it['diseade_id']] +'", "country": "'+ it['country'] +'",'+
-            '"start": "'+ str(math.floor(it['start'].timestamp() * 1000)) +'",'+
-            '"city": "'+ it['city'] +'", "geohash": "'+ it['geohash'][0:4] + '", "species":"'+ it['species'] +'",' +
-            '"at_risk": '+ it['at_risk'] +', "cases": '+ it['cases'] +', "deaths": '+ it['deaths'] +', "preventive_killed": '+
-            it['preventive_killed'] +'} }')
-        else:
-            geojson[it['geohash'][0:4]]['properties']['at_risk'] = int(geojson[it['geohash'][0:4]]['properties']['at_risk']) + int(it['at_risk'])
-            geojson[it['geohash'][0:4]]['properties']['cases'] = int(geojson[it['geohash'][0:4]]['properties']['cases']) + int(it['cases'])
-            geojson[it['geohash'][0:4]]['properties']['deaths'] = int(geojson[it['geohash'][0:4]]['properties']['deaths']) + int(it['deaths'])
-            geojson[it['geohash'][0:4]]['properties']['preventive_killed'] = int(geojson[it['geohash'][0:4]]['properties']['preventive_killed']) + int(it['preventive_killed'])
+        for it in cursor:
 
+            aux = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [float(it['long']), float(it['lat'])]
+                },
+                "properties": {
+                    "id": it['oieid'],
+                    "disease": diseases[it['disease_id']],
+                    "country": it['country'],
+                    "start": math.floor(it['start'].timestamp() * 1000),
+                    "end": math.floor(it['end'].timestamp() * 1000),
+                    "city": it['city'],
+                    "species": it['species'],
+                    "at_risk": int(it['at_risk']),
+                    "cases": int(it['cases']),
+                    "deaths": int(it['deaths']),
+                    "preventive_killed": int(it['preventive_killed'])
+                }
+            }
+            if it['geohash'][0:4] not in geojson:
+                geojson[it['geohash'][0:4]] = [aux]
+            else:
+                # geojson[it['geohash'][0:4]]['properties']['at_risk'] = int(geojson[it['geohash'][0:4]]['properties']['at_risk']) + int(it['at_risk'])
+                # geojson[it['geohash'][0:4]]['properties']['cases'] = int(geojson[it['geohash'][0:4]]['properties']['cases']) + int(it['cases'])
+                # geojson[it['geohash'][0:4]]['properties']['deaths'] = int(geojson[it['geohash'][0:4]]['properties']['deaths']) + int(it['deaths'])
+                # geojson[it['geohash'][0:4]]['properties']['preventive_killed'] = int(geojson[it['geohash'][0:4]]['properties']['preventive_killed']) + int(it['preventive_killed'])
+                geojson[it['geohash'][0:4]].append(aux)
 
-        print (geojson[it['geohash'][0:4]])
-
-    return geojson
-
-def genera_aristas(brotes):
-
-    cursor = outbreaks.find({})
-    #print (math.floor(datetime.now().timestamp() * 1000))
-    geojson = []
-    #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
-    for it in cursor:
-        if it['geohash'][0:4] not in geojson:
-            geojson[it['geohash'][0:4]] = json.loads('{ "type": "Feature", "geometry": { "type": "Point",'+
-            '"Coordinates": ['+ it['lat'] +', '+ it['long'] +', 0] }, '+
-            '"properties": { "disease": "'+ diseases[it['diseade_id']] +'", "country": "'+ it['country'] +'",'+
-            '"start": "'+ str(math.floor(it['start'].timestamp() * 1000)) +'",'+
-            '"city": "'+ it['city'] +'", "geohash": "'+ it['geohash'][0:4] + '", "species":"'+ it['species'] +'",' +
-            '"at_risk": '+ it['at_risk'] +', "cases": '+ it['cases'] +', "deaths": '+ it['deaths'] +', "preventive_killed": '+
-            it['preventive_killed'] +'} }')
-        else:
-            geojson[it['geohash'][0:4]]['properties']['at_risk'] = int(geojson[it['geohash'][0:4]]['properties']['at_risk']) + int(it['at_risk'])
-            geojson[it['geohash'][0:4]]['properties']['cases'] = int(geojson[it['geohash'][0:4]]['properties']['cases']) + int(it['cases'])
-            geojson[it['geohash'][0:4]]['properties']['deaths'] = int(geojson[it['geohash'][0:4]]['properties']['deaths']) + int(it['deaths'])
-            geojson[it['geohash'][0:4]]['properties']['preventive_killed'] = int(geojson[it['geohash'][0:4]]['properties']['preventive_killed']) + int(it['preventive_killed'])
-
-
-        print (geojson[it['geohash'][0:4]])
+            print (geojson[it['geohash'][0:4]])
 
     return geojson
 
@@ -163,7 +142,9 @@ def genera_aristas(brotes):
 def main(argv):
     # brotes = genera_Brotes()
     geoESP, geoComar = geohashEsp()
-    migraHaciaEsp(geoESP)
+    startPoints = migraHaciaEsp(geoESP)
+    brotes = genera_Brotes(startPoints)
+
 
 
 if __name__ == "__main__":
