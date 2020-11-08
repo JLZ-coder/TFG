@@ -46,6 +46,7 @@ df.drop(['LatitudGrados', 'LatitudMinutos', 'LongitudGrados', 'LongitudMinutos',
 df.drop(['LatitudGradosR', 'LatitudMinutosR', 'LongitudGradosR', 'LongitudMinutosR', 'CuadranteLatitudR', 'CuadranteLongitudR'], axis='columns', inplace=True)
 df.drop(['Unnamed: 31'], axis='columns', inplace=True)
 
+df['index'] = df.index
 
 #print (df)
 

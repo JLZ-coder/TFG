@@ -2,6 +2,7 @@ import pymongo
 from pymongo import MongoClient
 import pandas as pd
 import os
+from neo4j import GraphDatabase
 
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
@@ -32,6 +33,7 @@ for especie in especies:
 		aux_migra = "CREATE "
 		valores = {}
 		lista = []
+		lista_index = []
 		data_migrations = migrations.find({"Especie": especie})
 		for migration in data_migrations:
 			nodos.append(migration['geohash'][:4])
@@ -44,13 +46,19 @@ for especie in especies:
 				else:
 					valores[stringAux]+=1
 
+				lista_index.append(migration['index'])
+
+		ctr = 0
 		for element in lista :
 			regiones = element.split('-')
 			aux_migra += "({}) -[:MIGRA{}".format(regiones[0], especie)
 			aux_migra += "{valor:"
-			aux_migra += "{}".format(valores[element])
+			aux_migra += "{},".format(valores[element])
+			aux_migra += "index:"
+			aux_migra += "{}".format(lista_index[ctr])
 			aux_migra += "}]-> "
 			aux_migra += "({}),\n".format(regiones[1])
+			ctr += 1
 
 		aux_migra = aux_migra[:-2]
 		aux_migra += "\n"
@@ -68,5 +76,11 @@ for nodo in nodos2:
 crea = crea[:-2]
 crea += "\n"
 query = crea + migra
+
+driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
+driver.session().run("MATCH (n) DETACH DELETE n")
+response = driver.session().run(query).value()
+driver.close()
+
 n = text_file.write(query)
 text_file.close()

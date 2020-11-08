@@ -44,7 +44,7 @@ def migraHaciaEsp(geoESP):
 
     startPoints = set()
     for geo in geoESP:
-        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location'.format(geo)).value()
+        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index'.format(geo)).values()
         startPoints.update(response)
 
     driver.close()
