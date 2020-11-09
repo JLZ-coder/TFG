@@ -133,6 +133,7 @@ def main(argv):
     # 201 - Lowi Path Avian influenza
     # 1164 - Highly pathogenic influenza A viruses (infection with) (non-poultry including wild birds) (2017 -)
     diseases = ['15', '201', '1164']
+
     # global lista
     global disease
     asian_countries = ['AFG', 'ARM', 'AZE', 'BHR', 'BGD', 'BTN', 'CHN', 'CYP', 'KHM', 'TWN', 'GEO', 'HKG', 'IND', 'IDN', 'IRN',

@@ -29,7 +29,7 @@ def geohashEsp():
     geoComar = {}
 
     for it in cursor:
-        geo = geohash.encode(float(it['YCoord']), float(it['XCoord']))
+        geo = geohash.encode(float(it['Latitud']), float(it['Longitud']))
         geoESP.add(geo[0:3])
 
         if geo[0:4] not in geoComar:
@@ -42,10 +42,14 @@ def geohashEsp():
 def migraHaciaEsp(geoESP):
     driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
-    startPoints = set()
+    startPoints = dict()
     for geo in geoESP:
         response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index'.format(geo)).values()
-        startPoints.update(response)
+        for r in response:
+            if r[0][0:4] not in startPoints:
+                startPoints[r[0][0:4]] = [r[1]]
+            else:
+                startPoints[r[0][0:4]].append(r[1])
 
     driver.close()
 
@@ -95,7 +99,7 @@ def genera_Brotes(startPoints):
     #         }
     # }
     geojson = {}
-    for geo in startPoints:
+    for geo in startPoints.keys():
         cursor = outbreaks.find({
             "geohash": {
                 "$regex": '{}.*'.format(geo)
@@ -144,6 +148,9 @@ def main(argv):
     geoESP, geoComar = geohashEsp()
     startPoints = migraHaciaEsp(geoESP)
     brotes = genera_Brotes(startPoints)
+
+    for brote in brotes:
+        print(startPoints[brote])
 
 
 

@@ -13,8 +13,8 @@ file = "Centroides comarcas ganaderas.xlsx"
 dfCentroide = pd.read_excel(file)
 
 #Añadimos al dataframe que ira dentro de nuestra base de datos las coordenadas de los centroides
-df['Altitud'] = dfCentroide['XCoord']
-df['Longitud'] = dfCentroide['YCoord']
+df['Longitud'] = dfCentroide['XCoord']
+df['Latitud'] = dfCentroide['YCoord']
 
 #Segunda parte de los datos (Geojson)
 #Extraemos los datos
@@ -39,8 +39,8 @@ for comarca in leer['features']:
 
 i = 0
 
-for i in range(len(df)): 
-   geohashC.append(geohash.encode(df['Altitud'][i], df['Longitud'][i]))
+for i in range(len(df)):
+   geohashC.append(geohash.encode(df['Latitud'][i], df['Longitud'][i]))
 
 
 df['CPRO'] = CPRO
