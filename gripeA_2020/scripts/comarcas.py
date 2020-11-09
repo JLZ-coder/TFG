@@ -13,8 +13,8 @@ file = "Centroides comarcas ganaderas.xlsx"
 dfCentroide = pd.read_excel(file)
 
 #Añadimos al dataframe que ira dentro de nuestra base de datos las coordenadas de los centroides
-df['XCoord'] = dfCentroide['XCoord']
-df['YCoord'] = dfCentroide['YCoord']
+df['Altitud'] = dfCentroide['XCoord']
+df['Longitud'] = dfCentroide['YCoord']
 
 #Segunda parte de los datos (Geojson)
 #Extraemos los datos
@@ -27,6 +27,7 @@ CODAUTO = []
 comAutonoma = []
 CPROyMUN = []
 coordenadas = []
+geohashC = []
 
 for comarca in leer['features']:
     coordenadas.append(comarca['geometry']['coordinates'])
@@ -36,6 +37,11 @@ for comarca in leer['features']:
     comAutonoma.append(comarca['properties']['comAutonoma'])
     CPROyMUN.append(comarca['properties']['CPROyMUN'])
 
+i = 0
+
+for i in range(len(df)): 
+   geohashC.append(geohash.encode(df['Altitud'][i], df['Longitud'][i]))
+
 
 df['CPRO'] = CPRO
 df['provincia'] = provincia
@@ -43,6 +49,7 @@ df['CODAUTO'] = CODAUTO
 df['comAutonoma'] = comAutonoma
 df['CPROyMUN'] = CPROyMUN
 df['coordinates'] = coordenadas
+df['geohash'] = geohashC
 
 #funcion para generar el cuadrante de cada comarca
 df = geojsonComarcas.coordinatesFunc(df)

@@ -77,10 +77,3 @@ def coordinatesFunc(df):
     return df
 
 
-
-
-            
-    
-
-    #Carpeta destino
-
