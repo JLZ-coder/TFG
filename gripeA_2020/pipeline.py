@@ -10,18 +10,22 @@ import pygeohash as geohash
 from datetime import datetime
 import math
 from neo4j import GraphDatabase
+import random
 
 
 # GLOBALS
 client = MongoClient('mongodb://localhost:27017/')
 db = client.lv
 outbreaks = db.outbreaks
+migrations = db.migrations
+com = db.comarcas
 diseases = {
     '15' : "Highly Path Avian influenza",
     '201' : "Low Path Avian influenza",
     '1164' : "Highly pathogenic influenza A viruses"
 }
-com = db.comarcas
+driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
+
 
 def geohashEsp():
     cursor = com.find({})
@@ -40,7 +44,6 @@ def geohashEsp():
     return geoESP, geoComar
 
 def migraHaciaEsp(geoESP):
-    driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
     startPoints = dict()
     for geo in geoESP:
@@ -50,8 +53,6 @@ def migraHaciaEsp(geoESP):
                 startPoints[r[0][0:4]] = [r[1]]
             else:
                 startPoints[r[0][0:4]].append(r[1])
-
-    driver.close()
 
     return startPoints
 
@@ -98,7 +99,12 @@ def genera_Brotes(startPoints):
     #             'preventive_killed': '49550'  cambiar
     #         }
     # }
+    feat_col_brote = {
+        "type": "FeatureCollection",
+        "features": []
+    }
     geojson = {}
+    brotes_col = {}
     for geo in startPoints.keys():
         cursor = outbreaks.find({
             "geohash": {
@@ -129,28 +135,131 @@ def genera_Brotes(startPoints):
                 }
             }
             if it['geohash'][0:4] not in geojson:
-                geojson[it['geohash'][0:4]] = [aux]
+                geojson[it['geohash'][0:4]] = startPoints[it['geohash'][0:4]]
+
+            if it['geohash'][0:4] not in brotes_col:
+                brotes_col[it['geohash'][0:4]] = [aux]
             else:
-                # geojson[it['geohash'][0:4]]['properties']['at_risk'] = int(geojson[it['geohash'][0:4]]['properties']['at_risk']) + int(it['at_risk'])
-                # geojson[it['geohash'][0:4]]['properties']['cases'] = int(geojson[it['geohash'][0:4]]['properties']['cases']) + int(it['cases'])
-                # geojson[it['geohash'][0:4]]['properties']['deaths'] = int(geojson[it['geohash'][0:4]]['properties']['deaths']) + int(it['deaths'])
-                # geojson[it['geohash'][0:4]]['properties']['preventive_killed'] = int(geojson[it['geohash'][0:4]]['properties']['preventive_killed']) + int(it['preventive_killed'])
-                geojson[it['geohash'][0:4]].append(aux)
+                brotes_col[it['geohash'][0:4]].append(aux)
 
-            print (geojson[it['geohash'][0:4]])
+            feat_col_brote['features'].append(aux)
 
-    return geojson
+    return geojson, brotes_col, feat_col_brote
+
+def genera_alertas(brotes, brotes_col):
+    feat_col_com = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    feat_col_migra = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+
+    for brote in brotes:
+        for migra in brotes[brote]:
+            response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE r.index = {} RETURN x.location'.format(migra)).value()
+            lat, long, lat_err, long_err = geohash.decode_exactly(response[0])
+            if lat - lat_err < lat + lat_err:
+                lat_range = (lat - lat_err, lat + lat_err)
+            else:
+                lat_range = (lat + lat_err, lat - lat_err)
+
+            if long - long_err < long + long_err:
+                long_range =  (long - long_err, long + long_err)
+            else:
+                long_range =  (long + long_err, long - long_err)
+
+            cursor = com.find({})
+            for it in cursor:
+                if it['izqI'][1] < it['izqS'][1]:
+                    lat_range_mongo = (it['izqI'][1], it['izqS'][1])
+                else:
+                    lat_range_mongo = (it['izqS'][1], it['izqI'][1])
+
+                if it['izqI'][0] < it['derI'][0]:
+                    long_range_mongo =  (it['izqI'][0], it['derI'][0])
+                else:
+                    long_range_mongo =  (it['derI'][0], it['izqI'][0])
+
+                if (
+                        (lat_range[0] < it['izqS'][1] and it['izqS'][1] < lat_range[1])
+                        or
+                        (lat_range[0] < it['izqI'][1] and it['izqI'][1] < lat_range[1])
+                        or
+                        (lat_range_mongo[0] < lat_range[0] and lat_range[0] < lat_range_mongo[1])
+                    ) and (
+                        (long_range[0] < it['izqI'][0] and it['izqI'][0] < long_range[1])
+                        or
+                        (long_range[0] < it['derI'][0] and it['derI'][0] < long_range[1])
+                        or
+                        (long_range_mongo[0] < long_range[0] and long_range[0] < long_range_mongo[1])
+                    ):
+                    feat_com = {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+                        },
+                        "properties": {
+                            "id": it['CPROyMUN'],
+                            "riskLevel": 0,
+                            "number_of_cases": random.randint(0, 100),
+                            "startDate": random.randint(1572890531000, 1604512931000),
+                            "endDate": 1704512931000,
+                            "codeSpecies": 1840,
+                            "species": "Anas crecca",
+                            "commonName": "Pato cuchara",
+                            "fluSubtype": "H5",
+                            "comarca_sg": it['comarca_sg'],
+                            "comarca": it['com_sgsa_n'],
+                            "CMUN": it['CPROyMUN'][-2:],
+                            "municipality": "Vitoria-Gasteiz",
+                            "CPRO": it['CPROyMUN'][:2],
+                            "province": it['provincia'],
+                            "CODAUTO": it['CODAUTO'],
+                            "CA": it['comAutonoma'],
+                            "CPROyMUN": it['CPROyMUN']
+                        }
+                    }
+                    feat_col_com["features"].append(feat_com)
+
+                    for b in brotes_col[brote]:
+                        feat_migra = {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [ [float(it['Longitud']), float(it['Latitud'])], [b['geometry']['coordinates'][0], b['geometry']['coordinates'][1]] ]
+                            },
+                            "properties": {
+                                "idBrote": b['properties']['id'],
+                                "idAlerta": it['CPROyMUN']
+                            }
+                        }
+                        feat_col_migra["features"].append(feat_migra)
+
+    return feat_col_com, feat_col_migra
+
 
 
 
 def main(argv):
-    # brotes = genera_Brotes()
     geoESP, geoComar = geohashEsp()
     startPoints = migraHaciaEsp(geoESP)
-    brotes = genera_Brotes(startPoints)
+    brotes, brotes_col, brot = genera_Brotes(startPoints)
+    alertas, migras = genera_alertas(brotes, brotes_col)
 
-    for brote in brotes:
-        print(startPoints[brote])
+    driver.close()
+
+    text_file = open("brotes.txt", "w")
+    n = text_file.write(json.dumps(brot))
+    text_file.close()
+    text_file = open("migras.txt", "w")
+    n = text_file.write(json.dumps(migras))
+    text_file.close()
+    text_file = open("alertas.txt", "w")
+    n = text_file.write(json.dumps(alertas))
+    text_file.close()
 
 
 
