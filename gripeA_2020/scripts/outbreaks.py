@@ -48,7 +48,7 @@ def extract_data(page):
 
 
 # recoge la informacion y lo mete en el db mongodb
-def get_ob_page(cty, id, lista, disease, year):
+def get_ob_page(cty, id, lista, disease, year, fr):
     global outbreaks
     url = 'https://www.oie.int/wahis_2/public/wahid.php/Diseaseinformation/Immsummary/outbreakreport'
     r = requests.post(url, data={'reportid': id, 'summary_country': cty})
@@ -58,6 +58,11 @@ def get_ob_page(cty, id, lista, disease, year):
     if ob[2] != "" and ob[0] != "" and ob[8] != "" and ob[9] != "":
         end = datetime.strptime(ob[2], "%d/%m/%Y")
         start = datetime.strptime(ob[0], "%d/%m/%Y")
+        if fr['reportDate'] != "":
+            reportDate = datetime.strptime(fr['reportDate'], "%d/%m/%Y")
+        else:
+            reportDate = ""
+
         hash = geohash.encode(float(ob[8]), float(ob[9]))
 
         # if ob[1] == 'Resolved' and outbreaks.find({'oieid': id}).count() == 0:
@@ -72,6 +77,9 @@ def get_ob_page(cty, id, lista, disease, year):
         outbreak = {}
         outbreak["oieid"] = id
         outbreak["disease_id"] = disease
+        outbreak["serotype"] = fr['serotype']
+        outbreak["report_date"] = reportDate
+        outbreak["urlFR"] = fr['url']
         outbreak["country"] = cty
         outbreak["start"] = start
         outbreak["end"] = end
@@ -102,6 +110,36 @@ def get_ob_page(cty, id, lista, disease, year):
         outbreaks.delete_one({'oieid': id})
         outbreaks.insert_one(outbreak)
 
+#
+#return: 
+#   fullReport[0] = date report
+#   fullReport[1] = serotype
+#   fullReport[2] = url full report
+#
+
+def get_full_report(idFR):
+    global outbreaks
+
+    fullReport={}
+    url = 'https://www.oie.int/wahis_2/public/wahid.php/Reviewreport/Review?page_refer=MapFullEventReport&reportid={}'.format(idFR)
+
+    r = requests.post(url)
+    p = re.compile('Report date</td>[ \t\r\n][^>]+>(\d{1,2}/\d{1,2}/\d{4}).*?' 
+                    'Serotype</td>[^>]+>(\w+).*?'
+                 , re.DOTALL & re.MULTILINE * re.IGNORECASE)
+    m = p.findall(r.content.decode('latin1'))
+    reportDate, serotype = m[0]
+    if len(m) > 0: 
+        fullReport['reportDate'] = reportDate
+        fullReport['serotype'] = serotype
+        fullReport['url'] = url
+    else:
+        fullReport['reportDate'] = ""
+        fullReport['serotype'] = ""
+        fullReport['url'] = ""
+
+    return fullReport
+
 
 # lista los brotes que ha habido en un pais
 # code - codigo de un pais
@@ -117,15 +155,24 @@ def get_cty_obs(code, id, disease, year):
     url = 'https://www.oie.int/wahis_2/public/wahid.php/Diseaseinformation/Immsummary/listoutbreak'
     r = requests.post(url, data={'reportid': id, 'summary_country': code})
     p = re.compile('outbreak_report\("([A-Z]{3})",([0-9]+)\)', re.DOTALL & re.MULTILINE * re.IGNORECASE)
+   
     ob_list = p.findall(r.content.decode('latin1'))
+
+    p = re.compile('open_report\("(.*?)",([0-9]+)\)')
+
+    full_list = p.findall(r.content.decode('latin1'))
 # cogiendo informacion de 'url', pagina que sale al pulsar el boton de lupa en la pagina principal
     print('Getting data for outbreak of disease {} in country {}'.format(id, code))
     # total = len(ob_list)
     # count = 0
 # itera en la lista de brotes de un pais
+    count = 0
     for ob in ob_list:
+        src, idFr = full_list[count]
+        fr = get_full_report(idFr)
         cty, id = ob
-        get_ob_page(cty, id, lista, disease, year)
+        get_ob_page(cty, id, lista, disease, year, fr)
+        count += 1
 
 
 def main(argv):
