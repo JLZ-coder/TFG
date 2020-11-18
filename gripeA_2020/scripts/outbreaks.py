@@ -155,7 +155,7 @@ def get_cty_obs(code, id, disease, year):
     url = 'https://www.oie.int/wahis_2/public/wahid.php/Diseaseinformation/Immsummary/listoutbreak'
     r = requests.post(url, data={'reportid': id, 'summary_country': code})
     p = re.compile('outbreak_report\("([A-Z]{3})",([0-9]+)\)', re.DOTALL & re.MULTILINE * re.IGNORECASE)
-   
+
     ob_list = p.findall(r.content.decode('latin1'))
 
     p = re.compile('open_report\("(.*?)",([0-9]+)\)')
