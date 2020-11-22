@@ -97,36 +97,42 @@ def comarcas():
     fecha = datetime.now() + timedelta(days = -today.weekday(), weeks=-1)
 
     risk = 0
-    # while i < 12:
-    for it in cursor:
-        # it = next(ite)
-        feat = {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-            },
-            "properties": {
-                "id": it['comarca_sg'],
-                "riskLevel": risk,
-                "number_of_cases": random.randint(0, 100),
-                "startDate": math.floor(fecha.timestamp() * 1000),
-                "endDate": math.floor((fecha + timedelta(days = 7)).timestamp() * 1000),
-                "codeSpecies": 1840,
-                "species": "Anas crecca",
-                "commonName": "Pato cuchara",
-                "fluSubtype": "H5",
-                "comarca_sg": it['comarca_sg'],
-                "comarca": it['com_sgsa_n'],
-                "CPRO": it['CPRO'],
-                "province": it['provincia'],
-                "CPROyMUN": it['CPROyMUN']
+    while i < 12:
+        for it in cursor:
+            # it = next(ite)
+            feat = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+                },
+                "properties": {
+                    "id": it['comarca_sg'],
+                    "riskLevel": risk,
+                    "number_of_cases": random.randint(0, 100),
+                    "startDate": math.floor(fecha.timestamp() * 1000),
+                    "endDate": math.floor((fecha + timedelta(days = 7)).timestamp() * 1000),
+                    "codeSpecies": 1840,
+                    "species": "Anas crecca",
+                    "commonName": "Pato cuchara",
+                    "fluSubtype": "H5",
+                    "comarca_sg": it['comarca_sg'],
+                    "comarca": it['com_sgsa_n'],
+                    "CPRO": it['CPRO'],
+                    "province": it['provincia'],
+                    "CPROyMUN": it['CPROyMUN']
+                }
             }
-        }
-        feat_col["features"].append(feat)
+            feat_col["features"].append(feat)
 
-        # cursor.rewind()
-        # fecha = fecha + timedelta(days = 7)
+        text_file = open("alertas_{}.geojson".format(fecha.strftime("%d-%m-%y")), "w")
+        n = text_file.write(json.dumps(feat_col))
+        text_file.close()
+
+        feat_col['features'].clear()
+
+        cursor.rewind()
+        fecha = fecha - timedelta(days = 7)
         i += 1
         risk += 1
         risk %= 4
@@ -184,8 +190,8 @@ def migracion(brotes, comarcas):
         i += 1
         j += 1
         j %= len(brotes['features'])
-        if i > 10:
-            break
+        # if i > 10:
+        #     break
 
     return feat_col
 
