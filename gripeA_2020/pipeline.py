@@ -12,6 +12,10 @@ import math
 from neo4j import GraphDatabase
 import random
 
+from dao.daoBrotes import daoBrotes
+from dao.daoComar import daoComar
+
+
 
 # GLOBALS
 client = MongoClient('mongodb://localhost:27017/')
@@ -24,11 +28,14 @@ diseases = {
     '201' : "Low Path Avian influenza",
     '1164' : "Highly pathogenic influenza A viruses"
 }
-driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
+# driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
+
+# daoComar = daoComar()
+# daoBrotes = daoBrotes()
 
 
 def geohashEsp():
-    cursor = com.find({})
+    cursor = daoComar.find({})
     geoESP = set()
     geoComar = {}
 
@@ -106,7 +113,7 @@ def genera_Brotes(startPoints):
     geojson = {}
     brotes_col = {}
     for geo in startPoints.keys():
-        cursor = outbreaks.find({
+        cursor = daoBrotes.find({
             "geohash": {
                 "$regex": '{}.*'.format(geo)
             }

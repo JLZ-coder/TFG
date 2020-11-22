@@ -1,5 +1,5 @@
 import pymongo
-from daoMongo import daoMongo
+from dao.daoMongo import daoMongo
 
 class daoComar(daoMongo):
 
