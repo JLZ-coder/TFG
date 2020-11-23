@@ -134,16 +134,25 @@ def comarcas_geo(tablaGeoComarca, comar):
 
     return tablaComarcaGeo
 
+def generaTablas():
 
-geoEsp, comar = geohashEsp()
-tablaGeoComarca = geo_comarcas_gen(geoEsp, 4, comar)
+    geoEsp, comar = geohashEsp()
+    tablaGeoComarca = geo_comarcas_gen(geoEsp, 4, comar)
+    tablaComarcaGeo = comarcas_geo(tablaGeoComarca, comar)
 
-tablaComarcaGeo = comarcas_geo(tablaGeoComarca, comar)
+    return tablaGeoComarca, tablaComarcaGeo
 
-text_file = open("tablaGeoComarca.txt", "w")
-n = text_file.write(json.dumps(tablaGeoComarca))
-text_file.close()
+def main(argv):
+ 
+    tablaGeoComarca, tablaComarcaGeo = generaTablas()
+    text_file = open("tablaGeoComarca.txt", "w")
+    n = text_file.write(json.dumps(tablaGeoComarca))
+    text_file.close()
 
-text_file = open("tablaComarcaGeo.txt", "w")
-n = text_file.write(json.dumps(tablaComarcaGeo))
-text_file.close()
+    text_file = open("tablaComarcaGeo.txt", "w")
+    n = text_file.write(json.dumps(tablaComarcaGeo))
+    text_file.close()
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

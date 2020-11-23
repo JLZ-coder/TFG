@@ -7,14 +7,14 @@ import json
 import pymongo
 from pymongo import MongoClient
 import pygeohash as geohash
-from datetime import datetime
+from datetime import datetime, timedelta
 import math
 from neo4j import GraphDatabase
 import random
 import string
 
-from dao.daoBrotes import daoBrotes
-from dao.daoComar import daoComar
+#from dao.daoBrotes import daoBrotes
+#from dao.daoComar import daoComar
 
 
 
@@ -253,8 +253,27 @@ def genera_alertas(brotes, brotes_col):
 
     return feat_col_com, feat_col_migra
 
+def modelo(last_N_days):
+    alertaComarcasGeo={}
+
+    text_file = open("tablaComarcaGeo.txt", "r")
+    tablaComarcaGeo = text_file.read()
+    text_file.close()
+
+    fecha = datetime.utcnow() - timedelta(days=last_N_days)
+    
+    listaBrotes = outbreaks.find({"report_date": {
+                                "$gt": fecha
+                                }})
+ 
+    for it in listaBrotes:
+        
+
+
+    
 
 def main(argv):
+    modelo(120)
     geoESP, geoComar = geohashEsp()
     startPoints = migraHaciaEsp(geoESP)
     brotes, brotes_col, brot = genera_Brotes(startPoints)
