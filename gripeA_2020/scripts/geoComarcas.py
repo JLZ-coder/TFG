@@ -1,6 +1,8 @@
 import string
 from pymongo import MongoClient
 import pygeohash as geohash
+import sys
+import json
 
 client = MongoClient('mongodb://localhost:27017/')
 db = client.lv
@@ -115,8 +117,33 @@ def geo_comarcas(geo, n, max_n, digits, comar):
 
         return collect
 
+# eqwr : [ {sp12300 : 0.4}, ... ]
+def comarcas_geo(tablaGeoComarca, comar):
+    tablaComarcaGeo = {}
+
+    for i in tablaGeoComarca.keys():
+        for j in tablaGeoComarca[i]:
+            cod_comar = list(j.keys())
+            peso = list(j.values())
+
+            if cod_comar[0] in tablaComarcaGeo:
+                tablaComarcaGeo[cod_comar[0]].append({i : peso[0]})
+            else:
+                tablaComarcaGeo[cod_comar[0]] = [{i : peso[0]}]
+
+
+    return tablaComarcaGeo
+
+
 geoEsp, comar = geohashEsp()
 tablaGeoComarca = geo_comarcas_gen(geoEsp, 4, comar)
 
+tablaComarcaGeo = comarcas_geo(tablaGeoComarca, comar)
 
+text_file = open("tablaGeoComarca.txt", "w")
+n = text_file.write(json.dumps(tablaGeoComarca))
+text_file.close()
 
+text_file = open("tablaComarcaGeo.txt", "w")
+n = text_file.write(json.dumps(tablaComarcaGeo))
+text_file.close()
