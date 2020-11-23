@@ -11,6 +11,7 @@ from datetime import datetime
 import math
 from neo4j import GraphDatabase
 import random
+import string
 
 from dao.daoBrotes import daoBrotes
 from dao.daoComar import daoComar
@@ -28,12 +29,12 @@ diseases = {
     '201' : "Low Path Avian influenza",
     '1164' : "Highly pathogenic influenza A viruses"
 }
-# driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
+driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
 # daoComar = daoComar()
 # daoBrotes = daoBrotes()
 
-
+# Saca geohash de 3 digitos que caen en espana
 def geohashEsp():
     cursor = daoComar.find({})
     geoESP = set()
@@ -49,6 +50,7 @@ def geohashEsp():
             geoComar[geo[0:4]].append(it['CPROyMUN'])
 
     return geoESP, geoComar
+
 
 def migraHaciaEsp(geoESP):
 
