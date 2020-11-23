@@ -6,6 +6,20 @@ client = MongoClient('mongodb://localhost:27017/')
 db = client.lv
 comarcas = db.comarcas
 
+def getDigits():
+    digits = list(string.ascii_lowercase)
+    no_digits = ['a', 'o', 'l', 'i']
+
+    for i in digits:
+        if i in no_digits:
+            digits.remove(i)
+
+    for i in range(10):
+        digits.append(str(i))
+
+
+    return digits
+
 # Saca geohash de 3 digitos que caen en espana
 def geohashEsp():
     cursor = comarcas.find({})
@@ -16,31 +30,20 @@ def geohashEsp():
         geo = geohash.encode(float(it['Latitud']), float(it['Longitud']))
         geoESP.add(geo[0:3])
 
-        # com = transferComar(
-        #     comarca_sg=it['comarca_sg'],
-        #     com_sgsa_n=it['com_sgsa_n'],
-        #     long=it['Longitud'],
-        #     lat=it['Latitud'],
-        #     cpro=it['CPRO'],
-        #     provincia=it['provincia'],
-        #     cproymun=it['CPROyMUN'],
-        #     geohash=it['geohash'],
-        #     izqS=it['izqS'],
-        #     derI=it['derI']
-        # )
         comar.update( {
-            it['comarca_sg'] : [
-                { "comarca_sg" : it['comarca_sg'] },
-                { "com_sgsa_n" : it['com_sgsa_n'] },
-                { "long" : it['Longitud'] },
-                { "lat" : it['Latitud'] },
-                { "cpro" : it['CPRO'] },
-                { "provincia" : it['provincia'] },
-                { "cproymun" : it['CPROyMUN'] },
-                { "geohash" : it['geohash'] },
-                { "izqS" : it['izqS'] },
-                { "derI" : it['derI'] }
-            ]
+            it['comarca_sg'] :
+                {
+                    "comarca_sg" : it['comarca_sg'],
+                    "com_sgsa_n" : it['com_sgsa_n'],
+                    "long" : it['Longitud'] ,
+                    "lat" : it['Latitud'] ,
+                    "cpro" : it['CPRO'] ,
+                    "provincia" : it['provincia'] ,
+                    "cproymun" : it['CPROyMUN'] ,
+                    "geohash" : it['geohash'] ,
+                    "izqS" : it['izqS'] ,
+                    "derI" : it['derI']
+                }
         } )
 
     return geoESP, comar
@@ -51,85 +54,69 @@ def geohashEsp():
 # Recorre la lista de geohash 3 y para cada uno recorre todos los geohashes de n>3 digitos y devuelve las comarcas que "pisa" junto con su peso
 
 # Devuelve un fichero con diccionario "geohash --> {comarcas, peso}"
-def geo_comarcas_gen(lista, n):
-    if n <= 3:
+def geo_comarcas_gen(lista, max_n, comar):
+    if max_n <= 3:
         raise Exception("Usando geohash demasiados grandes en geo_comarcas()")
 
-    digits = list(string.ascii_lowercase)
-    no_digits = ['a', 'o', 'l', 'i']
-
-    for i in digits:
-        if i in no_digits:
-            digits.remove(i)
-
-    digits.append(range(10))
+    digits = getDigits()
 
     collect = {}
 
     for it in lista:
-        collect.update( geo_comarcas(it, n, digits, comar) )
+        collect.update( geo_comarcas(it, 3, max_n, digits, comar) )
 
     return collect
 
-def overlapsLat(y1, y2):
-    if y1[1]
-    return = xmax1 >= xmin2 and xmax2 >= xmin1
+def overlapPropLat(geoboxLat, comarboxLat):
+    if geoboxLat[1] > comarboxLat[0] and comarboxLat[1] > geoboxLat[0]:
+        sup = min(geoboxLat[1], comarboxLat[1])
+        bot = max(comarboxLat[0], geoboxLat[0])
 
-def overlapsLong(x1, x2):
+        return sup - bot
+    else:
+        return 0
 
+def overlapPropLong(geoboxLong, comarboxLong):
+    if geoboxLong[1] > comarboxLong[0] and comarboxLong[1] > geoboxLong[0]:
+        sup = min(geoboxLong[1], comarboxLong[1])
+        bot = max(comarboxLong[0], geoboxLong[0])
 
-def geo_comarcas(geo, n, digits, comar):
-    if len(geo) == n:
+        return sup - bot
+    else:
+        return 0
+
+def geo_comarcas(geo, n, max_n, digits, comar):
+    if len(geo) == max_n:
         lat, long, lat_err, long_err = geohash.decode_exactly(geo)
 
         lat_range = (lat - lat_err, lat + lat_err)
         long_range = (long - long_err, long + long_err)
 
-        # if lat - lat_err < lat + lat_err:
-        #     lat_range = (lat - lat_err, lat + lat_err)
-        # else:
-        #     lat_range = (lat + lat_err, lat - lat_err)
-
-        # if long - long_err < long + long_err:
-        #     long_range =  (long - long_err, long + long_err)
-        # else:
-        #     long_range =  (long + long_err, long - long_err)
-
+        collect = {geo : []}
 
         for it in comar.keys():
             lat_range_mongo = (comar[it]['derI'][1], comar[it]['izqS'][1])
             long_range_mongo = (comar[it]['izqS'][0], comar[it]['derI'][0])
-            # if comar[it]['izqI'][1] < comar[it]['izqS'][1]:
-            #     lat_range_mongo = (comar[it]['izqI'][1], comar[it]['izqS'][1])
-            # else:
-            #     lat_range_mongo = (comar[it]['izqS'][1], comar[it]['izqI'][1])
 
-            # if comar[it]['izqI'][0] < comar[it]['derI'][0]:
-            #     long_range_mongo =  (comar[it]['izqI'][0], comar[it]['derI'][0])
-            # else:
-            #     long_range_mongo =  (comar[it]['derI'][0], comar[it]['izqI'][0])
+            base = overlapPropLong(long_range, long_range_mongo)
+            altura = overlapPropLat(lat_range, lat_range_mongo)
+            if base and altura:
+                area = base * altura
+                areaGeo = (long_range[1] - long_range[0]) * (lat_range[1] - lat_range[0])
+                peso = area / areaGeo
+                collect[geo].append({it : peso})
 
-            if (
-                    (lat_range[0] < comar[it]['izqS'][1] and comar[it]['izqS'][1] < lat_range[1])
-                    or
-                    (lat_range[0] < comar[it]['izqI'][1] and comar[it]['izqI'][1] < lat_range[1])
-                    or
-                    (lat_range_mongo[0] < lat_range[0] and lat_range[0] < lat_range_mongo[1])
-                ) and (
-                    (long_range[0] < comar[it]['izqI'][0] and comar[it]['izqI'][0] < long_range[1])
-                    or
-                    (long_range[0] < comar[it]['derI'][0] and comar[it]['derI'][0] < long_range[1])
-                    or
-                    (long_range_mongo[0] < long_range[0] and long_range[0] < long_range_mongo[1])
-                ):
-                pass
+        return collect
     else:
         collect = {}
 
         for digit in digits:
-            collect.update( geo_comarcas(geo + digit, n + 1, digits, comar) )
+            collect.update( geo_comarcas(geo + digit, n + 1, max_n, digits, comar) )
 
         return collect
 
 geoEsp, comar = geohashEsp()
+tablaGeoComarca = geo_comarcas_gen(geoEsp, 4, comar)
+
+
 
