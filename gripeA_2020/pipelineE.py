@@ -255,46 +255,37 @@ def genera_alertas(brotes, brotes_col):
 
 def modelo(last_N_days, startPoints, geoESP):
     alertaComarcasGeo={}
-
-    
     tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
-    
 
     fecha = datetime.utcnow() - timedelta(days=last_N_days)
     
     listaBrotes = outbreaks.find({})
-    
-    geo4SPList = {}
-    
-    
+        
     for brote in listaBrotes:
         response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index'.format(brote['geohash'][0:4])).values()
        
-        aux = brote['geohash'][0:4]
-        if len(response)>0:
-            response 
-
+        geo4SPList = {}
         for r in response:
-            
-            print(startPoints[r[0]])
             if r[0] in startPoints:
-                if r[0] not in geo4SPList:
-                    geo4SPList[r[0]] = [r[1]]
-                else:
-                    geo4SPList[r[0]].append(r[1])
+                geo4SPList[r[0]] = startPoints[r[0]]
+            else:
+                print(r[0])
                 
-        if len(geo4SPList)>0:
-            geo4SPList
         for nodoGeo4 in geo4SPList:
-            listaComarcasAfectadas = tablaGeoComarca[nodoGeo4[0]]
-            for comarcaAfectada in listaComarcasAfectadas:
-                alertaComarcasGeo[comarcaAfectada].append(brote, comarcaAfectada.values())
-        
+           
+            listaComarcasAfectadas = tablaGeoComarca[nodoGeo4]
+            for comarcaAfectada in listaComarcasAfectadas:   
+                comarca = list(comarcaAfectada.keys())[0]      
+                peso = list(comarcaAfectada.values())[0] 
+                if comarca not in alertaComarcasGeo:
+                    alertaComarcasGeo[comarca] = [brote['geohash'][0:4], peso, nodoGeo4]
+                else:
+                    alertaComarcasGeo[comarca].append([brote['geohash'][0:4], peso, nodoGeo4])
 
         
-            
+        
 
-
+    alertaComarcasGeo
     
 
 def main(argv):
