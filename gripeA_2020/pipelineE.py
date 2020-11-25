@@ -36,7 +36,7 @@ driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
 # Saca geohash de 3 digitos que caen en espana
 def geohashEsp():
-    cursor = daoComar.find({})
+    cursor = com.find({})
     geoESP = set()
     geoComar = {}
 
@@ -52,7 +52,7 @@ def geohashEsp():
     return geoESP, geoComar
 
 
-def migraHaciaEsp(geoESP):
+def migraHaciaEsp(geoESP): 
 
     startPoints = dict()
     for geo in geoESP:
@@ -253,29 +253,56 @@ def genera_alertas(brotes, brotes_col):
 
     return feat_col_com, feat_col_migra
 
-def modelo(last_N_days):
+def modelo(last_N_days, startPoints, geoESP):
     alertaComarcasGeo={}
 
-    text_file = open("tablaComarcaGeo.txt", "r")
-    tablaComarcaGeo = text_file.read()
-    text_file.close()
+    
+    tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
+    
 
     fecha = datetime.utcnow() - timedelta(days=last_N_days)
     
-    listaBrotes = outbreaks.find({"report_date": {
-                                "$gt": fecha
-                                }})
- 
-    for it in listaBrotes:
+    listaBrotes = outbreaks.find({})
+    
+    geo4SPList = {}
+    
+    
+    for brote in listaBrotes:
+        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index'.format(brote['geohash'][0:4])).values()
+       
+        aux = brote['geohash'][0:4]
+        if len(response)>0:
+            response 
+
+        for r in response:
+            
+            print(startPoints[r[0]])
+            if r[0] in startPoints:
+                if r[0] not in geo4SPList:
+                    geo4SPList[r[0]] = [r[1]]
+                else:
+                    geo4SPList[r[0]].append(r[1])
+                
+        if len(geo4SPList)>0:
+            geo4SPList
+        for nodoGeo4 in geo4SPList:
+            listaComarcasAfectadas = tablaGeoComarca[nodoGeo4[0]]
+            for comarcaAfectada in listaComarcasAfectadas:
+                alertaComarcasGeo[comarcaAfectada].append(brote, comarcaAfectada.values())
         
+
+        
+            
 
 
     
 
 def main(argv):
-    modelo(120)
+    
     geoESP, geoComar = geohashEsp()
     startPoints = migraHaciaEsp(geoESP)
+    modelo(120, startPoints, geoESP)
+
     brotes, brotes_col, brot = genera_Brotes(startPoints)
     alertas, migras = genera_alertas(brotes, brotes_col)
 
