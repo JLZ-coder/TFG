@@ -262,7 +262,7 @@ def modelo(last_N_days, startPoints, geoESP):
     listaBrotes = outbreaks.find({})
         
     for brote in listaBrotes:
-        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index'.format(brote['geohash'][0:4])).values()
+        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE n.location starts with "{}" RETURN x.location, r.index'.format(brote['geohash'][0:4])).values()
        
         geo4SPList = {}
         for r in response:
