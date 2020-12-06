@@ -1,20 +1,20 @@
 
 class transferBrote:
 
-    def __init__(self,oieid,disease_id,serotype,report_date,end_date,urlFR,country,city,cases,epiunit, long, lat, geohash):
-        self._oieid = oieid
-        self._disease_id = disease_id
-        self._serotype = serotype
-        self._report_date = report_date
-        self._end_date = end_date
-        self._urlFR = urlFR
-        self._country = country
-        self._city = city
-        self._cases = cases
-        self._epiunit = epiunit
-        self._long = long
-        self._lat = lat
-        self._geohash = geohash
+    def __init__(self,data = {}):
+        self._oieid = data['oieid']
+        self._disease_id = data['disease_id']
+        self._serotype = data['serotype']
+        self._report_date = data['report_date']
+        self._end = data['end']
+        self._urlFR = data['urlFR']
+        self._country = data['country']
+        self._city = data['city']
+        self._cases = data['cases']
+        self._epiunit = data['epiunit']
+        self._long = data['long']
+        self._lat = data['lat']
+        self._geohash = data['geohash']
 
     def get_oieid(self):
         return self._oieid
@@ -41,10 +41,10 @@ class transferBrote:
     def set_report_date(self, arg):
         self._report_date = arg
 
-    def get_end_date(self):
-        return self._end_date
-    def set_end_date(self, arg):
-        self._end_date = arg
+    def get_end(self):
+        return self._end
+    def set_end(self, arg):
+        self._end = arg
 
     def get_country(self):
         return self._country

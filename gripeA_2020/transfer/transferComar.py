@@ -1,17 +1,17 @@
 
 class transferComar:
 
-    def __init__(self,comarca_sg,com_sgsa_n,long,lat,cpro,provincia,cproymun,geohash,izqS,derI):
-        self._comarca_sg = comarca_sg
-        self._com_sgsa_n = com_sgsa_n
-        self._long = long
-        self._lat = lat
-        self._cpro = cpro
-        self._provincia = provincia
-        self._cproymun = cproymun
-        self._geohash = geohash
-        self._izqS = izqS
-        self._derI = derI
+    def __init__(self,data = {}):
+        self._comarca_sg = data['comarca_sg']
+        self._com_sgsa_n = data['com_sgsa_n']
+        self._Longitud = data['Longitud']
+        self._Latitud = data['Latitud']
+        self._CPRO = data['CPRO']
+        self._provincia = data['provincia']
+        self._CPROyMUN = data['CPROyMUN']
+        self._geohash = data['geohash']
+        self._izqS = data['izqS']
+        self._derI = data['derI']
 
     def get_comarca_sg(self):
         return self._comarca_sg
@@ -23,30 +23,30 @@ class transferComar:
     def set_com_sgsa_n(self, arg):
         self._com_sgsa_n = arg
 
-    def get_long(self):
-        return self._long
-    def set_long(self, arg):
-        self._long = arg
+    def get_Longitud(self):
+        return self._Longitud
+    def set_Longitud(self, arg):
+        self._Longitud = arg
 
-    def get_cpro(self):
-        return self._cpro
-    def set_cpro(self, arg):
-        self._cpro = arg
+    def get_CPRO(self):
+        return self._CPRO
+    def set_CPRO(self, arg):
+        self._CPRO = arg
 
-    def get_lat(self):
-        return self._lat
-    def set_lat(self, arg):
-        self._lat = arg
+    def get_Latitud(self):
+        return self._Latitud
+    def set_Latitud(self, arg):
+        self._Latitud = arg
 
     def get_provincia(self):
         return self._provincia
     def set_provincia(self, arg):
         self._provincia = arg
 
-    def get_cproymun(self):
-        return self._cproymun
-    def set_cproymun(self, arg):
-        self._cproymun = arg
+    def get_CPROyMUN(self):
+        return self._CPROyMUN
+    def set_CPROyMUN(self, arg):
+        self._CPROyMUN = arg
 
     def get_geohash(self):
         return self._geohash

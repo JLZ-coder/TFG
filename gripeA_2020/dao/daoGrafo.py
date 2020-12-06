@@ -1,13 +1,11 @@
-import neo4j
-from neo4j import GraphDatabase
-from daoNeo4j import daoNeo4j
+from dao.daoNeo4j import daoNeo4j
 
 class daoGrafo(daoNeo4j):
 
     def __init__(self):
         super()
 
-    def find(self, match = "", where = "", ret = ""):
+    def read(self, match = "", where = "", ret = ""):
         m = " MATCH " + match
         w = " WHERE " + where
         r = " RETURN " + ret
@@ -21,9 +19,16 @@ class daoGrafo(daoNeo4j):
 
         query = m + w + r
 
-        return self._session.run(query)
+        response = self._session.run(query)
 
-    def insert(self, create):
+        ret = []
+
+        for r in response:
+            ret.append([r[0], r[1]])
+
+        return ret
+
+    def create(self, create):
         crea = "CREATE "
         query = crea + create
 
