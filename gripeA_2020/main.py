@@ -32,7 +32,7 @@ driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
 # Saca geohash de 3 digitos que caen en espana
 def geohashEsp():
-    cursor = com.find({})
+    cursor = 
     geoESP = set()
     geoComar = {}
 
