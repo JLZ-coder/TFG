@@ -33,6 +33,11 @@ def brotes():
     }
     #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
     i = 1
+
+    today = date.today()
+    fecha = datetime.now() + timedelta(days = -today.weekday())
+    comiezo = fecha - timedelta(days = 90)
+
     for it in cursor:
 
         if (it['end'].timestamp() >= (datetime.now() - timedelta(days = 90)).timestamp() ):

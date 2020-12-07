@@ -56,12 +56,12 @@ def migraHaciaEsp(geoESP):
 
     startPoints = dict()
     for geo in geoESP:
-        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index'.format(geo)).values()
+        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index, x.location'.format(geo)).values()
         for r in response:
             if r[0][0:4] not in startPoints:
-                startPoints[r[0][0:4]] = [r[1]]
+                startPoints[r[0][0:4]] = [ {"migra" : r[1], "geoEsp" : r[2][0:4]} ]
             else:
-                startPoints[r[0][0:4]].append(r[1])
+                startPoints[r[0][0:4]].append({"migra" : r[1], "geoEsp" : r[2][0:4]})
 
     return startPoints
 
@@ -115,7 +115,7 @@ def genera_Brotes(startPoints):
     geojson = {}
     brotes_col = {}
     for geo in startPoints.keys():
-        cursor = daoBrotes.find({
+        cursor = outbreaks.find({
             "geohash": {
                 "$regex": '{}.*'.format(geo)
             }
@@ -253,61 +253,64 @@ def genera_alertas(brotes, brotes_col):
 
     return feat_col_com, feat_col_migra
 
+
+
+
 def modelo(last_N_days, startPoints, geoESP):
     alertaComarcasGeo={}
     tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
 
     fecha = datetime.utcnow() - timedelta(days=last_N_days)
-    
+
     listaBrotes = outbreaks.find({})
-        
+
     for brote in listaBrotes:
         response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE n.location starts with "{}" RETURN x.location, r.index'.format(brote['geohash'][0:4])).values()
-       
+
         geo4SPList = {}
         for r in response:
             if r[0] in startPoints:
                 geo4SPList[r[0]] = startPoints[r[0]]
             else:
                 print(r[0])
-                
+
         for nodoGeo4 in geo4SPList:
-           
+
             listaComarcasAfectadas = tablaGeoComarca[nodoGeo4]
-            for comarcaAfectada in listaComarcasAfectadas:   
-                comarca = list(comarcaAfectada.keys())[0]      
-                peso = list(comarcaAfectada.values())[0] 
+            for comarcaAfectada in listaComarcasAfectadas:
+                comarca = list(comarcaAfectada.keys())[0]
+                peso = list(comarcaAfectada.values())[0]
                 if comarca not in alertaComarcasGeo:
                     alertaComarcasGeo[comarca] = [brote['geohash'][0:4], peso, nodoGeo4]
                 else:
                     alertaComarcasGeo[comarca].append([brote['geohash'][0:4], peso, nodoGeo4])
 
-        
-        
 
     alertaComarcasGeo
-    
 
 def main(argv):
     
     geoESP, geoComar = geohashEsp()
     startPoints = migraHaciaEsp(geoESP)
-    modelo(120, startPoints, geoESP)
 
-    brotes, brotes_col, brot = genera_Brotes(startPoints)
-    alertas, migras = genera_alertas(brotes, brotes_col)
+    # brotes, brotes_col, brot = genera_Brotes(startPoints)
+    # alertas, migras = genera_alertas(brotes, brotes_col)
+
+    
+
+    modelo(90, startPoints, geoESP)
 
     driver.close()
 
-    text_file = open("brotes.txt", "w")
-    n = text_file.write(json.dumps(brot))
-    text_file.close()
-    text_file = open("migras.txt", "w")
-    n = text_file.write(json.dumps(migras))
-    text_file.close()
-    text_file = open("alertas.txt", "w")
-    n = text_file.write(json.dumps(alertas))
-    text_file.close()
+    # text_file = open("brotes.txt", "w")
+    # n = text_file.write(json.dumps(brot))
+    # text_file.close()
+    # text_file = open("migras.txt", "w")
+    # n = text_file.write(json.dumps(migras))
+    # text_file.close()
+    # text_file = open("alertas.txt", "w")
+    # n = text_file.write(json.dumps(alertas))
+    # text_file.close()
 
 
 
