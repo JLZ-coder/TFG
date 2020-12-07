@@ -87,6 +87,7 @@ def overlapPropLong(geoboxLong, comarboxLong):
     else:
         return 0
 
+# eqwr : [ {sp12300 : 0.4}, ... ]
 def geo_comarcas(geo, n, max_n, digits, comar):
     if len(geo) == max_n:
         lat, long, lat_err, long_err = geohash.decode_exactly(geo)
@@ -106,7 +107,7 @@ def geo_comarcas(geo, n, max_n, digits, comar):
                 area = base * altura
                 areaGeo = (long_range[1] - long_range[0]) * (lat_range[1] - lat_range[0])
                 peso = area / areaGeo
-                collect[geo].append({it : peso})
+                collect[geo].append({"cod_comarca" : it, "peso" : peso})
 
         return collect
     else:
@@ -117,19 +118,19 @@ def geo_comarcas(geo, n, max_n, digits, comar):
 
         return collect
 
-# eqwr : [ {sp12300 : 0.4}, ... ]
+# sp12300 : [ {ezqr : 0.4}, ... ]
 def comarcas_geo(tablaGeoComarca, comar):
     tablaComarcaGeo = {}
 
     for i in tablaGeoComarca.keys():
         for j in tablaGeoComarca[i]:
-            cod_comar = list(j.keys())
-            peso = list(j.values())
+            cod_comar = j['cod_comarca']
+            peso = j['peso']
 
-            if cod_comar[0] in tablaComarcaGeo:
-                tablaComarcaGeo[cod_comar[0]].append({i : peso[0]})
+            if cod_comar in tablaComarcaGeo:
+                tablaComarcaGeo[cod_comar].append({"geohash" : i, "peso" : peso})
             else:
-                tablaComarcaGeo[cod_comar[0]] = [{i : peso[0]}]
+                tablaComarcaGeo[cod_comar] = [{"geohash" : i, "peso" : peso}]
 
 
     return tablaComarcaGeo
@@ -143,7 +144,7 @@ def generaTablas():
     return tablaGeoComarca, tablaComarcaGeo
 
 def main(argv):
- 
+
     tablaGeoComarca, tablaComarcaGeo = generaTablas()
     text_file = open("tablaGeoComarca.txt", "w")
     n = text_file.write(json.dumps(tablaGeoComarca))

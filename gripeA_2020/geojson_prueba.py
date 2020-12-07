@@ -35,7 +35,7 @@ def brotes():
     i = 1
 
     today = date.today()
-    fecha = datetime.now() + timedelta(days = -today.weekday())
+    fecha = datetime.now() + timedelta(days = -today.weekday(), weeks=-1)
     comiezo = fecha - timedelta(days = 90)
 
     for it in cursor:

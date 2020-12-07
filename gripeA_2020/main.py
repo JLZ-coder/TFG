@@ -7,7 +7,7 @@ import json
 import pymongo
 from pymongo import MongoClient
 import pygeohash as geohash
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 import math
 from neo4j import GraphDatabase
 import random
@@ -55,8 +55,9 @@ def geohashEsp():
 def migraHaciaEsp(geoESP): 
 
     startPoints = dict()
+
     for geo in geoESP:
-        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index, x.location'.format(geo)).values()
+        response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index, x.location'.format(geo)).values()
         for r in response:
             if r[0][0:4] not in startPoints:
                 startPoints[r[0][0:4]] = [ {"migra" : r[1], "geoEsp" : r[2][0:4]} ]
@@ -256,37 +257,84 @@ def genera_alertas(brotes, brotes_col):
 
 
 
-def modelo(last_N_days, startPoints, geoESP):
+# def modelo(last_N_days, startPoints, geoESP):
+#     alertaComarcasGeo={}
+#     tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
+
+#     today = date.today()
+#     fecha = datetime.now() + timedelta(days = -today.weekday())
+#     mas_antiguo = fecha - timedelta(days = last_N_days)
+
+
+#     listaBrotes = outbreaks.find({"report_date" : {"$gte" : mas_antiguo}})
+
+#     for brote in listaBrotes:
+#         response = driver.session().run('MATCH (n)-[r]-(x:Region) WHERE n.location starts with "{}" RETURN x.location, r.index'.format(brote['geohash'][0:4])).values()
+
+#         # geo4SPList = {}
+#         # for r in response:
+#         #     if r[0] in startPoints:
+#         #         geo4SPList[r[0]] = startPoints[r[0]]
+#         #     else:
+#         #         print(r[0])
+
+#         # for nodoGeo4 in geo4SPList:
+
+#         #     listaComarcasAfectadas = tablaGeoComarca[nodoGeo4]
+#         #     for comarcaAfectada in listaComarcasAfectadas:
+#         #         comarca = list(comarcaAfectada.keys())[0]
+#         #         peso = list(comarcaAfectada.values())[0]
+#         #         if comarca not in alertaComarcasGeo:
+#         #             alertaComarcasGeo[comarca] = [brote['geohash'][0:4], peso, nodoGeo4]
+#         #         else:
+#         #             alertaComarcasGeo[comarca].append([brote['geohash'][0:4], peso, nodoGeo4])
+
+def modelo(last_N_days, startPoints, geoEsp):
     alertaComarcasGeo={}
     tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
 
-    fecha = datetime.utcnow() - timedelta(days=last_N_days)
+    today = date.today()
+    fecha = datetime.now() + timedelta(days = -today.weekday())
+    mas_antiguo = fecha - timedelta(days = last_N_days)
 
-    listaBrotes = outbreaks.find({})
+    # listaBrotesNdias = outbreaks.find({"report_date" : {"$gte" : mas_antiguo}})
+    listaBrotesNdias = outbreaks.find({})
 
-    for brote in listaBrotes:
-        response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE n.location starts with "{}" RETURN x.location, r.index'.format(brote['geohash'][0:4])).values()
+    listaBrotesEsp = startPoints.keys()
 
-        geo4SPList = {}
-        for r in response:
-            if r[0] in startPoints:
-                geo4SPList[r[0]] = startPoints[r[0]]
-            else:
-                print(r[0])
+    for brote in listaBrotesNdias:
+        if (brote['geohash'][0:4] in listaBrotesEsp):
+            for geocomarca in startPoints[brote['geohash'][0:4]]:
+                if geocomarca['geoEsp'] in tablaGeoComarca:
+                    for comarca in tablaGeoComarca[ geocomarca['geoEsp'] ]:
+                        if comarca['cod_comarca'] not in alertaComarcasGeo:
+                            alertaComarcasGeo[ comarca['cod_comarca'] ] = [ {"oieid" : brote['oieid'], "peso" : comarca['peso']} ]
+                        else:
+                            alertaComarcasGeo[ comarca['cod_comarca'] ].append({"oieid" : brote['oieid'], "peso" : comarca['peso']})
 
-        for nodoGeo4 in geo4SPList:
+    alertaComarcasGeo_sorted = sorted(alertaComarcasGeo, key=lambda k: len(alertaComarcasGeo[k]), reverse=True)
 
-            listaComarcasAfectadas = tablaGeoComarca[nodoGeo4]
-            for comarcaAfectada in listaComarcasAfectadas:
-                comarca = list(comarcaAfectada.keys())[0]
-                peso = list(comarcaAfectada.values())[0]
-                if comarca not in alertaComarcasGeo:
-                    alertaComarcasGeo[comarca] = [brote['geohash'][0:4], peso, nodoGeo4]
-                else:
-                    alertaComarcasGeo[comarca].append([brote['geohash'][0:4], peso, nodoGeo4])
+    return alertaComarcasGeo_sorted, alertaComarcasGeo
 
 
-    alertaComarcasGeo
+        # geo4SPList = {}
+        # for r in response:
+        #     if r[0] in startPoints:
+        #         geo4SPList[r[0]] = startPoints[r[0]]
+        #     else:
+        #         print(r[0])
+
+        # for nodoGeo4 in geo4SPList:
+
+        #     listaComarcasAfectadas = tablaGeoComarca[nodoGeo4]
+        #     for comarcaAfectada in listaComarcasAfectadas:
+        #         comarca = list(comarcaAfectada.keys())[0]
+        #         peso = list(comarcaAfectada.values())[0]
+        #         if comarca not in alertaComarcasGeo:
+        #             alertaComarcasGeo[comarca] = [brote['geohash'][0:4], peso, nodoGeo4]
+        #         else:
+        #             alertaComarcasGeo[comarca].append([brote['geohash'][0:4], peso, nodoGeo4])
+
 
 def main(argv):
     
@@ -298,7 +346,39 @@ def main(argv):
 
     
 
-    modelo(90, startPoints, geoESP)
+    alertaComarcas_sorted, alertaComarcasGeo = modelo(90, startPoints, geoESP)
+
+    for alerta in alertaComarcas_sorted:
+        feat_com = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+            },
+            "properties": {
+                "id": it['CPROyMUN'],
+                "riskLevel": 0,
+                "number_of_cases": random.randint(0, 100),
+                "startDate": random.randint(1572890531000, 1604512931000),
+                "endDate": 1704512931000,
+                "codeSpecies": 1840,
+                "species": "Anas crecca",
+                "commonName": "Pato cuchara",
+                "fluSubtype": "H5",
+                "comarca_sg": it['comarca_sg'],
+                "comarca": it['com_sgsa_n'],
+                "CMUN": it['CPROyMUN'][-2:],
+                "municipality": "Vitoria-Gasteiz",
+                "CPRO": it['CPROyMUN'][:2],
+                "province": it['provincia'],
+                "CODAUTO": it['CODAUTO'],
+                "CA": it['comAutonoma'],
+                "CPROyMUN": it['CPROyMUN']
+            }
+        }
+
+
+    
 
     driver.close()
 
