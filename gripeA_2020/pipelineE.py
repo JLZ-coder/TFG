@@ -255,7 +255,7 @@ def genera_alertas(brotes, brotes_col):
 
 def modelo(last_N_days, startPoints, geoESP):
     alertaComarcasGeo={}
-    tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
+    tablaGeoComarca = json.load(open("tabalaGeoComarca.txt",  encoding='latin-1'))
 
     fecha = datetime.utcnow() - timedelta(days=last_N_days)
     
