@@ -15,5 +15,5 @@ class daoNeo4j:
         return cls._instance
 
     def close(self):
-        self._instance = None
         self._driver.close()
+        self._instance = None

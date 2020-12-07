@@ -1,8 +1,3 @@
-from dao.daoBrotes import daoBrotes
-from dao.daoComar import daoComar
-from dao.daoMigras import daoMigras
-from dao.daoGrafo import daoGrafo
-
 import requests
 import re
 # este sys me suobra mucho y habrá que quitarlo
@@ -18,8 +13,17 @@ from neo4j import GraphDatabase
 import random
 import string
 
+#from dao.daoBrotes import daoBrotes
+#from dao.daoComar import daoComar
+
+
 
 # GLOBALS
+client = MongoClient('mongodb://localhost:27017/')
+db = client.lv
+outbreaks = db.outbreaks
+migrations = db.migrations
+com = db.comarcas
 diseases = {
     '15' : "Highly Path Avian influenza",
     '201' : "Low Path Avian influenza",
@@ -32,7 +36,7 @@ driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
 # Saca geohash de 3 digitos que caen en espana
 def geohashEsp():
-    cursor = 
+    cursor = com.find({})
     geoESP = set()
     geoComar = {}
 

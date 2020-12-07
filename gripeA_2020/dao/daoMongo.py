@@ -15,5 +15,5 @@ class daoMongo:
         return cls._instance
 
     def close(self):
-        self._instance = None
         self._client.close()
+        self._instance = None
