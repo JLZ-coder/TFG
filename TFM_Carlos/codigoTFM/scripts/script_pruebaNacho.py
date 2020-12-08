@@ -145,7 +145,13 @@ def main(argv):
 		counter = 0
 		for year in range(start_year, finish_year+1):
 			#r = requests.post(url, data = {'year':year, 'disease_type_hidden':1, 'disease_id_hidden':disease_id})
-			payload = {'year':year, 'disease_type':0, 'disease_id_terrestrial':15, 'disease_type_hidden':0, 'disease_id_hidden':15,'selected_disease_name_hidden':'h', 'disease_id_aquatic':-999}
+			payload = {'year':year, 
+			'disease_type':0, 
+			'disease_id_terrestrial':15, 
+			'disease_type_hidden':0, 
+			'disease_id_hidden':15,
+			'selected_disease_name_hidden':'h', 
+			'disease_id_aquatic':-999}
 			#payload = {'year':year, 'disease_type':0, 'disease_id_terrestrial':15, 'disease_type_hidden':'null', 'disease_id_hidden':'null','selected_disease_name_hidden':'null', 'disease_id_aquatic':-999}
 			#headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 			#r = requests.post(url, data=json.dumps(payload), headers=headers)

@@ -55,9 +55,14 @@ def get_ob_page(cty, id, lista, disease, year, fr):
     ob, anlist = extract_data(r.content.decode('latin1'))
 # extrae los detalles en la pagina de 'url', ob
 
-    if ob[2] != "" and ob[0] != "" and ob[8] != "" and ob[9] != "":
-        end = datetime.strptime(ob[2], "%d/%m/%Y")
-        start = datetime.strptime(ob[0], "%d/%m/%Y")
+    if  ob[8] != "" and ob[9] != "":
+        end = ""
+        start = ""
+        if ob[2] != "":
+            end = datetime.strptime(ob[2], "%d/%m/%Y")
+        if ob[0] != "":
+            start = datetime.strptime(ob[0], "%d/%m/%Y")
+
         if fr['reportDate'] != "":
             reportDate = datetime.strptime(fr['reportDate'], "%d/%m/%Y")
         else:
@@ -107,7 +112,6 @@ def get_ob_page(cty, id, lista, disease, year, fr):
             outbreak["preventive_killed"] = "0"
 
         print("Metiendo caso {}".format(id))
-        outbreaks.delete_one({'oieid': id})
         outbreaks.insert_one(outbreak)
 
 #
@@ -234,7 +238,7 @@ def main(argv):
             stat, code, id = obs
             print("\nOutbreak {} of {}".format(counter, len(oblist)))
             if(code in european_countries):
-                print("Getting Continuing Outbreak {} in {}".format(id, code))
+                print("Getting Outbreak {} in {}".format(id, code))
                 get_cty_obs(code, id, disease, year)
             counter += 1
 

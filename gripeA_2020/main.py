@@ -297,8 +297,8 @@ def modelo(last_N_days, startPoints, geoEsp):
     fecha = datetime.now() + timedelta(days = -today.weekday())
     mas_antiguo = fecha - timedelta(days = last_N_days)
 
-    # listaBrotesNdias = outbreaks.find({"report_date" : {"$gte" : mas_antiguo}})
-    listaBrotesNdias = outbreaks.find({})
+    listaBrotesNdias = outbreaks.find({"report_date" : {"$gte" : mas_antiguo}})
+    # listaBrotesNdias = outbreaks.find({})
 
     listaBrotesEsp = startPoints.keys()
 
