@@ -4,8 +4,10 @@ from pymongo import MongoClient
 import json
 import pygeohash as geohash
 import geojsonComarcas
-#Leemos los dos archivos
 
+# Mete las comarcas en mongodb
+
+#Leemos los dos archivos
 file = "Comarcas_ganaderas.xlsx"
 df = pd.read_excel(file)
 

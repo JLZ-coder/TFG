@@ -4,6 +4,9 @@ from pymongo import MongoClient
 import json
 import pygeohash as geohash
 
+# Metemos las migraciones en mongo si son de las especies que queremos
+
+#Ficheros necesarios
 file = "mov_acuaticas ult 10 años.xlsx"
 file1 = "Especies.xlsx"
 

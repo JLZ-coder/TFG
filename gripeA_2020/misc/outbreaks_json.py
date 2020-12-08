@@ -10,7 +10,7 @@ import pygeohash as geohash
 from datetime import datetime
 import math
 
-# Realiza el scraping de la web de wahis para recoger los brotes
+# Crea los json de todos los brotes de mongo
 
 # GLOBALS
 client = MongoClient('mongodb://localhost:27017/')

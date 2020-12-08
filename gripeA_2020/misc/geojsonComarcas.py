@@ -3,6 +3,8 @@ import os
 import pymongo
 from pymongo import MongoClient
 
+# Para cada comarca calcula los cuatro puntos que forman su bounding box
+
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 comarca = db.comarcas

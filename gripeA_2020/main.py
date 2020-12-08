@@ -317,25 +317,6 @@ def modelo(last_N_days, startPoints, geoEsp):
     return alertaComarcasGeo_sorted, alertaComarcasGeo
 
 
-        # geo4SPList = {}
-        # for r in response:
-        #     if r[0] in startPoints:
-        #         geo4SPList[r[0]] = startPoints[r[0]]
-        #     else:
-        #         print(r[0])
-
-        # for nodoGeo4 in geo4SPList:
-
-        #     listaComarcasAfectadas = tablaGeoComarca[nodoGeo4]
-        #     for comarcaAfectada in listaComarcasAfectadas:
-        #         comarca = list(comarcaAfectada.keys())[0]
-        #         peso = list(comarcaAfectada.values())[0]
-        #         if comarca not in alertaComarcasGeo:
-        #             alertaComarcasGeo[comarca] = [brote['geohash'][0:4], peso, nodoGeo4]
-        #         else:
-        #             alertaComarcasGeo[comarca].append([brote['geohash'][0:4], peso, nodoGeo4])
-
-
 def main(argv):
     
     geoESP, geoComar = geohashEsp()
@@ -344,38 +325,8 @@ def main(argv):
     # brotes, brotes_col, brot = genera_Brotes(startPoints)
     # alertas, migras = genera_alertas(brotes, brotes_col)
 
-    
 
     alertaComarcas_sorted, alertaComarcasGeo = modelo(90, startPoints, geoESP)
-
-    for alerta in alertaComarcas_sorted:
-        feat_com = {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-            },
-            "properties": {
-                "id": it['CPROyMUN'],
-                "riskLevel": 0,
-                "number_of_cases": random.randint(0, 100),
-                "startDate": random.randint(1572890531000, 1604512931000),
-                "endDate": 1704512931000,
-                "codeSpecies": 1840,
-                "species": "Anas crecca",
-                "commonName": "Pato cuchara",
-                "fluSubtype": "H5",
-                "comarca_sg": it['comarca_sg'],
-                "comarca": it['com_sgsa_n'],
-                "CMUN": it['CPROyMUN'][-2:],
-                "municipality": "Vitoria-Gasteiz",
-                "CPRO": it['CPROyMUN'][:2],
-                "province": it['provincia'],
-                "CODAUTO": it['CODAUTO'],
-                "CA": it['comAutonoma'],
-                "CPROyMUN": it['CPROyMUN']
-            }
-        }
 
 
     

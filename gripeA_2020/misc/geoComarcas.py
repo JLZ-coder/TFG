@@ -4,6 +4,9 @@ import pygeohash as geohash
 import sys
 import json
 
+# Realiza las tablas geoComarca (Lista de todos los geohashes de españa junto con sus comarcas) y comarcaGeo (todas las comarcas junto con sus
+# geohash)
+
 client = MongoClient('mongodb://localhost:27017/')
 db = client.lv
 comarcas = db.comarcas
