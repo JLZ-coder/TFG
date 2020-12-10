@@ -293,7 +293,7 @@ def genera_alertas(brotes, brotes_col):
 # El 20% con más brotes asociados, lo ponemos en nivel 5, el 20% siguiente en nivel 4.... y así hasta nivel 1.
 def calcularRiesgo(alertaComarcasGeo_sorted):
 
-    riesgoCG = {"5":[], "4": [], "3": [], "2": [], "1": []} #Pares (Nivel de riesgo, IdComarcas)
+    riesgoCG = {} #Pares (Nivel de riesgo, IdComarcas)
     i = 0
     #Limites
     nivel5= len(alertaComarcasGeo_sorted) * 0.2 
@@ -304,15 +304,15 @@ def calcularRiesgo(alertaComarcasGeo_sorted):
     for comarca in alertaComarcasGeo_sorted:
 
         if i < nivel5:
-            riesgoCG["5"].append(comarca)
+            riesgoCG[comarca] = "5"
         elif i >= nivel5 and i < nivel4:
-            riesgoCG["4"].append(comarca)
+            riesgoCG[comarca] = "4"
         elif i >= nivel4 and i < nivel3:
-            riesgoCG["3"].append(comarca)
+            riesgoCG[comarca] = "3"
         elif i >= nivel3 and i < nivel2:
-            riesgoCG["2"].append(comarca)
+            riesgoCG[comarca] = "2"
         elif i >= nivel2 and i < nivel1:
-            riesgoCG["1"].append(comarca)
+            riesgoCG[comarca] = "1"
 
         i+=1
 
