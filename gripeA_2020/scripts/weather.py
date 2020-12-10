@@ -46,8 +46,7 @@ response = requests.request("GET", json_response['datos'], headers=headers)
 
 json_response = response.json()
 
-print(json_response).pretty()
-       
+print(json_response)
         
 
 
