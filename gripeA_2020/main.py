@@ -57,8 +57,10 @@ def migraHaciaEsp(geoESP):
     startPoints = dict()
 
     for geo in geoESP:
-        response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index, x.location'.format(geo)).values()
+        response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index, x.location, r'.format(geo)).values()
         for r in response:
+            print(r[3].type)
+            especie = r[3].type.split("MIGRA")
             if r[0][0:4] not in startPoints:
                 startPoints[r[0][0:4]] = [ {"migra" : r[1], "geoEsp" : r[2][0:4]} ]
             else:
@@ -158,105 +160,6 @@ def genera_Brotes(startPoints):
 
 
 
-
-
-def genera_alertas(brotes, brotes_col):
-    feat_col_com = {
-        "type": "FeatureCollection",
-        "features": []
-    }
-    feat_col_migra = {
-        "type": "FeatureCollection",
-        "features": []
-    }
-
-    for brote in brotes:
-        for migra in brotes[brote]:
-            response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE r.index = {} RETURN x.location'.format(migra)).value()
-            lat, long, lat_err, long_err = geohash.decode_exactly(response[0])
-            if lat - lat_err < lat + lat_err:
-                lat_range = (lat - lat_err, lat + lat_err)
-            else:
-                lat_range = (lat + lat_err, lat - lat_err)
-
-            if long - long_err < long + long_err:
-                long_range =  (long - long_err, long + long_err)
-            else:
-                long_range =  (long + long_err, long - long_err)
-
-            cursor = com.find({})
-            for it in cursor:
-                if it['izqI'][1] < it['izqS'][1]:
-                    lat_range_mongo = (it['izqI'][1], it['izqS'][1])
-                else:
-                    lat_range_mongo = (it['izqS'][1], it['izqI'][1])
-
-                if it['izqI'][0] < it['derI'][0]:
-                    long_range_mongo =  (it['izqI'][0], it['derI'][0])
-                else:
-                    long_range_mongo =  (it['derI'][0], it['izqI'][0])
-
-                if (
-                        (lat_range[0] < it['izqS'][1] and it['izqS'][1] < lat_range[1])
-                        or
-                        (lat_range[0] < it['izqI'][1] and it['izqI'][1] < lat_range[1])
-                        or
-                        (lat_range_mongo[0] < lat_range[0] and lat_range[0] < lat_range_mongo[1])
-                    ) and (
-                        (long_range[0] < it['izqI'][0] and it['izqI'][0] < long_range[1])
-                        or
-                        (long_range[0] < it['derI'][0] and it['derI'][0] < long_range[1])
-                        or
-                        (long_range_mongo[0] < long_range[0] and long_range[0] < long_range_mongo[1])
-                    ):
-                    feat_com = {
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-                        },
-                        "properties": {
-                            "id": it['CPROyMUN'],
-                            "riskLevel": 0,
-                            "number_of_cases": random.randint(0, 100),
-                            "startDate": random.randint(1572890531000, 1604512931000),
-                            "endDate": 1704512931000,
-                            "codeSpecies": 1840,
-                            "species": "Anas crecca",
-                            "commonName": "Pato cuchara",
-                            "fluSubtype": "H5",
-                            "comarca_sg": it['comarca_sg'],
-                            "comarca": it['com_sgsa_n'],
-                            "CMUN": it['CPROyMUN'][-2:],
-                            "municipality": "Vitoria-Gasteiz",
-                            "CPRO": it['CPROyMUN'][:2],
-                            "province": it['provincia'],
-                            "CODAUTO": it['CODAUTO'],
-                            "CA": it['comAutonoma'],
-                            "CPROyMUN": it['CPROyMUN']
-                        }
-                    }
-                    feat_col_com["features"].append(feat_com)
-
-                    for b in brotes_col[brote]:
-                        feat_migra = {
-                            "type": "Feature",
-                            "geometry": {
-                                "type": "LineString",
-                                "coordinates": [ [float(it['Longitud']), float(it['Latitud'])], [b['geometry']['coordinates'][0], b['geometry']['coordinates'][1]] ]
-                            },
-                            "properties": {
-                                "idBrote": b['properties']['id'],
-                                "idAlerta": it['CPROyMUN']
-                            }
-                        }
-                        feat_col_migra["features"].append(feat_migra)
-
-    return feat_col_com, feat_col_migra
-
-
-
-
 # def modelo(last_N_days, startPoints, geoESP):
 #     alertaComarcasGeo={}
 #     tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
@@ -293,7 +196,7 @@ def genera_alertas(brotes, brotes_col):
 # El 20% con más brotes asociados, lo ponemos en nivel 5, el 20% siguiente en nivel 4.... y así hasta nivel 1.
 def calcularRiesgo(alertaComarcasGeo_sorted):
 
-    riesgoCG = {} #Pares (Nivel de riesgo, IdComarcas)
+    riesgoCG = {} #Pares (IdComarca, nivelRiesgo)
     i = 0
     #Limites
     nivel5= len(alertaComarcasGeo_sorted) * 0.2 
@@ -318,10 +221,7 @@ def calcularRiesgo(alertaComarcasGeo_sorted):
 
     return riesgoCG
 
-   
-
-
-
+#Relacionamos los brotes con las comarcas
 def modelo(last_N_days, startPoints, geoEsp):
     alertaComarcasGeo={}
     tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
@@ -348,8 +248,58 @@ def modelo(last_N_days, startPoints, geoEsp):
     alertaComarcasGeo_sorted = sorted(alertaComarcasGeo, key=lambda k: len(alertaComarcasGeo[k]), reverse=True)
 
     alertaComarcaRiesgo = calcularRiesgo(alertaComarcasGeo_sorted)
-    return alertaComarcasGeo_sorted, alertaComarcasGeo
+    #return alertaComarcasGeo_sorted, alertaComarcasGeo
 
+    return alertaComarcaRiesgo, alertaComarcasGeo
+
+def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
+    feat_col_alertas = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+
+    fet_col_migra = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+
+    cursor = com.find({})
+
+    for it in cursor:
+        if it['comarca_sg'] in alertaComarcaRiesgo:
+            brote = list(outbreaks.find({"oieid": alertaComarcasGeo[it['comarca_sg']][0]['oieid']}))
+            print(brote)
+            feat_com={
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+                },
+                "properties": {
+                    "id": it['comarca_sg'],
+                    "riskLevel": alertaComarcaRiesgo[it['comarca_sg']],
+                    "number_of_cases": "",
+                    "reportDate": brote[0]['report_date'].timestamp()*1000,
+                    "startDate": brote[0]['start'].timestamp()*1000,
+                    "endDate": brote[0]['end'].timestamp()*1000,
+                    "codeSpecies": 1840,
+                    "species": brote[0]['species'],
+                    "commonName": "Pato cuchara",
+                    "fluSubtype": brote[0]['serotype'],
+                    #"comarca_sg": it['comarca_sg'],
+                    "comarca": it['com_sgsa_n'],
+                    #"CMUN": it['CPROyMUN'][-2:],
+                    #"municipality": "Vitoria-Gasteiz",
+                    "CPRO": it['CPRO'],
+                    #"province": it['provincia'],
+                    #"CODAUTO": it['CODAUTO'],
+                    #"CA": it['comAutonoma'],
+                    "CPROyMUN": it['CPROyMUN']   
+                }
+            }
+        
+
+   
 def genera_alertas(brotes, brotes_col):
     feat_col_com = {
         "type": "FeatureCollection",
@@ -437,17 +387,13 @@ def genera_alertas(brotes, brotes_col):
                             },
                             "properties": {
                                 "idBrote": b['properties']['id'],
-                                "idAlerta": it['CPROyMUN']
+                                "idAlerta": it['CPROyMUN'],
+                                "idComarca": it['comarca_sg']
                             }
                         }
                         feat_col_migra["features"].append(feat_migra)
 
     return feat_col_com, feat_col_migra
-#def calcularRiesgo(comarca):
-
-
-
-
 
 
 def main(argv):
@@ -455,12 +401,15 @@ def main(argv):
     geoESP, geoComar = geohashEsp()
     startPoints = migraHaciaEsp(geoESP)
 
-    # brotes, brotes_col, brot = genera_Brotes(startPoints)
+    #brotes, brotes_col, brot = genera_Brotes(startPoints)
     # alertas, migras = genera_alertas(brotes, brotes_col)
 
+    #comarcaRiesgo -> lista de las comarcas que estan en alerta junto a su nivel de riesgo
+    #alertaComarcasGeo -> lista de las comarcas con su brote y migracion asociado
+    comarcaRiesgo, alertaComarcasGeo = modelo(90, startPoints, geoESP)
 
-    alertaComarcas_sorted, alertaComarcasGeo = modelo(90, startPoints, geoESP)
-
+    #Generar Json de las alertas
+    genera_alerta(comarcaRiesgo, alertaComarcasGeo)
 
     
 
