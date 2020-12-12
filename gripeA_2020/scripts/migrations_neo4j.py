@@ -51,7 +51,7 @@ for migration in migration_dict:
 
 	geo, especie, geoR = migration.split("-")
 
-	aux = "({})-[:MIGRA{}{{valor:".format(geo, especie) + "{}}}]->({}),\n".format(migration_dict[migration], geoR)
+	aux = "({})-[:MIGRA{}{{valor:".format(geo, especie) + "{}, especie: {}}}]->({}),\n".format(migration_dict[migration], especie, geoR)
 	migrations_query += aux
 
 migrations_query = "CREATE " + migrations_query[:-2]

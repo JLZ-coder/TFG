@@ -10,8 +10,8 @@ import pygeohash as geohash
 from datetime import datetime, timedelta, date
 import math
 from neo4j import GraphDatabase
-import random
 import string
+import pandas as pd
 
 #from dao.daoBrotes import daoBrotes
 #from dao.daoComar import daoComar
@@ -57,14 +57,12 @@ def migraHaciaEsp(geoESP):
     startPoints = dict()
 
     for geo in geoESP:
-        response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, r.index, x.location, r'.format(geo)).values()
+        response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, x.identity, x.location, r.especie'.format(geo)).values()
         for r in response:
-            print(r[3].type)
-            especie = r[3].type.split("MIGRA")
             if r[0][0:4] not in startPoints:
-                startPoints[r[0][0:4]] = [ {"migra" : r[1], "geoEsp" : r[2][0:4]} ]
+                startPoints[r[0][0:4]] = [{"migra" : r[1], "geoEsp" : r[2][0:4], "especie": r[3]}]
             else:
-                startPoints[r[0][0:4]].append({"migra" : r[1], "geoEsp" : r[2][0:4]})
+                startPoints[r[0][0:4]].append({"migra" : r[1], "geoEsp" : r[2][0:4], "especie": r[3]})
 
     return startPoints
 
@@ -253,6 +251,9 @@ def modelo(last_N_days, startPoints, geoEsp):
     return alertaComarcaRiesgo, alertaComarcasGeo
 
 def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
+
+    
+
     feat_col_alertas = {
         "type": "FeatureCollection",
         "features": []
@@ -276,15 +277,15 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                 },
                 "properties": {
-                    "id": it['comarca_sg'],
+                    "id": it['comarca_sg'], #Será el id de comarca
                     "riskLevel": alertaComarcaRiesgo[it['comarca_sg']],
-                    "number_of_cases": "",
+                    "number_of_cases": brote[0]['affected_population'],
                     "reportDate": brote[0]['report_date'].timestamp()*1000,
                     "startDate": brote[0]['start'].timestamp()*1000,
                     "endDate": brote[0]['end'].timestamp()*1000,
-                    "codeSpecies": 1840,
+                    "codeSpecies": alertaComarcasGeo[it['comarca_sg']][0]['especie'],
                     "species": brote[0]['species'],
-                    "commonName": "Pato cuchara",
+                    "commonName": "",
                     "fluSubtype": brote[0]['serotype'],
                     #"comarca_sg": it['comarca_sg'],
                     "comarca": it['com_sgsa_n'],
@@ -297,7 +298,47 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "CPROyMUN": it['CPROyMUN']   
                 }
             }
-        
+            feat_col_alertas["features"].append(feat_com)
+
+            
+            feat_migra = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [ [float(it['Longitud']), float(it['Latitud'])], [float(brote[0]['long']), float(brote[0]['lat'])] ] #Comarca y brote asociado
+                },
+                "properties": {
+                    "idBrote": brote['oieid'],
+                    "idAlerta": it['comarca_sg'] 
+                }
+            }
+            feat_col_migra["features"].append(feat_migra)
+        else: #En caso de ser una comarca que no tendrá ningun brote asociado. El nivel de riesgo será 0
+            feat_com={
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+                },
+                "properties": {
+                    "id": it['comarca_sg'], #Será el id de comarca
+                    "riskLevel": 0,
+                    #"comarca_sg": it['comarca_sg'],
+                    "comarca": it['com_sgsa_n'],
+                    #"CMUN": it['CPROyMUN'][-2:],
+                    #"municipality": "Vitoria-Gasteiz",
+                    "CPRO": it['CPRO'],
+                    #"province": it['provincia'],
+                    #"CODAUTO": it['CODAUTO'],
+                    #"CA": it['comAutonoma'],
+                    "CPROyMUN": it['CPROyMUN']   
+                }
+            }
+            feat_col_alertas["features"].append(feat_com)
+
+    return feat_col_alertas, feat_col_migra
+
+            
 
    
 def genera_alertas(brotes, brotes_col):

@@ -11,12 +11,12 @@ file = "mov_acuaticas ult 10 años.xlsx"
 file1 = "Especies.xlsx"
 
 df = pd.read_excel(file)
-df1 = pd.read_excel(file1)
+df_especies = pd.read_excel(file1)
 
 #Ahora borramos todos los que tengan 'localidad confidencial'
 df = df[df.Localidad != 'Localidad confidencial']
 df = df[df.LocalidadR != 'Localidad confidencial']
-df1 = df1['codigo anilla'].tolist()
+df1 = df_especies['codigo anilla'].tolist()
 df = df[df.Especie.isin(df1)]
 
 
@@ -61,3 +61,10 @@ records = df.to_dict(orient='records')  # Here's our added param..
 migrations.delete_many({})
 #records = json.loads(df.T.to_bson()).values()
 migrations.insert_many(records)
+
+#Especies
+especie = db.especies
+records = df_especies.to_dict(orient='records')  # Here's our added param..
+especie.delete_many({})
+#records = json.loads(df.T.to_bson()).values()
+especie.insert_many(records)
