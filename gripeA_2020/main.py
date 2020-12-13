@@ -24,6 +24,8 @@ db = client.lv
 outbreaks = db.outbreaks
 migrations = db.migrations
 com = db.comarcas
+especie = db.especies
+
 diseases = {
     '15' : "Highly Path Avian influenza",
     '201' : "Low Path Avian influenza",
@@ -205,15 +207,15 @@ def calcularRiesgo(alertaComarcasGeo_sorted):
     for comarca in alertaComarcasGeo_sorted:
 
         if i < nivel5:
-            riesgoCG[comarca] = "5"
+            riesgoCG[comarca] = 5
         elif i >= nivel5 and i < nivel4:
-            riesgoCG[comarca] = "4"
+            riesgoCG[comarca] = 4
         elif i >= nivel4 and i < nivel3:
-            riesgoCG[comarca] = "3"
+            riesgoCG[comarca] = 3
         elif i >= nivel3 and i < nivel2:
-            riesgoCG[comarca] = "2"
+            riesgoCG[comarca] = 2
         elif i >= nivel2 and i < nivel1:
-            riesgoCG[comarca] = "1"
+            riesgoCG[comarca] = 1
 
         i+=1
 
@@ -239,9 +241,9 @@ def modelo(last_N_days, startPoints, geoEsp):
                 if geocomarca['geoEsp'] in tablaGeoComarca:
                     for comarca in tablaGeoComarca[ geocomarca['geoEsp'] ]:
                         if comarca['cod_comarca'] not in alertaComarcasGeo:
-                            alertaComarcasGeo[ comarca['cod_comarca'] ] = [ {"oieid" : brote['oieid'], "peso" : comarca['peso'], "arista" : geocomarca['migra']} ]
+                            alertaComarcasGeo[ comarca['cod_comarca'] ] = [ {"oieid" : brote['oieid'], "peso" : comarca['peso'], "arista" : geocomarca['migra'], "especie": geocomarca['especie']} ]
                         else:
-                            alertaComarcasGeo[ comarca['cod_comarca'] ].append({"oieid" : brote['oieid'], "peso" : comarca['peso'],"arista" : geocomarca['migra']})
+                            alertaComarcasGeo[ comarca['cod_comarca'] ].append({"oieid" : brote['oieid'], "peso" : comarca['peso'],"arista" : geocomarca['migra'], "especie":geocomarca['especie'] })
 
     alertaComarcasGeo_sorted = sorted(alertaComarcasGeo, key=lambda k: len(alertaComarcasGeo[k]), reverse=True)
 
@@ -252,14 +254,14 @@ def modelo(last_N_days, startPoints, geoEsp):
 
 def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
 
-    
+    #acceder bases de datos especies
 
     feat_col_alertas = {
         "type": "FeatureCollection",
         "features": []
     }
 
-    fet_col_migra = {
+    feat_col_migra = {
         "type": "FeatureCollection",
         "features": []
     }
@@ -269,7 +271,8 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
     for it in cursor:
         if it['comarca_sg'] in alertaComarcaRiesgo:
             brote = list(outbreaks.find({"oieid": alertaComarcasGeo[it['comarca_sg']][0]['oieid']}))
-            print(brote)
+            especieFind = list(especie.find({"codigo anilla": alertaComarcasGeo[it['comarca_sg']][0]['especie']}))
+            print(alertaComarcaRiesgo[it['comarca_sg']])
             feat_com={
                 "type": "Feature",
                 "geometry": {
@@ -285,7 +288,7 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "endDate": brote[0]['end'].timestamp()*1000,
                     "codeSpecies": alertaComarcasGeo[it['comarca_sg']][0]['especie'],
                     "species": brote[0]['species'],
-                    "commonName": "",
+                    "commonName": especieFind[0]['Nombre común'],
                     "fluSubtype": brote[0]['serotype'],
                     #"comarca_sg": it['comarca_sg'],
                     "comarca": it['com_sgsa_n'],
@@ -308,7 +311,7 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "coordinates": [ [float(it['Longitud']), float(it['Latitud'])], [float(brote[0]['long']), float(brote[0]['lat'])] ] #Comarca y brote asociado
                 },
                 "properties": {
-                    "idBrote": brote['oieid'],
+                    "idBrote": brote[0]['oieid'],
                     "idAlerta": it['comarca_sg'] 
                 }
             }
@@ -450,7 +453,7 @@ def main(argv):
     comarcaRiesgo, alertaComarcasGeo = modelo(90, startPoints, geoESP)
 
     #Generar Json de las alertas
-    genera_alerta(comarcaRiesgo, alertaComarcasGeo)
+    alertas, migra = genera_alerta(comarcaRiesgo, alertaComarcasGeo)
 
     
 
@@ -459,12 +462,12 @@ def main(argv):
     # text_file = open("brotes.txt", "w")
     # n = text_file.write(json.dumps(brot))
     # text_file.close()
-    # text_file = open("migras.txt", "w")
-    # n = text_file.write(json.dumps(migras))
-    # text_file.close()
-    # text_file = open("alertas.txt", "w")
-    # n = text_file.write(json.dumps(alertas))
-    # text_file.close()
+    text_file = open("migras.txt", "w")
+    n = text_file.write(json.dumps(migra))
+    text_file.close()
+    text_file = open("alertas.txt", "w")
+    n = text_file.write(json.dumps(alertas))
+    text_file.close()
 
 
 
