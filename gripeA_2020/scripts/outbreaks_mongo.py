@@ -8,6 +8,7 @@ import pymongo
 from pymongo import MongoClient
 import pygeohash as geohash
 from datetime import datetime
+import certifi
 
 # Realiza el scraping de la web de wahis para recoger los brotes
 

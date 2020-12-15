@@ -11,7 +11,6 @@ from datetime import datetime, timedelta, date
 import math
 from neo4j import GraphDatabase
 import string
-import pandas as pd
 
 #from dao.daoBrotes import daoBrotes
 #from dao.daoComar import daoComar
@@ -230,8 +229,8 @@ def modelo(last_N_days, startPoints, geoEsp):
     fecha = datetime.now() + timedelta(days = -today.weekday())
     mas_antiguo = fecha - timedelta(days = last_N_days)
 
-    #listaBrotesNdias = outbreaks.find({"report_date" : {"$gte" : mas_antiguo}})
-    listaBrotesNdias = outbreaks.find({})
+    listaBrotesNdias = outbreaks.find({"report_date" : {"$gte" : mas_antiguo}})
+    # listaBrotesNdias = outbreaks.find({})
 
     listaBrotesEsp = startPoints.keys()
 
@@ -247,10 +246,10 @@ def modelo(last_N_days, startPoints, geoEsp):
 
     alertaComarcasGeo_sorted = sorted(alertaComarcasGeo, key=lambda k: len(alertaComarcasGeo[k]), reverse=True)
 
-    alertaComarcaRiesgo = calcularRiesgo(alertaComarcasGeo_sorted)
-    #return alertaComarcasGeo_sorted, alertaComarcasGeo
+    # alertaComarcaRiesgo = calcularRiesgo(alertaComarcasGeo_sorted)
+    return alertaComarcasGeo_sorted, alertaComarcasGeo
 
-    return alertaComarcaRiesgo, alertaComarcasGeo
+    # return alertaComarcaRiesgo, alertaComarcasGeo
 
 def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
 
@@ -453,7 +452,7 @@ def main(argv):
     comarcaRiesgo, alertaComarcasGeo = modelo(90, startPoints, geoESP)
 
     #Generar Json de las alertas
-    alertas, migra = genera_alerta(comarcaRiesgo, alertaComarcasGeo)
+    # alertas, migra = genera_alerta(comarcaRiesgo, alertaComarcasGeo)
 
     
 
