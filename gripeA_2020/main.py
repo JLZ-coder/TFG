@@ -246,10 +246,10 @@ def modelo(last_N_days, startPoints, geoEsp):
 
     alertaComarcasGeo_sorted = sorted(alertaComarcasGeo, key=lambda k: len(alertaComarcasGeo[k]), reverse=True)
 
-    # alertaComarcaRiesgo = calcularRiesgo(alertaComarcasGeo_sorted)
-    return alertaComarcasGeo_sorted, alertaComarcasGeo
+    alertaComarcaRiesgo = calcularRiesgo(alertaComarcasGeo_sorted)
+    # return alertaComarcasGeo_sorted, alertaComarcasGeo
 
-    # return alertaComarcaRiesgo, alertaComarcasGeo
+    return alertaComarcaRiesgo, alertaComarcasGeo
 
 def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
 
