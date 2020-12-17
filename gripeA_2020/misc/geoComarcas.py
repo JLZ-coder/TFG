@@ -141,7 +141,7 @@ def comarcas_geo(tablaGeoComarca, comar):
 def generaTablas():
 
     geoEsp, comar = geohashEsp()
-    tablaGeoComarca = geo_comarcas_gen(geoEsp, 4, comar)
+    tablaGeoComarca = geo_comarcas_gen(geoEsp, 5, comar)
     tablaComarcaGeo = comarcas_geo(tablaGeoComarca, comar)
 
     return tablaGeoComarca, tablaComarcaGeo
@@ -149,11 +149,11 @@ def generaTablas():
 def main(argv):
 
     tablaGeoComarca, tablaComarcaGeo = generaTablas()
-    text_file = open("tablaGeoComarca.txt", "w")
+    text_file = open("tablaGeoComarca5.txt", "w")
     n = text_file.write(json.dumps(tablaGeoComarca))
     text_file.close()
 
-    text_file = open("tablaComarcaGeo.txt", "w")
+    text_file = open("tablaComarcaGeo5.txt", "w")
     n = text_file.write(json.dumps(tablaComarcaGeo))
     text_file.close()
 

@@ -206,7 +206,8 @@ def main(argv):
     disease_type_hidden = 0  # Terrestrial
     # disease_id_hidden = 1 # FMD
 
-    outbreaks.delete_many({})
+    # Borra todo
+    # outbreaks.delete_many({})
 
     for disease_id in diseases:
         oblist = []

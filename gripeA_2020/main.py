@@ -12,9 +12,6 @@ import math
 from neo4j import GraphDatabase
 import string
 
-#from dao.daoBrotes import daoBrotes
-#from dao.daoComar import daoComar
-
 
 
 # GLOBALS
@@ -31,9 +28,6 @@ diseases = {
     '1164' : "Highly pathogenic influenza A viruses"
 }
 driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
-
-# daoComar = daoComar()
-# daoBrotes = daoBrotes()
 
 # Saca geohash de 3 digitos que caen en espana
 def geohashEsp():
@@ -242,9 +236,9 @@ def modelo(last_N_days, startPoints, geoEsp):
                 if geocomarca['geoEsp'] in tablaGeoComarca:
                     for comarca in tablaGeoComarca[ geocomarca['geoEsp'] ]:
                         if comarca['cod_comarca'] not in alertaComarcasGeo:
-                            alertaComarcasGeo[ comarca['cod_comarca'] ] = [ {"oieid" : brote['oieid'], "peso" : comarca['peso'], "arista" : geocomarca['migra'], "especie": geocomarca['especie']} ]
+                            alertaComarcasGeo[ comarca['cod_comarca'] ] = [ {"oieid" : brote['oieid'], "peso" : comarca['peso'], "brote": brote, "arista" : geocomarca['migra'], "especie": geocomarca['especie']} ]
                         else:
-                            alertaComarcasGeo[ comarca['cod_comarca'] ].append({"oieid" : brote['oieid'], "peso" : comarca['peso'],"arista" : geocomarca['migra'], "especie":geocomarca['especie'] })
+                            alertaComarcasGeo[ comarca['cod_comarca'] ].append({"oieid" : brote['oieid'], "peso" : comarca['peso'], "brote": brote, "arista" : geocomarca['migra'], "especie":geocomarca['especie'] })
 
     alertaComarcasGeo_sorted = sorted(alertaComarcasGeo, key=lambda k: len(alertaComarcasGeo[k]), reverse=True)
 
@@ -285,11 +279,16 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "riskLevel": alertaComarcaRiesgo[it['comarca_sg']],
                     "number_of_cases": brote[0]['affected_population'],
                     "reportDate": brote[0]['report_date'].timestamp()*1000,
+<<<<<<< Updated upstream
                     "startDate": brote[0]['start'].timestamp()*1000 ,
                     "endDate":  "" if brote[0]['end'] == "" else brote[0]['end'].timestamp()*1000,
+=======
+                    # "startDate": brote[0]['start'].timestamp()*1000,
+                    # "endDate": brote[0]['end'].timestamp()*1000,
+>>>>>>> Stashed changes
                     "codeSpecies": alertaComarcasGeo[it['comarca_sg']][0]['especie'],
                     "species": brote[0]['species'],
-                    "commonName": especieFind[0]['Nombre común'],
+                    "commonName": especie[0]['Nombre común'],
                     "fluSubtype": brote[0]['serotype'],
                     "comarca_sg": it['comarca_sg'],
                     "comarca": it['com_sgsa_n'],
@@ -357,6 +356,11 @@ def main(argv):
 
     #Generar Json de las alertas
     alertas, migra = genera_alerta(comarcaRiesgo, alertaComarcasGeo)
+<<<<<<< Updated upstream
+=======
+
+    
+>>>>>>> Stashed changes
 
     driver.close()
 

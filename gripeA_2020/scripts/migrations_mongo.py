@@ -58,13 +58,16 @@ client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 migrations = db.migrations
 records = df.to_dict(orient='records')  # Here's our added param..
-migrations.delete_many({})
+# Borra todo
+#migrations.delete_many({})
 #records = json.loads(df.T.to_bson()).values()
 migrations.insert_many(records)
 
 #Especies
 especie = db.especies
 records = df_especies.to_dict(orient='records')  # Here's our added param..
-especie.delete_many({})
+
+# Borra todo
+# especie.delete_many({})
 #records = json.loads(df.T.to_bson()).values()
 especie.insert_many(records)

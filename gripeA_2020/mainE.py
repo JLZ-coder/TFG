@@ -136,7 +136,7 @@ def genera_Brotes(startPoints):
                     "disease": diseases[it['disease_id']],
                     "country": it['country'],
                     "start": math.floor(it['start'].timestamp() * 1000),
-                    "end": math.floor(it['end'].timestamp() * 1000),
+                    "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
                     "city": it['city'],
                     "species": it['species'],
                     "at_risk": int(it['at_risk']),
@@ -145,13 +145,15 @@ def genera_Brotes(startPoints):
                     "preventive_killed": int(it['preventive_killed'])
                 }
             }
-            if it['geohash'][0:4] not in geojson:
-                geojson[it['geohash'][0:4]] = startPoints[it['geohash'][0:4]]
 
-            if it['geohash'][0:4] not in brotes_col:
-                brotes_col[it['geohash'][0:4]] = [aux]
-            else:
-                brotes_col[it['geohash'][0:4]].append(aux)
+            #if it['geohash'][0:4] not in geojson:
+            #    geojson[it['geohash'][0:4]] = startPoints[it['geohash'][0:4]]
+                
+
+            #if it['geohash'][0:4] not in brotes_col:
+            #   brotes_col[it['geohash'][0:4]] = [aux]
+            #else:
+            #    brotes_col[it['geohash'][0:4]].append(aux)
 
             feat_col_brote['features'].append(aux)
 
@@ -283,13 +285,18 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "riskLevel": alertaComarcaRiesgo[it['comarca_sg']],
                     "number_of_cases": brote[0]['affected_population'],
                     "reportDate": brote[0]['report_date'].timestamp()*1000,
+<<<<<<< Updated upstream
+                    "startDate": brote[0]['start'].timestamp()*1000 ,
+                    "endDate":  "" if brote[0]['end'] == "" else brote[0]['end'].timestamp()*1000,
+=======
                     # "startDate": brote[0]['start'].timestamp()*1000,
                     # "endDate": brote[0]['end'].timestamp()*1000,
+>>>>>>> Stashed changes
                     "codeSpecies": alertaComarcasGeo[it['comarca_sg']][0]['especie'],
                     "species": brote[0]['species'],
                     "commonName": especie[0]['Nombre común'],
                     "fluSubtype": brote[0]['serotype'],
-                    #"comarca_sg": it['comarca_sg'],
+                    "comarca_sg": it['comarca_sg'],
                     "comarca": it['com_sgsa_n'],
                     #"CMUN": it['CPROyMUN'][-2:],
                     #"municipality": "Vitoria-Gasteiz",
@@ -340,111 +347,13 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
 
     return feat_col_alertas, feat_col_migra
 
-            
-
-   
-def genera_alertas(brotes, brotes_col):
-    feat_col_com = {
-        "type": "FeatureCollection",
-        "features": []
-    }
-    feat_col_migra = {
-        "type": "FeatureCollection",
-        "features": []
-    }
-
-    for brote in brotes:
-        for migra in brotes[brote]:
-            response = driver.session().run('MATCH (n)-[r]->(x:Region) WHERE r.index = {} RETURN x.location'.format(migra)).value()
-            lat, long, lat_err, long_err = geohash.decode_exactly(response[0])
-            if lat - lat_err < lat + lat_err:
-                lat_range = (lat - lat_err, lat + lat_err)
-            else:
-                lat_range = (lat + lat_err, lat - lat_err)
-
-            if long - long_err < long + long_err:
-                long_range =  (long - long_err, long + long_err)
-            else:
-                long_range =  (long + long_err, long - long_err)
-
-            cursor = com.find({})
-            for it in cursor:
-                if it['izqI'][1] < it['izqS'][1]:
-                    lat_range_mongo = (it['izqI'][1], it['izqS'][1])
-                else:
-                    lat_range_mongo = (it['izqS'][1], it['izqI'][1])
-
-                if it['izqI'][0] < it['derI'][0]:
-                    long_range_mongo =  (it['izqI'][0], it['derI'][0])
-                else:
-                    long_range_mongo =  (it['derI'][0], it['izqI'][0])
-
-                if (
-                        (lat_range[0] < it['izqS'][1] and it['izqS'][1] < lat_range[1])
-                        or
-                        (lat_range[0] < it['izqI'][1] and it['izqI'][1] < lat_range[1])
-                        or
-                        (lat_range_mongo[0] < lat_range[0] and lat_range[0] < lat_range_mongo[1])
-                    ) and (
-                        (long_range[0] < it['izqI'][0] and it['izqI'][0] < long_range[1])
-                        or
-                        (long_range[0] < it['derI'][0] and it['derI'][0] < long_range[1])
-                        or
-                        (long_range_mongo[0] < long_range[0] and long_range[0] < long_range_mongo[1])
-                    ):
-                    feat_com = {
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-                        },
-                        "properties": {
-                            "id": it['CPROyMUN'],
-                            "riskLevel": 0,
-                            "number_of_cases": random.randint(0, 100),
-                            "startDate": random.randint(1572890531000, 1604512931000),
-                            "endDate": 1704512931000,
-                            "codeSpecies": 1840,
-                            "species": "Anas crecca",
-                            "commonName": "Pato cuchara",
-                            "fluSubtype": "H5",
-                            "comarca_sg": it['comarca_sg'],
-                            "comarca": it['com_sgsa_n'],
-                            "CMUN": it['CPROyMUN'][-2:],
-                            "municipality": "Vitoria-Gasteiz",
-                            "CPRO": it['CPROyMUN'][:2],
-                            "province": it['provincia'],
-                            "CODAUTO": it['CODAUTO'],
-                            "CA": it['comAutonoma'],
-                            "CPROyMUN": it['CPROyMUN']
-                        }
-                    }
-                    feat_col_com["features"].append(feat_com)
-
-                    for b in brotes_col[brote]:
-                        feat_migra = {
-                            "type": "Feature",
-                            "geometry": {
-                                "type": "LineString",
-                                "coordinates": [ [float(it['Longitud']), float(it['Latitud'])], [b['geometry']['coordinates'][0], b['geometry']['coordinates'][1]] ]
-                            },
-                            "properties": {
-                                "idBrote": b['properties']['id'],
-                                "idAlerta": it['CPROyMUN'],
-                                "idComarca": it['comarca_sg']
-                            }
-                        }
-                        feat_col_migra["features"].append(feat_migra)
-
-    return feat_col_com, feat_col_migra
-
 
 def main(argv):
     
     geoESP, geoComar = geohashEsp()
     startPoints = migraHaciaEsp(geoESP)
 
-    #brotes, brotes_col, brot = genera_Brotes(startPoints)
+    brotes, brotes_col, brot = genera_Brotes(startPoints)
     # alertas, migras = genera_alertas(brotes, brotes_col)
 
     #comarcaRiesgo -> lista de las comarcas que estan en alerta junto a su nivel de riesgo
@@ -452,19 +361,22 @@ def main(argv):
     comarcaRiesgo, alertaComarcasGeo = modelo(90, startPoints, geoESP)
 
     #Generar Json de las alertas
-    alertas, migra, brotes = genera_alerta(comarcaRiesgo, alertaComarcasGeo)
+    alertas, migra = genera_alerta(comarcaRiesgo, alertaComarcasGeo)
+<<<<<<< Updated upstream
+=======
 
     
+>>>>>>> Stashed changes
 
     driver.close()
 
-    # text_file = open("brotes.txt", "w")
-    # n = text_file.write(json.dumps(brot))
-    # text_file.close()
-    text_file = open("migras.txt", "w")
+    text_file = open("brotes.geojson", "w")
+    n = text_file.write(json.dumps(brot))
+    text_file.close()
+    text_file = open("migras.geojson", "w")
     n = text_file.write(json.dumps(migra))
     text_file.close()
-    text_file = open("alertas.txt", "w")
+    text_file = open("alertas.geojson", "w")
     n = text_file.write(json.dumps(alertas))
     text_file.close()
 

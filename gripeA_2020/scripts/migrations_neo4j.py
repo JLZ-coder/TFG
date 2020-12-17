@@ -46,7 +46,7 @@ nodos_query = "CREATE " + nodos_query[:-2]
 
 
 migrations_query = ""
-# (ezhh) -[:MIGRA1340{valor:1}]-> (ezhc)
+# (ezhh) -[:MIGRA1340{valor:1, especie:1340}]-> (ezhc)
 for migration in migration_dict:
 
 	geo, especie, geoR = migration.split("-")
@@ -61,7 +61,7 @@ query = "//PARTE DE NODOS\n" + nodos_query + "\n//PARTE DE MIGRACIONES\n" + migr
 
 driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 # Borra todo lo que hay en neo4j!!!!!
-driver.session().run("MATCH (n) DETACH DELETE n")
+# driver.session().run("MATCH (n) DETACH DELETE n")
 response = driver.session().run(query).value()
 driver.close()
 
