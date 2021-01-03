@@ -401,25 +401,12 @@ def main(argv):
     listaBrote_Destinos = dict()
     setComarcas = set()
     setBrotes = set()
-    tablaGeoComarca = json.load(open("tablaGeoComarca.txt",  encoding='utf-8'))
+    tablaGeoComarca = json.load(open("data/tablaGeoComarca.txt",  encoding='utf-8'))
 
     for brote in listaBrotes:
         geo_del_brote = brote['geohash'][0:4]
 
         response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
-
-        # for relacion in response:
-        #     if relacion[0] in tablaGeoComarca:
-        #         if geo_del_brote not in listaBrote_Destinos:
-        #             listaBrote_Destinos[geo_del_brote] = {"brotes": [brote], "geodestinos": {relacion[0] : tablaGeoComarca[relacion[0]]} }
-        #         else:
-        #             listaBrote_Destinos[geo_del_brote]["brotes"].append(brote)
-        #             listaBrote_Destinos[geo_del_brote]["geodestinos"][relacion[0]] = tablaGeoComarca[relacion[0]]
-
-        #         setBrotes.add(brote['oieid'])
-
-        #         for comarca_peso in tablaGeoComarca[relacion[0]]:
-        #             setComarcas.add(comarca_peso["cod_comarca"])
 
         for relacion in response:
             if relacion[0] in tablaGeoComarca:
