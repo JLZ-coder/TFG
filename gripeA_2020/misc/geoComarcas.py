@@ -110,7 +110,7 @@ def geo_comarcas(geo, n, max_n, digits, comar):
                 area = base * altura
                 areaGeo = (long_range[1] - long_range[0]) * (lat_range[1] - lat_range[0])
                 peso = area / areaGeo
-                collect[geo].append({"cod_comarca" : it, "peso" : peso})
+                collect[geo].append({"cod_comarca" : it, "peso" : peso, "long" : comar[it]['long'], "lat" :  comar[it]['lat']})
 
         return collect
     else:
@@ -129,26 +129,28 @@ def comarcas_geo(tablaGeoComarca, comar):
         for j in tablaGeoComarca[i]:
             cod_comar = j['cod_comarca']
             peso = j['peso']
+            long = j['long']
+            lat = j['lat']
 
             if cod_comar in tablaComarcaGeo:
-                tablaComarcaGeo[cod_comar].append({"geohash" : i, "peso" : peso})
+                tablaComarcaGeo[cod_comar].append({"geohash" : i, "peso" : peso, "long" : long, "lat" : lat})
             else:
-                tablaComarcaGeo[cod_comar] = [{"geohash" : i, "peso" : peso}]
+                tablaComarcaGeo[cod_comar] = [{"geohash" : i, "peso" : peso, "long" : long, "lat" : lat}]
 
 
     return tablaComarcaGeo
 
-def generaTablas():
+def generaTablas(precision):
 
     geoEsp, comar = geohashEsp()
-    tablaGeoComarca = geo_comarcas_gen(geoEsp, 5, comar)
+    tablaGeoComarca = geo_comarcas_gen(geoEsp, precision, comar)
     tablaComarcaGeo = comarcas_geo(tablaGeoComarca, comar)
 
     return tablaGeoComarca, tablaComarcaGeo
 
 def main(argv):
 
-    tablaGeoComarca, tablaComarcaGeo = generaTablas()
+    tablaGeoComarca, tablaComarcaGeo = generaTablas(5)
     text_file = open("tablaGeoComarca5.txt", "w")
     n = text_file.write(json.dumps(tablaGeoComarca))
     text_file.close()

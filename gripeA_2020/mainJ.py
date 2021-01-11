@@ -32,6 +32,49 @@ diseases = {
 neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
 
+def genera_brotes_ultimosDias(last_days):
+
+    feat_col_brote = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+
+    today = date.today()
+    fecha = datetime.now() + timedelta(days = -today.weekday())
+    mas_antiguo = fecha - timedelta(days = last_days)
+
+    lista = brotes_db.find({"report_date" : {"$gte" : mas_antiguo}})
+
+    for it in lista:
+        aux = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [float(it['long']), float(it['lat'])]
+                },
+                "properties": {
+                    "id": it['oieid'],
+                    "disease": diseases[it['disease_id']],
+                    "country": it['country'],
+                    "start": math.floor(it['start'].timestamp() * 1000),
+                    # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
+                    "city": it['city'],
+                    # "species": it['species'],
+                    # "at_risk": int(it['at_risk']),
+                    # "cases": int(it['cases']),
+                    # "deaths": int(it['deaths']),
+                    # "preventive_killed": int(it['preventive_killed'])
+                    "serotipo": it['serotype'],
+                    "moreInfo": it['urlFR'],
+                    "epiUnit": it['epiunit'],
+                    "reportDate": math.floor(it['report_date'].timestamp() * 1000)
+                }
+            }
+
+        feat_col_brote['features'].append(aux)
+
+    return feat_col_brote
+
 def genera_brotes(listaBrotes):
 
     feat_col_brote = {
@@ -39,9 +82,7 @@ def genera_brotes(listaBrotes):
         "features": []
     }
 
-    lista = brotes_db.find({})
-
-    for it in lista:
+    for it in listaBrotes:
         aux = {
                 "type": "Feature",
                 "geometry": {
@@ -78,83 +119,74 @@ def genera_migraciones(listaMigraciones):
         "features": []
     }
 
-    for it in lista:
-        aux = {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [float(it['long']), float(it['lat'])]
-                },
-                "properties": {
-                    "id": it['oieid'],
-                    "disease": diseases[it['disease_id']],
-                    "country": it['country'],
-                    "start": math.floor(it['start'].timestamp() * 1000),
-                    # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
-                    "city": it['city'],
-                    # "species": it['species'],
-                    # "at_risk": int(it['at_risk']),
-                    # "cases": int(it['cases']),
-                    # "deaths": int(it['deaths']),
-                    # "preventive_killed": int(it['preventive_killed'])
-                    "serotipo": it['serotype'],
-                    "moreInfo": it['urlFR'],
-                    "epiUnit": it['epiunit'],
-                    "reportDate": math.floor(it['report_date'].timestamp() * 1000)
-                }
-            }
+    for it in listaMigraciones:
 
-        feat_col_migracion['features'].append(aux)
+        comarca_long = listaMigraciones[it]["long"]
+        comarca_lat = listaMigraciones[it]["lat"]
+        for brote in listaMigraciones[it]["brotes"]:
+
+            aux = {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [float(comarca_long), float(comarca_lat), float(brote['long']), float(brote['lat'])]
+                    },
+                    "properties": {
+                        "idBrote": brote['oieid'],
+                        "idAlerta": it,
+                        "idComarca": it
+                    }
+                }
+
+            feat_col_migracion['features'].append(aux)
 
     return feat_col_migracion
 
 
-def genera_alerta(nivelesAlerta, todasComarcas):
+def genera_alertas(alertas, comarcas, start, end):
 
     feat_col_alertas = {
         "type": "FeatureCollection",
         "features": []
     }
 
-    cursor = com.find({})
+    for it in comarcas:
+        risk = 0
 
-    for it in cursor:
-        if it['comarca_sg'] in alertaComarcaRiesgo:
-            brote = list(outbreaks.find({"oieid": alertaComarcasGeo[it['comarca_sg']][0]['oieid']}))
-            especieFind = list(especie.find({"codigo anilla": alertaComarcasGeo[it['comarca_sg']][0]['especie']}))
-            print(alertaComarcaRiesgo[it['comarca_sg']])
-            feat_com={
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-                },
-                "properties": {
-                    "id": it['comarca_sg'], #Será el id de comarca
-                    "riskLevel": alertaComarcaRiesgo[it['comarca_sg']],
-                    "number_of_cases": brote[0]['affected_population'],
+        if it['comarca_sg'] in alertas:
+            risk = alertas[it['comarca_sg']]
 
-                    "species": brote[0]['species'],
-                    "commonName": especie[0]['Nombre común'],
-                    "fluSubtype": brote[0]['serotype'],
-                    "comarca_sg": it['comarca_sg'],
-                    "comarca": it['com_sgsa_n'],
-                    #"CMUN": it['CPROyMUN'][-2:],
-                    #"municipality": "Vitoria-Gasteiz",
-                    "CPRO": it['CPRO'],
-                    #"province": it['provincia'],
-                    #"CODAUTO": it['CODAUTO'],
-                    #"CA": it['comAutonoma'],
-                    "CPROyMUN": it['CPROyMUN']   
-                }
+        aux={
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+            },
+            "properties": {
+                "id": it['comarca_sg'], #Será el id de comarca
+                "riskLevel": risk,
+                "number_of_cases": 0,
+                "startDate": start.timestamp() * 1000,
+                "endDate": end.timestamp() * 1000,
+                "codeSpecies": 1840,
+                "species": "Anas crecca",
+                "commonName": "Pato cuchara",
+                "fluSubtype": "H5",
+                "idComarca": it['comarca_sg'],
+                "comarca": it['com_sgsa_n'],
+                "CPRO": it['CPRO'],
+                "province": it['provincia'],
+                "CPROyMUN": it['CPROyMUN']
             }
-            feat_col_alertas["features"].append(feat_com)
+        }
+        feat_col_alertas["features"].append(aux)
 
-            return feat_col_alertas
+    return feat_col_alertas
 
 def main(argv):
 
     # Variables del programa
+    FRAME_N_DAYS = 365
     TAM_GEO_ESP = 4
     LAST_N_DAYS = 90
 
@@ -167,18 +199,26 @@ def main(argv):
 
     # - En la base de datos de brotes buscar los que esten dentro del marco de tiempo de N dias
     today = date.today()
-    fecha = datetime.now() + timedelta(days = -today.weekday())
-    mas_antiguo = fecha - timedelta(days = LAST_N_DAYS)
+    fecha = date.today() + timedelta(days = -today.weekday())
+    fecha_fin = date.today() + timedelta(weeks = 1);
 
-    listaBrotes = brotes_db.find({"report_date" : {"$gte" : mas_antiguo}})
+    mas_antiguo = fecha - timedelta(days = FRAME_N_DAYS)
+    ultimos = fecha - timedelta(days = LAST_N_DAYS)
+    mas_antiguo = datetime.combine(mas_antiguo, datetime.min.time())
+    ultimos = datetime.combine(mas_antiguo, datetime.min.time())
+
+
+    semana_inicio = datetime.combine(fecha, datetime.min.time())
+    semana_fin = datetime.combine(fecha_fin, datetime.min.time())
+
+    listaBrotes_todo = brotes_db.find({"report_date" : {"$gte" : mas_antiguo}})
+    listaBrotes = brotes_db.find({"report_date" : {"$gte" : ultimos}})
 
     # - Con estos brotes miramos en el grafo de neo4j (version de 4 o 5 digitos) si hay nodos con estos geohashes.
     #     + Si hay un nodo, se miran todos los demas nodos asociados a este y lo guardamos si alguno de los nodos asociados esta en España
 
-    destinosAvesInfectadas = dict()
-    setComarcas = set()
-    setBrotes = set()
-    tablaGeoComarca = json.load(open("data/tablaGeoComarca.txt",  encoding='utf-8'))
+    tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
+    comarca_brotes = {}
 
     for brote in listaBrotes:
         geo_del_brote = brote['geohash'][0:4]
@@ -189,41 +229,55 @@ def main(argv):
         # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
         # ej: ['sp0j', 1470]
         for relacion in response:
-            if brote['oieid'] not in destinosAvesInfectadas:
-                destinosAvesInfectadas[brote['oieid']] = [relacion]
-            else:
-                destinosAvesInfectadas[brote['oieid']].append(relacion)
+            if relacion[0] in tablaGeoComarca:
+                for comarca in tablaGeoComarca[relacion[0]]:
+                    cod = comarca["cod_comarca"]
+                    if cod not in comarca_brotes:
+                        comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote}]
+                    else:
+                        comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote})
 
     # - Con los nodos relacionados con brote miramos en tablaGeoComarca a ver si hay alguna comarca asociada a estos geohash.
-    comarcaBrotes = dict()
     migraciones = dict()
 
-    for brote in destinosAvesInfectadas:
-        for destino in destinosAvesInfectadas[brote]:
+    for brote in listaBrotes_todo:
+        geo_del_brote = brote['geohash'][0:4]
 
-            if destino[0] in tablaGeoComarca:
-                for comarca in tablaGeoComarca[destino[0]]:
-                    if comarca['cod_comarca'] not in comarcaBrotes:
-                        comarcaBrotes[comarca['cod_comarca']] = {brote}
+        response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
+
+        # relacion
+        # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
+        # ej: ['sp0j', 1470]
+        for relacion in response:
+            if relacion[0] in tablaGeoComarca:
+                for comarca in tablaGeoComarca[relacion[0]]:
+                    cod = comarca["cod_comarca"]
+                    long = comarca["long"]
+                    lat = comarca["lat"]
+                    if cod not in migraciones:
+                        migraciones[cod] = {"brotes" : [], "long" : 0, "lat" : 0}
+                        migraciones[cod]["brotes"] = [{"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]}]
+                        migraciones[cod]["long"] = long
+                        migraciones[cod]["lat"] = lat
                     else:
-                        comarcaBrotes[comarca['cod_comarca']].add(brote)
+                        migraciones[cod]["brotes"].append({"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]})
 
     # Según los datos calcular las comarcaBrotes
-    comarcaBrotes_sorted = sorted(comarcaBrotes, key=lambda k: len(comarcaBrotes[k]), reverse=True)
+    comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
     alertas = dict()
 
     # Cuartiles
     alertaMax = 5
     porcentaje = 0.2
-    percentil = math.ceil(len(comarcaBrotes_sorted) * porcentaje)
+    percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
     cont = 1
-    for comarca in comarcaBrotes_sorted:
-        alertas[comarca] = alertaMax
+    for comarca in comarca_brotes_sorted:
+        alertas[comarca] = {"start" : semana_inicio, "end" : semana_fin, "nivel" : alertaMax}
 
         if cont == percentil:
             alertaMax -= 1
             porcentaje += 0.2
-            percentil = math.ceil(len(comarcaBrotes_sorted) * porcentaje)
+            percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
 
         cont += 1
 
@@ -231,9 +285,9 @@ def main(argv):
 
 
     # - Con esto ya tendriamos comarcas y brotes asociados por una ruta (la migracion)
-    feat_col_brote = genera_brotes(list(setBrotes))
-    feat_col_migra = genera_migraciones(list(comarcaBrotes))
-    feat_col_alerta = genera_alertas(list(), comarcas)
+    feat_col_brote = genera_brotes_ultimosDias(365)
+    feat_col_alerta = genera_alertas(alertas, comarcas, semana_inicio, semana_fin)
+    feat_col_migra = genera_migraciones(migraciones)
 
     pass
 
