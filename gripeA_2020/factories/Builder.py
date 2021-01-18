@@ -2,10 +2,10 @@ class Builder:
     def __init__(self, tag):
         self.tag = tag
 
-    def createData(self, dataType):
+    def createData(self, dataType, start, end):
         data = None
         if (self.tag == dataType):
-            data = self.create()
+            data = self.create(start, end)
 
         return data
 

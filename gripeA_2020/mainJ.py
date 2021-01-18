@@ -13,6 +13,8 @@ from neo4j import GraphDatabase
 
 from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
+from model.Quintile import Quintile
+from controller.Controller import Controller
 
 
 # GLOBALS
@@ -297,14 +299,15 @@ def genera_alertas(alertas, comarcas, start, end):
 
 def main(argv):
     builderList = list()
-
     builderList.append(OutbreakBuilder())
 
     fact = Factory(builderList)
 
-    data = fact.createData("outbreak")
+    model = Quintile(fact)
 
-    pass
+    control = Controller(model)
+
+    alertas = control.run()
 
     return 0
 

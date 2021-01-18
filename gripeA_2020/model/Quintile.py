@@ -1,9 +1,13 @@
+import math
+from datetime import datetime, timedelta, date
+
 class Quintile:
-    def __init__(self, dataFactory)
+    def __init__(self, dataFactory):
         self.dataFactory = dataFactory
 
-    def run(self):
-        comarca_brotes = self.dataFactory.createData("outbreak")
+    def run(self, start, end):
+        outbreakStart = start - timedelta(days = 90)
+        comarca_brotes = self.dataFactory.createData("outbreak", outbreakStart, start)
         # Según los datos calcular las comarcaBrotes
         comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
         alertas = dict()
@@ -14,7 +18,7 @@ class Quintile:
         percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
         cont = 1
         for comarca in comarca_brotes_sorted:
-            alertas[comarca] = {"start" : semana_inicio, "end" : semana_fin, "nivel" : alertaMax}
+            alertas[comarca] = {"start" : start, "end" : end, "nivel" : alertaMax}
 
             if cont == percentil:
                 alertaMax -= 1

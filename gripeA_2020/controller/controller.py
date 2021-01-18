@@ -1,48 +1,24 @@
-class controller:
-    def __init__(self, model, dataFact):
-        self.model
-		self.dataFact = dataFact
+from datetime import datetime, timedelta, date
 
-	def loadParams(self):
-	# public void loadBodies(InputStream in) {
-	# 	JSONObject jsonInput = new JSONObject(new JSONTokener(in));
-	# 	JSONArray ja = jsonInput.getJSONArray("bodies");
-		
-	# 	for (int i = 0; i < ja.length(); i++) {
-	# 		_sim.addBody(_factor.createInstance(ja.getJSONObject(i)));	//coge cada JSON, lo convierte a body y lo anade al simulador
-	# 	}
-	# }
+class Controller:
+    def __init__(self, model):
+        self.model = model
 
-	def run(self):
-		self.model.advance()
-	
-	public void run(int n, OutputStream out){
-		PrintStream p = (out == null) ? null : new PrintStream(out);
-		
-		p.println("{");
-		p.println("\"states\": [");
-		p.println(_sim.toString() + ",");
-		
-		for (int i = 1; i < n; i++) {
-			_sim.advance();
-			p.println(_sim.toString() + ",");
-		}
-		_sim.advance();
-		p.println(_sim.toString());
-		p.println("]");
-		p.println("}");
-		
-		p.close();
-	}
+    def run(self):
+        today = date.today()
+        start = today + timedelta(days = -today.weekday()) - timedelta(weeks = 12)
+        end = start + timedelta(weeks = 1)
 
-	public void setDeltaTime(double dt) {
-		_sim.setDeltaTime(dt);
-	}
+        start = datetime.combine(start, datetime.min.time())
+        end = datetime.combine(end, datetime.min.time())
 
-	public Factory<GravityLaws> getGravityLawsFactory(){
-		return _gl;
-	}
-	
-	public void setGravityLaws(JSONObject info) {
-		_sim.setGravityLaws(_gl.createInstance(info));
-	}
+        alertas = list()
+        i = 0
+        while(i < 12):
+            alerta = self.model.run(start, end)
+            alertas.append(alerta)
+            start = end
+            end = start + timedelta(weeks =1)
+            i += 1
+
+        return alertas
