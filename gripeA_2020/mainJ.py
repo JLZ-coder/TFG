@@ -11,6 +11,8 @@ import math
 from neo4j import GraphDatabase
 # import string
 
+from factories.Factory import Factory
+from factories.OutbreakBuilder import OutbreakBuilder
 
 
 # GLOBALS
@@ -183,116 +185,128 @@ def genera_alertas(alertas, comarcas, start, end):
 
     return feat_col_alertas
 
+# def main(argv):
+
+#     # Variables del programa
+#     FRAME_N_DAYS = 365
+#     TAM_GEO_ESP = 4
+#     LAST_N_DAYS = 90
+
+#     # El esquema:
+#     #     - En la base de datos de brotes buscar los que esten dentro del marco de tiempo de N dias
+#     #     - Con estos brotes miramos en el grafo de neo4j (version de 4 o 5 digitos) si hay nodos con estos geohashes.
+#     #         + Si hay un nodo, se miran todos los demas nodos asociados a este.
+#     #     - Con los nodos relacionados con brote miramos en tablaGeoComarca a ver si hay alguna comarca asociada a estos geohash.
+#     #     - Con esto ya tendriamos comarcas y brotes asociados por una ruta (la migracion)
+
+#     # - En la base de datos de brotes buscar los que esten dentro del marco de tiempo de N dias
+#     today = date.today()
+#     fecha = date.today() + timedelta(days = -today.weekday())
+#     fecha_fin = date.today() + timedelta(weeks = 1);
+
+#     mas_antiguo = fecha - timedelta(days = FRAME_N_DAYS)
+#     ultimos = fecha - timedelta(days = LAST_N_DAYS)
+#     mas_antiguo = datetime.combine(mas_antiguo, datetime.min.time())
+#     ultimos = datetime.combine(mas_antiguo, datetime.min.time())
+
+
+#     semana_inicio = datetime.combine(fecha, datetime.min.time())
+#     semana_fin = datetime.combine(fecha_fin, datetime.min.time())
+
+#     listaBrotes_todo = brotes_db.find({"report_date" : {"$gte" : mas_antiguo}})
+#     listaBrotes = brotes_db.find({"report_date" : {"$gte" : ultimos}})
+
+#     # - Con estos brotes miramos en el grafo de neo4j (version de 4 o 5 digitos) si hay nodos con estos geohashes.
+#     #     + Si hay un nodo, se miran todos los demas nodos asociados a este y lo guardamos si alguno de los nodos asociados esta en España
+
+#     tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
+#     comarca_brotes = {}
+
+#     for brote in listaBrotes:
+#         geo_del_brote = brote['geohash'][0:4]
+
+#         response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
+
+#         # relacion
+#         # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
+#         # ej: ['sp0j', 1470]
+#         for relacion in response:
+#             if relacion[0] in tablaGeoComarca:
+#                 for comarca in tablaGeoComarca[relacion[0]]:
+#                     cod = comarca["cod_comarca"]
+#                     if cod not in comarca_brotes:
+#                         comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote}]
+#                     else:
+#                         comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote})
+
+#     # - Con los nodos relacionados con brote miramos en tablaGeoComarca a ver si hay alguna comarca asociada a estos geohash.
+#     migraciones = dict()
+
+#     for brote in listaBrotes_todo:
+#         geo_del_brote = brote['geohash'][0:4]
+
+#         response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
+
+#         # relacion
+#         # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
+#         # ej: ['sp0j', 1470]
+#         for relacion in response:
+#             if relacion[0] in tablaGeoComarca:
+#                 for comarca in tablaGeoComarca[relacion[0]]:
+#                     cod = comarca["cod_comarca"]
+#                     long = comarca["long"]
+#                     lat = comarca["lat"]
+#                     if cod not in migraciones:
+#                         migraciones[cod] = {"brotes" : [], "long" : 0, "lat" : 0}
+#                         migraciones[cod]["brotes"] = [{"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]}]
+#                         migraciones[cod]["long"] = long
+#                         migraciones[cod]["lat"] = lat
+#                     else:
+#                         migraciones[cod]["brotes"].append({"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]})
+
+#     # Según los datos calcular las comarcaBrotes
+#     comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
+#     alertas = dict()
+
+#     # Cuartiles
+#     alertaMax = 5
+#     porcentaje = 0.2
+#     percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
+#     cont = 1
+#     for comarca in comarca_brotes_sorted:
+#         alertas[comarca] = {"start" : semana_inicio, "end" : semana_fin, "nivel" : alertaMax}
+
+#         if cont == percentil:
+#             alertaMax -= 1
+#             porcentaje += 0.2
+#             percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
+
+#         cont += 1
+
+#     comarcas = comarcas_db.find({})
+
+
+#     # - Con esto ya tendriamos comarcas y brotes asociados por una ruta (la migracion)
+#     feat_col_brote = genera_brotes_ultimosDias(365)
+#     feat_col_alerta = genera_alertas(alertas, comarcas, semana_inicio, semana_fin)
+#     feat_col_migra = genera_migraciones(migraciones)
+
+#     pass
+
+#     return 0
+
 def main(argv):
+    builderList = list()
 
-    # Variables del programa
-    FRAME_N_DAYS = 365
-    TAM_GEO_ESP = 4
-    LAST_N_DAYS = 90
+    builderList.append(OutbreakBuilder())
 
-    # El esquema:
-    #     - En la base de datos de brotes buscar los que esten dentro del marco de tiempo de N dias
-    #     - Con estos brotes miramos en el grafo de neo4j (version de 4 o 5 digitos) si hay nodos con estos geohashes.
-    #         + Si hay un nodo, se miran todos los demas nodos asociados a este.
-    #     - Con los nodos relacionados con brote miramos en tablaGeoComarca a ver si hay alguna comarca asociada a estos geohash.
-    #     - Con esto ya tendriamos comarcas y brotes asociados por una ruta (la migracion)
+    fact = Factory(builderList)
 
-    # - En la base de datos de brotes buscar los que esten dentro del marco de tiempo de N dias
-    today = date.today()
-    fecha = date.today() + timedelta(days = -today.weekday())
-    fecha_fin = date.today() + timedelta(weeks = 1);
-
-    mas_antiguo = fecha - timedelta(days = FRAME_N_DAYS)
-    ultimos = fecha - timedelta(days = LAST_N_DAYS)
-    mas_antiguo = datetime.combine(mas_antiguo, datetime.min.time())
-    ultimos = datetime.combine(mas_antiguo, datetime.min.time())
-
-
-    semana_inicio = datetime.combine(fecha, datetime.min.time())
-    semana_fin = datetime.combine(fecha_fin, datetime.min.time())
-
-    listaBrotes_todo = brotes_db.find({"report_date" : {"$gte" : mas_antiguo}})
-    listaBrotes = brotes_db.find({"report_date" : {"$gte" : ultimos}})
-
-    # - Con estos brotes miramos en el grafo de neo4j (version de 4 o 5 digitos) si hay nodos con estos geohashes.
-    #     + Si hay un nodo, se miran todos los demas nodos asociados a este y lo guardamos si alguno de los nodos asociados esta en España
-
-    tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
-    comarca_brotes = {}
-
-    for brote in listaBrotes:
-        geo_del_brote = brote['geohash'][0:4]
-
-        response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
-
-        # relacion
-        # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
-        # ej: ['sp0j', 1470]
-        for relacion in response:
-            if relacion[0] in tablaGeoComarca:
-                for comarca in tablaGeoComarca[relacion[0]]:
-                    cod = comarca["cod_comarca"]
-                    if cod not in comarca_brotes:
-                        comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote}]
-                    else:
-                        comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote})
-
-    # - Con los nodos relacionados con brote miramos en tablaGeoComarca a ver si hay alguna comarca asociada a estos geohash.
-    migraciones = dict()
-
-    for brote in listaBrotes_todo:
-        geo_del_brote = brote['geohash'][0:4]
-
-        response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
-
-        # relacion
-        # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
-        # ej: ['sp0j', 1470]
-        for relacion in response:
-            if relacion[0] in tablaGeoComarca:
-                for comarca in tablaGeoComarca[relacion[0]]:
-                    cod = comarca["cod_comarca"]
-                    long = comarca["long"]
-                    lat = comarca["lat"]
-                    if cod not in migraciones:
-                        migraciones[cod] = {"brotes" : [], "long" : 0, "lat" : 0}
-                        migraciones[cod]["brotes"] = [{"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]}]
-                        migraciones[cod]["long"] = long
-                        migraciones[cod]["lat"] = lat
-                    else:
-                        migraciones[cod]["brotes"].append({"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]})
-
-    # Según los datos calcular las comarcaBrotes
-    comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
-    alertas = dict()
-
-    # Cuartiles
-    alertaMax = 5
-    porcentaje = 0.2
-    percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
-    cont = 1
-    for comarca in comarca_brotes_sorted:
-        alertas[comarca] = {"start" : semana_inicio, "end" : semana_fin, "nivel" : alertaMax}
-
-        if cont == percentil:
-            alertaMax -= 1
-            porcentaje += 0.2
-            percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
-
-        cont += 1
-
-    comarcas = comarcas_db.find({})
-
-
-    # - Con esto ya tendriamos comarcas y brotes asociados por una ruta (la migracion)
-    feat_col_brote = genera_brotes_ultimosDias(365)
-    feat_col_alerta = genera_alertas(alertas, comarcas, semana_inicio, semana_fin)
-    feat_col_migra = genera_migraciones(migraciones)
+    data = fact.createData("outbreak")
 
     pass
 
     return 0
-
 
 
 
