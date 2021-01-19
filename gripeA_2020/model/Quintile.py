@@ -11,6 +11,8 @@ class Quintile:
         # Según los datos calcular las comarcaBrotes
         comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
         alertas = dict()
+        alertas["start"] = start
+        alertas["end"] = end
 
         # Cuartiles
         alertaMax = 5
@@ -18,7 +20,7 @@ class Quintile:
         percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
         cont = 1
         for comarca in comarca_brotes_sorted:
-            alertas[comarca] = {"start" : start, "end" : end, "nivel" : alertaMax}
+            alertas[comarca] = {"nivel" : alertaMax}
 
             if cont == percentil:
                 alertaMax -= 1

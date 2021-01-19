@@ -147,43 +147,49 @@ def genera_migraciones(listaMigraciones):
     return feat_col_migracion
 
 
-def genera_alertas(alertas, comarcas, start, end):
+def genera_alertas(listAlertas, comarcas):
 
     feat_col_alertas = {
         "type": "FeatureCollection",
         "features": []
     }
 
-    for it in comarcas:
-        risk = 0
+    i = 0
+    while (i < len(alertas)):
+        alertas = listAlertas[i]
+        start = alertas["start"]
+        end = alertas["end"]
 
-        if it['comarca_sg'] in alertas:
-            risk = alertas[it['comarca_sg']]
+        for it in comarcas:
+            risk = 0
 
-        aux={
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-            },
-            "properties": {
-                "id": it['comarca_sg'], #Será el id de comarca
-                "riskLevel": risk,
-                "number_of_cases": 0,
-                "startDate": start.timestamp() * 1000,
-                "endDate": end.timestamp() * 1000,
-                "codeSpecies": 1840,
-                "species": "Anas crecca",
-                "commonName": "Pato cuchara",
-                "fluSubtype": "H5",
-                "idComarca": it['comarca_sg'],
-                "comarca": it['com_sgsa_n'],
-                "CPRO": it['CPRO'],
-                "province": it['provincia'],
-                "CPROyMUN": it['CPROyMUN']
+            if it['comarca_sg'] in alertas:
+                risk = alertas[it['comarca_sg']]
+
+            aux={
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+                },
+                "properties": {
+                    "id": it['comarca_sg'], #Será el id de comarca
+                    "riskLevel": risk,
+                    "number_of_cases": 0,
+                    "startDate": start.timestamp() * 1000,
+                    "endDate": end.timestamp() * 1000,
+                    # "codeSpecies": 1840,
+                    # "species": "Anas crecca",
+                    # "commonName": "Pato cuchara",
+                    # "fluSubtype": "H5",
+                    "idComarca": it['comarca_sg'],
+                    "comarca": it['com_sgsa_n'],
+                    "CPRO": it['CPRO'],
+                    "province": it['provincia'],
+                    "CPROyMUN": it['CPROyMUN']
+                }
             }
-        }
-        feat_col_alertas["features"].append(aux)
+            feat_col_alertas["features"].append(aux)
 
     return feat_col_alertas
 
@@ -307,8 +313,43 @@ def main(argv):
 
     control = Controller(model)
 
-    alertas = control.run()
+    listAlertas = control.run()
 
+
+    today = date.today()
+    fecha = date.today() + timedelta(days = -today.weekday())
+    mas_antiguo = fecha - timedelta(days = FRAME_N_DAYS)
+    mas_antiguo = datetime.combine(mas_antiguo, datetime.min.time())
+
+    listaBrotes_todo = brotes_db.find({"report_date" : {"$gte" : mas_antiguo}})
+
+    migraciones = dict()
+
+    for brote in listaBrotes_todo:
+        geo_del_brote = brote['geohash'][0:4]
+
+        response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
+
+        # relacion
+        # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
+        # ej: ['sp0j', 1470]
+        for relacion in response:
+            if relacion[0] in tablaGeoComarca:
+                for comarca in tablaGeoComarca[relacion[0]]:
+                    cod = comarca["cod_comarca"]
+                    long = comarca["long"]
+                    lat = comarca["lat"]
+                    if cod not in migraciones:
+                        migraciones[cod] = {"brotes" : [], "long" : 0, "lat" : 0}
+                        migraciones[cod]["brotes"] = [{"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]}]
+                        migraciones[cod]["long"] = long
+                        migraciones[cod]["lat"] = lat
+                    else:
+                        migraciones[cod]["brotes"].append({"oieid" : brote["oieid"], "long" : brote["long"], "lat" : brote["lat"]})
+
+    feat_col_brote = genera_brotes_ultimosDias(365)
+    feat_col_alerta = genera_alertas(listAlertas, comarcas)
+    feat_col_migra = genera_migraciones(migraciones)
     return 0
 
 
