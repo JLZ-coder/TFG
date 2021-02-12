@@ -6,13 +6,19 @@ import dbf
 #from aemet import *
 import pymongo
 from pymongo import MongoClient
-api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YUB1Y20uZXMiLCJqdGkiOiJiZDc2MzgzMS1hMWU4LTQ4MTktOTE2Yy1lYzQ5MjE2OTJiYjAiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTYwNjQ3NTk4NiwidXNlcklkIjoiYmQ3NjM4MzEtYTFlOC00ODE5LTkxNmMtZWM0OTIxNjkyYmIwIiwicm9sZSI6IiJ9.0Z3PqEjKyMFhUztyu2LAPV7zYPEaeh2RXndZQdryTrE'
+from datetime import datetime
+
+api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YWxlbmNpYWJhcmNlbG9uYUBnbWFpbC5jb20iLCJqdGkiOiJiYzY4MzM1Mi1kZjg3LTRlZTctYjQ4MS1hMDMyODQzZGMwMWIiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTYxMDM4OTY0OCwidXNlcklkIjoiYmM2ODMzNTItZGY4Ny00ZWU3LWI0ODEtYTAzMjg0M2RjMDFiIiwicm9sZSI6IiJ9.BanUHViE2mFsnjne_ilriezZqkDRYYT3Vf4SkKOcE04'
 
 #tabla = json.load(open("estaciones.txt",  encoding='utf-8'))
 #aemet_client = Aemet(api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YUB1Y20uZXMiLCJqdGkiOiJiZDc2MzgzMS1hMWU4LTQ4MTktOTE2Yy1lYzQ5MjE2OTJiYjAiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTYwNjQ3NTk4NiwidXNlcklkIjoiYmQ3NjM4MzEtYTFlOC00ODE5LTkxNmMtZWM0OTIxNjkyYmIwIiwicm9sZSI6IiJ9.0Z3PqEjKyMFhUztyu2LAPV7zYPEaeh2RXndZQdryTrE', verbose=True)
 #aemet_client.descargar_resumen_mensual_climatologico("aemet.txt", 2018, 12)
 
+tabla = json.load(open("historico1.json",  encoding='utf-8'))
 
+
+
+        
 #Leemos el fichero que relaciona las estaciones con las comarcas
 file = "aemet/CG_estaciones.xlsx"
 df = pd.read_excel(file)
@@ -41,16 +47,15 @@ headers = {
     'cache-control': "no-cache"
 }
 
-df = {}
-
+df = dict()
 #url para valores mensuales
 #url_mensualAnual = "https://opendata.aemet.es/opendata/api/valores/climatologicos/mensualesanuales/datos/anioini/2020/aniofin/2020/estacion/0252D/?api_key={}".format(api_key)
-
+j=1
 #Solo rango de 5 años 
-for i in range(2011,2021,5):
+for i in range(2019,2021):
     #Valores para la URL
-    fechaini = "2020-12-01T00:00:00UTC" #"{}-01-01T00:00:00UTC".format(i)
-    fechafin = "2020-12-31T00:00:00UTC" #"{}-12-31T00:00:00UTC".format(i+4)
+    fechaini = "{}-01-01T00:00:00UTC".format(i)
+    fechafin = "{}-12-31T00:00:00UTC".format(i)
 
     for idEstacion in indicativos: #Recorremos la lista 
          
@@ -63,49 +68,58 @@ for i in range(2011,2021,5):
         if response.status_code == 200 and json_response['estado'] == 200:
             #Extraemos la informacion de la API
             response = requests.request("GET", json_response['datos'], headers=headers)
+            try:
+                json_response = response.json()
 
-            json_response = response.json()
+                #Extraemos la url donde esta la informacion de la consulta a la API
+                response = requests.request("GET", url_valoresDiaros, headers=headers)
+            
+                json_response = response.json()
 
-            #Extraemos la url donde esta la informacion de la consulta a la API
-            response = requests.request("GET", url_valoresDiaros, headers=headers)
+                #Extraemos la informacion de la API
+                response = requests.request("GET", json_response['datos'], headers=headers)
 
-            json_response = response.json()
-
-            #Extraemos la informacion de la API
-            response = requests.request("GET", json_response['datos'], headers=headers)
-
-            json_response = json.loads(response.text)
+                json_response = response.json()
+            except:
+                print(response)
 
             #Tmin, fecha
             aux = {}
             for api in json_response:
+
                 if 'tmin' in api:
-                    if len(aux)== 0:
-                        aux = [{'fecha':api['fecha'], 'tmin':api['tmin']}]
-                    else:
-                        aux.append({'fecha':api['fecha'], 'tmin':api['tmin']})
-            
-            
+                    t = ""
+                    for l, caracter in enumerate(api['tmin']): #Cambiar formato de la temperatura
+                        if caracter == ',':
+                            t += '.'
+                        else:
+                            t += caracter 
+
+                    #fecha_dt = datetime.strptime(api['fecha'], '%Y-%m-%d')
+                    #aux[fecha_dt] = float(t)
+                    aux[api['fecha']] = float(t)
+
             #Comarca -> indicativo, historico con las temperaturas minimas 
             cursor = estacion.find({'indicativo': idEstacion},{'indicativo':True,'comarca_sg': True, '_id':False} )
             for it in cursor:
+     
                 if it['comarca_sg'] not in df:
-                    df[it['comarca_sg']] = [{'idEstacion': it['indicativo'], 'historico':aux}]
+                    df[it['comarca_sg']] = {'comarca_sg': it['comarca_sg'], 'idEstacion': it['indicativo'], 'historico': dict(aux)}
                 else: 
-                    if len(df) == 0:
-                        df[it['comarca_sg']] = [{'idEstacion': it['indicativo'], 'historico':aux}]
-                    else:
-                        df[it['comarca_sg']].append({'idEstacion': it['indicativo'], 'historico':aux})
-
-
-text_file = open("historico.txt", "w")
+                    df[it['comarca_sg']].append({'comarca_sg': it['comarca_sg'], 'idEstacion': it['indicativo'], 'historico':dict(aux)})
+    
+text_file = open("historico1.json", "w")
 n = text_file.write(json.dumps(df))
 text_file.close()
+j+=1
+    
+
+
 
 #records = df.to_dict(orient='records')
 
 historico = db.historico
-historico.delete_many({})
+#historico.delete_many({})
 historico.insert_many(df)           
     
 

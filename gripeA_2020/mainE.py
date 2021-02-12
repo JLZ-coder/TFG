@@ -258,7 +258,7 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "endDate":  "" if brote[0]['end'] == "" else brote[0]['end'].timestamp()*1000,
                     "codeSpecies": alertaComarcasGeo[it['comarca_sg']][0]['especie'],
                     "species": brote[0]['species'],
-                    "commonName": especie[0]['Nombre común'],
+                    "commonName": especieFind[0]['Nombre común'],
                     "fluSubtype": brote[0]['serotype'],
                     "comarca_sg": it['comarca_sg'],
                     "comarca": it['com_sgsa_n'],
@@ -282,7 +282,8 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                 },
                 "properties": {
                     "idBrote": brote[0]['oieid'],
-                    "idAlerta": it['comarca_sg'] 
+                    "idAlerta": it['comarca_sg'],
+                    "commonName": especieFind[0]['Nombre común']
                 }
             }
             feat_col_migra["features"].append(feat_migra)
@@ -329,14 +330,14 @@ def main(argv):
 
     driver.close()
 
-    text_file = open("brotes.geojson", "w")
-    n = text_file.write(json.dumps(brot))
+    text_file = open("brotes.geojson", "w",encoding='utf8')
+    n = text_file.write(json.dumps(brot,ensure_ascii=False))
     text_file.close()
-    text_file = open("migras.geojson", "w")
-    n = text_file.write(json.dumps(migra))
+    text_file = open("migras.geojson", "w", encoding='utf8')
+    n = text_file.write(json.dumps(migra,ensure_ascii=False))
     text_file.close()
-    text_file = open("alertas.geojson", "w")
-    n = text_file.write(json.dumps(alertas))
+    text_file = open("alertas.geojson", "w", encoding='utf8')
+    n = text_file.write(json.dumps(alertas, ensure_ascii=False))
     text_file.close()
 
 
