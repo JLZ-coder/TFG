@@ -10,6 +10,6 @@ class Factory:
         for builder in self.builders:
             datos = builder.createData(dataType, start, end)
             if datos != None:
-                break;
+                break
 
         return datos

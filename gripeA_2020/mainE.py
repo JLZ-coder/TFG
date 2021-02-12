@@ -14,26 +14,27 @@ import string
 
 #from dao.daoBrotes import daoBrotes
 #from dao.daoComar import daoComar
-
-
+import dao.daoMongo as mongoCls
+import dao.daoNeo4j as neo4jCls
+import dao.daoGrafo as grafoCls
 
 # GLOBALS
-client = MongoClient('mongodb://localhost:27017/')
-db = client.lv
-outbreaks = db.outbreaks
-migrations = db.migrations
-com = db.comarcas
-especie = db.especies
+#Instanciamos mongo 
+mongo = mongoCls.daoMongo()
+#Accedemos a la coleccion
+outbreaks = mongo._collection.outbreaks
+migrations = mongo._collection.migrations
+com = mongo._collection.comarcas
+especie = mongo._collection.especies
 
 diseases = {
     '15' : "Highly Path Avian influenza",
     '201' : "Low Path Avian influenza",
     '1164' : "Highly pathogenic influenza A viruses"
 }
-driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
-# daoComar = daoComar()
-# daoBrotes = daoBrotes()
+Neo4j = neo4jCls.daoNeo4j()
+driver =Neo4j._driver
 
 # Saca geohash de 3 digitos que caen en espana
 def geohashEsp():
@@ -58,6 +59,7 @@ def migraHaciaEsp(geoESP):
     startPoints = dict()
 
     for geo in geoESP:
+        #response = grafoCls.daoGrafo.read(Neo4j, "(n:Region)-[r]-(x:Region)", "x.location", geo, "n.location, x.identity, x.location, r.especie")
         response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, x.identity, x.location, r.especie'.format(geo)).values()
         for r in response:
             if r[0][0:4] not in startPoints:

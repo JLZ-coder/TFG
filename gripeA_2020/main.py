@@ -279,13 +279,8 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
                     "riskLevel": alertaComarcaRiesgo[it['comarca_sg']],
                     "number_of_cases": brote[0]['affected_population'],
                     "reportDate": brote[0]['report_date'].timestamp()*1000,
-<<<<<<< Updated upstream
                     "startDate": brote[0]['start'].timestamp()*1000 ,
                     "endDate":  "" if brote[0]['end'] == "" else brote[0]['end'].timestamp()*1000,
-=======
-                    # "startDate": brote[0]['start'].timestamp()*1000,
-                    # "endDate": brote[0]['end'].timestamp()*1000,
->>>>>>> Stashed changes
                     "codeSpecies": alertaComarcasGeo[it['comarca_sg']][0]['especie'],
                     "species": brote[0]['species'],
                     "commonName": especie[0]['Nombre común'],
@@ -356,11 +351,6 @@ def main(argv):
 
     #Generar Json de las alertas
     alertas, migra = genera_alerta(comarcaRiesgo, alertaComarcasGeo)
-<<<<<<< Updated upstream
-=======
-
-    
->>>>>>> Stashed changes
 
     driver.close()
 
