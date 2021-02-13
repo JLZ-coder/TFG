@@ -314,8 +314,9 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
 
     return feat_col_alertas, feat_col_migra
 
-def recogidaDatos():
-    
+def recogidaDatos(req, window, typeA, date):
+    print(window + typeA + date)
+
 
 
 

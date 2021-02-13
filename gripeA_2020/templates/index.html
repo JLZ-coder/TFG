@@ -2,16 +2,54 @@
 
 
 {% block content %}
-<form action="mainE.py/recogidaDatos" method="post">
-    <p>Ventana brotes (De 3 a 12 meses)<input type="range" name="rango" min="3" max="12" step="3" value="3"/></p>
+<!-- <form action="mainE.py/recogidaDatos" method="post">
+    <p>Ventana brotes (De 3 a 12 meses)<input type="range" name="window" min="3" max="12" step="3" value="3"/></p>
     <p>Tipo de aves 
         <input type="radio" name="typeA" value="b" checked>Ambas
         <input type="radio" name="typeA" value="d"> Domesticas
         <input type="radio" name="typeA" value="s"> Silvestres
     </p>
-    <p>Fecha <input type="date" name="fecha"></p>
+    <p>Fecha <input type="date" name="date"></p>
     <p>Coeficientes del modelo</p>
-    <p><input type="submit" value="OK"/></p>
-    <p><input type="reset" value="Reset"/></p>
+    <p>
+        <input type="submit" value="OK"/>
+        <input type="reset" value="Reset"/>
+    </p>
+</form> -->
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.window.label }}
+        {{ form.window }}<br>
+        {% for error in form.window.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.date.label }}
+        {{ form.date }}<br>
+        {% for error in form.date.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.typeA.label }}
+        {{ form.typeA }}<br>
+        {% for error in form.typeA.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
 </form>
+
+
+
+
+
+
+
+
+
 {% endblock %}
