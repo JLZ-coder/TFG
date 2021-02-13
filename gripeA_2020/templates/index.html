@@ -3,7 +3,15 @@
 
 {% block content %}
 <form action="mainE.py/recogidaDatos" method="post">
-    <p>Tu nombre: <input type="text" name="nombre" value=""/></p>
+    <p>Ventana brotes (De 3 a 12 meses)<input type="range" name="rango" min="3" max="12" step="3" value="3"/></p>
+    <p>Tipo de aves 
+        <input type="radio" name="typeA" value="b" checked>Ambas
+        <input type="radio" name="typeA" value="d"> Domesticas
+        <input type="radio" name="typeA" value="s"> Silvestres
+    </p>
+    <p>Fecha <input type="date" name="fecha"></p>
+    <p>Coeficientes del modelo</p>
     <p><input type="submit" value="OK"/></p>
+    <p><input type="reset" value="Reset"</p>
 </form>
 {% endblock %}
