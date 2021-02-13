@@ -22,7 +22,7 @@ class daoGrafo(daoNeo4j):
 
         query = m + w + wi + r
 
-        response = self._instance._session.run(query).values()
+        response = self._session.run(query).values()
 
         ret = []
 

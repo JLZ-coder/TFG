@@ -59,8 +59,8 @@ def migraHaciaEsp(geoESP):
     startPoints = dict()
 
     for geo in geoESP:
-        #response = grafoCls.daoGrafo.read(Neo4j, "(n:Region)-[r]-(x:Region)", "x.location", geo, "n.location, x.identity, x.location, r.especie")
-        response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, x.identity, x.location, r.especie'.format(geo)).values()
+        response = grafoCls.daoGrafo.read("(n:Region)-[r]-(x:Region)", "x.location", geo, "n.location, x.identity, x.location, r.especie")
+        #response = driver.session().run('MATCH (n:Region)-[r]-(x:Region) WHERE x.location starts with "{}" RETURN n.location, x.identity, x.location, r.especie'.format(geo)).values()
         for r in response:
             if r[0][0:4] not in startPoints:
                 startPoints[r[0][0:4]] = [{"migra" : r[1], "geoEsp" : r[2][0:4], "especie": r[3]}]
