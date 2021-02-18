@@ -317,6 +317,7 @@ def genera_alerta(alertaComarcaRiesgo, alertaComarcasGeo):
 def recogidaDatos(window, typeA, dateWeb):
     print(window + typeA)
     print(dateWeb)
+    
 
 
 
