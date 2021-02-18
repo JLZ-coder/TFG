@@ -9,10 +9,8 @@ def process():
     window = request.form.get("window")
     date = request.form.get("date")
     typeA = request.form.get("typeA")
-    
-    
     #main.recogidaDatos(window, typeA, date)
-    
+
     return render_template("procesado.html", window = window, date = date, typeA= typeA)
 
 @app.route('/')
