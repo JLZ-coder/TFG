@@ -4,10 +4,11 @@ from neo4j import GraphDatabase
 
 # Usa los datos de migraciones en mongo para hacer un grafo en neo4j
 
+TAM_GEO = 4
+
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 migrations = db.migrations
-TAM_GEO = 4
 
 all_migrations = migrations.find({})
 

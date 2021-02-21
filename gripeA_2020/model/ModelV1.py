@@ -1,9 +1,14 @@
 import math
 from datetime import datetime, timedelta, date
 
-class Quintile:
+class ModelV1:
     def __init__(self, dataFactory):
         self.dataFactory = dataFactory
+        self.tag = "modelv0"
+
+    def create(self, tag):
+        if (tag == self.tag):
+            return self
 
     def run(self, start, end):
         outbreakStart = start - timedelta(days = 90)
