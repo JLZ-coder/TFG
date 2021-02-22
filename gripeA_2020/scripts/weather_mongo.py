@@ -27,7 +27,7 @@ df = pd.read_excel(file)
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 estacion = db.estaciones
-h = db.historico
+historico = db.historico
 records = df.to_dict(orient='records')
 
 
@@ -57,6 +57,24 @@ j=1
 #Valores para la URL
 #fechaini = "{}-01-01T00:00:00UTC".format(i)
 #fechafin = "{}-12-31T00:00:00UTC".format(i)
+
+empty = {}
+#Sacar estaciones que no presentan historico
+for idEstacion in indicativos:
+    cursor = list(historico.find({'idEstacion': idEstacion}, {'idEstacion':True, '_id':False}))
+
+    if cursor == []:
+        #Sacamos las comarcas que no tienen asociado un historico
+        it = list(estacion.find({'indicativo': idEstacion},{'comarca_sg':True,  '_id':False}))
+        aux=[]
+        for i in it:
+            aux.append(i['comarca_sg'])
+        empty[idEstacion] = aux
+
+
+text_file = open("data/emptyCG-IDE.json", "w")
+n = text_file.write(json.dumps(empty))
+text_file.close()
 
 
 #2017-2021

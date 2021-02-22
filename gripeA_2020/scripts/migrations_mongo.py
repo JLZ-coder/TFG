@@ -10,18 +10,24 @@ import datetime
 #Ficheros necesarios
 #file = "mov_acuaticas ult 10 años.xlsx"
 file = "data/Datos especies1.xlsx"
-file1 = "data/Especies.xlsx"
+#file1 = "data/Especies.xlsx"
 
 df = pd.read_excel(file, 'Movimientos')
 
-df_especies = pd.read_excel(file1)
+#Especies
+df_especies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0)
+#forma de acceder a la prob de movimiento segun el codigo de anilla index
+#df1 = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2 )
+#print(df1[3][70])
+
+df_especies = df_especies.fillna("")
 
 #Ahora borramos todos los que tengan 'localidad confidencial'
-'''df = df[df.Localidad != 'Localidad confidencial']
-df = df[df.LocalidadR != 'Localidad confidencial']
+#df = df[df.Localidad != 'Localidad confidencial']
+#df = df[df.LocalidadR != 'Localidad confidencial']
 df1 = df_especies['codigo anilla'].tolist()
 df = df[df.Especie.isin(df1)]
-
+'''
 
 #Ahora borramos las columnas que nos sobran:
 df.drop(['Cod_Localidad', 'Cod_LocalidadR', 'EspecieR', 'Verificacion',
@@ -60,13 +66,26 @@ df = df[df.geohash != df.geohashR]
 
 #print (df)
 
+#MONGODB
 
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
+
+#MIGRACIONES
 migrations = db.migrations
 records = df.to_dict(orient='records')  # Here's our added param..
 # Borra todo
 migrations.delete_many({})
-#records = json.loads(df.T.to_bson()).values()
+#Insertamos
 migrations.insert_many(records)
 
+df_mongo = pd.DataFrame({'Nombre cientifico': df_especies['Nombre científico'], 'Especie': df_especies['Especie'], 'codigo anilla': df_especies['codigo anilla']})
+
+#ESPECIES
+especie = db.especies
+records = df_mongo.to_dict(orient='records')  # Here's our added param..
+
+# Borra todo
+especie.delete_many({})
+#records = json.loads(df.T.to_bson()).values()
+especie.insert_many(records)
