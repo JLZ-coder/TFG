@@ -16,9 +16,10 @@ api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YWxlbmNpYWJhcmNlbG9uYUBnbWFpbC
 
 
 
+testdate= datetime(2010,6,16)
+print((testdate - datetime(testdate.year,1,1)).days / 7+1) 
 
-
-        
+       
 #Leemos el fichero que relaciona las estaciones con las comarcas
 file = "aemet/CG_estaciones.xlsx"
 df = pd.read_excel(file)

@@ -1,16 +1,16 @@
-
+from .ModelV0 import ModelV0
+from .ModelV1 import ModelV1
 
 class ModelSelector:
-    def __init__(self, dataFactory):
-        self.dataFactory = dataFactory
+    def __init__(self):
         self.parameters = dict()
-        _init()
+        self._init()
 
     def _init(self):
         self.models = list()
-        models.append(ModelV0(self.dataFactory))
-        models.append(ModelV1(self.dataFactory))
-        self.currentModel = models[0]
+        self.models.append(ModelV0())
+        self.models.append(ModelV1())
+        self.currentModel = self.models[1]
 
     def setModel(self, modelTag):
         modelo = None
@@ -26,5 +26,5 @@ class ModelSelector:
     def setParameters(self, parameters):
         self.parameters = parameters
 
-    def run(self, start, end):
-        self.currentModel.run(start, end, self.parameters)
+    def run(self, start, end, parameters):
+        self.currentModel.run(start, end, parameters)

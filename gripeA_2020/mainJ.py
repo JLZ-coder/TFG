@@ -14,7 +14,7 @@ from neo4j import GraphDatabase
 from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
 from model.Quintile import Quintile
-from controller.Controller import Controller
+from controller import controller
 
 
 # GLOBALS

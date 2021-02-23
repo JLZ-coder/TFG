@@ -36,9 +36,9 @@ class OutbreakBuilder(Builder):
                     for comarca in tablaGeoComarca[relacion[0]]:
                         cod = comarca["cod_comarca"]
                         if cod not in comarca_brotes:
-                            comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote}]
+                            comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote, "especie":relacion[1]}]
                         else:
-                            comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote})
+                            comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "datos" : brote, "especie":relacion[1]})
 
 
         return comarca_brotes

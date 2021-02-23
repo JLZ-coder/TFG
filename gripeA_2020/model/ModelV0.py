@@ -2,8 +2,7 @@ import math
 from datetime import datetime, timedelta, date
 
 class ModelV0():
-    def __init__(self, dataFactory):
-        self.dataFactory = dataFactory
+    def __init__(self):
         self.tag = "modelv0"
 
     def create(self, tag):
@@ -11,10 +10,8 @@ class ModelV0():
             return self
 
     def run(self, start, end, parameters):
-        outbreakStart = start - timedelta(days = 90)
-        comarca_brotes = self.dataFactory.createData("outbreak", outbreakStart, start)
         # Según los datos calcular las comarcaBrotes
-        comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
+        comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(parameters['comarca_brotes'][k]), reverse=True)
         alertas = dict()
         alertas["start"] = start
         alertas["end"] = end

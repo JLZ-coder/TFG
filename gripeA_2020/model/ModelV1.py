@@ -1,37 +1,46 @@
 import math
-from datetime import datetime, timedelta, date
-
-class ModelV1:
-    def __init__(self, dataFactory):
-        self.dataFactory = dataFactory
-        self.tag = "modelv0"
+from datetime import datetime
+class ModelV1():
+    def __init__(self):
+        self.tag = "modelv1"
 
     def create(self, tag):
         if (tag == self.tag):
             return self
 
-    def run(self, start, end):
-        outbreakStart = start - timedelta(days = 90)
-        comarca_brotes = self.dataFactory.createData("outbreak", outbreakStart, start)
+    #Parameters[comarca_brotes, matrizEspecies, tMin] 
+    def run(self, start, end, parameters):
+
         # Según los datos calcular las comarcaBrotes
-        comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
+        #comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
         alertas = dict()
         alertas["start"] = start
         alertas["end"] = end
 
-        # Cuartiles
-        alertaMax = 5
-        porcentaje = 0.2
-        percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
-        cont = 1
-        for comarca in comarca_brotes_sorted:
-            alertas[comarca] = {"nivel" : alertaMax}
+        #Modelo
+        nAlerta = 0
+        for comarca, brotes in parameters['comarca_brotes'].items():
+            nAlerta = 0 
+            for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
+                contrBrote = 0
+                semana = int(((end - datetime(end.year,1,1)).days / 7) + 1)
+                probMigra = parameters['matrizEspecies'][semana-1][brote["especie"]]
+                
+                probTipo = 0
 
-            if cont == percentil:
-                alertaMax -= 1
-                porcentaje += 0.2
-                percentil = math.ceil(len(comarca_brotes_sorted) * porcentaje)
+                if brote['datos']['epiunit']== "Farm":
+                    probTipo = 0.1
+                elif brote['datos']['epiunit']== "Backyard":
+                    probTipo = 0.3
+                else:
+                    probTipo = 1
+                
+                contrBrote = (probMigra/100)*probTipo
+                nAlerta += contrBrote
 
-            cont += 1
+            temperaturaM = parameters['tMin']
+            alertas[comarca] = nAlerta * temperaturaM
+
+            
 
         return alertas
