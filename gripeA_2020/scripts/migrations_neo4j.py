@@ -62,7 +62,7 @@ query = "//PARTE DE NODOS\n" + nodos_query + "\n//PARTE DE MIGRACIONES\n" + migr
 
 driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 # Borra todo lo que hay en neo4j!!!!!
-# driver.session().run("MATCH (n) DETACH DELETE n")
+driver.session().run("MATCH (n) DETACH DELETE n")
 response = driver.session().run(query).value()
 driver.close()
 
