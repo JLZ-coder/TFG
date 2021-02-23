@@ -26,5 +26,5 @@ class ModelSelector:
     def setParameters(self, parameters):
         self.parameters = parameters
 
-    def run(self, start, end, parameters):
-        self.currentModel.run(start, end, parameters)
+    def run(self, start, end):
+        self.currentModel.run(start, end, self.parameters)

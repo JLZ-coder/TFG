@@ -42,13 +42,14 @@ def main(argv):
     dataBuilderList.append(TempBuilder())
     dataFact = Factory(dataBuilderList)
 
-    modelSelector = ModelSelector(dataFact)
+    modelSelector = ModelSelector()
 
+    date = None
     geojsonGen = GeojsonGenerator()
 
-    control = Controller(modelSelector, geojsonGen)
+    control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
-    control.run()
+    control.run(date,12)
 
     return 0
 
