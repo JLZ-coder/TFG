@@ -1,5 +1,8 @@
 import math
-from datetime import datetime
+from datetime import datetime, timedelta
+from numpy import log as ln
+import math
+
 class ModelV1():
     def __init__(self):
         self.tag = "modelv1"
@@ -23,7 +26,9 @@ class ModelV1():
             nAlerta = 0 
             for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
                 contrBrote = 0
-                semana = end.isocalendar()[1]-1
+                semanaA = start - timedelta(days=1)
+                semana = semanaA.isocalendar()[1]-1
+
                 probMigra = parameters['matrizEspecies'][semana][brote["especie"]]
                 
                 probTipo = 0
@@ -38,9 +43,8 @@ class ModelV1():
                 contrBrote = (probMigra/100)*probTipo
                 nAlerta += contrBrote
 
-            temperaturaM = parameters['tMin'][comarca]
+            print(math.log(parameters['tMin'][comarca]))
+            temperaturaM = (-7.82* ln(parameters['tMin'][comarca])) + 29.94
             alertas[comarca] = nAlerta * temperaturaM
-
-            
 
         return alertas

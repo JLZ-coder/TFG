@@ -9,7 +9,7 @@ import os
 #file = "mov_acuaticas ult 10 años.xlsx"
 file = "../data/Datos especies1.xlsx"
 #file1 = "data/Especies.xlsx"
-
+print(os.getcwd())
 df = pd.read_excel(file, 'Movimientos')
 
 #Especies

@@ -115,7 +115,7 @@ for idEstacion in indicativos: #Recorremos la lista
         aux = {}
         
         #diccionario que va a mongo
-        semanal = {}
+        semanal = {'2017':[None]*53, '2018':[None]*53, '2019':[None]*53, '2020':[None]*53, '2021':[None]*53}
         #Calcular media semanal
         semana = [None]*53
         contador = [0]*53
@@ -166,7 +166,7 @@ for idEstacion in indicativos: #Recorremos la lista
         df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal})
         
 
-text_file = open("../data/historico1.json", "w")
+text_file = open("/data/historico1.json", "w")
 n = text_file.write(json.dumps(df))
 text_file.close()
 j+=1

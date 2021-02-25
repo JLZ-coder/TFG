@@ -7,7 +7,9 @@ from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
 from factories.TempBuilder import TempBuilder
 from model.ModelSelector import ModelSelector
+from model.GeojsonGenerator import GeojsonGenerator
 from controller import controller
+
 
 
 # GLOBALS
@@ -38,9 +40,9 @@ def main(argv):
     modelSelector = ModelSelector()
 
     date = None
-    #geojsonGen = GeojsonGenerator()
+    geojsonGen = GeojsonGenerator()
 
-    control = controller.Controller(modelSelector, dataFact)
+    control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
     control.run(date,12)
 
