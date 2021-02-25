@@ -3,6 +3,7 @@ from .Builder import Builder
 from dao.daoBrotes import daoBrotes
 from neo4j import GraphDatabase
 import json
+import os, sys
 
 class OutbreakBuilder(Builder):
     def __init__(self):

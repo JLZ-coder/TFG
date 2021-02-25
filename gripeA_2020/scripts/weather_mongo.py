@@ -21,7 +21,7 @@ print((testdate - datetime(testdate.year,1,1)).days / 7+1)
 
        
 #Leemos el fichero que relaciona las estaciones con las comarcas
-file = "aemet/CG_estaciones.xlsx"
+file = "../aemet/CG_estaciones.xlsx"
 df = pd.read_excel(file)
 
 #Insertamos la relacion de estaciones con comarcas en mongoDB
@@ -73,7 +73,7 @@ for idEstacion in indicativos:
         empty[idEstacion] = aux
 
 
-text_file = open("data/emptyCG-IDE.json", "w")
+text_file = open("../data/emptyCG-IDE.json", "w")
 n = text_file.write(json.dumps(empty))
 text_file.close()
 
@@ -347,7 +347,7 @@ for idEstacion in indicativos: #Recorremos la lista
         df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal})
         
 
-text_file = open("historico1.json", "w")
+text_file = open("../data/historico1.json", "w")
 n = text_file.write(json.dumps(df))
 text_file.close()
 j+=1

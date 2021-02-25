@@ -2,12 +2,12 @@ import pandas as pd
 from pymongo import MongoClient
 import json
 import pygeohash as geohash
+import os
 # Metemos las migraciones en mongo si son de las especies que queremos
 
 #Ficheros necesarios
 #file = "mov_acuaticas ult 10 años.xlsx"
-#file = "data/Datos especies1.xlsx"
-file = "C:/Users/Usuario/Documents/GitHub/TFG/gripeA_2020/data/Datos especies1.xlsx"
+file = "../data/Datos especies1.xlsx"
 #file1 = "data/Especies.xlsx"
 
 df = pd.read_excel(file, 'Movimientos')

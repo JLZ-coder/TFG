@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta, date
 import pandas as pd
+import os
 
 class Controller:
     def __init__(self, model,dataFactory, geojsonGen):
@@ -14,12 +15,11 @@ class Controller:
             end = start + timedelta(weeks = 1)
         else: #Fecha actual
             today = date.today()
-            start = today + timedelta(days = -today.weekday()) - timedelta(weeks = weeks)
+            start = today + timedelta(days = -today.weekday())
             end = start + timedelta(weeks = 1)
 
         start = datetime.combine(start, datetime.min.time())
         end = datetime.combine(end, datetime.min.time())
-
 
         #Parameters
         outbreakStart = start - timedelta(days = 90)
