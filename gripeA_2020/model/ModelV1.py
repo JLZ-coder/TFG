@@ -23,8 +23,8 @@ class ModelV1():
             nAlerta = 0 
             for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
                 contrBrote = 0
-                semana = int(((end - datetime(end.year,1,1)).days / 7) + 1)
-                probMigra = parameters['matrizEspecies'][semana-1][brote["especie"]]
+                semana = end.isocalendar()[1]-1
+                probMigra = parameters['matrizEspecies'][semana][brote["especie"]]
                 
                 probTipo = 0
 
@@ -38,7 +38,7 @@ class ModelV1():
                 contrBrote = (probMigra/100)*probTipo
                 nAlerta += contrBrote
 
-            temperaturaM = parameters['tMin']
+            temperaturaM = parameters['tMin'][comarca]
             alertas[comarca] = nAlerta * temperaturaM
 
             

@@ -23,8 +23,8 @@ class Controller:
 
         #Parameters
         outbreakStart = start - timedelta(days = 90)
-        comarca_brotes = self.dataFactory.createData("outbreak", outbreakStart, start)
-        tMin = self.dataFactory.createData("temp",start, end)
+        comarca_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
+        tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
         file = "data/Datos especies1.xlsx"
         matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2 )
 

@@ -15,11 +15,7 @@ api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YWxlbmNpYWJhcmNlbG9uYUBnbWFpbC
 #aemet_client.descargar_resumen_mensual_climatologico("aemet.txt", 2018, 12)
 
 
-
-testdate= datetime(2010,6,16)
-print((testdate - datetime(testdate.year,1,1)).days / 7+1) 
-
-       
+'''       
 #Leemos el fichero que relaciona las estaciones con las comarcas
 file = "../aemet/CG_estaciones.xlsx"
 df = pd.read_excel(file)
@@ -34,7 +30,12 @@ records = df.to_dict(orient='records')
 
 estacion.delete_many({})
 estacion.insert_many(records)
- 
+'''
+
+client= MongoClient('mongodb://localhost:27017/')
+db = client.lv
+estacion = db.estaciones
+
 
 # dbf.export(table, filename='CG', format='csv', header=False, encoding='ascii')
 # #diccionario que tendra como clave "id de comarca" y valor la informacion de las estaciones
@@ -59,6 +60,7 @@ j=1
 #fechaini = "{}-01-01T00:00:00UTC".format(i)
 #fechafin = "{}-12-31T00:00:00UTC".format(i)
 
+'''
 empty = {}
 #Sacar estaciones que no presentan historico
 for idEstacion in indicativos:
@@ -76,11 +78,11 @@ for idEstacion in indicativos:
 text_file = open("../data/emptyCG-IDE.json", "w")
 n = text_file.write(json.dumps(empty))
 text_file.close()
-
+'''
 
 #2017-2021
-fechaini = "2017-01-01T00:00:00UTC"
-fechafin = "2020-12-31T00:00:00UTC"
+fechaini = "2017-01-02T00:00:00UTC"
+fechafin = "2021-01-31T00:00:00UTC"
 
 for idEstacion in indicativos: #Recorremos la lista 
         
@@ -109,32 +111,18 @@ for idEstacion in indicativos: #Recorremos la lista
             json_response = response.json()
         except:
             print(response)
- 
-        #Tmin, fecha
-        aux = {}
-        semanal = {"2017": [], "2018": [], "2019":[], "2020":[]}
-        bisiesto = [2016,2020]#Años bisiestos
-        cont = 1 #Semana
-        media = 0 #Media semanal
-        semana1= 0
-        semana2= 0
-        semana3= 0
-        semana4= 0
-        semana5= 0
-        cont1= 0
-        cont2= 0
-        cont3= 0
-        cont4= 0 
-        cont5= 0
-        meses31 = [1,3,5,7,8,10,12] #Meses con 31 dias
-        meses30 = [4,6,9,11] #Meses con 30 dias
-        mesAnterior = 1
-        anio = 2017 
-        for api in json_response:
 
-            
+        aux = {}
+        
+        #diccionario que va a mongo
+        semanal = {}
+        #Calcular media semanal
+        semana = [None]*53
+        contador = [0]*53
+        anio = 2017 
+        semanaFinal =[None]*53
+        for api in json_response:
             if 'tmin' in api:
-                
                 t = ""
                 for l, caracter in enumerate(api['tmin']): #Cambiar formato de la temperatura
                     t += '.' if (caracter == ',') else caracter
@@ -146,204 +134,35 @@ for idEstacion in indicativos: #Recorremos la lista
 
                 fecha_dt = datetime.strptime(api['fecha'], '%Y-%m-%d')
 
-                #Boolenaos para comprobar fin de mes
-                booleanBisiesto = True if (fecha_dt.year in bisiesto) else False
-                boolean31 = True if (fecha_dt.month in meses31) else False
-                boolean30 = True if (fecha_dt.month in meses30) else False
-
-                #Fin (booleano que indica si se ha terminado un mes)
-                fin = False
-                #media+=float(t)
-                #3 CASOS
-                #Fin de mes - OK
-                # No fin de mes - Se termina el mes y se añade cuando los contadores estan a 0
-                #    Meses vacios OK
-                # No fin de mes pero pasa de año 
-                # Ejemplo: mesAnterior 25 de diciembre Fecha actual 2 de enero
-            
-                #Es fin de mes y el mes de la fecha anterior no coincide con la actual, lo metemos a la bbdd
-                if (boolean31 and fecha_dt.day == 31) or (boolean30 and fecha_dt.day == 30)  or (fecha_dt.month == 2 and fecha_dt.day == 29) or (fecha_dt.month == 2 and fecha_dt.day == 28 and not booleanBisiesto ) or (fecha_dt.month != mesAnterior ): 
-                    #Añadimos el ultimo si es fin de mes
-                    if fecha_dt.month == mesAnterior: #Caso normal
-                        if fecha_dt.day <= 7:
-                            semana1 += float(t)
-                            cont1+=1
-                        elif fecha_dt.day > 7 and fecha_dt.day <= 14:
-                            semana2 += float(t)
-                            cont2+=1
-                        elif fecha_dt.day > 14 and fecha_dt.day <= 21:
-                            semana3 += float(t)
-                            cont3+=1
-                        elif fecha_dt.day > 21 and fecha_dt.day <= 28:
-                            semana4 += float(t)
-                            cont4+=1
+                semanaActual = fecha_dt.isocalendar()[1]-1
+                if anio != fecha_dt.year and (semanaActual >= 0 and semanaActual < 52):
+                    #Meter valores medios semanales
+                    for i in range(0,len(semana)):
+                        if semana[i] == None:
+                            semanaFinal[i] = None
                         else:
-                            semana5 += float(t)
-                            cont5+=1
-                        
-                        #Se almacena en el diccionario
-                        if cont1 != 0:
-                            semanal[str(fecha_dt.year)].append(semana1/cont1)
-                        else: 
-                            semanal[str(fecha_dt.year)].append(None)
-                        
-                        if cont2 != 0:
-                            semanal[str(fecha_dt.year)].append(semana2/cont2)
-                        else: 
-                            semanal[str(fecha_dt.year)].append(None)
-                        
-                        if cont3 != 0:
-                            semanal[str(fecha_dt.year)].append(semana3/cont3)
-                        else: 
-                            semanal[str(fecha_dt.year)].append(None)
-                        
-                        if cont4 != 0:
-                            semanal[str(fecha_dt.year)].append(semana4/cont4)
-                        else: 
-                            semanal[str(fecha_dt.year)].append(None)
-                        
-                        if cont5 != 0:
-                            semanal[str(fecha_dt.year)].append(semana5/cont5)
-                        else: 
-                            semanal[str(fecha_dt.year)].append(None)
-                        
-                        #Reiniciamos contadores
-                        semana1= 0
-                        semana2= 0
-                        semana3= 0
-                        semana4= 0
-                        semana5= 0
-                        cont1= 0
-                        cont2= 0
-                        cont3= 0
-                        cont4= 0 
-                        cont5= 0
-
-                        #Mes anterior actualizado
-                        mesAnterior = 1 if (mesAnterior == 12) else mesAnterior + 1
-                        if mesAnterior == 1:
-                            anio += 1
-
-                        fin = True
-                        continue
-                    else:
-                        #3 casos
-                        #Mes siguiente sin finalizar el anterior
-                        #Mes siguiente fin de año
-                        #Se añade al dataframe las semanas
-                        i = 0
-                        #En caso de que haya un mes sin datos se rellena de None
-                        
-                        if fecha_dt.year != anio: 
-                            iterar = (12 - mesAnterior) + fecha_dt.month
-                        else:
-                            iterar = fecha_dt.month - mesAnterior
-
-                         
-                        for i in range(iterar):
-    
-                            #Se almacena en el diccionario
-                            if cont1 != 0:
-                                semanal[str(anio)].append(semana1/cont1)
-                            else: 
-                                semanal[str(anio)].append(None)
-                            
-                            if cont2 != 0:
-                                semanal[str(anio)].append(semana2/cont2)
-                            else: 
-                                semanal[str(anio)].append(None)
-                            
-                            if cont3 != 0:
-                                semanal[str(anio)].append(semana3/cont3)
-                            else: 
-                                semanal[str(anio)].append(None)
-                            
-                            if cont4 != 0:
-                                semanal[str(anio)].append(semana4/cont4)
-                            else: 
-                                semanal[str(anio)].append(None)
-                            
-                            if cont5 != 0:
-                                semanal[str(anio)].append(semana5/cont5)
-                            else: 
-                                semanal[str(anio)].append(None)
-                            
-                            #Reiniciamos contadores
-                            semana1= 0
-                            semana2= 0
-                            semana3= 0
-                            semana4= 0
-                            semana5= 0
-                            cont1= 0
-                            cont2= 0
-                            cont3= 0
-                            cont4= 0 
-                            cont5= 0
-
-                            mesAnterior = 1 if (mesAnterior == 12) else mesAnterior + 1
-                            if mesAnterior == 1:
-                                anio += 1
-                            fin = True
-                            
-                                   
-                    #Fecha entrante añadida a la semana correspondiente
-                if fecha_dt.day <= 7:
-                    semana1 += float(t)
-                    cont1+=1
-                elif fecha_dt.day > 7 and fecha_dt.day <= 14:
-                    semana2 += float(t)
-                    cont2+=1
-                elif fecha_dt.day > 14 and fecha_dt.day <= 21:
-                    semana3 += float(t)
-                    cont3+=1
-                elif fecha_dt.day > 21 and fecha_dt.day <= 28:
-                    semana4 += float(t)
-                    cont4+=1
+                            semanaFinal[i] = semana[i]/contador[i]
+                    semanal[str(anio)] = semanaFinal
+                    #Restablecer contadores 
+                    semana = [None]*53
+                    contador = [0]*53
+                    anio = fecha_dt.year
+                    semanaFinal = [None]*53
+                
+                if semana[semanaActual]==None:
+                    semana[semanaActual] = float(t)
                 else:
-                    semana5 += float(t)
-                    cont5+=1
-            
-                #Primero comprobamos fin de mes
-                '''if (boolean31 and fecha_dt.day == 31) or (boolean30 and fecha_dt.day == 30)  or (fecha_dt.month == 2 and fecha_dt.day == 29) or (fecha_dt.month == 2 and fecha_dt.day == 28 and not booleanBisiesto ): 
-                    semanal[fecha_dt.year].append(media/cont)
-                    cont = 1
-                    media = 0
-                else:
-                    if cont < 7: 
-                        cont+=1
-                    else:
-                        semanal[fecha_dt.year].append(media/7)
-                        cont = 1
-                        media = 0
-                '''
-        
-        if not fin:
-            if cont1 != 0:
-                semanal[str(fecha_dt.year)].append(semana1/cont1)
-            else: 
-                semanal[str(fecha_dt.year)].append(None)
-            
-            if cont2 != 0:
-                semanal[str(fecha_dt.year)].append(semana2/cont2)
-            else: 
-                semanal[str(fecha_dt.year)].append(None)
-            
-            if cont3 != 0:
-                semanal[str(fecha_dt.year)].append(semana3/cont3)
-            else: 
-                semanal[str(fecha_dt.year)].append(None)
-            
-            if cont4 != 0:
-                semanal[str(fecha_dt.year)].append(semana4/cont4)
-            else: 
-                semanal[str(fecha_dt.year)].append(None)
-            
-            if cont5 != 0:
-                semanal[str(fecha_dt.year)].append(semana5/cont5)
-            else: 
-                semanal[str(fecha_dt.year)].append(None)
-        
-       #Estación -> historico
+                    semana[semanaActual] += float(t)
+                
+                contador[semanaActual] += 1
+
+        #Meter valores medios semanales del ultimo año
+        for i in range(0,len(semana)):
+            if semana[i] == None:
+                semanaFinal[i] = None
+            else:
+                semanaFinal[i] = semana[i]/contador[i]
+        semanal[str(anio)] = semanaFinal   
         df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal})
         
 
