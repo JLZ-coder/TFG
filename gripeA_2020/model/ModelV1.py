@@ -28,9 +28,9 @@ class ModelV1():
                 
                 probTipo = 0
 
-                if brote['datos']['epiunit']== "Farm":
+                if brote['epiunit']== "Farm":
                     probTipo = 0.1
-                elif brote['datos']['epiunit']== "Backyard":
+                elif brote['epiunit']== "Backyard":
                     probTipo = 0.3
                 else:
                     probTipo = 1
