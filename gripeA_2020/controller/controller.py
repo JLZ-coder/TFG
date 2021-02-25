@@ -35,9 +35,10 @@ class Controller:
 
         alertas_collect = list()
 
+        self.model.setParameters(parameters)
+
         i = 0
         while (i < weeks):
-            self.model.setParameters(parameters)
             alertas = self.model.run(start,end)
             alertas_collect.append(alertas)
             start = end
