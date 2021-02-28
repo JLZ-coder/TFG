@@ -5,23 +5,23 @@ class GeojsonGenerator:
     def __init__(self):
         pass
 
-    def generate_comarca(self, alertList):
+    def generate_comarca(self, alertList, comarcasDict):
         feat_col_alertas = {
             "type": "FeatureCollection",
             "features": []
         }
 
-        i = 0
-        while (i < len(alertas)):
-            alertas = listAlertas[i]
+        for alertas in alertList:
             start = alertas["start"]
             end = alertas["end"]
 
-            for it in comarcas:
-                risk = 0
+            for it in alertas["alertas"]:
 
-                if it['comarca_sg'] in alertas:
-                    risk = alertas[it['comarca_sg']]
+                cod_comarca = it['comarca_sg']
+                it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
+                it['CPRO'] = comarcasDict[cod_comarca]['CPRO']
+                it['provincia'] = comarcasDict[cod_comarca]['provincia']
+                it['CPROyMUN'] = comarcasDict[cod_comarca]['CPROyMUN']
 
                 aux={
                     "type": "Feature",
@@ -30,8 +30,8 @@ class GeojsonGenerator:
                         "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                     },
                     "properties": {
-                        "id": it['comarca_sg'], #Será el id de comarca
-                        "riskLevel": risk,
+                        "id": cod_comarca, #Será el id de comarca
+                        "riskLevel": it['risk'],
                         "number_of_cases": 0,
                         "startDate": start.timestamp() * 1000,
                         "endDate": end.timestamp() * 1000,
@@ -39,7 +39,7 @@ class GeojsonGenerator:
                         # "species": "Anas crecca",
                         # "commonName": "Pato cuchara",
                         # "fluSubtype": "H5",
-                        "idComarca": it['comarca_sg'],
+                        "idComarca": cod_comarca,
                         "comarca": it['com_sgsa_n'],
                         "CPRO": it['CPRO'],
                         "province": it['provincia'],
@@ -50,11 +50,14 @@ class GeojsonGenerator:
 
         return feat_col_alertas
 
-    def generate_migration(self, outbreakComarca):
+    def generate_migration(self, outbreakComarca, comarcasDict):
         feat_col_migracion = {
             "type": "FeatureCollection",
             "features": []
         }
+
+        for cod_comarca in outbreakComarca:
+            outbreakComarca[cod_comarca] = 
 
         for it in listaMigraciones:
 
@@ -85,7 +88,10 @@ class GeojsonGenerator:
             "features": []
         }
 
-        for it in listaBrotes:
+        if type(outbreaklist) is dict:
+            outbreaklist = list(outbreaklist.values())
+
+        for it in outbreaklist:
             aux = {
                     "type": "Feature",
                     "geometry": {

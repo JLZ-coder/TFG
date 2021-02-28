@@ -166,7 +166,7 @@ for idEstacion in indicativos: #Recorremos la lista
         df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal})
         
 
-text_file = open("/data/historico1.json", "w")
+text_file = open("data/historico1.json", "w")
 n = text_file.write(json.dumps(df))
 text_file.close()
 j+=1

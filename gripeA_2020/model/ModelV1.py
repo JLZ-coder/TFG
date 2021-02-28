@@ -19,6 +19,7 @@ class ModelV1():
         alertas = dict()
         alertas["start"] = start
         alertas["end"] = end
+        alertas["alertas"] = []
 
         #Modelo
         nAlerta = 0
@@ -45,6 +46,6 @@ class ModelV1():
 
             print(math.log(parameters['tMin'][comarca]))
             temperaturaM = (-7.82* ln(parameters['tMin'][comarca])) + 29.94
-            alertas[comarca] = nAlerta * temperaturaM
+            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
 
         return alertas
