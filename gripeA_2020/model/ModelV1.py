@@ -60,7 +60,8 @@ class ModelV1():
             try:
                 week = start.isocalendar()[1]-1
                 temperaturaM = 66 if (parameters['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca][str(start.year)][week])) + 29.94
-                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
+                #alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
+                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta})
             except: 
                 print("No hay temperatura para la comarca: " + comarca) 
            

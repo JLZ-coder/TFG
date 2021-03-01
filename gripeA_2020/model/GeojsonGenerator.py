@@ -11,13 +11,20 @@ class GeojsonGenerator:
             "features": []
         }
 
+        comarcas_de_alertlist = set()
+        it = dict()
+
         for alertas in alertList:
             start = alertas["start"]
             end = alertas["end"]
+            comarcas_de_alertlist.clear()
 
             for it in alertas["alertas"]:
 
+                comarcas_de_alertlist.add(it['comarca_sg'])
                 cod_comarca = it['comarca_sg']
+                it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
+                it['Latitud'] = comarcasDict[cod_comarca]['Latitud']
                 it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
                 it['CPRO'] = comarcasDict[cod_comarca]['CPRO']
                 it['provincia'] = comarcasDict[cod_comarca]['provincia']
@@ -48,6 +55,43 @@ class GeojsonGenerator:
                 }
                 feat_col_alertas["features"].append(aux)
 
+            it.clear()
+
+            for cod_comarca in comarcasDict:
+                if comarcasDict[cod_comarca]['comarca_sg'] not in comarcas_de_alertlist:
+
+                    it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
+                    it['Latitud'] = comarcasDict[cod_comarca]['Latitud']
+                    it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
+                    it['CPRO'] = comarcasDict[cod_comarca]['CPRO']
+                    it['provincia'] = comarcasDict[cod_comarca]['provincia']
+                    it['CPROyMUN'] = comarcasDict[cod_comarca]['CPROyMUN']
+
+                    aux={
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+                        },
+                        "properties": {
+                            "id": cod_comarca, #Será el id de comarca
+                            "riskLevel": 0,
+                            "number_of_cases": 0,
+                            "startDate": start.timestamp() * 1000,
+                            "endDate": end.timestamp() * 1000,
+                            # "codeSpecies": 1840,
+                            # "species": "Anas crecca",
+                            # "commonName": "Pato cuchara",
+                            # "fluSubtype": "H5",
+                            "idComarca": cod_comarca,
+                            "comarca": it['com_sgsa_n'],
+                            "CPRO": it['CPRO'],
+                            "province": it['provincia'],
+                            "CPROyMUN": it['CPROyMUN']
+                        }
+                    }
+                    feat_col_alertas["features"].append(aux)
+
         return feat_col_alertas
 
     def generate_migration(self, outbreakComarca, comarcasDict, brotesDict):
@@ -60,6 +104,7 @@ class GeojsonGenerator:
 
         for cod_comarca in outbreakComarca:
 
+            migration_dict[cod_comarca] = dict()
             migration_dict[cod_comarca]["oieids"] = set()
             lista_oieid = migration_dict[cod_comarca]["oieids"]
             migration_dict[cod_comarca]["lat"] = comarcasDict[cod_comarca]["Latitud"]
@@ -75,7 +120,7 @@ class GeojsonGenerator:
 
             comarca_long = migration_dict[cod_comarca]["long"]
             comarca_lat = migration_dict[cod_comarca]["lat"]
-            for brote in migration_dict[cod_comarca]["oieid"]:
+            for brote in migration_dict[cod_comarca]["oieids"]:
 
                 aux = {
                         "type": "Feature",
@@ -100,7 +145,13 @@ class GeojsonGenerator:
             "features": []
         }
 
-        if type(outbreaklist) is dict:
+        diseases = {
+            '15' : "Highly Path Avian influenza",
+            '201' : "Low Path Avian influenza",
+            '1164' : "Highly pathogenic influenza A viruses"
+        }
+
+        if type(outbreaklist) is not list:
             outbreaklist = list(outbreaklist.values())
 
         for it in outbreaklist:

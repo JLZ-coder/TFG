@@ -15,7 +15,7 @@ class ComarcasBuilder(Builder):
 
         comarcas_dict = dict()
 
-        for comarca in listaComarca:
+        for comarca in listaComarcas:
             comarcas_dict[comarca['comarca_sg']] = comarca
 
         return comarcas_dict

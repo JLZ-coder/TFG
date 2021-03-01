@@ -15,6 +15,7 @@ import os, sys
 from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
 from factories.TempBuilder import TempBuilder
+from factories.ComarcasBuilder import ComarcasBuilder
 from controller import controller
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
@@ -43,6 +44,7 @@ def main(argv):
     dataBuilderList = list()
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())
+    dataBuilderList.append(ComarcasBuilder())
     dataFact = Factory(dataBuilderList)
 
     modelSelector = ModelSelector()

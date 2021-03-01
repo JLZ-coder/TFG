@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta, date
 import pandas as pd
 import os
+import json
 
 class Controller:
     def __init__(self, model,dataFactory, geojsonGen):
@@ -38,7 +39,7 @@ class Controller:
 
         self.model.setParameters(parameters)
 
-        if dateM != None:
+        if dateM == None:
             alertas = self.model.run(start,end)
             alertas_list.append(alertas)
         else:
@@ -55,13 +56,13 @@ class Controller:
         geojson_outbreak = self.geojsonGen.generate_outbreak(lista_brotes)
         geojson_migration = self.geojsonGen.generate_migration(comarca_brotes, lista_comarcas, lista_brotes)
 
-        text_file = open("brotes.geojson", "w")
+        text_file = open("geojson/brotes.geojson", "w")
         n = text_file.write(json.dumps(geojson_outbreak))
         text_file.close()
-        text_file = open("migras.geojson", "w")
+        text_file = open("geojson/migrations.geojson", "w")
         n = text_file.write(json.dumps(geojson_migration))
         text_file.close()
-        text_file = open("alertas.geojson", "w")
+        text_file = open("geojson/alertas.geojson", "w")
         n = text_file.write(json.dumps(geojson_alerta))
         text_file.close()
 
