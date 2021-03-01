@@ -13,13 +13,13 @@ class TempBuilder(Builder):
         temps_db = db.historico
         estacion_db = db.estaciones
 
-        comarcas = estacion_db.find({})
+        estaciones = estacion_db.find({})
         tempMin = {}
-        for it in comarcas:
+        for it in estaciones:
             valor = list(temps_db.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True}))
             if valor == []:
                 tempMin[it['comarca_sg']] = None
             else:
-                tempMin[it['comarca_sg']] = valor[0]['historico(semanal)'][str(start.year)][0] 
+                tempMin[it['comarca_sg']] = valor[0]['historico(semanal)']
        
         return tempMin

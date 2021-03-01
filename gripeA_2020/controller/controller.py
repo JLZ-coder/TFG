@@ -6,8 +6,8 @@ class Controller:
     def __init__(self, model,dataFactory, geojsonGen):
         self.model = model
         self.dataFactory = dataFactory
-        self.geojsonGen = geojsonGen
-
+        self.geojsonGen = geojsonGen        
+        
     def run(self, dateM, weeks):
 
         # if dateM != None:#Fecha Herramienta offline
@@ -24,14 +24,14 @@ class Controller:
         #Parameters
         outbreakStart = start - timedelta(days = 90)
         comarca_brotes, lista_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
-        #tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
+        tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
         lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
         file = "data/Datos especies1.xlsx"
         matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
 
         parameters= dict()
         parameters['comarca_brotes']= comarca_brotes
-        #parameters['tMin'] = tMin
+        parameters['tMin'] = tMin
         parameters['matrizEspecies'] = matrizEspecies
 
         alertas_list = list()
@@ -48,6 +48,7 @@ class Controller:
                 alertas_list.append(alertas)
                 start = end
                 end = start + timedelta(weeks = 1)
+
                 i += 1
 
         geojson_alerta = self.geojsonGen.generate_comarca(alertas_list, lista_comarcas)
@@ -65,3 +66,7 @@ class Controller:
         text_file.close()
 
         return 0
+
+    
+
+

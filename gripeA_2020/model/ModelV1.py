@@ -27,25 +27,41 @@ class ModelV1():
             nAlerta = 0 
             for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
                 contrBrote = 0
-                semanaA = start - timedelta(days=1)
-                semana = semanaA.isocalendar()[1]-1
 
-                probMigra = parameters['matrizEspecies'][semana][brote["especie"]]
+                #Calculamos la probabildad de migracion de la semana anterior
+                weekA = start - timedelta(weeks=1)
+                #week = weekA.isocalendar()[1]-1
+                week = int(((weekA - datetime(weekA.year,1,1)).days / 7) + 1)
+                i = 0
+                nextWeek = week
+                while nextWeek == week:
+                    #Aumento en 1 el dia
+                    weekA = weekA + timedelta(days=1)
+                    #Recalculo la semana
+                    nextWeek = int(((weekA - datetime(weekA.year,1,1)).days / 7) + 1)
+                    #Contador
+                    i+=1            
+
+                probMigra = (parameters['matrizEspecies'][week][brote["especie"]] * i + parameters['matrizEspecies'][nextWeek][brote["especie"]] * (7-i)) / 7
                 
-                probTipo = 0
+                probType = 0
 
                 if brote['epiunit']== "Farm":
-                    probTipo = 0.1
+                    probType = 0.1
                 elif brote['epiunit']== "Backyard":
-                    probTipo = 0.3
+                    probType = 0.3
                 else:
-                    probTipo = 1
+                    probType = 1
                 
-                contrBrote = (probMigra/100)*probTipo
+                contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote
 
-            #print(math.log(parameters['tMin'][comarca]))
-            #temperaturaM = (-7.82* ln(parameters['tMin'][comarca])) + 29.94
-            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
-
+            #Calculamos la semana actual
+            try:
+                week = start.isocalendar()[1]-1
+                temperaturaM = 66 if (parameters['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca][str(start.year)][week])) + 29.94
+                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
+            except: 
+                print("No hay temperatura para la comarca: " + comarca) 
+           
         return alertas
