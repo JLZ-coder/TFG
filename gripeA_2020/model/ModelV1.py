@@ -44,8 +44,8 @@ class ModelV1():
                 contrBrote = (probMigra/100)*probTipo
                 nAlerta += contrBrote
 
-            print(math.log(parameters['tMin'][comarca]))
-            temperaturaM = (-7.82* ln(parameters['tMin'][comarca])) + 29.94
+            #print(math.log(parameters['tMin'][comarca]))
+            #temperaturaM = (-7.82* ln(parameters['tMin'][comarca])) + 29.94
             alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
 
         return alertas

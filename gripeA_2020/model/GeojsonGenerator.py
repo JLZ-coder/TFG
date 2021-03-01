@@ -50,31 +50,43 @@ class GeojsonGenerator:
 
         return feat_col_alertas
 
-    def generate_migration(self, outbreakComarca, comarcasDict):
+    def generate_migration(self, outbreakComarca, comarcasDict, brotesDict):
         feat_col_migracion = {
             "type": "FeatureCollection",
             "features": []
         }
 
+        migration_dict = dict()
+
         for cod_comarca in outbreakComarca:
-            outbreakComarca[cod_comarca] = 
 
-        for it in listaMigraciones:
+            migration_dict[cod_comarca]["oieids"] = set()
+            lista_oieid = migration_dict[cod_comarca]["oieids"]
+            migration_dict[cod_comarca]["lat"] = comarcasDict[cod_comarca]["Latitud"]
+            migration_dict[cod_comarca]["long"] = comarcasDict[cod_comarca]["Longitud"]
 
-            comarca_long = listaMigraciones[it]["long"]
-            comarca_lat = listaMigraciones[it]["lat"]
-            for brote in listaMigraciones[it]["brotes"]:
+            for brote in outbreakComarca[cod_comarca]:
+
+                if brote["oieid"] not in lista_oieid:
+                    lista_oieid.add(brote["oieid"])
+
+
+        for cod_comarca in migration_dict:
+
+            comarca_long = migration_dict[cod_comarca]["long"]
+            comarca_lat = migration_dict[cod_comarca]["lat"]
+            for brote in migration_dict[cod_comarca]["oieid"]:
 
                 aux = {
                         "type": "Feature",
                         "geometry": {
                             "type": "LineString",
-                            "coordinates": [float(comarca_long), float(comarca_lat), float(brote['long']), float(brote['lat'])]
+                            "coordinates": [float(comarca_long), float(comarca_lat), float(brotesDict[brote]['long']), float(brotesDict[brote]['lat'])]
                         },
                         "properties": {
-                            "idBrote": brote['oieid'],
-                            "idAlerta": it,
-                            "idComarca": it
+                            "idBrote": brote,
+                            "idAlerta": cod_comarca,
+                            "idComarca": cod_comarca
                         }
                     }
 
