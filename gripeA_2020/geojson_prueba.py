@@ -25,49 +25,48 @@ diseases = {
 }
 
 def brotes():
-    cursor = outbreaks.find({})
+    it = outbreaks.find_one({})
     #print (math.floor(datetime.now().timestamp() * 1000))
     feat_col = {
         "type": "FeatureCollection",
         "features": []
     }
-    #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
-    i = 1
 
-    today = date.today()
-    fecha = datetime.now() + timedelta(days = -today.weekday(), weeks=-1)
-    comiezo = fecha - timedelta(days = 90)
+    brote = it
 
-    for it in cursor:
+    diseases = {
+        '15' : "Highly Path Avian influenza",
+        '201' : "Low Path Avian influenza",
+        '1164' : "Highly pathogenic influenza A viruses"
+    }
 
-        if (it['end'].timestamp() >= (datetime.now() - timedelta(days = 90)).timestamp() ):
-            feat = {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [float(it['long']), float(it['lat'])]
-                },
-                "properties": {
-                    "id": i,
-                    "disease": diseases[it['disease_id']],
-                    "country": it['country'],
-                    "start": math.floor(it['start'].timestamp() * 1000),
-                    "end": math.floor(it['end'].timestamp() * 1000),
-                    "city": it['city'],
-                    "species": it['species'],
-                    "at_risk": int(it['at_risk']),
-                    "cases": int(it['cases']),
-                    "deaths": int(it['deaths']),
-                    "preventive_killed": int(it['preventive_killed']),
-                    "serotipo": "H5",
-                    "moreInfo": "https://www.oie.int/wahis_2/public/wahid.php/Reviewreport/Review?page_refer=MapFullEventReport&reportid=33894",
-                    "epiUnit" : "backyard"
-                }
+    aux = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [float(it['long']), float(it['lat'])]
+            },
+            "properties": {
+                "id": it['oieid'],
+                "disease": diseases[it['disease_id']],
+                "country": it['country'],
+                "start": math.floor(it['start'].timestamp() * 1000),
+                # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
+                "city": it['city'],
+                # "species": it['species'],
+                # "at_risk": int(it['at_risk']),
+                # "cases": int(it['cases']),
+                # "deaths": int(it['deaths']),
+                # "preventive_killed": int(it['preventive_killed'])
+                "serotipo": it['serotype'],
+                "moreInfo": it['urlFR'],
+                "epiUnit": it['epiunit'],
+                "reportDate": math.floor(it['report_date'].timestamp() * 1000)
             }
-            feat_col["features"].append(feat)
-            i += 1
+        }
+    feat_col["features"].append(aux)
 
-    return feat_col
+    return feat_col, brote
 
 def comarcas():
     cursor = com.find({})
@@ -76,148 +75,89 @@ def comarcas():
         "type": "FeatureCollection",
         "features": []
     }
-    #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
-    i = 0
-    # ite = iter(cursor)
 
-    # “id”: 1,
-    # "riskLevel":0,
-    # "number_of_cases":0,
-    # "startDate":1558383654414,
-    # "endDate":1558383654414,     
-    # "codeSpecies":1840,
-    # “species”: “Anas crecca”,
-    # “commonName”: “Pato cuchara”,
-    # "fluSubtype":"H5",
-    # "comarca_sg":"SP01059",
-    # "comarca":"ARABA-ALAVA",
-    # "CMUN":"059",
-    # "municipality":"Vitoria-Gasteiz",
-    # "CPRO":"01",
-    # "province":"Araba/Álava",
-    # "CODAUTO":"16",
-    # "CA":"País Vasco",
-    # "CPROyMUN":"01059"
     today = date.today()
-    fecha = datetime.now() + timedelta(days = -today.weekday(), weeks=-1)
+    start = today + timedelta(days = -today.weekday())
+    end = start + timedelta(weeks = 1)
+
+    start = datetime.combine(start, datetime.min.time())
+    end = datetime.combine(end, datetime.min.time())
 
     risk = 0
-    while i < 12:
-        for it in cursor:
-            # it = next(ite)
-            feat = {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-                },
-                "properties": {
-                    "id": it['comarca_sg'],
-                    "riskLevel": risk,
-                    "number_of_cases": random.randint(0, 100),
-                    "startDate": math.floor(fecha.timestamp() * 1000),
-                    "endDate": math.floor((fecha + timedelta(days = 7)).timestamp() * 1000),
-                    "codeSpecies": 1840,
-                    "species": "Anas crecca",
-                    "commonName": "Pato cuchara",
-                    "fluSubtype": "H5",
-                    "comarca_sg": it['comarca_sg'],
-                    "comarca": it['com_sgsa_n'],
-                    "CPRO": it['CPRO'],
-                    "province": it['provincia'],
-                    "CPROyMUN": it['CPROyMUN']
-                }
+    for it in cursor:
+        cod_comarca = it['comarca_sg']
+        aux={
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+            },
+            "properties": {
+                "id": cod_comarca, #Será el id de comarca
+                "riskLevel": risk,
+                "number_of_cases": 0,
+                "startDate": start.timestamp() * 1000,
+                "endDate": end.timestamp() * 1000,
+                # "codeSpecies": 1840,
+                # "species": "Anas crecca",
+                # "commonName": "Pato cuchara",
+                # "fluSubtype": "H5",
+                "idComarca": cod_comarca,
+                "comarca": it['com_sgsa_n'],
+                "CPRO": it['CPRO'],
+                "province": it['provincia'],
+                "CPROyMUN": it['CPROyMUN']
             }
-            feat_col["features"].append(feat)
-
-        text_file = open("alertas_{}.geojson".format(fecha.strftime("%d-%m-%y")), "w")
-        n = text_file.write(json.dumps(feat_col))
-        text_file.close()
-
-        feat_col['features'].clear()
-
-        cursor.rewind()
-        fecha = fecha - timedelta(days = 7)
-        i += 1
-        risk += 1
-        risk %= 4
+        }
+        feat_col['features'].append(aux)
 
     return feat_col
 
-def migracion(brotes, comarcas):
+def migracion(brote):
+    cursor = com.find({})
     #print (math.floor(datetime.now().timestamp() * 1000))
     feat_col = {
         "type": "FeatureCollection",
         "features": []
     }
-    #print(f'Hola, {math.floor(datetime.now().timestamp() * 1000)}')
 
-    # {"type":"FeatureCollection", 
-    # "features":
-    # [
-    #   {"type":"Feature",
-    #   "geometry":
-    #         {
-    #           "type":"LineString",
-    #           "coordinates":[[-6.26666666666665,37.1],[10.55,55.9666666666666]]
-    #         },
-    #           "properties":
-    #           {
-    #              “idBrote”: 1, 
-	#      “idAlerta”: 13,
-    #           }
-    #      }
-    #    ]
-    #   }
-
-    i = 0
-    j = 0
-    while i < len(comarcas['features']):
-        com_long = comarcas["features"][i]["geometry"]["coordinates"][0]
-        com_lat = comarcas["features"][i]["geometry"]["coordinates"][1]
-        com_id = comarcas["features"][i]["properties"]["id"]
-        brot_long = brotes["features"][j]["geometry"]["coordinates"][0]
-        brot_lat = brotes["features"][j]["geometry"]["coordinates"][1]
-        brot_id = brotes["features"][j]["properties"]["id"]
-
-        feat = {
-            "type": "Feature",
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [ [com_long, com_lat], [brot_long, brot_lat] ]
-            },
-            "properties": {
-                "idBrote": brot_id,
-	            "idAlerta": com_id
+    for it in cursor:
+        cod_comarca = it['comarca_sg']
+        aux = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [float(it['Longitud']), float(it['Latitud']), float(brote['long']), float(brote['lat'])]
+                },
+                "properties": {
+                    "idBrote": brote["oieid"],
+                    "idAlerta": cod_comarca,
+                    "idComarca": cod_comarca
+                }
             }
-        }
-        feat_col["features"].append(feat)
-        i += 1
-        j += 1
-        j %= len(brotes['features'])
-        # if i > 10:
-        #     break
+
+        feat_col['features'].append(aux)
 
     return feat_col
 
 def main(argv):
-    geobrotes = brotes()
+    geobrotes, brote = brotes()
 
     comarc_centro = comarcas()
 
-    migra = migracion(geobrotes, comarc_centro)
+    migra = migracion(brote)
 
-    # text_file = open("brotes.txt", "w")
-    # n = text_file.write(json.dumps(geobrotes))
-    # text_file.close()
+    text_file = open("brotes.geojson", "w")
+    n = text_file.write(json.dumps(geobrotes))
+    text_file.close()
 
-    # text_file = open("alertas.txt", "w")
-    # n = text_file.write(json.dumps(comarc_centro))
-    # text_file.close()
+    text_file = open("alertas.geojson", "w")
+    n = text_file.write(json.dumps(comarc_centro))
+    text_file.close()
 
-    # text_file = open("migraciones.txt", "w")
-    # n = text_file.write(json.dumps(migra))
-    # text_file.close()
+    text_file = open("migraciones.geojson", "w")
+    n = text_file.write(json.dumps(migra))
+    text_file.close()
 
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@ from .Builder import Builder
 from dao.daoBrotes import daoBrotes
 from neo4j import GraphDatabase
 import json
-import os, sys
+from datetime import datetime, timedelta, date
 
 class OutbreakBuilder(Builder):
     def __init__(self):
@@ -23,10 +23,21 @@ class OutbreakBuilder(Builder):
 
         tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
         comarca_brotes = {}
-        lista_brotes = dict()
+
+        brotes_por_semana = dict()
+        set_oieids = set()
+        current_date = end - timedelta(weeks = 1)
+
+        while current_date >= start:
+            brotes_por_semana[current_date] = []
+            current_date = current_date - timedelta(weeks=1)
 
         for brote in listaBrotes:
             geo_del_brote = brote['geohash'][0:4]
+
+            for semana in brotes_por_semana:
+                if semana <= brote["report_date"] and semana + timedelta(weeks=1) > brote["report_date"]:
+                    brotes_por_semana[semana].append(brote)
 
             response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
 
@@ -36,14 +47,12 @@ class OutbreakBuilder(Builder):
             for relacion in response:
                 if relacion[0] in tablaGeoComarca:
                     for comarca in tablaGeoComarca[relacion[0]]:
-                        cod = comarca["cod_comarca"]
-                        if cod not in comarca_brotes:
-                            comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]}]
-                        else:
-                            comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]})
-
-                        if brote["oieid"] not in lista_brotes:
-                            lista_brotes[brote["oieid"]] = brote
+                        if comarca["peso"] > 0.5:
+                            cod = comarca["cod_comarca"]
+                            if cod not in comarca_brotes:
+                                comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]}]
+                            else:
+                                comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]})
 
 
-        return comarca_brotes, lista_brotes
+        return comarca_brotes, brotes_por_semana

@@ -100,42 +100,51 @@ class GeojsonGenerator:
             "features": []
         }
 
-        migration_dict = dict()
+        for semana in outbreakComarca:
 
-        for cod_comarca in outbreakComarca:
+            migration_dict = dict()
 
-            migration_dict[cod_comarca] = dict()
-            migration_dict[cod_comarca]["oieids"] = set()
-            lista_oieid = migration_dict[cod_comarca]["oieids"]
-            migration_dict[cod_comarca]["lat"] = comarcasDict[cod_comarca]["Latitud"]
-            migration_dict[cod_comarca]["long"] = comarcasDict[cod_comarca]["Longitud"]
+            for cod_comarca in outbreakComarca[semana]:
 
-            for brote in outbreakComarca[cod_comarca]:
+                migration_dict[cod_comarca] = dict()
+                migration_dict[cod_comarca]["oieids"] = set()
+                lista_oieid = migration_dict[cod_comarca]["oieids"]
+                migration_dict[cod_comarca]["lat"] = comarcasDict[cod_comarca]["Latitud"]
+                migration_dict[cod_comarca]["long"] = comarcasDict[cod_comarca]["Longitud"]
 
-                if brote["oieid"] not in lista_oieid:
-                    lista_oieid.add(brote["oieid"])
+                for brote in outbreakComarca[semana][cod_comarca]:
+
+                    if brote["oieid"] not in lista_oieid:
+                        lista_oieid.add(brote["oieid"])
 
 
-        for cod_comarca in migration_dict:
+            for cod_comarca in migration_dict:
 
-            comarca_long = migration_dict[cod_comarca]["long"]
-            comarca_lat = migration_dict[cod_comarca]["lat"]
-            for brote in migration_dict[cod_comarca]["oieids"]:
+                comarca_long = migration_dict[cod_comarca]["long"]
+                comarca_lat = migration_dict[cod_comarca]["lat"]
 
-                aux = {
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "LineString",
-                            "coordinates": [float(comarca_long), float(comarca_lat), float(brotesDict[brote]['long']), float(brotesDict[brote]['lat'])]
-                        },
-                        "properties": {
-                            "idBrote": brote,
-                            "idAlerta": cod_comarca,
-                            "idComarca": cod_comarca
+                for oieid in migration_dict[cod_comarca]["oieids"]:
+
+                    for semana in brotesDict:
+                        for brote in brotesDict[semana]:
+                            if brote["oieid"] == oieid:
+                                current_brote = brote
+                                break
+
+                    aux = {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [float(comarca_long), float(comarca_lat), float(current_brote['long']), float(current_brote['lat'])]
+                            },
+                            "properties": {
+                                "idBrote": oieid,
+                                "idAlerta": cod_comarca,
+                                "idComarca": cod_comarca
+                            }
                         }
-                    }
 
-                feat_col_migracion['features'].append(aux)
+                    feat_col_migracion['features'].append(aux)
 
         return feat_col_migracion
 
@@ -151,35 +160,33 @@ class GeojsonGenerator:
             '1164' : "Highly pathogenic influenza A viruses"
         }
 
-        if type(outbreaklist) is not list:
-            outbreaklist = list(outbreaklist.values())
-
-        for it in outbreaklist:
-            aux = {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [float(it['long']), float(it['lat'])]
-                    },
-                    "properties": {
-                        "id": it['oieid'],
-                        "disease": diseases[it['disease_id']],
-                        "country": it['country'],
-                        "start": math.floor(it['start'].timestamp() * 1000),
-                        # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
-                        "city": it['city'],
-                        # "species": it['species'],
-                        # "at_risk": int(it['at_risk']),
-                        # "cases": int(it['cases']),
-                        # "deaths": int(it['deaths']),
-                        # "preventive_killed": int(it['preventive_killed'])
-                        "serotipo": it['serotype'],
-                        "moreInfo": it['urlFR'],
-                        "epiUnit": it['epiunit'],
-                        "reportDate": math.floor(it['report_date'].timestamp() * 1000)
+        for semana in outbreaklist:
+            for it in outbreaklist[semana]:
+                aux = {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [float(it['long']), float(it['lat'])]
+                        },
+                        "properties": {
+                            "id": it['oieid'],
+                            "disease": diseases[it['disease_id']],
+                            "country": it['country'],
+                            "start": math.floor(it['start'].timestamp() * 1000),
+                            # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
+                            "city": it['city'],
+                            # "species": it['species'],
+                            # "at_risk": int(it['at_risk']),
+                            # "cases": int(it['cases']),
+                            # "deaths": int(it['deaths']),
+                            # "preventive_killed": int(it['preventive_killed'])
+                            "serotipo": it['serotype'],
+                            "moreInfo": it['urlFR'],
+                            "epiUnit": it['epiunit'],
+                            "reportDate": math.floor(it['report_date'].timestamp() * 1000)
+                        }
                     }
-                }
 
-            feat_col_brote['features'].append(aux)
+                feat_col_brote['features'].append(aux)
 
         return feat_col_brote

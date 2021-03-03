@@ -49,7 +49,7 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    date = None
+    date = datetime(2020, 12, 1)
     geojsonGen = GeojsonGenerator()
 
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
