@@ -150,12 +150,13 @@ def generaTablas(precision):
 
 def main(argv):
 
-    tablaGeoComarca, tablaComarcaGeo = generaTablas(5)
-    text_file = open("tablaGeoComarca5.txt", "w")
+    number_of_digits = 4
+    tablaGeoComarca, tablaComarcaGeo = generaTablas(number_of_digits)
+    text_file = open("data/tablaGeoComarca"+str(number_of_digits)+".txt", "w")
     n = text_file.write(json.dumps(tablaGeoComarca))
     text_file.close()
 
-    text_file = open("tablaComarcaGeo5.txt", "w")
+    text_file = open("data/tablaComarcaGeo"+str(number_of_digits)+".txt", "w")
     n = text_file.write(json.dumps(tablaComarcaGeo))
     text_file.close()
 
