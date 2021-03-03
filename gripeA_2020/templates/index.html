@@ -19,16 +19,16 @@
 <form action="{{url_for('process')}}" method="post" novalidate>
     {{ form.hidden_tag() }}
     <div>
-        {{ form.window.label }}
-        {{ form.window }}<br>
+        {{ form.weeks.label }}
+        {{ form.weeks(min='4', max='52') }} <br>
     </div>
     <div>
         {{ form.date.label }}
         {{ form.date }}<br>
     </div>
     <div>
-        {{ form.typeA.label }}
-        {{ form.typeA }}<br>
+        {{ form.jsonFile.label }}
+        {{ form.jsonFile }}<br>
     </div>
     <div>
         {{ form.submit() }}
