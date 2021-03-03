@@ -8,19 +8,19 @@ import geojsonComarcas
 # Mete las comarcas en mongodb
 
 #Leemos los dos archivos
-file = "Comarcas_ganaderas.xlsx"
+file = "data/Comarcas_ganaderas.xlsx"
 df = pd.read_excel(file)
 
-file = "Centroides comarcas ganaderas.xlsx"
+file = "data/Centroides comarcas ganaderas.xlsx"
 dfCentroide = pd.read_excel(file)
 
 #Añadimos al dataframe que ira dentro de nuestra base de datos las coordenadas de los centroides
-df['Longitud'] = dfCentroide['XCoord']
-df['Latitud'] = dfCentroide['YCoord']
+df = pd.merge(left=df,right=dfCentroide, left_on='comarca_sg', right_on='comarca_sg')
+df = df.rename(columns={'XCoord': 'Longitud', 'YCoord': 'Latitud'})
 
 #Segunda parte de los datos (Geojson)
 #Extraemos los datos
-file = "comarcasGanaderas.geojson"
+file = "data/comarcasGanaderas.geojson"
 leer = json.load(open(file, encoding='utf-8'))
 
 CPRO = []
