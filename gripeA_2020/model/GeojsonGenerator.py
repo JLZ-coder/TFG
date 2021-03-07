@@ -175,9 +175,9 @@ class GeojsonGenerator:
                             "start": math.floor(it['start'].timestamp() * 1000),
                             # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
                             "city": it['city'],
-                            # "species": it['species'],
+                            "species": it['species'],
                             # "at_risk": int(it['at_risk']),
-                            # "cases": int(it['cases']),
+                            "cases": int(it['cases']),
                             # "deaths": int(it['deaths']),
                             # "preventive_killed": int(it['preventive_killed'])
                             "serotipo": it['serotype'],

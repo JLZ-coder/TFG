@@ -33,26 +33,27 @@ class OutbreakBuilder(Builder):
             current_date = current_date - timedelta(weeks=1)
 
         for brote in listaBrotes:
-            geo_del_brote = brote['geohash'][0:4]
+            if brote["disease_id"] != "201":
+                geo_del_brote = brote['geohash'][0:4]
 
-            for semana in brotes_por_semana:
-                if semana <= brote["report_date"] and semana + timedelta(weeks=1) > brote["report_date"]:
-                    brotes_por_semana[semana].append(brote)
+                for semana in brotes_por_semana:
+                    if semana <= brote["report_date"] and semana + timedelta(weeks=1) > brote["report_date"]:
+                        brotes_por_semana[semana].append(brote)
 
-            response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
+                response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geo_del_brote)).values()
 
-            # relacion
-            # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
-            # ej: ['sp0j', 1470]
-            for relacion in response:
-                if relacion[0] in tablaGeoComarca:
-                    for comarca in tablaGeoComarca[relacion[0]]:
-                        if comarca["peso"] > 0.5:
-                            cod = comarca["cod_comarca"]
-                            if cod not in comarca_brotes:
-                                comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]}]
-                            else:
-                                comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]})
+                # relacion
+                # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
+                # ej: ['sp0j', 1470]
+                for relacion in response:
+                    if relacion[0] in tablaGeoComarca:
+                        for comarca in tablaGeoComarca[relacion[0]]:
+                            if comarca["peso"] > 0.8:
+                                cod = comarca["cod_comarca"]
+                                if cod not in comarca_brotes:
+                                    comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]}]
+                                else:
+                                    comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]})
 
 
         return comarca_brotes, brotes_por_semana

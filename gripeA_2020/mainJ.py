@@ -35,10 +35,6 @@ diseases = {
     '1164' : "Highly pathogenic influenza A viruses"
 }
 
-# Driver de neo4j user neo4j y contraseña 1234
-# TODO
-neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
-
 
 def main(argv):
     dataBuilderList = list()
@@ -49,12 +45,12 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    date = datetime(2020, 12, 1)
+    date = datetime(2021, 1, 1)
     geojsonGen = GeojsonGenerator()
 
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
-    control.run(date,12)
+    control.run(date,1)
 
     return 0
 
