@@ -21,14 +21,6 @@ from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
 
 
-# GLOBALS
-client = MongoClient('mongodb://localhost:27017/')
-db = client.lv
-brotes_db = db.outbreaks
-# migrations = db.migrations
-comarcas_db = db.comarcas
-# especie = db.especies
-
 diseases = {
     '15' : "Highly Path Avian influenza",
     '201' : "Low Path Avian influenza",

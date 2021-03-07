@@ -1,5 +1,6 @@
 import math
 from datetime import datetime, timedelta, date
+import json
 
 class GeojsonGenerator:
     def __init__(self):
@@ -92,6 +93,10 @@ class GeojsonGenerator:
                     }
                     feat_col_alertas["features"].append(aux)
 
+        text_file = open("geojson/alertas.geojson", "w")
+        n = text_file.write(json.dumps(feat_col_alertas))
+        text_file.close()
+
         return feat_col_alertas
 
     def generate_migration(self, outbreakComarca, comarcasDict, brotesDict):
@@ -149,6 +154,10 @@ class GeojsonGenerator:
 
                     feat_col_migracion['features'].append(aux)
 
+        text_file = open("geojson/rutas.geojson", "w")
+        n = text_file.write(json.dumps(feat_col_migracion))
+        text_file.close()
+
         return feat_col_migracion
 
     def generate_outbreak(self, outbreaklist):
@@ -191,5 +200,9 @@ class GeojsonGenerator:
                     }
 
                 feat_col_brote['features'].append(aux)
+
+        text_file = open("geojson/brotes.geojson", "w")
+        n = text_file.write(json.dumps(feat_col_brote))
+        text_file.close()
 
         return feat_col_brote

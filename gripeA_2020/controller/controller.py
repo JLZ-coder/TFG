@@ -74,16 +74,6 @@ class Controller:
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
 
-        text_file = open("geojson/brotes.geojson", "w")
-        n = text_file.write(json.dumps(geojson_outbreak))
-        text_file.close()
-        text_file = open("geojson/migrations.geojson", "w")
-        n = text_file.write(json.dumps(geojson_migration))
-        text_file.close()
-        text_file = open("geojson/alertas.geojson", "w")
-        n = text_file.write(json.dumps(geojson_alerta))
-        text_file.close()
-
         return 0
 
     
