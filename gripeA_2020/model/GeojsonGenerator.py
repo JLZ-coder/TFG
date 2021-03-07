@@ -135,7 +135,10 @@ class GeojsonGenerator:
                             "type": "Feature",
                             "geometry": {
                                 "type": "LineString",
-                                "coordinates": [float(comarca_long), float(comarca_lat), float(current_brote['long']), float(current_brote['lat'])]
+                                "coordinates": [
+                                    [float(comarca_long), float(comarca_lat)],
+                                    [float(current_brote['long']), float(current_brote['lat'])]
+                                ]
                             },
                             "properties": {
                                 "idBrote": oieid,
