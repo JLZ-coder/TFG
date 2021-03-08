@@ -1,40 +1,35 @@
-import sys
-from pymongo import MongoClient
-from datetime import datetime, timedelta, date
-from neo4j import GraphDatabase
-
+import sys, json
 from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
 from factories.TempBuilder import TempBuilder
+from factories.ComarcasBuilder import ComarcasBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
 from controller import controller
+from datetime import datetime, timedelta, date
 
+def toolOffLine(control):
 
+    #Abrir y validar con el esquema
+    f = open("data/exampleTool.json", "r")
+    content = f.read()
+    schemaJson = json.loads(content)
 
-# GLOBALS
-client = MongoClient('mongodb://localhost:27017/')
-db = client.lv
-brotes_db = db.outbreaks
-# migrations = db.migrations
-comarcas_db = db.comarcas
-# especie = db.especies
+    #Ejecutar n * m veces el modelo
+    for i in schemaJson['rangeOfValues']['temporaryWindow']:
+        for j in schemaJson['rangeOfValues']['probBirds']:
+            control.changeProb(j)
+            control.run(datetime.datetime.strptime(schemaJson['date'], '%Y-%m-%d'), schemaJson['weeks'], i)
 
-diseases = {
-    '15' : "Highly Path Avian influenza",
-    '201' : "Low Path Avian influenza",
-    '1164' : "Highly pathogenic influenza A viruses"
-}
-
-# Driver de neo4j user neo4j y contraseña 1234
-# TODO
-neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
+    #Procesar los datos y generar en Markdown las gráficas
+            
 
 
 def main(argv):
     dataBuilderList = list()
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())
+    dataBuilderList.append(ComarcasBuilder())
     dataFact = Factory(dataBuilderList)
 
     modelSelector = ModelSelector()
@@ -44,11 +39,10 @@ def main(argv):
 
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
+    toolOffLine(control)
     control.run(date,12)
 
     return 0
-
-
 
 
 if __name__ == "__main__":

@@ -9,6 +9,9 @@ class ModelV0():
         if (tag == self.tag):
             return self
 
+    def changeProb(self, prob):
+        return self
+
     def run(self, start, end, parameters):
         # Según los datos calcular las comarcaBrotes
         comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(parameters['comarca_brotes'][k]), reverse=True)

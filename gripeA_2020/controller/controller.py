@@ -10,7 +10,13 @@ class Controller:
         self.dataFactory = dataFactory
         self.geojsonGen = geojsonGen        
         
-    def run(self, dateM, weeks):
+    def changeProb(self, prob):
+        self.model.changeProb(prob)
+    
+    #DateM -> fecha referente
+    #weeks -> semanas para generar alertas
+    #temporaryWindow -> ventana temporal para busqueda de brotes por defecto 3 Meses/12 semanas/ 90 dias
+    def run(self, dateM, weeks, temporaryWindow):
 
         if dateM != None:#Fecha Herramienta offline
             start = dateM + timedelta(days = -dateM.weekday())
@@ -24,7 +30,7 @@ class Controller:
         end = datetime.combine(end, datetime.min.time())
 
         #Parameters
-        outbreakStart = start - timedelta(days = 90)
+        outbreakStart = start - timedelta(weeks = temporaryWindow)
         comarca_brotes, lista_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
         #tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
         lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)

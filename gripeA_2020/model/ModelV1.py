@@ -6,10 +6,18 @@ import math
 class ModelV1():
     def __init__(self):
         self.tag = "modelv1"
+        self.farm = 0.1
+        self.backyard = 0.3
+        self.other = 1
 
     def create(self, tag):
         if (tag == self.tag):
             return self
+
+    def changeProb(self, prob):
+        self.farm = prob[0]
+        self.backyard = prob[1]
+        self.other = prob[2]
 
     #Parameters[comarca_brotes, matrizEspecies, tMin]
     def run(self, start, end, parameters):

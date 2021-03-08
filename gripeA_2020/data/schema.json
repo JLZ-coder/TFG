@@ -1,0 +1,245 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "rangeOfValues": {
+                "probBirds": [
+                    [
+                        0.1,
+                        1,
+                        0.3
+                    ],
+                    [
+                        0.2,
+                        1,
+                        0.3
+                    ]
+                ],
+                "temporaryWindow": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "date": "2020-01-01",
+            "weeks": 20,
+            "thresholdAlert": 4
+        }
+    ],
+    "required": [
+        "rangeOfValues",
+        "date",
+        "weeks",
+        "thresholdAlert"
+    ],
+    "properties": {
+        "rangeOfValues": {
+            "$id": "#/properties/rangeOfValues",
+            "type": "object",
+            "title": "The rangeOfValues schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "probBirds": [
+                        [
+                            0.1,
+                            1,
+                            0.3
+                        ],
+                        [
+                            0.2,
+                            1,
+                            0.3
+                        ]
+                    ],
+                    "temporaryWindow": [
+                        1,
+                        2,
+                        3
+                    ]
+                }
+            ],
+            "required": [
+                "probBirds",
+                "temporaryWindow"
+            ],
+            "properties": {
+                "probBirds": {
+                    "$id": "#/properties/rangeOfValues/properties/probBirds",
+                    "type": "array",
+                    "title": "The probBirds schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            [
+                                0.1,
+                                1,
+                                0.3
+                            ],
+                            [
+                                0.2,
+                                1,
+                                0.3
+                            ]
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/rangeOfValues/properties/probBirds/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/0",
+                                "type": "array",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        0.1,
+                                        1
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/0/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/0/items/anyOf/0",
+                                            "type": "number",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 0.0,
+                                            "examples": [
+                                                0.1,
+                                                0.3
+                                            ]
+                                        },
+                                        {
+                                            "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/0/items/anyOf/1",
+                                            "type": "integer",
+                                            "title": "The second anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 0,
+                                            "examples": [
+                                                1
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/1",
+                                "type": "array",
+                                "title": "The second anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        0.2,
+                                        1
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/1/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/1/items/anyOf/0",
+                                            "type": "number",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 0.0,
+                                            "examples": [
+                                                0.2,
+                                                0.3
+                                            ]
+                                        },
+                                        {
+                                            "$id": "#/properties/rangeOfValues/properties/probBirds/items/anyOf/1/items/anyOf/1",
+                                            "type": "integer",
+                                            "title": "The second anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": 0,
+                                            "examples": [
+                                                1
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "temporaryWindow": {
+                    "$id": "#/properties/rangeOfValues/properties/temporaryWindow",
+                    "type": "array",
+                    "title": "The temporaryWindow schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            1,
+                            2
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/rangeOfValues/properties/temporaryWindow/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/rangeOfValues/properties/temporaryWindow/items/anyOf/0",
+                                "type": "integer",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1,
+                                    2
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        "date": {
+            "$id": "#/properties/date",
+            "type": "string",
+            "title": "The date schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-01-01"
+            ]
+        },
+        "weeks": {
+            "$id": "#/properties/weeks",
+            "type": "integer",
+            "title": "The weeks schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                20
+            ]
+        },
+        "thresholdAlert": {
+            "$id": "#/properties/thresholdAlert",
+            "type": "integer",
+            "title": "The thresholdAlert schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                4
+            ]
+        }
+    },
+    "additionalProperties": true
+}

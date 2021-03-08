@@ -23,6 +23,8 @@ class ModelSelector:
         if (modelo != None):
             self.currentModel = modelo
 
+    def changeProb(self, prob):
+        self.currentModel.changeProb(prob)
     def setParameters(self, parameters):
         self.parameters = parameters
 

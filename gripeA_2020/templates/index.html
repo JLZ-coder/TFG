@@ -16,7 +16,7 @@
         <input type="reset" value="Reset"/>
     </p>
 </form> -->
-<form action="{{url_for('process')}}" method="post" novalidate>
+<form action="{{url_for('process')}}" method="post" enctype="multipart/form-data" novalidate>
     {{ form.hidden_tag() }}
     <div>
         {{ form.weeks.label }}
