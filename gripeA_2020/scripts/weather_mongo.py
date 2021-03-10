@@ -15,33 +15,39 @@ api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YWxlbmNpYWJhcmNlbG9uYUBnbWFpbC
 #aemet_client.descargar_resumen_mensual_climatologico("aemet.txt", 2018, 12)
 
 
-'''       
 #Leemos el fichero que relaciona las estaciones con las comarcas
-file = "../aemet/CG_estaciones.xlsx"
+file = "aemet/CG_estaciones.xlsx"
 df = pd.read_excel(file)
 
 #Insertamos la relacion de estaciones con comarcas en mongoDB
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 estacion = db.estaciones
-historico = db.historico
 records = df.to_dict(orient='records')
-
-
 estacion.delete_many({})
 estacion.insert_many(records)
-'''
+#Insercion de los datos en la base de datos
+file = "data/DistanciasCG_estaciones_200km.xlsx"
+df = pd.read_excel(file)
+df = df.groupby('Codigo_comarca')
+#df = df.reset_index()
 
-client= MongoClient('mongodb://localhost:27017/')
-db = client.lv
-estacion = db.estaciones
+for key, item in df:
+    p = df.get_group(key)
+    #Eliminamos repetidos manteniendo el orden
+    d = dict()
+    for i in p['Estacion_cod']:
+        if i not in d:
+            d.setdefault(i,i) 
+
+    p = list(d.keys())
+
+    estacion.update({'comarca_sg':key},{"$set": {"estacionesAdd":p}})
 
 
-# dbf.export(table, filename='CG', format='csv', header=False, encoding='ascii')
-# #diccionario que tendra como clave "id de comarca" y valor la informacion de las estaciones
-# #Insercion de los datos en la base de datos
-
-
+cursor = estacion.find({})
+df = pd.DataFrame(list(cursor))
+df.to_excel('data/estaciones.xlsx', index=False)
 #Extraemos los indicativos de todas las estaciones
 cursor = estacion.find({},{'indicativo':True, '_id':False}).distinct('indicativo')
 

@@ -32,7 +32,7 @@ class Controller:
         #Parameters
         outbreakStart = start - timedelta(weeks = temporaryWindow)
         comarca_brotes, lista_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
-        #tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
+        tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
         lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
         file = "data/Datos especies1.xlsx"
         matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
@@ -62,7 +62,7 @@ class Controller:
                 start = end
                 end = start + timedelta(weeks = 1)
 
-                outbreakStart = start - timedelta(days = 90)
+                outbreakStart = start - timedelta(weeks = temporaryWindow)
                 comarca_brotes, lista_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
                 #tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
                 lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
@@ -80,7 +80,7 @@ class Controller:
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
 
-        return 0
+        return geojson_alerta
 
     
 

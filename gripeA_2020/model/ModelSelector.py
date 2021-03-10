@@ -25,6 +25,7 @@ class ModelSelector:
 
     def changeProb(self, prob):
         self.currentModel.changeProb(prob)
+        
     def setParameters(self, parameters):
         self.parameters = parameters
 

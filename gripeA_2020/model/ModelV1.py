@@ -67,11 +67,11 @@ class ModelV1():
                 probType = 0
 
                 if brote['epiunit']== "Farm":
-                    probType = 0.1
+                    probType = self.farm
                 elif brote['epiunit']== "Backyard":
-                    probType = 0.3
+                    probType = self.backyard
                 else:
-                    probType = 1
+                    probType = self.other
                 
                 contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote
