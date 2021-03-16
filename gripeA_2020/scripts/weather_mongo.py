@@ -13,7 +13,9 @@ client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 estacion = db.estaciones
 historico = db.historico
+temperatura = db.temperatura
 
+#Creamos la colección que guardará la información relacionada con las estaciones
 def estaciones():
     #Leemos el fichero que relaciona las estaciones con las comarcas
     file = "aemet/CG_estaciones.xlsx"
@@ -39,13 +41,12 @@ def estaciones():
         p = list(d.keys())
 
         estacion.update({'comarca_sg':key},{"$set": {"estacionesAdd":p}})
-
+#Listamos todas las estaciones y volcamos en formato excel
 def listStacion():
-    #Extracción de las estaciones y volcado en formato excel
     cursor = estacion.find({})
     df = pd.DataFrame(list(cursor))
     df.to_excel('data/estaciones.xlsx', index=False)
-
+#Accedemos a la API
 def generateHistoric():
     #Extraemos los indicativos de todas las estaciones
     cursor = estacion.find({},{'indicativo':True, '_id':False}).distinct('indicativo')
@@ -158,12 +159,10 @@ def generateHistoric():
     j+=1
         
     #records = df.to_dict(orient='records')
-
-    historico = db.historico
     historico.delete_many({})
     historico.insert_many(df) 
-
-def generateListEmpy():
+#Generamos lista de comarcas sin datos
+def generateListEmpty():
     #Extraemos los indicativos de todas las estaciones
     cursor = estacion.find({},{'indicativo':True, '_id':False}).distinct('indicativo')
 
@@ -189,47 +188,47 @@ def generateListEmpy():
     text_file = open("../data/emptyCG-IDE.json", "w")
     n = text_file.write(json.dumps(empty))
     text_file.close()
-
-def completeInfo():
+#Para comarcas sin asignación alguna
+def fillEmptyInfo():
     #Insercion en una coleccion Comarca - Historico (Juntando varias estaciones)
-
     estaciones = estacion_db.find({})
     #Comarca->Historico
     df = []
 
     for it in estaciones:
-        valor = list(temps_db.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True}))
+        valor = list(historico.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True, 'completo': True}))
         
         if valor == []:#Si la estacion principal no tiene datos se busca la siguiente más cercana
             aux = []
             i = 1
             while aux == []:
-                aux = list(temps_db.find({'idEstacion': it['estacionesAdd'][i]}, {'_id':False, 'historico(semanal)':True}))
+                aux = list(historico.find({'idEstacion': it['estacionesAdd'][i]}, {'_id':False, 'historico(semanal)':True,'completo': True}))
                 i +=1
 
-            df[it['comarca_sg']] = aux[0]['historico(semanal)']
+            his = fillEmptyWeeks(aux[0]['historico(semanal)'], aux[0]['completo'], it['estacionesAdd'])
         else:
-            df[it['comarca_sg']] = valor[0]['historico(semanal)']
+            his = fillEmptyWeeks(valor[0]['historico(semanal)'], valor[0]['completo'], it['estacionesAdd'])
+
+        df.append({'comarca_sg': it['comarca_sg'], 'historicoFinal': his})
+
+    temperatura.delete_many({})
+    temperatura.insert_many(df) 
+
+    return df
+#Final historico
+def fillEmptyWeeks(his, booleanArray, restoEstaciones):
+    
 
 def main(argv):
     #Base de datos de estaciones
     estaciones()
-    '''RELLENAMOS LOS HUECOS VACÍOS DE LAS COMARCAS'''
-    #--------------------------------------------------------------------------------------------------------
-    df = list()
+    #listStacion()
+    #generateListEmpty()
+    generateHistoric()
+    fillEmptyInfo()
 
-    cursor = estacion.find({},{'comarca_sg': True, 'estacionesAdd': True, 'indicativo': True, '_id': False})
 
-    for it in cursor: 
-        weather = historico.find({'indicativo': it['indicativo']})
-
-        if weather['rellenar'] == False: #No hay ningún vacío por rellenar a esa estación 
-            df.append('comarca_sg': it['comarca_sg'], 'historicoCompleto': weather['historico(semanal)'])
-        else: #Toca recorrer todas las estaciones cercanas para rellenar 
-
-    
-    #--------------------------------------------------------------------------------------------------------
-          
+    return 0         
 
 
 
