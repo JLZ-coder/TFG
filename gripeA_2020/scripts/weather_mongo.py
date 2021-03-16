@@ -23,6 +23,7 @@ df = pd.read_excel(file)
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 estacion = db.estaciones
+historico = db.historico
 records = df.to_dict(orient='records')
 estacion.delete_many({})
 estacion.insert_many(records)
@@ -30,7 +31,6 @@ estacion.insert_many(records)
 file = "data/DistanciasCG_estaciones_200km.xlsx"
 df = pd.read_excel(file)
 df = df.groupby('Codigo_comarca')
-#df = df.reset_index()
 
 for key, item in df:
     p = df.get_group(key)
@@ -44,7 +44,20 @@ for key, item in df:
 
     estacion.update({'comarca_sg':key},{"$set": {"estacionesAdd":p}})
 
+'''RELLENAMOS LOS HUECOS VACÍOS DE LAS COMARCAS'''
+#--------------------------------------------------------------------------------------------------------
+df = list()
 
+cursor = estacion.find({},{'comarca_sg': True, 'estacionesAdd': True, 'indicativo': True, '_id': False})
+
+for it in cursor: 
+    weather = historico.find({'indicativo': it['indicativo']})
+
+
+
+
+#--------------------------------------------------------------------------------------------------------
+#Extracción de las estaciones y volcado en formato excel
 cursor = estacion.find({})
 df = pd.DataFrame(list(cursor))
 df.to_excel('data/estaciones.xlsx', index=False)
@@ -88,7 +101,7 @@ text_file.close()
 
 #2017-2021
 fechaini = "2017-01-02T00:00:00UTC"
-fechafin = "2021-01-31T00:00:00UTC"
+fechafin = "2021-02-31T00:00:00UTC"
 
 for idEstacion in indicativos: #Recorremos la lista 
         
@@ -127,6 +140,8 @@ for idEstacion in indicativos: #Recorremos la lista
         contador = [0]*53
         anio = 2017 
         semanaFinal =[None]*53
+        completo = {'2017':True, '2018':True, '2019':True, '2020':True, '2021':True}
+
         for api in json_response:
             if 'tmin' in api:
                 t = ""
@@ -146,6 +161,7 @@ for idEstacion in indicativos: #Recorremos la lista
                     for i in range(0,len(semana)):
                         if semana[i] == None:
                             semanaFinal[i] = None
+                            completo[fecha_dt.year] = False
                         else:
                             semanaFinal[i] = semana[i]/contador[i]
                     semanal[str(anio)] = semanaFinal
@@ -154,6 +170,7 @@ for idEstacion in indicativos: #Recorremos la lista
                     contador = [0]*53
                     anio = fecha_dt.year
                     semanaFinal = [None]*53
+                    
                 
                 if semana[semanaActual]==None:
                     semana[semanaActual] = float(t)
@@ -183,6 +200,26 @@ historico = db.historico
 historico.delete_many({})
 historico.insert_many(df)           
     
+#Insercion en una coleccion Comarca - Historico (Juntando varias estaciones)
+
+estaciones = estacion_db.find({})
+#Comarca->Historico
+df = []
+
+for it in estaciones:
+    valor = list(temps_db.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True}))
+    
+    if valor == []:#Si la estacion principal no tiene datos se busca la siguiente más cercana
+        aux = []
+        i = 1
+        while aux == []:
+            aux = list(temps_db.find({'idEstacion': it['estacionesAdd'][i]}, {'_id':False, 'historico(semanal)':True}))
+            i +=1
+
+        df[it['comarca_sg']] = aux[0]['historico(semanal)']
+    else:
+        df[it['comarca_sg']] = valor[0]['historico(semanal)']
+
 
 
 
