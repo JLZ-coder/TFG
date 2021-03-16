@@ -147,17 +147,17 @@ def main(argv):
 
     migra = migracion(brote)
 
-    text_file = open("brotes.geojson", "w")
-    n = text_file.write(json.dumps(geobrotes))
-    text_file.close()
+    # text_file = open("brotes.geojson", "w")
+    # n = text_file.write(json.dumps(geobrotes))
+    # text_file.close()
 
     text_file = open("alertas.geojson", "w")
     n = text_file.write(json.dumps(comarc_centro))
     text_file.close()
 
-    text_file = open("migraciones.geojson", "w")
-    n = text_file.write(json.dumps(migra))
-    text_file.close()
+    # text_file = open("rutas.geojson", "w")
+    # n = text_file.write(json.dumps(migra))
+    # text_file.close()
 
 
 if __name__ == "__main__":
