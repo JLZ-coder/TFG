@@ -42,7 +42,7 @@ def main(argv):
 
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
-    control.run(date,1)
+    control.run(date,6, 12)
 
     return 0
 

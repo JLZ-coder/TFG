@@ -7,6 +7,7 @@ import dbf
 import pymongo
 from pymongo import MongoClient
 from datetime import datetime
+import sys
 
 api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YWxlbmNpYWJhcmNlbG9uYUBnbWFpbC5jb20iLCJqdGkiOiJiYzY4MzM1Mi1kZjg3LTRlZTctYjQ4MS1hMDMyODQzZGMwMWIiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTYxMDM4OTY0OCwidXNlcklkIjoiYmM2ODMzNTItZGY4Ny00ZWU3LWI0ODEtYTAzMjg0M2RjMDFiIiwicm9sZSI6IiJ9.BanUHViE2mFsnjne_ilriezZqkDRYYT3Vf4SkKOcE04'
 client= MongoClient('mongodb://localhost:27017/')
@@ -217,15 +218,15 @@ def fillEmptyInfo():
     return df
 #Final historico
 def fillEmptyWeeks(his, booleanArray, restoEstaciones):
-    
+    return
 
 def main(argv):
     #Base de datos de estaciones
     estaciones()
     #listStacion()
     #generateListEmpty()
-    generateHistoric()
-    fillEmptyInfo()
+    #generateHistoric()
+    #fillEmptyInfo()
 
 
     return 0         

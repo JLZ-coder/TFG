@@ -82,6 +82,5 @@ class Controller:
 
         return geojson_alerta
 
-    
 
 

@@ -41,8 +41,8 @@ class GeojsonGenerator:
                         "id": cod_comarca, #Será el id de comarca
                         "riskLevel": it['risk'],
                         "number_of_cases": 0,
-                        "startDate": start.timestamp() * 1000,
-                        "endDate": end.timestamp() * 1000,
+                        "reportDate": start.timestamp() * 1000,
+                        #"endDate": end.timestamp() * 1000,
                         # "codeSpecies": 1840,
                         # "species": "Anas crecca",
                         # "commonName": "Pato cuchara",
@@ -78,8 +78,8 @@ class GeojsonGenerator:
                             "id": cod_comarca, #Será el id de comarca
                             "riskLevel": 0,
                             "number_of_cases": 0,
-                            "startDate": start.timestamp() * 1000,
-                            "endDate": end.timestamp() * 1000,
+                            "reportDate": start.timestamp() * 1000,
+                            #"endDate": end.timestamp() * 1000,
                             # "codeSpecies": 1840,
                             # "species": "Anas crecca",
                             # "commonName": "Pato cuchara",
@@ -112,15 +112,15 @@ class GeojsonGenerator:
             for cod_comarca in outbreakComarca[semana]:
 
                 migration_dict[cod_comarca] = dict()
-                migration_dict[cod_comarca]["oieids"] = set()
-                lista_oieid = migration_dict[cod_comarca]["oieids"]
+                migration_dict[cod_comarca]["oieids"] = dict()
+                dict_oieid = migration_dict[cod_comarca]["oieids"]
                 migration_dict[cod_comarca]["lat"] = comarcasDict[cod_comarca]["Latitud"]
                 migration_dict[cod_comarca]["long"] = comarcasDict[cod_comarca]["Longitud"]
 
                 for brote in outbreakComarca[semana][cod_comarca]:
 
-                    if brote["oieid"] not in lista_oieid:
-                        lista_oieid.add(brote["oieid"])
+                    if brote["oieid"] not in dict_oieid:
+                        dict_oieid[brote["oieid"]] = brote["especie"]
 
 
             for cod_comarca in migration_dict:
@@ -148,7 +148,8 @@ class GeojsonGenerator:
                             "properties": {
                                 "idBrote": oieid,
                                 "idAlerta": cod_comarca,
-                                "idComarca": cod_comarca
+                                "idComarca": cod_comarca,
+                                "especie": migration_dict[cod_comarca]["oieids"][oieid]
                             }
                         }
 

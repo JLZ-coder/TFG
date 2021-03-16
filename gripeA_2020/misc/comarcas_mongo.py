@@ -23,6 +23,7 @@ df = df.rename(columns={'XCoord': 'Longitud', 'YCoord': 'Latitud'})
 file = "data/comarcasGanaderas.geojson"
 leer = json.load(open(file, encoding='utf-8'))
 
+com_sgsa_n = []
 CPRO = []
 provincia = []
 CODAUTO = []
@@ -32,6 +33,7 @@ coordenadas = []
 geohashC = []
 
 for comarca in leer['features']:
+    com_sgsa_n.append(comarca['properties']['comarca'])
     coordenadas.append(comarca['geometry']['coordinates'])
     CPRO.append(comarca['properties']['CPRO'])
     provincia.append(comarca['properties']['provincia'])
@@ -44,7 +46,7 @@ i = 0
 for i in range(len(df)):
    geohashC.append(geohash.encode(df['Latitud'][i], df['Longitud'][i]))
 
-
+df['com_sgsa_n'] = com_sgsa_n
 df['CPRO'] = CPRO
 df['provincia'] = provincia
 df['CODAUTO'] = CODAUTO
