@@ -39,7 +39,7 @@ class Controller:
 
         parameters= dict()
         parameters['comarca_brotes']= comarca_brotes
-        #parameters['tMin'] = tMin
+        parameters['tMin'] = tMin
         parameters['matrizEspecies'] = matrizEspecies
 
         brotes_por_semana = dict()

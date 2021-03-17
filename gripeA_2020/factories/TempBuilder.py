@@ -10,24 +10,13 @@ class TempBuilder(Builder):
     def create(self, start, end, parameters):
         client = MongoClient('mongodb://localhost:27017/')
         db = client.lv
-        temps_db = db.historico
-        estacion_db = db.estaciones
+        temperatura = db.temperatura
 
-        estaciones = estacion_db.find({})
+        cursor = temperatura.find({},{'_id':False, 'comarca_sg':True,'historicoFinal':True})
+
         tempMin = {}
 
-        for it in estaciones:
-            valor = list(temps_db.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True}))
-            
-            if valor == []:#Si la estacion principal no tiene datos se busca la siguiente más cercana
-                aux = []
-                i = 1
-                while aux == []:
-                    aux = list(temps_db.find({'idEstacion': it['estacionesAdd'][i]}, {'_id':False, 'historico(semanal)':True}))
-                    i +=1
-
-                tempMin[it['comarca_sg']] = aux[0]['historico(semanal)']
-            else:
-                tempMin[it['comarca_sg']] = valor[0]['historico(semanal)']
+        for i in cursor:
+            tempMin[i['comarca_sg']] = i['historicoFinal']
        
         return tempMin

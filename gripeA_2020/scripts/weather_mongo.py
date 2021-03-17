@@ -1,4 +1,5 @@
 import json
+import sys
 import requests
 import re
 import pandas as pd
@@ -16,6 +17,12 @@ estacion = db.estaciones
 historico = db.historico
 temperatura = db.temperatura
 
+bisiesto = ["2012", "2016","2020","2024"]
+fechaInicial = "2017-01-02"
+fechaFinal = "2021-03-8"
+
+semanaFinal = datetime.strptime(fechaFinal, '%Y-%m-%d')
+nSemanaFinal = semanaFinal.isocalendar()[1]-1
 #Creamos la colección que guardará la información relacionada con las estaciones
 def estaciones():
     #Leemos el fichero que relaciona las estaciones con las comarcas
@@ -63,8 +70,8 @@ def generateHistoric():
     j=1
     
     #2017-2021
-    fechaini = "2017-01-02T00:00:00UTC"
-    fechafin = "2021-02-31T00:00:00UTC"
+    fechaini = "{}T00:00:00UTC".format(fechaInicial)
+    fechafin = "{}T00:00:00UTC".format(fechaFinal)
 
     for idEstacion in indicativos: #Recorremos la lista 
             
@@ -105,7 +112,6 @@ def generateHistoric():
             semanaFinal =[None]*53
             #Lista por año para saber que semanas no tienen valores
             completo = {'2017':[], '2018':[], '2019':[], '2020':[], '2021':[]}
-            rellenar = False 
             for api in json_response:
                 if 'tmin' in api:
                     t = ""
@@ -125,8 +131,7 @@ def generateHistoric():
                         for i in range(0,len(semana)):
                             if semana[i] == None:
                                 semanaFinal[i] = None
-                                completo[fecha_dt.year].append(i)
-                                rellenar = True
+                                completo[str(anio)].append(i)
                             else:
                                 semanaFinal[i] = semana[i]/contador[i]
                         semanal[str(anio)] = semanaFinal
@@ -148,10 +153,11 @@ def generateHistoric():
             for i in range(0,len(semana)):
                 if semana[i] == None:
                     semanaFinal[i] = None
+                    completo[str(anio)].append(i)
                 else:
                     semanaFinal[i] = semana[i]/contador[i]
             semanal[str(anio)] = semanaFinal   
-            df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal, 'boolCompleto': completo, 'rellenar': rellenar})
+            df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal, 'boolCompleto': completo})
             
 
     text_file = open("data/historico1.json", "w")
@@ -192,41 +198,75 @@ def generateListEmpty():
 #Para comarcas sin asignación alguna
 def fillEmptyInfo():
     #Insercion en una coleccion Comarca - Historico (Juntando varias estaciones)
-    estaciones = estacion_db.find({})
+    estaciones = estacion.find({})
     #Comarca->Historico
     df = []
 
     for it in estaciones:
-        valor = list(historico.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True, 'completo': True}))
+        valor = list(historico.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True, 'boolCompleto': True}))
         
         if valor == []:#Si la estacion principal no tiene datos se busca la siguiente más cercana
             aux = []
             i = 1
             while aux == []:
-                aux = list(historico.find({'idEstacion': it['estacionesAdd'][i]}, {'_id':False, 'historico(semanal)':True,'completo': True}))
+                aux = list(historico.find({'idEstacion': it['estacionesAdd'][i]}, {'_id':False, 'historico(semanal)':True,'boolCompleto': True}))
                 i +=1
 
-            his = fillEmptyWeeks(aux[0]['historico(semanal)'], aux[0]['completo'], it['estacionesAdd'])
+            his, comp = fillEmptyWeeks(aux[0]['historico(semanal)'], aux[0]['boolCompleto'], it['estacionesAdd'], i)
         else:
-            his = fillEmptyWeeks(valor[0]['historico(semanal)'], valor[0]['completo'], it['estacionesAdd'])
+            his, comp = fillEmptyWeeks(valor[0]['historico(semanal)'], valor[0]['boolCompleto'], it['estacionesAdd'], 1)
 
-        df.append({'comarca_sg': it['comarca_sg'], 'historicoFinal': his})
+        df.append({'comarca_sg': it['comarca_sg'], 'historicoFinal': his, 'completo': comp })
 
     temperatura.delete_many({})
     temperatura.insert_many(df) 
 
-    return df
-#Final historico
-def fillEmptyWeeks(his, booleanArray, restoEstaciones):
-    return
+#His -> diccionario por años con las temperaturas
+#BooleanArray -> diccionario por posiciones donde hay semanas vacias
+#RestoEstaciones -> Diferentes estaciones para aplicar recursion buscando ese valor perdido
+#index -> indice de la lista de RestoEstaciones
+
+def fillEmptyWeeks(his, booleanArray, restoEstaciones, index):
+    aux = his
+    auxBoolean = booleanArray
+    for anio, lista in booleanArray.items():
+        i = 0
+        for semana in lista:
+            indice = index
+            if semana == 52 and anio not in bisiesto: #Solo acceder a la semana 52 de años bisiestos
+                continue
+
+            if (str(semanaFinal.year)) !=  anio or (semana < nSemanaFinal):
+                aux[anio][semana] = search(anio,restoEstaciones, indice, semana)
+                if aux[anio][semana] != None: #Lo eliminamos de la lista
+                    auxBoolean[anio].pop(i)
+
+            i+=1
+
+    return aux, auxBoolean
+    
+def search(anio, restoEstaciones, index, semana):
+    resulta = None
+    ok = False
+    i = index
+    
+    while not ok and i < len(restoEstaciones):
+        consulta = list(historico.find({'idEstacion': restoEstaciones[i]}, {'_id':False, 'historico(semanal)':True}))
+        if consulta != []:
+            if consulta[0]['historico(semanal)'][anio][semana] != None: 
+                resulta = consulta[0]['historico(semanal)'][anio][semana]
+                ok = True
+        i+=1
+
+    return resulta
+
 
 def main(argv):
-    #Base de datos de estaciones
-    estaciones()
+    #estaciones() #Construye la coleccion de estaciones
     #listStacion()
     #generateListEmpty()
     #generateHistoric()
-    #fillEmptyInfo()
+    fillEmptyInfo()
 
 
     return 0         
