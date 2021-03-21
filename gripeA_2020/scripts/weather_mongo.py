@@ -23,6 +23,9 @@ fechaFinal = "2021-03-8"
 
 semanaFinal = datetime.strptime(fechaFinal, '%Y-%m-%d')
 nSemanaFinal = semanaFinal.isocalendar()[1]-1
+
+
+estacionDebug = ""
 #Creamos la colección que guardará la información relacionada con las estaciones
 def estaciones():
     #Leemos el fichero que relaciona las estaciones con las comarcas
@@ -205,6 +208,7 @@ def fillEmptyInfo():
     for it in estaciones:
         valor = list(historico.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True, 'boolCompleto': True}))
         
+        estacionDebug = it['comarca_sg']
         if valor == []:#Si la estacion principal no tiene datos se busca la siguiente más cercana
             aux = []
             i = 1
@@ -212,9 +216,9 @@ def fillEmptyInfo():
                 aux = list(historico.find({'idEstacion': it['estacionesAdd'][i]}, {'_id':False, 'historico(semanal)':True,'boolCompleto': True}))
                 i +=1
 
-            his, comp = fillEmptyWeeks(aux[0]['historico(semanal)'], aux[0]['boolCompleto'], it['estacionesAdd'], i)
+            his, comp = fillEmptyWeeks(aux[0]['historico(semanal)'], aux[0]['boolCompleto'], it['estacionesAdd'], it['comarca_sg'], i)
         else:
-            his, comp = fillEmptyWeeks(valor[0]['historico(semanal)'], valor[0]['boolCompleto'], it['estacionesAdd'], 1)
+            his, comp = fillEmptyWeeks(valor[0]['historico(semanal)'], valor[0]['boolCompleto'], it['estacionesAdd'], it['comarca_sg'], 1)
 
         df.append({'comarca_sg': it['comarca_sg'], 'historicoFinal': his, 'completo': comp })
 
@@ -226,30 +230,31 @@ def fillEmptyInfo():
 #RestoEstaciones -> Diferentes estaciones para aplicar recursion buscando ese valor perdido
 #index -> indice de la lista de RestoEstaciones
 
-def fillEmptyWeeks(his, booleanArray, restoEstaciones, index):
+def fillEmptyWeeks(his, booleanArray, restoEstaciones, comarca, index):
     aux = his
-    auxBoolean = booleanArray
+    auxBoolean = {'2017':[], '2018':[], '2019':[], '2020':[], '2021':[]}
     for anio, lista in booleanArray.items():
         i = 0
+       
         for semana in lista:
             indice = index
             if semana == 52 and anio not in bisiesto: #Solo acceder a la semana 52 de años bisiestos
                 continue
 
             if (str(semanaFinal.year)) !=  anio or (semana < nSemanaFinal):
-                aux[anio][semana] = search(anio,restoEstaciones, indice, semana)
-                if aux[anio][semana] != None: #Lo eliminamos de la lista
-                    auxBoolean[anio].pop(i)
+                aux[anio][semana] = search(anio,restoEstaciones, indice, comarca, semana)
+                if aux[anio][semana] == None: #Lo eliminamos de la lista
+                    auxBoolean[anio].append(i)
 
             i+=1
 
     return aux, auxBoolean
     
-def search(anio, restoEstaciones, index, semana):
+def search(anio, restoEstaciones, index, comarca, semana):
     resulta = None
     ok = False
     i = index
-    
+
     while not ok and i < len(restoEstaciones):
         consulta = list(historico.find({'idEstacion': restoEstaciones[i]}, {'_id':False, 'historico(semanal)':True}))
         if consulta != []:
