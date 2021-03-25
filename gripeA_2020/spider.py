@@ -4,7 +4,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-class AppleJobsScraper(object):
+class scrapping(object):
     def __init__(self):
         self.search_request = {
 
@@ -32,7 +32,7 @@ class AppleJobsScraper(object):
                 #'DNT': '1',
                 'X-Requested-With': 'XMLHttpRequest',
                 # 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36 Edg/89.0.774.57',
-                'Referer': 'http://empres-i.fao.org/empres-i/2/obd?idOutbreak=287665',
+                #'Referer': 'http://empres-i.fao.org/empres-i/2/obd?idOutbreak=287665',
                 #'Accept-Encoding': 'gzip',
                 #'Accept-Language': 'en'
             }
@@ -42,9 +42,9 @@ class AppleJobsScraper(object):
         casos = s['outbreak']['speciesAffectedList'][0]['cases']
         muertes = s['outbreak']['speciesAffectedList'][0]['deaths']
 
-        return jobs
+        return casos, muertes
 
 
 if __name__ == '__main__':
-    scraper = AppleJobsScraper()
+    scraper = scrapping()
     scraper.scrape()
