@@ -4,6 +4,8 @@ import sys
 import pandas as pd
 from bs4 import BeautifulSoup
 import json
+from datetime import datetime, timedelta, date
+import pygeohash as geohash
 
 # GLOBALS
 client = MongoClient('mongodb://localhost:27017/')
@@ -14,17 +16,26 @@ outbreaks = db.outbreaks
 def loadOutbreaks():
     file = 'data/AvianInfluenza.csv'
     df = pd.read_csv(file, sep=",")
+    #Eliminamos filas
+    df.dropna(subset=["observation_date"], inplace=True)
+    df = webScraping(df)
 
-    return df
+    records = df.to_dict(orient='records')
+    outbreaks.delete_many({})
+    
+    outbreaks.insert_many(records)
+
 #WebScrapping to get Cases and Deaths
 #Parameters -> list(idOutbreak)
 
 def webScraping(df):
     cases = []
     deaths = []
+    animalType = []
+    geohashA = []
     payload = json.dumps({})
-    for i in df['Event ID']:
-        url = "http://empres-i.fao.org/empres-i/obdj?id={}&lang=EN".format(i)
+    for i in df.index:
+        url = "http://empres-i.fao.org/empres-i/obdj?id={}&lang=EN".format(df['Event ID'][i])
         r = requests.get(url,
             data = payload,  
             headers={
@@ -42,6 +53,7 @@ def webScraping(df):
                 #'Accept-Language': 'en'
             })
         s = json.loads(r.text)
+        #Carga de valores obtenidos por requests en variables
         try:
             casos = s['outbreak']['speciesAffectedList'][0]['cases']
         except:
@@ -50,19 +62,27 @@ def webScraping(df):
             muertes = s['outbreak']['speciesAffectedList'][0]['deaths']
         except:
             muertes = ""
+        try:
+            animal = s['outbreak']['speciesAffectedList'][0]['animalType']
+        except:
+            animal = ""
 
+        #Geohash
+        valueGeohash = geohash.encode(float(df['lat'][i]), float(df['lon'][i]))
+
+        #Guardado en listas
         cases.append(casos)
         deaths.append(muertes)
+        animalType.append(animal)
+        geohashA.append(valueGeohash)
 
 
     df['cases'] = cases
     df['deaths'] = deaths
+    df['epiunit'] = animalType 
+    df['geohash'] = geohashA
 
-    records = df.to_dict(orient='records')
-    outbreaks.delete_many({})
-    
-    outbreaks.insert_many(records)
-    
+    return df
 
 
 #Download outbreaks last week
@@ -74,18 +94,45 @@ def downloadOutbreaks():
     open("data/outbreaksWeeks.csv", 'wb').write(myFile.content)
     #Abrimos csv para quedarnos con brotes nuevos de la ultima semana
     df = pd.read_csv('data/outbreaksWeeks.csv')
+    df.rename(columns={'event_id': 'Event ID'}, inplace=True)
+    
+    df.dropna(subset=["observation_date"], inplace=True)
 
-    print(df)
+    #Buscar los de la ultima semana
+    #fecha de hoy
+    today = datetime.today()
+    #Lunes de esta semana
+    monday = today + timedelta(days = -today.weekday())
+    #Semana anterior 
+    lastWeek = monday - timedelta(weeks = 1)
+    #Indices para borrar el resto de filas
+    dfAux = []
+    for i in df.index:
+        
+        dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d')
+        
+        if dateOutbreak >= lastWeek and dateOutbreak <= monday:
+            continue
 
-    return 0
+        dfAux.append(i)
+
+    df = df.drop(dfAux,axis=0)
+    df = webScraping(df)
+
+
+    records = df.to_dict(orient='records')
+
+    #Si el brote ya existe remplazamos la nueva infomación 
+    for i in records:
+        outbreaks.replace_one({'Event ID': i['Event ID']}, i, upsert = True)
+    
 
 #Main
 
 def main(argv):
 
-    #df = loadOutbreaks()
-    #webScraping(df)
-    downloadOutbreaks()
+    loadOutbreaks()
+    #downloadOutbreaks()
 
 
     return 0
