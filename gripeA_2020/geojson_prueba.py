@@ -18,6 +18,7 @@ client = MongoClient('mongodb://localhost:27017/')
 db = client.lv
 outbreaks = db.outbreaks
 com = db.comarcas
+migrations = db.migrations
 diseases = {
     '15' : "Highly Path Avian influenza",
     '201' : "Low Path Avian influenza",
@@ -50,7 +51,7 @@ def brotes():
                 "id": it['oieid'],
                 "disease": diseases[it['disease_id']],
                 "country": it['country'],
-                "start": math.floor(it['start'].timestamp() * 1000),
+                "start": math.floor(it['observation_date'].timestamp() * 1000),
                 # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
                 "city": it['city'],
                 # "species": it['species'],
@@ -140,24 +141,53 @@ def migracion(brote):
 
     return feat_col
 
+def allMigrations():
+    cursor = migrations.find({})
+
+    feat_col = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+
+    for it in cursor:
+        cod_comarca = it['comarca_sg']
+        aux = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [[float(it['Long']), float(it['Lat'])], [float(it['LongR']), float(it['LatR'])]]   
+                },
+                "properties": {
+                    "idComarca": it['comarca_sg'],
+                    "species": it['ESPECIE2']
+                }
+            }
+
+        feat_col['features'].append(aux)
+
+    return feat_col
+
+
+
 def main(argv):
-    geobrotes, brote = brotes()
+    #geobrotes, brote = brotes()
 
-    comarc_centro = comarcas()
+    #comarc_centro = comarcas()
 
-    migra = migracion(brote)
+    #migra = migracion(brote)
 
+    migra = allMigrations()
     # text_file = open("brotes.geojson", "w")
     # n = text_file.write(json.dumps(geobrotes))
     # text_file.close()
 
-    text_file = open("alertas.geojson", "w")
-    n = text_file.write(json.dumps(comarc_centro))
-    text_file.close()
+    #text_file = open("alertas.geojson", "w")
+    #n = text_file.write(json.dumps(comarc_centro))
+    #text_file.close()
 
-    # text_file = open("rutas.geojson", "w")
-    # n = text_file.write(json.dumps(migra))
-    # text_file.close()
+    text_file = open("data/migrations.geojson", "w")
+    n = text_file.write(json.dumps(migra))
+    text_file.close()
 
 
 if __name__ == "__main__":
