@@ -6,18 +6,18 @@ import math
 class ModelV1():
     def __init__(self):
         self.tag = "modelv1"
-        self.farm = 0.1
-        self.backyard = 0.3
-        self.other = 1
+        self.domestic = 0.1
+        self.captive = 0.3
+        self.wild = 1
 
     def create(self, tag):
         if (tag == self.tag):
             return self
 
     def changeProb(self, prob):
-        self.farm = prob[0]
-        self.backyard = prob[1]
-        self.other = prob[2]
+        self.domestic = prob[0]
+        self.captive = prob[1]
+        self.wild = prob[2]
 
     #Parameters[comarca_brotes, matrizEspecies, tMin]
     def run(self, start, end, parameters):
@@ -66,12 +66,12 @@ class ModelV1():
                 
                 probType = 0
 
-                if brote['epiunit']== "Farm":
-                    probType = self.farm
-                elif brote['epiunit']== "Backyard":
-                    probType = self.backyard
+                if brote['epiunit']== "Domestic":
+                    probType = self.domestic
+                elif brote['epiunit']== "Captive":
+                    probType = self.captive
                 else:
-                    probType = self.other
+                    probType = self.wild
                 
                 contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote

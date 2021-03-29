@@ -16,8 +16,11 @@ outbreaks = db.outbreaks
 def loadOutbreaks():
     file = 'data/AvianInfluenza.csv'
     df = pd.read_csv(file, sep=",")
+    #Renombramos
+    df.rename(columns={'Event ID': 'oieid', 'Disease': 'disease', 'Serotype': 'serotype', 'Locality': 'city', 
+        'lon': 'long', 'Country': 'country', 'Location': 'location', 'Species': 'species', 'Date': 'date'}, inplace=True)
     #Eliminamos filas
-    df.dropna(subset=["observation_date"], inplace=True)
+    df.dropna(subset=["observation_date", "serotype"], inplace=True)
     df = webScraping(df)
 
     records = df.to_dict(orient='records')
@@ -33,9 +36,13 @@ def webScraping(df):
     deaths = []
     animalType = []
     geohashA = []
+    fullReport=[]
+    reportDate = []
+    observationDate = []
+    dateL = []
     payload = json.dumps({})
     for i in df.index:
-        url = "http://empres-i.fao.org/empres-i/obdj?id={}&lang=EN".format(df['Event ID'][i])
+        url = "http://empres-i.fao.org/empres-i/obdj?id={}&lang=EN".format(df['oieid'][i])
         r = requests.get(url,
             data = payload,  
             headers={
@@ -68,19 +75,29 @@ def webScraping(df):
             animal = ""
 
         #Geohash
-        valueGeohash = geohash.encode(float(df['lat'][i]), float(df['lon'][i]))
+        valueGeohash = geohash.encode(float(df['lat'][i]), float(df['long'][i]))
 
         #Guardado en listas
         cases.append(casos)
         deaths.append(muertes)
         animalType.append(animal)
         geohashA.append(valueGeohash)
+        fullReport.append("http://empres-i.fao.org/empres-i/2/obd?idOutbreak={}".format(df['oieid'][i]))
+
+        #Datetime de report_date, observation_date, date de los brotes
+        reportDate.append(datetime.strptime(df['report_date'][i], '%Y-%m-%d'))
+        observationDate.append(datetime.strptime(df['observation_date'][i], '%Y-%m-%d'))
+        dateL.append(datetime.strptime(df['date'][i], '%Y-%m-%d'))
 
 
     df['cases'] = cases
     df['deaths'] = deaths
     df['epiunit'] = animalType 
     df['geohash'] = geohashA
+    df['urlFR'] = fullReport
+    df['report_date'] = reportDate
+    df['observation_date'] = observationDate
+    df['date'] = dateL
 
     return df
 
@@ -94,7 +111,8 @@ def downloadOutbreaks():
     open("data/outbreaksWeeks.csv", 'wb').write(myFile.content)
     #Abrimos csv para quedarnos con brotes nuevos de la ultima semana
     df = pd.read_csv('data/outbreaksWeeks.csv')
-    df.rename(columns={'event_id': 'Event ID'}, inplace=True)
+    df.rename(columns={'event_id': 'oieid', 'Disease': 'disease', 'Serotype': 'serotype', 'Locality': 'city', 
+        'lon': 'long', 'Country': 'country', 'Location': 'location', 'Species': 'species', 'Date': 'date'}, inplace=True)
     
     df.dropna(subset=["observation_date"], inplace=True)
 
@@ -122,17 +140,17 @@ def downloadOutbreaks():
 
     records = df.to_dict(orient='records')
 
-    #Si el brote ya existe remplazamos la nueva infomación 
+    #Si el brote ya existe remplazamos la nueva infomación y si no, lo añade
     for i in records:
-        outbreaks.replace_one({'Event ID': i['Event ID']}, i, upsert = True)
+        outbreaks.replace_one({'oieid': i['oieid']}, i, upsert = True)
     
 
 #Main
 
 def main(argv):
 
-    loadOutbreaks()
-    #downloadOutbreaks()
+    #loadOutbreaks()
+    downloadOutbreaks()
 
 
     return 0

@@ -183,7 +183,8 @@ class GeojsonGenerator:
                         },
                         "properties": {
                             "id": it['oieid'],
-                            "disease": diseases[it['disease_id']],
+                            #"disease": diseases[it['disease_id']],
+                            "disease": it['disease'],
                             "country": it['country'],
                             "start": math.floor(it['start'].timestamp() * 1000),
                             # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
