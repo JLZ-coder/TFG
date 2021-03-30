@@ -52,9 +52,9 @@ class OutbreakBuilder(Builder):
                         if comarca["peso"] > 0.8:
                             cod = comarca["cod_comarca"]
                             if cod not in comarca_brotes:
-                                comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]}]
+                                comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "especie":relacion[1]}]
                             else:
-                                comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "especie":relacion[1]})
+                                comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "especie":relacion[1]})
 
 
         return comarca_brotes, brotes_por_semana

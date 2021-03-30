@@ -51,14 +51,16 @@ class GeojsonGenerator:
                         "comarca": it['com_sgsa_n'],
                         "CPRO": it['CPRO'],
                         "province": it['provincia'],
-                        "CPROyMUN": it['CPROyMUN']
+                        "CPROyMUN": it['CPROyMUN'],
+                        "serotypes": it['serotipos'],
+                        "species": it['especies']
                     }
                 }
                 feat_col_alertas["features"].append(aux)
 
             it.clear()
 
-            for cod_comarca in comarcasDict:
+            '''for cod_comarca in comarcasDict:
                 if comarcasDict[cod_comarca]['comarca_sg'] not in comarcas_de_alertlist:
 
                     it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
@@ -92,6 +94,7 @@ class GeojsonGenerator:
                         }
                     }
                     feat_col_alertas["features"].append(aux)
+            '''
 
         text_file = open("geojson/alertas.geojson", "w")
         n = text_file.write(json.dumps(feat_col_alertas))
@@ -186,13 +189,13 @@ class GeojsonGenerator:
                             #"disease": diseases[it['disease_id']],
                             "disease": it['disease'],
                             "country": it['country'],
-                            "start": math.floor(it['start'].timestamp() * 1000),
+                            "observationDate": math.floor(it['observation_date'].timestamp() * 1000),
                             # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
                             "city": it['city'],
                             "species": it['species'],
                             # "at_risk": int(it['at_risk']),
-                            "cases": int(it['cases']),
-                            # "deaths": int(it['deaths']),
+                            "cases": "" if it['cases']== "" else int(it['cases']),
+                            "deaths": "" if it['deaths']== "" else int(it['deaths']),
                             # "preventive_killed": int(it['preventive_killed'])
                             "serotipo": it['serotype'],
                             "moreInfo": it['urlFR'],

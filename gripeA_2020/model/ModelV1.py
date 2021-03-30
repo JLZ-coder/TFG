@@ -55,10 +55,15 @@ class ModelV1():
             #Contador
             i+=1
 
+        #Listas para geojson de alertas 
+        serotipoBrotesComarca = list()
+        especiesBrotesComarca = list()
         #Modelo
         nAlerta = 0
         for comarca, brotes in parameters['comarca_brotes'].items():
             nAlerta = 0 
+            serotipoBrotesComarca.clear()
+            especiesBrotesComarca.clear()
             for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
                 contrBrote = 0
 
@@ -76,12 +81,15 @@ class ModelV1():
                 contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote
 
+                serotipoBrotesComarca.append(brote['serotype'])
+                especiesBrotesComarca.append(brote['especie'])
+
             #Calculamos la semana actual
             try:
                 #week = start.isocalendar()[1]-1
                 #temperaturaM = 66 if (parameters['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca][str(start.year)][week])) + 29.94
                 #alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
-                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : int(nAlerta)})
+                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : int(nAlerta), "serotipos": serotipoBrotesComarca, "especies": especiesBrotesComarca})
             except: 
                 print("No hay temperatura para la comarca: " + comarca) 
            
