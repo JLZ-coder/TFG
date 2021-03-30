@@ -96,8 +96,8 @@ class GeojsonGenerator:
                         feat_col_alertas["features"].append(aux)
                 '''
 
-        text_file = open("geojson/alertas.geojson", "w")
-        n = text_file.write(json.dumps(feat_col_alertas))
+        text_file = open("geojson/alertas.geojson", "w", encoding="utf-8")
+        n = text_file.write(json.dumps(feat_col_alertas, ensure_ascii=False))
         text_file.close()
 
         return feat_col_alertas
@@ -158,8 +158,8 @@ class GeojsonGenerator:
 
                     feat_col_migracion['features'].append(aux)
 
-        text_file = open("geojson/rutas.geojson", "w")
-        n = text_file.write(json.dumps(feat_col_migracion))
+        text_file = open("geojson/rutas.geojson", "w", encoding="utf-8")
+        n = text_file.write(json.dumps(feat_col_migracion, ensure_ascii=False))
         text_file.close()
 
         return feat_col_migracion
@@ -206,8 +206,8 @@ class GeojsonGenerator:
 
                 feat_col_brote['features'].append(aux)
 
-        text_file = open("geojson/brotes.geojson", "w")
-        n = text_file.write(json.dumps(feat_col_brote))
+        text_file = open("geojson/brotes.geojson", "w", encoding="utf-8")
+        n = text_file.write(json.dumps(feat_col_brote, ensure_ascii=False))
         text_file.close()
 
         return feat_col_brote
