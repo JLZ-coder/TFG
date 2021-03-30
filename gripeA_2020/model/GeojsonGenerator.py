@@ -21,48 +21,9 @@ class GeojsonGenerator:
             comarcas_de_alertlist.clear()
 
             for it in alertas["alertas"]:
-
-                comarcas_de_alertlist.add(it['comarca_sg'])
-                cod_comarca = it['comarca_sg']
-                it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
-                it['Latitud'] = comarcasDict[cod_comarca]['Latitud']
-                it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
-                it['CPRO'] = comarcasDict[cod_comarca]['CPRO']
-                it['provincia'] = comarcasDict[cod_comarca]['provincia']
-                it['CPROyMUN'] = comarcasDict[cod_comarca]['CPROyMUN']
-
-                aux={
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-                    },
-                    "properties": {
-                        "id": cod_comarca, #Será el id de comarca
-                        "riskLevel": it['risk'],
-                        "number_of_cases": 0,
-                        "reportDate": start.timestamp() * 1000,
-                        #"endDate": end.timestamp() * 1000,
-                        # "codeSpecies": 1840,
-                        # "species": "Anas crecca",
-                        # "commonName": "Pato cuchara",
-                        # "fluSubtype": "H5",
-                        "idComarca": cod_comarca,
-                        "comarca": it['com_sgsa_n'],
-                        "CPRO": it['CPRO'],
-                        "province": it['provincia'],
-                        "CPROyMUN": it['CPROyMUN'],
-                        "serotypes": it['serotipos'],
-                        "species": it['especies']
-                    }
-                }
-                feat_col_alertas["features"].append(aux)
-
-            it.clear()
-
-            '''for cod_comarca in comarcasDict:
-                if comarcasDict[cod_comarca]['comarca_sg'] not in comarcas_de_alertlist:
-
+                if it['risk'] != 0:
+                    comarcas_de_alertlist.add(it['comarca_sg'])
+                    cod_comarca = it['comarca_sg']
                     it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
                     it['Latitud'] = comarcasDict[cod_comarca]['Latitud']
                     it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
@@ -78,8 +39,8 @@ class GeojsonGenerator:
                         },
                         "properties": {
                             "id": cod_comarca, #Será el id de comarca
-                            "riskLevel": 0,
-                            "number_of_cases": 0,
+                            "riskLevel": it['risk'],
+                            "number_of_cases": it['casos'],
                             "reportDate": start.timestamp() * 1000,
                             #"endDate": end.timestamp() * 1000,
                             # "codeSpecies": 1840,
@@ -90,11 +51,50 @@ class GeojsonGenerator:
                             "comarca": it['com_sgsa_n'],
                             "CPRO": it['CPRO'],
                             "province": it['provincia'],
-                            "CPROyMUN": it['CPROyMUN']
+                            "CPROyMUN": it['CPROyMUN'],
+                            "serotypes": it['serotipos'],
+                            "species": it['especies']
                         }
                     }
                     feat_col_alertas["features"].append(aux)
-            '''
+
+                #it.clear()
+
+                '''for cod_comarca in comarcasDict:
+                    if comarcasDict[cod_comarca]['comarca_sg'] not in comarcas_de_alertlist:
+
+                        it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
+                        it['Latitud'] = comarcasDict[cod_comarca]['Latitud']
+                        it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
+                        it['CPRO'] = comarcasDict[cod_comarca]['CPRO']
+                        it['provincia'] = comarcasDict[cod_comarca]['provincia']
+                        it['CPROyMUN'] = comarcasDict[cod_comarca]['CPROyMUN']
+
+                        aux={
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
+                            },
+                            "properties": {
+                                "id": cod_comarca, #Será el id de comarca
+                                "riskLevel": 0,
+                                "number_of_cases": 0,
+                                "reportDate": start.timestamp() * 1000,
+                                #"endDate": end.timestamp() * 1000,
+                                # "codeSpecies": 1840,
+                                # "species": "Anas crecca",
+                                # "commonName": "Pato cuchara",
+                                # "fluSubtype": "H5",
+                                "idComarca": cod_comarca,
+                                "comarca": it['com_sgsa_n'],
+                                "CPRO": it['CPRO'],
+                                "province": it['provincia'],
+                                "CPROyMUN": it['CPROyMUN']
+                            }
+                        }
+                        feat_col_alertas["features"].append(aux)
+                '''
 
         text_file = open("geojson/alertas.geojson", "w")
         n = text_file.write(json.dumps(feat_col_alertas))

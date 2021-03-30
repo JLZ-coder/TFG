@@ -42,6 +42,7 @@ class Controller:
         parameters['tMin'] = tMin
         parameters['matrizEspecies'] = matrizEspecies
 
+
         brotes_por_semana = dict()
         brotes_por_semana = lista_brotes.copy()
         migrations_por_semana = dict()

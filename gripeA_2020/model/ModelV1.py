@@ -56,14 +56,16 @@ class ModelV1():
             i+=1
 
         #Listas para geojson de alertas 
-        serotipoBrotesComarca = list()
-        especiesBrotesComarca = list()
+        serotipoBrotesComarca = set()
+        especiesBrotesComarca = set()
+        casosTotales = 0
         #Modelo
         nAlerta = 0
         for comarca, brotes in parameters['comarca_brotes'].items():
             nAlerta = 0 
             serotipoBrotesComarca.clear()
             especiesBrotesComarca.clear()
+            casosTotales = 0
             for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
                 contrBrote = 0
 
@@ -81,15 +83,18 @@ class ModelV1():
                 contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote
 
-                serotipoBrotesComarca.append(brote['serotype'])
-                especiesBrotesComarca.append(brote['especie'])
+                serotipoBrotesComarca.add(brote['serotype'])
+                especiesBrotesComarca.add(parameters['matrizEspecies']['Especie'][brote["especie"]])
+                if brote['casos'] != "":
+                    casosTotales += brote['casos']
 
+        
             #Calculamos la semana actual
             try:
                 #week = start.isocalendar()[1]-1
                 #temperaturaM = 66 if (parameters['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca][str(start.year)][week])) + 29.94
                 #alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
-                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : int(nAlerta), "serotipos": serotipoBrotesComarca, "especies": especiesBrotesComarca})
+                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : int(nAlerta), "serotipos": list(serotipoBrotesComarca), "especies": list(especiesBrotesComarca), "casos": casosTotales})
             except: 
                 print("No hay temperatura para la comarca: " + comarca) 
            
