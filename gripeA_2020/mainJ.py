@@ -1,31 +1,28 @@
-# import requests
-# import re
-import sys
-# import time
-import json
-# import pymongo
-from pymongo import MongoClient
-# import pygeohash as geohash
-from datetime import datetime, timedelta, date
-import math
-from neo4j import GraphDatabase
-# import string
-import os, sys
-
+import sys, json
 from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
 from factories.TempBuilder import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
-from controller import controller
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
+from controller import controller
+from datetime import datetime, timedelta, date
 
+def toolOffLine(control):
 
-diseases = {
-    '15' : "Highly Path Avian influenza",
-    '201' : "Low Path Avian influenza",
-    '1164' : "Highly pathogenic influenza A viruses"
-}
+    #Abrir y validar con el esquema
+    f = open("data/exampleTool.json", "r")
+    content = f.read()
+    schemaJson = json.loads(content)
+
+    #Ejecutar n * m veces el modelo
+    for i in schemaJson['rangeOfValues']['temporaryWindow']:
+        for j in schemaJson['rangeOfValues']['probBirds']:
+            control.changeProb(j)
+            geojson_alerta = control.run(datetime.strptime(schemaJson['date'], '%Y-%m-%d'), schemaJson['weeks'], i*4)
+
+    #Procesar los datos y generar en Markdown las gráficas
+
 
 
 def main(argv):
@@ -37,16 +34,17 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    date = datetime(2020, 1, 1)
     geojsonGen = GeojsonGenerator()
 
-    control = controller.Controller(modelSelector, dataFact, geojsonGen)
+    date = None
 
-    control.run(date, 52, 6)
+    control = Controller(modelSelector, dataFact, geojsonGen)
+
+    #toolOffLine(control)
+
+    control.run(date,12)
 
     return 0
-
-
 
 
 if __name__ == "__main__":

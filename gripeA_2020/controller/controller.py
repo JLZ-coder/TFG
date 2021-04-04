@@ -8,11 +8,11 @@ class Controller:
     def __init__(self, model,dataFactory, geojsonGen):
         self.model = model
         self.dataFactory = dataFactory
-        self.geojsonGen = geojsonGen        
-        
+        self.geojsonGen = geojsonGen
+
     def changeProb(self, prob):
         self.model.changeProb(prob)
-    
+
     #DateM -> fecha referente
     #weeks -> semanas para generar alertas
     #temporaryWindow -> ventana temporal para busqueda de brotes por defecto 3 Meses/12 semanas/ 90 dias
