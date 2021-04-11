@@ -20,7 +20,7 @@ def toolOffLine(control):
         for j in schemaJson['rangeOfValues']['probBirds']:
             control.changeProb(j)
             geojson_alerta = control.run(datetime.strptime(schemaJson['date'], '%Y-%m-%d'), schemaJson['weeks'], i*4)
-
+            
     #Procesar los datos y generar en Markdown las gráficas
             
 

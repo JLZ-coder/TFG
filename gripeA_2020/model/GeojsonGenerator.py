@@ -38,64 +38,15 @@ class GeojsonGenerator:
                             "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                         },
                         "properties": {
-                            "id": cod_comarca, #Será el id de comarca
                             "Riesgo": it['risk'],
-                            "number_of_cases": it['casos'],
                             "reportDate": start.timestamp() * 1000,
-                            #"endDate": end.timestamp() * 1000,
-                            # "codeSpecies": 1840,
-                            # "species": "Anas crecca",
-                            # "commonName": "Pato cuchara",
-                            # "fluSubtype": "H5",
-                            "idComarca": cod_comarca,
                             "comarca": it['com_sgsa_n'],
-                            "CPRO": it['CPRO'],
-                            "province": it['provincia'],
-                            "CPROyMUN": it['CPROyMUN'],
-                            "serotypes": it['serotipos'],
-                            "species": it['especies']
+                            "informe": ""
                         }
                     }
                     feat_col_alertas["features"].append(aux)
 
-                #it.clear()
-
-                '''for cod_comarca in comarcasDict:
-                    if comarcasDict[cod_comarca]['comarca_sg'] not in comarcas_de_alertlist:
-
-                        it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
-                        it['Latitud'] = comarcasDict[cod_comarca]['Latitud']
-                        it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
-                        it['CPRO'] = comarcasDict[cod_comarca]['CPRO']
-                        it['provincia'] = comarcasDict[cod_comarca]['provincia']
-                        it['CPROyMUN'] = comarcasDict[cod_comarca]['CPROyMUN']
-
-                        aux={
-                            "type": "Feature",
-                            "geometry": {
-                                "type": "Point",
-                                "coordinates": [float(it['Longitud']), float(it['Latitud'])]
-                            },
-                            "properties": {
-                                "id": cod_comarca, #Será el id de comarca
-                                "riskLevel": 0,
-                                "number_of_cases": 0,
-                                "reportDate": start.timestamp() * 1000,
-                                #"endDate": end.timestamp() * 1000,
-                                # "codeSpecies": 1840,
-                                # "species": "Anas crecca",
-                                # "commonName": "Pato cuchara",
-                                # "fluSubtype": "H5",
-                                "idComarca": cod_comarca,
-                                "comarca": it['com_sgsa_n'],
-                                "CPRO": it['CPRO'],
-                                "province": it['provincia'],
-                                "CPROyMUN": it['CPROyMUN']
-                            }
-                        }
-                        feat_col_alertas["features"].append(aux)
-                '''
-
+              
         text_file = open("geojson/alertas.geojson", "w", encoding="utf-8")
         n = text_file.write(json.dumps(feat_col_alertas, ensure_ascii=False))
         text_file.close()
@@ -152,7 +103,6 @@ class GeojsonGenerator:
                                 "idBrote": oieid,
                                 "idAlerta": cod_comarca,
                                 "idComarca": cod_comarca,
-                                "especie": migration_dict[cod_comarca]["oieids"][oieid]
                             }
                         }
 
@@ -186,21 +136,16 @@ class GeojsonGenerator:
                         },
                         "properties": {
                             "id": it['oieid'],
-                            #"disease": diseases[it['disease_id']],
                             "disease": it['disease'],
                             "country": it['country'],
                             "observationDate": math.floor(it['observation_date'].timestamp() * 1000),
-                            # "end": "" if it['end'] == "" else math.floor(it['end'].timestamp() * 1000),
                             "city": it['city'],
                             "species": it['species'],
-                            # "at_risk": int(it['at_risk']),
                             "cases": "" if it['cases']== "" else int(it['cases']),
                             "deaths": "" if it['deaths']== "" else int(it['deaths']),
-                            # "preventive_killed": int(it['preventive_killed'])
                             "serotipo": it['serotype'],
                             "moreInfo": it['urlFR'],
                             "epiUnit": it['epiunit'],
-                            "reportDate": math.floor(it['report_date'].timestamp() * 1000)
                         }
                     }
 

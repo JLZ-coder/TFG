@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime, timedelta, date
 import pygeohash as geohash
+import numpy as np
 
 # GLOBALS
 client = MongoClient('mongodb://localhost:27017/')
@@ -18,9 +19,16 @@ def loadOutbreaks():
     df = pd.read_csv(file, sep=",")
     #Renombramos
     df.rename(columns={'Event ID': 'oieid', 'Disease': 'disease', 'Serotype': 'serotype', 'Locality': 'city', 
-        'lon': 'long', 'Country': 'country', 'Location': 'location', 'Species': 'species', 'Date': 'date'}, inplace=True)
-    #Eliminamos filas
-    df.dropna(subset=["observation_date", "serotype"], inplace=True)
+        'lon': 'long', 'Country': 'country', 'Region': 'region','Location': 'location', 'Species': 'species', 'Date': 'date'}, inplace=True)
+    
+    #Solo nos quedamos con brotes de Europa
+    indexNames = df[ df['region'] != 'Europe' ].index
+    df.drop(indexNames , inplace=True)
+    
+    df = df.fillna(value="No Data")
+
+    #Eliminamos filas con NaN
+    #df.dropna(subset=["observation_date", "serotype"], inplace=True)
     df = webScraping(df)
 
     records = df.to_dict(orient='records')
@@ -86,7 +94,10 @@ def webScraping(df):
 
         #Datetime de report_date, observation_date, date de los brotes
         reportDate.append(datetime.strptime(df['report_date'][i], '%Y-%m-%d'))
-        observationDate.append(datetime.strptime(df['observation_date'][i], '%Y-%m-%d'))
+
+        #Si el valor de ObservationDate es NaN, ponemos el valor del reporte
+        valOb = datetime.strptime(df['report_date'][i], '%Y-%m-%d') if (df['observation_date'][i] == "No Data") else datetime.strptime( df['observation_date'][i], '%Y-%m-%d')
+        observationDate.append(valOb)
         dateL.append(datetime.strptime(df['date'][i], '%Y-%m-%d'))
 
 
@@ -112,9 +123,13 @@ def downloadOutbreaks():
     #Abrimos csv para quedarnos con brotes nuevos de la ultima semana
     df = pd.read_csv('data/outbreaksWeeks.csv')
     df.rename(columns={'event_id': 'oieid', 'Disease': 'disease', 'Serotype': 'serotype', 'Locality': 'city', 
-        'lon': 'long', 'Country': 'country', 'Location': 'location', 'Species': 'species', 'Date': 'date'}, inplace=True)
+        'lon': 'long', 'Country': 'country', 'Location': 'location', 'Species': 'species', 'display_date': 'date'}, inplace=True)
     
-    df.dropna(subset=["observation_date"], inplace=True)
+    #Solo con brotes de Europa
+    indexNames = df[ df['region'] != 'Europe' ].index
+    df.drop(indexNames , inplace=True)
+
+    df = df.fillna(value="No Data")
 
     #Buscar los de la ultima semana
     #fecha de hoy
@@ -122,13 +137,17 @@ def downloadOutbreaks():
     #Lunes de esta semana
     monday = today + timedelta(days = -today.weekday())
     #Semana anterior 
-    lastWeek = monday - timedelta(weeks = 1)
+    lastWeek = monday - timedelta(weeks = 3)
     #Indices para borrar el resto de filas
     dfAux = []
     for i in df.index:
         
+        if df['observation_date'][i] == "No Data":
+            continue
+
         dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d')
-        
+    
+
         if dateOutbreak >= lastWeek and dateOutbreak <= monday:
             continue
 
@@ -148,15 +167,11 @@ def downloadOutbreaks():
 #Main
 
 def main(argv):
-
+  
     loadOutbreaks()
-    #downloadOutbreaks()
-
+    downloadOutbreaks()
 
     return 0
 
-
-
 if __name__ == '__main__':
     main(sys.argv[1:])
-
