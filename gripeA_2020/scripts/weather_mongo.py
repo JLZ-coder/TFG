@@ -9,13 +9,16 @@ import pymongo
 from pymongo import MongoClient
 from datetime import datetime
 import sys
+import codecs
 
 api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YWxlbmNpYWJhcmNlbG9uYUBnbWFpbC5jb20iLCJqdGkiOiJiYzY4MzM1Mi1kZjg3LTRlZTctYjQ4MS1hMDMyODQzZGMwMWIiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTYxMDM4OTY0OCwidXNlcklkIjoiYmM2ODMzNTItZGY4Ny00ZWU3LWI0ODEtYTAzMjg0M2RjMDFiIiwicm9sZSI6IiJ9.BanUHViE2mFsnjne_ilriezZqkDRYYT3Vf4SkKOcE04'
+api_key_tutiempo = "XwDqzzz4q4q748k"
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
 estacion = db.estaciones
 historico = db.historico
 temperatura = db.temperatura
+comarca = db.comarcas
 
 bisiesto = ["2012", "2016","2020","2024"]
 fechaInicial = "2017-01-02"
@@ -51,7 +54,7 @@ def estaciones():
 
         p = list(d.keys())
 
-        estacion.update({'comarca_sg':key},{"$set": {"estacionesAdd":p}})
+        estacion.update_one({'comarca_sg':key},{"$set": {"estacionesAdd":p}})
 #Listamos todas las estaciones y volcamos en formato excel
 def listStacion():
     cursor = estacion.find({})
@@ -265,13 +268,76 @@ def search(anio, restoEstaciones, index, comarca, semana):
 
     return resulta
 
+def prediction():
+    #Sacamos coordenadas estacion para la predicción 
+    cursor = estacion.find({})
+    dEstacion = dict()
+    file = "data/estaciones.json"
+    listaEstaciones = pd.read_json(file)
+    listaEstaciones.set_index("indicativo",inplace = True)
 
+    for it in cursor:
+        ok = False
+        i = 0
+        while not ok and i < len(it['estacionesAdd']):
+            #Si ya existe en el diccionario, no accedemos a la api
+            auxStation = it['estacionesAdd'][i]
+            #Aumentamos contador
+            i+=1
+            if auxStation in dEstacion:
+                #Si el valor es None, pasamos a la siguiente estación
+                if dEstacion[auxStation] == None:
+                    continue
+
+                temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": dEstacion[auxStation]}})
+                ok = True
+                continue
+            
+            indice = listaEstaciones.index.get_loc(auxStation)
+            #Si no existe accedemos a la api y buscamos el valor
+            url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,changeCoordenates(listaEstaciones["latitud"][indice]),changeCoordenates(listaEstaciones["longitud"][indice]))
+            headers = {
+            'cache-control': "no-cache"
+            }
+            #Si la consulta no da ningun valor, guardamos en el diccionario y le damos un valor de None para no volver a buscar 
+            response = requests.request("GET", url, headers=headers)
+            json_response = response.json()
+            #Comprobamos si existe un error
+
+            if "error" in json_response: 
+                dEstacion[auxStation] = None
+                continue
+            
+            #Calculamos la media de la prediccion
+            avgPredict = 0
+            for i in range(1,8):
+                avgPredict += json_response["day{}".format(i)]['temperature_min']
+
+            avgPredict = avgPredict/7
+            #Guardamos la media de la prediccion
+            temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": avgPredict}})
+            dEstacion[auxStation] = avgPredict
+            #Actualizamos variables
+            ok = True
+            
+
+def changeCoordenates(coordenada):
+    D = int(coordenada[0:2]) 
+    M = int(coordenada[2:4]) 
+    S = int(coordenada[4:6]) 
+    
+    DD = D + float(M)/60 + float(S)/3600 
+    
+    return DD
+
+    
 def main(argv):
     #estaciones() #Construye la coleccion de estaciones
     #listStacion()
     #generateListEmpty()
     #generateHistoric()
-    fillEmptyInfo()
+    #fillEmptyInfo()
+    prediction()
 
     return 0         
 

@@ -12,11 +12,14 @@ class TempBuilder(Builder):
         db = client.lv
         temperatura = db.temperatura
 
-        cursor = temperatura.find({},{'_id':False, 'comarca_sg':True,'historicoFinal':True})
-
-        tempMin = {}
-
-        for i in cursor:
-            tempMin[i['comarca_sg']] = i['historicoFinal']
+        if parameters == False: #Herramienta Offline
+            cursor = temperatura.find({},{'_id':False, 'comarca_sg':True,'historicoFinal':True})
+            tempMin = {}
+            for i in cursor:
+                tempMin[i['comarca_sg']] = i['historicoFinal']
+        else: #Herramienta Online
+            cursor = temperatura.find({},{'_id':False, 'comarca_sg':True,'prediccion':True})
+            for i in cursor:
+                tempMin[i['comarca_sg']] = i['prediccion']
        
         return tempMin

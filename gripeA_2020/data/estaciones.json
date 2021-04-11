@@ -99,28 +99,28 @@
   "provincia" : "TARRAGONA",
   "altitud" : "32",
   "indicativo" : "0002I",
-  "nombre" : "VANDELL“S  ",
+  "nombre" : "VANDELL√íS  ",
   "indsinop" : "08169",
   "longitud" : "005217E"
 }, {
   "latitud" : "431825N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "98",
   "indicativo" : "1387E",
-  "nombre" : "A CORU—A AEROPUERTO",
+  "nombre" : "A CORU√ëA AEROPUERTO",
   "indsinop" : "08002",
   "longitud" : "082219W"
 }, {
   "latitud" : "432157N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "58",
   "indicativo" : "1387",
-  "nombre" : "A CORU—A",
+  "nombre" : "A CORU√ëA",
   "indsinop" : "08001",
   "longitud" : "082517W"
 }, {
   "latitud" : "430938N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "50",
   "indicativo" : "1393",
   "nombre" : "CABO VILAN",
@@ -128,7 +128,7 @@
   "longitud" : "091239W"
 }, {
   "latitud" : "434710N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "80",
   "indicativo" : "1351",
   "nombre" : "ESTACA DE BARES",
@@ -136,7 +136,7 @@
   "longitud" : "074105W"
 }, {
   "latitud" : "425529N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "230",
   "indicativo" : "1400",
   "nombre" : "FISTERRA",
@@ -144,7 +144,7 @@
   "longitud" : "091729W"
 }, {
   "latitud" : "424314N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "685",
   "indicativo" : "1437O",
   "nombre" : "MONTE IROITE",
@@ -152,15 +152,15 @@
   "longitud" : "085524W"
 }, {
   "latitud" : "424418N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "100",
   "indicativo" : "1473A",
-  "nombre" : "PADR”N",
+  "nombre" : "PADR√ìN",
   "indsinop" : "08039",
   "longitud" : "083738W"
 }, {
   "latitud" : "425317N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "370",
   "indicativo" : "1428",
   "nombre" : "SANTIAGO DE COMPOSTELA AEROPUERTO",
@@ -168,7 +168,7 @@
   "longitud" : "082438W"
 }, {
   "latitud" : "425234N",
-  "provincia" : "A CORU—A",
+  "provincia" : "A CORU√ëA",
   "altitud" : "240",
   "indicativo" : "1475X",
   "nombre" : "SANTIAGO DE COMPOSTELA",
@@ -195,7 +195,7 @@
   "provincia" : "ASTURIAS",
   "altitud" : "100",
   "indicativo" : "1210X",
-  "nombre" : "CABO PE—AS",
+  "nombre" : "CABO PE√ëAS",
   "indsinop" : "08012",
   "longitud" : "055055W"
 }, {
@@ -211,7 +211,7 @@
   "provincia" : "ASTURIAS",
   "altitud" : "26",
   "indicativo" : "1207U",
-  "nombre" : "GIJ”N, CAMPUS",
+  "nombre" : "GIJ√ìN, CAMPUS",
   "indsinop" : "08014",
   "longitud" : "053716W"
 }, {
@@ -219,7 +219,7 @@
   "provincia" : "ASTURIAS",
   "altitud" : "22",
   "indicativo" : "1208A",
-  "nombre" : "GIJ”N. LA MERCED",
+  "nombre" : "GIJ√ìN. LA MERCED",
   "indsinop" : "",
   "longitud" : "053943W"
 }, {
@@ -227,7 +227,7 @@
   "provincia" : "ASTURIAS",
   "altitud" : "5",
   "indicativo" : "1208H",
-  "nombre" : "GIJ”N, PUERTO",
+  "nombre" : "GIJ√ìN, PUERTO",
   "indsinop" : "08014",
   "longitud" : "054203W"
 }, {
@@ -235,7 +235,7 @@
   "provincia" : "ASTURIAS",
   "altitud" : "3",
   "indicativo" : "1208",
-  "nombre" : "GIJ”N",
+  "nombre" : "GIJ√ìN",
   "indsinop" : "",
   "longitud" : "053815W"
 }, {
@@ -250,7 +250,7 @@
   "latitud" : "432112N",
   "provincia" : "ASTURIAS",
   "altitud" : "336",
-  "indicativo" : "1249I",
+  "indicativo" : "1249X",
   "nombre" : "OVIEDO",
   "indsinop" : "08015",
   "longitud" : "055227W"
@@ -258,7 +258,7 @@
   "latitud" : "432112N",
   "provincia" : "ASTURIAS",
   "altitud" : "336",
-  "indicativo" : "1249X",
+  "indicativo" : "1249I",
   "nombre" : "OVIEDO",
   "indsinop" : "08015",
   "longitud" : "055227W"
@@ -291,7 +291,7 @@
   "provincia" : "BIZKAIA",
   "altitud" : "208",
   "indicativo" : "1078I",
-  "nombre" : "G‹E—ES",
+  "nombre" : "G√úE√ëES",
   "indsinop" : "08035",
   "longitud" : "030617W"
 }, {
@@ -371,7 +371,7 @@
   "provincia" : "GIPUZKOA",
   "altitud" : "251",
   "indicativo" : "1024E",
-  "nombre" : "DONOSTIA/SAN SEBASTI¡N, IGUELDO",
+  "nombre" : "DONOSTIA/SAN SEBASTI√ÅN, IGUELDO",
   "indsinop" : "08027",
   "longitud" : "020228W"
 }, {
@@ -395,7 +395,7 @@
   "provincia" : "GIPUZKOA",
   "altitud" : "4",
   "indicativo" : "1014A",
-  "nombre" : "SAN SEBASTI¡N AEROPUERTO",
+  "nombre" : "SAN SEBASTI√ÅN AEROPUERTO",
   "indsinop" : "08029",
   "longitud" : "014732W"
 }, {
@@ -451,7 +451,7 @@
   "provincia" : "OURENSE",
   "altitud" : "400",
   "indicativo" : "1700X",
-  "nombre" : "CARBALLI—O, O",
+  "nombre" : "CARBALLI√ëO, O",
   "indsinop" : "08047",
   "longitud" : "080533W"
 }, {
@@ -507,7 +507,7 @@
   "provincia" : "AVILA",
   "altitud" : "1143",
   "indicativo" : "2444C",
-  "nombre" : "¡VILA, AYUNTAMIENTO",
+  "nombre" : "√ÅVILA, AYUNTAMIENTO",
   "indsinop" : "",
   "longitud" : "044201W"
 }, {
@@ -515,7 +515,7 @@
   "provincia" : "AVILA",
   "altitud" : "1130",
   "indicativo" : "2444",
-  "nombre" : "¡VILA",
+  "nombre" : "√ÅVILA",
   "indsinop" : "08210",
   "longitud" : "044048W"
 }, {
@@ -563,7 +563,7 @@
   "provincia" : "LEON",
   "altitud" : "912",
   "indicativo" : "2661B",
-  "nombre" : "LE”N AEROPUERTO",
+  "nombre" : "LE√ìN AEROPUERTO",
   "indsinop" : "08055",
   "longitud" : "053837W"
 }, {
@@ -571,7 +571,7 @@
   "provincia" : "LEON",
   "altitud" : "912",
   "indicativo" : "2661",
-  "nombre" : "LE”N, VIRGEN DEL CAMINO",
+  "nombre" : "LE√ìN, VIRGEN DEL CAMINO",
   "indsinop" : "08055",
   "longitud" : "053904W"
 }, {
@@ -603,7 +603,7 @@
   "provincia" : "PALENCIA",
   "altitud" : "830",
   "indicativo" : "2374X",
-  "nombre" : "CARRI”N DE LOS CONDES",
+  "nombre" : "CARRI√ìN DE LOS CONDES",
   "indsinop" : "08068",
   "longitud" : "043702W"
 }, {
@@ -627,7 +627,7 @@
   "provincia" : "SALAMANCA",
   "altitud" : "1960",
   "indicativo" : "2491C",
-  "nombre" : "LA COVATILLA, ESTACI”N DE ESQUÕ",
+  "nombre" : "LA COVATILLA, ESTACI√ìN DE ESQU√ç",
   "indsinop" : "08205",
   "longitud" : "054124W"
 }, {
@@ -667,7 +667,7 @@
   "provincia" : "SEGOVIA",
   "altitud" : "1798",
   "indicativo" : "2150H",
-  "nombre" : "LA PINILLA, ESTACI”N DE ESQUÕ",
+  "nombre" : "LA PINILLA, ESTACI√ìN DE ESQU√ç",
   "indsinop" : "08143",
   "longitud" : "032831W"
 }, {
@@ -755,7 +755,7 @@
   "provincia" : "CACERES",
   "altitud" : "459",
   "indicativo" : "3469",
-  "nombre" : "C¡CERES, CIUDAD",
+  "nombre" : "C√ÅCERES, CIUDAD",
   "indsinop" : "",
   "longitud" : "062235W"
 }, {
@@ -763,7 +763,7 @@
   "provincia" : "CACERES",
   "altitud" : "394",
   "indicativo" : "3469A",
-  "nombre" : "C¡CERES",
+  "nombre" : "C√ÅCERES",
   "indsinop" : "08261",
   "longitud" : "062020W"
 }, {
@@ -803,7 +803,7 @@
   "provincia" : "CACERES",
   "altitud" : "444",
   "indicativo" : "3576X",
-  "nombre" : "VALENCIA DE ALC¡NTARA",
+  "nombre" : "VALENCIA DE ALC√ÅNTARA",
   "indsinop" : "08260",
   "longitud" : "071352W"
 }, {
@@ -811,7 +811,7 @@
   "provincia" : "CUENCA",
   "altitud" : "928",
   "indicativo" : "3044X",
-  "nombre" : "CA—IZARES",
+  "nombre" : "CA√ëIZARES",
   "indsinop" : "08230",
   "longitud" : "020900W"
 }, {
@@ -819,7 +819,7 @@
   "provincia" : "CUENCA",
   "altitud" : "808",
   "indicativo" : "3094B",
-  "nombre" : "TARANC”N",
+  "nombre" : "TARANC√ìN",
   "indsinop" : "08277",
   "longitud" : "030117W"
 }, {
@@ -851,7 +851,7 @@
   "provincia" : "GUADALAJARA",
   "altitud" : "1062",
   "indicativo" : "3013",
-  "nombre" : "MOLINA DE ARAG”N",
+  "nombre" : "MOLINA DE ARAG√ìN",
   "indsinop" : "08232",
   "longitud" : "015244W"
 }, {
@@ -859,7 +859,7 @@
   "provincia" : "GUADALAJARA",
   "altitud" : "1005",
   "indicativo" : "3130C",
-  "nombre" : "SIG‹ENZA",
+  "nombre" : "SIG√úENZA",
   "indsinop" : "08150",
   "longitud" : "023705W"
 }, {
@@ -931,7 +931,7 @@
   "provincia" : "MADRID",
   "altitud" : "1532",
   "indicativo" : "3266A",
-  "nombre" : "PUERTO ALTO DEL LE”N",
+  "nombre" : "PUERTO ALTO DEL LE√ìN",
   "indsinop" : "08217",
   "longitud" : "040831W"
 }, {
@@ -955,7 +955,7 @@
   "provincia" : "MADRID",
   "altitud" : "607",
   "indicativo" : "3175",
-  "nombre" : "TORREJ”N DE ARDOZ",
+  "nombre" : "TORREJ√ìN DE ARDOZ",
   "indsinop" : "08227",
   "longitud" : "032637W"
 }, {
@@ -1035,7 +1035,7 @@
   "provincia" : "BADAJOZ",
   "altitud" : "228",
   "indicativo" : "4410X",
-  "nombre" : "M…RIDA",
+  "nombre" : "M√âRIDA",
   "indsinop" : "08331",
   "longitud" : "062308W"
 }, {
@@ -1075,7 +1075,7 @@
   "provincia" : "CIUDAD REAL",
   "altitud" : "700",
   "indicativo" : "4147X",
-  "nombre" : "VALDEPE—AS",
+  "nombre" : "VALDEPE√ëAS",
   "indsinop" : "08351",
   "longitud" : "032329W"
 }, {
@@ -1083,7 +1083,7 @@
   "provincia" : "CIUDAD REAL",
   "altitud" : "804",
   "indicativo" : "4148",
-  "nombre" : "VISO DEL MARQU…S",
+  "nombre" : "VISO DEL MARQU√âS",
   "indsinop" : "08345",
   "longitud" : "033400W"
 }, {
@@ -1155,7 +1155,7 @@
   "provincia" : "CADIZ",
   "altitud" : "2",
   "indicativo" : "5973",
-  "nombre" : "C¡DIZ",
+  "nombre" : "C√ÅDIZ",
   "indsinop" : "08452",
   "longitud" : "061528W"
 }, {
@@ -1219,7 +1219,7 @@
   "provincia" : "CORDOBA",
   "altitud" : "90",
   "indicativo" : "5402",
-  "nombre" : "C”RDOBA AEROPUERTO",
+  "nombre" : "C√ìRDOBA AEROPUERTO",
   "indsinop" : "08410",
   "longitud" : "045048W"
 }, {
@@ -1227,7 +1227,7 @@
   "provincia" : "CORDOBA",
   "altitud" : "650",
   "indicativo" : "5427X",
-  "nombre" : "DO—A MENCÕA",
+  "nombre" : "DO√ëA MENC√çA",
   "indsinop" : "08412",
   "longitud" : "042114W"
 }, {
@@ -1235,7 +1235,7 @@
   "provincia" : "CORDOBA",
   "altitud" : "750",
   "indicativo" : "5390Y",
-  "nombre" : "VILLANUEVA DE C”RDOBA",
+  "nombre" : "VILLANUEVA DE C√ìRDOBA",
   "indsinop" : "08346",
   "longitud" : "043632W"
 }, {
@@ -1259,7 +1259,7 @@
   "provincia" : "GRANADA",
   "altitud" : "687",
   "indicativo" : "5514",
-  "nombre" : "GRANADA BASE A…REA",
+  "nombre" : "GRANADA BASE A√âREA",
   "indsinop" : "08420",
   "longitud" : "033753W"
 }, {
@@ -1267,7 +1267,7 @@
   "provincia" : "GRANADA",
   "altitud" : "1092",
   "indicativo" : "5051X",
-  "nombre" : "HU…SCAR",
+  "nombre" : "HU√âSCAR",
   "indsinop" : "08423",
   "longitud" : "023910W"
 }, {
@@ -1291,7 +1291,7 @@
   "provincia" : "JAEN",
   "altitud" : "202",
   "indicativo" : "5298X",
-  "nombre" : "AND⁄JAR",
+  "nombre" : "AND√öJAR",
   "indsinop" : "08347",
   "longitud" : "040350W"
 }, {
@@ -1315,7 +1315,7 @@
   "provincia" : "JAEN",
   "altitud" : "510",
   "indicativo" : "5270",
-  "nombre" : "JA…N, INSTITUTO",
+  "nombre" : "JA√âN, INSTITUTO",
   "indsinop" : "",
   "longitud" : "034720W"
 }, {
@@ -1323,7 +1323,7 @@
   "provincia" : "JAEN",
   "altitud" : "580",
   "indicativo" : "5270B",
-  "nombre" : "JA…N",
+  "nombre" : "JA√âN",
   "indsinop" : "08417",
   "longitud" : "034832W"
 }, {
@@ -1355,7 +1355,7 @@
   "provincia" : "SEVILLA",
   "altitud" : "130",
   "indicativo" : "5641X",
-  "nombre" : "…CIJA",
+  "nombre" : "√âCIJA",
   "indsinop" : "08395",
   "longitud" : "050506W"
 }, {
@@ -1363,7 +1363,7 @@
   "provincia" : "SEVILLA",
   "altitud" : "410",
   "indicativo" : "5612B",
-  "nombre" : "LA RODA DE ANDALUCÕA",
+  "nombre" : "LA RODA DE ANDALUC√çA",
   "indsinop" : "08399",
   "longitud" : "044612W"
 }, {
@@ -1371,7 +1371,7 @@
   "provincia" : "SEVILLA",
   "altitud" : "87",
   "indicativo" : "5796",
-  "nombre" : "MOR”N DE LA FRONTERA",
+  "nombre" : "MOR√ìN DE LA FRONTERA",
   "indsinop" : "08397",
   "longitud" : "053641W"
 }, {
@@ -1403,7 +1403,7 @@
   "provincia" : "ALMERIA",
   "altitud" : "15",
   "indicativo" : "6381",
-  "nombre" : "ALBOR¡N",
+  "nombre" : "ALBOR√ÅN",
   "indsinop" : "08490",
   "longitud" : "030210W"
 }, {
@@ -1411,7 +1411,7 @@
   "provincia" : "ALMERIA",
   "altitud" : "21",
   "indicativo" : "6325O",
-  "nombre" : "ALMERÕA AEROPUERTO",
+  "nombre" : "ALMER√çA AEROPUERTO",
   "indsinop" : "08487",
   "longitud" : "022125W"
 }, {
@@ -1419,7 +1419,7 @@
   "provincia" : "ALMERIA",
   "altitud" : "7",
   "indicativo" : "6297",
-  "nombre" : "ALMERÕA",
+  "nombre" : "ALMER√çA",
   "indsinop" : "",
   "longitud" : "022720W"
 }, {
@@ -1435,7 +1435,7 @@
   "provincia" : "ALMERIA",
   "altitud" : "300",
   "indicativo" : "6367B",
-  "nombre" : "HU…RCAL-OVERA",
+  "nombre" : "HU√âRCAL-OVERA",
   "indsinop" : "08428",
   "longitud" : "015637W"
 }, {
@@ -1491,7 +1491,7 @@
   "provincia" : "MALAGA",
   "altitud" : "5",
   "indicativo" : "6155A",
-  "nombre" : "M¡LAGA AEROPUERTO",
+  "nombre" : "M√ÅLAGA AEROPUERTO",
   "indsinop" : "08482",
   "longitud" : "042856W"
 }, {
@@ -1499,7 +1499,7 @@
   "provincia" : "MALAGA",
   "altitud" : "54",
   "indicativo" : "6156X",
-  "nombre" : "M¡LAGA, CENTRO METEOROL”GICO",
+  "nombre" : "M√ÅLAGA, CENTRO METEOROL√ìGICO",
   "indsinop" : "08481",
   "longitud" : "042854W"
 }, {
@@ -1507,7 +1507,7 @@
   "provincia" : "MALAGA",
   "altitud" : "25",
   "indicativo" : "6172O",
-  "nombre" : "M¡LAGA, PUERTO",
+  "nombre" : "M√ÅLAGA, PUERTO",
   "indsinop" : "08479",
   "longitud" : "042511W"
 }, {
@@ -1539,7 +1539,7 @@
   "provincia" : "ALBACETE",
   "altitud" : "646",
   "indicativo" : "7096B",
-  "nombre" : "HELLÕN",
+  "nombre" : "HELL√çN",
   "indsinop" : "08355",
   "longitud" : "014211W"
 }, {
@@ -1555,7 +1555,7 @@
   "provincia" : "MURCIA",
   "altitud" : "26",
   "indicativo" : "7002Y",
-  "nombre" : "¡GUILAS",
+  "nombre" : "√ÅGUILAS",
   "indsinop" : "08432",
   "longitud" : "013513W"
 }, {
@@ -1563,7 +1563,7 @@
   "provincia" : "MURCIA",
   "altitud" : "75",
   "indicativo" : "7228",
-  "nombre" : "ALCANTARILLA, BASE A…REA",
+  "nombre" : "ALCANTARILLA, BASE A√âREA",
   "indsinop" : "08429",
   "longitud" : "011343W"
 }, {
@@ -1635,7 +1635,7 @@
   "provincia" : "ALBACETE",
   "altitud" : "702",
   "indicativo" : "8175",
-  "nombre" : "ALBACETE BASE A…REA",
+  "nombre" : "ALBACETE BASE A√âREA",
   "indsinop" : "08280",
   "longitud" : "015123W"
 }, {
@@ -1675,7 +1675,7 @@
   "provincia" : "ALICANTE",
   "altitud" : "15",
   "indicativo" : "8050X",
-  "nombre" : "J¡VEA/ X¿BIA",
+  "nombre" : "J√ÅVEA/ X√ÄBIA",
   "indsinop" : "08370",
   "longitud" : "001004E"
 }, {
@@ -1683,7 +1683,7 @@
   "provincia" : "CASTELLON",
   "altitud" : "43",
   "indicativo" : "8500A",
-  "nombre" : "CASTELL”N - ALMASSORA",
+  "nombre" : "CASTELL√ìN - ALMASSORA",
   "indsinop" : "08286",
   "longitud" : "000419W"
 }, {
@@ -1691,7 +1691,7 @@
   "provincia" : "CASTELLON",
   "altitud" : "25",
   "indicativo" : "8501",
-  "nombre" : "CASTELL”N DE LA PLANA",
+  "nombre" : "CASTELL√ìN DE LA PLANA",
   "indsinop" : "",
   "longitud" : "000224W"
 }, {
@@ -1707,7 +1707,7 @@
   "provincia" : "CASTELLON",
   "altitud" : "111",
   "indicativo" : "8523X",
-  "nombre" : "VINAR“S",
+  "nombre" : "VINAR√íS",
   "indsinop" : "08239",
   "longitud" : "002547E"
 }, {
@@ -1739,7 +1739,7 @@
   "provincia" : "VALENCIA",
   "altitud" : "12",
   "indicativo" : "8325X",
-  "nombre" : "POLINY¿ DE X⁄QUER",
+  "nombre" : "POLINY√Ä DE X√öQUER",
   "indsinop" : "08287",
   "longitud" : "002219W"
 }, {
@@ -1763,7 +1763,7 @@
   "provincia" : "VALENCIA",
   "altitud" : "11",
   "indicativo" : "8416Y",
-  "nombre" : "VAL»NCIA, VIVEROS",
+  "nombre" : "VAL√àNCIA, VIVEROS",
   "indsinop" : "08285",
   "longitud" : "002159W"
 }, {
@@ -1771,7 +1771,7 @@
   "provincia" : "VALENCIA",
   "altitud" : "11",
   "indicativo" : "8416",
-  "nombre" : "VAL»NCIA",
+  "nombre" : "VAL√àNCIA",
   "indsinop" : "08285",
   "longitud" : "002159W"
 }, {
@@ -1779,7 +1779,7 @@
   "provincia" : "VALENCIA",
   "altitud" : "88",
   "indicativo" : "8293X",
-  "nombre" : "X¿TIVA",
+  "nombre" : "X√ÄTIVA",
   "indsinop" : "08290",
   "longitud" : "003125W"
 }, {
@@ -1795,7 +1795,7 @@
   "provincia" : "ARABA/ALAVA",
   "altitud" : "521",
   "indicativo" : "9087",
-  "nombre" : "VITORIA AER”DROMO",
+  "nombre" : "VITORIA AER√ìDROMO",
   "indsinop" : "",
   "longitud" : "023922W"
 }, {
@@ -1859,7 +1859,7 @@
   "provincia" : "HUESCA",
   "altitud" : "1040",
   "indicativo" : "9208E",
-  "nombre" : "ARAG‹…S DEL PUERTO",
+  "nombre" : "ARAG√ú√âS DEL PUERTO",
   "indsinop" : "08095",
   "longitud" : "004023W"
 }, {
@@ -1875,7 +1875,7 @@
   "provincia" : "HUESCA",
   "altitud" : "546",
   "indicativo" : "9898",
-  "nombre" : "HUESCA AEROPUERTO",
+  "nombre" : "HUESCA, AEROPUERTO",
   "indsinop" : "08094",
   "longitud" : "001932W"
 }, {
@@ -1899,7 +1899,7 @@
   "provincia" : "LA RIOJA",
   "altitud" : "353",
   "indicativo" : "9170",
-  "nombre" : "LOGRO—O AEROPUERTO",
+  "nombre" : "LOGRO√ëO AEROPUERTO",
   "indsinop" : "08084",
   "longitud" : "021952W"
 }, {
@@ -1947,7 +1947,7 @@
   "provincia" : "LLEIDA",
   "altitud" : "388",
   "indicativo" : "9720X",
-  "nombre" : "T¿RREGA",
+  "nombre" : "T√ÄRREGA",
   "indsinop" : "08173",
   "longitud" : "010858E"
 }, {
@@ -1963,7 +1963,7 @@
   "provincia" : "NAVARRA",
   "altitud" : "295",
   "indicativo" : "9294E",
-  "nombre" : "BARDENAS REALES, BASE A…REA ",
+  "nombre" : "BARDENAS REALES, BASE A√âREA ",
   "indsinop" : "08087",
   "longitud" : "012831W"
 }, {
@@ -1979,7 +1979,7 @@
   "provincia" : "NAVARRA",
   "altitud" : "459",
   "indicativo" : "9263D",
-  "nombre" : "PAMPLONA AEROPUERTO",
+  "nombre" : "PAMPLONA, AEROPUERTO",
   "indsinop" : "08085",
   "longitud" : "013900W"
 }, {
@@ -1995,7 +1995,7 @@
   "provincia" : "TARRAGONA",
   "altitud" : "50",
   "indicativo" : "9981A",
-  "nombre" : "ESTACI”N DE TORTOSA (ROQUETES)",
+  "nombre" : "ESTACI√ìN DE TORTOSA (ROQUETES)",
   "indsinop" : "08238",
   "longitud" : "002936E"
 }, {
@@ -2011,7 +2011,7 @@
   "provincia" : "TERUEL",
   "altitud" : "334",
   "indicativo" : "9573X",
-  "nombre" : "ALCA—IZ",
+  "nombre" : "ALCA√ëIZ",
   "indsinop" : "08164",
   "longitud" : "000830W"
 }, {
@@ -2019,7 +2019,7 @@
   "provincia" : "TERUEL",
   "altitud" : "932",
   "indicativo" : "9381",
-  "nombre" : "CALAMOCHA, AER”DROMO",
+  "nombre" : "CALAMOCHA, AER√ìDROMO",
   "indsinop" : "",
   "longitud" : "011818W"
 }, {
@@ -2067,7 +2067,7 @@
   "provincia" : "ZARAGOZA",
   "altitud" : "626",
   "indicativo" : "9244X",
-  "nombre" : "SOS DEL REY CAT”LICO",
+  "nombre" : "SOS DEL REY CAT√ìLICO",
   "indsinop" : "08090",
   "longitud" : "011249W"
 }, {
@@ -2075,7 +2075,7 @@
   "provincia" : "ZARAGOZA",
   "altitud" : "249",
   "indicativo" : "9434",
-  "nombre" : "ZARAGOZA AEROPUERTO",
+  "nombre" : "ZARAGOZA, AEROPUERTO",
   "indsinop" : "08160",
   "longitud" : "010015W"
 }, {
@@ -2187,7 +2187,7 @@
   "provincia" : "LAS PALMAS",
   "altitud" : "10",
   "indicativo" : "C619I",
-  "nombre" : "LA ALDEA DE SAN NICOL¡S",
+  "nombre" : "LA ALDEA DE SAN NICOL√ÅS",
   "indsinop" : "60027",
   "longitud" : "154850W"
 }, {
@@ -2227,7 +2227,7 @@
   "provincia" : "LAS PALMAS",
   "altitud" : "10",
   "indicativo" : "C629X",
-  "nombre" : "MOG¡N, PUERTO",
+  "nombre" : "MOG√ÅN, PUERTO",
   "indsinop" : "60036",
   "longitud" : "154551W"
 }, {
@@ -2235,7 +2235,7 @@
   "provincia" : "LAS PALMAS",
   "altitud" : "15",
   "indicativo" : "C229J",
-  "nombre" : "P¡JARA",
+  "nombre" : "P√ÅJARA",
   "indsinop" : "60034",
   "longitud" : "142129W"
 }, {
@@ -2251,7 +2251,7 @@
   "provincia" : "STA. CRUZ DE TENERIFE",
   "altitud" : "115",
   "indicativo" : "C439J",
-  "nombre" : "G‹ÕMAR",
+  "nombre" : "G√ú√çMAR",
   "indsinop" : "60018",
   "longitud" : "162256W"
 }, {
@@ -2267,7 +2267,7 @@
   "provincia" : "STA. CRUZ DE TENERIFE",
   "altitud" : "2371",
   "indicativo" : "C430E",
-  "nombre" : "IZA—A",
+  "nombre" : "IZA√ëA",
   "indsinop" : "60010",
   "longitud" : "162958W"
 }, {
@@ -2291,7 +2291,7 @@
   "provincia" : "STA. CRUZ DE TENERIFE",
   "altitud" : "15",
   "indicativo" : "C329Z",
-  "nombre" : "SAN SEBASTI¡N DE LA GOMERA",
+  "nombre" : "SAN SEBASTI√ÅN DE LA GOMERA",
   "indsinop" : "60008",
   "longitud" : "170641W"
 }, {

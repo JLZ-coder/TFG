@@ -18,9 +18,11 @@ class Controller:
     #temporaryWindow -> ventana temporal para busqueda de brotes por defecto 3 Meses/12 semanas/ 90 dias
     def run(self, dateM, weeks, temporaryWindow):
 
+        online= True 
         if dateM != None:#Fecha Herramienta offline
             start = dateM + timedelta(days = -dateM.weekday())
             end = start + timedelta(weeks = 1)
+            online = False
         else: #Fecha actual
             today = date.today()
             start = today + timedelta(days = -today.weekday())
@@ -32,7 +34,7 @@ class Controller:
         #Parameters
         outbreakStart = start - timedelta(weeks = temporaryWindow)
         comarca_brotes, lista_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
-        tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
+        tMin = self.dataFactory.createData("temp",start, end, online)
         lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
         file = "data/Datos especies1.xlsx"
         matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
