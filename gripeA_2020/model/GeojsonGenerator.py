@@ -39,7 +39,7 @@ class GeojsonGenerator:
                         },
                         "properties": {
                             "id": cod_comarca, #Será el id de comarca
-                            "riskLevel": it['risk'],
+                            "Riesgo": it['risk'],
                             "number_of_cases": it['casos'],
                             "reportDate": start.timestamp() * 1000,
                             #"endDate": end.timestamp() * 1000,
