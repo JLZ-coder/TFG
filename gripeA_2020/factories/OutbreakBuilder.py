@@ -9,7 +9,7 @@ class OutbreakBuilder(Builder):
     def __init__(self):
         super().__init__("outbreak")
 
-    def create(self, start, end, parameters):
+    def create(self, start, end):
         client = MongoClient('mongodb://localhost:27017/')
         db = client.lv
         brotes_db = db.outbreaks

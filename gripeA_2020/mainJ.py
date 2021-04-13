@@ -5,13 +5,13 @@ from factories.TempBuilder import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
-from controller import controller
+from controller.controller import Controller
 from datetime import datetime, timedelta, date
 
 def toolOffLine(control):
 
     #Abrir y validar con el esquema
-    f = open("data/exampleTool.json", "r")
+    f = open("exampleTool.json", "r")
     content = f.read()
     schemaJson = json.loads(content)
 
@@ -42,7 +42,7 @@ def main(argv):
 
     #toolOffLine(control)
 
-    control.run(date,12)
+    control.runOnlineTool()
 
     return 0
 
