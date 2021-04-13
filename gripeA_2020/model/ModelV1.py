@@ -28,6 +28,7 @@ class ModelV1():
         alertas["start"] = start
         alertas["end"] = end
         alertas["alertas"] = []
+        alertas["nBrotes"] = 0
 
         #Calculamos la probabildad de migracion de la semana anterior
         weekA = start
@@ -55,16 +56,15 @@ class ModelV1():
             #Contador
             i+=1
 
-        #Listas para geojson de alertas 
-        serotipoBrotesComarca = set()
-        especiesBrotesComarca = set()
+        #Listas para pdf
+        broteEspecie = dict()
         casosTotales = 0
         #Modelo
         nAlerta = 0
         for comarca, brotes in parameters['comarca_brotes'].items():
             nAlerta = 0 
-            serotipoBrotesComarca.clear()
-            especiesBrotesComarca.clear()
+
+            broteEspecie.clear()
             casosTotales = 0
             for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
                 contrBrote = 0
@@ -82,20 +82,26 @@ class ModelV1():
                 
                 contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote
+                broteEspecie[brote["oieid"]] = {"cientifico" : parameters['matrizEspecies']['Nombre científico'][brote["especie"]] ,"especie": parameters['matrizEspecies']['Especie'][brote["especie"]], "codigoE": brote["especie"], "probEspecie": probMigra}
 
-                serotipoBrotesComarca.add(brote['serotype'])
-                especiesBrotesComarca.add(parameters['matrizEspecies']['Especie'][brote["especie"]])
                 if brote['casos'] != "":
                     casosTotales += brote['casos']
 
-        
+            temperaturaM = "No data"
             #Calculamos la semana actual
             try:
-                #week = start.isocalendar()[1]-1
-                #temperaturaM = 66 if (parameters['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca][str(start.year)][week])) + 29.94
-                #alertas["alertas"].append({"comarca_sg" : comarca, "risk" : nAlerta * temperaturaM})
-                alertas["alertas"].append({"comarca_sg" : comarca, "risk" : int(nAlerta), "serotipos": list(serotipoBrotesComarca), "especies": list(especiesBrotesComarca), "casos": casosTotales})
+                if parameters["online"] == False:
+                    week = start.isocalendar()[1]-1
+                    temperaturaM = 66 if (parameters['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca][str(start.year)][week])) + 29.94
+                else: #Si es online cogemos la prediccion
+                    temperaturaM = 66 if (parameters['tMin'][comarca] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca])) + 29.94
+                
+                riesgo = int(nAlerta * temperaturaM)
             except: 
+                riesgo = int(nAlerta)
                 print("No hay temperatura para la comarca: " + comarca) 
            
+            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : riesgo, "temperatura": temperaturaM, "brotes": broteEspecie })
+            alertas["nBrotes"] += len(broteEspecie)
+        
         return alertas

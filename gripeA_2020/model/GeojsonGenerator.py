@@ -120,12 +120,6 @@ class GeojsonGenerator:
             "features": []
         }
 
-        diseases = {
-            '15' : "Highly Path Avian influenza",
-            '201' : "Low Path Avian influenza",
-            '1164' : "Highly pathogenic influenza A viruses"
-        }
-
         for semana in outbreaklist:
             for it in outbreaklist[semana]:
                 aux = {

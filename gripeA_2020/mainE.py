@@ -1,6 +1,7 @@
 import sys, json
 from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
+from factories.ReportBuilder import ReportBuilder
 from factories.TempBuilder import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
 from model.ModelSelector import ModelSelector
@@ -24,12 +25,12 @@ def toolOffLine(control):
     #Procesar los datos y generar en Markdown las gráficas
             
 
-
 def main(argv):
     dataBuilderList = list()
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())
     dataBuilderList.append(ComarcasBuilder())
+    dataBuilderList.append(ReportBuilder())
     dataFact = Factory(dataBuilderList)
 
     modelSelector = ModelSelector()
@@ -40,7 +41,7 @@ def main(argv):
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
     toolOffLine(control)
-    #control.run(date,12)
+    control.run(date, 52, 3)
 
     return 0
 

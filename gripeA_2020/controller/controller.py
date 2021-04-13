@@ -43,6 +43,7 @@ class Controller:
         parameters['comarca_brotes']= comarca_brotes
         parameters['tMin'] = tMin
         parameters['matrizEspecies'] = matrizEspecies
+        parameters['online'] = online
 
 
         brotes_por_semana = dict()
@@ -53,7 +54,7 @@ class Controller:
         alertas_list = list()
 
         self.model.setParameters(parameters)
-
+        
         if dateM == None:
             alertas = self.model.run(start,end)
             alertas_list.append(alertas)
@@ -62,23 +63,23 @@ class Controller:
             while (i < weeks):
                 alertas = self.model.run(start,end)
                 alertas_list.append(alertas)
+
+                #Actualizar start / end
                 start = end
                 end = start + timedelta(weeks = 1)
 
                 outbreakStart = start - timedelta(weeks = temporaryWindow)
                 comarca_brotes, lista_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
-                #tMin = self.dataFactory.createData("temp",start, end, comarca_brotes)
-                lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
-
+                
+                #Actualizamos solo los brotes
                 parameters['comarca_brotes']= comarca_brotes
-                #parameters['tMin'] = tMin
-                parameters['matrizEspecies'] = matrizEspecies
 
                 migrations_por_semana[start] = comarca_brotes
                 brotes_por_semana[start - timedelta(weeks=1)] = lista_brotes[start - timedelta(weeks=1)].copy()
 
                 i += 1
 
+        reportPDF = self.dataFactory.createData("report",start, end, alertas_list)
         geojson_alerta = self.geojsonGen.generate_comarca(alertas_list, lista_comarcas)
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
