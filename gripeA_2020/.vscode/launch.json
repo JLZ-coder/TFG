@@ -9,8 +9,18 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Main",
+            "type": "python",
+            "request": "launch",
+            //"program": "${file}",
+            //"program": "${workspaceFolder}/mainE.py",
+            "program": "${workspaceFolder}/mainJ.py",
             "console": "integratedTerminal",
-            "cwd": "${fileDirname}"
+            //"cwd": "${fileDirname}"
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

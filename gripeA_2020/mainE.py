@@ -41,7 +41,7 @@ def main(argv):
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
     toolOffLine(control)
-    control.run(date, 52, 3)
+    control.runOfflineTool(date, 52, 3)
 
     return 0
 

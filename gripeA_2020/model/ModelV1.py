@@ -19,8 +19,8 @@ class ModelV1():
         self.captive = prob[1]
         self.wild = prob[2]
 
-    #Parameters[comarca_brotes, matrizEspecies, tMin]
-    def run(self, start, end, parameters):
+    #data[comarca_brotes, matrizEspecies, tMin]
+    def run(self, start, end, data, parameters):
 
         # Según los datos calcular las comarcaBrotes
         #comarca_brotes_sorted = sorted(comarca_brotes, key=lambda k: len(comarca_brotes[k]), reverse=True)
@@ -61,7 +61,7 @@ class ModelV1():
         casosTotales = 0
         #Modelo
         nAlerta = 0
-        for comarca, brotes in parameters['comarca_brotes'].items():
+        for comarca, brotes in self.data['comarca_brotes'].items():
             nAlerta = 0 
 
             broteEspecie.clear()
@@ -69,7 +69,7 @@ class ModelV1():
             for brote in brotes:  #Calculamos el nivel de Alerta de cada comarca segun los brotes asociados
                 contrBrote = 0
 
-                probMigra = (parameters['matrizEspecies'][week][brote["especie"]] * i + parameters['matrizEspecies'][nextWeek][brote["especie"]] * (7-i)) / 7
+                probMigra = (self.data['matrizEspecies'][week][brote["especie"]] * i + self.data['matrizEspecies'][nextWeek][brote["especie"]] * (7-i)) / 7
                 
                 probType = 0
 
@@ -82,7 +82,7 @@ class ModelV1():
                 
                 contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote
-                broteEspecie[brote["oieid"]] = {"cientifico" : parameters['matrizEspecies']['Nombre científico'][brote["especie"]] ,"especie": parameters['matrizEspecies']['Especie'][brote["especie"]], "codigoE": brote["especie"], "probEspecie": probMigra}
+                broteEspecie[brote["oieid"]] = {"cientifico" : self.data['matrizEspecies']['Nombre científico'][brote["especie"]] ,"especie": data['matrizEspecies']['Especie'][brote["especie"]], "codigoE": brote["especie"], "probEspecie": probMigra}
 
                 if brote['casos'] != "":
                     casosTotales += brote['casos']
@@ -90,11 +90,11 @@ class ModelV1():
             temperaturaM = "No data"
             #Calculamos la semana actual
             try:
-                if parameters["online"] == False:
+                if self.data["online"] == False:
                     week = start.isocalendar()[1]-1
-                    temperaturaM = 66 if (parameters['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca][str(start.year)][week])) + 29.94
+                    temperaturaM = 66 if (self.data['tMin'][comarca][str(start.year)][week] <= 0.0) else (-7.82* ln(self.data['tMin'][comarca][str(start.year)][week])) + 29.94
                 else: #Si es online cogemos la prediccion
-                    temperaturaM = 66 if (parameters['tMin'][comarca] <= 0.0) else (-7.82* ln(parameters['tMin'][comarca])) + 29.94
+                    temperaturaM = 66 if (self.data['tMin'][comarca] <= 0.0) else (-7.82* ln(self.data['tMin'][comarca])) + 29.94
                 
                 riesgo = int(nAlerta * temperaturaM)
             except: 
