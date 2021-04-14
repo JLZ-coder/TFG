@@ -1,11 +1,11 @@
 import sys, json
 from factories.Factory import Factory
-from factories.OutbreakBuilder_copy import OutbreakBuilder
-from factories.TempBuilder import TempBuilder
+from factories.OutbreakBuilder import OutbreakBuilder
+from factories.TempBuilder_copy import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
-from controller.controller import Controller
+from controller.controller_copy import Controller
 from datetime import datetime, timedelta, date
 
 def toolOffLine(control):
@@ -34,6 +34,17 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
+    default_params = dict()
+    default_params["online"] = True
+    default_params["temporaryWindow"] = 12
+    default_params["date"] = "2020-01-01"
+    default_params["weeks"] = 52
+    default_params["min_geohash_cover"] = 0.8
+    default_params["thresholdAlert"] = 4
+    default_params["rangeOfValues"] = [0.1, 1, 0.3]
+
+    modelSelector.setParameters(default_params)
+
     geojsonGen = GeojsonGenerator()
 
     date = None
@@ -44,6 +55,8 @@ def main(argv):
 
     #control.runOnlineTool()
     control.runOnlineTool()
+
+
 
     return 0
 

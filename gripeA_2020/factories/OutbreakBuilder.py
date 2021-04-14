@@ -70,9 +70,10 @@ class OutbreakBuilder(Builder):
                         #Si solapa al menos un 80% de su recuadro con el recuadro del geohash
                         if comarca["peso"] >= 0.8:
                             cod = comarca["cod_comarca"]
+                            valor = {"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "casos": brote['cases'], "especie":relacion[1]}
                             if cod not in comarca_brotes:
-                                comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "casos": brote['cases'], "especie":relacion[1]}]
+                                comarca_brotes[cod] = [valor]
                             else:
-                                comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "casos": brote['cases'],"especie":relacion[1]})
+                                comarca_brotes[cod].append(valor)
 
         return comarca_brotes, brotes_por_semana
