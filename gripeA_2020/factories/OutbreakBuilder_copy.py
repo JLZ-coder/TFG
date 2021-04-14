@@ -21,7 +21,7 @@ class OutbreakBuilder(Builder):
 
         tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
 
-        comarca_brotes = dict()
+        comarca_brotes_por_semana = dict()
         brotes_por_semana = dict()
 
         temporaryWindow = parameters["temporaryWindow"]
@@ -76,4 +76,45 @@ class OutbreakBuilder(Builder):
                             else:
                                 comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "casos": brote['cases'],"especie":relacion[1]})
 
-        return comarca_brotes, brotes_por_semana
+
+        # comarca_brotes_por_semana
+        # 2020/04/01 => list( *Codigo de una comarca* => list( info de brotes que llegan a esta comarca ) )
+        # ...
+        # ..
+        # .
+        alert_week = start
+        while alert_week < end:
+
+            comarca_brotes = comarca_brotes_por_semana[alert_week]
+            outbreak_week = start - temporaryWindow
+
+            while outbreak_week < alert_week - timedelta(weeks=1):
+
+                for brote in brotes_por_semana[outbreak_week]:
+
+                    geohash_del_brote = brote['geohash'][0:4]
+
+                    #Rutas del brote, puede que no haya ninguna que conecte con España
+                    response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geohash_del_brote)).values()
+
+                    #relacion:
+                    # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
+                    # ej: ['sp0j', 1470]
+                    for relacion in response:
+                        #Si el geohash destino esta en España
+                        if relacion[0] in tablaGeoComarca:
+                            #Recorremos las comarcas con los que solapa el geohash
+                            for comarca in tablaGeoComarca[relacion[0]]:
+                                #Si solapa al menos un 80% de su recuadro con el recuadro del geohash
+                                if comarca["peso"] >= 0.8:
+                                    cod = comarca["cod_comarca"]
+                                    if cod not in comarca_brotes:
+                                        comarca_brotes[cod] = [{"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "casos": brote['cases'], "especie":relacion[1]}]
+                                    else:
+                                        comarca_brotes[cod].append({"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "casos": brote['cases'],"especie":relacion[1]})
+
+                outbreak_week += timedelta(weeks=1)
+
+            alert_week += timedelta(weeks=1)
+
+        return comarca_brotes_por_semana, brotes_por_semana
