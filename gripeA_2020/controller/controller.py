@@ -40,11 +40,11 @@ class Controller:
         file = "data/Datos especies1.xlsx"
         matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
 
-        parameters= dict()
-        parameters['comarca_brotes']= comarca_brotes
-        parameters['tMin'] = tMin
-        parameters['matrizEspecies'] = matrizEspecies
-        parameters['online'] = online
+        data= dict()
+        data['comarca_brotes']= comarca_brotes
+        data['tMin'] = tMin
+        data['matrizEspecies'] = matrizEspecies
+        data['online'] = online
 
 
         brotes_por_semana = dict()
@@ -54,7 +54,7 @@ class Controller:
 
         alertas_list = list()
 
-        self.model.setParameters(parameters)
+        self.model.setData(data)
         
         if dateM == None:
             alertas = self.model.run(start,end)
@@ -73,7 +73,7 @@ class Controller:
                 comarca_brotes, lista_brotes = self.dataFactory.createData("outbreak", outbreakStart, start,None)
                 
                 #Actualizamos solo los brotes
-                parameters['comarca_brotes']= comarca_brotes
+                data['comarca_brotes']= comarca_brotes
 
                 migrations_por_semana[start] = comarca_brotes
                 brotes_por_semana[start - timedelta(weeks=1)] = lista_brotes[start - timedelta(weeks=1)].copy()

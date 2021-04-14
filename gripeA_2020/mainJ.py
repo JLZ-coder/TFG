@@ -1,6 +1,6 @@
 import sys, json
 from factories.Factory import Factory
-from factories.OutbreakBuilder import OutbreakBuilder
+from factories.OutbreakBuilder_copy import OutbreakBuilder
 from factories.TempBuilder import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
 from model.ModelSelector import ModelSelector
@@ -42,7 +42,8 @@ def main(argv):
 
     #toolOffLine(control)
 
-    control.runOnlineTool()
+    #control.runOnlineTool()
+    control.runOfflineTool(date, 52, 3)
 
     return 0
 

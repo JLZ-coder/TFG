@@ -24,9 +24,8 @@ class OutbreakBuilder(Builder):
         comarca_brotes_por_semana = dict()
         brotes_por_semana = dict()
 
-        temporaryWindow = parameters["temporaryWindow"]
 
-        outbreak_date = start - temporaryWindow
+        outbreak_date = start
 
         #Preparamos un diccionario con la fecha de los lunes de cada semana como clave y una lista vacia como valor
         # 2020/01/01 => list
