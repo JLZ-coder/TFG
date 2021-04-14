@@ -3,8 +3,6 @@ import sys
 import requests
 import re
 import pandas as pd
-import dbf
-#from aemet import *
 import pymongo
 from pymongo import MongoClient
 from datetime import datetime
@@ -22,7 +20,7 @@ comarca = db.comarcas
 
 bisiesto = ["2012", "2016","2020","2024"]
 fechaInicial = "2017-01-02"
-fechaFinal = "2021-03-8"
+fechaFinal = "2021-04-5"
 
 semanaFinal = datetime.strptime(fechaFinal, '%Y-%m-%d')
 nSemanaFinal = semanaFinal.isocalendar()[1]-1
@@ -163,9 +161,14 @@ def generateHistoric():
                 else:
                     semanaFinal[i] = semana[i]/contador[i]
             
-            while anio < 2021:
-                
             semanal[str(anio)] = semanaFinal   
+
+            #Relleno años vacios del array de booleanos
+            anio += 1
+            while anio <= 2021:
+                completo[str(anio)] = [*range(0,len(semana))]
+                anio += 1
+
             df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal, 'boolCompleto': completo})
             
 
@@ -341,13 +344,9 @@ def main(argv):
     #estaciones() #Construye la coleccion de estaciones
     #listStacion()
     #generateListEmpty()
-    #generateHistoric()
+    generateHistoric()
     fillEmptyInfo()
-    cursor = estacion.find({},{'comarca_sg':True, '_id':False}).distinct('comarca_sg')
 
-    indicativos = list(cursor)
-
-    print(len(indicativos))
 
     prediction()
 
