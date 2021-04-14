@@ -160,6 +160,7 @@ def generateHistoric():
                     completo[str(anio)].append(i)
                 else:
                     semanaFinal[i] = semana[i]/contador[i]
+<<<<<<< Updated upstream
             
             semanal[str(anio)] = semanaFinal   
 
@@ -168,6 +169,10 @@ def generateHistoric():
             while anio <= 2021:
                 completo[str(anio)] = [*range(0,len(semana))]
                 anio += 1
+=======
+
+            semanal[str(anio)] = semanaFinal
+>>>>>>> Stashed changes
 
             df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal, 'boolCompleto': completo})
             
@@ -204,7 +209,7 @@ def generateListEmpty():
             empty[idEstacion] = aux
 
 
-    text_file = open("../data/emptyCG-IDE.json", "w")
+    text_file = open("data/emptyCG-IDE.json", "w")
     n = text_file.write(json.dumps(empty))
     text_file.close()
 #Para comarcas sin asignación alguna
@@ -343,14 +348,25 @@ def changeCoordenates(coordenada):
 def main(argv):
     #estaciones() #Construye la coleccion de estaciones
     #listStacion()
+<<<<<<< Updated upstream
     #generateListEmpty()
     generateHistoric()
+=======
+
+    # generateListEmpty()
+    generateHistoric()
+
+>>>>>>> Stashed changes
     fillEmptyInfo()
 
+<<<<<<< Updated upstream
+=======
+    #print(len(indicativos))
+>>>>>>> Stashed changes
 
     prediction()
 
-    return 0         
+    return 0
 
 
 
