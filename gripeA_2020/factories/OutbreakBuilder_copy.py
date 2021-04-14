@@ -14,6 +14,7 @@ class OutbreakBuilder(Builder):
         client = MongoClient('mongodb://localhost:27017/')
         db = client.lv
         brotes_db = db.outbreaks
+        estaciones_db = db.estaciones
 
         neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
@@ -24,8 +25,9 @@ class OutbreakBuilder(Builder):
         comarca_brotes_por_semana = dict()
         brotes_por_semana = dict()
 
+        temporaryWindow = parameters["temporaryWindow"]
 
-        outbreak_date = start
+        outbreak_date = start - temporaryWindow
 
         #Preparamos un diccionario con la fecha de los lunes de cada semana como clave y una lista vacia como valor
         # 2020/01/01 => list

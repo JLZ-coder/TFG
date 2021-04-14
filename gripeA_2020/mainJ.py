@@ -43,7 +43,7 @@ def main(argv):
     #toolOffLine(control)
 
     #control.runOnlineTool()
-    control.runOfflineTool(date, 52, 3)
+    control.runOnlineTool()
 
     return 0
 
