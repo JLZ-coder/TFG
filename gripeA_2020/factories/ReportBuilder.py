@@ -1,5 +1,7 @@
 from .Builder import Builder
 from pymongo import MongoClient
+import markdown
+import pypandoc
 
 class ReportBuilder(Builder):
     def __init__(self):
@@ -15,7 +17,7 @@ class ReportBuilder(Builder):
         cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n - *Fecha*: " +  start.strftime('%Y-%m-%d') 
         + "\n - *Periodo de*: " +   start.strftime('%Y-%m-%d') + " a " + end.strftime('%Y-%m-%d'))
 
-        sumario = ("\n ## Sumario del informe \n" +  "*Número de comarcas ganaderas en alerta*:" + str(len(parameters["alertas"]))
+        sumario = ("\n ## Sumario del informe \n" +  "*Número de comarcas ganaderas en alerta*:" + str(len(parameters))
         + "\n *Número de brotes en Europa asociados con movimientos de riesgo a España*: " + str(parameters["nBrotes"]))
 
         cabeceraTablaAlertas = ("## Tabla de alertas \n " 
@@ -60,6 +62,10 @@ class ReportBuilder(Builder):
         f.close()
 
         return textoFinal
+
+    def reportPDF():
+        
+        output = pypandoc.convert('markdown/informePrueba.md', 'pdf', outputfile="markdown/informePrueba.pdf", extra_args=['-V', 'geometry:margin=1.5cm'])
         
 
 

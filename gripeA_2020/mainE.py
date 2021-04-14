@@ -39,8 +39,9 @@ def main(argv):
     geojsonGen = GeojsonGenerator()
 
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
-
+    ReportBuilder.reportPDF()
     #toolOffLine(control)
+   
     control.runOfflineTool(date, 52, 3)
 
     return 0
