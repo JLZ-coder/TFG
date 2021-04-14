@@ -4,6 +4,7 @@ from .ModelV1 import ModelV1
 class ModelSelector:
     def __init__(self):
         self.parameters = dict()
+        self.data = dict()
         self._init()
 
     def _init(self):
@@ -23,8 +24,14 @@ class ModelSelector:
         if (modelo != None):
             self.currentModel = modelo
 
+    def getParameters(self):
+        return self.parameters
+
     def setParameters(self, parameters):
         self.parameters = parameters
+
+    def getData(self):
+        return self.data
 
     def setData(self, data):
         self.data = data

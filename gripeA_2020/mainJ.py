@@ -37,7 +37,12 @@ def main(argv):
     default_params = dict()
     default_params["online"] = True
     default_params["temporaryWindow"] = 12
-    default_params["date"] = "2020-01-01"
+    default_params["start_date"] = None
+    # default_params["start_date"] = {
+    #     "day":1,
+    #     "month":1,
+    #     "year": 2021
+    # }
     default_params["weeks"] = 52
     default_params["min_geohash_cover"] = 0.8
     default_params["thresholdAlert"] = 4
@@ -54,7 +59,7 @@ def main(argv):
     #toolOffLine(control)
 
     #control.runOnlineTool()
-    control.runOnlineTool()
+    control.runOnlineTool(None)
 
 
 

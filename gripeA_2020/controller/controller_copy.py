@@ -87,10 +87,28 @@ class Controller:
 
         return geojson_alerta
 
-    def runOnlineTool(self):
+    def runOnlineTool(self, parameters):
+
+        #PARAMETERS
+        parameters = dict()
+        parameters = self.model.getParameters()
+
+        if parameters != None:
+            parameters = parameters
+        else:
+            parameters = self.model.getParameters()
+
+        #PARAMETERS
 
         #Fecha actual
-        start = date.today() + timedelta(days = -date.today().weekday())
+        start_date = date.today()
+        if parameters["start_date"] != None:
+            day = parameters["start_date"]["day"]
+            month = parameters["start_date"]["month"]
+            year = parameters["start_date"]["year"]
+            start_date = date(year, month, day)
+
+        start = start_date + timedelta(days = -start_date.weekday())
         end = start + timedelta(weeks = 1)
         #Convert to datetime
         start = datetime.combine(start, datetime.min.time())
@@ -111,7 +129,6 @@ class Controller:
         # ...
         # ..
         # .
-        parameters = {"temporaryWindow": timedelta(weeks = 12)}
 
         comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", start, end , parameters)
 
@@ -132,12 +149,6 @@ class Controller:
         data['online'] = True
 
         #DATA SENT TO MODEL
-
-        #PARAMETERS
-
-        parameters= dict()
-
-        #PARAMETERS
 
         #Geojson generator
         migrations_por_semana = dict()
