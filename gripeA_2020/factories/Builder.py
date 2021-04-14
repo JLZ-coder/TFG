@@ -8,6 +8,3 @@ class Builder:
             data = self.create(start, end, parameters)
 
         return data
-
-    def create(self):
-        pass

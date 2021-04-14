@@ -111,9 +111,9 @@ class Controller:
         # ...
         # ..
         # .
-        outbreakStart = start - timedelta(weeks = 12)
-        outbreakEnd = start - timedelta(weeks=1) #No se toma en cuenta la ultima semana
-        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", outbreakStart, outbreakEnd ,None)
+        parameters = {"temporaryWindow": timedelta(weeks = 12)}
+
+        comarca_brotes_por_semana, brotes_por_semana = self.dataFactory.createData("outbreak", start, end , parameters)
 
         #Temperature
         tMin = self.dataFactory.createData("temp",start, end, True)
