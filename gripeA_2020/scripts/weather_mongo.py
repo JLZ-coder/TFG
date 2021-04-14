@@ -162,6 +162,9 @@ def generateHistoric():
                     completo[str(anio)].append(i)
                 else:
                     semanaFinal[i] = semana[i]/contador[i]
+            
+            while anio < 2021:
+                
             semanal[str(anio)] = semanaFinal   
             df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal, 'boolCompleto': completo})
             
@@ -209,6 +212,9 @@ def fillEmptyInfo():
     df = []
 
     for it in estaciones:
+
+        if it['comarca_sg'] == "SP25040":
+            print(1)
         valor = list(historico.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True, 'boolCompleto': True}))
         
         estacionDebug = it['comarca_sg']
@@ -336,7 +342,13 @@ def main(argv):
     #listStacion()
     #generateListEmpty()
     #generateHistoric()
-    #fillEmptyInfo()
+    fillEmptyInfo()
+    cursor = estacion.find({},{'comarca_sg':True, '_id':False}).distinct('comarca_sg')
+
+    indicativos = list(cursor)
+
+    print(len(indicativos))
+
     prediction()
 
     return 0         

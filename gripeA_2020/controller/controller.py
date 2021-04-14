@@ -137,14 +137,12 @@ class Controller:
         migrations_por_semana = dict()
         migrations_por_semana[start] = comarca_brotes
 
-        alertas_list = list()
-
         self.model.setData(data_to_model)
 
         alertas = self.model.run(start,end)
-        alertas_list.append(alertas)
 
-        reportPDF = self.dataFactory.createData("report",start, end, alertas_list)
+
+        reportPDF = self.dataFactory.createData("report",start, end, alertas)
         geojson_alerta = self.geojsonGen.generate_comarca(alertas_list, lista_comarcas)
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
