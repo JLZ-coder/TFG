@@ -11,10 +11,10 @@ class TempBuilder(Builder):
         client = MongoClient('mongodb://localhost:27017/')
         db = client.lv
         temperatura = db.temperatura
-
+        tempMin = {}
         if parameters == False: #Herramienta Offline
             cursor = temperatura.find({},{'_id':False, 'comarca_sg':True,'historicoFinal':True})
-            tempMin = {}
+            
             for i in cursor:
                 tempMin[i['comarca_sg']] = i['historicoFinal']
         else: #Herramienta Online

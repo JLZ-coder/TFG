@@ -35,13 +35,13 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    date = None
+    date = datetime(2020,1,1)
     geojsonGen = GeojsonGenerator()
 
     control = controller.Controller(modelSelector, dataFact, geojsonGen)
 
     #toolOffLine(control)
-    control.run(date, 52, 3)
+    control.runOfflineTool(date, 52, 3)
 
     return 0
 
