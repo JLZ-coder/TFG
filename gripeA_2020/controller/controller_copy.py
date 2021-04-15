@@ -37,13 +37,15 @@ class Controller:
 
         tMin = self.dataFactory.createData("temp",start, end, online)
         lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
-        file = "data/Datos especies1.xlsx"
-        matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
+
+        probEspecies = self.dataFactory.createData("migration_prob",start, end, None)
+        # file = "data/Datos especies1.xlsx"
+        # matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
 
         data= dict()
         data['comarca_brotes']= comarca_brotes
         data['tMin'] = tMin
-        data['matrizEspecies'] = matrizEspecies
+        data['probEspecies'] = probEspecies
         data['online'] = online
 
 
@@ -87,14 +89,14 @@ class Controller:
 
         return geojson_alerta
 
-    def runOnlineTool(self, parameters):
+    def runOnlineTool(self, user_parameters):
 
         #PARAMETERS
         parameters = dict()
         parameters = self.model.getParameters()
 
-        if parameters != None:
-            parameters = parameters
+        if user_parameters != None:
+            parameters = user_parameters
         else:
             parameters = self.model.getParameters()
 
@@ -129,8 +131,8 @@ class Controller:
         # ...
         # ..
         # .
-
-        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", start, end , parameters)
+        outbreak_start = start - timedelta(weeks=parameters["temporaryWindow"])
+        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", outbreak_start, end , parameters)
 
         #Temperature
         tMin = self.dataFactory.createData("temp",start, end, True)
@@ -142,11 +144,11 @@ class Controller:
         file = "data/Datos especies1.xlsx"
         matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
 
+
         data= dict()
         data['comarca_brotes']= comarca_brotes
         data['tMin'] = tMin
         data['matrizEspecies'] = matrizEspecies
-        data['online'] = True
 
         #DATA SENT TO MODEL
 

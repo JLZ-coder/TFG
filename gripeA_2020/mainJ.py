@@ -3,6 +3,7 @@ from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
 from factories.TempBuilder_copy import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
+from factories.MigrationProbBuilder import MigrationProbBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
 from controller.controller_copy import Controller
@@ -30,6 +31,7 @@ def main(argv):
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())
     dataBuilderList.append(ComarcasBuilder())
+    dataBuilderList.append(MigrationProbBuilder())
     dataFact = Factory(dataBuilderList)
 
     modelSelector = ModelSelector()

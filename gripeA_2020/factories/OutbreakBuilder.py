@@ -3,14 +3,31 @@ from .Builder import Builder
 from dao.daoBrotes import daoBrotes
 from neo4j import GraphDatabase
 import json
-from datetime import datetime, timedelta, date
+from datetime import datetime, time, timedelta, date
 
 #Revised: 13/4/21
 class OutbreakBuilder(Builder):
     def __init__(self):
         super().__init__("outbreak")
 
+    def check_params(self, parameters):
+        ok = parameters
+        bad = -1
+
+        if parameters["min_geohash_cover"] == None or not isinstance(parameters["min_geohash_cover"], (int, float)):
+            return bad
+
+
+        return ok
+
+
     def create(self, start, end, parameters):
+
+        checked_parameters = self.check_params(parameters)
+
+        if (checked_parameters == -1):
+            return -1 , -1
+
         client = MongoClient('mongodb://localhost:27017/')
         db = client.lv
         brotes_db = db.outbreaks
@@ -68,7 +85,7 @@ class OutbreakBuilder(Builder):
                     #Recorremos las comarcas con los que solapa el geohash
                     for comarca in tablaGeoComarca[relacion[0]]:
                         #Si solapa al menos un 80% de su recuadro con el recuadro del geohash
-                        if comarca["peso"] >= 0.8:
+                        if comarca["peso"] >= checked_parameters["min_geohash_cover"]:
                             cod = comarca["cod_comarca"]
                             valor = {"peso" : comarca["peso"], "oieid" : brote["oieid"], "epiunit" : brote["epiunit"], "serotype": brote['serotype'], "casos": brote['cases'], "especie":relacion[1]}
                             if cod not in comarca_brotes:
