@@ -160,7 +160,6 @@ def generateHistoric():
                     completo[str(anio)].append(i)
                 else:
                     semanaFinal[i] = semana[i]/contador[i]
-<<<<<<< Updated upstream
             
             semanal[str(anio)] = semanaFinal   
 
@@ -169,10 +168,6 @@ def generateHistoric():
             while anio <= 2021:
                 completo[str(anio)] = [*range(0,len(semana))]
                 anio += 1
-=======
-
-            semanal[str(anio)] = semanaFinal
->>>>>>> Stashed changes
 
             df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal, 'boolCompleto': completo})
             
@@ -289,10 +284,12 @@ def prediction():
     file = "data/estaciones.json"
     listaEstaciones = pd.read_json(file)
     listaEstaciones.set_index("indicativo",inplace = True)
-
+    cont = 0
     for it in cursor:
         ok = False
         i = 0
+        if it["comarca_sg"] ==  "SP37046":
+            print(1)
         while not ok and i < len(it['estacionesAdd']):
             #Si ya existe en el diccionario, no accedemos a la api
             auxStation = it['estacionesAdd'][i]
@@ -309,7 +306,9 @@ def prediction():
             
             indice = listaEstaciones.index.get_loc(auxStation)
             #Si no existe accedemos a la api y buscamos el valor
-            url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,changeCoordenates(listaEstaciones["latitud"][indice]),changeCoordenates(listaEstaciones["longitud"][indice]))
+            latitud = changeCoordenates(listaEstaciones["latitud"][indice])
+            longitud = changeCoordenates(listaEstaciones["longitud"][indice])
+            url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
             headers = {
             'cache-control': "no-cache"
             }
@@ -320,6 +319,7 @@ def prediction():
 
             if "error" in json_response: 
                 dEstacion[auxStation] = None
+                cont += 1
                 continue
             
             #Calculamos la media de la prediccion
@@ -333,7 +333,38 @@ def prediction():
             dEstacion[auxStation] = avgPredict
             #Actualizamos variables
             ok = True
+
+    print(cont)
             
+def prediccion2():
+    cursor = temperatura.find({"prediccion":{"$exists": False}})
+
+    for it in cursor:
+        com = list(comarca.find({"comarca_sg": it["comarca_sg"]}))
+
+        latitud = com[0]["Latitud"]
+        longitud = com[0]["Longitud"]
+
+        url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
+        headers = {
+        'cache-control': "no-cache"
+        }
+        #Si la consulta no da ningun valor, guardamos en el diccionario y le damos un valor de None para no volver a buscar 
+        response = requests.request("GET", url, headers=headers)
+        json_response = response.json()
+        #Comprobamos si existe un error
+
+        if "error" in json_response: 
+            continue
+        
+        #Calculamos la media de la prediccion
+        avgPredict = 0
+        for i in range(1,8):
+            avgPredict += json_response["day{}".format(i)]['temperature_min']
+
+        avgPredict = avgPredict/7
+
+        temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": avgPredict}})
 
 def changeCoordenates(coordenada):
     D = int(coordenada[0:2]) 
@@ -348,24 +379,14 @@ def changeCoordenates(coordenada):
 def main(argv):
     #estaciones() #Construye la coleccion de estaciones
     #listStacion()
-<<<<<<< Updated upstream
-    #generateListEmpty()
-    generateHistoric()
-=======
 
     # generateListEmpty()
-    generateHistoric()
+    #generateHistoric()
 
->>>>>>> Stashed changes
-    fillEmptyInfo()
+    #fillEmptyInfo()
 
-<<<<<<< Updated upstream
-=======
-    #print(len(indicativos))
->>>>>>> Stashed changes
-
-    prediction()
-
+    #prediction()
+    prediccion2()
     return 0
 
 
