@@ -2,7 +2,7 @@ from .Builder import Builder
 from pymongo import MongoClient
 import markdown
 import pypandoc
-
+import os
 class ReportBuilder(Builder):
     def __init__(self):
         super().__init__("report")
