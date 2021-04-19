@@ -1,0 +1,316 @@
+[{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de33"
+  },
+  "Nombre cientifico": "Limosa limosa",
+  "Especie": "Aguja colinegra  2015-2019",
+  "codigo anilla": 5320
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de34"
+  },
+  "Nombre cientifico": "Anas platyrhynchos",
+  "Especie": "Ánade azulón  2015-2019",
+  "codigo anilla": 1860
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de35"
+  },
+  "Nombre cientifico": "Anas strepera",
+  "Especie": "Ánade friso  2015-2019",
+  "codigo anilla": 1820
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de36"
+  },
+  "Nombre cientifico": "Anas acuta",
+  "Especie": "Ánade rabudo  2015-2019",
+  "codigo anilla": 1890
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de37"
+  },
+  "Nombre cientifico": "Tringa ochropus",
+  "Especie": "Andarríos grande  2015-2019",
+  "codigo anilla": 5530
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de38"
+  },
+  "Nombre cientifico": "Anser anser",
+  "Especie": "Ánsar común  2015-2019",
+  "codigo anilla": 1610
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de39"
+  },
+  "Nombre cientifico": "Tringa totanus",
+  "Especie": "Archibebe común  2015-2019",
+  "codigo anilla": 5460
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de3a"
+  },
+  "Nombre cientifico": "Vanellus vanellus",
+  "Especie": "Avefría europea  2015-2019",
+  "codigo anilla": 4930
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de3b"
+  },
+  "Nombre cientifico": "Recurvirostra avosetta",
+  "Especie": "Avoceta común  2015-2019",
+  "codigo anilla": 4560
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de3c"
+  },
+  "Nombre cientifico": "Anas querquedula",
+  "Especie": "Cerceta carretona  2015-2019",
+  "codigo anilla": 1910
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de3d"
+  },
+  "Nombre cientifico": "Anas crecca",
+  "Especie": "Cerceta común  2015-2019",
+  "codigo anilla": 1840
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de3e"
+  },
+  "Nombre cientifico": "Marmaronetta angustirostris",
+  "Especie": "Cerceta pardilla  2015-2019",
+  "codigo anilla": 1950
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de3f"
+  },
+  "Nombre cientifico": "Pluvialis apricaria",
+  "Especie": "Chorlito dorado europeo  2015-2019",
+  "codigo anilla": 4850
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de40"
+  },
+  "Nombre cientifico": "Pluvialis squatarola",
+  "Especie": "Chorlito gris  2015-2019",
+  "codigo anilla": 4860
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de41"
+  },
+  "Nombre cientifico": "Ciconia ciconia",
+  "Especie": "Cigüeña blanca  2015-2019",
+  "codigo anilla": 1340
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de42"
+  },
+  "Nombre cientifico": "Philomachus pugnax",
+  "Especie": "Combatiente  2015-2019",
+  "codigo anilla": 5170
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de43"
+  },
+  "Nombre cientifico": "Phalacrocorax carbo",
+  "Especie": "Cormorán grande  2015-2019",
+  "codigo anilla": 720
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de44"
+  },
+  "Nombre cientifico": "Calidris alpina",
+  "Especie": "Correlimos común  2015-2019",
+  "codigo anilla": 5120
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de45"
+  },
+  "Nombre cientifico": "Calidris minuta",
+  "Especie": "Correlimos menudo  2015-2019",
+  "codigo anilla": 5010
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de46"
+  },
+  "Nombre cientifico": "Somateria mollissima",
+  "Especie": "Eider común  2015-2019",
+  "codigo anilla": 2060
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de47"
+  },
+  "Nombre cientifico": "Phoenicopterus ruber",
+  "Especie": "Flamenco común  2015-2019",
+  "codigo anilla": 1470
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de48"
+  },
+  "Nombre cientifico": "Fulica atra",
+  "Especie": "Focha común  2015-2019",
+  "codigo anilla": 4290
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de49"
+  },
+  "Nombre cientifico": "Egretta garzetta",
+  "Especie": "Garceta común  2015-2019",
+  "codigo anilla": 1190
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de4a"
+  },
+  "Nombre cientifico": "Egretta alba",
+  "Especie": "Garceta grande  2015-2019",
+  "codigo anilla": 1210
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de4b"
+  },
+  "Nombre cientifico": "Ardea cinerea",
+  "Especie": "Garza real  2015-2019",
+  "codigo anilla": 1220
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de4c"
+  },
+  "Nombre cientifico": "Larus marinus",
+  "Especie": "Gavión atlántico  2015-2019",
+  "codigo anilla": 6000
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de4d"
+  },
+  "Nombre cientifico": "Larus argentatus",
+  "Especie": "Gaviota argéntea europea  2015-2019",
+  "codigo anilla": 5920
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de4e"
+  },
+  "Nombre cientifico": "Larus canus",
+  "Especie": "Gaviota cana  2015-2019",
+  "codigo anilla": 5900
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de4f"
+  },
+  "Nombre cientifico": "Larus cachinnans",
+  "Especie": "Gaviota del Caspio  2015-2019",
+  "codigo anilla": 5927
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de50"
+  },
+  "Nombre cientifico": "Larus michehellis",
+  "Especie": "Gaviota patiamarilla  2015-2019",
+  "codigo anilla": 5926
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de51"
+  },
+  "Nombre cientifico": "Larus ridibundus",
+  "Especie": "Gaviota reidora  2015-2019",
+  "codigo anilla": 5820
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de52"
+  },
+  "Nombre cientifico": "Larus fuscus",
+  "Especie": "Gaviota sombría  2015-2019",
+  "codigo anilla": 5910
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de53"
+  },
+  "Nombre cientifico": "Netta rufina",
+  "Especie": "Pato colorado  2015-2019",
+  "codigo anilla": 1960
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de54"
+  },
+  "Nombre cientifico": "Anas clypeata",
+  "Especie": "Pato cuchara  2015-2019",
+  "codigo anilla": 1940
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de55"
+  },
+  "Nombre cientifico": "Aythya ferina",
+  "Especie": "Porrón común  2015-2019",
+  "codigo anilla": 1980
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de56"
+  },
+  "Nombre cientifico": "Aythya fuligula",
+  "Especie": "Porrón moñudo  2015-2019",
+  "codigo anilla": 2030
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de57"
+  },
+  "Nombre cientifico": "Anas penelope",
+  "Especie": "Silbón europeo  2015-2019",
+  "codigo anilla": 1790
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de58"
+  },
+  "Nombre cientifico": "Podiceps cristatus",
+  "Especie": "Somormujo lavanco  2015-2019",
+  "codigo anilla": 90
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de59"
+  },
+  "Nombre cientifico": "Tadorna tadorna",
+  "Especie": "Tarro blanco  2015-2019",
+  "codigo anilla": 1730
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de5a"
+  },
+  "Nombre cientifico": "Tachybaptus  ruficollis",
+  "Especie": "Zampullín chico  2015-2019",
+  "codigo anilla": 70
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de5b"
+  },
+  "Nombre cientifico": "Podiceps nigricollis",
+  "Especie": "Zampullín cuellinegro  2015-2019",
+  "codigo anilla": 120
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de5c"
+  },
+  "Nombre cientifico": "Numenius arquata",
+  "Especie": "Zarapito real  2015-2019",
+  "codigo anilla": 5410
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de5d"
+  },
+  "Nombre cientifico": "Larus",
+  "Especie": "Gaviota sp",
+  "codigo anilla": 6009
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de5e"
+  },
+  "Nombre cientifico": "",
+  "Especie": "Limicolas",
+  "codigo anilla": 10000
+},{
+  "_id": {
+    "$oid": "6037a066f769eebf9823de5f"
+  },
+  "Nombre cientifico": "",
+  "Especie": "Garzas",
+  "codigo anilla": 20000
+}]
