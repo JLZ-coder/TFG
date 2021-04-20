@@ -143,10 +143,13 @@ def downloadOutbreaks():
     for i in df.index:
         
         if df['observation_date'][i] == "No Data":
-            continue
-
-        dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d')
+            if df['report_date'][i] != "No Data":
+                df['observation_date'][i] = str(df['report_date'][i])
+            else:
+                dfAux.append(i)
+                continue
     
+        dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d')
 
         if dateOutbreak >= lastWeek and dateOutbreak <= monday:
             continue
@@ -168,7 +171,7 @@ def downloadOutbreaks():
 
 def main(argv):
   
-    loadOutbreaks()
+    #loadOutbreaks()
     downloadOutbreaks()
 
     return 0
