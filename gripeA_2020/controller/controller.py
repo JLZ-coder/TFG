@@ -80,10 +80,10 @@ class Controller:
 
                 i += 1
 
-        reportPDF = self.dataFactory.createData("report",start, end, alertas_list)
         geojson_alerta = self.geojsonGen.generate_comarca(alertas_list, lista_comarcas)
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
+        reportPDF = self.dataFactory.createData("report",start, end, alertas_list)
 
         return geojson_alerta
 

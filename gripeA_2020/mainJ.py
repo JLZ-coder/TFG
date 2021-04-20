@@ -1,12 +1,13 @@
 import sys, json
 from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
-from factories.TempBuilder_copy import TempBuilder
+from factories.TempBuilder import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
 from factories.MigrationProbBuilder import MigrationProbBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
-from controller.controller_copy import Controller
+from controller.controller import Controller
+from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
 
 def toolOffLine(control):
@@ -31,39 +32,19 @@ def main(argv):
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())
     dataBuilderList.append(ComarcasBuilder())
-    dataBuilderList.append(MigrationProbBuilder())
+    dataBuilderList.append(ReportBuilder())
     dataFact = Factory(dataBuilderList)
 
     modelSelector = ModelSelector()
 
-    default_params = dict()
-    default_params["online"] = True
-    default_params["temporaryWindow"] = 12
-    default_params["start_date"] = None
-    # default_params["start_date"] = {
-    #     "day":1,
-    #     "month":1,
-    #     "year": 2021
-    # }
-    default_params["weeks"] = 52
-    default_params["min_geohash_cover"] = 0.8
-    default_params["thresholdAlert"] = 4
-    default_params["rangeOfValues"] = [0.1, 1, 0.3]
-
-    modelSelector.setParameters(default_params)
-
+    date = datetime(2020,1,1)
     geojsonGen = GeojsonGenerator()
 
-    date = None
-
     control = Controller(modelSelector, dataFact, geojsonGen)
-
+    ReportBuilder.reportPDF()
     #toolOffLine(control)
-
-    #control.runOnlineTool()
-    control.runOnlineTool(None)
-
-
+   
+    control.runOfflineTool(date, 52, 3)
 
     return 0
 

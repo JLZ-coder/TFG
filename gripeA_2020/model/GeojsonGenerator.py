@@ -122,6 +122,8 @@ class GeojsonGenerator:
 
         for semana in outbreaklist:
             for it in outbreaklist[semana]:
+                if ('city' not in it):
+                    it['city'] = "No especificado"
                 aux = {
                         "type": "Feature",
                         "geometry": {

@@ -65,6 +65,6 @@ class ReportBuilder(Builder):
 
     def reportPDF():
         
-        output = pypandoc.convert_file('markdown/informePrueba.md', 'pdf', outputfile="markdown/informePrueba.pdf", extra_args=['-V', 'geometry:margin=1.5cm','--pdf-engine', 'xelatex'])
+        output = pypandoc.convert_file('markdown/informePrueba.md', 'pdf', outputfile="markdown/informePrueba.pdf", extra_args=['-H', 'markdown/header.sty'])
 
 
