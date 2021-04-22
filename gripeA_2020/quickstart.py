@@ -1,11 +1,12 @@
 from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
 
+GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = "pydrive/client_secrets.json"
 
 gauth = GoogleAuth()
 
 # Try to load saved client credentials
-gauth.LoadCredentialsFile("mycreds.txt")
+gauth.LoadCredentialsFile("pydrive/mycreds.txt")
 if gauth.credentials is None:
     # Authenticate if they're not there
     gauth.LocalWebserverAuth()
@@ -16,7 +17,7 @@ else:
     # Initialize the saved creds
     gauth.Authorize()
 # Save the current credentials to a file
-gauth.SaveCredentialsFile("mycreds.txt")
+gauth.SaveCredentialsFile("pydrive/mycreds.txt")
 
 drive = GoogleDrive(gauth)
 

@@ -9,6 +9,7 @@ from model.GeojsonGenerator import GeojsonGenerator
 from controller.controller import Controller
 from factories.ReportBuilder_copy import ReportBuilder
 from datetime import datetime, timedelta, date
+from model.gdriveUploader import gDriveUploader
 
 def toolOffLine(control):
 
@@ -36,6 +37,10 @@ def main(argv):
     dataFact = Factory(dataBuilderList)
 
     modelSelector = ModelSelector()
+
+    uploader = gDriveUploader()
+
+    uploader.upload_file('markdown/informePrueba.pdf', 'informePrueba.pdf', 'informe')
 
     date = datetime(2020,1,1)
     geojsonGen = GeojsonGenerator()
