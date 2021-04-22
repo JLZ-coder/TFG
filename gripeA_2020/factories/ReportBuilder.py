@@ -3,12 +3,18 @@ from pymongo import MongoClient
 import markdown
 import pypandoc
 import os
+from model.gdriveUploader import gDriveUploader
+
 class ReportBuilder(Builder):
     def __init__(self):
         super().__init__("report")
 
     def reportPDF(self):
         output = pypandoc.convert_file('markdown/informePrueba.md', 'pdf', outputfile="markdown/informePrueba.pdf", extra_args=['-H', 'markdown/header.sty'])
+
+    def pdf_to_drive(self):
+        uploader = gDriveUploader()
+        uploader.upload_file('markdown/informePrueba.pdf', 'informePrueba.pdf')
 
     def create(self, start, end, parameters):
         
@@ -67,6 +73,7 @@ class ReportBuilder(Builder):
         f.close()
 
         self.reportPDF()
+        self.pdf_to_drive()
 
         return textoFinal
 

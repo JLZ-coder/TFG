@@ -38,9 +38,8 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    uploader = gDriveUploader()
-
-    uploader.upload_file('markdown/informePrueba.pdf', 'informePrueba.pdf', 'informe')
+    # uploader = gDriveUploader()
+    # uploader.upload_file('markdown/informePrueba.pdf', 'informePrueba.pdf')
 
     date = datetime(2020,1,1)
     geojsonGen = GeojsonGenerator()
