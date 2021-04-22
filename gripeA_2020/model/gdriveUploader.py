@@ -13,11 +13,10 @@ class gDriveUploader:
         self.gauth.LoadCredentialsFile(folder + "mycreds.txt")
         if self.gauth.credentials is None:
             # Authenticate if they're not there
+            self.gauth.GetFlow()
+            self.gauth.flow.params.update({'access_type': 'offline'})
+            self.gauth.flow.params.update({'approval_prompt': 'force'})
             self.gauth.LocalWebserverAuth()
-
-            gauth.GetFlow()
-            gauth.flow.params.update({'access_type': 'offline'})
-            gauth.flow.params.update({'approval_prompt': 'force'})
         elif self.gauth.access_token_expired:
             # Refresh them if expired
             self.gauth.Refresh()
