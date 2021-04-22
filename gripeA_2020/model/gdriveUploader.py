@@ -7,7 +7,7 @@ class gDriveUploader:
         folder = "pydrive/"
         GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = folder + "client_secrets.json"
         
-        self.gauth = GoogleAuth(settings_file=folder+ "settings.yaml")
+        self.gauth = GoogleAuth()
 
         # Try to load saved client credentials
         self.gauth.LoadCredentialsFile(folder + "mycreds.txt")
@@ -40,13 +40,13 @@ class gDriveUploader:
         else:
             folderName = dest_folder  # Please set the folder name.
 
-            folders = drive.ListFile(
+            folders = self.drive.ListFile(
                 {'q': "title='" + folderName + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
             
             for folder in folders:
                 if folder['title'] == folderName:
                     create_dict.update({'parents': [{'id': folder['id']}]})
-                    file1 = drive.CreateFile(create_dict) # Carpeta informe
+                    file1 = self.drive.CreateFile(create_dict) # Carpeta informe
                     file1.SetContentFile(filepath)
                     file1.Upload()
 
