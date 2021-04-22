@@ -328,6 +328,7 @@ def prediction():
                 avgPredict += json_response["day{}".format(i)]['temperature_min']
 
             avgPredict = avgPredict/7
+
             #Guardamos la media de la prediccion
             temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": avgPredict}})
             dEstacion[auxStation] = avgPredict

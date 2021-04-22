@@ -22,6 +22,10 @@ class TempBuilder(Builder):
         else: #Herramienta Online
             cursor = temperatura.find({},{'_id':False, 'comarca_sg':True,'prediccion':True})
             for i in cursor:
-                tempMin[i['comarca_sg']] = i['prediccion']
+                #TODO
+                if 'prediccion' in i:
+                    tempMin[i['comarca_sg']] = i['prediccion']
+                else:
+                    tempMin[i['comarca_sg']] = 0
        
         return tempMin

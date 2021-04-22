@@ -7,7 +7,6 @@ from factories.MigrationProbBuilder import MigrationProbBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
 from controller.controller import Controller
-#from factories.ReportBuilder_copy import ReportBuilder
 from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
 
@@ -42,13 +41,13 @@ def main(argv):
     geojsonGen = GeojsonGenerator()
 
     control = Controller(modelSelector, dataFact, geojsonGen)
-    #ReportBuilder.reportPDF()
+    ReportBuilder.reportPDF()
     #toolOffLine(control)
    
     #control.runOfflineTool(date, 52, 3)
-    control.runOnlineTool()
 
     return 0
+
 
 if __name__ == "__main__":
     main(sys.argv[1:])

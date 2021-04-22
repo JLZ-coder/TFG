@@ -17,19 +17,20 @@ class ReportBuilder(Builder):
         brotes_db = db.outbreaks
         comarca_db = db.comarcas
 
-        cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n\n - *Fecha*: " +  start.strftime('%Y-%m-%d') 
-        + "\n - *Periodo de*: " +   start.strftime('%Y-%m-%d') + " a " + end.strftime('%Y-%m-%d') + "\n")
+        cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n\n"
+                    "- *Fecha*: " +  start.strftime('%Y-%m-%d') + "\n"
+                    "- *Periodo de*: " +   start.strftime('%Y-%m-%d') + " a " + end.strftime('%Y-%m-%d') + "\n\n")
 
         sumario = ("\n## Sumario del informe \n" +  " - *Número de comarcas ganaderas en alerta*: " + str(len(parameters['alertas']))
         + "\n - *Número de brotes en Europa asociados con movimientos de riesgo a España*: " + str(parameters["nBrotes"]))
 
-        cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n " 
+        cabeceraTablaAlertas = ("## Tabla de alertas \n " 
         + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días | Validacion\n"
-        + "|:-:|:-------------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|\n")
+        + "|:-:|:-------------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|\n\n")
 
-        cabeceraTablaBrotesAlertas = ("\n\n## Tablas de brotes de IAAP en Europa y su conexión a España a través de  movimientos de aves silvestres\n "
-        +"| ID | Nº alerta | Comarca | ID CG | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |\n" 
-        +"|:-:|:---:|:--------------:|:------------:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|\n" )
+        cabeceraTablaBrotesAlertas = ("\n ## Tablas de brotes de IAAP en Europa y su conexión a España a través de  movimientos de aves silvestres\n "
+        +"| ID | Nº alerta  | Comarca  | ID CG | Event ID  | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |\n" 
+        +"|:-:|:-:|:-------------:|:-----:|:-----:|:---------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-----------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|\n\n" )
         
         nAlerta = 1
         filasAlertas = ""
@@ -42,7 +43,7 @@ class ReportBuilder(Builder):
                 comarca = cursor[0]
                 filasAlertas += ("|" +  str(nAlerta) + "|" + end.strftime('%Y-%m-%d') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
                 + "|" + str(len(alerta['brotes'])) + "|" + "N mov Riesgo???" + "|" + str(alerta["risk"])+ "|" + str(alerta["temperatura"]) + "|" 
-                + "Supervivencia?????" + "|"  +"Validacion??" + "|")
+                + "Supervivencia?????" + "|"  +"Validacion?? " + "|\n")
 
                 #Sacar informacion de brotes
                 for brote, especie in alerta['brotes'].items():
@@ -58,7 +59,7 @@ class ReportBuilder(Builder):
 
         #Volcar fichero
         if len(parameters['alertas']) > 0:
-            textoFinal = cabecera + sumario + cabeceraTablaAlertas + filasAlertas + cabeceraTablaBrotesAlertas + filasBrotes
+            textoFinal = cabecera + sumario + cabeceraTablaAlertas + filasAlertas + cabeceraTablaBrotesAlertas + filasAlertas
         else:
             textoFinal = cabecera + sumario
 
