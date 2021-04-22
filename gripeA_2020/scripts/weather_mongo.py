@@ -288,8 +288,8 @@ def prediction():
     for it in cursor:
         ok = False
         i = 0
-        if it["comarca_sg"] ==  "SP37046":
-            print(1)
+        # if it["comarca_sg"] ==  "SP37046":
+        #     print(1)
         while not ok and i < len(it['estacionesAdd']):
             #Si ya existe en el diccionario, no accedemos a la api
             auxStation = it['estacionesAdd'][i]
@@ -310,7 +310,7 @@ def prediction():
             longitud = changeCoordenates(listaEstaciones["longitud"][indice])
             url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
             headers = {
-            'cache-control': "no-cache"
+                'cache-control': "no-cache"
             }
             #Si la consulta no da ningun valor, guardamos en el diccionario y le damos un valor de None para no volver a buscar 
             response = requests.request("GET", url, headers=headers)
@@ -336,7 +336,7 @@ def prediction():
 
     print(cont)
             
-def prediccion2():
+def check_prediction():
     cursor = temperatura.find({"prediccion":{"$exists": False}})
 
     for it in cursor:
@@ -385,8 +385,8 @@ def main(argv):
 
     #fillEmptyInfo()
 
-    #prediction()
-    prediccion2()
+    prediction()
+    check_prediction()
     return 0
 
 
