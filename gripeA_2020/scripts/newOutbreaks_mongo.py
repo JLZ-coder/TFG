@@ -142,9 +142,12 @@ def downloadOutbreaks():
     #Lunes de esta semana
     monday = today + timedelta(days = -today.weekday())
     #Semana anterior 
-    lastWeek = monday - timedelta(weeks = 1)
+    lastWeek = monday - timedelta(weeks = 6)
     #Indices para borrar el resto de filas
     dfAux = []
+    #Convertimos string a datetime columna Report Date
+    df['report_date'] = pd.to_datetime(df['report_date'], format='%Y-%m-%d')
+    df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
     for i in df.index:
         
         if df['observation_date'][i] == "No Data":
@@ -158,10 +161,6 @@ def downloadOutbreaks():
         dfAux.append(i)
 
     df = df.drop(dfAux,axis=0)
-    #Convertimos string a datetime columna Report Date
-    df['report_date'] = pd.to_datetime(df['report_date'], format='%Y-%m-%d')
-    df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
-
     df = webScraping(df)
 
 
@@ -176,7 +175,7 @@ def downloadOutbreaks():
 
 def main(argv):
   
-    loadOutbreaks()
+    #loadOutbreaks()
     downloadOutbreaks()
 
     return 0
