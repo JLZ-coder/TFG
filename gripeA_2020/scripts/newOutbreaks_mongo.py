@@ -137,7 +137,7 @@ def downloadOutbreaks():
     #Lunes de esta semana
     monday = today + timedelta(days = -today.weekday())
     #Semana anterior 
-    lastWeek = monday - timedelta(weeks = 3)
+    lastWeek = monday - timedelta(weeks = 1)
     #Indices para borrar el resto de filas
     dfAux = []
     for i in df.index:
