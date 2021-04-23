@@ -48,7 +48,7 @@ def webScraping(df):
     geohashA = []
     fullReport=[]
     observationDate = []
-    dateL = []
+    country = []
     payload = json.dumps({})
     for i in df.index:
         url = "http://empres-i.fao.org/empres-i/obdj?id={}&lang=EN".format(df['oieid'][i])
@@ -69,7 +69,7 @@ def webScraping(df):
                 #'Accept-Language': 'en'
             })
         s = json.loads(r.text)
-        print(df['location'][i]+ " " + df['country'][i] + " " + df['city'][i] )
+        
         #Carga de valores obtenidos por requests en variables
         try:
             casos = s['outbreak']['speciesAffectedList'][0]['cases']
@@ -99,6 +99,12 @@ def webScraping(df):
         valOb = df['report_date'][i] if (df['observation_date'][i] == "No Data") else datetime.strptime( df['observation_date'][i], '%Y-%m-%d')
         observationDate.append(valOb)
 
+        #Cambiar nombres de reino unido
+        if s['outbreak']['country'] == "U.K. of Great Britain and Northern Ireland":
+            country.append(s['outbreak']['admin1'])
+        else: 
+            country.append(df['country'][i])
+
 
     df['cases'] = cases
     df['deaths'] = deaths
@@ -106,6 +112,7 @@ def webScraping(df):
     df['geohash'] = geohashA
     df['urlFR'] = fullReport
     df['observation_date'] = observationDate
+    df['country'] = country
 
 
     return df
