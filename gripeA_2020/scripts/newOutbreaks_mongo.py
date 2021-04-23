@@ -92,8 +92,6 @@ def webScraping(df):
         geohashA.append(valueGeohash)
         fullReport.append("http://empres-i.fao.org/empres-i/2/obd?idOutbreak={}".format(df['oieid'][i]))
 
-        #Datetime de report_date, observation_date, date de los brotes
-        reportDate.append(datetime.strptime(df['report_date'][i], '%Y-%m-%d'))
 
         #Si el valor de ObservationDate es NaN, ponemos el valor del reporte
         valOb = datetime.strptime(df['report_date'][i], '%Y-%m-%d') if (df['observation_date'][i] == "No Data") else datetime.strptime( df['observation_date'][i], '%Y-%m-%d')
@@ -106,7 +104,6 @@ def webScraping(df):
     df['epiunit'] = animalType 
     df['geohash'] = geohashA
     df['urlFR'] = fullReport
-    df['report_date'] = reportDate
     df['observation_date'] = observationDate
     df['date'] = dateL
 
