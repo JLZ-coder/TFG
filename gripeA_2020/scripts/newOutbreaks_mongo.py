@@ -98,7 +98,6 @@ def webScraping(df):
         #Si el valor de ObservationDate es NaN, ponemos el valor del reporte
         valOb = df['report_date'][i] if (df['observation_date'][i] == "No Data") else datetime.strptime( df['observation_date'][i], '%Y-%m-%d')
         observationDate.append(valOb)
-        dateL.append(datetime.strptime(df['date'][i], '%Y-%m-%d'))
 
 
     df['cases'] = cases
