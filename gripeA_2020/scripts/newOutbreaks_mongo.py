@@ -27,8 +27,10 @@ def loadOutbreaks():
     
     df = df.fillna(value="No Data")
 
-    #Eliminamos filas con NaN
-    #df.dropna(subset=["observation_date", "serotype"], inplace=True)
+    #Convertimos string a datetime columna Report Date
+    df['report_date'] = pd.to_datetime(df['report_date'], format='%Y-%m-%d')
+    df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
+
     df = webScraping(df)
 
     records = df.to_dict(orient='records')
@@ -45,7 +47,6 @@ def webScraping(df):
     animalType = []
     geohashA = []
     fullReport=[]
-    reportDate = []
     observationDate = []
     dateL = []
     payload = json.dumps({})
@@ -68,6 +69,7 @@ def webScraping(df):
                 #'Accept-Language': 'en'
             })
         s = json.loads(r.text)
+        print(df['location'][i]+ " " + df['country'][i] + " " + df['city'][i] )
         #Carga de valores obtenidos por requests en variables
         try:
             casos = s['outbreak']['speciesAffectedList'][0]['cases']
@@ -94,7 +96,7 @@ def webScraping(df):
 
 
         #Si el valor de ObservationDate es NaN, ponemos el valor del reporte
-        valOb = datetime.strptime(df['report_date'][i], '%Y-%m-%d') if (df['observation_date'][i] == "No Data") else datetime.strptime( df['observation_date'][i], '%Y-%m-%d')
+        valOb = df['report_date'][i] if (df['observation_date'][i] == "No Data") else datetime.strptime( df['observation_date'][i], '%Y-%m-%d')
         observationDate.append(valOb)
         dateL.append(datetime.strptime(df['date'][i], '%Y-%m-%d'))
 
@@ -105,7 +107,7 @@ def webScraping(df):
     df['geohash'] = geohashA
     df['urlFR'] = fullReport
     df['observation_date'] = observationDate
-    df['date'] = dateL
+
 
     return df
 
@@ -140,13 +142,9 @@ def downloadOutbreaks():
     for i in df.index:
         
         if df['observation_date'][i] == "No Data":
-            if df['report_date'][i] != "No Data":
-                df['observation_date'][i] = str(df['report_date'][i])
-            else:
-                dfAux.append(i)
-                continue
-    
-        dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d')
+            dateOutbreak = df['report_date'][i]
+        else:
+            dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d') 
 
         if dateOutbreak >= lastWeek and dateOutbreak <= monday:
             continue
@@ -154,6 +152,10 @@ def downloadOutbreaks():
         dfAux.append(i)
 
     df = df.drop(dfAux,axis=0)
+    #Convertimos string a datetime columna Report Date
+    df['report_date'] = pd.to_datetime(df['report_date'], format='%Y-%m-%d')
+    df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
+
     df = webScraping(df)
 
 
@@ -168,7 +170,7 @@ def downloadOutbreaks():
 
 def main(argv):
   
-    #loadOutbreaks()
+    loadOutbreaks()
     downloadOutbreaks()
 
     return 0
