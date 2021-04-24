@@ -14,7 +14,7 @@ class ReportBuilder(Builder):
 
     def pdf_to_drive(self):
         uploader = gDriveUploader()
-        uploader.upload_file('markdown/informePrueba.pdf', 'informeCron.pdf', 'informeSemanal')
+        uploader.upload_file('markdown/informePrueba.pdf', 'informeCron.pdf', 'alertas')
 
     def create(self, start, end, parameters):
         

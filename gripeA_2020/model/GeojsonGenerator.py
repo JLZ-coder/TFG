@@ -6,7 +6,7 @@ class GeojsonGenerator:
     def __init__(self):
         pass
 
-    def generate_comarca(self, alertList, comarcasDict):
+    def generate_alerta(self, alertList, comarcasDict):
         feat_col_alertas = {
             "type": "FeatureCollection",
             "features": []

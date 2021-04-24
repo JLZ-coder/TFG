@@ -1,6 +1,5 @@
 from pymongo import MongoClient
 from .Builder import Builder
-from dao.daoBrotes import daoBrotes
 from neo4j import GraphDatabase
 import json
 from datetime import datetime, time, timedelta, date

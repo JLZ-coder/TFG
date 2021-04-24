@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import json
 import copy
+from model.gdriveUploader import gDriveUploader
 
 class Controller:
     def __init__(self, model,dataFactory, geojsonGen):
@@ -18,7 +19,7 @@ class Controller:
     #temporaryWindow -> ventana temporal para busqueda de brotes por defecto 3 Meses/12 semanas/ 90 dias
     def runOfflineTool(self, dateM, weeks, temporaryWindow):
 
-        online= True 
+        online= True
         if dateM != None:#Fecha Herramienta offline
             start = dateM + timedelta(days = -dateM.weekday())
             end = start + timedelta(weeks = 1)
@@ -95,7 +96,6 @@ class Controller:
         start = datetime.combine(start, datetime.min.time())
         end = datetime.combine(end, datetime.min.time())
 
-
         #DATA SENT TO MODEL
 
         #Outbreaks
@@ -110,9 +110,10 @@ class Controller:
         # ...
         # ..
         # .
-        parameters = {"temporaryWindow": timedelta(weeks = 12)}
 
-        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", start, end , parameters)
+        # 12 semanas = 3 meses
+        outbreakStart = start - timedelta(weeks = 12)
+        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", outbreakStart, start , None)
 
         #Temperature
         tMin = self.dataFactory.createData("temp",start, end, True)
@@ -142,12 +143,12 @@ class Controller:
 
         alertas_list = [alertas]
 
-        broteEspecie = dict()
-        broteEspecie[288337] = {"cientifico" : "Patito" ,"especie": "pollitus", "codigoE":70, "probEspecie": 0.2}
-        alertas["alertas"].append({"comarca_sg" : "SP01059", "risk" : 3, "temperatura": 2.0, "brotes": broteEspecie })
-        
+        # broteEspecie = dict()
+        # broteEspecie[288337] = {"cientifico" : "Patito" ,"especie": "pollitus", "codigoE":70, "probEspecie": 0.2}
+        # alertas["alertas"].append({"comarca_sg" : "SP01059", "risk" : 3, "temperatura": 2.0, "brotes": broteEspecie })
+
         reportPDF = self.dataFactory.createData("report",start, end, alertas)
-        geojson_alerta = self.geojsonGen.generate_comarca(alertas_list, lista_comarcas)
+        geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
 
