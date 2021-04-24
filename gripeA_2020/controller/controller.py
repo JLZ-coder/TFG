@@ -143,6 +143,22 @@ class Controller:
 
         alertas["alertas"] = list(filter(lambda alerta: alerta["risk"] != 0, alertas["alertas"]))
 
+        # Para seleccionar solo las rutas de comarcas en riesgo > 0
+        # -----------------------------------------------------------
+        en_riesgo = set()
+        for alerta in alertas["alertas"]:
+            if alerta["risk"] > 0:
+                en_riesgo.add(alerta["comarc_sg"])
+
+        migrations_por_semana_aux = dict()
+        migrations_por_semana_aux[start] = {}
+
+        for comarca in migrations_por_semana[start]:
+            if comarca in en_riesgo:
+                migrations_por_semana_aux[start][comarca] = migrations_por_semana[start][comarca]
+        # -----------------------------------------------------------
+        # Para seleccionar solo las rutas de comarcas en riesgo > 0
+
         alertas_list = [alertas]
 
 
@@ -153,7 +169,7 @@ class Controller:
         #reportPDF = self.dataFactory.createData("report",start, end, alertas)
         geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
-        geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
+        geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana_aux, lista_comarcas, brotes_por_semana)
 
         return 0
 
