@@ -277,14 +277,14 @@ def search(anio, restoEstaciones, index, comarca, semana):
 
     return resulta
 
-def prediction():
+def firstPrediction():
 
     #Sacamos la prediccion de las comarcas
     cursor = comarca.find({})
 
     for it in cursor:
-        latitud = changeCoordenates(it["latitud"])
-        longitud = changeCoordenates(listaEstaciones["longitud"])
+        latitud = it["Latitud"]
+        longitud = it["Longitud"]
         url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
         headers = {
             'cache-control': "no-cache"
@@ -307,23 +307,26 @@ def prediction():
         #Guardamos la media de la prediccion
         temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": avgPredict}})
 
-
-    '''    
+            
+def secondPrediction(value):
+    cursor = temperatura.find({"prediccion":{"$exists": False}})
+   
     #Sacamos coordenadas estacion para la predicción 
-    cursor = estacion.find({})
     dEstacion = dict()
     file = "data/estaciones.json"
     listaEstaciones = pd.read_json(file)
     listaEstaciones.set_index("indicativo",inplace = True)
     cont = 0
     for it in cursor:
+        cursor = list(estacion.find({"comarca_sg": it['comarca_sg']}))
+        estacionList = cursor[0]['estacionesAdd']
         ok = False
         i = 0
         # if it["comarca_sg"] ==  "SP37046":
         #     print(1)
-        while not ok and i < len(it['estacionesAdd']):
+        while not ok and i < len(estacionList):
             #Si ya existe en el diccionario, no accedemos a la api
-            auxStation = it['estacionesAdd'][i]
+            auxStation = estacionList[i]
             #Aumentamos contador
             i+=1
             if auxStation in dEstacion:
@@ -336,9 +339,17 @@ def prediction():
                 continue
             
             indice = listaEstaciones.index.get_loc(auxStation)
-            #Si no existe accedemos a la api y buscamos el valor
-            latitud = changeCoordenates(listaEstaciones["latitud"][indice])
-            longitud = changeCoordenates(listaEstaciones["longitud"][indice])
+
+            if value == "mongo":
+                latitud = cursor[0]["latitud_D"]
+                longitud = cursor[0]["longitud_D"]
+            else:
+                latitud = changeCoordenates(listaEstaciones["latitud"][indice])
+                longitud = changeCoordenates(listaEstaciones["longitud"][indice])
+
+            
+
+
             url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
             headers = {
                 'cache-control': "no-cache"
@@ -365,38 +376,7 @@ def prediction():
             dEstacion[auxStation] = avgPredict
             #Actualizamos variables
             ok = True
-    '''
-            
-def check_prediction():
-    cursor = temperatura.find({"prediccion":{"$exists": False}})
-
-    for it in cursor:
-        com = list(comarca.find({"comarca_sg": it["comarca_sg"]}))
-
-        latitud = com[0]["Latitud"]
-        longitud = com[0]["Longitud"]
-
-        url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
-        headers = {
-        'cache-control': "no-cache"
-        }
-        #Si la consulta no da ningun valor, guardamos en el diccionario y le damos un valor de None para no volver a buscar 
-        response = requests.request("GET", url, headers=headers)
-        json_response = response.json()
-        #Comprobamos si existe un error
-
-        if "error" in json_response: 
-            continue
-        
-        #Calculamos la media de la prediccion
-        avgPredict = 0
-        for i in range(1,8):
-            avgPredict += json_response["day{}".format(i)]['temperature_min']
-
-        avgPredict = avgPredict/7
-
-        temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": avgPredict}})
-
+    
 def changeCoordenates(coordenada):
     D = int(coordenada[0:2]) 
     M = int(coordenada[2:4]) 
@@ -406,21 +386,61 @@ def changeCoordenates(coordenada):
     
     return DD
 
+def thirdPrediction(parametro):
+    cursor = temperatura.find({"prediccion":{"$exists": False}})
+    
+    for it in cursor:
+        #Contadores a 0
+        cont = 0
+        prediccionTotal = 0
+
+        #Sacamos de comarcas la provincia
+        comarcaResult = list(comarca.find({"comarca_sg": it['comarca_sg']}))
+        #Buscamos comarcas con la misma provincia
+        provinciaResult = comarca.find({parametro: comarcaResult[0][parametro]})
+        
+        for it2 in provinciaResult:
+            #Buscamos en la coleccion temperatura si tiene valor de prediccion
+            provinciaPre = list(temperatura.find({'comarca_sg': it2['comarca_sg']}))
+            #Si existe valor salimos 
+            if provinciaPre != [] and ("prediccion" in provinciaPre[0]):
+                prediccionTotal += provinciaPre[0]['prediccion']
+                cont+=1
+        
+        #MediaTotal
+        prediccionTotal = prediccionTotal/cont
+        #Guardado en Mongo
+        temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": prediccionTotal}})
+
+
+def prediction():
+    #Busqueda por coordenadas centroides comarcas
+    firstPrediction()
+    #Busqueda por coordenadas comarca en estaciones  
+    secondPrediction("mongo")
+    #Busqueda por coordenadas estaciones más cercanas
+    secondPrediction("listaE")
+    #Prediccion provincia o comunidad autonoma
+    thirdPrediction("provincia")
+    thirdPrediction("comAutonoma")
     
 def main(argv):
     #estaciones() #Construye la coleccion de estaciones
     #listStacion()
 
-    # generateListEmpty()
+    #generateListEmpty()
     #generateHistoric()
 
     #fillEmptyInfo()
 
+    #Borrar campo prediccion de todos los documentos
+    #temperatura.update_many({}, {"$unset": {"prediccion":1}})
+    
+    #
     prediction()
-    #check_prediction()
+    
+
     return 0
-
-
 
 if __name__ == "__main__":
     main(sys.argv[1:])

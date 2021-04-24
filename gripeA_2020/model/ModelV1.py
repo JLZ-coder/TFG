@@ -118,8 +118,8 @@ class ModelV1():
                     temperaturaM = 66 if (data['tMin'][comarca] <= 0.0) else (-7.82* ln(data['tMin'][comarca])) + 29.94
 
                 # Saturamos a 66
-                if temperaturaM > 66:
-                    temperaturaM = 66
+                #if temperaturaM > 66:
+                #    temperaturaM = 66
 
                 riesgo = int(nAlerta * temperaturaM)
             except:
@@ -129,7 +129,7 @@ class ModelV1():
             if riesgo > 5:
                 riesgo = 5
            
-            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : riesgo, "temperatura": temperaturaM, "brotes": broteEspecie })
+            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : riesgo, "temperatura": data['tMin'][comarca], "brotes": broteEspecie })
             alertas["nBrotes"] += len(broteEspecie)
         
         return alertas

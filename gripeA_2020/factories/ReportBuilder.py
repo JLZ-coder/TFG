@@ -45,7 +45,7 @@ class ReportBuilder(Builder):
         nAlerta = 1
         filasAlertas = ""
         filasBrotes = ""
-        nBrote = 1
+        nBrote = 0
         allNBrotes = 0
         for alerta in parameters['alertas']:
             #Sacar informacion de la comarca
@@ -60,7 +60,7 @@ class ReportBuilder(Builder):
             + "- *Id comarca*: "+ alerta['comarca_sg'] + "\n"
             + "- *Localización comarca*: " +  comarca['com_sgsa_n'] + "\n")
 
-            filasBrotes = ""
+            
             #Sacar informacion de brotes
             for brote, especie in alerta['brotes'].items():
                 cursor = list(brotes_db.find({'oieid': brote}))
@@ -77,6 +77,8 @@ class ReportBuilder(Builder):
             todosBrotes += encabezadoTablasBrotesAlertas + tablaBrotesAlertas + filasBrotes
             nAlerta += 1
             allNBrotes += nBrote
+            filasBrotes = ""
+            nBrote=0
 
         sumario = ("\n## Sumario del informe \n" +  " - *Número de comarcas ganaderas en alerta*: " + str(len(parameters['alertas']))
         + "\n - *Número de brotes en Europa asociados con movimientos de riesgo a España*: {}".format(allNBrotes))

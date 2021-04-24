@@ -5,7 +5,7 @@
 
 ## Sumario del informe 
  - *Número de comarcas ganaderas en alerta*: 5
- - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 20
+ - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 5
 
 ## Tabla de alertas 
 | Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |
@@ -25,7 +25,7 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 1| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
+| 0| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
 
 
 ### Alerta 2 
@@ -34,8 +34,7 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 1| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 2| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
+| 0| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
 
 
 ### Alerta 3 
@@ -44,9 +43,7 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 1| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 2| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 3| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
+| 0| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
 
 
 ### Alerta 4 
@@ -55,10 +52,7 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 1| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 2| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 3| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 4| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
+| 0| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
 
 
 ### Alerta 5 
@@ -67,8 +61,4 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 1| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 2| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 3| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 4| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
-| 5| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
+| 0| 290039|2021-02-27|2021-02-27|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Vanellus vanellus|51||Avefría europea  2015-2019|4930|0.2026|
