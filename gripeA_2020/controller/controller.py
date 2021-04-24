@@ -148,7 +148,7 @@ class Controller:
         en_riesgo = set()
         for alerta in alertas["alertas"]:
             if alerta["risk"] > 0:
-                en_riesgo.add(alerta["comarc_sg"])
+                en_riesgo.add(alerta["comarca_sg"])
 
         migrations_por_semana_aux = dict()
         migrations_por_semana_aux[start] = {}
@@ -162,11 +162,11 @@ class Controller:
         alertas_list = [alertas]
 
 
-        # broteEspecie = dict()
-        # broteEspecie[288337] = {"cientifico" : "Patito" ,"especie": "pollitus", "codigoE":70, "probEspecie": 0.2}
-        # alertas["alertas"].append({"comarca_sg" : "SP01059", "risk" : 3, "temperatura": 2.0, "brotes": broteEspecie })
+        #broteEspecie = dict()
+        #broteEspecie[288337] = {"cientifico" : "Patito" ,"especie": "pollitus", "codigoE":70, "probEspecie": 0.2}
+        #alertas["alertas"].append({"comarca_sg" : "SP01059", "risk" : 3, "temperatura": 2.0, "brotes": broteEspecie })
 
-        #reportPDF = self.dataFactory.createData("report",start, end, alertas)
+        reportPDF = self.dataFactory.createData("report",start, end, alertas)
         geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana_aux, lista_comarcas, brotes_por_semana)

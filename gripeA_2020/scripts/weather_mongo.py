@@ -20,7 +20,7 @@ comarca = db.comarcas
 
 bisiesto = ["2012", "2016","2020","2024"]
 fechaInicial = "2017-01-02"
-fechaFinal = "2021-04-5"
+fechaFinal = "2021-04-18"
 
 semanaFinal = datetime.strptime(fechaFinal, '%Y-%m-%d')
 nSemanaFinal = semanaFinal.isocalendar()[1]-1
@@ -278,6 +278,37 @@ def search(anio, restoEstaciones, index, comarca, semana):
     return resulta
 
 def prediction():
+
+    #Sacamos la prediccion de las comarcas
+    cursor = comarca.find({})
+
+    for it in cursor:
+        latitud = changeCoordenates(it["latitud"])
+        longitud = changeCoordenates(listaEstaciones["longitud"])
+        url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
+        headers = {
+            'cache-control': "no-cache"
+        }
+        #Si la consulta no da ningun valor, guardamos en el diccionario y le damos un valor de None para no volver a buscar 
+        response = requests.request("GET", url, headers=headers)
+        json_response = response.json()
+        #Comprobamos si existe un error
+
+        if "error" in json_response: 
+            continue
+            
+        #Calculamos la media de la prediccion
+        avgPredict = 0
+        for i in range(1,8):
+            avgPredict += json_response["day{}".format(i)]['temperature_min']
+
+        avgPredict = avgPredict/7
+
+        #Guardamos la media de la prediccion
+        temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": avgPredict}})
+
+
+    '''    
     #Sacamos coordenadas estacion para la predicción 
     cursor = estacion.find({})
     dEstacion = dict()
@@ -334,8 +365,7 @@ def prediction():
             dEstacion[auxStation] = avgPredict
             #Actualizamos variables
             ok = True
-
-    print(cont)
+    '''
             
 def check_prediction():
     cursor = temperatura.find({"prediccion":{"$exists": False}})
@@ -387,7 +417,7 @@ def main(argv):
     #fillEmptyInfo()
 
     prediction()
-    check_prediction()
+    #check_prediction()
     return 0
 
 

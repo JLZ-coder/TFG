@@ -127,7 +127,7 @@ def downloadOutbreaks():
     open("data/outbreaksWeeks.csv", 'wb').write(myFile.content)
     #Abrimos csv para quedarnos con brotes nuevos de la ultima semana
     df = pd.read_csv('data/outbreaksWeeks.csv')
-    df.rename(columns={'event_id': 'oieid', 'Disease': 'disease', 'Serotype': 'serotype', 'Locality': 'city', 
+    df.rename(columns={'event_id': 'oieid', 'Disease': 'disease', 'Serotype': 'serotype', 'locality': 'city', 
         'lon': 'long', 'Country': 'country', 'Location': 'location', 'Species': 'species', 'display_date': 'date'}, inplace=True)
     
     #Solo con brotes de Europa
@@ -142,7 +142,7 @@ def downloadOutbreaks():
     #Lunes de esta semana
     monday = today + timedelta(days = -today.weekday())
     #Semana anterior 
-    lastWeek = monday - timedelta(weeks = 6)
+    lastWeek = monday - timedelta(weeks = 8)
     #Indices para borrar el resto de filas
     dfAux = []
     #Convertimos string a datetime columna Report Date
@@ -175,7 +175,7 @@ def downloadOutbreaks():
 
 def main(argv):
   
-    #loadOutbreaks()
+    loadOutbreaks()
     downloadOutbreaks()
 
     return 0
