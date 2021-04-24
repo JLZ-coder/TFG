@@ -21,13 +21,12 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    # uploader = gDriveUploader()
-    # uploader.upload_file('markdown/informePrueba.pdf', 'informePrueba.pdf', 'alertas')
-    # lista_url = uploader.get_url_from('informePrueba.pdf', 'alertas')
-
     geojsonGen = GeojsonGenerator()
 
     control = Controller(modelSelector, dataFact, geojsonGen)
+
+    upload = gDriveUploader()
+    upload.download_file("Informe Semanal 19-04-2021.pdf", "alertas", "markdown")
 
     control.runOnlineTool()
 

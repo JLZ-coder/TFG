@@ -67,8 +67,8 @@ class gDriveUploader:
 
         existing_id = self.get_id_from(title, dest_folder)
 
-        for id in existing_id:
-            file1 = self.drive.CreateFile({"id": existing_id[0]})
+        for file_id in existing_id:
+            file1 = self.drive.CreateFile({"id": file_id})
             file1.Trash()
 
         if dest_folder == None:
@@ -92,6 +92,23 @@ class gDriveUploader:
                     file1 = self.drive.CreateFile(params) # Carpeta informe
                     file1.SetContentFile(filepath)
                     file1.Upload()
+
+        return 0
+
+    # Puede crear la carpeta si no existe, pero solo dentro de la carpeta principal del drive
+    # Returns lista de urls para compartir
+    def download_file(self, filename, foldername=None, rec_folder=None):
+        localfolder = ""
+        if rec_folder != None:
+            localfolder = rec_folder
+
+        files = self.get_file_from(filename, foldername)
+
+        if len(files) == 0:
+            return None
+
+        for file in files:
+            file.GetContentFile(localfolder + "/" + file['title'])
 
         return 0
 
@@ -152,5 +169,22 @@ class gDriveUploader:
 
         return lista_fileurl
 
+    def get_file_from(self, filename, foldername=None):
+
+        files = []
+
+        if foldername == None:
+            files = self.drive.ListFile(
+                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+        else:
+            folders = self.drive.ListFile(
+                {'q': "title='" + foldername + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
+
+            for folder in folders:
+                if folder['title'] == foldername:
+                    files = self.drive.ListFile(
+                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+
+        return files
 
 
