@@ -9,12 +9,18 @@ class ReportBuilder(Builder):
     def __init__(self):
         super().__init__("report")
 
-    def reportPDF(self):
-        output = pypandoc.convert_file('markdown/informePrueba.md', 'pdf', outputfile="markdown/informePrueba.pdf", extra_args=['-H', 'markdown/header.sty'])
+    def reportPDF(self, filepath, pdfpath=None):
+        if pdfpath == None:
+            pdfpath, old_ext = os.path.splitext(filepath)
+            pdfpath += ".pdf"
 
-    def pdf_to_drive(self):
+        output = pypandoc.convert_file(filepath, 'pdf', outputfile=pdfpath, extra_args=['-H', 'markdown/header.sty'])
+
+        return pdfpath
+
+    def pdf_to_drive(self, filepath, title=None, folder=None):
         uploader = gDriveUploader()
-        uploader.upload_file('markdown/informePrueba.pdf', 'informeCron.pdf', 'alertas')
+        uploader.upload_file(filepath, title, folder)
 
     def create(self, start, end, parameters):
         
@@ -68,12 +74,14 @@ class ReportBuilder(Builder):
         else:
             textoFinal = cabecera + sumario
 
-        f = open ('markdown/informePrueba.md','w', encoding="utf-8")
+        informePath = "markdown/Informe Semanal " + start.strftime("%d-%m-%Y") + ".md"
+        f = open (informePath,'w+', encoding="utf-8")
         f.write(textoFinal)
         f.close()
 
-        self.reportPDF()
-        self.pdf_to_drive()
+        informePdfPath = self.reportPDF(informePath)
+        informePdfName = informePdfPath.split("/")[-1]
+        self.pdf_to_drive(informePdfPath, informePdfName, "alertas")
 
         return textoFinal
 

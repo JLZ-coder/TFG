@@ -63,7 +63,13 @@ class gDriveUploader:
         if title != None:
             params['title'] = title
         else:
-            title = filepath
+            title = filepath.split("/")[-1]
+
+        existing_id = self.get_id_from(title, dest_folder)
+
+        for id in existing_id:
+            file1 = self.drive.CreateFile({"id": existing_id[0]})
+            file1.Trash()
 
         if dest_folder == None:
             file1 = self.drive.CreateFile(params)
@@ -121,6 +127,28 @@ class gDriveUploader:
 
         for file in files:
             lista_fileurl.append(file['alternateLink'])
+
+        return lista_fileurl
+
+    def get_id_from(self, filename, foldername=None):
+
+        lista_fileurl = []
+        files = []
+
+        if foldername == None:
+            files = self.drive.ListFile(
+                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+        else:
+            folders = self.drive.ListFile(
+                {'q': "title='" + foldername + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
+
+            for folder in folders:
+                if folder['title'] == foldername:
+                    files = self.drive.ListFile(
+                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+
+        for file in files:
+            lista_fileurl.append(file['id'])
 
         return lista_fileurl
 
