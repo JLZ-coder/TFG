@@ -7,7 +7,7 @@ from factories.MigrationProbBuilder import MigrationProbBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
 from controller.controller import Controller
-from factories.ReportBuilder_copy import ReportBuilder
+from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
 from model.gdriveUploader import gDriveUploader
 
@@ -38,10 +38,6 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    uploader = gDriveUploader()
-    uploader.upload_file('markdown/informePrueba.pdf', 'informePrueba.pdf', 'alertas')
-    lista_url = uploader.get_url_from('informePrueba.pdf', 'alertas')
-
     date = datetime(2020,1,1)
     geojsonGen = GeojsonGenerator()
 
@@ -50,7 +46,7 @@ def main(argv):
     #toolOffLine(control)
    
     #control.runOfflineTool(date, 52, 3)
-    #control.runOnlineTool()
+    control.runOnlineTool()
 
     return 0
 

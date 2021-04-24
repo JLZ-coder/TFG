@@ -141,13 +141,16 @@ class Controller:
 
         alertas = self.model.run(start,end)
 
+        alertas["alertas"] = list(filter(lambda alerta: alerta["risk"] != 0, alertas["alertas"]))
+
         alertas_list = [alertas]
+
 
         # broteEspecie = dict()
         # broteEspecie[288337] = {"cientifico" : "Patito" ,"especie": "pollitus", "codigoE":70, "probEspecie": 0.2}
         # alertas["alertas"].append({"comarca_sg" : "SP01059", "risk" : 3, "temperatura": 2.0, "brotes": broteEspecie })
 
-        reportPDF = self.dataFactory.createData("report",start, end, alertas)
+        #reportPDF = self.dataFactory.createData("report",start, end, alertas)
         geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
         geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
         geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
