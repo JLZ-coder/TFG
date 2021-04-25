@@ -3,10 +3,6 @@ from git import Repo
 from datetime import date, datetime
 
 def main(argv): 
-    now = datetime.now()
-
-    today = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-
     copia_a_destino = "cp -r /home/caballes/TFG/gripeA_2020/geojson/. /home/caballes/applicacionWeb/GeoJSON/"
     os.system(copia_a_destino)
 
@@ -17,6 +13,8 @@ def main(argv):
         'GeoJSON/brotes.geojson',
         'GeoJSON/rutas.geojson'
     ]
+    now = datetime.now()
+    today = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     try:
         commit_message = 'Subida semanal de geojson ' + today
         repo.index.add(file_list)

@@ -175,7 +175,7 @@ def downloadOutbreaks():
 
 def main(argv):
 
-    loadOutbreaks()
+    #loadOutbreaks()
     downloadOutbreaks()
 
     return 0

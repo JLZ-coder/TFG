@@ -197,9 +197,9 @@ class Controller:
             current_week_end = current_week + timedelta(weeks = 1)
             i += 1
 
-        geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
-        geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
-        geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
+        geojson_alerta = self.geojsonGen.update_alerta(alertas_list, lista_comarcas)
+        geojson_outbreak = self.geojsonGen.update_outbreak(brotes_por_semana)
+        geojson_migration = self.geojsonGen.update_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
 
         return 0
 

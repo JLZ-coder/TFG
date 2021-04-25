@@ -1,11 +1,7 @@
 import math
 from datetime import datetime, timedelta, date
 import json
-<<<<<<< Updated upstream
 from model.gdriveUploader import gDriveUploader
-=======
-import os
->>>>>>> Stashed changes
 
 class GeojsonGenerator:
     def __init__(self):
@@ -76,10 +72,10 @@ class GeojsonGenerator:
         # # Quitamos las alertas de riesgo 0
         # json_alertas["features"] = list(filter(lambda alerta: alerta["properties"]["reportDate"] > 0, alertas["alertas"]))
 
-        ultima_fecha = datetime.min
+        latest_date = 0
         for alerta in json_alertas["features"]:
-            if alerta["properties"]["reportDate"] > ultima_fecha:
-                ultima_fecha = alerta["properties"]["reportDate"]
+            if alerta["properties"]["reportDate"] > latest_date:
+                latest_date = alerta["properties"]["reportDate"]
 
 
         comarcas_de_alertlist = set()
@@ -87,7 +83,7 @@ class GeojsonGenerator:
 
         for alertas in alertList:
             start = alertas["start"]
-            if start > ultima_fecha:
+            if start.timestamp() * 1000 > latest_date:
                 end = alertas["end"]
                 start.replace(hour=1)
                 end.replace(hour=1)
@@ -120,7 +116,7 @@ class GeojsonGenerator:
                         }
                         feat_col_alertas["features"].append(aux)
 
-        json_alertas["features"].append(feat_col_alertas["features"])
+        json_alertas["features"].extend(feat_col_alertas["features"])
 
         text_file = open("geojson/alertas.geojson", "w", encoding="utf-8")
         n = text_file.write(json.dumps(json_alertas, ensure_ascii=False))
@@ -198,11 +194,6 @@ class GeojsonGenerator:
         f = open("geojson/rutas.geojson")
         json_rutas = json.load(f)
 
-        ultima_fecha = datetime.min
-        for alerta in json_rutas["features"]:
-            if alerta["properties"]["reportDate"] > ultima_fecha:
-                ultima_fecha = alerta["properties"]["reportDate"]
-
         for semana in outbreakComarca:
 
             migration_dict = dict()
@@ -252,7 +243,7 @@ class GeojsonGenerator:
 
                     feat_col_migracion['features'].append(aux)
 
-        json_rutas["features"].append(feat_col_migracion["features"])
+        json_rutas["features"].extend(feat_col_migracion["features"])
 
         text_file = open("geojson/rutas.geojson", "w", encoding="utf-8")
         n = text_file.write(json.dumps(json_rutas, ensure_ascii=False))
@@ -316,6 +307,11 @@ class GeojsonGenerator:
         f = open("geojson/brotes.geojson")
         json_brotes = json.load(f)
 
+        set_oieid = set()
+
+        for brote in json_brotes["features"]:
+            set_oieid.add(brote["properties"]["id"]) 
+
         for semana in outbreaklist:
             for it in outbreaklist[semana]:
                 if ('city' not in it):
@@ -343,7 +339,9 @@ class GeojsonGenerator:
 
                 feat_col_brote['features'].append(aux)
 
-        json_brotes["features"].append(feat_col_brote["features"])
+        for brote in feat_col_brote["features"]:
+            if brote["properties"]["id"] not in set_oieid:
+                json_brotes["features"].append(brote)
 
         text_file = open("geojson/brotes.geojson", "w", encoding="utf-8")
         n = text_file.write(json.dumps(json_brotes, ensure_ascii=False))
