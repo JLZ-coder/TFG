@@ -25,10 +25,9 @@ def main(argv):
 
     control = Controller(modelSelector, dataFact, geojsonGen)
 
-    upload = gDriveUploader()
-    upload.download_file("Informe Semanal 19-04-2021.pdf", "alertas", "markdown")
-
     control.runOnlineTool()
+
+
 
     return 0
 

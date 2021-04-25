@@ -493,7 +493,7 @@ def main(argv):
     #Borrar campo prediccion de todos los documentos
     #temperatura.update_many({}, {"$unset": {"prediccion":1}})
     #temperatura.update_one({"idEstacion":"0002I"}, {"$pull":{"historicoFinal.2021": 8.8}})
-    #Actualización diaria 
+    #Actualización diaria
     cronTemp()
     #Prediccion
     prediction()
