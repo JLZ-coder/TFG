@@ -4,6 +4,7 @@ import markdown
 import pypandoc
 import os
 from model.gdriveUploader import gDriveUploader
+import csv
 
 class ReportBuilder(Builder):
     def __init__(self):
@@ -21,6 +22,7 @@ class ReportBuilder(Builder):
     def pdf_to_drive(self, filepath, title=None, folder=None):
         uploader = gDriveUploader()
         uploader.upload_file(filepath, title, folder)
+
 
     def create(self, start, end, parameters):
         
@@ -40,7 +42,10 @@ class ReportBuilder(Builder):
         
         tablaBrotesAlertas = ("\n| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |\n" 
         +"|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|\n" )
-       
+
+        #CSV
+        csvCabeceraAlertas = ["Nº","Fecha","Comarca","ID CG","Nº brotes","Nº mov. Riesgo","Grado alerta","Temperatura estimada","Supervivencia del virus en días"]
+        csvCabeceraBrotes = ["ID","Nº Alerta","Event ID", "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
         todosBrotes = ""
         nAlerta = 1
         filasAlertas = ""
@@ -98,8 +103,8 @@ class ReportBuilder(Builder):
         f.close()
 
         informePdfPath = self.reportPDF(informePath)
-        #informePdfName = informePdfPath.split("/")[-1]
-        #self.pdf_to_drive(informePdfPath, informePdfName, "alertas")
+        informePdfName = informePdfPath.split("/")[-1]
+        self.pdf_to_drive(informePdfPath, informePdfName, "alertas")
 
         return textoFinal
 

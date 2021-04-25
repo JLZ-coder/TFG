@@ -1,6 +1,7 @@
 import math
 from datetime import datetime, timedelta, date
 import json
+from model.gdriveUploader import gDriveUploader
 
 class GeojsonGenerator:
     def __init__(self):
@@ -14,7 +15,7 @@ class GeojsonGenerator:
 
         comarcas_de_alertlist = set()
         it = dict()
-
+        
         for alertas in alertList:
             start = alertas["start"]
             end = alertas["end"]
@@ -22,6 +23,9 @@ class GeojsonGenerator:
             end.replace(hour=1)
             comarcas_de_alertlist.clear()
 
+            #Ruta informe
+            uploader = gDriveUploader()
+            ruta = uploader.get_url_from("InformeSemanal_{}.pdf".format(start.strftime("%d-%m-%Y")))
             for it in alertas["alertas"]:
                 if it['risk'] != 0:
                     comarcas_de_alertlist.add(it['comarca_sg'])
@@ -40,11 +44,11 @@ class GeojsonGenerator:
                             "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                         },
                         "properties": {
-                            "idAlerta": it['comarca_sg'] + " " + start.strftime("%d-%m-%Y"),
+                            "idAlerta": it['comarca_sg'] + "_" + start.strftime("%d-%m-%Y"),
                             "Riesgo": it['risk'],
                             "reportDate": start.timestamp() * 1000,
                             "comarca": it['com_sgsa_n'],
-                            "informe": ""
+                            "informe": ruta[0]
                         }
                     }
                     feat_col_alertas["features"].append(aux)
@@ -104,7 +108,7 @@ class GeojsonGenerator:
                             },
                             "properties": {
                                 "idBrote": oieid,
-                                "idAlerta": cod_comarca + " " + semana.strftime("%d-%m-%Y"),
+                                "idAlerta": cod_comarca + "_" + semana.strftime("%d-%m-%Y"),
                                 "idComarca": cod_comarca,
                             }
                         }
