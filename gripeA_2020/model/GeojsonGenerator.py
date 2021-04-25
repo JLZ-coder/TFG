@@ -25,7 +25,7 @@ class GeojsonGenerator:
             for it in alertas["alertas"]:
                 if it['risk'] != 0:
                     comarcas_de_alertlist.add(it['comarca_sg'])
-                    # cod_comarca = it['comarca_sg']
+                    cod_comarca = it['comarca_sg']
                     it['Longitud'] = comarcasDict[cod_comarca]['Longitud']
                     it['Latitud'] = comarcasDict[cod_comarca]['Latitud']
                     it['com_sgsa_n'] = comarcasDict[cod_comarca]['com_sgsa_n']
@@ -40,7 +40,7 @@ class GeojsonGenerator:
                             "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                         },
                         "properties": {
-                            "idAlerta": it['comarca_sg'] + " " + starts.strftime("%d-%m-%Y")
+                            "idAlerta": it['comarca_sg'] + " " + start.strftime("%d-%m-%Y"),
                             "Riesgo": it['risk'],
                             "reportDate": start.timestamp() * 1000,
                             "comarca": it['com_sgsa_n'],

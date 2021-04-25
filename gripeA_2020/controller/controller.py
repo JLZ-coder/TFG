@@ -89,9 +89,12 @@ class Controller:
 
     def runOnlineTool(self):
 
-        #Fecha actual
+        #Semana actual
         start = date.today() + timedelta(days = -date.today().weekday())
+        #Fecha hace 364 dias, 52 semanas
+        start -= timedelta(weeks=52)
         end = start + timedelta(weeks = 1)
+
         #Convert to datetime
         start = datetime.combine(start, datetime.min.time())
         end = datetime.combine(end, datetime.min.time())
