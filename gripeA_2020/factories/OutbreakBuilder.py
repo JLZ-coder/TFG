@@ -18,7 +18,7 @@ class OutbreakBuilder(Builder):
 
         neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
-        listaBrotes = brotes_db.find({"observation_date" : {"$gt" : start, "$lte" : end}})
+        listaBrotes = brotes_db.find({"observation_date" : {"$gte" : start, "$lt" : end}})
 
         tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
 
@@ -48,11 +48,13 @@ class OutbreakBuilder(Builder):
         # ...
         # ..
         # .
+        outbreak_date = start
+        outbreak_week = outbreak_date + timedelta(days = -outbreak_date.weekday())
         for brote in listaBrotes:
             #Con los nuevos brotes, no tenemos en cuenta esta comprobación
             #if brote["disease_id"] != "201":
-            outbreak_date = brote["observation_date"]
-            outbreak_week = outbreak_date + timedelta(days = -outbreak_date.weekday())
+            # outbreak_date = brote["observation_date"]
+            # outbreak_week = outbreak_date + timedelta(days = -outbreak_date.weekday())
             brotes_por_semana[outbreak_week].append(brote)
 
             geohash_del_brote = brote['geohash'][0:4]
@@ -83,4 +85,4 @@ class OutbreakBuilder(Builder):
                             else:
                                 comarca_brotes[cod].append(valor)
 
-        return comarca_brotes, brotes_por_semana
+        return comarca_brotes, brotes_por_semana[outbreak_week]

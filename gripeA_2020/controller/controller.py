@@ -115,8 +115,8 @@ class Controller:
         # .
 
         # 12 semanas = 84 dias = aprox. 3 meses
-        outbreakStart = start - timedelta(weeks = 12)
-        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", outbreakStart, end , None)
+        # outbreakStart = start - timedelta(weeks = 12)
+        # comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", outbreakStart, end , None)
 
         #Temperature
         #tMin = self.dataFactory.createData("temp",start, end, True)
@@ -137,7 +137,7 @@ class Controller:
 
         #Geojson generator
         migrations_por_semana = dict()
-
+        brotes_por_semana = dict()
         alertas_list = list()
 
         comarcas_en_riesgo = set()
@@ -145,12 +145,13 @@ class Controller:
         i = 0
         current_week = start
         current_week_end = current_week + timedelta(weeks=1)
-        while (i < this_many_weeks):
+        while (i <= this_many_weeks):
             print("Run model para semana " + str(current_week))
             # 12 semanas = 84 dias = aprox. 3 meses
             outbreakStart = current_week - timedelta(weeks = 12)
             # brotes_por_semana_aux no se usa
-            comarca_brotes, brotes_por_semana_aux = self.dataFactory.createData("outbreak", outbreakStart, current_week_end , None)
+            comarca_brotes, brotes_esta_semana = self.dataFactory.createData("outbreak", outbreakStart, current_week_end , None)
+            brotes_por_semana[current_week] = brotes_esta_semana
 
             #Temperature
             tMin = self.dataFactory.createData("temp",current_week, current_week_end, True)
@@ -172,15 +173,17 @@ class Controller:
             # -----------------------------------------------------------
             comarcas_en_riesgo.clear()
             for alerta in alertas["alertas"]:
-                if alerta["risk"] > 0:
-                    comarcas_en_riesgo.add(alerta["comarca_sg"])
+                if current_week not in migrations_por_semana:
+                    migrations_por_semana[current_week] = {}
 
-            for comarca in comarca_brotes:
-                if comarca in comarcas_en_riesgo:
-                    if current_week not in migrations_por_semana:
-                        migrations_por_semana[current_week] = {}
+                migrations_por_semana[current_week][alerta["comarca_sg"]] = comarca_brotes[alerta["comarca_sg"]]
 
-                    migrations_por_semana[current_week][comarca] = comarca_brotes[comarca]
+            # for comarca in comarca_brotes:
+            #     if comarca in comarcas_en_riesgo:
+            #         if current_week not in migrations_por_semana:
+            #             migrations_por_semana[current_week] = {}
+
+            #         migrations_por_semana[current_week][comarca] = comarca_brotes[comarca]
             # -----------------------------------------------------------
 
             print(">>> Alertas total: " + str(len(alertas["alertas"])))

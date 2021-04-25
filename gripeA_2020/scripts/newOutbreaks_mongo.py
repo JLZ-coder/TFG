@@ -174,7 +174,7 @@ def downloadOutbreaks():
 #Main
 
 def main(argv):
-  
+
     loadOutbreaks()
     downloadOutbreaks()
 
