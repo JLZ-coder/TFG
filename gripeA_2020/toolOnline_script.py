@@ -10,6 +10,7 @@ from controller.controller import Controller
 from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
 from model.gdriveUploader import gDriveUploader
+import os
 
 def main(argv):
     dataBuilderList = list()
