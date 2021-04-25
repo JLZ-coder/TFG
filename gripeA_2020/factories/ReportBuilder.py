@@ -6,7 +6,8 @@ import os
 from model.gdriveUploader import gDriveUploader
 import unicodecsv as csv
 import codecs
-
+import os
+from os import remove
 class ReportBuilder(Builder):
     uploader = gDriveUploader()
 
@@ -25,11 +26,37 @@ class ReportBuilder(Builder):
     def file_to_drive(self, filepath, title=None, folder=None):
         self.uploader.upload_file(filepath, title, folder)
 
-    def download_csv(self, filepath, title=None, folder=None ):
-        self.uploader.get_file_from(filename)
+    def load_csv(self, cabeceraAlertas, cabeceraBrotes, nuevasAlertas, nuevosBrotes):
+        #CSV generales
+        alertasDrive = None
+        brotesDrive = None
+        #CSV Alertas
+        if not os.path.isfile("markdown/alertasDrive.csv"): 
+            alertasDrive = codecs.open("markdown/alertasDrive.csv", "wb+")  
+            writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)         
+            writer.writeheader()
+        else: 
+            alertasDrive = codecs.open("markdown/alertasDrive.csv", "ab+") 
+            writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)
 
+        writer.writerows(nuevasAlertas)
+        alertasDrive.close()
+        self.file_to_drive("markdown/alertasDrive.csv", "alertas.csv", "alertas")
 
+        #CSV Brotes
+        
+        if not os.path.isfile("markdown/brotesDrive.csv"):
+            brotesDrive = codecs.open("markdown/brotesDrive.csv", "wb+")
+            writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
+            writer.writeheader()
+        else:
+            brotesDrive = codecs.open("markdown/brotesDrive.csv", "ab+")
+            writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
 
+        writer.writerows(nuevosBrotes)
+        brotesDrive.close()
+        self.file_to_drive("markdown/brotesDrive.csv", "brotes.csv", "alertas")
+        
     def create(self, start, end, parameters):
         
         client = MongoClient('mongodb://localhost:27017/')
@@ -54,7 +81,7 @@ class ReportBuilder(Builder):
         csvCabeceraAlertas = ["Nº","Fecha","Comarca","ID CG","Nº brotes","Nº mov. Riesgo","Grado alerta","Temperatura estimada","Supervivencia del virus en días"]
         csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG","Event ID", "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
         
-        csvFile = codecs.open("markdown/report.csv", "wb+")
+        
         todosBrotes = ""
         nAlerta = 1
         filasAlertas = ""
@@ -121,14 +148,7 @@ class ReportBuilder(Builder):
             textoFinal = cabecera + sumario
 
         #Creamos csv brotes
-        writer = csv.DictWriter(csvFile, fieldnames=csvCabeceraAlertas)
-        writer.writeheader()
-        writer.writerows(filasAlertasCsv)
-        
-        writer = csv.DictWriter(csvFile, fieldnames=csvCabeceraBrotes)
-        writer.writeheader()
-        writer.writerows(filasBrotesCsv)
-        csvFile.close()
+        self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv)
 
         #Actualizacion
         informePath = "markdown/InformeSemanal_" + start.strftime("%d-%m-%Y") + ".md"

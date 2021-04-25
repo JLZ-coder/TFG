@@ -132,7 +132,7 @@ class gDriveUploader:
 
         if foldername == None:
             files = self.drive.ListFile(
-                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/csv' ) and trashed=false"}).GetList()
         else:
             folders = self.drive.ListFile(
                 {'q': "title='" + foldername + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
@@ -140,7 +140,7 @@ class gDriveUploader:
             for folder in folders:
                 if folder['title'] == foldername:
                     files = self.drive.ListFile(
-                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and ( mimeType='application/pdf' or mimeType='text/csv' ) and trashed=false"}).GetList()
 
         for file in files:
             lista_fileurl.append(file['alternateLink'])
@@ -154,7 +154,7 @@ class gDriveUploader:
 
         if foldername == None:
             files = self.drive.ListFile(
-                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/csv' ) and trashed=false"}).GetList()
         else:
             folders = self.drive.ListFile(
                 {'q': "title='" + foldername + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
@@ -162,7 +162,7 @@ class gDriveUploader:
             for folder in folders:
                 if folder['title'] == foldername:
                     files = self.drive.ListFile(
-                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and trashed=false"}).GetList()
 
         for file in files:
             lista_fileurl.append(file['id'])
@@ -175,7 +175,7 @@ class gDriveUploader:
 
         if foldername == None:
             files = self.drive.ListFile(
-                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+                {'q': "title='" + filename + "' and ( mimeType='application/pdf' or mimeType='text/csv' ) and trashed=false"}).GetList()
         else:
             folders = self.drive.ListFile(
                 {'q': "title='" + foldername + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
@@ -183,7 +183,7 @@ class gDriveUploader:
             for folder in folders:
                 if folder['title'] == foldername:
                     files = self.drive.ListFile(
-                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and ( mimeType='application/pdf' or mimeType='text/plain' ) and trashed=false"}).GetList()
+                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and ( mimeType='application/pdf' or mimeType='text/csv' ) and trashed=false"}).GetList()
 
         return files
 
