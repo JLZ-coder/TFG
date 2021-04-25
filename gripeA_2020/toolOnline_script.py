@@ -27,8 +27,6 @@ def main(argv):
 
     control.runOnlineTool()
 
-
-
     return 0
 
 
