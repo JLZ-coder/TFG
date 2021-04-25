@@ -4,9 +4,12 @@ import markdown
 import pypandoc
 import os
 from model.gdriveUploader import gDriveUploader
-import csv
+import unicodecsv as csv
+import codecs
 
 class ReportBuilder(Builder):
+    uploader = gDriveUploader()
+
     def __init__(self):
         super().__init__("report")
 
@@ -19,9 +22,12 @@ class ReportBuilder(Builder):
 
         return pdfpath
 
-    def pdf_to_drive(self, filepath, title=None, folder=None):
-        uploader = gDriveUploader()
-        uploader.upload_file(filepath, title, folder)
+    def file_to_drive(self, filepath, title=None, folder=None):
+        self.uploader.upload_file(filepath, title, folder)
+
+    def download_csv(self, filepath, title=None, folder=None ):
+        self.uploader.get_file_from(filename)
+
 
 
     def create(self, start, end, parameters):
@@ -43,44 +49,61 @@ class ReportBuilder(Builder):
         tablaBrotesAlertas = ("\n| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |\n" 
         +"|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|\n" )
 
+
         #CSV
         csvCabeceraAlertas = ["Nº","Fecha","Comarca","ID CG","Nº brotes","Nº mov. Riesgo","Grado alerta","Temperatura estimada","Supervivencia del virus en días"]
-        csvCabeceraBrotes = ["ID","Nº Alerta","Event ID", "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
+        csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG","Event ID", "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
+        
+        csvFile = codecs.open("markdown/report.csv", "wb+")
         todosBrotes = ""
         nAlerta = 1
         filasAlertas = ""
         filasBrotes = ""
         nBrote = 0
         allNBrotes = 0
+
+        #csv
+        filasAlertasCsv = []
+        filasBrotesCsv = []
         for alerta in parameters['alertas']:
             #Sacar informacion de la comarca
             
             cursor = list(comarca_db.find({'comarca_sg': alerta['comarca_sg']}))
             comarca = cursor[0]
             filasAlertas += ("|" +  str(nAlerta) + "|" + end.strftime('%Y-%m-%d') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
-            + "|" + str(len(alerta['brotes'])) + "|" + "N mov Riesgo" + "|" + str(alerta["risk"])+ "|" + str(round(alerta["temperatura"],4)) + "|" 
-            + "Supervivencia" + "|\n" )
+            + "|" + str(len(alerta['brotes'])) + "|" + str(round(alerta['movRiesgo'],4)) + "|" + str(alerta["risk"])+ "|" + str(round(alerta["temperatura"],4)) + "|" 
+            + str(round(alerta['super'],4)) + "|\n" )
 
             encabezadoTablasBrotesAlertas = ("\n\n### Alerta {} \n".format(nAlerta)
             + "- *Id comarca*: "+ alerta['comarca_sg'] + "\n"
             + "- *Localización comarca*: " +  comarca['com_sgsa_n'] + "\n")
 
+            #Csv
+            filasAlertasCsv.append({"Nº": nAlerta ,"Fecha": end.strftime('%Y-%m-%d') ,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'] ,"Nº brotes": len(alerta['brotes']),
+            "Nº mov. Riesgo": round(alerta['movRiesgo'],4) ,"Grado alerta": alerta["risk"],"Temperatura estimada": round(alerta["temperatura"],4) ,"Supervivencia del virus en días": round(alerta['super'],4)})
             
             #Sacar informacion de brotes
             for brote, especie in alerta['brotes'].items():
                 cursor = list(brotes_db.find({'oieid': brote}))
                 broteMongo = cursor[0]
 
-                # if 'city' not in broteMongo:
-                #     broteMongo['city'] = "Not especified"
+                if 'city' not in broteMongo:
+                    broteMongo['city'] = "Not especified"
 
                 filasBrotes += ("| "  + str(nBrote)  + "| " + str(brote)
                 + "|" + broteMongo['report_date'].strftime('%Y-%m-%d')  + "|" + broteMongo['observation_date'].strftime('%Y-%m-%d') + "|" + broteMongo['country']  + "|" + broteMongo['city'] 
                 + "|" + str(broteMongo['lat']) + "|" + str(broteMongo['long']) + "|" +broteMongo['epiunit']  + "|" + especie['cientifico']  + "|" + str(broteMongo['cases'])
                 + "|" + str(broteMongo['deaths'])  + "|" +especie['especie']  + "|" + str(especie["codigoE"]) + "|" + str(round(especie["probEspecie"],4)) + "|\n" )
-
+                
+                filasBrotesCsv.append({
+                    "ID": nBrote,"Nº Alerta": nAlerta,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'], "Event ID": brote, "Reporting date": broteMongo['observation_date'].strftime('%Y-%m-%d'),
+                    "Observational date": broteMongo['observation_date'].strftime('%Y-%m-%d'), "Country": broteMongo['country'], "Location": broteMongo['city'], "Latitud": broteMongo['lat'], "Longitud": broteMongo['long'],
+                    "An. Type": broteMongo['epiunit'],"Species": especie['cientifico'], "Cases": broteMongo['cases'], "Deaths": broteMongo['deaths'],"Especie movimiento": especie['especie'], "Cód.  Especie": especie["codigoE"], 
+                    "Prob mov semanal":round(especie["probEspecie"],4)
+                })
                 nBrote+=1
-            
+        
+
             #Creamos tabla de brotes de la alerta i
             todosBrotes += encabezadoTablasBrotesAlertas + tablaBrotesAlertas + filasBrotes
             nAlerta += 1
@@ -97,14 +120,25 @@ class ReportBuilder(Builder):
         else:
             textoFinal = cabecera + sumario
 
-        informePath = "markdown/Informe_Semanal_" + start.strftime("%d-%m-%Y") + ".md"
+        #Creamos csv brotes
+        writer = csv.DictWriter(csvFile, fieldnames=csvCabeceraAlertas)
+        writer.writeheader()
+        writer.writerows(filasAlertasCsv)
+        
+        writer = csv.DictWriter(csvFile, fieldnames=csvCabeceraBrotes)
+        writer.writeheader()
+        writer.writerows(filasBrotesCsv)
+        csvFile.close()
+
+        #Actualizacion
+        informePath = "markdown/InformeSemanal_" + start.strftime("%d-%m-%Y") + ".md"
         f = open (informePath,'w+', encoding="utf-8")
         f.write(textoFinal)
         f.close()
 
         informePdfPath = self.reportPDF(informePath)
         informePdfName = informePdfPath.split("/")[-1]
-        self.pdf_to_drive(informePdfPath, informePdfName, "alertas")
+        self.file_to_drive(informePdfPath, informePdfName, "alertas")
 
         return textoFinal
 

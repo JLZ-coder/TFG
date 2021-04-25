@@ -142,7 +142,7 @@ def downloadOutbreaks():
     #Lunes de esta semana
     monday = today + timedelta(days = -today.weekday())
     #Semana anterior 
-    lastWeek = monday - timedelta(weeks = 8)
+    lastWeek = monday - timedelta(weeks = 1)
     #Indices para borrar el resto de filas
     dfAux = []
     #Convertimos string a datetime columna Report Date

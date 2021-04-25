@@ -130,7 +130,7 @@ class ModelV1():
             if riesgo > 5:
                 riesgo = 5
            
-            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : riesgo, "temperatura": data['tMin'][comarca], "brotes": broteEspecie })
+            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : riesgo, "temperatura": data['tMin'][comarca], "movRiesgo":nAlerta, "super": temperaturaM, "brotes": broteEspecie })
             alertas["nBrotes"] += len(broteEspecie)
         
         return alertas
