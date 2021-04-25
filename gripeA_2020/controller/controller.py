@@ -88,12 +88,12 @@ class Controller:
         return geojson_alerta
 
     def runOnlineTool(self):
-
         #Semana actual
         start = date.today() + timedelta(days = -date.today().weekday())
         #Fecha hace 364 dias, 52 semanas
-        start -= timedelta(weeks=52)
-        end = start + timedelta(weeks = 1)
+        this_many_weeks = 8
+        start -= timedelta(weeks=this_many_weeks)
+        end = start + timedelta(weeks = this_many_weeks)
 
         #Convert to datetime
         start = datetime.combine(start, datetime.min.time())
@@ -114,12 +114,12 @@ class Controller:
         # ..
         # .
 
-        # 12 semanas = 3 meses
+        # 12 semanas = 84 dias = aprox. 3 meses
         outbreakStart = start - timedelta(weeks = 12)
-        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", outbreakStart, start , None)
+        comarca_brotes, brotes_por_semana = self.dataFactory.createData("outbreak", outbreakStart, end , None)
 
         #Temperature
-        tMin = self.dataFactory.createData("temp",start, end, True)
+        #tMin = self.dataFactory.createData("temp",start, end, True)
 
         #Comarca
         lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
@@ -128,51 +128,80 @@ class Controller:
         file = "data/Datos especies1.xlsx"
         matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
 
+        #DATA SENT TO MODEL
         data_to_model= dict()
-        data_to_model['comarca_brotes']= comarca_brotes
-        data_to_model['tMin'] = tMin
+        # data_to_model['comarca_brotes']= comarca_brotes
+        # data_to_model['tMin'] = tMin
         data_to_model['matrizEspecies'] = matrizEspecies
         data_to_model['online'] = True
 
-        #DATA SENT TO MODEL
-
         #Geojson generator
         migrations_por_semana = dict()
-        migrations_por_semana[start] = comarca_brotes
 
-        self.model.setData(data_to_model)
+        alertas_list = list()
 
-        alertas = self.model.run(start,end)
+        comarcas_en_riesgo = set()
 
-        alertas["alertas"] = list(filter(lambda alerta: alerta["risk"] != 0, alertas["alertas"]))
+        i = 0
+        current_week = start
+        current_week_end = current_week + timedelta(weeks=1)
+        while (i < this_many_weeks):
+            print("Run model para semana " + str(current_week))
+            # 12 semanas = 84 dias = aprox. 3 meses
+            outbreakStart = current_week - timedelta(weeks = 12)
+            # brotes_por_semana_aux no se usa
+            comarca_brotes, brotes_por_semana_aux = self.dataFactory.createData("outbreak", outbreakStart, current_week_end , None)
 
-        # Para seleccionar solo las rutas de comarcas en riesgo > 0
-        # -----------------------------------------------------------
-        en_riesgo = set()
-        for alerta in alertas["alertas"]:
-            if alerta["risk"] > 0:
-                en_riesgo.add(alerta["comarca_sg"])
+            #Temperature
+            tMin = self.dataFactory.createData("temp",current_week, current_week_end, True)
 
-        migrations_por_semana_aux = dict()
-        migrations_por_semana_aux[start] = {}
+            #DATA SENT TO MODEL
+            data_to_model['comarca_brotes']= comarca_brotes
+            data_to_model['tMin'] = tMin
 
-        for comarca in migrations_por_semana[start]:
-            if comarca in en_riesgo:
-                migrations_por_semana_aux[start][comarca] = migrations_por_semana[start][comarca]
-        # -----------------------------------------------------------
-        # Para seleccionar solo las rutas de comarcas en riesgo > 0
+            # RUN MODEL
+            self.model.setData(data_to_model)
+            alertas = self.model.run(current_week, current_week_end)
 
-        alertas_list = [alertas]
+            # Quitamos las alertas de riesgo 0
+            alertas["alertas"] = list(filter(lambda alerta: alerta["risk"] != 0, alertas["alertas"]))
 
+            alertas_list.append(alertas)
+
+            # Para seleccionar solo las rutas de comarcas en riesgo > 0
+            # -----------------------------------------------------------
+            comarcas_en_riesgo.clear()
+            for alerta in alertas["alertas"]:
+                if alerta["risk"] > 0:
+                    comarcas_en_riesgo.add(alerta["comarca_sg"])
+
+            for comarca in comarca_brotes:
+                if comarca in comarcas_en_riesgo:
+                    if current_week not in migrations_por_semana:
+                        migrations_por_semana[current_week] = {}
+
+                    migrations_por_semana[current_week][comarca] = comarca_brotes[comarca]
+            # -----------------------------------------------------------
+
+            print(">>> Alertas total: " + str(len(alertas["alertas"])))
+            print(">>> Alertas en riesgo: " + str(len(comarcas_en_riesgo)))
+
+            # Rellenar el informe semanal
+            reportPDF = self.dataFactory.createData("report",current_week, current_week_end, alertas)
+
+            #Actualizar current_week y current_week_end
+            current_week = current_week_end
+            current_week_end = current_week + timedelta(weeks = 1)
+            i += 1
+
+        geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
+        geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
+        geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
 
         #broteEspecie = dict()
         #broteEspecie[288337] = {"cientifico" : "Patito" ,"especie": "pollitus", "codigoE":70, "probEspecie": 0.2}
         #alertas["alertas"].append({"comarca_sg" : "SP01059", "risk" : 3, "temperatura": 2.0, "brotes": broteEspecie })
-
-        reportPDF = self.dataFactory.createData("report",start, end, alertas)
-        geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
-        geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
-        geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana_aux, lista_comarcas, brotes_por_semana)
+        #reportPDF = self.dataFactory.createData("report",start, end, alertas)
 
         return 0
 

@@ -66,6 +66,9 @@ class ReportBuilder(Builder):
                 cursor = list(brotes_db.find({'oieid': brote}))
                 broteMongo = cursor[0]
 
+                if 'city' not in broteMongo:
+                    broteMongo['city'] = "Not especified"
+
                 filasBrotes += ("| "  + str(nBrote)  + "| " + str(brote)
                 + "|" + broteMongo['report_date'].strftime('%Y-%m-%d')  + "|" + broteMongo['observation_date'].strftime('%Y-%m-%d') + "|" + broteMongo['country']  + "|" + broteMongo['city'] 
                 + "|" + str(broteMongo['lat']) + "|" + str(broteMongo['long']) + "|" +broteMongo['epiunit']  + "|" + especie['cientifico']  + "|" + str(broteMongo['cases'])
