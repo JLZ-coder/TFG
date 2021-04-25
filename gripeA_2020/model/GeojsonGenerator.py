@@ -73,6 +73,9 @@ class GeojsonGenerator:
         f = open("geojson/alertas.geojson")
         json_alertas = json.load(f)
 
+        # # Quitamos las alertas de riesgo 0
+        # json_alertas["features"] = list(filter(lambda alerta: alerta["properties"]["reportDate"] > 0, alertas["alertas"]))
+
         ultima_fecha = datetime.min
         for alerta in json_alertas["features"]:
             if alerta["properties"]["reportDate"] > ultima_fecha:
@@ -108,7 +111,7 @@ class GeojsonGenerator:
                                 "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                             },
                             "properties": {
-                                "idAlerta": it['comarca_sg'] + " " + start.strftime("%d-%m-%Y"),
+                                "idAlerta": it['comarca_sg'] + "_" + start.strftime("%d-%m-%Y"),
                                 "Riesgo": it['risk'],
                                 "reportDate": start.timestamp() * 1000,
                                 "comarca": it['com_sgsa_n'],
@@ -123,7 +126,7 @@ class GeojsonGenerator:
         n = text_file.write(json.dumps(json_alertas, ensure_ascii=False))
         text_file.close()
 
-        return feat_col_alertas
+        return json_alertas
 
     def generate_migration(self, outbreakComarca, comarcasDict, brotesDict):
         feat_col_migracion = {
@@ -192,6 +195,14 @@ class GeojsonGenerator:
             "features": []
         }
 
+        f = open("geojson/rutas.geojson")
+        json_rutas = json.load(f)
+
+        ultima_fecha = datetime.min
+        for alerta in json_rutas["features"]:
+            if alerta["properties"]["reportDate"] > ultima_fecha:
+                ultima_fecha = alerta["properties"]["reportDate"]
+
         for semana in outbreakComarca:
 
             migration_dict = dict()
@@ -241,11 +252,13 @@ class GeojsonGenerator:
 
                     feat_col_migracion['features'].append(aux)
 
+        json_rutas["features"].append(feat_col_migracion["features"])
+
         text_file = open("geojson/rutas.geojson", "w", encoding="utf-8")
-        n = text_file.write(json.dumps(feat_col_migracion, ensure_ascii=False))
+        n = text_file.write(json.dumps(json_rutas, ensure_ascii=False))
         text_file.close()
 
-        return feat_col_migracion
+        return json_rutas
 
     def generate_outbreak(self, outbreaklist):
         feat_col_brote = {
@@ -253,10 +266,18 @@ class GeojsonGenerator:
             "features": []
         }
 
+        set_oieid = set()
+
         for semana in outbreaklist:
             for it in outbreaklist[semana]:
+                if it['oieid'] in set_oieid:
+                    continue
+
                 if ('city' not in it):
                     it['city'] = "No especificado"
+
+                set_oieid.add(it['oieid'])
+
                 aux = {
                         "type": "Feature",
                         "geometry": {
@@ -292,6 +313,9 @@ class GeojsonGenerator:
             "features": []
         }
 
+        f = open("geojson/brotes.geojson")
+        json_brotes = json.load(f)
+
         for semana in outbreaklist:
             for it in outbreaklist[semana]:
                 if ('city' not in it):
@@ -319,8 +343,10 @@ class GeojsonGenerator:
 
                 feat_col_brote['features'].append(aux)
 
+        json_brotes["features"].append(feat_col_brote["features"])
+
         text_file = open("geojson/brotes.geojson", "w", encoding="utf-8")
-        n = text_file.write(json.dumps(feat_col_brote, ensure_ascii=False))
+        n = text_file.write(json.dumps(json_brotes, ensure_ascii=False))
         text_file.close()
 
-        return feat_col_brote
+        return json_brotes
