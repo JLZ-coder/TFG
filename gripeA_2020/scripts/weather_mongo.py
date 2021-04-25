@@ -5,11 +5,11 @@ import re
 import pandas as pd
 import pymongo
 from pymongo import MongoClient
-from datetime import datetime
+from datetime import datetime, timedelta, date
 import sys
 import codecs
 
-api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YWxlbmNpYWJhcmNlbG9uYUBnbWFpbC5jb20iLCJqdGkiOiJiYzY4MzM1Mi1kZjg3LTRlZTctYjQ4MS1hMDMyODQzZGMwMWIiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTYxMDM4OTY0OCwidXNlcklkIjoiYmM2ODMzNTItZGY4Ny00ZWU3LWI0ODEtYTAzMjg0M2RjMDFiIiwicm9sZSI6IiJ9.BanUHViE2mFsnjne_ilriezZqkDRYYT3Vf4SkKOcE04'
+api_key='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbWlsaW92YUB1Y20uZXMiLCJqdGkiOiJiZDc2MzgzMS1hMWU4LTQ4MTktOTE2Yy1lYzQ5MjE2OTJiYjAiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTYwNjQ3NTk4NiwidXNlcklkIjoiYmQ3NjM4MzEtYTFlOC00ODE5LTkxNmMtZWM0OTIxNjkyYmIwIiwicm9sZSI6IiJ9.0Z3PqEjKyMFhUztyu2LAPV7zYPEaeh2RXndZQdryTrE'
 api_key_tutiempo = "XwDqzzz4q4q748k"
 client= MongoClient('mongodb://localhost:27017/')
 db = client.lv
@@ -63,7 +63,7 @@ def listStacion():
     df = pd.DataFrame(list(cursor))
     df.to_excel('data/estaciones.xlsx', index=False)
 
-def responseApi(url):
+def responseApi(url, idEstacion):
 #Extraemos la url donde esta la informacion de la consulta a la API
     response = requests.request("GET", url, headers=headers)
     json_response = response.json()
@@ -116,9 +116,9 @@ def generateHistoric():
     for idEstacion in indicativos: #Recorremos la lista 
             
         #Url para valores diarios YYYY-MM-DDTHH:MM:SSUTC
-        url_valoresDiaros = "https://opendata.aemet.es/opendata/api/valores/climatologicos/diarios/datos/fechaini/{}/fechafin/{}/estacion/{}/?api_key={}".format(fechaini, fechafin,idEstacion,api_key)
+        url_valoresDiarios = "https://opendata.aemet.es/opendata/api/valores/climatologicos/diarios/datos/fechaini/{}/fechafin/{}/estacion/{}/?api_key={}".format(fechaini, fechafin,idEstacion,api_key)
         
-        json_response = responseApi(url_valoresDiarios)
+        json_response = responseApi(url_valoresDiarios, idEstacion)
         if json_response == False:
             continue
 
@@ -429,9 +429,29 @@ def prediction():
     thirdPrediction("provincia")
     thirdPrediction("comAutonoma")
 
+#Para las estaciones que en la consulta para la semana x no haya tenido valor, rellenamos
+def fillEmptyInfoCron(semana, anio):
+    #Insercion en una coleccion Comarca - Historico (Juntando varias estaciones)
+    cursor = estacion.find({})
+
+    #Recorremos todas las estaciones
+    for it in cursor:
+        estaHis = list(historico.find({"idEstacion": it['indicativo']}))
+
+        tMin = None if (estaHis == []) else estaHis[0]["historico(semanal)"][str(anio)][semana]
+
+        #Si no hay Tmin en la estación principal buscamos el valor en el resto de estaciones
+        if tMin == None:
+            tMin = search(str(anio), it['estacionesAdd'], 1, it['comarca_sg'], semana)
+        
+        temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set":{"historicoFinal.{}.{}".format(str(anio), semana): tMin}})
+
+        
+
 def cronTemp():
     #Lunes y domingo semana pasada
-    start = date.today() + timedelta(days = -date.today().weekday())
+    start = date.today() - timedelta(days = 1)
+    start = start + timedelta(days = -date.today().weekday())
     end = start + timedelta(days = 6)
     #Convert to datetime
     start = datetime.combine(start, datetime.min.time())
@@ -440,8 +460,8 @@ def cronTemp():
     semanaM = start.isocalendar()[1]-1
     anioM = start.year
     #Datetime to string
-    start = datetime.strptime(start, '%Y-%m-%d')
-    end = datetime.strptime(end, '%Y-%m-%d')
+    start = datetime.strftime(start, '%Y-%m-%d')
+    end = datetime.strftime(end, '%Y-%m-%d')
     #Fecha para url
     fechaini = "{}T00:00:00UTC".format(start)
     fechafin = "{}T00:00:00UTC".format(end)
@@ -454,46 +474,48 @@ def cronTemp():
     for idEstacion in indicativos: #Recorremos la lista
         minTotal = 0
         cont = 0 
+
+        #Url para valores diarios YYYY-MM-DDTHH:MM:SSUTC
+        url_valoresDiarios = "https://opendata.aemet.es/opendata/api/valores/climatologicos/diarios/datos/fechaini/{}/fechafin/{}/estacion/{}/?api_key={}".format(fechaini, fechafin,idEstacion,api_key)
+        
+        json_response = responseApi(url_valoresDiarios, idEstacion)
+
+        if json_response == False:
+            continue
+
         for api in json_response:
             if 'tmin' in api:
                 t = ""
                 for l, caracter in enumerate(api['tmin']): #Cambiar formato de la temperatura
                     t += '.' if (caracter == ',') else caracter
 
-                minTotal += int(t)
+                minTotal += float(t)
                 cont+=1
 
         if cont > 0:
             minTotal = minTotal / cont
             #Actualizar en historico -> historico(semanal) y boolCompleto
-            historico.update_one({"indicativo": idEstacion}, {"$set":{"historico(semanal).{}.{}".format(anioM, semanaM): minTotal}})
-            historico.update_one({"indicativo": idEstacion}, {"$pull":{"boolCompleto.{}".format(anioM): semanaM}})
+            historico.update_one({"idEstacion": idEstacion}, {"$set":{"historico(semanal).{}.{}".format(anioM, semanaM): minTotal}})
+            historico.update_one({"idEstacion": idEstacion}, {"$pull":{"boolCompleto.{}".format(anioM): semanaM}})
 
     #Rellenar las semanas vacias
+    fillEmptyInfoCron(semanaM, anioM)
 
-    #Guardarlo en temperatura
 
 
-        
-
-                
-
-    #Consulta mongo actualizar
-    temperatura.update_one({"comarca_sg": "SP08096"}, {"$set":{"historicoFinal.{}.{}".format(anioM, semanaM): 5}})
 
 def main(argv):
     #estaciones() #Construye la coleccion de estaciones
     #listStacion()
 
     #generateListEmpty()
-    #generateHistoric()
-
-    #fillEmptyInfo()
+    generateHistoric()
+    fillEmptyInfo()
 
     #Borrar campo prediccion de todos los documentos
     #temperatura.update_many({}, {"$unset": {"prediccion":1}})
     #temperatura.update_one({"idEstacion":"0002I"}, {"$pull":{"historicoFinal.2021": 8.8}})
-    #Actualización diaria
+    #Actualización diaria 
     cronTemp()
     #Prediccion
     prediction()

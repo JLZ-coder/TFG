@@ -123,6 +123,7 @@ class ModelV1():
 
                 riesgo = int(nAlerta * temperaturaM)
             except:
+                data['tMin'][comarca] = "No data"
                 riesgo = int(nAlerta)
                 print("No hay temperatura para la comarca: " + comarca)
 
