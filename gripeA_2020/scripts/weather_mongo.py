@@ -18,6 +18,10 @@ historico = db.historico
 temperatura = db.temperatura
 comarca = db.comarcas
 
+headers = {
+        'cache-control': "no-cache"
+}
+
 bisiesto = ["2012", "2016","2020","2024"]
 fechaInicial = "2017-01-02"
 fechaFinal = "2021-04-18"
@@ -58,6 +62,38 @@ def listStacion():
     cursor = estacion.find({})
     df = pd.DataFrame(list(cursor))
     df.to_excel('data/estaciones.xlsx', index=False)
+
+def responseApi(url):
+#Extraemos la url donde esta la informacion de la consulta a la API
+    response = requests.request("GET", url, headers=headers)
+    json_response = response.json()
+
+    if json_response['estado'] == 404:
+        print("Descripcion error: {} para la estacion {}".format(json_response['descripcion'], idEstacion))
+        return False
+    elif response.status_code == 200 and json_response['estado'] == 200:
+        #Extraemos la informacion de la API
+        response = requests.request("GET", json_response['datos'], headers=headers)
+        try:
+            json_response = response.json()
+
+            #Extraemos la url donde esta la informacion de la consulta a la API
+            response = requests.request("GET", url, headers=headers)
+        
+            json_response = response.json()
+
+            #Extraemos la informacion de la API
+            response = requests.request("GET", json_response['datos'], headers=headers)
+
+            json_response = response.json()
+        except:
+            print(response)
+            return False
+    
+    return json_response
+    
+
+
 #Accedemos a la API
 def generateHistoric():
     #Extraemos los indicativos de todas las estaciones
@@ -81,96 +117,74 @@ def generateHistoric():
             
         #Url para valores diarios YYYY-MM-DDTHH:MM:SSUTC
         url_valoresDiaros = "https://opendata.aemet.es/opendata/api/valores/climatologicos/diarios/datos/fechaini/{}/fechafin/{}/estacion/{}/?api_key={}".format(fechaini, fechafin,idEstacion,api_key)
-        #Extraemos la url donde esta la informacion de la consulta a la API
-        response = requests.request("GET", url_valoresDiaros, headers=headers)
-        json_response = response.json()
+        
+        json_response = responseApi(url_valoresDiarios)
+        if json_response == False:
+            continue
 
-        if json_response['estado'] == 404:
-            print("Descripcion error: {} para la estacion {}".format(json_response['descripcion'], idEstacion))
-        elif response.status_code == 200 and json_response['estado'] == 200:
-            #Extraemos la informacion de la API
-            response = requests.request("GET", json_response['datos'], headers=headers)
-            try:
-                json_response = response.json()
+        aux = {}
+        
+        #diccionario que va a mongo
+        semanal = {'2017':[None]*53, '2018':[None]*53, '2019':[None]*53, '2020':[None]*53, '2021':[None]*53}
+        #Calcular media semanal
+        semana = [None]*53
+        contador = [0]*53
+        anio = 2017 
+        semanaFinal =[None]*53
+        #Lista por año para saber que semanas no tienen valores
+        completo = {'2017':[], '2018':[], '2019':[], '2020':[], '2021':[]}
+        for api in json_response:
+            if 'tmin' in api:
+                t = ""
+                for l, caracter in enumerate(api['tmin']): #Cambiar formato de la temperatura
+                    t += '.' if (caracter == ',') else caracter
 
-                #Extraemos la url donde esta la informacion de la consulta a la API
-                response = requests.request("GET", url_valoresDiaros, headers=headers)
-            
-                json_response = response.json()
+                aux[api['fecha']] = float(t)
 
-                #Extraemos la informacion de la API
-                response = requests.request("GET", json_response['datos'], headers=headers)
+                fecha_dt = datetime.strptime(api['fecha'], '%Y-%m-%d')
 
-                json_response = response.json()
-            except:
-                print(response)
-
-            aux = {}
-            
-            #diccionario que va a mongo
-            semanal = {'2017':[None]*53, '2018':[None]*53, '2019':[None]*53, '2020':[None]*53, '2021':[None]*53}
-            #Calcular media semanal
-            semana = [None]*53
-            contador = [0]*53
-            anio = 2017 
-            semanaFinal =[None]*53
-            #Lista por año para saber que semanas no tienen valores
-            completo = {'2017':[], '2018':[], '2019':[], '2020':[], '2021':[]}
-            for api in json_response:
-                if 'tmin' in api:
-                    t = ""
-                    for l, caracter in enumerate(api['tmin']): #Cambiar formato de la temperatura
-                        t += '.' if (caracter == ',') else caracter
-
-                    #fecha_dt = datetime.strptime(api['fecha'], '%Y-%m-%d')
-                    #aux[fecha_dt] = float(t)
-                    aux[api['fecha']] = float(t)
-
-
-                    fecha_dt = datetime.strptime(api['fecha'], '%Y-%m-%d')
-
-                    semanaActual = fecha_dt.isocalendar()[1]-1
-                    if anio != fecha_dt.year and (semanaActual >= 0 and semanaActual < 52):
-                        #Meter valores medios semanales
-                        for i in range(0,len(semana)):
-                            if semana[i] == None:
-                                semanaFinal[i] = None
-                                completo[str(anio)].append(i)
-                            else:
-                                semanaFinal[i] = semana[i]/contador[i]
-                        semanal[str(anio)] = semanaFinal
-                        #Restablecer contadores 
-                        semana = [None]*53
-                        contador = [0]*53
-                        anio = fecha_dt.year
-                        semanaFinal = [None]*53
-                        
+                semanaActual = fecha_dt.isocalendar()[1]-1
+                if anio != fecha_dt.year and (semanaActual >= 0 and semanaActual < 52):
+                    #Meter valores medios semanales
+                    for i in range(0,len(semana)):
+                        if semana[i] == None:
+                            semanaFinal[i] = None
+                            completo[str(anio)].append(i)
+                        else:
+                            semanaFinal[i] = semana[i]/contador[i]
+                    semanal[str(anio)] = semanaFinal
+                    #Restablecer contadores 
+                    semana = [None]*53
+                    contador = [0]*53
+                    anio = fecha_dt.year
+                    semanaFinal = [None]*53
                     
-                    if semana[semanaActual]==None:
-                        semana[semanaActual] = float(t)
-                    else:
-                        semana[semanaActual] += float(t)
-                    
-                    contador[semanaActual] += 1
-
-            #Meter valores medios semanales del ultimo año
-            for i in range(0,len(semana)):
-                if semana[i] == None:
-                    semanaFinal[i] = None
-                    completo[str(anio)].append(i)
+                
+                if semana[semanaActual]==None:
+                    semana[semanaActual] = float(t)
                 else:
-                    semanaFinal[i] = semana[i]/contador[i]
-            
-            semanal[str(anio)] = semanaFinal   
+                    semana[semanaActual] += float(t)
+                
+                contador[semanaActual] += 1
 
-            #Relleno años vacios del array de booleanos
+        #Meter valores medios semanales del ultimo año
+        for i in range(0,len(semana)):
+            if semana[i] == None:
+                semanaFinal[i] = None
+                completo[str(anio)].append(i)
+            else:
+                semanaFinal[i] = semana[i]/contador[i]
+        
+        semanal[str(anio)] = semanaFinal   
+
+        #Relleno años vacios del array de booleanos
+        anio += 1
+        while anio <= 2021:
+            completo[str(anio)] = [*range(0,len(semana))]
             anio += 1
-            while anio <= 2021:
-                completo[str(anio)] = [*range(0,len(semana))]
-                anio += 1
 
-            df.append({'idEstacion': idEstacion, 'historico':aux, 'historico(semanal)': semanal, 'boolCompleto': completo})
-            
+        df.append({'idEstacion': idEstacion, 'historico(semanal)': semanal, 'boolCompleto': completo})
+        
 
     text_file = open("data/historico1.json", "w")
     n = text_file.write(json.dumps(df))
@@ -215,9 +229,6 @@ def fillEmptyInfo():
     df = []
 
     for it in estaciones:
-
-        if it['comarca_sg'] == "SP25040":
-            print(1)
         valor = list(historico.find({'idEstacion': it['indicativo']}, {'_id':False, 'historico(semanal)':True, 'boolCompleto': True}))
         
         estacionDebug = it['comarca_sg']
@@ -232,7 +243,7 @@ def fillEmptyInfo():
         else:
             his, comp = fillEmptyWeeks(valor[0]['historico(semanal)'], valor[0]['boolCompleto'], it['estacionesAdd'], it['comarca_sg'], 1)
 
-        df.append({'comarca_sg': it['comarca_sg'], 'historicoFinal': his, 'completo': comp })
+        df.append({'comarca_sg': it['comarca_sg'], 'historicoFinal': his })
 
     temperatura.delete_many({})
     temperatura.insert_many(df) 
@@ -286,9 +297,7 @@ def firstPrediction():
         latitud = it["Latitud"]
         longitud = it["Longitud"]
         url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
-        headers = {
-            'cache-control': "no-cache"
-        }
+       
         #Si la consulta no da ningun valor, guardamos en el diccionario y le damos un valor de None para no volver a buscar 
         response = requests.request("GET", url, headers=headers)
         json_response = response.json()
@@ -306,8 +315,7 @@ def firstPrediction():
 
         #Guardamos la media de la prediccion
         temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": avgPredict}})
-
-            
+           
 def secondPrediction(value):
     cursor = temperatura.find({"prediccion":{"$exists": False}})
    
@@ -351,9 +359,7 @@ def secondPrediction(value):
 
 
             url = "https://api.tutiempo.net/json/?lan=es&apid={}&ll={},{}".format(api_key_tutiempo,latitud,longitud)
-            headers = {
-                'cache-control': "no-cache"
-            }
+
             #Si la consulta no da ningun valor, guardamos en el diccionario y le damos un valor de None para no volver a buscar 
             response = requests.request("GET", url, headers=headers)
             json_response = response.json()
@@ -412,7 +418,6 @@ def thirdPrediction(parametro):
         #Guardado en Mongo
         temperatura.update_one({"comarca_sg": it['comarca_sg']}, {"$set": {"prediccion": prediccionTotal}})
 
-
 def prediction():
     #Busqueda por coordenadas centroides comarcas
     firstPrediction()
@@ -423,7 +428,59 @@ def prediction():
     #Prediccion provincia o comunidad autonoma
     thirdPrediction("provincia")
     thirdPrediction("comAutonoma")
-    
+
+def cronTemp():
+    #Lunes y domingo semana pasada
+    start = date.today() + timedelta(days = -date.today().weekday())
+    end = start + timedelta(days = 6)
+    #Convert to datetime
+    start = datetime.combine(start, datetime.min.time())
+    end = datetime.combine(end, datetime.min.time())
+    #Semana y anio 
+    semanaM = start.isocalendar()[1]-1
+    anioM = start.year
+    #Datetime to string
+    start = datetime.strptime(start, '%Y-%m-%d')
+    end = datetime.strptime(end, '%Y-%m-%d')
+    #Fecha para url
+    fechaini = "{}T00:00:00UTC".format(start)
+    fechafin = "{}T00:00:00UTC".format(end)
+
+    #Indicativos
+    cursor = estacion.find({},{'indicativo':True, '_id':False}).distinct('indicativo')
+
+    indicativos = list(cursor)
+
+    for idEstacion in indicativos: #Recorremos la lista
+        minTotal = 0
+        cont = 0 
+        for api in json_response:
+            if 'tmin' in api:
+                t = ""
+                for l, caracter in enumerate(api['tmin']): #Cambiar formato de la temperatura
+                    t += '.' if (caracter == ',') else caracter
+
+                minTotal += int(t)
+                cont+=1
+
+        if cont > 0:
+            minTotal = minTotal / cont
+            #Actualizar en historico -> historico(semanal) y boolCompleto
+            historico.update_one({"indicativo": idEstacion}, {"$set":{"historico(semanal).{}.{}".format(anioM, semanaM): minTotal}})
+            historico.update_one({"indicativo": idEstacion}, {"$pull":{"boolCompleto.{}".format(anioM): semanaM}})
+
+    #Rellenar las semanas vacias
+
+    #Guardarlo en temperatura
+
+
+        
+
+                
+
+    #Consulta mongo actualizar
+    temperatura.update_one({"comarca_sg": "SP08096"}, {"$set":{"historicoFinal.{}.{}".format(anioM, semanaM): 5}})
+
 def main(argv):
     #estaciones() #Construye la coleccion de estaciones
     #listStacion()
@@ -435,10 +492,11 @@ def main(argv):
 
     #Borrar campo prediccion de todos los documentos
     #temperatura.update_many({}, {"$unset": {"prediccion":1}})
-    
-    #
+    #temperatura.update_one({"idEstacion":"0002I"}, {"$pull":{"historicoFinal.2021": 8.8}})
+    #Actualización diaria 
+    cronTemp()
+    #Prediccion
     prediction()
-    
 
     return 0
 
