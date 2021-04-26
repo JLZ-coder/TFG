@@ -11,8 +11,16 @@ from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
 from model.gdriveUploader import gDriveUploader
 import os
+from git import Repo
+from scripts.newOutbreaks_mongo import downloadOutbreaks
+from scripts.weather_mongo import cronTemp, prediction
 
 def main(argv):
+    downloadOutbreaks()
+
+    cronTemp()
+    prediction()
+
     dataBuilderList = list()
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())
@@ -26,7 +34,7 @@ def main(argv):
 
     control = Controller(modelSelector, dataFact, geojsonGen)
 
-    control.runOnlineTool()
+    control.runOnlineTool_1year()
 
     # Subida de los geojson a master
     copia_a_destino = "cp -r /home/caballes/TFG/gripeA_2020/geojson/. /home/caballes/applicacionWeb/GeoJSON/"

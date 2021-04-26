@@ -50,7 +50,7 @@ class TempBuilder(Builder):
                         i += 1
 
                     if temp == None:
-                        tempMin[comarca['comarca_sg']] = 0
+                        tempMin[comarca['comarca_sg']] = None
                     else:
                         tempMin[comarca['comarca_sg']] = temp
 
