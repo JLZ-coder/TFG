@@ -46,7 +46,7 @@ class GeojsonGenerator:
                             "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                         },
                         "properties": {
-                            "idAlerta": it['comarca_sg'] + "_" + start.strftime("%d-%m-%Y"),
+                            "idAlerta": it['comarca_sg'] + "_" + start.timestamp() * 1000,
                             "Riesgo": it['risk'],
                             "reportDate": start.timestamp() * 1000,
                             "comarca": it['com_sgsa_n'],
@@ -109,7 +109,7 @@ class GeojsonGenerator:
                                 "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                             },
                             "properties": {
-                                "idAlerta": it['comarca_sg'] + "_" + start.strftime("%d-%m-%Y"),
+                                "idAlerta": it['comarca_sg'] + "_" + start.timestamp() * 1000,
                                 "Riesgo": it['risk'],
                                 "reportDate": start.timestamp() * 1000,
                                 "comarca": it['com_sgsa_n'],
@@ -178,11 +178,7 @@ class GeojsonGenerator:
                             },
                             "properties": {
                                 "idBrote": oieid,
-<<<<<<< HEAD
                                 "idAlerta": cod_comarca + "_" + str(reportDate),
-=======
-                                "idAlerta": cod_comarca + "_" + semana.strftime("%d-%m-%Y"),
->>>>>>> d11f57d59a292b1f2e601ee80a9403468c345df8
                                 "idComarca": cod_comarca
                             }
                         }
@@ -246,11 +242,7 @@ class GeojsonGenerator:
                             },
                             "properties": {
                                 "idBrote": oieid,
-<<<<<<< HEAD
                                 "idAlerta": cod_comarca + "_" + str(reportDate),
-=======
-                                "idAlerta": cod_comarca + " " + semana.strftime("%d-%m-%Y"),
->>>>>>> d11f57d59a292b1f2e601ee80a9403468c345df8
                                 "idComarca": cod_comarca
                             }
                         }

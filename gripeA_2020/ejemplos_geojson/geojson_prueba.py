@@ -185,19 +185,31 @@ def main(argv):
     #n = text_file.write(json.dumps(comarc_centro))
     #text_file.close()
 
-    f = open("geojson/rutas.geojson")
-    json_rutas = json.load(f)
+    # f = open("geojson/alertas.geojson")
+    # json_alertas = json.load(f)
 
-    for feature in json_rutas["features"]:
-        alerta_fecha = feature["properties"]["reportDate"]
-        cod_comarca = feature["properties"]["idComarca"]
-        alerta_id = cod_comarca + "_" + str(alerta_fecha)
+    # for feature in json_alertas["features"]:
+    #     alerta_fecha = feature["properties"]["idAlerta"]
+    #     alerta, fecha = alerta_fecha.split("_")
+    #     fecha = datetime.strptime(fecha, "%d-%m-%Y").replace(hour=1)
+
+    #     alerta_id = alerta + "_" + str(fecha.timestamp() * 1000)
+    #     feature["properties"]["idAlerta"] = alerta_id
         
-        feature["properties"]["idAlerta"] = alerta_id
-        del feature["properties"]["reportDate"]
 
-    text_file = open("ejemplos_geojson/rutas.geojson", "w", encoding="utf-8")
-    n = text_file.write(json.dumps(json_rutas, ensure_ascii=False))
+    # text_file = open("ejemplos_geojson/alertas.geojson", "w", encoding="utf-8")
+    # n = text_file.write(json.dumps(json_alertas, ensure_ascii=False))
+    # text_file.close()
+
+    f = open("geojson/brotes.geojson")
+    json_brotes = json.load(f)
+
+    for feature in json_brotes["features"]:
+        del feature["properties"]["moreInfo"]
+        
+
+    text_file = open("ejemplos_geojson/brotes.geojson", "w", encoding="utf-8")
+    n = text_file.write(json.dumps(json_brotes, ensure_ascii=False))
     text_file.close()
 
 
