@@ -67,6 +67,7 @@ class ModelV1():
         alertas["alertas"] = []
         alertas["nBrotes"] = 0
 
+        semana = start.isocalendar()[1]-1
         #Calculamos la probabildad de migracion de la semana anterior
         thisWeek, thisWeek_days, nextWeek, nextWeek_days = self.prob_week_days(start)
 
@@ -75,12 +76,15 @@ class ModelV1():
         casosTotales = 0
         #Modelo
         nAlerta = 0
+        #Csv
+        totalMov = 0
         # Para cada comarca
         for comarca, brotes in data['comarca_brotes'].items():
             nAlerta = 0
 
             broteEspecie.clear()
             casosTotales = 0
+            totalMov = 0
             # Se recorren los brotes asociados a la comarca, se hace el sumatorio de los resultados de la formula (probMigra/100) * probType
             # probMigra, la probabilidad de que migra la especie de la ruta asociada a un brote
             # probType, la probabilidad asociada al tipo de brote (wild, captive, domestic)
@@ -100,8 +104,11 @@ class ModelV1():
 
                 contrBrote = (probMigra/100)*probType
                 nAlerta += contrBrote
-                broteEspecie[brote["oieid"]] = {"cientifico" : data['matrizEspecies']['Nombre científico'][brote["especie"]] ,"especie": data['matrizEspecies']['Especie'][brote["especie"]], "codigoE": brote["especie"], "probEspecie": probMigra}
+                broteEspecie[brote["oieid"]] = {"cientifico" : data['matrizEspecies']['Nombre científico'][brote["especie"]] ,
+                "especie": data['matrizEspecies']['Especie'][brote["especie"]], "codigoE": brote["especie"], 
+                "probEspecie": probMigra, "probType": probType, "riesgoBrote": contrBrote}
 
+                totalMov += brote["nMov"]
                 if brote['casos'] != "":
                     casosTotales += brote['casos']
 
@@ -125,12 +132,18 @@ class ModelV1():
             except:
                 data['tMin'][comarca] = "No data"
                 riesgo = int(nAlerta)
-                print("No hay temperatura para la comarca: " + comarca)
+                print("No hay temperatura en la semana {} para la comarca {}".format(semana, comarca))
 
             if riesgo > 5:
                 riesgo = 5
            
-            alertas["alertas"].append({"comarca_sg" : comarca, "risk" : riesgo, "temperatura": data['tMin'][comarca], "movRiesgo":nAlerta, "super": temperaturaM, "brotes": broteEspecie })
+            alertas["alertas"].append({
+                "comarca_sg" : comarca, 
+                "risk" : riesgo, 
+                "temperatura": data['tMin'][comarca],  
+                "super": temperaturaM, 
+                "brotes": broteEspecie,
+                "movRiesgo": totalMov })
             alertas["nBrotes"] += len(broteEspecie)
         
         return alertas

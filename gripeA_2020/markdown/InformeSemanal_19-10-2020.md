@@ -1,7 +1,7 @@
 # DiFLUsion: Informe de Alerta Semanal 
 
- - *Fecha*: 2020-10-19
- - *Periodo de*: 2020-10-19 a 2020-10-26
+ - *Fecha*: 19-10-2020
+ - *Periodo de*: 19-10-2020 a 26-10-2020
 
 ## Sumario del informe 
  - *Número de comarcas ganaderas en alerta*: 0

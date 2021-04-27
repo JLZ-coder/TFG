@@ -64,8 +64,8 @@ class ReportBuilder(Builder):
         brotes_db = db.outbreaks
         comarca_db = db.comarcas
 
-        cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n\n - *Fecha*: " +  start.strftime('%Y-%m-%d') 
-        + "\n - *Periodo de*: " +   start.strftime('%Y-%m-%d') + " a " + end.strftime('%Y-%m-%d') + "\n")
+        cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n\n - *Fecha*: " +  start.strftime('%d-%m-%Y') 
+        + "\n - *Periodo de*: " +   start.strftime('%d-%m-%Y') + " a " + end.strftime('%d-%m-%Y') + "\n")
 
         # cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n" 
         # + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |\n"
@@ -80,10 +80,10 @@ class ReportBuilder(Builder):
         tablaBrotesAlertas = ("\n| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |\n" 
         +"|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|\n" )
 
-
         #CSV
         csvCabeceraAlertas = ["Nº","Fecha","Comarca","ID CG","Nº brotes","Nº mov. Riesgo","Grado alerta","Temperatura estimada","Supervivencia del virus en días"]
-        csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG","Event ID", "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
+        csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG", "Grado alerta", "Event ID", "Temperatura estimada", "Supervivencia del virus en días"
+        "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "Ponderacion brote", "Riesgo brote", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
         
         
         todosBrotes = ""
@@ -101,8 +101,10 @@ class ReportBuilder(Builder):
             
             cursor = list(comarca_db.find({'comarca_sg': alerta['comarca_sg']}))
             comarca = cursor[0]
-            filasAlertas += ("|" +  str(nAlerta) + "|" + end.strftime('%Y-%m-%d') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
-            + "|" + str(len(alerta['brotes'])) + "|" + str(round(alerta['movRiesgo'],4)) + "|" + str(alerta["risk"])+ "|" + str(round(alerta["temperatura"],4)) + "|" 
+
+            alerta["temperatura"] = "No data" if alerta['temperatura'] == "No data" else round(alerta["temperatura"],2)
+            filasAlertas += ("|" +  str(nAlerta) + "|" + end.strftime('%d-%m-%Y') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
+            + "|" + str(len(alerta['brotes'])) + "|" + str(alerta['movRiesgo']) + "|" + str(alerta["risk"])+ "|" + str(alerta["temperatura"]) + "|" 
             + str(round(alerta['super'],4)) + "|\n" )
 
             encabezadoTablasBrotesAlertas = ("\n\n### Alerta {} \n".format(nAlerta)
@@ -110,8 +112,8 @@ class ReportBuilder(Builder):
             + "- *Localización comarca*: " +  comarca['com_sgsa_n'] + "\n")
 
             #Csv
-            filasAlertasCsv.append({"Nº": nAlerta ,"Fecha": end.strftime('%Y-%m-%d') ,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'] ,"Nº brotes": len(alerta['brotes']),
-            "Nº mov. Riesgo": round(alerta['movRiesgo'],4) ,"Grado alerta": alerta["risk"],"Temperatura estimada": round(alerta["temperatura"],4) ,"Supervivencia del virus en días": round(alerta['super'],4)})
+            filasAlertasCsv.append({"Nº": nAlerta ,"Fecha": end.strftime('%d-%m-%Y') ,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'] ,"Nº brotes": len(alerta['brotes']),
+            "Nº mov. Riesgo": alerta['movRiesgo'] ,"Grado alerta": alerta["risk"],"Temperatura estimada": alerta["temperatura"] ,"Supervivencia del virus en días": round(alerta['super'],4)})
             
             #Sacar informacion de brotes
             for brote, especie in alerta['brotes'].items():
@@ -122,15 +124,22 @@ class ReportBuilder(Builder):
                     broteMongo['city'] = "Not especified"
 
                 filasBrotes += ("| "  + str(nBrote)  + "| " + str(brote)
-                + "|" + broteMongo['report_date'].strftime('%Y-%m-%d')  + "|" + broteMongo['observation_date'].strftime('%Y-%m-%d') + "|" + broteMongo['country']  + "|" + broteMongo['city'] 
+                + "|" + broteMongo['report_date'].strftime('%d-%m-%Y')  + "|" + broteMongo['observation_date'].strftime('%d-%m-%Y') + "|" + broteMongo['country']  + "|" + broteMongo['city'] 
                 + "|" + str(broteMongo['lat']) + "|" + str(broteMongo['long']) + "|" +broteMongo['epiunit']  + "|" + especie['cientifico']  + "|" + str(broteMongo['cases'])
                 + "|" + str(broteMongo['deaths'])  + "|" +especie['especie']  + "|" + str(especie["codigoE"]) + "|" + str(round(especie["probEspecie"],4)) + "|\n" )
                 
                 filasBrotesCsv.append({
-                    "ID": nBrote,"Nº Alerta": nAlerta,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'], "Event ID": brote, "Reporting date": broteMongo['observation_date'].strftime('%Y-%m-%d'),
-                    "Observational date": broteMongo['observation_date'].strftime('%Y-%m-%d'), "Country": broteMongo['country'], "Location": broteMongo['city'], "Latitud": broteMongo['lat'], "Longitud": broteMongo['long'],
-                    "An. Type": broteMongo['epiunit'],"Species": especie['cientifico'], "Cases": broteMongo['cases'], "Deaths": broteMongo['deaths'],"Especie movimiento": especie['especie'], "Cód.  Especie": especie["codigoE"], 
-                    "Prob mov semanal":round(especie["probEspecie"],4)
+                    "ID": nBrote,"Nº Alerta": nAlerta,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'], 
+                    "Grado alerta": alerta["risk"], "Event ID": brote, "Temperatura estimada": alerta["temperatura"],
+                    "Supervivencia del virus en días": round(alerta['super'],0),
+                    "Reporting date": broteMongo['observation_date'].strftime('%d-%m-%Y'),
+                    "Observational date": broteMongo['observation_date'].strftime('%d-%m-%Y'), 
+                    "Country": broteMongo['country'], "Location": broteMongo['city'], 
+                    "Latitud": broteMongo['lat'], "Longitud": broteMongo['long'],
+                    "Ponderacion brote": especie['probType'], "Riesgo brote": especie['riesgoBrote'],
+                    "An. Type": broteMongo['epiunit'],"Species": especie['cientifico'], "Cases": broteMongo['cases'], 
+                    "Deaths": broteMongo['deaths'],"Especie movimiento": especie['especie'], 
+                    "Cód.  Especie": especie["codigoE"], "Prob mov semanal":round(especie["probEspecie"],4)
                 })
                 nBrote+=1
         

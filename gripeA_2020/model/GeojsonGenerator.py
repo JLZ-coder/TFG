@@ -178,7 +178,11 @@ class GeojsonGenerator:
                             },
                             "properties": {
                                 "idBrote": oieid,
+<<<<<<< HEAD
                                 "idAlerta": cod_comarca + "_" + str(reportDate),
+=======
+                                "idAlerta": cod_comarca + "_" + semana.strftime("%d-%m-%Y"),
+>>>>>>> d11f57d59a292b1f2e601ee80a9403468c345df8
                                 "idComarca": cod_comarca
                             }
                         }
@@ -242,7 +246,11 @@ class GeojsonGenerator:
                             },
                             "properties": {
                                 "idBrote": oieid,
+<<<<<<< HEAD
                                 "idAlerta": cod_comarca + "_" + str(reportDate),
+=======
+                                "idAlerta": cod_comarca + " " + semana.strftime("%d-%m-%Y"),
+>>>>>>> d11f57d59a292b1f2e601ee80a9403468c345df8
                                 "idComarca": cod_comarca
                             }
                         }
@@ -293,8 +301,7 @@ class GeojsonGenerator:
                             "cases": "" if it['cases']== "" else int(it['cases']),
                             "deaths": "" if it['deaths']== "" else int(it['deaths']),
                             "serotipo": it['serotype'],
-                            "moreInfo": it['urlFR'],
-                            "epiUnit": it['epiunit'],
+                            "epiUnit": it['epiunit']
                         }
                     }
 
@@ -340,8 +347,7 @@ class GeojsonGenerator:
                             "cases": "" if it['cases']== "" else int(it['cases']),
                             "deaths": "" if it['deaths']== "" else int(it['deaths']),
                             "serotipo": it['serotype'],
-                            "moreInfo": it['urlFR'],
-                            "epiUnit": it['epiunit'],
+                            "epiUnit": it['epiunit']
                         }
                     }
 

@@ -78,7 +78,8 @@ class OutbreakBuilder(Builder):
                                 "epiunit" : brote["epiunit"],
                                 "serotype": brote['serotype'],
                                 "casos": brote['cases'],
-                                "especie":relacion[1]
+                                "especie":relacion[1],
+                                "nMov": len(response)
                             }
                             if cod not in comarca_brotes:
                                 comarca_brotes[cod] = [valor]
