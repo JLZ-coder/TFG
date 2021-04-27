@@ -8,6 +8,8 @@ class GeojsonGenerator:
         pass
 
     def generate_alerta(self, alertList, comarcasDict):
+        print("Generar alertas.geojson")
+
         feat_col_alertas = {
             "type": "FeatureCollection",
             "features": []
@@ -19,8 +21,8 @@ class GeojsonGenerator:
         for alertas in alertList:
             start = alertas["start"]
             end = alertas["end"]
-            start.replace(hour=1)
-            end.replace(hour=1)
+            start = start.replace(hour=1)
+            end = end.replace(hour=1)
             comarcas_de_alertlist.clear()
 
             #Ruta informe
@@ -85,8 +87,8 @@ class GeojsonGenerator:
             start = alertas["start"]
             if start.timestamp() * 1000 > latest_date:
                 end = alertas["end"]
-                start.replace(hour=1)
-                end.replace(hour=1)
+                start = start.replace(hour=1)
+                end = end.replace(hour=1)
                 comarcas_de_alertlist.clear()
 
                 for it in alertas["alertas"]:
@@ -125,6 +127,7 @@ class GeojsonGenerator:
         return json_alertas
 
     def generate_migration(self, outbreakComarca, comarcasDict, brotesDict):
+        print("Generar rutas.geojson")
         feat_col_migracion = {
             "type": "FeatureCollection",
             "features": []
@@ -133,6 +136,7 @@ class GeojsonGenerator:
         for semana in outbreakComarca:
 
             migration_dict = dict()
+            semana_aux = semana.replace(hour=1)
 
             for cod_comarca in outbreakComarca[semana]:
 
@@ -141,6 +145,7 @@ class GeojsonGenerator:
                 dict_oieid = migration_dict[cod_comarca]["oieids"]
                 migration_dict[cod_comarca]["lat"] = comarcasDict[cod_comarca]["Latitud"]
                 migration_dict[cod_comarca]["long"] = comarcasDict[cod_comarca]["Longitud"]
+                migration_dict[cod_comarca]["reportDate"] = semana_aux.timestamp() * 1000
 
                 for brote in outbreakComarca[semana][cod_comarca]:
 
@@ -152,6 +157,7 @@ class GeojsonGenerator:
 
                 comarca_long = migration_dict[cod_comarca]["long"]
                 comarca_lat = migration_dict[cod_comarca]["lat"]
+                reportDate = migration_dict[cod_comarca]["reportDate"]
 
                 for oieid in migration_dict[cod_comarca]["oieids"]:
 
@@ -172,8 +178,8 @@ class GeojsonGenerator:
                             },
                             "properties": {
                                 "idBrote": oieid,
-                                "idAlerta": cod_comarca + "_" + semana.strftime("%d-%m-%Y"),
-                                "idComarca": cod_comarca,
+                                "idAlerta": cod_comarca + "_" + str(reportDate),
+                                "idComarca": cod_comarca
                             }
                         }
 
@@ -236,8 +242,8 @@ class GeojsonGenerator:
                             },
                             "properties": {
                                 "idBrote": oieid,
-                                "idAlerta": cod_comarca + " " + semana.strftime("%d-%m-%Y"),
-                                "idComarca": cod_comarca,
+                                "idAlerta": cod_comarca + "_" + str(reportDate),
+                                "idComarca": cod_comarca
                             }
                         }
 
@@ -252,6 +258,8 @@ class GeojsonGenerator:
         return json_rutas
 
     def generate_outbreak(self, outbreaklist):
+        print("Generar brotes.geojson")
+
         feat_col_brote = {
             "type": "FeatureCollection",
             "features": []

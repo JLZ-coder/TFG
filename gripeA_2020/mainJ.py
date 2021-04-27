@@ -38,15 +38,11 @@ def main(argv):
 
     modelSelector = ModelSelector()
 
-    date = datetime(2020,1,1)
     geojsonGen = GeojsonGenerator()
 
     control = Controller(modelSelector, dataFact, geojsonGen)
-    #ReportBuilder.reportPDF()
-    #toolOffLine(control)
-   
-    #control.runOfflineTool(date, 52, 3)
-    control.runOnlineTool()
+
+    control.runOnlineTool_1year()
 
     return 0
 

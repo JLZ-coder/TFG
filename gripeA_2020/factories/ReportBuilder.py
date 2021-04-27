@@ -67,6 +67,10 @@ class ReportBuilder(Builder):
         cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n\n - *Fecha*: " +  start.strftime('%Y-%m-%d') 
         + "\n - *Periodo de*: " +   start.strftime('%Y-%m-%d') + " a " + end.strftime('%Y-%m-%d') + "\n")
 
+        # cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n" 
+        # + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |\n"
+        # + "|:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|\n")
+
         cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n" 
         + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |\n"
         + "|:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|\n")

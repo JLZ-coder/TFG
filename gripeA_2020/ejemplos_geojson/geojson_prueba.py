@@ -176,7 +176,7 @@ def main(argv):
 
     #migra = migracion(brote)
 
-    migra = allMigrations()
+    #migra = allMigrations()
     # text_file = open("brotes.geojson", "w")
     # n = text_file.write(json.dumps(geobrotes))
     # text_file.close()
@@ -185,8 +185,19 @@ def main(argv):
     #n = text_file.write(json.dumps(comarc_centro))
     #text_file.close()
 
-    text_file = open("data/migrations.geojson", "w")
-    n = text_file.write(json.dumps(migra))
+    f = open("geojson/rutas.geojson")
+    json_rutas = json.load(f)
+
+    for feature in json_rutas["features"]:
+        alerta_fecha = feature["properties"]["reportDate"]
+        cod_comarca = feature["properties"]["idComarca"]
+        alerta_id = cod_comarca + "_" + str(alerta_fecha)
+        
+        feature["properties"]["idAlerta"] = alerta_id
+        del feature["properties"]["reportDate"]
+
+    text_file = open("ejemplos_geojson/rutas.geojson", "w", encoding="utf-8")
+    n = text_file.write(json.dumps(json_rutas, ensure_ascii=False))
     text_file.close()
 
 

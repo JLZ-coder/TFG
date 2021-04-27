@@ -303,7 +303,6 @@ class Controller:
             # -----------------------------------------------------------
 
             print(">>> Alertas total: " + str(len(alertas["alertas"])))
-            print(">>> Alertas con rutas en cuenta: " + str(len(comarcas_en_riesgo)))
 
             # Rellenar el informe semanal
             reportPDF = self.dataFactory.createData("report",current_week, current_week_end, alertas)
