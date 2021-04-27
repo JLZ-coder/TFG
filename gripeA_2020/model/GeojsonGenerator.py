@@ -173,7 +173,7 @@ class GeojsonGenerator:
                             "properties": {
                                 "idBrote": oieid,
                                 "idAlerta": cod_comarca + "_" + semana.strftime("%d-%m-%Y"),
-                                "idComarca": cod_comarca,
+                                "idComarca": cod_comarca
                             }
                         }
 
@@ -237,7 +237,7 @@ class GeojsonGenerator:
                             "properties": {
                                 "idBrote": oieid,
                                 "idAlerta": cod_comarca + " " + semana.strftime("%d-%m-%Y"),
-                                "idComarca": cod_comarca,
+                                "idComarca": cod_comarca
                             }
                         }
 
@@ -285,8 +285,7 @@ class GeojsonGenerator:
                             "cases": "" if it['cases']== "" else int(it['cases']),
                             "deaths": "" if it['deaths']== "" else int(it['deaths']),
                             "serotipo": it['serotype'],
-                            "moreInfo": it['urlFR'],
-                            "epiUnit": it['epiunit'],
+                            "epiUnit": it['epiunit']
                         }
                     }
 
@@ -332,8 +331,7 @@ class GeojsonGenerator:
                             "cases": "" if it['cases']== "" else int(it['cases']),
                             "deaths": "" if it['deaths']== "" else int(it['deaths']),
                             "serotipo": it['serotype'],
-                            "moreInfo": it['urlFR'],
-                            "epiUnit": it['epiunit'],
+                            "epiUnit": it['epiunit']
                         }
                     }
 

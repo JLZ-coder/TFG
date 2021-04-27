@@ -1,7 +1,7 @@
 # DiFLUsion: Informe de Alerta Semanal 
 
- - *Fecha*: 2020-06-22
- - *Periodo de*: 2020-06-22 a 2020-06-29
+ - *Fecha*: 22-06-2020
+ - *Periodo de*: 22-06-2020 a 29-06-2020
 
 ## Sumario del informe 
  - *Número de comarcas ganaderas en alerta*: 0

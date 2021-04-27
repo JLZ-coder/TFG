@@ -1,7 +1,7 @@
 # DiFLUsion: Informe de Alerta Semanal 
 
- - *Fecha*: 2020-07-13
- - *Periodo de*: 2020-07-13 a 2020-07-20
+ - *Fecha*: 13-07-2020
+ - *Periodo de*: 13-07-2020 a 20-07-2020
 
 ## Sumario del informe 
  - *Número de comarcas ganaderas en alerta*: 0
