@@ -46,7 +46,7 @@ class GeojsonGenerator:
                             "coordinates": [float(it['Longitud']), float(it['Latitud'])]
                         },
                         "properties": {
-                            "idAlerta": it['comarca_sg'] + "_" + start.timestamp() * 1000,
+                            "idAlerta": it['comarca_sg'] + "_" + str(start.timestamp() * 1000),
                             "Riesgo": it['risk'],
                             "reportDate": start.timestamp() * 1000,
                             "comarca": it['com_sgsa_n'],
@@ -291,9 +291,9 @@ class GeojsonGenerator:
                             "city": it['city'],
                             "species": it['species'],
                             "cases": "" if it['cases']== "" else int(it['cases']),
-                            "deaths": "" if it['deaths']== "" else int(it['deaths']),
+                            #"deaths": "" if it['deaths']== "" else int(it['deaths']),
                             "serotipo": it['serotype'],
-                            "epiUnit": it['epiunit']
+                            #"epiUnit": it['epiunit']
                         }
                     }
 

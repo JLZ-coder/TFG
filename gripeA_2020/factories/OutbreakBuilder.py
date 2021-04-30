@@ -60,7 +60,7 @@ class OutbreakBuilder(Builder):
             geohash_del_brote = brote['geohash'][0:4]
 
             #Rutas del brote, puede que no haya ninguna que conecte con España
-            response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie'.format(geohash_del_brote)).values()
+            response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie, r.valor'.format(geohash_del_brote)).values()
 
             #relacion:
             # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
@@ -79,7 +79,7 @@ class OutbreakBuilder(Builder):
                                 "serotype": brote['serotype'],
                                 "casos": brote['cases'],
                                 "especie":relacion[1],
-                                "nMov": len(response)
+                                "nMov": relacion[2]
                             }
                             if cod not in comarca_brotes:
                                 comarca_brotes[cod] = [valor]

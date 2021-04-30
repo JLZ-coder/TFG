@@ -55,7 +55,7 @@ class ReportBuilder(Builder):
 
         writer.writerows(nuevosBrotes)
         brotesDrive.close()
-        self.file_to_drive("markdown/brotesDrive.csv", "brotes.csv", "alertas")
+        #self.file_to_drive("markdown/brotesDrive.csv", "brotes.csv", "alertas")
         
     def create(self, start, end, parameters):
         
@@ -161,17 +161,17 @@ class ReportBuilder(Builder):
             textoFinal = cabecera + sumario
 
         #Creamos csv brotes
-        self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv)
+        #self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv)
 
         #Actualizacion
-        informePath = "markdown/InformeSemanal_" + start.strftime("%d-%m-%Y") + ".md"
-        f = open (informePath,'w+', encoding="utf-8")
-        f.write(textoFinal)
-        f.close()
+        # informePath = "markdown/InformeSemanal_" + start.strftime("%d-%m-%Y") + ".md"
+        # f = open (informePath,'w+', encoding="utf-8")
+        # f.write(textoFinal)
+        # f.close()
 
-        informePdfPath = self.reportPDF(informePath)
-        informePdfName = informePdfPath.split("/")[-1]
-        self.file_to_drive(informePdfPath, informePdfName, "alertas")
+        #informePdfPath = self.reportPDF(informePath)
+        #informePdfName = informePdfPath.split("/")[-1]
+        #self.file_to_drive(informePdfPath, informePdfName, "alertas")
 
         return textoFinal
 

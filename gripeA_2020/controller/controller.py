@@ -305,7 +305,7 @@ class Controller:
             print(">>> Alertas total: " + str(len(alertas["alertas"])))
 
             # Rellenar el informe semanal
-            reportPDF = self.dataFactory.createData("report",current_week, current_week_end, alertas)
+            # reportPDF = self.dataFactory.createData("report",current_week, current_week_end, alertas)
 
             #Actualizar current_week y current_week_end
             current_week = current_week_end
