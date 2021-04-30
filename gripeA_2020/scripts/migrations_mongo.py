@@ -7,13 +7,12 @@ import os
 
 #Ficheros necesarios
 #file = "mov_acuaticas ult 10 años.xlsx"
-file = "../data/Datos especies1.xlsx"
-#file1 = "data/Especies.xlsx"
+file = "data/Datos_especies_nuevo.xlsx"
 print(os.getcwd())
-df = pd.read_excel(file, 'Movimientos')
+df = pd.read_excel(file, 'mOVIMIENTOS')
 
 #Especies
-df_especies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0)
+df_especies = pd.read_excel(file, 'PROB MOV', skiprows=3, usecols='A:AY', header=0)
 #forma de acceder a la prob de movimiento segun el codigo de anilla index
 #df1 = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2 )
 #print(df1[3][70])

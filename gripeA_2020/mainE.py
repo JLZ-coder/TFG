@@ -38,7 +38,7 @@ def prueba():
     com_db = db.comarcas
 
     start = datetime(2021,1,1)
-    end = datetime(2021,1,7)
+    end = datetime(2021,2,1)
     neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
     listaBrotes = brotes_db.find({"observation_date" : {"$gte" : start, "$lt" : end}})

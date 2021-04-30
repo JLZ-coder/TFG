@@ -18,7 +18,7 @@ class OutbreakBuilder(Builder):
 
         neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
-        listaBrotes = brotes_db.find({"observation_date" : {"$gte" : start, "$lt" : end}})
+        listaBrotes = list(brotes_db.find({"observation_date" : {"$gte" : start, "$lt" : end}}))
 
         tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
 
@@ -53,12 +53,14 @@ class OutbreakBuilder(Builder):
         for brote in listaBrotes:
             #Con los nuevos brotes, no tenemos en cuenta esta comprobación
             #if brote["disease_id"] != "201":
-            # outbreak_date = brote["observation_date"]
-            # outbreak_week = outbreak_date + timedelta(days = -outbreak_date.weekday())
+            outbreak_date = brote["observation_date"]
+            outbreak_week = outbreak_date + timedelta(days = -outbreak_date.weekday())
             brotes_por_semana[outbreak_week].append(brote)
 
             geohash_del_brote = brote['geohash'][0:4]
 
+            if geohash_del_brote == "gbqu":
+                print("fareawf")
             #Rutas del brote, puede que no haya ninguna que conecte con España
             response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie, r.valor'.format(geohash_del_brote)).values()
 

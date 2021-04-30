@@ -7,9 +7,9 @@ from factories.MigrationProbBuilder import MigrationProbBuilder
 from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
 from controller.controller import Controller
-from factories.ReportBuilder import ReportBuilder
+#from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
-from model.gdriveUploader import gDriveUploader
+#from model.gdriveUploader import gDriveUploader
 
 def toolOffLine(control):
 
@@ -33,7 +33,7 @@ def main(argv):
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())
     dataBuilderList.append(ComarcasBuilder())
-    dataBuilderList.append(ReportBuilder())
+    #dataBuilderList.append(ReportBuilder())
     dataFact = Factory(dataBuilderList)
 
     modelSelector = ModelSelector()
@@ -42,7 +42,8 @@ def main(argv):
 
     control = Controller(modelSelector, dataFact, geojsonGen)
 
-    control.runOnlineTool_1year()
+    start = datetime(2021, 1, 1)
+    control.runOfflineTool(start, 4)
 
     return 0
 
