@@ -82,6 +82,10 @@ class ModelV1():
         for comarca, brotes in data['comarca_brotes'].items():
             nAlerta = 0
 
+            for brote in brotes:
+                if brote["oieid"] == "284094":
+                    print("afwe")
+
             broteEspecie.clear()
             casosTotales = 0
             totalMov = 0

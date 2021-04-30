@@ -59,8 +59,8 @@ class OutbreakBuilder(Builder):
 
             geohash_del_brote = brote['geohash'][0:4]
 
-            if geohash_del_brote == "gbqu":
-                print("fareawf")
+            # if geohash_del_brote == "gbqu":
+            #     print("fareawf")
             #Rutas del brote, puede que no haya ninguna que conecte con España
             response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie, r.valor'.format(geohash_del_brote)).values()
 
@@ -70,10 +70,12 @@ class OutbreakBuilder(Builder):
             for relacion in response:
                 #Si el geohash destino esta en España
                 if relacion[0] in tablaGeoComarca:
+                    # if relacion[0] == "ez7v":
+                    #     print("bruh")
                     #Recorremos las comarcas con los que solapa el geohash
                     for comarca in tablaGeoComarca[relacion[0]]:
                         #Si solapa al menos un 80% de su recuadro con el recuadro del geohash
-                        if comarca["peso"] >= 0.8:
+                        if comarca["peso"] >= 0.5:
                             cod = comarca["cod_comarca"]
                             valor = {"peso" : comarca["peso"],
                                 "oieid" : brote["oieid"],

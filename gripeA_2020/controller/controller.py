@@ -100,12 +100,12 @@ class Controller:
             self.model.setData(data_to_model)
             alertas = self.model.run(current_week, current_week_end)
 
+            # alertas_esp = list(filter(lambda alerta: alerta["comarca_sg"] == "SP49108", alertas["alertas"]))
+            # alertas_list_esp = list()
+            # alertas_list_esp.append(alertas_esp)
+
             # Quitamos las alertas de riesgo 0
             alertas["alertas"] = list(filter(lambda alerta: alerta["risk"] != 0, alertas["alertas"]))
-
-            alertas_esp = list(filter(lambda alerta: alerta["comarca_sg"] == "SP49108", alertas["alertas"]))
-            alertas_list_esp = list()
-            alertas_list_esp.append(alertas_esp)
 
             alertas_list.append(alertas)
 
@@ -127,9 +127,9 @@ class Controller:
             # -----------------------------------------------------------
 
             print(">>> Alertas total: " + str(len(alertas["alertas"])))
-            for alertas in alertas_list_esp:
-                for alerta in alertas:
-                    print (alerta["comarca_sg"])
+            # for alertas in alertas_list_esp:
+            #     for alerta in alertas:
+            #         print (alerta["comarca_sg"])
 
             # Rellenar el informe semanal
             # reportPDF = self.dataFactory.createData("report",current_week, current_week_end, alertas)
