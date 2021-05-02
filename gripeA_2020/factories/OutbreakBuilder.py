@@ -70,13 +70,15 @@ class OutbreakBuilder(Builder):
             for relacion in response:
                 #Si el geohash destino esta en España
                 if relacion[0] in tablaGeoComarca:
-                    # if relacion[0] == "ez7v":
-                    #     print("bruh")
+                    if relacion[0] == "ez7v":
+                        print("bruh")
                     #Recorremos las comarcas con los que solapa el geohash
                     for comarca in tablaGeoComarca[relacion[0]]:
                         #Si solapa al menos un 80% de su recuadro con el recuadro del geohash
                         if comarca["peso"] >= 0.5:
                             cod = comarca["cod_comarca"]
+                            if cod == "SP49108":
+                                print("fawf")
                             valor = {"peso" : comarca["peso"],
                                 "oieid" : brote["oieid"],
                                 "epiunit" : brote["epiunit"],
