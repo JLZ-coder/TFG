@@ -82,13 +82,6 @@ class ModelV1():
         for comarca, brotes in data['comarca_brotes'].items():
             nAlerta = 0
 
-            if comarca == "SP49108":
-                print("weFEWA")
-
-            for brote in brotes:
-                if brote["oieid"] == 284094:
-                    print("afwe")
-
             broteEspecie.clear()
             casosTotales = 0
             totalMov = 0
@@ -143,9 +136,6 @@ class ModelV1():
 
             if riesgo > 5:
                 riesgo = 5
-           
-            if comarca == "SP49108":
-                print("weFEWA")
 
             alertas["alertas"].append({
                 "comarca_sg" : comarca, 
