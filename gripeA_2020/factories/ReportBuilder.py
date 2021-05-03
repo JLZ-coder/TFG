@@ -105,7 +105,7 @@ class ReportBuilder(Builder):
             alerta["temperatura"] = "No data" if alerta['temperatura'] == "No data" else round(alerta["temperatura"],2)
             filasAlertas += ("|" +  str(nAlerta) + "|" + end.strftime('%d-%m-%Y') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
             + "|" + str(len(alerta['brotes'])) + "|" + str(alerta['movRiesgo']) + "|" + str(alerta["risk"])+ "|" + str(alerta["temperatura"]) + "|" 
-            + str(round(alerta['super'],4)) + "|\n" )
+            + str(round(alerta['super'])) + "|\n" )
 
             encabezadoTablasBrotesAlertas = ("\n\n### Alerta {} \n".format(nAlerta)
             + "- *Id comarca*: "+ alerta['comarca_sg'] + "\n"
@@ -131,7 +131,7 @@ class ReportBuilder(Builder):
                 filasBrotesCsv.append({
                     "ID": nBrote,"Nº Alerta": nAlerta,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'], 
                     "Grado alerta": alerta["risk"], "Event ID": brote, "Temperatura estimada": alerta["temperatura"],
-                    "Supervivencia del virus en días": round(alerta['super'],0),
+                    "Supervivencia del virus en días": round(alerta['super']),
                     "Reporting date": broteMongo['observation_date'].strftime('%d-%m-%Y'),
                     "Observational date": broteMongo['observation_date'].strftime('%d-%m-%Y'), 
                     "Country": broteMongo['country'], "Location": broteMongo['city'], 
