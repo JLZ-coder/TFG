@@ -67,10 +67,6 @@ class ReportBuilder(Builder):
         cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n\n - *Fecha*: " +  start.strftime('%d-%m-%Y') 
         + "\n - *Periodo de*: " +   start.strftime('%d-%m-%Y') + " a " + end.strftime('%d-%m-%Y') + "\n")
 
-        # cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n" 
-        # + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |\n"
-        # + "|:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|\n")
-
         cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n" 
         + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |\n"
         + "|:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|\n")
@@ -105,7 +101,7 @@ class ReportBuilder(Builder):
             alerta["temperatura"] = "No data" if alerta['temperatura'] == "No data" else round(alerta["temperatura"],2)
             filasAlertas += ("|" +  str(nAlerta) + "|" + end.strftime('%d-%m-%Y') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
             + "|" + str(len(alerta['brotes'])) + "|" + str(alerta['movRiesgo']) + "|" + str(alerta["risk"])+ "|" + str(alerta["temperatura"]) + "|" 
-            + str(round(alerta['super'])) + "|\n" )
+            + str(round(alerta['super'],4)) + "|\n" )
 
             encabezadoTablasBrotesAlertas = ("\n\n### Alerta {} \n".format(nAlerta)
             + "- *Id comarca*: "+ alerta['comarca_sg'] + "\n"
@@ -131,7 +127,7 @@ class ReportBuilder(Builder):
                 filasBrotesCsv.append({
                     "ID": nBrote,"Nº Alerta": nAlerta,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'], 
                     "Grado alerta": alerta["risk"], "Event ID": brote, "Temperatura estimada": alerta["temperatura"],
-                    "Supervivencia del virus en días": round(alerta['super']),
+                    "Supervivencia del virus en días": round(alerta['super'],4),
                     "Reporting date": broteMongo['observation_date'].strftime('%d-%m-%Y'),
                     "Observational date": broteMongo['observation_date'].strftime('%d-%m-%Y'), 
                     "Country": broteMongo['country'], "Location": broteMongo['city'], 
