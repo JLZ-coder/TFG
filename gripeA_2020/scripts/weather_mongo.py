@@ -24,7 +24,7 @@ headers = {
 
 bisiesto = ["2012", "2016","2020","2024"]
 fechaInicial = "2017-01-02"
-fechaFinal = "2021-04-18"
+fechaFinal = "2021-05-02"
 
 semanaFinal = datetime.strptime(fechaFinal, '%Y-%m-%d')
 nSemanaFinal = semanaFinal.isocalendar()[1]-1
