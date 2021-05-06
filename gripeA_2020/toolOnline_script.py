@@ -16,10 +16,10 @@ from scripts.newOutbreaks_mongo import downloadOutbreaks
 from scripts.weather_mongo import cronTemp, prediction
 
 def main(argv):
-    downloadOutbreaks()
+    # downloadOutbreaks()
 
-    cronTemp()
-    prediction()
+    # cronTemp()
+    # prediction()
 
     dataBuilderList = list()
     dataBuilderList.append(OutbreakBuilder())

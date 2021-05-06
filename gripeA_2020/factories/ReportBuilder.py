@@ -169,9 +169,9 @@ class ReportBuilder(Builder):
         f.write(textoFinal)
         f.close()
 
-        informePdfPath = self.reportPDF(informePath)
-        informePdfName = informePdfPath.split("/")[-1]
-        self.file_to_drive(informePdfPath, informePdfName, "alertas")
+        #informePdfPath = self.reportPDF(informePath)
+        #informePdfName = informePdfPath.split("/")[-1]
+        #self.file_to_drive(informePdfPath, informePdfName, "alertas")
 
         return textoFinal
 
