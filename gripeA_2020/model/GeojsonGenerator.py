@@ -269,9 +269,7 @@ class GeojsonGenerator:
 
         for semana in outbreaklist:
             for it in outbreaklist[semana]:
-                if it['oieid'] in set_oieid:
-                    continue
-
+                
                 if ('city' not in it):
                     it['city'] = "No especificado"
 
@@ -285,7 +283,7 @@ class GeojsonGenerator:
                         },
                         "properties": {
                             "id": it['oieid'],
-                            "disease": it['disease'],
+                            #"disease": it['disease'],
                             "country": it['country'],
                             "observationDate": math.floor(it['observation_date'].timestamp() * 1000),
                             "city": it['city'],

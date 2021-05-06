@@ -34,7 +34,7 @@ class OutbreakBuilder(Builder):
         # ...
         # ..
         # .
-        while outbreak_date <= end:
+        while outbreak_date < end:
             brotes_por_semana[outbreak_date] = []
             outbreak_date = outbreak_date + timedelta(weeks=1)
 
@@ -94,9 +94,6 @@ class OutbreakBuilder(Builder):
             for it in response:
                     
                 cod = it['COMARCA_SG'] 
-
-                if cod == "SP49108": 
-                    print(12)
                 valor = {"peso" : "",
                     "oieid" : brote["oieid"],
                     "epiunit" : brote["epiunit"],
@@ -111,4 +108,4 @@ class OutbreakBuilder(Builder):
                     comarca_brotes[cod].append(valor)
 
 
-        return comarca_brotes, brotes_por_semana[outbreak_week]
+        return comarca_brotes, brotes_por_semana
