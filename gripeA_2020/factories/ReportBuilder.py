@@ -31,31 +31,31 @@ class ReportBuilder(Builder):
         alertasDrive = None
         brotesDrive = None
         #CSV Alertas
-        if not os.path.isfile("markdown/alertasDrive.csv"): 
-            alertasDrive = codecs.open("markdown/alertasDrive.csv", "wb+")  
+        if not os.path.isfile("markdown/alertasDriveNewModelo.csv"): 
+            alertasDrive = codecs.open("markdown/alertasDriveNewModelo.csv", "wb+")  
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)         
             writer.writeheader()
         else: 
-            alertasDrive = codecs.open("markdown/alertasDrive.csv", "ab+") 
+            alertasDrive = codecs.open("markdown/alertasDriveNewModelo.csv", "ab+") 
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)
 
         writer.writerows(nuevasAlertas)
         alertasDrive.close()
-        self.file_to_drive("markdown/alertasDrive.csv", "alertas.csv", "alertas")
+        self.file_to_drive("markdown/alertasDriveNewModelo.csv", "alertasNewModelo.csv", "alertas")
 
         #CSV Brotes
         
-        if not os.path.isfile("markdown/brotesDrive.csv"):
-            brotesDrive = codecs.open("markdown/brotesDrive.csv", "wb+")
+        if not os.path.isfile("markdown/brotesDriveNewModelo.csv"):
+            brotesDrive = codecs.open("markdown/brotesDriveNewModelo.csv", "wb+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
             writer.writeheader()
         else:
-            brotesDrive = codecs.open("markdown/brotesDrive.csv", "ab+")
+            brotesDrive = codecs.open("markdown/brotesDriveNewModelo.csv", "ab+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
 
         writer.writerows(nuevosBrotes)
         brotesDrive.close()
-        self.file_to_drive("markdown/brotesDrive.csv", "brotes.csv", "alertas")
+        self.file_to_drive("markdown/brotesDriveNewModelo.csv", "brotesNewModelo.csv", "alertas")
         
     def create(self, start, end, parameters):
         
@@ -66,10 +66,6 @@ class ReportBuilder(Builder):
 
         cabecera = ("# DiFLUsion: Informe de Alerta Semanal \n\n - *Fecha*: " +  start.strftime('%d-%m-%Y') 
         + "\n - *Periodo de*: " +   start.strftime('%d-%m-%Y') + " a " + end.strftime('%d-%m-%Y') + "\n")
-
-        # cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n" 
-        # + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |\n"
-        # + "|:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|\n")
 
         cabeceraTablaAlertas = ("\n\n## Tabla de alertas \n" 
         + "| Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |\n"
@@ -82,7 +78,7 @@ class ReportBuilder(Builder):
 
         #CSV
         csvCabeceraAlertas = ["Nº","Fecha","Comarca","ID CG","Nº brotes","Nº mov. Riesgo","Grado alerta","Temperatura estimada","Supervivencia del virus en días"]
-        csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG", "Grado alerta", "Event ID", "Temperatura estimada", "Supervivencia del virus en días",
+        csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG", "Grado alerta", "Fecha Alerta", "Event ID", "Temperatura estimada", "Supervivencia del virus en días",
         "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "Ponderacion brote", "Riesgo brote", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
         
         
@@ -103,7 +99,7 @@ class ReportBuilder(Builder):
             comarca = cursor[0]
 
             alerta["temperatura"] = "No data" if alerta['temperatura'] == "No data" else round(alerta["temperatura"],2)
-            filasAlertas += ("|" +  str(nAlerta) + "|" + end.strftime('%d-%m-%Y') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
+            filasAlertas += ("|" +  str(nAlerta) + "|" + start.strftime('%d-%m-%Y') + "|" + comarca['com_sgsa_n'] + "|" + alerta['comarca_sg'] 
             + "|" + str(len(alerta['brotes'])) + "|" + str(alerta['movRiesgo']) + "|" + str(alerta["risk"])+ "|" + str(alerta["temperatura"]) + "|" 
             + str(round(alerta['super'],4)) + "|\n" )
 
@@ -112,7 +108,7 @@ class ReportBuilder(Builder):
             + "- *Localización comarca*: " +  comarca['com_sgsa_n'] + "\n")
 
             #Csv
-            filasAlertasCsv.append({"Nº": nAlerta ,"Fecha": end.strftime('%d-%m-%Y') ,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'] ,"Nº brotes": len(alerta['brotes']),
+            filasAlertasCsv.append({"Nº": nAlerta ,"Fecha": start.strftime('%d-%m-%Y') ,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'] ,"Nº brotes": len(alerta['brotes']),
             "Nº mov. Riesgo": alerta['movRiesgo'] ,"Grado alerta": alerta["risk"],"Temperatura estimada": alerta["temperatura"] ,"Supervivencia del virus en días": round(alerta['super'],4)})
             
             #Sacar informacion de brotes
@@ -130,8 +126,9 @@ class ReportBuilder(Builder):
                 
                 filasBrotesCsv.append({
                     "ID": nBrote,"Nº Alerta": nAlerta,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'], 
-                    "Grado alerta": alerta["risk"], "Event ID": brote, "Temperatura estimada": alerta["temperatura"],
-                    "Supervivencia del virus en días": round(alerta['super'],0),
+                    "Grado alerta": alerta["risk"], "Fecha alerta": start.strftime('%d-%m-%Y'),
+                    "Event ID": brote, "Temperatura estimada": alerta["temperatura"],
+                    "Supervivencia del virus en días": round(alerta['super'],4),
                     "Reporting date": broteMongo['observation_date'].strftime('%d-%m-%Y'),
                     "Observational date": broteMongo['observation_date'].strftime('%d-%m-%Y'), 
                     "Country": broteMongo['country'], "Location": broteMongo['city'], 

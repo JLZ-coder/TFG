@@ -86,7 +86,13 @@ class Controller:
             outbreakStart = current_week - timedelta(weeks = 12)
             # brotes_por_semana_aux no se usa
             comarca_brotes, brotes_esta_semana = self.dataFactory.createData("outbreak", outbreakStart, current_week_end , None)
-            brotes_por_semana[current_week] = brotes_esta_semana
+            #brotes_por_semana[current_week] = brotes_esta_semana
+
+            #Si está vacio añadimos todos los 3 primeros meses de brotes
+            if len(brotes_por_semana) == 0:
+                brotes_por_semana = brotes_esta_semana
+            else: #Al diccionario con todos los brotes añadimos la de la última semana ya que el resto es igual
+                brotes_por_semana[current_week] = brotes_esta_semana[current_week]
 
             #Temperature
             tMin = self.dataFactory.createData("temp",current_week, current_week_end, True)

@@ -4,7 +4,7 @@ from neo4j import GraphDatabase
 import json
 from datetime import datetime, time, timedelta, date
 
-#Revised: 13/4/21
+#Revised: 03/5/21
 class OutbreakBuilder(Builder):
     def __init__(self):
         super().__init__("outbreak")
@@ -15,7 +15,7 @@ class OutbreakBuilder(Builder):
         client = MongoClient('mongodb://localhost:27017/')
         db = client.lv
         brotes_db = db.outbreaks
-
+        migration_db = db.migrations
         neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
         listaBrotes = list(brotes_db.find({"observation_date" : {"$gte" : start, "$lt" : end}}))
@@ -34,7 +34,7 @@ class OutbreakBuilder(Builder):
         # ...
         # ..
         # .
-        while outbreak_date <= end:
+        while outbreak_date < end:
             brotes_por_semana[outbreak_date] = []
             outbreak_date = outbreak_date + timedelta(weeks=1)
 
@@ -62,11 +62,12 @@ class OutbreakBuilder(Builder):
             # if geohash_del_brote == "gbqu":
             #     print("fareawf")
             #Rutas del brote, puede que no haya ninguna que conecte con España
-            response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie, r.valor'.format(geohash_del_brote)).values()
-
+            #response = neo4j_db.session().run('MATCH (x:Region)-[r]-(y:Region) WHERE x.location starts with "{}" RETURN y.location, r.especie, r.valor'.format(geohash_del_brote)).values()
+            response = list(migration_db.find({"geohash": { "$regex":"^{}".format(geohash_del_brote)}}))
             #relacion:
             # pareja de geohash y especie, el geohash pertenece a un nodo destino de uno perteneciente a un brote
             # ej: ['sp0j', 1470]
+            '''
             for relacion in response:
                 #Si el geohash destino esta en España
                 if relacion[0] in tablaGeoComarca:
@@ -88,4 +89,23 @@ class OutbreakBuilder(Builder):
                             else:
                                 comarca_brotes[cod].append(valor)
 
-        return comarca_brotes, brotes_por_semana[outbreak_week]
+            '''
+
+            for it in response:
+                    
+                cod = it['COMARCA_SG'] 
+                valor = {"peso" : "",
+                    "oieid" : brote["oieid"],
+                    "epiunit" : brote["epiunit"],
+                    "serotype": brote['serotype'],
+                    "casos": brote['cases'],
+                    "especie":it['Especie'],
+                    "nMov": 1
+                }
+                if cod not in comarca_brotes:
+                    comarca_brotes[cod] = [valor]
+                else:
+                    comarca_brotes[cod].append(valor)
+
+
+        return comarca_brotes, brotes_por_semana
