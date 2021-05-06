@@ -31,31 +31,31 @@ class ReportBuilder(Builder):
         alertasDrive = None
         brotesDrive = None
         #CSV Alertas
-        if not os.path.isfile("markdown/alertasDriveNewModelo.csv"): 
-            alertasDrive = codecs.open("markdown/alertasDriveNewModelo.csv", "wb+")  
+        if not os.path.isfile("markdown/alertasDriveNewJoin.csv"): 
+            alertasDrive = codecs.open("markdown/alertasDriveNewJoin.csv", "wb+")  
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)         
             writer.writeheader()
         else: 
-            alertasDrive = codecs.open("markdown/alertasDriveNewModelo.csv", "ab+") 
+            alertasDrive = codecs.open("markdown/alertasDriveNewJoin.csv", "ab+") 
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)
 
         writer.writerows(nuevasAlertas)
         alertasDrive.close()
-        self.file_to_drive("markdown/alertasDriveNewModelo.csv", "alertasNewModelo.csv", "alertas")
+        self.file_to_drive("markdown/alertasDriveNewJoin.csv", "alertasNewJoin.csv", "alertas")
 
         #CSV Brotes
         
-        if not os.path.isfile("markdown/brotesDriveNewModelo.csv"):
-            brotesDrive = codecs.open("markdown/brotesDriveNewModelo.csv", "wb+")
+        if not os.path.isfile("markdown/brotesDriveNewJoin.csv"):
+            brotesDrive = codecs.open("markdown/brotesDriveNewJoin.csv", "wb+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
             writer.writeheader()
         else:
-            brotesDrive = codecs.open("markdown/brotesDriveNewModelo.csv", "ab+")
+            brotesDrive = codecs.open("markdown/brotesDriveNewJoin.csv", "ab+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
 
         writer.writerows(nuevosBrotes)
         brotesDrive.close()
-        self.file_to_drive("markdown/brotesDriveNewModelo.csv", "brotesNewModelo.csv", "alertas")
+        self.file_to_drive("markdown/brotesDriveNewJoin.csv", "brotesNewJoin.csv", "alertas")
         
     def create(self, start, end, parameters):
         
@@ -78,7 +78,7 @@ class ReportBuilder(Builder):
 
         #CSV
         csvCabeceraAlertas = ["Nº","Fecha","Comarca","ID CG","Nº brotes","Nº mov. Riesgo","Grado alerta","Temperatura estimada","Supervivencia del virus en días"]
-        csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG", "Grado alerta", "Fecha Alerta", "Event ID", "Temperatura estimada", "Supervivencia del virus en días",
+        csvCabeceraBrotes = ["ID","Nº Alerta","Comarca","ID CG", "Grado alerta", "Fecha alerta", "Event ID", "Temperatura estimada", "Supervivencia del virus en días",
         "Reporting date","Observational date", "Country", "Location", "Latitud", "Longitud", "Ponderacion brote", "Riesgo brote", "An. Type","Species", "Cases", "Deaths","Especie movimiento", "Cód.  Especie", "Prob mov semanal"]
         
         
