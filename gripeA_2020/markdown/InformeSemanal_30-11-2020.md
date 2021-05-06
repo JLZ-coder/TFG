@@ -35,7 +35,7 @@
 |23|30-11-2020|KOSTA|SP20079|23|40|4|9.07|12.6959|
 |24|30-11-2020|CAMPIÑA|SP11020|137|677|5|7.77|13.9054|
 |25|30-11-2020|URIBE KOSTA-BILBAO|SP48020|61|109|5|7.87|13.8055|
-|26|30-11-2020|NOIA|SP15057|13|14|1|6.0|15.9284|
+|26|30-11-2020|NOIA|SP15057|13|14|1|6|15.9284|
 |27|30-11-2020|A MARIÑA ORIENTAL|SP27051|14|16|1|7.63|14.0505|
 |28|30-11-2020|A MARIÑA OCCIDENTAL|SP27066|9|32|2|11.06|11.1479|
 |29|30-11-2020|COLMENAR VIEJO|SP28045|64|286|5|5.17|17.0906|
@@ -69,11 +69,11 @@
 |57|30-11-2020|TUDELA|SP31232|34|36|4|2.31|23.3782|
 |58|30-11-2020|ARNEDO|SP26018|8|8|1|2.01|24.4639|
 |59|30-11-2020|HUESCA|SP22125|13|13|1|5.61|16.448|
-|60|30-11-2020|O SAR-BARBANZA|SP15065|27|29|3|6.0|15.9284|
+|60|30-11-2020|O SAR-BARBANZA|SP15065|27|29|3|6|15.9284|
 |61|30-11-2020|SANTANDER|SP39075|41|46|5|7.09|14.6278|
 |62|30-11-2020|TORRELAVEGA|SP39087|30|37|4|7.09|14.6278|
 |63|30-11-2020|MONTSIA (AMPOSTA)|SP43014|59|182|5|7.77|13.9054|
-|64|30-11-2020|O SALNÉS|SP36060|78|87|5|6.0|15.9284|
+|64|30-11-2020|O SALNÉS|SP36060|78|87|5|6|15.9284|
 |65|30-11-2020|GAMA (BARCENA DE CICERO)|SP39009|84|101|5|10.63|11.4571|
 |66|30-11-2020|NAVIA|SP33041|12|12|1|7.63|14.0505|
 |67|30-11-2020|ALCALA DE HENARES|SP28005|19|26|2|2.76|22.009|
@@ -96,7 +96,7 @@
 |84|30-11-2020|HERRERA DEL DUQUE|SP06063|9|10|1|6.83|14.9169|
 |85|30-11-2020|POSADAS (VEGA DEL GUADALQUIVIR)|SP14053|17|18|1|8.39|13.3105|
 |86|30-11-2020|BAIX EMPORDA (LA BISBAL)|SP17022|12|12|1|6.21|15.654|
-|87|30-11-2020|BAIX LLOBREGAT (SANT BOI)|SP08200|59|110|5|10.0|11.9338|
+|87|30-11-2020|BAIX LLOBREGAT (SANT BOI)|SP08200|59|110|5|10|11.9338|
 |88|30-11-2020|TOMELLOSO|SP13082|73|126|5|3.16|20.9496|
 |89|30-11-2020|SOLARES (MEDIO CUDEYO)|SP39042|34|34|4|7.09|14.6278|
 |90|30-11-2020|MANGANESES DE LA LAMPREANA|SP49108|6|7|1|2.77|21.9686|
@@ -122,7 +122,7 @@
 |110|30-11-2020|CARTAGENA MAR MENOR (TORRE PACHECO|SP30037|14|29|2|8.96|12.795|
 |111|30-11-2020|MARCHENA (SERRANÍA SUDOESTE)|SP41060|10|10|1|8.49|13.2178|
 |112|30-11-2020|LEON|SP24089|7|10|1|3.9|19.2972|
-|113|30-11-2020|BAZA (ALTIPLANICIE SUR)|SP18023|8|8|1|4.0|19.0992|
+|113|30-11-2020|BAZA (ALTIPLANICIE SUR)|SP18023|8|8|1|4|19.0992|
 |114|30-11-2020|DAROCA|SP50094|17|19|5|0.7|32.7292|
 |115|30-11-2020|BERGANTIÑOS|SP15019|14|14|1|6.34|15.4939|
 |116|30-11-2020|ALT EMPORDA (FIGUERES)|SP17066|67|93|5|6.54|15.2511|
@@ -143,7 +143,7 @@
 |131|30-11-2020|BUITRAGO|SP28027|6|6|1|1.69|25.8565|
 |132|30-11-2020|TOLEDO|SP45168|13|13|2|3.81|19.4709|
 |133|30-11-2020|CALAMOCHA|SP44050|9|9|1|0.7|32.7292|
-|134|30-11-2020|SANTA FE (VEGA DE GRANADA)|SP18175|22|33|4|4.0|19.0992|
+|134|30-11-2020|SANTA FE (VEGA DE GRANADA)|SP18175|22|33|4|4|19.0992|
 |135|30-11-2020|CUENCA|SP16078|17|17|3|1.09|29.2969|
 |136|30-11-2020|CASTROJERIZ|SP09091|8|8|1|1.66|25.9902|
 |137|30-11-2020|PIEDRAHITA|SP05186|4|7|1|1.47|26.9197|
@@ -211,23 +211,23 @@
 | 3| 284823|11-12-2020|03-12-2020|England|Colchester|51.94|1.07|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 4| 284374|11-12-2020|18-11-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|||Gaviota sombría  2015-2019|5910|0.7965|
 | 5| 284358|11-12-2020|03-11-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
-| 6| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009000000000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 6| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 7| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 8| 282326|10-11-2020|10-11-2020|England|Stroud|51.73|-2.21|Wild|Larus fuscus|3||Gaviota sombría  2015-2019|5910|0.7965|
 | 9| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
 | 10| 285383|24-12-2020|28-11-2020|Belgium|Brugge|51.2468|3.2236|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 11| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 12| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 13| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 14| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 15| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 13| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 14| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 15| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 16| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 17| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
-| 18| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
+| 18| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 19| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 20| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 21| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
-| 22| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
+| 21| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
+| 22| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
 | 23| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
 | 24| 284852|17-12-2020|12-11-2020|Denmark|Gørlev|55.433333|11.566667|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 25| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -252,7 +252,7 @@
 | 44| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus ridibundus|4|4|Gaviota reidora  2015-2019|5820|0.8895|
 | 45| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 46| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Pluvialis apricaria|4|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
-| 47| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 47| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 48| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 49| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 50| 283699|27-11-2020|13-11-2020|Netherlands|Zierikzee|51.67|3.9|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
@@ -365,7 +365,7 @@
 | 6| 284381|11-12-2020|03-12-2020|England|Kings Lynn|52.71|0.5|Wild|Larus fuscus|5|5|Gaviota sombría  2015-2019|5910|0.7965|
 | 7| 284374|11-12-2020|18-11-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|||Gaviota sombría  2015-2019|5910|0.7965|
 | 8| 284358|11-12-2020|03-11-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
-| 9| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009000000000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 9| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 10| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 11| 282326|10-11-2020|10-11-2020|England|Stroud|51.73|-2.21|Wild|Larus fuscus|3||Gaviota sombría  2015-2019|5910|0.7965|
 | 12| 282302|12-11-2020|09-11-2020|England|Hereford|52.16|-2.81|Domestic|Larus fuscus|6450|6450|Gaviota sombría  2015-2019|5910|0.7965|
@@ -376,12 +376,12 @@
 | 17| 283713|04-12-2020|26-11-2020|Belgium|Diksmuide|51.0464|2.7972|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 18| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 19| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 20| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 20| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 21| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 22| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 23| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
+| 22| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 23| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 24| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
-| 25| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 25| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 26| 284850|17-12-2020|10-11-2020|Denmark|Sønderstrand|54.933333|8.9|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 27| 284814|17-12-2020|24-11-2020|Denmark|Otterup2|55.5497|10.4931|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 28| 284802|17-12-2020|17-11-2020|Denmark|Løgumkloster|54.9903|8.9794|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
@@ -409,8 +409,8 @@
 | 50| 281562|05-11-2020|03-11-2020|Germany|Westerrönfeld|54.28|9.64|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 51| 281537|03-11-2020|30-10-2020|Germany|Dagebüll|54.72|8.74|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 52| 281193|31-10-2020|30-10-2020|Germany|Neuenkirchen|54.72|8.74|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 53| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525597999999995|12.599252|Wild|Podiceps nigricollis|1||Zampullín cuellinegro  2015-2019|120|0.738|
-| 54| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525597999999995|12.599252|Wild|Podiceps nigricollis|8||Zampullín cuellinegro  2015-2019|120|0.738|
+| 53| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525598|12.599252|Wild|Podiceps nigricollis|1||Zampullín cuellinegro  2015-2019|120|0.738|
+| 54| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525598|12.599252|Wild|Podiceps nigricollis|8||Zampullín cuellinegro  2015-2019|120|0.738|
 | 55| 282969|21-11-2020|14-11-2020|Italy|Porto Tolle|44.974634|12.466154|Wild|Podiceps nigricollis|1||Zampullín cuellinegro  2015-2019|120|0.738|
 | 56| 285373|23-12-2020|04-11-2020|Netherlands|Goingarijp|53.01|5.76|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.5397|
 | 57| 284265|09-12-2020|02-12-2020|Netherlands|Maasland|51.95|4.3|Domestic|Tringa totanus|101|3|Archibebe común  2015-2019|5460|0.3852|
@@ -475,7 +475,7 @@
 | 8| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 9| 284804|17-12-2020|17-11-2020|Denmark|Klim|57.0933|9.1686|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 10| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 11| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 11| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 12| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Ciconia ciconia|400|400|Cigüeña blanca  2015-2019|1340|0.4337|
 | 13| 286784|18-01-2021|12-11-2020|Germany|Friesland|53.65|8.02|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 14| 285197|18-12-2020|20-11-2020|Germany|Friesland|53.69|8.02|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.9317|
@@ -485,9 +485,9 @@
 | 18| 282062|10-11-2020|06-11-2020|Germany|Krempel|54.31|9.03|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 19| 282054|10-11-2020|04-11-2020|Germany|Kleve|54.29|9.12|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 20| 282020|09-11-2020|04-11-2020|Germany|Hemmingstedt|54.16|9.08|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 21| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 21| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 22| 281657|05-11-2020|04-11-2020|Germany|Tümlauer Koog|54.35|8.683333|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 23| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 23| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 24| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 25| 281564|05-11-2020|03-11-2020|Germany|Tönning|54.3|8.92|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 26| 281540|03-11-2020|02-11-2020|Germany|Wesselburenerkoog|54.21|8.83|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -498,7 +498,7 @@
 | 31| 285372|23-12-2020|09-11-2020|Netherlands|Groet|52.72|4.67|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 32| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Ciconia ciconia|1500|111|Cigüeña blanca  2015-2019|1340|0.4337|
 | 33| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
-| 34| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 34| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 35| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 36| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 37| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -526,15 +526,15 @@
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 286083|08-01-2021|01-12-2020|England|Nr Colchester|51.58|-0.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 1| 284373|11-12-2020|17-11-2020|England|Peterborough|52.57|-0.05|Wild|Anas strepera|2|2|Ánade friso  2015-2019|1820|0.902|
-| 2| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 3| 284860|17-12-2020|16-11-2020|Denmark|Rødbyhavn|54.76944399999999|11.424444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 4| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 5| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 7| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 8| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 9| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 10| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 3| 284860|17-12-2020|16-11-2020|Denmark|Rødbyhavn|54.769444|11.424444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 4| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 5| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 7| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 8| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 9| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 10| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 11| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 12| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 13| 285202|18-12-2020|03-11-2020|Germany|Dithmarschen|54.35|9.02|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
@@ -555,12 +555,12 @@
 | 28| 282026|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 29| 282025|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 30| 282024|09-11-2020|06-11-2020|Germany|Mildstedt|54.46|9.09|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
-| 31| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
-| 32| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
-| 33| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
-| 34| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
-| 35| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
-| 36| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
+| 31| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
+| 32| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
+| 33| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
+| 34| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
+| 35| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
+| 36| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 37| 281573|05-11-2020|04-11-2020|Germany|Tetenbüll|54.37|8.83|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 38| 281572|05-11-2020|04-11-2020|Germany|Husum|54.47|9.05|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 39| 281571|05-11-2020|04-11-2020|Germany|Husum|54.47|9.05|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
@@ -605,15 +605,15 @@
 | 8| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 9| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 10| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.7901|
-| 11| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.7176|
-| 12| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
-| 13| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
-| 14| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
-| 15| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
-| 16| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas acuta|2|2|Ánade rabudo  2015-2019|1890|0.8119|
-| 17| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
-| 18| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
-| 19| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 11| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.7176|
+| 12| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 13| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 14| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 15| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 16| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas acuta|2|2|Ánade rabudo  2015-2019|1890|0.8119|
+| 17| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 18| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 19| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
 | 20| 284807|17-12-2020|19-11-2020|Denmark|Otterup|55.5222|10.4608|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 21| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
 | 22| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
@@ -632,7 +632,7 @@
 | 35| 282239|09-11-2020|03-11-2020|Germany|Hedwigenkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 36| 282238|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 37| 282237|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 38| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 38| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 39| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 40| 281566|05-11-2020|03-11-2020|Germany|Sankt Michaelisdonn|53.98|9.14|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 41| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Fulica atra|1||Focha común  2015-2019|4290|0.7901|
@@ -677,10 +677,10 @@
 | 1| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 2| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 4| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 5| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 6| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 7| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 4| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 5| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 6| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 7| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 8| 284390|11-12-2020|24-11-2020|Germany|Hamburg|53.53|10.01|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 9| 283363|27-11-2020|09-11-2020|Germany|Friesland|53.41|8.18|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.9317|
 | 10| 283357|24-11-2020|17-11-2020|Germany|Herzogtum Lauenburg|53.53|10.67|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -722,15 +722,15 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 286083|08-01-2021|01-12-2020|England|Nr Colchester|51.58|-0.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 1| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009000000000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 1| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 2| 285383|24-12-2020|28-11-2020|Belgium|Brugge|51.2468|3.2236|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 4| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 5| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 5| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 6| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 7| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 8| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 9| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
+| 8| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 9| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 10| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 11| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 12| 284783|17-12-2020|09-11-2020|Denmark|Svenstrup|56.9731|9.8394|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -761,7 +761,7 @@
 | 37| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 38| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 39| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Ciconia ciconia|4|3|Cigüeña blanca  2015-2019|1340|0.4337|
-| 40| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 40| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 41| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 42| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 43| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -807,7 +807,7 @@
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 286083|08-01-2021|01-12-2020|England|Nr Colchester|51.58|-0.98|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 1| 284363|11-12-2020|09-11-2020|England|POOLE|50.73|-1.99|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.902|
-| 2| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 2| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 3| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Anas querquedula|1|1|Cerceta carretona  2015-2019|1910|0.0025|
 | 4| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Anas crecca|400|400|Cerceta común  2015-2019|1840|0.9876|
 | 5| 283371|27-11-2020|12-11-2020|Germany|Vorpommern-Rügen|54.54|13.34|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -836,7 +836,7 @@
 | 8| 284374|11-12-2020|18-11-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|||Gaviota sombría  2015-2019|5910|0.7965|
 | 9| 284373|11-12-2020|17-11-2020|England|Peterborough|52.57|-0.05|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
 | 10| 284358|11-12-2020|03-11-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
-| 11| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009000000000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 11| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 12| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 13| 282326|10-11-2020|10-11-2020|England|Stroud|51.73|-2.21|Wild|Larus fuscus|3||Gaviota sombría  2015-2019|5910|0.7965|
 | 14| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
@@ -847,12 +847,12 @@
 | 19| 283713|04-12-2020|26-11-2020|Belgium|Diksmuide|51.0464|2.7972|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 20| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 21| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
-| 22| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 22| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 23| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
-| 24| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
-| 25| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 24| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 25| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 26| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
-| 27| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 27| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 28| 284850|17-12-2020|10-11-2020|Denmark|Sønderstrand|54.933333|8.9|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 29| 284810|17-12-2020|22-11-2020|Denmark|Asaa|57.1478|10.4071|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 30| 284803|17-12-2020|17-11-2020|Denmark|Stauning|55.9858|8.3381|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
@@ -862,9 +862,9 @@
 | 34| 284790|17-12-2020|11-11-2020|Denmark|Hjerting3|55.5247|8.3744|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 35| 282327|06-11-2020|06-11-2020|Denmark|Sakskobing|54.8|11.65|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.3852|
 | 36| 282266|10-11-2020|05-11-2020|Denmark|Højer|54.94|8.86|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.9287|
-| 37| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798235999999996|11.631226|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.3852|
+| 37| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798236|11.631226|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.3852|
 | 38| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Phoenicopterus ruber|1|1|Flamenco común  2015-2019|1470|0.6528|
-| 39| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 39| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 40| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Ciconia ciconia|400|400|Cigüeña blanca  2015-2019|1340|0.4337|
 | 41| 286784|18-01-2021|12-11-2020|Germany|Friesland|53.65|8.02|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 42| 285245|22-12-2020|06-11-2020|Germany|Steinburg|53.93|9.72|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -884,8 +884,8 @@
 | 56| 282062|10-11-2020|06-11-2020|Germany|Krempel|54.31|9.03|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 57| 282054|10-11-2020|04-11-2020|Germany|Kleve|54.29|9.12|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 58| 282020|09-11-2020|04-11-2020|Germany|Hemmingstedt|54.16|9.08|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 59| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 60| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 59| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 60| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 61| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 62| 281564|05-11-2020|03-11-2020|Germany|Tönning|54.3|8.92|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 63| 281562|05-11-2020|03-11-2020|Germany|Westerrönfeld|54.28|9.64|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -900,7 +900,7 @@
 | 72| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus argentatus|4|4|Gaviota argéntea europea  2015-2019|5920|0.4814|
 | 73| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 74| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Anas clypeata|3|3|Pato cuchara  2015-2019|1940|0.9137|
-| 75| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 75| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 76| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 77| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 78| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
@@ -945,8 +945,8 @@
 | 117| 284260|09-12-2020|28-11-2020|Norway|Klepp|58.81|5.6|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.8345|
 | 118| 284095|08-12-2020|01-11-2020|Sweden|Bromölla|55.605833|13.0025|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 119| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 120| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 121| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 120| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
+| 121| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 
 
 ### Alerta 15 
@@ -960,7 +960,7 @@
 | 2| 285171|18-12-2020|30-11-2020|England|Peterborough|52.52|0.27|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.902|
 | 3| 284380|11-12-2020|03-12-2020|England|Kings Lynn|52.52|0.27|Wild|Anas strepera|7|7|Ánade friso  2015-2019|1820|0.902|
 | 4| 284373|11-12-2020|17-11-2020|England|Peterborough|52.57|-0.05|Wild|Anas clypeata|2|2|Pato cuchara  2015-2019|1940|0.9137|
-| 5| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009000000000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 5| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 6| 285383|24-12-2020|28-11-2020|Belgium|Brugge|51.2468|3.2236|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
 | 7| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 8| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
@@ -968,21 +968,21 @@
 | 10| 283713|04-12-2020|26-11-2020|Belgium|Diksmuide|51.0464|2.7972|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
 | 11| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 12| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 13| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 13| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 14| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 15| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 16| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 15| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 16| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 17| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
-| 18| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 19| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 20| 284860|17-12-2020|16-11-2020|Denmark|Rødbyhavn|54.76944399999999|11.424444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 21| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 22| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 23| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 24| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 25| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 26| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 27| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 18| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 19| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 20| 284860|17-12-2020|16-11-2020|Denmark|Rødbyhavn|54.769444|11.424444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 21| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 22| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 23| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 24| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 25| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 26| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 27| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 28| 284813|17-12-2020|23-11-2020|Denmark|Vordingborg|55.0051|11.884|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 29| 284808|17-12-2020|19-11-2020|Denmark|Eskilstrup|54.8483|11.8342|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 30| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
@@ -1004,9 +1004,9 @@
 | 46| 283373|27-11-2020|12-11-2020|Germany|Nordwestmecklenburg|53.77|11.05|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 47| 283370|27-11-2020|13-11-2020|Germany|Prignitz|52.89|12.02|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 48| 283369|27-11-2020|20-11-2020|Germany|Berlin|52.43|13.29|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 49| 283360|24-11-2020|19-11-2020|Germany|Bayern|48.922712|12.035347999999999|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
+| 49| 283360|24-11-2020|19-11-2020|Germany|Bayern|48.922712|12.035348|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
 | 50| 283351|27-11-2020|06-11-2020|Germany|Hamburg|53.56|10.07|Wild|Anser anser|4|4|Ánsar común  2015-2019|1610|0.9798|
-| 51| 282978|24-11-2020|19-11-2020|Germany|Passau|48.922712|12.035347999999999|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
+| 51| 282978|24-11-2020|19-11-2020|Germany|Passau|48.922712|12.035348|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
 | 52| 282699|17-11-2020|04-11-2020|Germany|Wilhelmshaven|53.51|8.1|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 53| 282698|17-11-2020|04-11-2020|Germany|Wilhelmshaven|53.51|8.1|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 54| 282542|17-11-2020|10-11-2020|Germany|Emden|53.36|7.16|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
@@ -1036,19 +1036,19 @@
 | 78| 282003|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Anas strepera|1||Ánade friso  2015-2019|1820|0.902|
 | 79| 282002|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Anas strepera|1||Ánade friso  2015-2019|1820|0.902|
 | 80| 282001|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Anas strepera|1||Ánade friso  2015-2019|1820|0.902|
-| 81| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 82| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 81| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 82| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 83| 281631|09-11-2020|06-11-2020|Germany|Rambin|54.38|13.26|Wild|Anas strepera|1||Ánade friso  2015-2019|1820|0.902|
 | 84| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 85| 281564|05-11-2020|03-11-2020|Germany|Tönning|54.3|8.92|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 86| 281540|03-11-2020|02-11-2020|Germany|Wesselburenerkoog|54.21|8.83|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 87| 281539|03-11-2020|02-11-2020|Germany|Wesselburenerkoog|54.21|8.83|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 88| 286277|13-01-2021|21-11-2020|Italy|Porto Viro - Valle San Lorenzo|45.011688|12.375378999999999|Wild|Fulica atra|3||Focha común  2015-2019|4290|0.7901|
+| 88| 286277|13-01-2021|21-11-2020|Italy|Porto Viro - Valle San Lorenzo|45.011688|12.375379|Wild|Fulica atra|3||Focha común  2015-2019|4290|0.7901|
 | 89| 284839|16-12-2020|04-12-2020|Italy|CAMPAGNA LUPIA VALLE FIGHERI/1|45.32952|12.13465|Wild|Aythya ferina|1||Porrón común  2015-2019|1980|0.7176|
-| 90| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525597999999995|12.599252|Wild|Anas crecca|1||Cerceta común  2015-2019|1840|0.9876|
+| 90| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525598|12.599252|Wild|Anas crecca|1||Cerceta común  2015-2019|1840|0.9876|
 | 91| 284837|16-12-2020|28-11-2020|Italy|PORTO TOLLE - VALLE CHIUSA|45.014046|12.431677|Wild|Fulica atra|1||Focha común  2015-2019|4290|0.7901|
 | 92| 284836|16-12-2020|04-12-2020|Italy|Campagnia Lupia valle filingheri / 2|45.32952|12.13465|Wild|Aythya ferina|2||Porrón común  2015-2019|1980|0.7176|
-| 93| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525597999999995|12.599252|Wild|Anas crecca|8||Cerceta común  2015-2019|1840|0.9876|
+| 93| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525598|12.599252|Wild|Anas crecca|8||Cerceta común  2015-2019|1840|0.9876|
 | 94| 282968|21-11-2020|12-11-2020|Italy|Campagna Lupia|45.32952|12.13465|Wild|Aythya ferina|1||Porrón común  2015-2019|1980|0.7176|
 | 95| 285376|23-12-2020|09-11-2020|Netherlands|Schagerbrug|52.81|4.76|Wild|Anas clypeata|2|2|Pato cuchara  2015-2019|1940|0.9137|
 | 96| 285375|23-12-2020|04-11-2020|Netherlands|Vinkeveen|52.21|4.92|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
@@ -1063,7 +1063,7 @@
 | 105| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 106| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 107| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Ardea cinerea|4|3|Garza real  2015-2019|1220|0.9287|
-| 108| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Anas crecca|13|13|Cerceta común  2015-2019|1840|0.9876|
+| 108| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Anas crecca|13|13|Cerceta común  2015-2019|1840|0.9876|
 | 109| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 110| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 111| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
@@ -1107,8 +1107,8 @@
 | 149| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Recurvirostra avosetta|4||Avoceta común  2015-2019|4560|0.3899|
 | 150| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
 | 151| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 152| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 153| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 152| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
+| 153| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 
 
 ### Alerta 16 
@@ -1119,7 +1119,7 @@
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285739|31-12-2020|17-11-2020|England|Dorchester|50.71|-2.37|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.9287|
 | 1| 285361|23-12-2020|21-11-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 2| 285254|18-12-2020|26-11-2020|England|POOLE|50.711389000000004|-2.437778|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 2| 285254|18-12-2020|26-11-2020|England|POOLE|50.711389|-2.437778|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 3| 284823|11-12-2020|03-12-2020|England|Colchester|51.94|1.07|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 4| 284389|11-12-2020|03-12-2020|England|Kings Lynn|52.72|0.51|Domestic|Larus fuscus|1611|1611|Gaviota sombría  2015-2019|5910|0.7965|
 | 5| 284381|11-12-2020|03-12-2020|England|Kings Lynn|52.71|0.5|Wild|Larus fuscus|5|5|Gaviota sombría  2015-2019|5910|0.7965|
@@ -1145,7 +1145,7 @@
 | 25| 282239|09-11-2020|03-11-2020|Germany|Hedwigenkoog|54.09|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 26| 282238|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 27| 282237|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 28| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 28| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 29| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 30| 281566|05-11-2020|03-11-2020|Germany|Sankt Michaelisdonn|53.98|9.14|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 31| 284027|09-12-2020|03-12-2020|Netherlands|Middelie|52.55|5.0|Wild|Vanellus vanellus|5|5|Avefría europea  2015-2019|4930|0.9317|
@@ -1196,10 +1196,10 @@
 | 28| 282241|09-11-2020|06-11-2020|Germany|Nieblum|54.58|9.0|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 29| 282028|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.95|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 30| 282027|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.94|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 31| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 32| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 33| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 34| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 31| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 32| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 33| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 34| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 35| 281565|05-11-2020|03-11-2020|Germany|Wobbenbüll|54.53|8.99|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 36| 281563|05-11-2020|03-11-2020|Germany|Bordelum|54.64|8.92|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 37| 281561|05-11-2020|02-11-2020|Germany|Reußenköge|54.62|8.88|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -1242,7 +1242,7 @@
 | 7| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
 | 8| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 9| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 10| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.820040000000006|3.126743|Domestic|Anas crecca||600|Cerceta común  2015-2019|1840|0.9876|
+| 10| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.82004|3.126743|Domestic|Anas crecca||600|Cerceta común  2015-2019|1840|0.9876|
 | 11| 286782|18-01-2021|10-11-2020|Germany|Verden|52.88|9.18|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 12| 284431|11-12-2020|25-11-2020|Germany|Dithmarschen|52.756111|9.393056|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 13| 284395|11-12-2020|25-11-2020|Germany|Silberstedt|54.5|9.32|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -1262,8 +1262,8 @@
 | 27| 282062|10-11-2020|06-11-2020|Germany|Krempel|54.31|9.03|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 28| 282054|10-11-2020|04-11-2020|Germany|Kleve|54.29|9.12|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 29| 282020|09-11-2020|04-11-2020|Germany|Hemmingstedt|54.16|9.08|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 30| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 31| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 30| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 31| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 32| 281629|09-11-2020|02-11-2020|Germany|Hagen im Bremischen|53.37|8.52|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.4337|
 | 33| 281628|09-11-2020|08-11-2020|Germany|Heidmühlen|53.97|10.08|Domestic|Ciconia ciconia|10|7|Cigüeña blanca  2015-2019|1340|0.4337|
 | 34| 281574|05-11-2020|04-11-2020|Germany|Drage|54.35|9.15|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -1275,7 +1275,7 @@
 | 40| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Ciconia ciconia|1500|111|Cigüeña blanca  2015-2019|1340|0.4337|
 | 41| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 42| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
-| 43| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 43| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 44| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 45| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 46| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
@@ -1296,8 +1296,8 @@
 | 61| 281614|07-11-2020|27-10-2020|Netherlands|Loosdrecht|52.29|5.15|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 62| 281612|07-11-2020|26-10-2020|Netherlands|Naarden|52.29|5.15|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 63| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.4337|
-| 64| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.4337|
-| 65| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 64| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.4337|
+| 65| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 
 
 ### Alerta 19 
@@ -1320,10 +1320,10 @@
 | 11| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 12| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 13| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 14| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
+| 14| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 15| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 16| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 17| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Larus fuscus|3|3|Gaviota sombría  2015-2019|5910|0.7965|
+| 16| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
+| 17| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Larus fuscus|3|3|Gaviota sombría  2015-2019|5910|0.7965|
 | 18| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Larus fuscus|3|3|Gaviota sombría  2015-2019|5910|0.7965|
 | 19| 284790|17-12-2020|11-11-2020|Denmark|Hjerting3|55.5247|8.3744|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 20| 284392|11-12-2020|12-11-2020|Germany|Plön|54.27|10.22|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -1347,9 +1347,9 @@
 | 4| 282326|10-11-2020|10-11-2020|England|Stroud|51.73|-2.21|Wild|Larus fuscus|3||Gaviota sombría  2015-2019|5910|0.7965|
 | 5| 282302|12-11-2020|09-11-2020|England|Hereford|52.16|-2.81|Domestic|Larus fuscus|6450|6450|Gaviota sombría  2015-2019|5910|0.7965|
 | 6| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
-| 7| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 8| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 9| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 7| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 8| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 9| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 10| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 11| 282430|13-11-2020|12-11-2020|Netherlands|Hazerswoude-Dorp|52.1|4.6|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 12| 282427|13-11-2020|09-11-2020|Netherlands|Alphen a/d Rijn|52.14|4.63|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -1377,7 +1377,7 @@
 | 13| 282427|13-11-2020|09-11-2020|Netherlands|Alphen a/d Rijn|52.14|4.63|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 14| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 15| 281620|07-11-2020|30-10-2020|Netherlands|Velserbroek|52.43|4.67|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
-| 16| 284261|09-12-2020|30-11-2020|Norway|Hå|58.61600000000001|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
+| 16| 284261|09-12-2020|30-11-2020|Norway|Hå|58.616|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
 
 
 ### Alerta 22 
@@ -1452,9 +1452,9 @@
 | 5| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
 | 6| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 7| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 8| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 8| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 9| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 10| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 10| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 11| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Ciconia ciconia|400|400|Cigüeña blanca  2015-2019|1340|0.4337|
 | 12| 287118|22-01-2021|11-11-2020|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 13| 286784|18-01-2021|12-11-2020|Germany|Friesland|53.65|8.02|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
@@ -1514,10 +1514,10 @@
 | 67| 282027|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.94|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 68| 282023|09-11-2020|04-11-2020|Germany|Glückstadt|53.79|9.42|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 69| 281663|05-11-2020|04-11-2020|Germany|Langeneß|54.47|9.51|Domestic|Ardea cinerea|12|8|Garza real  2015-2019|1220|0.9287|
-| 70| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 71| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 72| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 73| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 70| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 71| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 72| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 73| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 74| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 75| 281567|05-11-2020|03-11-2020|Germany|Kuden|53.96|9.2|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 76| 281565|05-11-2020|03-11-2020|Germany|Wobbenbüll|54.53|8.99|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
@@ -1535,7 +1535,7 @@
 | 88| 284027|09-12-2020|03-12-2020|Netherlands|Middelie|52.55|5.0|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8895|
 | 89| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 90| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
-| 91| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 91| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 92| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 93| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 94| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
@@ -1624,7 +1624,7 @@
 | 32| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Vanellus vanellus|1500|111|Avefría europea  2015-2019|4930|0.9317|
 | 33| 284027|09-12-2020|03-12-2020|Netherlands|Middelie|52.55|5.0|Wild|Vanellus vanellus|5|5|Avefría europea  2015-2019|4930|0.9317|
 | 34| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
-| 35| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
+| 35| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 36| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 37| 283697|27-11-2020|12-11-2020|Netherlands|Wons|52.28|5.25|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 38| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
@@ -1732,10 +1732,10 @@
 | 11| 281385|02-11-2020|30-10-2020|England|DEAL|51.23|1.35|Domestic|Larus ridibundus|6|2|Gaviota reidora  2015-2019|5820|0.8895|
 | 12| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 13| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 14| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 15| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 16| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 17| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 14| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 15| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 16| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 17| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 18| 282972|23-11-2020|13-11-2020|France|SAINT CYR L''ECOLE|48.807272|2.065772|Domestic|Larus ridibundus|112|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 19| 284390|11-12-2020|24-11-2020|Germany|Hamburg|53.53|10.01|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 20| 283378|27-11-2020|09-11-2020|Germany|Dithmarschen|54.31|9.19|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -1757,7 +1757,7 @@
 | 36| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus fuscus|4|4|Gaviota sombría  2015-2019|5910|0.7965|
 | 37| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 38| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
-| 39| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 39| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 40| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 41| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 42| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -1801,7 +1801,7 @@
 | 8| 285372|23-12-2020|09-11-2020|Netherlands|Groet|52.72|4.67|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 9| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Ardea cinerea|1500|111|Garza real  2015-2019|1220|0.9287|
 | 10| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
-| 11| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ardea cinerea|13|13|Garza real  2015-2019|1220|0.9287|
+| 11| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ardea cinerea|13|13|Garza real  2015-2019|1220|0.9287|
 | 12| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.9287|
 | 13| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.9287|
 | 14| 282430|13-11-2020|12-11-2020|Netherlands|Hazerswoude-Dorp|52.1|4.6|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -1835,7 +1835,7 @@
 | 9| 285207|18-12-2020|24-11-2020|Germany|Vorpommern-Rügen|54.29|12.34|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 10| 285372|23-12-2020|09-11-2020|Netherlands|Groet|52.72|4.67|Wild|Numenius arquata|1|1|Zarapito real  2015-2019|5410|0.7285|
 | 11| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Vanellus vanellus|1500|111|Avefría europea  2015-2019|4930|0.9317|
-| 12| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
+| 12| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 13| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 14| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 15| 282426|13-11-2020|09-11-2020|Netherlands|Gytsjerk|53.22|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -1882,30 +1882,30 @@
 | 5| 284363|11-12-2020|09-11-2020|England|POOLE|50.73|-1.99|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
 | 6| 284358|11-12-2020|03-11-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
 | 7| 283690|03-12-2020|18-11-2020|England|Melton Mowbray|52.78|-0.85|Domestic|Anas clypeata|37|37|Pato cuchara  2015-2019|1940|0.9137|
-| 8| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009000000000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 8| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 9| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 10| 282326|10-11-2020|10-11-2020|England|Stroud|51.73|-2.21|Wild|Larus fuscus|3||Gaviota sombría  2015-2019|5910|0.7965|
 | 11| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
 | 12| 285383|24-12-2020|28-11-2020|Belgium|Brugge|51.2468|3.2236|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 13| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 14| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 15| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 16| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 17| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 15| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 16| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 17| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 18| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.3639|
-| 19| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 19| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 20| 286991|22-01-2021|09-11-2020|Denmark|Havneby|55.0931|8.5536|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 21| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 22| 284860|17-12-2020|16-11-2020|Denmark|Rødbyhavn|54.76944399999999|11.424444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 23| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 24| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 25| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 26| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 27| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 28| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 29| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 21| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 22| 284860|17-12-2020|16-11-2020|Denmark|Rødbyhavn|54.769444|11.424444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 23| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 24| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 25| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 26| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 27| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 28| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 29| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 30| 284852|17-12-2020|12-11-2020|Denmark|Gørlev|55.433333|11.566667|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 31| 284851|17-12-2020|11-11-2020|Denmark|Husum-Ballum|55.075832999999996|8.663333|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 31| 284851|17-12-2020|11-11-2020|Denmark|Husum-Ballum|55.075833|8.663333|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 32| 284820|17-12-2020|01-12-2020|Denmark|Næstved|55.246|11.6762|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 33| 284814|17-12-2020|24-11-2020|Denmark|Otterup2|55.5497|10.4931|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 34| 284809|17-12-2020|19-11-2020|Denmark|Sorø|55.4306|11.5536|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
@@ -1922,7 +1922,7 @@
 | 45| 284773|17-12-2020|05-11-2020|Denmark|Skærbæk|55.1537|8.7537|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 46| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.7176|
 | 47| 284902|18-12-2020|18-11-2020|France|BORGO|42.579807|9.468498|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.7176|
-| 48| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.7901|
+| 48| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.7901|
 | 49| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Fulica atra|400|400|Focha común  2015-2019|4290|0.7901|
 | 50| 283718|01-12-2020|23-11-2020|France|RIANTEC|47.6559|-2.7603|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
 | 51| 282977|23-11-2020|16-11-2020|France|BIGUGLIA|42.590722|9.431179|Domestic|Aythya ferina|102|77|Porrón común  2015-2019|1980|0.7176|
@@ -1986,14 +1986,14 @@
 | 109| 281656|05-11-2020|04-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 110| 281655|05-11-2020|04-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 111| 281654|05-11-2020|04-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 112| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 113| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 114| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 112| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 113| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 114| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 115| 281646|05-11-2020|02-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 116| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 116| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 117| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 118| 281643|03-11-2020|02-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 119| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 119| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 120| 281640|03-11-2020|30-10-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 121| 281639|03-11-2020|30-10-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 122| 281638|03-11-2020|30-10-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
@@ -2061,9 +2061,9 @@
 | 184| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Anser anser|2|2|Ánsar común  2015-2019|1610|0.9798|
 | 185| 284095|08-12-2020|01-11-2020|Sweden|Bromölla|55.605833|13.0025|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 186| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 187| 284024|08-12-2020|15-11-2020|Sweden|Gotland|57.012221999999994|18.330556|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 188| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 189| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 187| 284024|08-12-2020|15-11-2020|Sweden|Gotland|57.012222|18.330556|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 188| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
+| 189| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 
 
 ### Alerta 34 
@@ -2083,10 +2083,10 @@
 | 8| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
 | 9| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 10| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 11| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 12| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 13| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 14| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 11| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 12| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 13| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 14| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 15| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 16| 284805|17-12-2020|17-11-2020|Denmark|Haderslev|55.2414|9.5036|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 17| 284797|17-12-2020|15-11-2020|Denmark|Korsør|55.3528|11.1586|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
@@ -2115,13 +2115,13 @@
 | 40| 282026|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 41| 282025|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 42| 282024|09-11-2020|06-11-2020|Germany|Mildstedt|54.46|9.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 43| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 44| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 45| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 43| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 44| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 45| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 46| 281657|05-11-2020|04-11-2020|Germany|Tümlauer Koog|54.35|8.683333|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 47| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 48| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 49| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 47| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 48| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 49| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 50| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 51| 281574|05-11-2020|04-11-2020|Germany|Drage|54.35|9.15|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 52| 281573|05-11-2020|04-11-2020|Germany|Tetenbüll|54.37|8.83|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -2135,7 +2135,7 @@
 | 60| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus fuscus|4|4|Gaviota sombría  2015-2019|5910|0.7965|
 | 61| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 62| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
-| 63| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
+| 63| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 64| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 65| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 66| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -2186,7 +2186,7 @@
 | 3| 282326|10-11-2020|10-11-2020|England|Stroud|51.73|-2.21|Wild|Larus fuscus|3||Gaviota sombría  2015-2019|5910|0.7965|
 | 4| 282029|09-11-2020|03-11-2020|England|Gloucestershire|51.74|-2.4|Wild|Larus fuscus|2|2|Gaviota sombría  2015-2019|5910|0.7965|
 | 5| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Ardea cinerea|1500|111|Garza real  2015-2019|1220|0.9287|
-| 6| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ardea cinerea|13|13|Garza real  2015-2019|1220|0.9287|
+| 6| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ardea cinerea|13|13|Garza real  2015-2019|1220|0.9287|
 | 7| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.9287|
 | 8| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.9287|
 | 9| 282426|13-11-2020|09-11-2020|Netherlands|Gytsjerk|53.22|5.87|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
@@ -2211,7 +2211,7 @@
 | 7| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 8| 284813|17-12-2020|23-11-2020|Denmark|Vordingborg|55.0051|11.884|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 9| 284808|17-12-2020|19-11-2020|Denmark|Eskilstrup|54.8483|11.8342|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
-| 10| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 10| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 11| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Ciconia ciconia|400|400|Cigüeña blanca  2015-2019|1340|0.4337|
 | 12| 286782|18-01-2021|10-11-2020|Germany|Verden|52.88|9.18|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 13| 284431|11-12-2020|25-11-2020|Germany|Dithmarschen|52.756111|9.393056|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -2231,7 +2231,7 @@
 | 27| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 28| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 29| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Larus ridibundus|4|3|Gaviota reidora  2015-2019|5820|0.8895|
-| 30| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 30| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 31| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 32| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 33| 283697|27-11-2020|12-11-2020|Netherlands|Wons|52.28|5.25|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -2264,8 +2264,8 @@
 | 60| 281126|29-10-2020|29-10-2020|Netherlands|Altforst|51.85|5.566667|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.9317|
 | 61| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
 | 62| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 63| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 64| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 63| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
+| 64| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 
 
 ### Alerta 37 
@@ -2289,8 +2289,8 @@
 | 12| 283366|27-11-2020|13-11-2020|Germany|Aurich|53.56|7.29|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 13| 283340|18-11-2020|16-11-2020|Germany|Großheide|53.55|7.37|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
 | 14| 282543|17-11-2020|10-11-2020|Germany|Norden|53.6|7.13|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
-| 15| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525597999999995|12.599252|Wild|Anas acuta|1||Ánade rabudo  2015-2019|1890|0.8119|
-| 16| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525597999999995|12.599252|Wild|Anas acuta|8||Ánade rabudo  2015-2019|1890|0.8119|
+| 15| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525598|12.599252|Wild|Anas acuta|1||Ánade rabudo  2015-2019|1890|0.8119|
+| 16| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525598|12.599252|Wild|Anas acuta|8||Ánade rabudo  2015-2019|1890|0.8119|
 | 17| 285374|23-12-2020|04-11-2020|Netherlands|Harlingen|53.16|5.42|Wild|Pluvialis apricaria|2|2|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 18| 285373|23-12-2020|04-11-2020|Netherlands|Goingarijp|53.01|5.76|Wild|Pluvialis apricaria|2|2|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 19| 285372|23-12-2020|09-11-2020|Netherlands|Groet|52.72|4.67|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -2300,7 +2300,7 @@
 | 23| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus fuscus|4|4|Gaviota sombría  2015-2019|5910|0.7965|
 | 24| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 25| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Anas clypeata|3|3|Pato cuchara  2015-2019|1940|0.9137|
-| 26| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
+| 26| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 27| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 28| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 29| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
@@ -2381,12 +2381,12 @@
 | 9| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 10| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 11| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 12| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 12| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 13| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 14| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 15| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 14| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 15| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 16| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
-| 17| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 17| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 18| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 19| 284783|17-12-2020|09-11-2020|Denmark|Svenstrup|56.9731|9.8394|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 20| 284396|11-12-2020|28-11-2020|Germany|Rendsburg-Eckernförde|54.41|9.97|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
@@ -2440,7 +2440,7 @@
 | 68| 281609|07-11-2020|31-10-2020|Netherlands|Hallum|53.33|5.75|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 69| 281608|07-11-2020|28-10-2020|Netherlands|Purmerend|52.48|5.02|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 70| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
-| 71| 284261|09-12-2020|30-11-2020|Norway|Hå|58.61600000000001|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
+| 71| 284261|09-12-2020|30-11-2020|Norway|Hå|58.616|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
 | 72| 284260|09-12-2020|28-11-2020|Norway|Klepp|58.81|5.6|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
 | 73| 284095|08-12-2020|01-11-2020|Sweden|Bromölla|55.605833|13.0025|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 
@@ -2456,21 +2456,21 @@
 | 2| 284359|11-12-2020|03-11-2020|England|Nr Weymouth|50.65|-2.6|Wild|Anas acuta|12|12|Ánade rabudo  2015-2019|1890|0.8119|
 | 3| 284357|11-12-2020|03-11-2020|England|Nr Weymouth|50.65|-2.6|Wild|Anas acuta|12|12|Ánade rabudo  2015-2019|1890|0.8119|
 | 4| 282303|12-11-2020|03-11-2020|England|Nr Weymouth|50.65|-2.6|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
-| 5| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 7| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 8| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 9| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 10| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 11| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 12| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 5| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 7| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 8| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 9| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 10| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 11| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 12| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 13| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 14| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 15| 284390|11-12-2020|24-11-2020|Germany|Hamburg|53.53|10.01|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 16| 283363|27-11-2020|09-11-2020|Germany|Friesland|53.41|8.18|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.9317|
-| 17| 283360|24-11-2020|19-11-2020|Germany|Bayern|48.922712|12.035347999999999|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
+| 17| 283360|24-11-2020|19-11-2020|Germany|Bayern|48.922712|12.035348|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
 | 18| 283351|27-11-2020|06-11-2020|Germany|Hamburg|53.56|10.07|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.9287|
-| 19| 282978|24-11-2020|19-11-2020|Germany|Passau|48.922712|12.035347999999999|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
+| 19| 282978|24-11-2020|19-11-2020|Germany|Passau|48.922712|12.035348|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
 | 20| 282699|17-11-2020|04-11-2020|Germany|Wilhelmshaven|53.51|8.1|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 21| 282698|17-11-2020|04-11-2020|Germany|Wilhelmshaven|53.51|8.1|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 22| 282540|17-11-2020|10-11-2020|Germany|Jade|53.36|8.25|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -2561,13 +2561,13 @@
 | 29| 281621|07-11-2020|30-10-2020|Netherlands|Oldeboorn|53.03|5.9|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 30| 281617|07-11-2020|29-10-2020|Netherlands|Ameland |53.46|5.9|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 31| 281608|07-11-2020|28-10-2020|Netherlands|Purmerend|52.48|5.02|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
-| 32| 284261|09-12-2020|30-11-2020|Norway|Hå|58.61600000000001|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
+| 32| 284261|09-12-2020|30-11-2020|Norway|Hå|58.616|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
 | 33| 284260|09-12-2020|28-11-2020|Norway|Klepp|58.81|5.6|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
 | 34| 283087|27-11-2020|22-11-2020|Norway|Søredalen|58.8|5.8|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
 | 35| 284095|08-12-2020|01-11-2020|Sweden|Bromölla|55.605833|13.0025|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 36| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 37| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 38| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 37| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
+| 38| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 
 
 ### Alerta 43 
@@ -2661,10 +2661,10 @@
 | 2| 283713|04-12-2020|26-11-2020|Belgium|Diksmuide|51.0464|2.7972|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 4| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 5| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 5| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 6| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 7| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 8| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
+| 7| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 8| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 9| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 10| 284397|11-12-2020|28-11-2020|Germany|Zarpen|53.87|10.51|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 11| 283379|27-11-2020|20-11-2020|Germany|Segeberg|53.93|10.3|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -2674,7 +2674,7 @@
 | 15| 285374|23-12-2020|04-11-2020|Netherlands|Harlingen|53.16|5.42|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.9317|
 | 16| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Pluvialis apricaria|1500|111|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 17| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
-| 18| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 18| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 19| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 20| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 21| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
@@ -2690,10 +2690,10 @@
 | 31| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Pluvialis apricaria|1||Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 32| 281609|07-11-2020|31-10-2020|Netherlands|Hallum|53.33|5.75|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 33| 285348|23-12-2020|03-12-2020|Norway|Randaberg|58.9994|5.6181|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 34| 284261|09-12-2020|30-11-2020|Norway|Hå|58.61600000000001|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
+| 34| 284261|09-12-2020|30-11-2020|Norway|Hå|58.616|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
 | 35| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
-| 36| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
-| 37| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 36| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
+| 37| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 
 
 ### Alerta 48 
@@ -2708,10 +2708,10 @@
 | 3| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 4| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 5| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
-| 6| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
+| 6| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 7| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
-| 8| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
-| 9| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
+| 8| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
+| 9| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
 | 10| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
 | 11| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 12| 284813|17-12-2020|23-11-2020|Denmark|Vordingborg|55.0051|11.884|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
@@ -2761,10 +2761,10 @@
 | 56| 282003|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 57| 282002|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 58| 282001|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
-| 59| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 60| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 61| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 62| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 59| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 60| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 61| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 62| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 63| 281631|09-11-2020|06-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 64| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 65| 281565|05-11-2020|03-11-2020|Germany|Wobbenbüll|54.53|8.99|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -2791,14 +2791,14 @@
 | 0| 284379|11-12-2020|03-12-2020|England|Kings Lynn|52.58|0.33|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.3639|
 | 1| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 2| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 3| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.820040000000006|3.126743|Domestic|Anas strepera||600|Ánade friso  2015-2019|1820|0.902|
+| 3| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.82004|3.126743|Domestic|Anas strepera||600|Ánade friso  2015-2019|1820|0.902|
 | 4| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 5| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 6| 284807|17-12-2020|19-11-2020|Denmark|Otterup|55.5222|10.4608|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 7| 284783|17-12-2020|09-11-2020|Denmark|Svenstrup|56.9731|9.8394|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 8| 284781|17-12-2020|08-11-2020|Denmark|Kolding|55.4972|9.6231|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 9| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Phoenicopterus ruber|1|1|Flamenco común  2015-2019|1470|0.6528|
-| 10| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
+| 10| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
 | 11| 286781|18-01-2021|10-11-2020|Germany|Leer|53.29|7.35|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 12| 284397|11-12-2020|28-11-2020|Germany|Zarpen|53.87|10.51|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 13| 284392|11-12-2020|12-11-2020|Germany|Plön|54.27|10.22|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -2822,17 +2822,17 @@
 | 31| 282241|09-11-2020|06-11-2020|Germany|Nieblum|54.58|9.0|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 32| 282028|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.95|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 33| 282027|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.94|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 34| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 35| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 36| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 37| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 34| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 35| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 36| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 37| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 38| 281627|09-11-2020|06-11-2020|Germany|Fehrbellin|52.85|12.88|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 39| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 40| 281565|05-11-2020|03-11-2020|Germany|Wobbenbüll|54.53|8.99|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 41| 281563|05-11-2020|03-11-2020|Germany|Bordelum|54.64|8.92|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 42| 281561|05-11-2020|02-11-2020|Germany|Reußenköge|54.62|8.88|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 43| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525597999999995|12.599252|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.8345|
-| 44| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525597999999995|12.599252|Wild|Calidris alpina|8||Correlimos común  2015-2019|5120|0.8345|
+| 43| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525598|12.599252|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.8345|
+| 44| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525598|12.599252|Wild|Calidris alpina|8||Correlimos común  2015-2019|5120|0.8345|
 | 45| 285375|23-12-2020|04-11-2020|Netherlands|Vinkeveen|52.21|4.92|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.7901|
 | 46| 284417|14-12-2020|12-11-2020|Netherlands|Huizen|52.29|5.25|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
 | 47| 284265|09-12-2020|02-12-2020|Netherlands|Maasland|51.95|4.3|Domestic|Anas clypeata|101|3|Pato cuchara  2015-2019|1940|0.9137|
@@ -2915,10 +2915,10 @@
 | 2| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 3| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 4| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 5| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 6| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 7| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 8| 284861|17-12-2020|26-11-2020|Denmark|Hovvig|55.919169999999994|11.71471|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 5| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 6| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 7| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 8| 284861|17-12-2020|26-11-2020|Denmark|Hovvig|55.91917|11.71471|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 9| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 10| 284783|17-12-2020|09-11-2020|Denmark|Svenstrup|56.9731|9.8394|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 11| 285208|18-12-2020|04-12-2020|Germany|Nordwestmecklenburg|53.9|11.42|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -2953,18 +2953,18 @@
 | 40| 282025|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 41| 282024|09-11-2020|06-11-2020|Germany|Mildstedt|54.46|9.09|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 42| 282020|09-11-2020|04-11-2020|Germany|Hemmingstedt|54.16|9.08|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 43| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 44| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 45| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 46| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 43| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 44| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 45| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 46| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 47| 281657|05-11-2020|04-11-2020|Germany|Tümlauer Koog|54.35|8.683333|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 48| 281656|05-11-2020|04-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 49| 281655|05-11-2020|04-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 50| 281654|05-11-2020|04-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 51| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 52| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 53| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 54| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 51| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 52| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 53| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 54| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 55| 281646|05-11-2020|02-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 56| 281643|03-11-2020|02-11-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 57| 281640|03-11-2020|30-10-2020|Germany|Dagebüll|54.730364|8.69851|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3011,7 +3011,7 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 284373|11-12-2020|17-11-2020|England|Peterborough|52.57|-0.05|Wild|Aythya ferina|2|2|Porrón común  2015-2019|1980|0.7176|
-| 1| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 1| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 2| 282446|16-11-2020|10-11-2020|Germany|Heidmühlen|53.96|10.12|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 3| 284417|14-12-2020|12-11-2020|Netherlands|Huizen|52.29|5.25|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
 | 4| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Anas clypeata|3|3|Pato cuchara  2015-2019|1940|0.9137|
@@ -3036,13 +3036,13 @@
 | 1| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 2| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 3| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.820040000000006|3.126743|Domestic|Anas clypeata||600|Pato cuchara  2015-2019|1940|0.9137|
+| 4| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.82004|3.126743|Domestic|Anas clypeata||600|Pato cuchara  2015-2019|1940|0.9137|
 | 5| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 7| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 8| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 9| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 10| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 9| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 10| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 11| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 12| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 13| 284783|17-12-2020|09-11-2020|Denmark|Svenstrup|56.9731|9.8394|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -3056,7 +3056,7 @@
 | 21| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 22| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Anas clypeata|3|3|Pato cuchara  2015-2019|1940|0.9137|
 | 23| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Larus ridibundus|4|3|Gaviota reidora  2015-2019|5820|0.8895|
-| 24| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Anas clypeata|13|13|Pato cuchara  2015-2019|1940|0.9137|
+| 24| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Anas clypeata|13|13|Pato cuchara  2015-2019|1940|0.9137|
 | 25| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Anas clypeata|3|3|Pato cuchara  2015-2019|1940|0.9137|
 | 26| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 27| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
@@ -3102,9 +3102,9 @@
 | 1| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 2| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 3| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 4| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 5| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 6| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 4| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 5| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 6| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 7| 285374|23-12-2020|04-11-2020|Netherlands|Harlingen|53.16|5.42|Wild|Pluvialis apricaria|2|2|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 8| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 9| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
@@ -3132,9 +3132,9 @@
 | 2| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 284276|11-12-2020|03-12-2020|Belgium|De Panne|51.1024|2.5846|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
 | 4| 283713|04-12-2020|26-11-2020|Belgium|Diksmuide|51.0464|2.7972|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 5| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 6| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 7| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 5| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 6| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 7| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 8| 284797|17-12-2020|15-11-2020|Denmark|Korsør|55.3528|11.1586|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 9| 284791|17-12-2020|12-11-2020|Denmark|Korsør|55.3267|11.14|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 10| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Ciconia ciconia|400|400|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3161,7 +3161,7 @@
 | 0| 284373|11-12-2020|17-11-2020|England|Peterborough|52.57|-0.05|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
 | 1| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
 | 2| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 3| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 3| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 4| 285207|18-12-2020|24-11-2020|Germany|Vorpommern-Rügen|54.29|12.34|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 5| 283339|18-11-2020|16-11-2020|Germany|Emmelsbüll-Horsbüll|54.84|8.68|Domestic|Ciconia ciconia|60|60|Cigüeña blanca  2015-2019|1340|0.4337|
 | 6| 282477|16-11-2020|12-11-2020|Germany|Dagebüll|54.72|8.74|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3219,10 +3219,10 @@
 | 0| 284373|11-12-2020|17-11-2020|England|Peterborough|52.57|-0.05|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
 | 1| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 2| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 3| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 3| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 4| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 5| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 5| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 7| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 8| 283694|27-11-2020|11-11-2020|Netherlands|Utrecht|52.09|5.15|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
 | 9| 283091|27-11-2020|07-11-2020|Netherlands|Woudrichem|51.8|4.96|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3250,7 +3250,7 @@
 | 10| 282239|09-11-2020|03-11-2020|Germany|Hedwigenkoog|54.09|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 11| 282238|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 12| 282237|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 13| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 13| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 14| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 15| 281566|05-11-2020|03-11-2020|Germany|Sankt Michaelisdonn|53.98|9.14|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 16| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
@@ -3276,9 +3276,9 @@
 | 1| 284361|11-12-2020|06-11-2020|England|ROCHFORD|51.59|0.77|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 2| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 3| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 4| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 5| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 6| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 4| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 5| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 6| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 7| 285241|22-12-2020|30-11-2020|Germany|Havelland|52.67|12.3|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
 | 8| 283358|24-11-2020|17-11-2020|Germany|Pinneberg|53.68|9.68|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 9| 282545|17-11-2020|12-11-2020|Germany|Winsen (Luhe)|53.37|10.19|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -3307,12 +3307,12 @@
 | 32| 281611|07-11-2020|26-10-2020|Netherlands|Kamerik|52.14|4.93|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 33| 281609|07-11-2020|31-10-2020|Netherlands|Hallum|53.33|5.75|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 34| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
-| 35| 284261|09-12-2020|30-11-2020|Norway|Hå|58.61600000000001|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
+| 35| 284261|09-12-2020|30-11-2020|Norway|Hå|58.616|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
 | 36| 284260|09-12-2020|28-11-2020|Norway|Klepp|58.81|5.6|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.8345|
 | 37| 284095|08-12-2020|01-11-2020|Sweden|Bromölla|55.605833|13.0025|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 38| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
-| 39| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
-| 40| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 39| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
+| 40| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 
 
 ### Alerta 62 
@@ -3324,10 +3324,10 @@
 | 0| 284363|11-12-2020|09-11-2020|England|POOLE|50.73|-1.99|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 1| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 2| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 3| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 3| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 4| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 5| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 6| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
+| 5| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 6| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 7| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 8| 286784|18-01-2021|12-11-2020|Germany|Friesland|53.65|8.02|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 9| 285197|18-12-2020|20-11-2020|Germany|Friesland|53.69|8.02|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.9317|
@@ -3339,7 +3339,7 @@
 | 15| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Pluvialis apricaria|1500|111|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 16| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus ridibundus|4|4|Gaviota reidora  2015-2019|5820|0.8895|
 | 17| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Ardea cinerea|4|3|Garza real  2015-2019|1220|0.9287|
-| 18| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 18| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 19| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 20| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 21| 283352|27-11-2020|20-11-2020|Netherlands|Witmarsum|53.09|5.46|Domestic|Pluvialis apricaria|2055|230|Chorlito dorado europeo  2015-2019|4850|0.8823|
@@ -3364,7 +3364,7 @@
 | 2| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 284790|17-12-2020|11-11-2020|Denmark|Hjerting3|55.5247|8.3744|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 4| 282327|06-11-2020|06-11-2020|Denmark|Sakskobing|54.8|11.65|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8895|
-| 5| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798235999999996|11.631226|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8895|
+| 5| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798236|11.631226|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8895|
 | 6| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.7176|
 | 7| 284902|18-12-2020|18-11-2020|France|BORGO|42.579807|9.468498|Wild|Phoenicopterus ruber|1|1|Flamenco común  2015-2019|1470|0.6528|
 | 8| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Larus michehellis|400|400|Gaviota patiamarilla  2015-2019|5926|0.8664|
@@ -3375,8 +3375,8 @@
 | 13| 282268|11-11-2020|09-11-2020|Germany|Zingst|54.33|13.0|Domestic|Tringa totanus|46|24|Archibebe común  2015-2019|5460|0.3852|
 | 14| 282065|10-11-2020|07-11-2020|Germany|Wisch|54.43|10.3|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 15| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
-| 16| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525597999999995|12.599252|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.8345|
-| 17| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525597999999995|12.599252|Wild|Calidris alpina|8||Correlimos común  2015-2019|5120|0.8345|
+| 16| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525598|12.599252|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.8345|
+| 17| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525598|12.599252|Wild|Calidris alpina|8||Correlimos común  2015-2019|5120|0.8345|
 | 18| 282969|21-11-2020|14-11-2020|Italy|Porto Tolle|44.974634|12.466154|Wild|Calidris minuta|1||Correlimos menudo  2015-2019|5010|0.5483|
 | 19| 285376|23-12-2020|09-11-2020|Netherlands|Schagerbrug|52.81|4.76|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
 | 20| 285375|23-12-2020|04-11-2020|Netherlands|Vinkeveen|52.21|4.92|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.7901|
@@ -3388,7 +3388,7 @@
 | 26| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Fulica atra|13|13|Focha común  2015-2019|4290|0.7901|
 | 27| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
 | 28| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Fulica atra|4|3|Focha común  2015-2019|4290|0.7901|
-| 29| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
+| 29| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 30| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 31| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 32| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
@@ -3426,14 +3426,14 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009000000000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 0| 282871|18-11-2020|13-11-2020|England|Nr Boston|52.93|0.009|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 1| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
 | 2| 281385|02-11-2020|30-10-2020|England|DEAL|51.23|1.35|Domestic|Tringa totanus|6|2|Archibebe común  2015-2019|5460|0.3852|
 | 3| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 4| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 5| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 6| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 7| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 5| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 6| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 7| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 8| 284805|17-12-2020|17-11-2020|Denmark|Haderslev|55.2414|9.5036|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 9| 284790|17-12-2020|11-11-2020|Denmark|Hjerting3|55.5247|8.3744|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
 | 10| 285241|22-12-2020|30-11-2020|Germany|Havelland|52.67|12.3|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.3852|
@@ -3468,16 +3468,16 @@
 | 39| 282026|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 40| 282025|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 41| 282024|09-11-2020|06-11-2020|Germany|Mildstedt|54.46|9.09|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 42| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 43| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 44| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 45| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 46| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 47| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 48| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 49| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 50| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
-| 51| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 42| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 43| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 44| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 45| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 46| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 47| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 48| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 49| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 50| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
+| 51| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 52| 281573|05-11-2020|04-11-2020|Germany|Tetenbüll|54.37|8.83|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 53| 281572|05-11-2020|04-11-2020|Germany|Husum|54.47|9.05|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
 | 54| 281571|05-11-2020|04-11-2020|Germany|Husum|54.47|9.05|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.8345|
@@ -3513,7 +3513,7 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 1| 281270|02-11-2020|02-11-2020|England|Frodsham|53.283333|-2.7166669999999997|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.9317|
+| 1| 281270|02-11-2020|02-11-2020|England|Frodsham|53.283333|-2.716667|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.9317|
 | 2| 285383|24-12-2020|28-11-2020|Belgium|Brugge|51.2468|3.2236|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 4| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -3556,7 +3556,7 @@
 | 41| 282003|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 42| 282002|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 43| 282001|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
-| 44| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
+| 44| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 45| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 46| 281631|09-11-2020|06-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 47| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -3569,7 +3569,7 @@
 | 54| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 55| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
 | 56| 284018|07-12-2020|25-11-2020|Netherlands|Mijdrecht|52.23|4.85|Wild|Fulica atra|4|3|Focha común  2015-2019|4290|0.7901|
-| 57| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 57| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 58| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 59| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 60| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
@@ -3605,15 +3605,15 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 282870|18-11-2020|13-11-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7965|
-| 1| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.820040000000006|3.126743|Domestic|Pluvialis apricaria||600|Chorlito dorado europeo  2015-2019|4850|0.8823|
-| 2| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 3| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 5| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 7| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 8| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 9| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 1| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.82004|3.126743|Domestic|Pluvialis apricaria||600|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 2| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 3| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 4| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 5| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 7| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 8| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 9| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 10| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 11| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 
@@ -3624,7 +3624,7 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281270|02-11-2020|02-11-2020|England|Frodsham|53.283333|-2.7166669999999997|Domestic|Larus fuscus|||Gaviota sombría  2015-2019|5910|0.7965|
+| 0| 281270|02-11-2020|02-11-2020|England|Frodsham|53.283333|-2.716667|Domestic|Larus fuscus|||Gaviota sombría  2015-2019|5910|0.7965|
 | 1| 284016|07-12-2020|05-12-2020|France|BENESSE-MAREMNE|43.627277|-1.380157|Domestic|Ciconia ciconia|400|400|Cigüeña blanca  2015-2019|1340|0.4337|
 | 2| 282546|17-11-2020|13-11-2020|Germany|Elsfleth|53.17|8.32|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 3| 282533|17-11-2020|02-11-2020|Germany|Hagen im Bremischen|53.37|8.52|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3633,7 +3633,7 @@
 | 6| 281629|09-11-2020|02-11-2020|Germany|Hagen im Bremischen|53.37|8.52|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.4337|
 | 7| 281574|05-11-2020|04-11-2020|Germany|Drage|54.35|9.15|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 8| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Ciconia ciconia|1500|111|Cigüeña blanca  2015-2019|1340|0.4337|
-| 9| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 9| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 10| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 11| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 12| 283694|27-11-2020|11-11-2020|Netherlands|Utrecht|52.09|5.15|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3681,7 +3681,7 @@
 | 9| 282448|16-11-2020|10-11-2020|Germany|Rodenäs|54.89|8.63|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 10| 282441|16-11-2020|09-11-2020|Germany|Rodenäs|54.89|8.62|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 11| 282063|10-11-2020|07-11-2020|Germany|Neumünster|54.09|9.93|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 12| 281641|03-11-2020|30-10-2020|Germany|Klanxbüll|54.863831000000005|8.675249|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 12| 281641|03-11-2020|30-10-2020|Germany|Klanxbüll|54.863831|8.675249|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 13| 281628|09-11-2020|08-11-2020|Germany|Heidmühlen|53.97|10.08|Domestic|Ciconia ciconia|10|7|Cigüeña blanca  2015-2019|1340|0.4337|
 | 14| 281574|05-11-2020|04-11-2020|Germany|Drage|54.35|9.15|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 15| 284417|14-12-2020|12-11-2020|Netherlands|Huizen|52.29|5.25|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
@@ -3726,7 +3726,7 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285383|24-12-2020|28-11-2020|Belgium|Brugge|51.2468|3.2236|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 1| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
+| 1| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.8119|
 | 2| 285373|23-12-2020|04-11-2020|Netherlands|Goingarijp|53.01|5.76|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.5397|
 | 3| 283694|27-11-2020|11-11-2020|Netherlands|Utrecht|52.09|5.15|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
 | 4| 281636|07-11-2020|01-11-2020|Netherlands|Holwerd|53.02|5.8|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
@@ -3745,7 +3745,7 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285383|24-12-2020|28-11-2020|Belgium|Brugge|51.2468|3.2236|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
-| 1| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 1| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 2| 285207|18-12-2020|24-11-2020|Germany|Vorpommern-Rügen|54.29|12.34|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 3| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 4| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3773,7 +3773,7 @@
 | 6| 282239|09-11-2020|03-11-2020|Germany|Hedwigenkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 7| 282238|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 8| 282237|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 9| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 9| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 10| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 11| 281566|05-11-2020|03-11-2020|Germany|Sankt Michaelisdonn|53.98|9.14|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 12| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
@@ -3791,12 +3791,12 @@
 | 1| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 2| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 3| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 4| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 4| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 5| 284849|17-12-2020|05-11-2020|Denmark|Østerby|57.1|9.5|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 6| 284805|17-12-2020|17-11-2020|Denmark|Haderslev|55.2414|9.5036|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 7| 284790|17-12-2020|11-11-2020|Denmark|Hjerting3|55.5247|8.3744|Wild|Calidris minuta|1|1|Correlimos menudo  2015-2019|5010|0.5483|
 | 8| 284783|17-12-2020|09-11-2020|Denmark|Svenstrup|56.9731|9.8394|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 9| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 9| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 10| 286784|18-01-2021|12-11-2020|Germany|Friesland|53.65|8.02|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 11| 285242|22-12-2020|04-12-2020|Germany|Bremerhaven|53.51|8.59|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
 | 12| 285241|22-12-2020|30-11-2020|Germany|Havelland|52.67|12.3|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
@@ -3827,10 +3827,10 @@
 | 37| 282027|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.94|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 38| 282022|09-11-2020|04-11-2020|Germany|Marnerdeich|53.94|8.98|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 39| 282021|09-11-2020|04-11-2020|Germany|Marnerdeich|53.94|8.98|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
-| 40| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 41| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 42| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 43| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 40| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 41| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 42| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 43| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 44| 281576|06-11-2020|03-11-2020|Germany|Hamburg|53.53|9.96|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5397|
 | 45| 281565|05-11-2020|03-11-2020|Germany|Wobbenbüll|54.53|8.99|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 46| 281563|05-11-2020|03-11-2020|Germany|Bordelum|54.64|8.92|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -3847,7 +3847,7 @@
 | 57| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus ridibundus|4|4|Gaviota reidora  2015-2019|5820|0.8895|
 | 58| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 59| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Anas penelope|3|3|Silbón europeo  2015-2019|1790|0.973|
-| 60| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Limosa limosa|13|13|Aguja colinegra  2015-2019|5320|0.5397|
+| 60| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Limosa limosa|13|13|Aguja colinegra  2015-2019|5320|0.5397|
 | 61| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Limosa limosa|3|3|Aguja colinegra  2015-2019|5320|0.5397|
 | 62| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Anas penelope|1|1|Silbón europeo  2015-2019|1790|0.973|
 | 63| 283699|27-11-2020|13-11-2020|Netherlands|Zierikzee|51.67|3.9|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
@@ -3917,7 +3917,7 @@
 | 1| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 | 2| 285373|23-12-2020|04-11-2020|Netherlands|Goingarijp|53.01|5.76|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.9317|
 | 3| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Pluvialis apricaria|1500|111|Chorlito dorado europeo  2015-2019|4850|0.8823|
-| 4| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 4| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 5| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 6| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 7| 282426|13-11-2020|09-11-2020|Netherlands|Gytsjerk|53.22|5.87|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.8823|
@@ -3955,12 +3955,12 @@
 | 17| 282026|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 18| 282025|09-11-2020|06-11-2020|Germany|Nordstrand|54.47|8.91|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 19| 282024|09-11-2020|06-11-2020|Germany|Mildstedt|54.46|9.09|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 20| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 21| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 22| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 23| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 24| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 25| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063000000001|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 20| 281661|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 21| 281660|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 22| 281659|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 23| 281653|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 24| 281652|05-11-2020|04-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 25| 281650|05-11-2020|03-11-2020|Germany|Husum|54.483764|9.060063|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 26| 281573|05-11-2020|04-11-2020|Germany|Tetenbüll|54.37|8.83|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 27| 281572|05-11-2020|04-11-2020|Germany|Husum|54.47|9.05|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 28| 281571|05-11-2020|04-11-2020|Germany|Husum|54.47|9.05|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -3977,7 +3977,7 @@
 | 0| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 1| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 2| 286991|22-01-2021|09-11-2020|Denmark|Havneby|55.0931|8.5536|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
-| 3| 284851|17-12-2020|11-11-2020|Denmark|Husum-Ballum|55.075832999999996|8.663333|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 3| 284851|17-12-2020|11-11-2020|Denmark|Husum-Ballum|55.075833|8.663333|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 4| 284788|17-12-2020|10-11-2020|Denmark|Nørreby|55.1097|8.5428|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 5| 284787|17-12-2020|10-11-2020|Denmark|Toftum|55.1675|8.5694|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 6| 284786|17-12-2020|10-11-2020|Denmark|Havneby|55.085|8.5644|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
@@ -4031,15 +4031,15 @@
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285382|24-12-2020|24-11-2020|Belgium|Knokke|51.3626|3.3619|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 1| 284277|11-12-2020|05-12-2020|Belgium|Knokke|51.3533|3.2835|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 2| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
-| 3| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 5| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 7| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 8| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 9| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 10| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 3| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 4| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 5| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 7| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 8| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 9| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 10| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 11| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 12| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 13| 286784|18-01-2021|12-11-2020|Germany|Friesland|53.65|8.02|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
@@ -4195,8 +4195,8 @@
 | 2| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Larus cachinnans|1|1|Gaviota del Caspio  2015-2019|5927|0.2136|
 | 3| 283376|27-11-2020|12-11-2020|Germany|Kleve|51.81|6.35|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 4| 283338|18-11-2020|12-11-2020|Germany|Emmerich am Rhein|51.81|6.35|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 5| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525597999999995|12.599252|Wild|Anas acuta|1||Ánade rabudo  2015-2019|1890|0.8119|
-| 6| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525597999999995|12.599252|Wild|Anas acuta|8||Ánade rabudo  2015-2019|1890|0.8119|
+| 5| 284838|16-12-2020|21-11-2020|Italy|JESOLO VALLE DRAGO JESOLO|45.525598|12.599252|Wild|Anas acuta|1||Ánade rabudo  2015-2019|1890|0.8119|
+| 6| 283375|27-11-2020|21-11-2020|Italy|Jesolo|45.525598|12.599252|Wild|Anas acuta|8||Ánade rabudo  2015-2019|1890|0.8119|
 | 7| 285376|23-12-2020|09-11-2020|Netherlands|Schagerbrug|52.81|4.76|Wild|Larus cachinnans|2|2|Gaviota del Caspio  2015-2019|5927|0.2136|
 | 8| 283694|27-11-2020|11-11-2020|Netherlands|Utrecht|52.09|5.15|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
 | 9| 281611|07-11-2020|26-10-2020|Netherlands|Kamerik|52.14|4.93|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -4210,21 +4210,21 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.5944|
-| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.5944|
-| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.5944|
+| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.5944|
+| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.5944|
+| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.5944|
 | 3| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.820040000000006|3.126743|Domestic|Anas crecca||600|Cerceta común  2015-2019|1840|0.9876|
+| 4| 283090|27-11-2020|18-11-2020|Belgium|Menen|50.82004|3.126743|Domestic|Anas crecca||600|Cerceta común  2015-2019|1840|0.9876|
 | 5| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 7| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 8| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 9| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 8| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 9| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 10| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 11| 284799|17-12-2020|16-11-2020|Denmark|Bjerge Sydstrand|55.5547|11.1672|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 12| 284798|17-12-2020|16-11-2020|Denmark|Bjerge Sydstrand2|55.5547|11.1672|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
 | 13| 282327|06-11-2020|06-11-2020|Denmark|Sakskobing|54.8|11.65|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8895|
-| 14| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798235999999996|11.631226|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8895|
+| 14| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798236|11.631226|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8895|
 | 15| 284903|18-12-2020|04-12-2020|France|SAINTES MARIES DE LA MER|43.515258|4.412521|Wild|Larus cachinnans|1|1|Gaviota del Caspio  2015-2019|5927|0.2136|
 | 16| 282880|20-11-2020|20-11-2020|France|Yvelines|48.8053|2.135|Domestic|Larus ridibundus|||Gaviota reidora  2015-2019|5820|0.8895|
 | 17| 286783|18-01-2021|11-11-2020|Germany|Stade|53.75|9.38|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -4277,13 +4277,13 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 3| 282401|16-11-2020|07-11-2020|Belgium|Bredene|51.0|3.0|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 4| 284396|11-12-2020|28-11-2020|Germany|Rendsburg-Eckernförde|54.41|9.97|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8895|
-| 5| 283360|24-11-2020|19-11-2020|Germany|Bayern|48.922712|12.035347999999999|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
-| 6| 282978|24-11-2020|19-11-2020|Germany|Passau|48.922712|12.035347999999999|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
+| 5| 283360|24-11-2020|19-11-2020|Germany|Bayern|48.922712|12.035348|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
+| 6| 282978|24-11-2020|19-11-2020|Germany|Passau|48.922712|12.035348|Wild|Vanellus vanellus|3||Avefría europea  2015-2019|4930|0.9317|
 | 7| 282487|16-11-2020|15-11-2020|Germany|Rambin|54.35|13.24|Domestic|Ciconia ciconia|3976|476|Cigüeña blanca  2015-2019|1340|0.4337|
 | 8| 282486|16-11-2020|13-11-2020|Germany|Neubukow|54.04|11.67|Domestic|Ciconia ciconia|175|75|Cigüeña blanca  2015-2019|1340|0.4337|
 | 9| 282483|16-11-2020|12-11-2020|Germany|Noer|54.47|10.0|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -4324,7 +4324,7 @@
 | 44| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Ciconia ciconia|1500|111|Cigüeña blanca  2015-2019|1340|0.4337|
 | 45| 284027|09-12-2020|03-12-2020|Netherlands|Middelie|52.55|5.0|Wild|Philomachus pugnax|5|5|Combatiente  2015-2019|5170|0.3639|
 | 46| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Anas clypeata|3|3|Pato cuchara  2015-2019|1940|0.9137|
-| 47| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
+| 47| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Ciconia ciconia|13|13|Cigüeña blanca  2015-2019|1340|0.4337|
 | 48| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.4337|
 | 49| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 50| 283697|27-11-2020|12-11-2020|Netherlands|Wons|52.28|5.25|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
@@ -4348,8 +4348,8 @@
 | 68| 281609|07-11-2020|31-10-2020|Netherlands|Hallum|53.33|5.75|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.3639|
 | 69| 281608|07-11-2020|28-10-2020|Netherlands|Purmerend|52.48|5.02|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.3639|
 | 70| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.3852|
-| 71| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.3852|
-| 72| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
+| 71| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.3852|
+| 72| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.3852|
 
 
 ### Alerta 89 
@@ -4358,9 +4358,9 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 284797|17-12-2020|15-11-2020|Denmark|Korsør|55.3528|11.1586|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 4| 284791|17-12-2020|12-11-2020|Denmark|Korsør|55.3267|11.14|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 5| 284390|11-12-2020|24-11-2020|Germany|Hamburg|53.53|10.01|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -4371,7 +4371,7 @@
 | 10| 285372|23-12-2020|09-11-2020|Netherlands|Groet|52.72|4.67|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 11| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Vanellus vanellus|1500|111|Avefría europea  2015-2019|4930|0.9317|
 | 12| 284019|07-12-2020|26-11-2020|Netherlands|Bleskensgraaf|51.86|4.75|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.8972|
-| 13| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
+| 13| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 14| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 15| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 16| 283700|27-11-2020|22-11-2020|Netherlands|Oudewater|52.03|4.87|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.8972|
@@ -4400,11 +4400,11 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 3| 284793|17-12-2020|13-11-2020|Denmark|Sønderborg|54.9242|9.8283|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 4| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 4| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 5| 283370|27-11-2020|13-11-2020|Germany|Prignitz|52.89|12.02|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 
 
@@ -4414,15 +4414,15 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
-| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
-| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 3| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
 | 4| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
-| 5| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
+| 5| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
 | 6| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
-| 7| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
-| 8| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas platyrhynchos|3|3|Ánade azulón  2015-2019|1860|0.7399|
+| 7| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.7399|
+| 8| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas platyrhynchos|3|3|Ánade azulón  2015-2019|1860|0.7399|
 | 9| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas platyrhynchos|3|3|Ánade azulón  2015-2019|1860|0.7399|
 | 10| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 11| 283091|27-11-2020|07-11-2020|Netherlands|Woudrichem|51.8|4.96|Wild|Ardea cinerea|2|2|Garza real  2015-2019|1220|0.9287|
@@ -4435,9 +4435,9 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.8075160000000006|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853000000006|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.7825059999999997|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 0| 283712|04-12-2020|24-11-2020|Belgium|Destelbergen|51.049223|3.807516|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 1| 283711|04-12-2020|24-11-2020|Belgium|Gent|51.043853|3.684672|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 2| 283710|04-12-2020|22-11-2020|Belgium|Sint-Amandsberg|51.072501|3.782506|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 3| 284805|17-12-2020|17-11-2020|Denmark|Haderslev|55.2414|9.5036|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 4| 284390|11-12-2020|24-11-2020|Germany|Hamburg|53.53|10.01|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 5| 283351|27-11-2020|06-11-2020|Germany|Hamburg|53.56|10.07|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.9317|
@@ -4461,10 +4461,10 @@
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 1| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 2| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 3| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 5| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 4| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 5| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 6| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 
 
@@ -4476,10 +4476,10 @@
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 1| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 2| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 3| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 5| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 4| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 5| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 6| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 7| 282304|13-11-2020|09-11-2020|Netherlands|Lutjegast|53.25|6.26|Domestic|Ciconia ciconia|150|113|Cigüeña blanca  2015-2019|1340|0.4337|
 
@@ -4492,10 +4492,10 @@
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 283361|27-11-2020|18-11-2020|Belgium|Oostende|51.23424|2.91424|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 1| 282831|22-11-2020|18-11-2020|Belgium|Oudenburg|51.188259|3.004813|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 2| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.8705979999999998|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 282830|22-11-2020|18-11-2020|Belgium|Leffinge|51.172819|2.870598|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 3| 282829|22-11-2020|12-11-2020|Belgium|Wenduine|51.308625|3.101987|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179798999999996|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 5| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.8472720000000002|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
+| 4| 282348|16-11-2020|07-11-2020|Belgium|Wilskerke|51.179799|2.825975|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 5| 282347|16-11-2020|04-11-2020|Belgium|Oostende|51.197223|2.847272|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 6| 282323|13-11-2020|13-11-2020|Belgium|Ostend|51.23|2.91|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
 | 7| 282423|13-11-2020|31-10-2020|Netherlands|Schiermonnikoog|53.4901|6.2023|Wild|Larus argentatus|1|1|Gaviota argéntea europea  2015-2019|5920|0.4814|
 
@@ -4583,11 +4583,11 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 0| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 1| 285241|22-12-2020|30-11-2020|Germany|Havelland|52.67|12.3|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
 | 2| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 3| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
-| 4| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 3| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.9798|
+| 4| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 
 
 ### Alerta 101 
@@ -4596,7 +4596,7 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 0| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 1| 286784|18-01-2021|12-11-2020|Germany|Friesland|53.65|8.02|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 2| 285197|18-12-2020|20-11-2020|Germany|Friesland|53.69|8.02|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.9317|
 | 3| 282487|16-11-2020|15-11-2020|Germany|Rambin|54.35|13.24|Domestic|Phalacrocorax carbo|3976|476|Cormorán grande  2015-2019|720|0.8972|
@@ -4621,7 +4621,7 @@
 | 22| 281631|09-11-2020|06-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 23| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Limosa limosa|1500|111|Aguja colinegra  2015-2019|5320|0.5397|
 | 24| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
-| 25| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Limosa limosa|13|13|Aguja colinegra  2015-2019|5320|0.5397|
+| 25| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Limosa limosa|13|13|Aguja colinegra  2015-2019|5320|0.5397|
 | 26| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Limosa limosa|3|3|Aguja colinegra  2015-2019|5320|0.5397|
 | 27| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 28| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Limosa limosa|3|3|Aguja colinegra  2015-2019|5320|0.5397|
@@ -4637,9 +4637,9 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.09865500000001|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
+| 0| 287123|22-01-2021|17-11-2020|Denmark|Frøstrup|57.098655|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.9798|
 | 1| 286991|22-01-2021|09-11-2020|Denmark|Havneby|55.0931|8.5536|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
-| 2| 284851|17-12-2020|11-11-2020|Denmark|Husum-Ballum|55.075832999999996|8.663333|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
+| 2| 284851|17-12-2020|11-11-2020|Denmark|Husum-Ballum|55.075833|8.663333|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 3| 284788|17-12-2020|10-11-2020|Denmark|Nørreby|55.1097|8.5428|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 4| 284787|17-12-2020|10-11-2020|Denmark|Toftum|55.1675|8.5694|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
 | 5| 284786|17-12-2020|10-11-2020|Denmark|Havneby|55.085|8.5644|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.9287|
@@ -4665,14 +4665,14 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas clypeata|2|2|Pato cuchara  2015-2019|1940|0.9137|
-| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas clypeata|2|2|Pato cuchara  2015-2019|1940|0.9137|
+| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
+| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 8| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 9| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 10| 284026|09-12-2020|01-12-2020|Netherlands|Zwartewaal|51.86|4.2|Wild|Larus ridibundus|4|4|Gaviota reidora  2015-2019|5820|0.8895|
@@ -4686,14 +4686,14 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 8| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 9| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 
@@ -4704,14 +4704,14 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 8| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 9| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 
@@ -4722,14 +4722,14 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
-| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483332999999995|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 0| 284873|17-12-2020|16-11-2020|Denmark|Hjerting|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 1| 284859|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 2| 284858|17-12-2020|15-11-2020|Denmark|Nordby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 3| 284857|17-12-2020|15-11-2020|Denmark|Blåvand|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 4| 284856|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|2|2|Cerceta común  2015-2019|1840|0.9876|
+| 5| 284855|17-12-2020|14-11-2020|Denmark|Oksby|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 6| 284854|17-12-2020|13-11-2020|Denmark|Fanø klitplantage|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
+| 7| 284853|17-12-2020|13-11-2020|Denmark|Hjerting2|55.483333|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 8| 284801|17-12-2020|16-11-2020|Denmark|Bramming|55.4267|8.7372|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 | 9| 284800|17-12-2020|16-11-2020|Denmark|Gjesing|55.5125|8.45|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
 
@@ -4868,7 +4868,7 @@
 | 8| 282022|09-11-2020|04-11-2020|Germany|Marnerdeich|53.94|8.98|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 9| 282021|09-11-2020|04-11-2020|Germany|Marnerdeich|53.94|8.98|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
 | 10| 281541|03-11-2020|02-11-2020|Germany|Neufeld|53.91|9.02|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.9137|
-| 11| 286277|13-01-2021|21-11-2020|Italy|Porto Viro - Valle San Lorenzo|45.011688|12.375378999999999|Wild|Anas penelope|3||Silbón europeo  2015-2019|1790|0.973|
+| 11| 286277|13-01-2021|21-11-2020|Italy|Porto Viro - Valle San Lorenzo|45.011688|12.375379|Wild|Anas penelope|3||Silbón europeo  2015-2019|1790|0.973|
 | 12| 284837|16-12-2020|28-11-2020|Italy|PORTO TOLLE - VALLE CHIUSA|45.014046|12.431677|Wild|Anas penelope|1||Silbón europeo  2015-2019|1790|0.973|
 | 13| 282969|21-11-2020|14-11-2020|Italy|Porto Tolle|44.974634|12.466154|Wild|Aythya ferina|1||Porrón común  2015-2019|1980|0.7176|
 | 14| 283701|27-11-2020|24-11-2020|Netherlands|Witmarsum|53.08|5.46|Wild|Anas crecca|3|3|Cerceta común  2015-2019|1840|0.9876|
@@ -4945,9 +4945,9 @@
 | 38| 282003|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 39| 282002|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 40| 282001|06-11-2020|04-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
-| 41| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 42| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 43| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 41| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 42| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 43| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 44| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 45| 281631|09-11-2020|06-11-2020|Germany|Rambin|54.38|13.26|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.8972|
 | 46| 281628|09-11-2020|08-11-2020|Germany|Heidmühlen|53.97|10.08|Domestic|Ciconia ciconia|10|7|Cigüeña blanca  2015-2019|1340|0.4337|
@@ -5133,7 +5133,7 @@
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 284094|07-12-2020|30-11-2020|France|Pornichet|47.218059999999994|-1.5527799999999998|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
+| 0| 284094|07-12-2020|30-11-2020|France|Pornichet|47.21806|-1.55278|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 1| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 2| 282430|13-11-2020|12-11-2020|Netherlands|Hazerswoude-Dorp|52.1|4.6|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 3| 282427|13-11-2020|09-11-2020|Netherlands|Alphen a/d Rijn|52.14|4.63|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -5334,7 +5334,7 @@
 | 7| 282536|17-11-2020|06-11-2020|Germany|Butjadingen|53.56|8.32|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
 | 8| 282535|17-11-2020|04-11-2020|Germany|Wilhelmshaven|53.51|8.1|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 9| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Vanellus vanellus|1500|111|Avefría europea  2015-2019|4930|0.9317|
-| 10| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
+| 10| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
 | 11| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 12| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
 | 13| 282426|13-11-2020|09-11-2020|Netherlands|Gytsjerk|53.22|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -5412,7 +5412,7 @@
 | 9| 282238|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 10| 282237|09-11-2020|03-11-2020|Germany|Wesselburenerkoog|54.09|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 11| 282023|09-11-2020|04-11-2020|Germany|Glückstadt|53.79|9.42|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
-| 12| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072832999999996|9.046357|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 12| 281651|05-11-2020|03-11-2020|Germany|Elpersbüttel|54.072833|9.046357|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 13| 281644|05-11-2020|31-10-2020|Germany|Büsum|54.134622|8.858591|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 14| 281567|05-11-2020|03-11-2020|Germany|Kuden|53.96|9.2|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.4337|
 | 15| 281566|05-11-2020|03-11-2020|Germany|Sankt Michaelisdonn|53.98|9.14|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -5511,8 +5511,8 @@
 | 5| 282430|13-11-2020|12-11-2020|Netherlands|Hazerswoude-Dorp|52.1|4.6|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 6| 282427|13-11-2020|09-11-2020|Netherlands|Alphen a/d Rijn|52.14|4.63|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 7| 284025|09-12-2020|25-11-2020|Sweden|Staffanstorp|55.631944|13.216944|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
-| 8| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
-| 9| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664000000002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 8| 283093|27-11-2020|12-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.9317|
+| 9| 283092|27-11-2020|06-11-2020|Sweden|Lund|55.705937|13.186664|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 
 
 ### Alerta 140 
@@ -5560,7 +5560,7 @@
 | 4| 285372|23-12-2020|09-11-2020|Netherlands|Groet|52.72|4.67|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 5| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Larus ridibundus|1500|111|Gaviota reidora  2015-2019|5820|0.8895|
 | 6| 284020|07-12-2020|30-11-2020|Netherlands|Bodegraven|52.09|4.72|Wild|Vanellus vanellus|13|13|Avefría europea  2015-2019|4930|0.9317|
-| 7| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
+| 7| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Larus ridibundus|13|13|Gaviota reidora  2015-2019|5820|0.8895|
 | 8| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 9| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Larus ridibundus|3|3|Gaviota reidora  2015-2019|5820|0.8895|
 | 10| 283693|27-11-2020|09-11-2020|Netherlands|Zoeterwoude|52.11|4.51|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.9317|
@@ -5634,7 +5634,7 @@
 | 0| 283358|24-11-2020|17-11-2020|Germany|Pinneberg|53.68|9.68|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 1| 284266|09-12-2020|06-12-2020|Netherlands|Sint Annaparochie|53.25|5.67|Domestic|Pluvialis apricaria|1500|111|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 2| 284027|09-12-2020|03-12-2020|Netherlands|Middelie|52.55|5.0|Wild|Vanellus vanellus|5|5|Avefría europea  2015-2019|4930|0.9317|
-| 3| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.13333299999999|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
+| 3| 283717|27-11-2020|03-11-2020|Netherlands|Landerum|53.133333|5.816667|Wild|Pluvialis apricaria|13|13|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 4| 283716|27-11-2020|03-11-2020|Netherlands|Workum|53.2|5.8|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 5| 283696|27-11-2020|12-11-2020|Netherlands|Grou|53.09|5.84|Wild|Pluvialis apricaria|3|3|Chorlito dorado europeo  2015-2019|4850|0.8823|
 | 6| 283695|27-11-2020|11-11-2020|Netherlands|Purmerend|52.5|4.95|Wild|Vanellus vanellus|3|3|Avefría europea  2015-2019|4930|0.9317|
@@ -5728,10 +5728,10 @@
 | 10| 282241|09-11-2020|06-11-2020|Germany|Nieblum|54.58|9.0|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 11| 282028|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.95|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 12| 282027|09-11-2020|06-11-2020|Germany|Nordstrand|54.5|8.94|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 13| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 14| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 15| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.89|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
-| 16| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.60916700000001|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 13| 281648|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 14| 281647|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 15| 281645|05-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.89|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
+| 16| 281642|03-11-2020|02-11-2020|Germany|Reußenköge|54.609167|8.904444|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 17| 281565|05-11-2020|03-11-2020|Germany|Wobbenbüll|54.53|8.99|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 18| 281563|05-11-2020|03-11-2020|Germany|Bordelum|54.64|8.92|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
 | 19| 281561|05-11-2020|02-11-2020|Germany|Reußenköge|54.62|8.88|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.3899|
@@ -5772,8 +5772,8 @@
 | 0| 282062|10-11-2020|06-11-2020|Germany|Krempel|54.31|9.03|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 1| 282054|10-11-2020|04-11-2020|Germany|Kleve|54.29|9.12|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 2| 282020|09-11-2020|04-11-2020|Germany|Hemmingstedt|54.16|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 3| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
-| 4| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 3| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
+| 4| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 5| 281564|05-11-2020|03-11-2020|Germany|Tönning|54.3|8.92|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 6| 281540|03-11-2020|02-11-2020|Germany|Wesselburenerkoog|54.21|8.83|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
 | 7| 281539|03-11-2020|02-11-2020|Germany|Wesselburenerkoog|54.21|8.83|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8895|
@@ -5788,8 +5788,8 @@
 | 0| 282062|10-11-2020|06-11-2020|Germany|Krempel|54.31|9.03|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 1| 282054|10-11-2020|04-11-2020|Germany|Kleve|54.29|9.12|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 2| 282020|09-11-2020|04-11-2020|Germany|Hemmingstedt|54.16|9.08|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 3| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
-| 4| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.29117900000001|8.794969|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 3| 281658|05-11-2020|04-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
+| 4| 281649|05-11-2020|03-11-2020|Germany|Vollerwiek|54.291179|8.794969|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 5| 281564|05-11-2020|03-11-2020|Germany|Tönning|54.3|8.92|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 6| 281540|03-11-2020|02-11-2020|Germany|Wesselburenerkoog|54.21|8.83|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 7| 281539|03-11-2020|02-11-2020|Germany|Wesselburenerkoog|54.21|8.83|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
@@ -5822,7 +5822,7 @@
 | 3| 282430|13-11-2020|12-11-2020|Netherlands|Hazerswoude-Dorp|52.1|4.6|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 4| 282427|13-11-2020|09-11-2020|Netherlands|Alphen a/d Rijn|52.14|4.63|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.9317|
 | 5| 281619|07-11-2020|29-10-2020|Netherlands|Den Bosch|51.73|5.26|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.9876|
-| 6| 284261|09-12-2020|30-11-2020|Norway|Hå|58.61600000000001|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
+| 6| 284261|09-12-2020|30-11-2020|Norway|Hå|58.616|5.645|Domestic|Vanellus vanellus|14|14|Avefría europea  2015-2019|4930|0.9317|
 
 
 ### Alerta 154 

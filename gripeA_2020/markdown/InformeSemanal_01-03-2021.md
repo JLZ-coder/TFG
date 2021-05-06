@@ -4,79 +4,12 @@
  - *Periodo de*: 01-03-2021 a 08-03-2021
 
 ## Sumario del informe 
-<<<<<<< HEAD
- - *Número de comarcas ganaderas en alerta*: 60
- - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 2762
-=======
  - *Número de comarcas ganaderas en alerta*: 54
  - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 2127
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 ## Tabla de alertas 
 | Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |
 |:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-<<<<<<< HEAD
-|1|08-03-2021|ALMONTE (ENTORNO DE DOÑANA)|SP21005|184|448|5|10.52|11.5374|
-|2|08-03-2021|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|275|711|5|10.27|11.7244|
-|3|08-03-2021|VILLAVICIOSA|SP33076|34|84|3|6.65|15.1241|
-|4|08-03-2021|CARTAYA (COSTA OCCIDENTAL)|SP21021|32|93|2|11.19|11.0575|
-|5|08-03-2021|LITORAL|SP11016|200|389|5|13.47|9.6035|
-|6|08-03-2021|COLMENAR VIEJO|SP28045|170|445|5|5.79|16.2128|
-|7|08-03-2021|MADRID (C.U.)|SP28079|164|254|5|5.23|17.0046|
-|8|08-03-2021|URIBE KOSTA-BILBAO|SP48020|26|33|1|8.63|13.0873|
-|9|08-03-2021|BETANZOS|SP15009|11|14|1|5.47|16.6496|
-|10|08-03-2021|A CORUÑA|SP15017|11|14|1|5.47|16.6496|
-|11|08-03-2021|UTRERA (BAJO GUADALQUIVIR)|SP41095|161|453|5|9.63|12.2298|
-|12|08-03-2021|NOIA|SP15057|13|16|1|4.86|17.5809|
-|13|08-03-2021|O SAR-BARBANZA|SP15065|18|21|2|4.86|17.5809|
-|14|08-03-2021|BADAJOZ|SP06015|26|42|1|7.57|14.1093|
-|15|08-03-2021|BAJO ANDARAX/CAMPO DE TABERNA|SP04013|11|14|1|6|15.9284|
-|16|08-03-2021|PONTEVEDRA-O MORRAZO|SP36038|16|24|1|7.27|14.4255|
-|17|08-03-2021|MALAGA (GUADAHORCE ORIENTAL)|SP29067|12|68|1|13.87|9.3747|
-|18|08-03-2021|CAMPO DE GIBRALTAR|SP11004|44|190|2|12.59|10.1354|
-|19|08-03-2021|ARANJUEZ|SP28013|19|67|2|5.69|16.3492|
-|20|08-03-2021|TOLEDO|SP45168|24|72|2|5.69|16.3492|
-|21|08-03-2021|MERIDA|SP06083|22|32|2|6.83|14.9169|
-|22|08-03-2021|GIJON|SP33024|14|24|1|9.48|12.3486|
-|23|08-03-2021|DON BENITO|SP06044|41|55|2|8.41|13.2839|
-|24|08-03-2021|GAMA (BARCENA DE CICERO)|SP39009|17|17|1|9.27|12.5294|
-|25|08-03-2021|BAIX EBRE (TORTOSA)|SP43155|18|32|1|9.14|12.6346|
-|26|08-03-2021|POSADAS (VEGA DEL GUADALQUIVIR)|SP14053|24|31|2|8.44|13.2574|
-|27|08-03-2021|LA RIBERA ALTA - CARLET|SP46085|17|22|1|9.51|12.3231|
-|28|08-03-2021|VIGO-O BAIXO MIÑO|SP36039|17|21|1|7.27|14.4255|
-|29|08-03-2021|CAMPIÑA|SP11020|203|304|5|9.4|12.4177|
-|30|08-03-2021|ARABA-ALAVA|SP01059|139|406|5|4.07|18.9608|
-|31|08-03-2021|TALAVERA DE LA REINA|SP45165|28|70|1|6.84|14.9005|
-|32|08-03-2021|SALAMANCA|SP37274|10|14|1|1.63|26.1262|
-|33|08-03-2021|HERRERA DEL DUQUE|SP06063|32|33|1|6.19|15.6901|
-|34|08-03-2021|CACERES|SP10037|14|15|1|6.83|14.9169|
-|35|08-03-2021|ARGANDA DEL REY|SP28014|13|59|1|4.16|18.7978|
-|36|08-03-2021|PEÑARROYA-PUEBLONUEVO (VALLE DEL GUADIATO)|SP14052|18|22|1|8.44|13.2574|
-|37|08-03-2021|LOGROÑO|SP26089|12|14|1|6.16|15.7263|
-|38|08-03-2021|ESTELLA|SP31097|13|15|1|6.16|15.7263|
-|39|08-03-2021|MANZANARES|SP13053|40|175|4|5.17|17.0906|
-|40|08-03-2021|TOMELLOSO|SP13082|23|94|2|5.2|17.0475|
-|41|08-03-2021|BAIX LLOBREGAT (SANT BOI)|SP08200|15|24|1|10.79|11.3423|
-|42|08-03-2021|NAJERA|SP26102|6|6|1|0.68|32.9176|
-|43|08-03-2021|DONOSTIALDEA-BIDASOA|SP20063|15|25|1|9.36|12.4534|
-|44|08-03-2021|SORIA|SP42173|9|11|1|2.37|23.1875|
-|45|08-03-2021|MONTSIA (AMPOSTA)|SP43014|45|78|3|9.14|12.6346|
-|46|08-03-2021|SEGRIA (LLEIDA)|SP25120|11|52|1|4.04|19.0158|
-|47|08-03-2021|CASTUERA|SP06036|23|26|1|8.41|13.2839|
-|48|08-03-2021|GUADALAJARA|SP19130|17|23|2|0.66|33.2233|
-|49|08-03-2021|SARIÑENA|SP22213|9|13|1|6.01|15.9098|
-|50|08-03-2021|CARMONA (LOS ARCORES)|SP41024|126|129|1|10.27|11.7244|
-|51|08-03-2021|MOLINA DE ARAGÓN|SP19190|7|7|1|0.67|33.0551|
-|52|08-03-2021|LERMA|SP09194|8|10|1|2.59|22.511|
-|53|08-03-2021|REINOSA|SP39059|115|457|2|1.67|25.923|
-|54|08-03-2021|BAÑEZA LA|SP24010|4|4|1|-0.49|66|
-|55|08-03-2021|ALT EMPORDA (FIGUERES)|SP17066|129|164|2|6.69|15.0822|
-|56|08-03-2021|OSONA (VIC)|SP08298|9|23|1|4.81|17.6502|
-|57|08-03-2021|ARANDA DE DUERO|SP09018|12|12|2|2.59|22.511|
-|58|08-03-2021|SAN ESTEBAN DE GORMAZ|SP42162|12|12|2|2.59|22.511|
-|59|08-03-2021|SAN LEONARDO DE YAGÜE|SP42164|12|12|3|0.68|32.9176|
-|60|08-03-2021|SAHAGUN|SP24139|12|12|1|2.94|21.4992|
-=======
 |1|01-03-2021|A MARIÑA OCCIDENTAL|SP27066|5|13|1|9.73|12.149|
 |2|01-03-2021|GIJON|SP33024|29|102|5|9.48|12.3486|
 |3|01-03-2021|ALMONTE (ENTORNO DE DOÑANA)|SP21005|184|443|5|10.52|11.5374|
@@ -131,13 +64,61 @@
 |52|01-03-2021|SAHAGUN|SP24139|12|12|1|2.94|21.4992|
 |53|01-03-2021|PIEDRAHITA|SP05186|3|6|1|0.24|41.0075|
 |54|01-03-2021|PLA DE L'ESTANY (BANYOLES)|SP17015|6|14|1|6.69|15.0822|
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 
 ## Tablas de brotes de IAAP en Europa y su conexión a España a través de  movimientos de aves silvestres
 
 ### Alerta 1 
-<<<<<<< HEAD
+- *Id comarca*: SP27066
+- *Localización comarca*: A MARIÑA OCCIDENTAL
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Larus ridibundus|1300|1300|Gaviota reidora  2015-2019|5820|0.8273|
+| 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 4| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+
+
+### Alerta 2 
+- *Id comarca*: SP33024
+- *Localización comarca*: GIJON
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Vanellus vanellus|1300|1300|Avefría europea  2015-2019|4930|0.5146|
+| 1| 288306|05-02-2021|24-12-2020|Scotland|Nr Ellon|57.43|-2.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 2| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 3| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 4| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 5| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Vanellus vanellus||1030|Avefría europea  2015-2019|4930|0.5146|
+| 6| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 7| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 8| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 9| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
+| 10| 288841|12-02-2021|27-01-2021|Denmark|Bisserup|55.404861|11.353056|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 11| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
+| 12| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 13| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 14| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 15| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 16| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 17| 287651|28-01-2021|20-01-2021|Germany|Vorpommern-Greifswald|53.633333|11.41666|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
+| 18| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 19| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 20| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 21| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 22| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
+| 23| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Vanellus vanellus|3000|3000|Avefría europea  2015-2019|4930|0.5146|
+| 24| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 25| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 26| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 27| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 28| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+
+
+### Alerta 3 
 - *Id comarca*: SP21005
 - *Localización comarca*: ALMONTE (ENTORNO DE DOÑANA)
 
@@ -154,14 +135,14 @@
 | 8| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
 | 9| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Philomachus pugnax|5000|5000|Combatiente  2015-2019|5170|0.4963|
 | 10| 288841|12-02-2021|27-01-2021|Denmark|Bisserup|55.404861|11.353056|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 11| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
+| 11| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
 | 12| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 13| 288795|12-02-2021|25-01-2021|Denmark|Glumsø|55.335901|11.694357|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 14| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 14| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
 | 15| 288782|12-02-2021|15-01-2021|Denmark|Husum-Ballum2|55.074034|8.662243|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
 | 16| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504071|8.719635|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
 | 17| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 18| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 18| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
 | 19| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289|8.272185|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.8169|
 | 20| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
 | 21| 288251|03-02-2021|30-01-2021|France|CASTELNAU D''AUZAN LABARRERE|43.941081|0.075587|Domestic|Anas platyrhynchos|409||Ánade azulón  2015-2019|1860|0.8856|
@@ -329,567 +310,6 @@
 | 183| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
 
 
-### Alerta 2 
-- *Id comarca*: SP41087
-- *Localización comarca*: SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Calidris alpina|1300|1300|Correlimos común  2015-2019|5120|0.5022|
-| 1| 288306|05-02-2021|24-12-2020|Scotland|Nr Ellon|57.43|-2.09|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
-| 2| 288300|05-02-2021|08-12-2020|England|Nr March|52.52|0.06|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 3| 288299|05-02-2021|07-12-2020|England|Sutton|52.39|0.09|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 4| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 5| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 6| 285186|18-12-2020|08-12-2020|England|Peterborough|52.49|0.09|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 7| 285183|18-12-2020|07-12-2020|England|Kings Lynn|52.52|0.27|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 8| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
-| 9| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Philomachus pugnax|5000|5000|Combatiente  2015-2019|5170|0.4963|
-| 10| 287607|29-01-2021|24-01-2021|Czech Republic|Starohaklovský rybník|48.9981|14.4114|Wild|Anser anser|5|5|Ánsar común  2015-2019|1610|0.4855|
-| 11| 287606|29-01-2021|23-01-2021|Czech Republic|Hradiste Pisku|49.2928|14.1169|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 12| 287150|22-01-2021|20-01-2021|Czech Republic|Zlivický rybník|49.3575|14.1044|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 13| 288841|12-02-2021|27-01-2021|Denmark|Bisserup|55.404861|11.353056|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 14| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Calidris alpina||3|Correlimos común  2015-2019|5120|0.5022|
-| 15| 288807|12-02-2021|01-02-2021|Denmark|Slagerup|55.814895|12.200137|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 16| 288806|12-02-2021|31-01-2021|Denmark|Mariager|56.65342|9.981646|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 17| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 18| 288795|12-02-2021|25-01-2021|Denmark|Glumsø|55.335901|11.694357|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 19| 288792|12-02-2021|24-01-2021|Denmark|Frederikssund|55.794304|12.032978|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 20| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 21| 288782|12-02-2021|15-01-2021|Denmark|Husum-Ballum2|55.074034|8.662243|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 22| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504071|8.719635|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 23| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 24| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 25| 287136|22-01-2021|05-01-2021|Denmark|Gilleleje|56.115209|12.31707|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 26| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 27| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289|8.272185|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.8169|
-| 28| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 29| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 30| 288252|03-02-2021|30-01-2021|France|CAZAUBON|43.932275|-0.094569|Domestic|Anas platyrhynchos|8000||Ánade azulón  2015-2019|1860|0.8856|
-| 31| 288251|03-02-2021|30-01-2021|France|CASTELNAU D''AUZAN LABARRERE|43.941081|0.075587|Domestic|Anas platyrhynchos|409||Ánade azulón  2015-2019|1860|0.8856|
-| 32| 288246|03-02-2021|28-01-2021|France|BENTAYOU-SEREE|43.394|-0.065|Domestic|Anas platyrhynchos|2900|100|Ánade azulón  2015-2019|1860|0.8856|
-| 33| 288243|03-02-2021|27-01-2021|France|BENTAYOU-SEREE|43.391082|-0.069472|Domestic|Anas platyrhynchos|12600|20|Ánade azulón  2015-2019|1860|0.8856|
-| 34| 288242|03-02-2021|25-01-2021|France|BONNEGARDE|43.569048|-0.724389|Domestic|Anas platyrhynchos|4400|410|Ánade azulón  2015-2019|1860|0.8856|
-| 35| 288238|03-02-2021|20-01-2021|France|TOULOUZETTE|43.755821|-0.654789|Domestic|Anas strepera|786||Ánade friso  2015-2019|1820|0.7986|
-| 36| 288236|03-02-2021|15-01-2021|France|LARRIVIERE-SAINT-SAVIN|43.754605|-0.425639|Domestic|Anas strepera|100||Ánade friso  2015-2019|1820|0.7986|
-| 37| 288235|03-02-2021|15-01-2021|France|CASTANDET|43.812293|-0.352|Domestic|Fulica atra|4000|4000|Focha común  2015-2019|4290|0.8092|
-| 38| 288233|03-02-2021|14-01-2021|France|GEAUNE|43.637227|-0.382894|Domestic|Anas strepera|6350||Ánade friso  2015-2019|1820|0.7986|
-| 39| 288232|03-02-2021|14-01-2021|France|VIGNAU|43.7786|-0.2925|Domestic|Anas platyrhynchos|3850||Ánade azulón  2015-2019|1860|0.8856|
-| 40| 288231|03-02-2021|14-01-2021|France|SAMADET|43.645969|-0.497376|Domestic|Anas strepera|3029|29|Ánade friso  2015-2019|1820|0.7986|
-| 41| 288230|03-02-2021|12-01-2021|France|CASTANDET|43.812293|-0.352|Domestic|Fulica atra|500||Focha común  2015-2019|4290|0.8092|
-| 42| 288229|03-02-2021|11-01-2021|France|SAINT-SEVER|43.745274|-0.584546|Domestic|Anas strepera|610||Ánade friso  2015-2019|1820|0.7986|
-| 43| 288228|03-02-2021|11-01-2021|France|VIELLE-TURSAN|43.668273|-0.472114|Domestic|Anas strepera|6000||Ánade friso  2015-2019|1820|0.7986|
-| 44| 288227|03-02-2021|09-01-2021|France|GEAUNE|43.641|-0.376|Domestic|Anas strepera|1920|200|Ánade friso  2015-2019|1820|0.7986|
-| 45| 288226|03-02-2021|09-01-2021|France|BUANES|43.730609|-0.418386|Domestic|Anas strepera|2200||Ánade friso  2015-2019|1820|0.7986|
-| 46| 288225|03-02-2021|09-01-2021|France|MONTGAILLARD|43.762277|-0.489598|Domestic|Anas strepera|1400||Ánade friso  2015-2019|1820|0.7986|
-| 47| 288222|03-02-2021|06-01-2021|France|COUDURES|43.696553|-0.508997|Domestic|Anas strepera|1800||Ánade friso  2015-2019|1820|0.7986|
-| 48| 288221|03-02-2021|05-01-2021|France|SAMADET|43.641|-0.485|Domestic|Anas strepera|560|40|Ánade friso  2015-2019|1820|0.7986|
-| 49| 287983|02-02-2021|26-01-2021|France|ANDREIN|43.40134|-0.887879|Domestic|Anas platyrhynchos|9000|330|Ánade azulón  2015-2019|1860|0.8856|
-| 50| 287980|02-02-2021|16-01-2021|France|CLASSUN|43.710772|-0.388978|Domestic|Anas strepera|500|500|Ánade friso  2015-2019|1820|0.7986|
-| 51| 287979|02-02-2021|12-01-2021|France|BOURDALAT|43.839107|-0.226656|Domestic|Anas platyrhynchos|654|60|Ánade azulón  2015-2019|1860|0.8856|
-| 52| 287978|02-02-2021|09-01-2021|France|SAINT-MAURICE-SUR-ADOUR|43.807|-0.459989|Domestic|Fulica atra|464||Focha común  2015-2019|4290|0.8092|
-| 53| 287552|27-01-2021|18-01-2021|France|GESTAS|43.353683|-0.881061|Domestic|Anas platyrhynchos|10200||Ánade azulón  2015-2019|1860|0.8856|
-| 54| 287545|28-01-2021|25-01-2021|France|BONNEGARDE|43.571522|-0.723181|Domestic|Anas platyrhynchos|2600|150|Ánade azulón  2015-2019|1860|0.8856|
-| 55| 287544|28-01-2021|24-01-2021|France|CASTANDET|43.788368|-0.371879|Domestic|Fulica atra|4400|850|Focha común  2015-2019|4290|0.8092|
-| 56| 287543|28-01-2021|23-01-2021|France|GARDERES|43.296408|-0.107359|Domestic|Anas platyrhynchos|200||Ánade azulón  2015-2019|1860|0.8856|
-| 57| 287542|28-01-2021|23-01-2021|France|SAINTE-CHRISTIE-D''ARMAGNAC|43.7853|-0.0075|Domestic|Anas platyrhynchos|20||Ánade azulón  2015-2019|1860|0.8856|
-| 58| 287534|28-01-2021|22-01-2021|France|MONGUILHEM|43.85101|-0.192053|Domestic|Anas platyrhynchos|2370||Ánade azulón  2015-2019|1860|0.8856|
-| 59| 287533|28-01-2021|22-01-2021|France|MONGUILHEM|43.85101|-0.192053|Domestic|Anas platyrhynchos|500||Ánade azulón  2015-2019|1860|0.8856|
-| 60| 287531|28-01-2021|21-01-2021|France|SAINT-PERDON|43.85191|-0.58784|Domestic|Fulica atra|3187||Focha común  2015-2019|4290|0.8092|
-| 61| 287526|28-01-2021|20-01-2021|France|TOUJOUSE|43.834692|-0.179821|Domestic|Anas platyrhynchos|1094||Ánade azulón  2015-2019|1860|0.8856|
-| 62| 287520|28-01-2021|19-01-2021|France|BATS|43.654272|-0.45792|Domestic|Anas strepera|11150||Ánade friso  2015-2019|1820|0.7986|
-| 63| 287516|28-01-2021|18-01-2021|France|PUYOO|43.543136|-0.911947|Domestic|Anas platyrhynchos|8|8|Ánade azulón  2015-2019|1860|0.8856|
-| 64| 287515|28-01-2021|18-01-2021|France|MEILHAN|43.846511|-0.691792|Domestic|Fulica atra|4200|70|Focha común  2015-2019|4290|0.8092|
-| 65| 287513|28-01-2021|18-01-2021|France|TILH|43.57201|-0.838269|Domestic|Anas platyrhynchos|27|27|Ánade azulón  2015-2019|1860|0.8856|
-| 66| 287505|28-01-2021|16-01-2021|France|BUANES|43.722323|-0.417042|Domestic|Anas strepera|10400|3800|Ánade friso  2015-2019|1820|0.7986|
-| 67| 287504|28-01-2021|16-01-2021|France|ARSAGUE|43.582643|-0.801882|Domestic|Anas platyrhynchos|2040||Ánade azulón  2015-2019|1860|0.8856|
-| 68| 287503|28-01-2021|15-01-2021|France|CAZERES-SUR-L''ADOUR|43.792085|-0.326052|Domestic|Anas platyrhynchos|582||Ánade azulón  2015-2019|1860|0.8856|
-| 69| 287498|28-01-2021|13-01-2021|France|MIRAMONT-SENSACQ|43.599938|-0.353378|Domestic|Anas strepera|620||Ánade friso  2015-2019|1820|0.7986|
-| 70| 287497|28-01-2021|13-01-2021|France|VIGNAU|43.771003|-0.294105|Domestic|Anas platyrhynchos|65|65|Ánade azulón  2015-2019|1860|0.8856|
-| 71| 287496|28-01-2021|13-01-2021|France|MONTANER|43.3456|-0.008|Domestic|Anas platyrhynchos|55|40|Ánade azulón  2015-2019|1860|0.8856|
-| 72| 287492|28-01-2021|12-01-2021|France|RENUNG|43.748149|-0.378882|Domestic|Anas strepera|71|71|Ánade friso  2015-2019|1820|0.7986|
-| 73| 287491|28-01-2021|12-01-2021|France|MONSEGUR|43.595028|-0.540173|Domestic|Anas strepera|8700||Ánade friso  2015-2019|1820|0.7986|
-| 74| 287489|28-01-2021|12-01-2021|France|MAULEON-D''ARMAGNAC|43.923811|-0.115833|Domestic|Anas platyrhynchos|6000|50|Ánade azulón  2015-2019|1860|0.8856|
-| 75| 287488|28-01-2021|11-01-2021|France|SAINT-SEVER|43.754823|-0.613117|Domestic|Anas strepera|10500|1000|Ánade friso  2015-2019|1820|0.7986|
-| 76| 287486|28-01-2021|08-01-2021|France|CAUNA|43.779112|-0.61732|Domestic|Fulica atra|1200||Focha común  2015-2019|4290|0.8092|
-| 77| 287484|28-01-2021|07-01-2021|France|BUANES|43.71082|-0.422115|Domestic|Anas strepera|1300||Ánade friso  2015-2019|1820|0.7986|
-| 78| 287482|28-01-2021|07-01-2021|France|SAMADET|43.641|-0.485|Domestic|Anas strepera|1080|1080|Ánade friso  2015-2019|1820|0.7986|
-| 79| 287480|28-01-2021|06-01-2021|France|SAINT-AUBIN|43.712|-0.696|Domestic|Anas strepera|810|210|Ánade friso  2015-2019|1820|0.7986|
-| 80| 287479|28-01-2021|06-01-2021|France|CAZALIS|43.62113|-0.675228|Domestic|Anas strepera|1520||Ánade friso  2015-2019|1820|0.7986|
-| 81| 287113|22-01-2021|16-01-2021|France|CASTELNAU-TURSAN|43.652002|-0.393523|Domestic|Anas strepera|816||Ánade friso  2015-2019|1820|0.7986|
-| 82| 287111|22-01-2021|15-01-2021|France|MANCIET|43.827447|0.032483|Domestic|Anas platyrhynchos|4700||Ánade azulón  2015-2019|1860|0.8856|
-| 83| 287108|22-01-2021|15-01-2021|France|BRETAGNE-DE-MARSAN|43.829107|-0.480044|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
-| 84| 287105|22-01-2021|14-01-2021|France|SAINT-SEVER|43.79095|-0.490262|Domestic|Fulica atra|50|50|Focha común  2015-2019|4290|0.8092|
-| 85| 287104|22-01-2021|14-01-2021|France|GARDERES|43.282582|-0.111046|Domestic|Anas platyrhynchos|40|40|Ánade azulón  2015-2019|1860|0.8856|
-| 86| 287100|22-01-2021|13-01-2021|France|URGONS|43.648269|-0.440281|Domestic|Anas strepera|1428||Ánade friso  2015-2019|1820|0.7986|
-| 87| 287098|22-01-2021|13-01-2021|France|CASTEX-D''ARMAGNAC|43.864254|-0.143397|Domestic|Anas platyrhynchos|1000||Ánade azulón  2015-2019|1860|0.8856|
-| 88| 287095|22-01-2021|13-01-2021|France|MONTSOUE|43.750495|-0.517751|Domestic|Anas strepera|10|4|Ánade friso  2015-2019|1820|0.7986|
-| 89| 287094|22-01-2021|13-01-2021|France|SAMADET|43.635038|-0.500247|Domestic|Anas strepera|400|30|Ánade friso  2015-2019|1820|0.7986|
-| 90| 287089|22-01-2021|12-01-2021|France|HAURIET|43.729266|-0.679305|Domestic|Anas strepera|400|400|Ánade friso  2015-2019|1820|0.7986|
-| 91| 287087|22-01-2021|12-01-2021|France|AUBAGNAN|43.672999|-0.504874|Domestic|Anas strepera|128|128|Ánade friso  2015-2019|1820|0.7986|
-| 92| 287085|22-01-2021|12-01-2021|France|CASTEX-D''ARMAGNAC|43.855954|-0.157505|Domestic|Anas platyrhynchos|10000||Ánade azulón  2015-2019|1860|0.8856|
-| 93| 287081|22-01-2021|12-01-2021|France|BATS|43.66007|-0.45548|Domestic|Anas strepera|750||Ánade friso  2015-2019|1820|0.7986|
-| 94| 287077|22-01-2021|12-01-2021|France|HONTANX|43.816997|-0.235278|Domestic|Anas platyrhynchos|810|810|Ánade azulón  2015-2019|1860|0.8856|
-| 95| 287076|22-01-2021|12-01-2021|France|AYZIEU|43.862763|-0.044144|Domestic|Anas platyrhynchos|2000||Ánade azulón  2015-2019|1860|0.8856|
-| 96| 287073|22-01-2021|12-01-2021|France|CASTELNAU D''AUZAN LABARRERE|43.9435|0.101863|Domestic|Anas platyrhynchos|1331|18|Ánade azulón  2015-2019|1860|0.8856|
-| 97| 287068|22-01-2021|11-01-2021|France|DOAZIT|43.703281|-0.63059|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 98| 287067|22-01-2021|11-01-2021|France|BONNEGARDE|43.570554|-0.722065|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 99| 287066|22-01-2021|11-01-2021|France|SAINTE-CHRISTIE-D''ARMAGNAC|43.7971|0.028468|Domestic|Anas platyrhynchos|4400||Ánade azulón  2015-2019|1860|0.8856|
-| 100| 287063|22-01-2021|11-01-2021|France|CLASSUN|43.703767|-0.410703|Domestic|Anas strepera|130|130|Ánade friso  2015-2019|1820|0.7986|
-| 101| 287062|22-01-2021|11-01-2021|France|TOULOUZETTE|43.760181|-0.660171|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 102| 287061|22-01-2021|11-01-2021|France|SERRES-GASTON|43.669047|-0.515605|Domestic|Anas strepera|8462||Ánade friso  2015-2019|1820|0.7986|
-| 103| 287060|22-01-2021|11-01-2021|France|MONTGAILLARD|43.763143|-0.469685|Domestic|Anas strepera|1776||Ánade friso  2015-2019|1820|0.7986|
-| 104| 287059|22-01-2021|11-01-2021|France|SAINT-LOUBOUER|43.692335|-0.428765|Domestic|Anas strepera|816||Ánade friso  2015-2019|1820|0.7986|
-| 105| 287057|22-01-2021|11-01-2021|France|HAUT-MAUCO|43.818918|-0.558102|Domestic|Fulica atra|400|400|Focha común  2015-2019|4290|0.8092|
-| 106| 287056|22-01-2021|11-01-2021|France|BENQUET|43.818971|-0.492831|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
-| 107| 287055|22-01-2021|11-01-2021|France|CAZERES-SUR-L''ADOUR|43.791835|-0.32574|Domestic|Anas platyrhynchos|597||Ánade azulón  2015-2019|1860|0.8856|
-| 108| 287054|22-01-2021|11-01-2021|France|SAMADET|43.630324|-0.472615|Domestic|Anas strepera|500|500|Ánade friso  2015-2019|1820|0.7986|
-| 109| 287052|22-01-2021|11-01-2021|France|BATS|43.663995|-0.457485|Domestic|Anas strepera|197|197|Ánade friso  2015-2019|1820|0.7986|
-| 110| 287051|22-01-2021|10-01-2021|France|CAZERES-SUR-L''ADOUR|43.770312|-0.266964|Domestic|Anas platyrhynchos|150|68|Ánade azulón  2015-2019|1860|0.8856|
-| 111| 287046|22-01-2021|10-01-2021|France|BENQUET|43.791611|-0.498226|Domestic|Fulica atra|5500||Focha común  2015-2019|4290|0.8092|
-| 112| 287044|22-01-2021|10-01-2021|France|HAUT-MAUCO|43.822318|-0.556297|Domestic|Fulica atra|500|160|Focha común  2015-2019|4290|0.8092|
-| 113| 287043|22-01-2021|10-01-2021|France|AYZIEU|43.880915|0.01753|Domestic|Anas platyrhynchos|4600|1|Ánade azulón  2015-2019|1860|0.8856|
-| 114| 287042|22-01-2021|10-01-2021|France|MAULEON-D''ARMAGNAC|43.910557|-0.191631|Domestic|Anas platyrhynchos|1500|50|Ánade azulón  2015-2019|1860|0.8856|
-| 115| 287036|22-01-2021|09-01-2021|France|SAMADET|43.623265|-0.456774|Domestic|Anas strepera|400|400|Ánade friso  2015-2019|1820|0.7986|
-| 116| 287035|22-01-2021|09-01-2021|France|DOAZIT|43.691661|-0.646257|Domestic|Anas strepera|40|40|Ánade friso  2015-2019|1820|0.7986|
-| 117| 287029|22-01-2021|09-01-2021|France|HABAS|43.54934|-0.947236|Domestic|Anas platyrhynchos|50|26|Ánade azulón  2015-2019|1860|0.8856|
-| 118| 287024|22-01-2021|08-01-2021|France|MONTSOUE|43.72795|-0.497527|Domestic|Anas strepera|2496||Ánade friso  2015-2019|1820|0.7986|
-| 119| 287022|22-01-2021|08-01-2021|France|MOMUY|43.615222|-0.62394|Domestic|Anas strepera|168|168|Ánade friso  2015-2019|1820|0.7986|
-| 120| 287019|22-01-2021|08-01-2021|France|MONTSOUE|43.741215|-0.495223|Domestic|Anas strepera|300|300|Ánade friso  2015-2019|1820|0.7986|
-| 121| 287017|22-01-2021|08-01-2021|France|HAUT-MAUCO|43.822318|-0.556297|Domestic|Fulica atra|150|150|Focha común  2015-2019|4290|0.8092|
-| 122| 287016|22-01-2021|08-01-2021|France|HAUT-MAUCO|43.822318|-0.556297|Domestic|Fulica atra|200|200|Focha común  2015-2019|4290|0.8092|
-| 123| 287014|22-01-2021|08-01-2021|France|BATS|43.6589|-0.459|Domestic|Anas strepera|110|110|Ánade friso  2015-2019|1820|0.7986|
-| 124| 287012|22-01-2021|07-01-2021|France|CASTELNAU-TURSAN|43.662468|-0.425465|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 125| 287011|22-01-2021|07-01-2021|France|FARGUES|43.732332|-0.465582|Domestic|Anas strepera|330||Ánade friso  2015-2019|1820|0.7986|
-| 126| 287009|22-01-2021|06-01-2021|France|NASSIET|43.596709|-0.703115|Domestic|Anas strepera|2990||Ánade friso  2015-2019|1820|0.7986|
-| 127| 287003|22-01-2021|04-01-2021|France|SAINT-AUBIN|43.71191|-0.695465|Domestic|Anas strepera|6800||Ánade friso  2015-2019|1820|0.7986|
-| 128| 287002|22-01-2021|03-01-2021|France|GEAUNE|43.6397|-0.383333|Domestic|Anas strepera|2|2|Ánade friso  2015-2019|1820|0.7986|
-| 129| 287001|22-01-2021|02-01-2021|France|EYRES-MONCUBE|43.700641|-0.549408|Domestic|Anas strepera|400|400|Ánade friso  2015-2019|1820|0.7986|
-| 130| 287000|22-01-2021|02-01-2021|France|DOAZIT|43.685728|-0.632064|Domestic|Anas strepera|22|22|Ánade friso  2015-2019|1820|0.7986|
-| 131| 286998|22-01-2021|30-12-2020|France|HORSARRIEU|43.679531|-0.621998|Domestic|Anas strepera|850|850|Ánade friso  2015-2019|1820|0.7986|
-| 132| 286996|22-01-2021|28-12-2020|France|HORSARRIEU|43.677372|-0.605684|Domestic|Anas strepera|300|7|Ánade friso  2015-2019|1820|0.7986|
-| 133| 286995|22-01-2021|28-12-2020|France|CAZALIS|43.631046|-0.66302|Domestic|Anas strepera|45|45|Ánade friso  2015-2019|1820|0.7986|
-| 134| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Aythya ferina|5|5|Porrón común  2015-2019|1980|0.8169|
-| 135| 286740|15-01-2021|09-01-2021|France|MANCIET|43.811035|0.093421|Domestic|Anas platyrhynchos|8000||Ánade azulón  2015-2019|1860|0.8856|
-| 136| 286739|15-01-2021|09-01-2021|France|MANCIET|43.799792|0.097398|Domestic|Anas platyrhynchos|13000|6|Ánade azulón  2015-2019|1860|0.8856|
-| 137| 286738|15-01-2021|08-01-2021|France|DOAZIT|43.711047|-0.667571|Domestic|Anas strepera|37000||Ánade friso  2015-2019|1820|0.7986|
-| 138| 286736|15-01-2021|08-01-2021|France|LARRIVIERE-SAINT-SAVIN|43.7692|-0.416667|Domestic|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 139| 286735|15-01-2021|08-01-2021|France|NASSIET|43.6|-0.683333|Domestic|Anas strepera|124|124|Ánade friso  2015-2019|1820|0.7986|
-| 140| 286734|15-01-2021|08-01-2021|France|ORTHEZ|43.493204|-0.758171|Domestic|Anas platyrhynchos|3200|200|Ánade azulón  2015-2019|1860|0.8856|
-| 141| 286733|15-01-2021|07-01-2021|France|TOULOUZETTE|43.747411|-0.670568|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 142| 286732|15-01-2021|07-01-2021|France|ARTHEZ-D''''''''ARMAGNAC|43.8947|-0.258|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 143| 286731|15-01-2021|07-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 144| 286729|15-01-2021|07-01-2021|France|SALLES-D''''ARMAGNAC|43.805868|-0.053058|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 145| 286728|15-01-2021|07-01-2021|France|LAUJUZAN|43.812293|-0.125686|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 146| 286727|15-01-2021|07-01-2021|France|SERRES-GASTON|43.651158|-0.518154|Domestic|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 147| 286726|15-01-2021|07-01-2021|France|SARRAZIET|43.704065|-0.501723|Domestic|Anas strepera|60|60|Ánade friso  2015-2019|1820|0.7986|
-| 148| 286725|15-01-2021|07-01-2021|France|LAMOTHE|43.7914|-0.65|Domestic|Fulica atra|2840|2800|Focha común  2015-2019|4290|0.8092|
-| 149| 286720|15-01-2021|07-01-2021|France|BAHUS-SOUBIRAN|43.6736|-0.356|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 150| 286719|15-01-2021|06-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 151| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Anas clypeata|||Pato cuchara  2015-2019|1940|0.8796|
-| 152| 286714|15-01-2021|06-01-2021|France|MONTEGUT|43.8753|-0.2|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 153| 286713|15-01-2021|06-01-2021|France|CAUNA|43.7904|-0.620662|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 154| 286707|15-01-2021|06-01-2021|France|DOAZIT|43.706706|-0.661347|Domestic|Anas strepera|400|40|Ánade friso  2015-2019|1820|0.7986|
-| 155| 286706|15-01-2021|06-01-2021|France|MAURRIN|43.815481|-0.372816|Domestic|Fulica atra|200|10|Focha común  2015-2019|4290|0.8092|
-| 156| 286705|15-01-2021|06-01-2021|France|SAINTE-COLOMBE|43.675262|-0.53568|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 157| 286704|15-01-2021|06-01-2021|France|MONTREAL|43.925356|0.179512|Domestic|Anas platyrhynchos|9|9|Ánade azulón  2015-2019|1860|0.8856|
-| 158| 286703|15-01-2021|05-01-2021|France|LICHOS|43.308662|-0.882178|Domestic|Anas platyrhynchos|2200|15|Ánade azulón  2015-2019|1860|0.8856|
-| 159| 286702|15-01-2021|05-01-2021|France|LICHOS|43.309271|-0.881972|Domestic|Anas platyrhynchos|1000||Ánade azulón  2015-2019|1860|0.8856|
-| 160| 286698|15-01-2021|05-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 161| 286696|15-01-2021|05-01-2021|France|TOULOUZETTE|43.747411|-0.670568|Domestic|Anas strepera|85|85|Ánade friso  2015-2019|1820|0.7986|
-| 162| 286694|15-01-2021|05-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 163| 286693|15-01-2021|05-01-2021|France|TOULOUZETTE|43.747411|-0.670568|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 164| 286691|15-01-2021|05-01-2021|France|SAINT-GEIN|43.813397|-0.319916|Domestic|Anas platyrhynchos|2100|639|Ánade azulón  2015-2019|1860|0.8856|
-| 165| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Anas clypeata|500|120|Pato cuchara  2015-2019|1940|0.8796|
-| 166| 286688|15-01-2021|05-01-2021|France|SAINTE-CHRISTIE-D''''ARMAGNAC|43.810458|0.00836|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 167| 286687|15-01-2021|04-01-2021|France|DOAZIT|43.711047|-0.667571|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 168| 286686|15-01-2021|04-01-2021|France|SAINT-SEVER|43.749831|-0.547885|Domestic|Anas strepera|200|33|Ánade friso  2015-2019|1820|0.7986|
-| 169| 286685|15-01-2021|04-01-2021|France|LAMOTHE|43.80051|-0.686803|Domestic|Fulica atra|1000|250|Focha común  2015-2019|4290|0.8092|
-| 170| 286684|15-01-2021|04-01-2021|France|EYRES-MONCUBE|43.717531|-0.545169|Domestic|Anas strepera|300|300|Ánade friso  2015-2019|1820|0.7986|
-| 171| 286683|15-01-2021|04-01-2021|France|BAS-MAUCO|43.786935|-0.563469|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 172| 286679|15-01-2021|04-01-2021|France|MOMUY|43.615742|-0.628592|Domestic|Anas strepera|666|590|Ánade friso  2015-2019|1820|0.7986|
-| 173| 286678|15-01-2021|04-01-2021|France|SAINTE-CHRISTIE-D''''ARMAGNAC|43.793884|-0.005935|Domestic|Anas platyrhynchos|4000|35|Ánade azulón  2015-2019|1860|0.8856|
-| 174| 286677|15-01-2021|03-01-2021|France|CAUNA|43.7904|-0.620662|Domestic|Fulica atra|700|700|Focha común  2015-2019|4290|0.8092|
-| 175| 286675|15-01-2021|03-01-2021|France|GRENADE-SUR-L''ADOUR|43.7733|-0.430883|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
-| 176| 286670|15-01-2021|02-01-2021|France|SARRAZIET|43.703856|-0.491369|Domestic|Anas strepera|500|500|Ánade friso  2015-2019|1820|0.7986|
-| 177| 286668|15-01-2021|29-12-2020|France|MAYLIS|43.710999|-0.682008|Domestic|Anas strepera|11|2|Ánade friso  2015-2019|1820|0.7986|
-| 178| 286273|12-01-2021|07-01-2021|France|EAUZE|43.880906|0.017531|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 179| 286241|08-01-2021|05-01-2021|France|PAYROS-CAZAUTETS|43.623111|-0.407464|Domestic|Anas strepera|3|3|Ánade friso  2015-2019|1820|0.7986|
-| 180| 286240|08-01-2021|05-01-2021|France|EYRES-MONCUBE|43.72294|-0.536271|Domestic|Anas strepera|100|90|Ánade friso  2015-2019|1820|0.7986|
-| 181| 286238|08-01-2021|05-01-2021|France|CASTANDET|43.82491|-0.340805|Domestic|Anas platyrhynchos|200|200|Ánade azulón  2015-2019|1860|0.8856|
-| 182| 286237|08-01-2021|05-01-2021|France|BUANES|43.723436|-0.411742|Domestic|Anas strepera|9000|400|Ánade friso  2015-2019|1820|0.7986|
-| 183| 286236|08-01-2021|04-01-2021|France|ESTIRAC|43.496221|0.031767|Domestic|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.8856|
-| 184| 286235|08-01-2021|04-01-2021|France|MAURRIN|43.816899|-0.372219|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 185| 286234|08-01-2021|04-01-2021|France|MONTAUT|43.717879|-0.681683|Domestic|Anas strepera|540||Ánade friso  2015-2019|1820|0.7986|
-| 186| 286233|08-01-2021|04-01-2021|France|LARRIVIERE-SAINT-SAVIN|43.752868|-0.435253|Domestic|Anas strepera|1400|713|Ánade friso  2015-2019|1820|0.7986|
-| 187| 286232|08-01-2021|04-01-2021|France|MONTAUT|43.729141|-0.652913|Domestic|Anas strepera|65|65|Ánade friso  2015-2019|1820|0.7986|
-| 188| 286231|08-01-2021|04-01-2021|France|MAYLIS|43.690611|-0.688948|Domestic|Anas strepera|11|11|Ánade friso  2015-2019|1820|0.7986|
-| 189| 286228|08-01-2021|03-01-2021|France|CLASSUN|43.713553|-0.397186|Domestic|Anas strepera|1000|300|Ánade friso  2015-2019|1820|0.7986|
-| 190| 286227|08-01-2021|03-01-2021|France|SAINT-SEVER|43.762178|-0.598041|Domestic|Anas strepera|51|51|Ánade friso  2015-2019|1820|0.7986|
-| 191| 286225|08-01-2021|02-01-2021|France|TOULOUZETTE|43.749719|-0.701852|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 192| 286224|08-01-2021|02-01-2021|France|DOAZIT|43.700716|-0.658999|Domestic|Anas strepera|300||Ánade friso  2015-2019|1820|0.7986|
-| 193| 286221|08-01-2021|02-01-2021|France|AUDIGNON|43.728641|-0.592683|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 194| 286219|08-01-2021|02-01-2021|France|BAIGTS-DE-BEARN|43.535475|-0.839377|Domestic|Anas platyrhynchos|500|30|Ánade azulón  2015-2019|1860|0.8856|
-| 195| 286217|08-01-2021|02-01-2021|France|MONTGAILLARD|43.763692|-0.506497|Domestic|Anas strepera|20||Ánade friso  2015-2019|1820|0.7986|
-| 196| 286214|08-01-2021|01-01-2021|France|BANOS|43.728693|-0.607029|Domestic|Anas strepera|130|130|Ánade friso  2015-2019|1820|0.7986|
-| 197| 286213|08-01-2021|01-01-2021|France|SOUPROSSE|43.770092|-0.698624|Domestic|Fulica atra|71|10|Focha común  2015-2019|4290|0.8092|
-| 198| 286211|08-01-2021|31-12-2020|France|CLASSUN|43.717144|-0.395997|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 199| 286209|08-01-2021|31-12-2020|France|MONTAUT|43.737247|-0.64956|Domestic|Anas strepera|4000||Ánade friso  2015-2019|1820|0.7986|
-| 200| 286207|08-01-2021|31-12-2020|France|PRECHACQ-NAVARRENX|43.277199|-0.72008|Domestic|Anas platyrhynchos|900|50|Ánade azulón  2015-2019|1860|0.8856|
-| 201| 286204|08-01-2021|31-12-2020|France|GAUJACQ|43.761854|-0.617409|Domestic|Anas strepera|2580||Ánade friso  2015-2019|1820|0.7986|
-| 202| 286199|08-01-2021|30-12-2020|France|DOAZIT|43.690612|-0.669493|Domestic|Anas strepera|52|52|Ánade friso  2015-2019|1820|0.7986|
-| 203| 286196|08-01-2021|30-12-2020|France|MONSEGUR|43.601838|-0.553326|Domestic|Anas strepera|22|20|Ánade friso  2015-2019|1820|0.7986|
-| 204| 286101|06-01-2021|31-12-2020|France|MONTAUT|43.733544|-0.642422|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 205| 286099|06-01-2021|30-12-2020|France|HAGETMAU|43.671066|-0.576922|Domestic|Anas strepera|3200||Ánade friso  2015-2019|1820|0.7986|
-| 206| 286096|06-01-2021|30-12-2020|France|MAYLIS|43.696509|-0.687617|Domestic|Anas strepera|10|10|Ánade friso  2015-2019|1820|0.7986|
-| 207| 286093|06-01-2021|29-12-2020|France|MAYLIS|43.705449|-0.672529|Domestic|Anas strepera|13|13|Ánade friso  2015-2019|1820|0.7986|
-| 208| 286092|06-01-2021|28-12-2020|France|SAINT-CRICQ-CHALOSSE|43.669765|-0.694636|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 209| 286086|06-01-2021|28-12-2020|France|MONTAUT|43.722907|-0.651865|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 210| 286007|06-01-2021|31-12-2020|France|SAINTE-COLOMBE|43.688644|-0.571983|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 211| 286006|06-01-2021|30-12-2020|France|HAGETMAU|43.663212|-0.5836|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 212| 286004|06-01-2021|30-12-2020|France|DOAZIT|43.675105|-0.648695|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 213| 285737|31-12-2020|28-12-2020|France|SAINT-CRICQ-CHALOSSE|43.669765|-0.694636|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 214| 285736|31-12-2020|27-12-2020|France|HORSARRIEUX|43.674943|-0.596075|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 215| 285732|31-12-2020|26-12-2020|France|HORSARIEUX|43.678967|-0.609059|Domestic|Anas strepera|10|10|Ánade friso  2015-2019|1820|0.7986|
-| 216| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
-| 217| 285500|24-12-2020|19-12-2020|France|LABATUT-RIVIERE|43.512723|0.037001|Domestic|Anas platyrhynchos|700|146|Ánade azulón  2015-2019|1860|0.8856|
-| 218| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Fulica atra||1|Focha común  2015-2019|4290|0.8092|
-| 219| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Fulica atra|50|25|Focha común  2015-2019|4290|0.8092|
-| 220| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Fulica atra|147||Focha común  2015-2019|4290|0.8092|
-| 221| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 222| 288332|09-02-2021|08-02-2021|Germany|Biendorf|54.04|11.68|Domestic|Anser anser|627|627|Ánsar común  2015-2019|1610|0.4855|
-| 223| 288044|03-02-2021|31-01-2021|Germany|Passow|53.14|14.06|Domestic|Anser anser|7166|7166|Ánsar común  2015-2019|1610|0.4855|
-| 224| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Anser anser|1532|1532|Ánsar común  2015-2019|1610|0.4855|
-| 225| 287602|28-01-2021|19-01-2021|Germany|Stade|53.45|9.5|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 226| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Anser anser|2|1|Ánsar común  2015-2019|1610|0.4855|
-| 227| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 228| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 229| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 230| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 231| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 232| 287138|20-01-2021|04-01-2021|Germany|Landsberg a. Lech|47.9|10.93|Wild|Anser anser|2|2|Ánsar común  2015-2019|1610|0.4855|
-| 233| 286787|18-01-2021|06-01-2021|Germany|Vorpommern-Greifswald|54.18|13.34|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 234| 286777|18-01-2021|28-12-2020|Germany|Spree-Neiße|51.97|14.59|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 235| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Anser anser|4|4|Ánsar común  2015-2019|1610|0.4855|
-| 236| 285720|30-12-2020|28-12-2020|Germany|Grimma|51.27|12.87|Domestic|Anas platyrhynchos|27|27|Ánade azulón  2015-2019|1860|0.8856|
-| 237| 285718|30-12-2020|28-12-2020|Germany|Gadebusch|53.68|11.08|Domestic|Anser anser|12|12|Ánsar común  2015-2019|1610|0.4855|
-| 238| 285604|30-12-2020|27-12-2020|Germany|Schenkendöbern|51.97|14.59|Domestic|Anser anser|35|35|Ánsar común  2015-2019|1610|0.4855|
-| 239| 285544|28-12-2020|22-12-2020|Germany|Stralsund|54.31|13.09|Wild|Anser anser|2|2|Ánsar común  2015-2019|1610|0.4855|
-| 240| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 241| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Larus ridibundus|44|44|Gaviota reidora  2015-2019|5820|0.8273|
-| 242| 285514|25-12-2020|24-12-2020|Germany|Grimma|51.26|12.91|Domestic|Anas platyrhynchos|75|75|Ánade azulón  2015-2019|1860|0.8856|
-| 243| 286278|13-01-2021|19-12-2020|Italy|Rosolina - Valle Morosina|45.11926|12.279251|Wild|Fulica atra|1||Focha común  2015-2019|4290|0.8092|
-| 244| 286253|11-01-2021|24-12-2020|Italy|MONFALCONE|45.795108|13.536774|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 245| 286252|11-01-2021|11-12-2020|Italy|CAMPAGNA LUPIA VALLE FIGHERI/5|45.32952|12.13465|Wild|Anas penelope|1||Silbón europeo  2015-2019|1790|0.5264|
-| 246| 285574|30-12-2020|21-12-2020|Italy|Campagnia Lupia valle filingheri / 4|45.32952|12.13465|Wild|Anas penelope|4||Silbón europeo  2015-2019|1790|0.5264|
-| 247| 285573|30-12-2020|11-12-2020|Italy|Campagnia Lupia valle filingheri / 3|45.32952|12.13465|Wild|Anas penelope|8||Silbón europeo  2015-2019|1790|0.5264|
-| 248| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Anas crecca|1||Cerceta común  2015-2019|1840|0.8058|
-| 249| 286016|08-01-2021|31-12-2020|Lithuania|Kaunas|54.8975|24.02|Domestic|Larus ridibundus|22|22|Gaviota reidora  2015-2019|5820|0.8273|
-| 250| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 251| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 252| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.953|
-| 253| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Limosa limosa|150|150|Aguja colinegra  2015-2019|5320|0.953|
-| 254| 288842|12-02-2021|31-01-2021|Poland|Mielno|54.183333|16.183333|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.8856|
-| 255| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Larus ridibundus|320|320|Gaviota reidora  2015-2019|5820|0.8273|
-| 256| 284895|21-12-2020|09-12-2020|Poland|Gryfino|53.25|14.49|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 257| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 258| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 259| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 260| 292912|06-04-2021|07-03-2021|Sweden|Ystad|55.45467|13.86139|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 261| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
-| 262| 292117|22-03-2021|04-03-2021|Estonia|Tiskre|59.41408|24.580348|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
-| 263| 292115|22-03-2021|01-03-2021|Estonia|v�äna-jõesuu beach|59.434581|24.349695|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
-| 264| 292108|22-03-2021|05-03-2021|Estonia|v�äna-jõesuu beach|59.445144|24.345703|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
-| 265| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 266| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Anser anser|||Ánsar común  2015-2019|1610|0.4855|
-| 267| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 268| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 269| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 270| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 271| 293212|12-04-2021|01-03-2021|Germany|Blankensee|53.409532|13.262708|Domestic|Anser anser|70|70|Ánsar común  2015-2019|1610|0.4855|
-| 272| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Anser anser|4|4|Ánsar común  2015-2019|1610|0.4855|
-| 273| 292917|06-04-2021|01-03-2021|Germany|Pritzwalk|53.220282|12.200828|Domestic|Ciconia ciconia||0|Cigüeña blanca  2015-2019|1340|0.8684|
-| 274| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
-=======
-- *Id comarca*: SP27066
-- *Localización comarca*: A MARIÑA OCCIDENTAL
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Larus ridibundus|1300|1300|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778000000005|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-
-
-### Alerta 2 
-- *Id comarca*: SP33024
-- *Localización comarca*: GIJON
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Vanellus vanellus|1300|1300|Avefría europea  2015-2019|4930|0.5146|
-| 1| 288306|05-02-2021|24-12-2020|Scotland|Nr Ellon|57.43|-2.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 2| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 5| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Vanellus vanellus||1030|Avefría europea  2015-2019|4930|0.5146|
-| 6| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288841|12-02-2021|27-01-2021|Denmark|Bisserup|55.404861|11.353056|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 11| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
-| 12| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 17| 287651|28-01-2021|20-01-2021|Germany|Vorpommern-Greifswald|53.63333299999999|11.41666|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 18| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 19| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 20| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778000000005|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 21| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 22| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 23| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Vanellus vanellus|3000|3000|Avefría europea  2015-2019|4930|0.5146|
-| 24| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 25| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 26| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 27| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 28| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
-
-
-### Alerta 3 
-- *Id comarca*: SP33076
-- *Localización comarca*: VILLAVICIOSA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-<<<<<<< HEAD
-| 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Vanellus vanellus|1300|1300|Avefría europea  2015-2019|4930|0.5146|
-| 1| 288306|05-02-2021|24-12-2020|Scotland|Nr Ellon|57.43|-2.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 2| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 5| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Vanellus vanellus||1030|Avefría europea  2015-2019|4930|0.5146|
-| 6| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288841|12-02-2021|27-01-2021|Denmark|Bisserup|55.404861|11.353056|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 11| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Pluvialis apricaria||3|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 12| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 13| 288794|12-02-2021|25-01-2021|Denmark|Arrild|55.159005|8.970054|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 14| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 15| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 16| 288783|12-02-2021|19-01-2021|Denmark|Skærbæk|55.181428|8.904019|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 17| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 18| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 19| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 20| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 21| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 22| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 23| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 24| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 25| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 26| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 27| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 28| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Vanellus vanellus|3000|3000|Avefría europea  2015-2019|4930|0.5146|
-| 29| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 30| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 31| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 32| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 33| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-=======
-| 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Calidris alpina|1300|1300|Correlimos común  2015-2019|5120|0.5022|
-| 1| 288306|05-02-2021|24-12-2020|Scotland|Nr Ellon|57.43|-2.09|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
-| 2| 287598|28-01-2021|14-01-2021|Northern Ireland|Nr Ards|54.57|-5.55|Wild|Larus fuscus|1||Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 5| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 6| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
-| 9| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Philomachus pugnax|5000|5000|Combatiente  2015-2019|5170|0.4963|
-| 10| 288841|12-02-2021|27-01-2021|Denmark|Bisserup|55.404861|11.353056|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 11| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
-| 12| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 13| 288795|12-02-2021|25-01-2021|Denmark|Glumsø|55.335901|11.694357|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 14| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 15| 288782|12-02-2021|15-01-2021|Denmark|Husum-Ballum2|55.074034|8.662243|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 16| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504070999999996|8.719635|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 17| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 18| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 19| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289000000005|8.272185|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.8169|
-| 20| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 21| 288251|03-02-2021|30-01-2021|France|CASTELNAU D''AUZAN LABARRERE|43.941081|0.075587|Domestic|Anas platyrhynchos|409||Ánade azulón  2015-2019|1860|0.8856|
-| 22| 288246|03-02-2021|28-01-2021|France|BENTAYOU-SEREE|43.394|-0.065|Domestic|Anas platyrhynchos|2900|100|Ánade azulón  2015-2019|1860|0.8856|
-| 23| 288243|03-02-2021|27-01-2021|France|BENTAYOU-SEREE|43.391082|-0.069472|Domestic|Anas platyrhynchos|12600|20|Ánade azulón  2015-2019|1860|0.8856|
-| 24| 288238|03-02-2021|20-01-2021|France|TOULOUZETTE|43.755821000000005|-0.6547890000000001|Domestic|Anas strepera|786||Ánade friso  2015-2019|1820|0.7986|
-| 25| 288236|03-02-2021|15-01-2021|France|LARRIVIERE-SAINT-SAVIN|43.754605|-0.42563900000000005|Domestic|Anas strepera|100||Ánade friso  2015-2019|1820|0.7986|
-| 26| 288233|03-02-2021|14-01-2021|France|GEAUNE|43.637227|-0.382894|Domestic|Anas strepera|6350||Ánade friso  2015-2019|1820|0.7986|
-| 27| 288231|03-02-2021|14-01-2021|France|SAMADET|43.645969|-0.49737600000000004|Domestic|Anas strepera|3029|29|Ánade friso  2015-2019|1820|0.7986|
-| 28| 288229|03-02-2021|11-01-2021|France|SAINT-SEVER|43.745274|-0.584546|Domestic|Anas strepera|610||Ánade friso  2015-2019|1820|0.7986|
-| 29| 288228|03-02-2021|11-01-2021|France|VIELLE-TURSAN|43.668273|-0.47211400000000003|Domestic|Anas strepera|6000||Ánade friso  2015-2019|1820|0.7986|
-| 30| 288227|03-02-2021|09-01-2021|France|GEAUNE|43.641000000000005|-0.376|Domestic|Anas strepera|1920|200|Ánade friso  2015-2019|1820|0.7986|
-| 31| 288226|03-02-2021|09-01-2021|France|BUANES|43.730609|-0.418386|Domestic|Anas strepera|2200||Ánade friso  2015-2019|1820|0.7986|
-| 32| 288225|03-02-2021|09-01-2021|France|MONTGAILLARD|43.762277000000005|-0.489598|Domestic|Anas strepera|1400||Ánade friso  2015-2019|1820|0.7986|
-| 33| 288222|03-02-2021|06-01-2021|France|COUDURES|43.696553|-0.508997|Domestic|Anas strepera|1800||Ánade friso  2015-2019|1820|0.7986|
-| 34| 288221|03-02-2021|05-01-2021|France|SAMADET|43.641000000000005|-0.485|Domestic|Anas strepera|560|40|Ánade friso  2015-2019|1820|0.7986|
-| 35| 287980|02-02-2021|16-01-2021|France|CLASSUN|43.710772|-0.38897800000000005|Domestic|Anas strepera|500|500|Ánade friso  2015-2019|1820|0.7986|
-| 36| 287543|28-01-2021|23-01-2021|France|GARDERES|43.296408|-0.107359|Domestic|Anas platyrhynchos|200||Ánade azulón  2015-2019|1860|0.8856|
-| 37| 287520|28-01-2021|19-01-2021|France|BATS|43.654272|-0.45792|Domestic|Anas strepera|11150||Ánade friso  2015-2019|1820|0.7986|
-| 38| 287505|28-01-2021|16-01-2021|France|BUANES|43.722322999999996|-0.417042|Domestic|Anas strepera|10400|3800|Ánade friso  2015-2019|1820|0.7986|
-| 39| 287498|28-01-2021|13-01-2021|France|MIRAMONT-SENSACQ|43.599938|-0.353378|Domestic|Anas strepera|620||Ánade friso  2015-2019|1820|0.7986|
-| 40| 287496|28-01-2021|13-01-2021|France|MONTANER|43.3456|-0.008|Domestic|Anas platyrhynchos|55|40|Ánade azulón  2015-2019|1860|0.8856|
-| 41| 287492|28-01-2021|12-01-2021|France|RENUNG|43.748149|-0.378882|Domestic|Anas strepera|71|71|Ánade friso  2015-2019|1820|0.7986|
-| 42| 287491|28-01-2021|12-01-2021|France|MONSEGUR|43.595028000000006|-0.5401729999999999|Domestic|Anas strepera|8700||Ánade friso  2015-2019|1820|0.7986|
-| 43| 287488|28-01-2021|11-01-2021|France|SAINT-SEVER|43.754822999999995|-0.613117|Domestic|Anas strepera|10500|1000|Ánade friso  2015-2019|1820|0.7986|
-| 44| 287484|28-01-2021|07-01-2021|France|BUANES|43.71082|-0.42211499999999996|Domestic|Anas strepera|1300||Ánade friso  2015-2019|1820|0.7986|
-| 45| 287482|28-01-2021|07-01-2021|France|SAMADET|43.641000000000005|-0.485|Domestic|Anas strepera|1080|1080|Ánade friso  2015-2019|1820|0.7986|
-| 46| 287480|28-01-2021|06-01-2021|France|SAINT-AUBIN|43.711999999999996|-0.696|Domestic|Anas strepera|810|210|Ánade friso  2015-2019|1820|0.7986|
-| 47| 287479|28-01-2021|06-01-2021|France|CAZALIS|43.62113|-0.6752279999999999|Domestic|Anas strepera|1520||Ánade friso  2015-2019|1820|0.7986|
-| 48| 287113|22-01-2021|16-01-2021|France|CASTELNAU-TURSAN|43.652002|-0.393523|Domestic|Anas strepera|816||Ánade friso  2015-2019|1820|0.7986|
-| 49| 287111|22-01-2021|15-01-2021|France|MANCIET|43.827447|0.032483|Domestic|Anas platyrhynchos|4700||Ánade azulón  2015-2019|1860|0.8856|
-| 50| 287104|22-01-2021|14-01-2021|France|GARDERES|43.282582|-0.111046|Domestic|Anas platyrhynchos|40|40|Ánade azulón  2015-2019|1860|0.8856|
-| 51| 287100|22-01-2021|13-01-2021|France|URGONS|43.648269|-0.44028100000000003|Domestic|Anas strepera|1428||Ánade friso  2015-2019|1820|0.7986|
-| 52| 287095|22-01-2021|13-01-2021|France|MONTSOUE|43.750495|-0.5177510000000001|Domestic|Anas strepera|10|4|Ánade friso  2015-2019|1820|0.7986|
-| 53| 287094|22-01-2021|13-01-2021|France|SAMADET|43.635038|-0.500247|Domestic|Anas strepera|400|30|Ánade friso  2015-2019|1820|0.7986|
-| 54| 287089|22-01-2021|12-01-2021|France|HAURIET|43.729265999999996|-0.679305|Domestic|Anas strepera|400|400|Ánade friso  2015-2019|1820|0.7986|
-| 55| 287087|22-01-2021|12-01-2021|France|AUBAGNAN|43.672999|-0.5048739999999999|Domestic|Anas strepera|128|128|Ánade friso  2015-2019|1820|0.7986|
-| 56| 287081|22-01-2021|12-01-2021|France|BATS|43.660070000000005|-0.45548|Domestic|Anas strepera|750||Ánade friso  2015-2019|1820|0.7986|
-| 57| 287073|22-01-2021|12-01-2021|France|CASTELNAU D''AUZAN LABARRERE|43.9435|0.101863|Domestic|Anas platyrhynchos|1331|18|Ánade azulón  2015-2019|1860|0.8856|
-| 58| 287068|22-01-2021|11-01-2021|France|DOAZIT|43.703281|-0.63059|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 59| 287066|22-01-2021|11-01-2021|France|SAINTE-CHRISTIE-D''ARMAGNAC|43.7971|0.028468|Domestic|Anas platyrhynchos|4400||Ánade azulón  2015-2019|1860|0.8856|
-| 60| 287063|22-01-2021|11-01-2021|France|CLASSUN|43.703767|-0.410703|Domestic|Anas strepera|130|130|Ánade friso  2015-2019|1820|0.7986|
-| 61| 287062|22-01-2021|11-01-2021|France|TOULOUZETTE|43.760181|-0.660171|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 62| 287061|22-01-2021|11-01-2021|France|SERRES-GASTON|43.669047|-0.515605|Domestic|Anas strepera|8462||Ánade friso  2015-2019|1820|0.7986|
-| 63| 287060|22-01-2021|11-01-2021|France|MONTGAILLARD|43.763143|-0.469685|Domestic|Anas strepera|1776||Ánade friso  2015-2019|1820|0.7986|
-| 64| 287059|22-01-2021|11-01-2021|France|SAINT-LOUBOUER|43.692335|-0.42876499999999995|Domestic|Anas strepera|816||Ánade friso  2015-2019|1820|0.7986|
-| 65| 287054|22-01-2021|11-01-2021|France|SAMADET|43.630324|-0.47261499999999995|Domestic|Anas strepera|500|500|Ánade friso  2015-2019|1820|0.7986|
-| 66| 287052|22-01-2021|11-01-2021|France|BATS|43.663995|-0.45748500000000003|Domestic|Anas strepera|197|197|Ánade friso  2015-2019|1820|0.7986|
-| 67| 287043|22-01-2021|10-01-2021|France|AYZIEU|43.880915|0.01753|Domestic|Anas platyrhynchos|4600|1|Ánade azulón  2015-2019|1860|0.8856|
-| 68| 287036|22-01-2021|09-01-2021|France|SAMADET|43.623265|-0.45677399999999996|Domestic|Anas strepera|400|400|Ánade friso  2015-2019|1820|0.7986|
-| 69| 287035|22-01-2021|09-01-2021|France|DOAZIT|43.691660999999996|-0.646257|Domestic|Anas strepera|40|40|Ánade friso  2015-2019|1820|0.7986|
-| 70| 287024|22-01-2021|08-01-2021|France|MONTSOUE|43.72795|-0.49752700000000005|Domestic|Anas strepera|2496||Ánade friso  2015-2019|1820|0.7986|
-| 71| 287022|22-01-2021|08-01-2021|France|MOMUY|43.615221999999996|-0.6239399999999999|Domestic|Anas strepera|168|168|Ánade friso  2015-2019|1820|0.7986|
-| 72| 287019|22-01-2021|08-01-2021|France|MONTSOUE|43.741215000000004|-0.49522299999999997|Domestic|Anas strepera|300|300|Ánade friso  2015-2019|1820|0.7986|
-| 73| 287014|22-01-2021|08-01-2021|France|BATS|43.6589|-0.45899999999999996|Domestic|Anas strepera|110|110|Ánade friso  2015-2019|1820|0.7986|
-| 74| 287012|22-01-2021|07-01-2021|France|CASTELNAU-TURSAN|43.662468|-0.425465|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 75| 287011|22-01-2021|07-01-2021|France|FARGUES|43.732332|-0.465582|Domestic|Anas strepera|330||Ánade friso  2015-2019|1820|0.7986|
-| 76| 287009|22-01-2021|06-01-2021|France|NASSIET|43.596709000000004|-0.7031149999999999|Domestic|Anas strepera|2990||Ánade friso  2015-2019|1820|0.7986|
-| 77| 287003|22-01-2021|04-01-2021|France|SAINT-AUBIN|43.711909999999996|-0.695465|Domestic|Anas strepera|6800||Ánade friso  2015-2019|1820|0.7986|
-| 78| 287002|22-01-2021|03-01-2021|France|GEAUNE|43.6397|-0.383333|Domestic|Anas strepera|2|2|Ánade friso  2015-2019|1820|0.7986|
-| 79| 287001|22-01-2021|02-01-2021|France|EYRES-MONCUBE|43.700641|-0.549408|Domestic|Anas strepera|400|400|Ánade friso  2015-2019|1820|0.7986|
-| 80| 287000|22-01-2021|02-01-2021|France|DOAZIT|43.685728000000005|-0.6320640000000001|Domestic|Anas strepera|22|22|Ánade friso  2015-2019|1820|0.7986|
-| 81| 286998|22-01-2021|30-12-2020|France|HORSARRIEU|43.679531|-0.6219979999999999|Domestic|Anas strepera|850|850|Ánade friso  2015-2019|1820|0.7986|
-| 82| 286996|22-01-2021|28-12-2020|France|HORSARRIEU|43.677372|-0.605684|Domestic|Anas strepera|300|7|Ánade friso  2015-2019|1820|0.7986|
-| 83| 286995|22-01-2021|28-12-2020|France|CAZALIS|43.631046000000005|-0.6630199999999999|Domestic|Anas strepera|45|45|Ánade friso  2015-2019|1820|0.7986|
-| 84| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 85| 286740|15-01-2021|09-01-2021|France|MANCIET|43.811035|0.093421|Domestic|Anas platyrhynchos|8000||Ánade azulón  2015-2019|1860|0.8856|
-| 86| 286739|15-01-2021|09-01-2021|France|MANCIET|43.799792|0.097398|Domestic|Anas platyrhynchos|13000|6|Ánade azulón  2015-2019|1860|0.8856|
-| 87| 286738|15-01-2021|08-01-2021|France|DOAZIT|43.711047|-0.667571|Domestic|Anas strepera|37000||Ánade friso  2015-2019|1820|0.7986|
-| 88| 286736|15-01-2021|08-01-2021|France|LARRIVIERE-SAINT-SAVIN|43.7692|-0.416667|Domestic|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 89| 286735|15-01-2021|08-01-2021|France|NASSIET|43.6|-0.683333|Domestic|Anas strepera|124|124|Ánade friso  2015-2019|1820|0.7986|
-| 90| 286733|15-01-2021|07-01-2021|France|TOULOUZETTE|43.747411|-0.670568|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 91| 286731|15-01-2021|07-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 92| 286727|15-01-2021|07-01-2021|France|SERRES-GASTON|43.651158|-0.518154|Domestic|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 93| 286726|15-01-2021|07-01-2021|France|SARRAZIET|43.704065|-0.5017229999999999|Domestic|Anas strepera|60|60|Ánade friso  2015-2019|1820|0.7986|
-| 94| 286720|15-01-2021|07-01-2021|France|BAHUS-SOUBIRAN|43.6736|-0.35600000000000004|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 95| 286719|15-01-2021|06-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 96| 286707|15-01-2021|06-01-2021|France|DOAZIT|43.706706|-0.661347|Domestic|Anas strepera|400|40|Ánade friso  2015-2019|1820|0.7986|
-| 97| 286705|15-01-2021|06-01-2021|France|SAINTE-COLOMBE|43.675262|-0.53568|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 98| 286704|15-01-2021|06-01-2021|France|MONTREAL|43.925356|0.17951199999999998|Domestic|Anas platyrhynchos|9|9|Ánade azulón  2015-2019|1860|0.8856|
-| 99| 286698|15-01-2021|05-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 100| 286696|15-01-2021|05-01-2021|France|TOULOUZETTE|43.747411|-0.670568|Domestic|Anas strepera|85|85|Ánade friso  2015-2019|1820|0.7986|
-| 101| 286694|15-01-2021|05-01-2021|France|MONTGAILLARD|43.761179|-0.486737|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 102| 286693|15-01-2021|05-01-2021|France|TOULOUZETTE|43.747411|-0.670568|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 103| 286688|15-01-2021|05-01-2021|France|SAINTE-CHRISTIE-D''''ARMAGNAC|43.810458000000004|0.00836|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 104| 286687|15-01-2021|04-01-2021|France|DOAZIT|43.711047|-0.667571|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 105| 286686|15-01-2021|04-01-2021|France|SAINT-SEVER|43.749831|-0.5478850000000001|Domestic|Anas strepera|200|33|Ánade friso  2015-2019|1820|0.7986|
-| 106| 286684|15-01-2021|04-01-2021|France|EYRES-MONCUBE|43.717531|-0.545169|Domestic|Anas strepera|300|300|Ánade friso  2015-2019|1820|0.7986|
-| 107| 286679|15-01-2021|04-01-2021|France|MOMUY|43.615742|-0.628592|Domestic|Anas strepera|666|590|Ánade friso  2015-2019|1820|0.7986|
-| 108| 286670|15-01-2021|02-01-2021|France|SARRAZIET|43.703856|-0.49136899999999994|Domestic|Anas strepera|500|500|Ánade friso  2015-2019|1820|0.7986|
-| 109| 286668|15-01-2021|29-12-2020|France|MAYLIS|43.710999|-0.682008|Domestic|Anas strepera|11|2|Ánade friso  2015-2019|1820|0.7986|
-| 110| 286273|12-01-2021|07-01-2021|France|EAUZE|43.880906|0.017531|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 111| 286241|08-01-2021|05-01-2021|France|PAYROS-CAZAUTETS|43.623111|-0.407464|Domestic|Anas strepera|3|3|Ánade friso  2015-2019|1820|0.7986|
-| 112| 286240|08-01-2021|05-01-2021|France|EYRES-MONCUBE|43.72294|-0.536271|Domestic|Anas strepera|100|90|Ánade friso  2015-2019|1820|0.7986|
-| 113| 286237|08-01-2021|05-01-2021|France|BUANES|43.723436|-0.411742|Domestic|Anas strepera|9000|400|Ánade friso  2015-2019|1820|0.7986|
-| 114| 286234|08-01-2021|04-01-2021|France|MONTAUT|43.717878999999996|-0.681683|Domestic|Anas strepera|540||Ánade friso  2015-2019|1820|0.7986|
-| 115| 286233|08-01-2021|04-01-2021|France|LARRIVIERE-SAINT-SAVIN|43.752868|-0.435253|Domestic|Anas strepera|1400|713|Ánade friso  2015-2019|1820|0.7986|
-| 116| 286232|08-01-2021|04-01-2021|France|MONTAUT|43.729141|-0.652913|Domestic|Anas strepera|65|65|Ánade friso  2015-2019|1820|0.7986|
-| 117| 286231|08-01-2021|04-01-2021|France|MAYLIS|43.690611|-0.688948|Domestic|Anas strepera|11|11|Ánade friso  2015-2019|1820|0.7986|
-| 118| 286228|08-01-2021|03-01-2021|France|CLASSUN|43.713553000000005|-0.39718600000000004|Domestic|Anas strepera|1000|300|Ánade friso  2015-2019|1820|0.7986|
-| 119| 286227|08-01-2021|03-01-2021|France|SAINT-SEVER|43.762178000000006|-0.5980409999999999|Domestic|Anas strepera|51|51|Ánade friso  2015-2019|1820|0.7986|
-| 120| 286225|08-01-2021|02-01-2021|France|TOULOUZETTE|43.749719|-0.701852|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 121| 286224|08-01-2021|02-01-2021|France|DOAZIT|43.700716|-0.658999|Domestic|Anas strepera|300||Ánade friso  2015-2019|1820|0.7986|
-| 122| 286221|08-01-2021|02-01-2021|France|AUDIGNON|43.728640999999996|-0.592683|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 123| 286217|08-01-2021|02-01-2021|France|MONTGAILLARD|43.763692|-0.506497|Domestic|Anas strepera|20||Ánade friso  2015-2019|1820|0.7986|
-| 124| 286214|08-01-2021|01-01-2021|France|BANOS|43.728693|-0.607029|Domestic|Anas strepera|130|130|Ánade friso  2015-2019|1820|0.7986|
-| 125| 286211|08-01-2021|31-12-2020|France|CLASSUN|43.717144|-0.395997|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 126| 286209|08-01-2021|31-12-2020|France|MONTAUT|43.737246999999996|-0.64956|Domestic|Anas strepera|4000||Ánade friso  2015-2019|1820|0.7986|
-| 127| 286204|08-01-2021|31-12-2020|France|GAUJACQ|43.761854|-0.617409|Domestic|Anas strepera|2580||Ánade friso  2015-2019|1820|0.7986|
-| 128| 286199|08-01-2021|30-12-2020|France|DOAZIT|43.690612|-0.669493|Domestic|Anas strepera|52|52|Ánade friso  2015-2019|1820|0.7986|
-| 129| 286196|08-01-2021|30-12-2020|France|MONSEGUR|43.601838|-0.553326|Domestic|Anas strepera|22|20|Ánade friso  2015-2019|1820|0.7986|
-| 130| 286101|06-01-2021|31-12-2020|France|MONTAUT|43.733544|-0.642422|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 131| 286099|06-01-2021|30-12-2020|France|HAGETMAU|43.671065999999996|-0.576922|Domestic|Anas strepera|3200||Ánade friso  2015-2019|1820|0.7986|
-| 132| 286096|06-01-2021|30-12-2020|France|MAYLIS|43.696509000000006|-0.687617|Domestic|Anas strepera|10|10|Ánade friso  2015-2019|1820|0.7986|
-| 133| 286093|06-01-2021|29-12-2020|France|MAYLIS|43.705449|-0.672529|Domestic|Anas strepera|13|13|Ánade friso  2015-2019|1820|0.7986|
-| 134| 286092|06-01-2021|28-12-2020|France|SAINT-CRICQ-CHALOSSE|43.669765000000005|-0.6946359999999999|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 135| 286086|06-01-2021|28-12-2020|France|MONTAUT|43.722907|-0.6518649999999999|Domestic|Anas strepera|100|100|Ánade friso  2015-2019|1820|0.7986|
-| 136| 286007|06-01-2021|31-12-2020|France|SAINTE-COLOMBE|43.688644000000004|-0.571983|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 137| 286006|06-01-2021|30-12-2020|France|HAGETMAU|43.663212|-0.5836|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 138| 286004|06-01-2021|30-12-2020|France|DOAZIT|43.675105|-0.648695|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 139| 285737|31-12-2020|28-12-2020|France|SAINT-CRICQ-CHALOSSE|43.669765000000005|-0.6946359999999999|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 140| 285736|31-12-2020|27-12-2020|France|HORSARRIEUX|43.674943|-0.596075|Domestic|Anas strepera|||Ánade friso  2015-2019|1820|0.7986|
-| 141| 285732|31-12-2020|26-12-2020|France|HORSARIEUX|43.678967|-0.609059|Domestic|Anas strepera|10|10|Ánade friso  2015-2019|1820|0.7986|
-| 142| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
-| 143| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Fulica atra||1|Focha común  2015-2019|4290|0.8092|
-| 144| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Fulica atra|50|25|Focha común  2015-2019|4290|0.8092|
-| 145| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Fulica atra|147||Focha común  2015-2019|4290|0.8092|
-| 146| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 147| 288332|09-02-2021|08-02-2021|Germany|Biendorf|54.04|11.68|Domestic|Anser anser|627|627|Ánsar común  2015-2019|1610|0.4855|
-| 148| 288044|03-02-2021|31-01-2021|Germany|Passow|53.14|14.06|Domestic|Anser anser|7166|7166|Ánsar común  2015-2019|1610|0.4855|
-| 149| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Anser anser|1532|1532|Ánsar común  2015-2019|1610|0.4855|
-| 150| 287602|28-01-2021|19-01-2021|Germany|Stade|53.45|9.5|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 151| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 152| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 153| 286787|18-01-2021|06-01-2021|Germany|Vorpommern-Greifswald|54.18|13.34|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 154| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 155| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Ardea cinerea|200|180|Garza real  2015-2019|1220|0.727|
-| 156| 285547|28-12-2020|21-12-2020|Germany|Henstedt-Ulzburg|53.75|9.98|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 157| 285544|28-12-2020|22-12-2020|Germany|Stralsund|54.31|13.09|Wild|Anser anser|2|2|Ánsar común  2015-2019|1610|0.4855|
-| 158| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 159| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Larus ridibundus|44|44|Gaviota reidora  2015-2019|5820|0.8273|
-| 160| 285247|22-12-2020|10-12-2020|Germany|Pinneberg|53.7|9.71|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 161| 285204|18-12-2020|10-12-2020|Germany|Segeberg|53.78|9.98|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 162| 286278|13-01-2021|19-12-2020|Italy|Rosolina - Valle Morosina|45.11926|12.279251|Wild|Fulica atra|1||Focha común  2015-2019|4290|0.8092|
-| 163| 286252|11-01-2021|11-12-2020|Italy|CAMPAGNA LUPIA VALLE FIGHERI/5|45.32952|12.13465|Wild|Anas penelope|1||Silbón europeo  2015-2019|1790|0.5264|
-| 164| 285574|30-12-2020|21-12-2020|Italy|Campagnia Lupia valle filingheri / 4|45.32952|12.13465|Wild|Anas penelope|4||Silbón europeo  2015-2019|1790|0.5264|
-| 165| 285573|30-12-2020|11-12-2020|Italy|Campagnia Lupia valle filingheri / 3|45.32952|12.13465|Wild|Anas penelope|8||Silbón europeo  2015-2019|1790|0.5264|
-| 166| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 167| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 168| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.953|
-| 169| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Limosa limosa|150|150|Aguja colinegra  2015-2019|5320|0.953|
-| 170| 288842|12-02-2021|31-01-2021|Poland|Mielno|54.183333|16.183332999999998|Wild|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.8856|
-| 171| 284895|21-12-2020|09-12-2020|Poland|Gryfino|53.25|14.49|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 172| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266000000001|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 173| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 174| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 175| 292912|06-04-2021|07-03-2021|Sweden|Ystad|55.45466999999999|13.86139|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 176| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
-| 177| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 178| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Anser anser|||Ánsar común  2015-2019|1610|0.4855|
-| 179| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 180| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 181| 293212|12-04-2021|01-03-2021|Germany|Blankensee|53.40953199999999|13.262707999999998|Domestic|Anser anser|70|70|Ánsar común  2015-2019|1610|0.4855|
-| 182| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451792999999999|Domestic|Anser anser|4|4|Ánsar común  2015-2019|1610|0.4855|
-| 183| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
-
-
 ### Alerta 4 
 - *Id comarca*: SP21021
 - *Localización comarca*: CARTAYA (COSTA OCCIDENTAL)
@@ -897,39 +317,6 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 288337|10-02-2021|03-02-2021|England|Nr Yearby|54.57|-1.07|Domestic|Calidris alpina|1300|1300|Correlimos común  2015-2019|5120|0.5022|
-<<<<<<< HEAD
-| 1| 287598|28-01-2021|14-01-2021|Northern Ireland|Nr Ards|54.57|-5.55|Wild|Larus fuscus|1||Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 287156|22-01-2021|18-12-2020|England|Nr Shrewsbury|53.91|-2.97|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
-| 3| 286749|15-01-2021|20-12-2020|England|Nr Blackpool|53.91|-2.97|Wild|Calidris alpina|2|2|Correlimos común  2015-2019|5120|0.5022|
-| 4| 285385|22-12-2020|09-12-2020|Scotland|Isle of Sanday|58.981|-2.96|Domestic|Larus fuscus|48|37|Gaviota sombría  2015-2019|5910|0.7157|
-| 5| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 6| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 7| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 8| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 11| 288807|12-02-2021|01-02-2021|Denmark|Slagerup|55.814895|12.200137|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 12| 288792|12-02-2021|24-01-2021|Denmark|Frederikssund|55.794304|12.032978|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 13| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 14| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 16| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
-| 17| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 18| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 19| 287651|28-01-2021|20-01-2021|Germany|Vorpommern-Greifswald|53.633333|11.41666|Wild|Calidris minuta|1|1|Correlimos menudo  2015-2019|5010|0.3589|
-| 20| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Podiceps nigricollis|1|1|Zampullín cuellinegro  2015-2019|120|0.722|
-| 21| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Podiceps nigricollis|1|1|Zampullín cuellinegro  2015-2019|120|0.722|
-| 22| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 23| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Ardea cinerea|200|180|Garza real  2015-2019|1220|0.727|
-| 24| 285381|23-12-2020|12-12-2020|Italy|ROVIGO - PORTO VIRO- VALLE CA'''' PASTA/1|44.968517|12.322283|Wild|Podiceps nigricollis|2||Zampullín cuellinegro  2015-2019|120|0.722|
-| 25| 285380|23-12-2020|12-12-2020|Italy|Porto Viro Valle cà pasta|44.968517|12.322283|Wild|Podiceps nigricollis|2||Zampullín cuellinegro  2015-2019|120|0.722|
-| 26| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Podiceps nigricollis|1||Zampullín cuellinegro  2015-2019|120|0.722|
-| 27| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Tringa totanus|150|150|Archibebe común  2015-2019|5460|0.4385|
-| 28| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 29| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 30| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 31| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-=======
 | 1| 287156|22-01-2021|18-12-2020|England|Nr Shrewsbury|53.91|-2.97|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
 | 2| 286749|15-01-2021|20-12-2020|England|Nr Blackpool|53.91|-2.97|Wild|Calidris alpina|2|2|Correlimos común  2015-2019|5120|0.5022|
 | 3| 285385|22-12-2020|09-12-2020|Scotland|Isle of Sanday|58.981|-2.96|Domestic|Larus fuscus|48|37|Gaviota sombría  2015-2019|5910|0.7157|
@@ -937,15 +324,15 @@
 | 5| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 6| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 7| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 8| 288807|12-02-2021|01-02-2021|Denmark|Slagerup|55.81489499999999|12.200137|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 9| 288792|12-02-2021|24-01-2021|Denmark|Frederikssund|55.794304000000004|12.032978|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 10| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 11| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 8| 288807|12-02-2021|01-02-2021|Denmark|Slagerup|55.814895|12.200137|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
+| 9| 288792|12-02-2021|24-01-2021|Denmark|Frederikssund|55.794304|12.032978|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
+| 10| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 11| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 12| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 13| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
 | 14| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
 | 15| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 287651|28-01-2021|20-01-2021|Germany|Vorpommern-Greifswald|53.63333299999999|11.41666|Wild|Calidris minuta|1|1|Correlimos menudo  2015-2019|5010|0.3589|
+| 16| 287651|28-01-2021|20-01-2021|Germany|Vorpommern-Greifswald|53.633333|11.41666|Wild|Calidris minuta|1|1|Correlimos menudo  2015-2019|5010|0.3589|
 | 17| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Podiceps nigricollis|1|1|Zampullín cuellinegro  2015-2019|120|0.722|
 | 18| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Podiceps nigricollis|1|1|Zampullín cuellinegro  2015-2019|120|0.722|
 | 19| 285381|23-12-2020|12-12-2020|Italy|ROVIGO - PORTO VIRO- VALLE CA'''' PASTA/1|44.968517|12.322283|Wild|Podiceps nigricollis|2||Zampullín cuellinegro  2015-2019|120|0.722|
@@ -955,7 +342,6 @@
 | 23| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
 | 24| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
 | 25| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 
 ### Alerta 5 
@@ -972,224 +358,25 @@
 | 5| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 6| 285186|18-12-2020|08-12-2020|England|Peterborough|52.49|0.09|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
 | 7| 285183|18-12-2020|07-12-2020|England|Kings Lynn|52.52|0.27|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
-<<<<<<< HEAD
-| 8| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Pluvialis squatarola||3|Chorlito gris  2015-2019|4860|0.4421|
-| 9| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 14| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289|8.272185|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 16| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 288244|03-02-2021|27-01-2021|France|LESGOR|43.85147|-0.888077|Domestic|Ciconia ciconia|3100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 288220|03-02-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.724277|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287987|02-02-2021|27-01-2021|France|SAINT-VINCENT-DE-PAUL|43.779167|-1.002475|Domestic|Ciconia ciconia|8438||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.412|Domestic|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287535|28-01-2021|22-01-2021|France|MOMAS|43.464572|-0.442587|Domestic|Ciconia ciconia|760|760|Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.516765|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287521|28-01-2021|19-01-2021|France|LONCON|43.4697|-0.416667|Domestic|Ciconia ciconia|3378||Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287512|28-01-2021|17-01-2021|France|ARGELOS|43.586958|-0.624731|Domestic|Ciconia ciconia|4848|86|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287510|28-01-2021|17-01-2021|France|SAINT-JEAN-DE-LIER|43.782911|-0.885771|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.585157|Domestic|Ciconia ciconia|7406||Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287506|28-01-2021|16-01-2021|France|SOUPROSSE|43.803709|-0.729543|Domestic|Ciconia ciconia|873|39|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815|-0.616631|Domestic|Ciconia ciconia|333|333|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287114|22-01-2021|16-01-2021|France|MEILHAN|43.870417|-0.721498|Domestic|Ciconia ciconia|376||Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287106|22-01-2021|14-01-2021|France|ONARD|43.773501|-0.846205|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505923|-0.438404|Domestic|Ciconia ciconia|1000|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 287048|22-01-2021|10-01-2021|France|SOUPROSSE|43.814411|-0.719924|Domestic|Ciconia ciconia|89|89|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 287039|22-01-2021|09-01-2021|France|MEILHAN|43.856018|-0.71371|Domestic|Ciconia ciconia|600|600|Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 287038|22-01-2021|09-01-2021|France|GOUSSE|43.774936|-0.892749|Domestic|Ciconia ciconia|740||Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.598419|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 287008|22-01-2021|06-01-2021|France|MANT|43.592078|-0.514105|Domestic|Ciconia ciconia|13000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 83| 286724|15-01-2021|07-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.500281|Domestic|Ciconia ciconia|2550|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286676|15-01-2021|03-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 286243|08-01-2021|05-01-2021|France|SOUPROSSE|43.793353|-0.742613|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 286242|08-01-2021|05-01-2021|France|SAINT-JEAN-DE-LIER|43.782172|-0.873712|Domestic|Ciconia ciconia|259||Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 286239|08-01-2021|05-01-2021|France|SAINT-YAGUEN|43.902273|-0.772245|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 286222|08-01-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.724277|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 133| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 134| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 136| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 137| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 138| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 139| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 140| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 141| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 142| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 143| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 144| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 145| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 146| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 147| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 148| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 149| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 150| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 151| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 152| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 153| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 154| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 155| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 156| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 157| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 158| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 159| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 160| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 161| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 162| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 163| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 164| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 165| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 166| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 167| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 168| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 169| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Numenius arquata|3|3|Zarapito real  2015-2019|5410|0.5132|
-| 170| 288284|05-02-2021|27-01-2021|Germany|Pinneberg|53.8|9.66|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 171| 288280|05-02-2021|14-01-2021|Germany|Steinburg|53.82|9.4|Wild|Ciconia ciconia|11|11|Cigüeña blanca  2015-2019|1340|0.8684|
-| 172| 287601|28-01-2021|18-01-2021|Germany|Oldenburg|53.12|8.33|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 173| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 174| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 175| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 176| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 177| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 178| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 179| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 180| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 181| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 182| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 183| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 184| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 185| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 186| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Tringa totanus|150|150|Archibebe común  2015-2019|5460|0.4385|
-| 187| 287142|21-01-2021|19-12-2020|Sweden|Kävlinge|55.736107|12.974072|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 188| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 189| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 190| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 191| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799258|12.98228|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 192| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Calidris alpina|3000|3000|Correlimos común  2015-2019|5120|0.5022|
-| 193| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 194| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 195| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 196| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 197| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 198| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 199| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
-
-
-### Alerta 6 
-- *Id comarca*: SP28045
-- *Localización comarca*: COLMENAR VIEJO
-=======
 | 8| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
 | 9| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 10| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 11| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 12| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 14| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 15| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289000000005|8.272185|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 13| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 14| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 15| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289|8.272185|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 16| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
+| 17| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
 | 18| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
 | 19| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 20| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 20| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 21| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 22| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 23| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 24| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
 | 25| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 26| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 27| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Numenius arquata|3|3|Zarapito real  2015-2019|5410|0.5132|
 | 28| 288284|05-02-2021|27-01-2021|Germany|Pinneberg|53.8|9.66|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 29| 287601|28-01-2021|18-01-2021|Germany|Oldenburg|53.12|8.33|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
@@ -1197,476 +384,93 @@
 | 31| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
 | 32| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 33| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333332999999996|13.0|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
+| 34| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
 | 35| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 36| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 37| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
 | 38| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 39| 285545|28-12-2020|11-12-2020|Germany|Varel|53.398999999999994|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
+| 39| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
 | 40| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 41| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 42| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
 | 43| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Tringa totanus|150|150|Archibebe común  2015-2019|5460|0.4385|
 | 44| 287142|21-01-2021|19-12-2020|Sweden|Kävlinge|55.736107|12.974072|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 45| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266000000001|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
+| 45| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
 | 46| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
 | 47| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 48| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799257999999995|12.982280000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 48| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799258|12.98228|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 49| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Calidris alpina|3000|3000|Correlimos común  2015-2019|5120|0.5022|
 | 50| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 51| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 52| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 53| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 54| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus argentatus|1|1|Gaviota argéntea europea  2015-2019|5920|0.5174|
-| 55| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
+| 55| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
 
 
 ### Alerta 6 
 - *Id comarca*: SP28079
 - *Localización comarca*: MADRID (C.U.)
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 288307|05-02-2021|08-01-2021|England|Nr York|53.93|-1.17|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 1| 285722|31-12-2020|24-12-2020|England|Great Ellingham|52.52|0.95|Domestic|Larus ridibundus|20|20|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285351|22-12-2020|11-12-2020|England|Norfolk|52.52|0.96|Domestic|Larus ridibundus|8097|42|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 5| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 6| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288806|12-02-2021|31-01-2021|Denmark|Mariager|56.65342|9.981646|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 288790|12-02-2021|23-01-2021|Denmark|Klejtrup|56.575091|9.602314|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 63| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286711|15-01-2021|06-01-2021|France|SAINT-CHRISTOPHE-DU-LIGNERON|46.79176|-1.730452|Domestic|Larus ridibundus|100|100|Gaviota reidora  2015-2019|5820|0.8273|
-| 69| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 133| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 134| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 136| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 137| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 138| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 139| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 140| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 141| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 142| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 143| 288285|05-02-2021|29-01-2021|Germany|Lübeck|53.85|10.66|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 144| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Larus ridibundus|2|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 145| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 146| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 147| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 148| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 149| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Larus ridibundus|4|4|Gaviota reidora  2015-2019|5820|0.8273|
-| 150| 286432|15-01-2021|03-01-2021|Germany|Freiensteinau|50.42|9.4|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 151| 286246|08-01-2021|03-01-2021|Germany|Freiensteinau|50.42|9.4|Domestic|Ciconia ciconia|15|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 152| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 153| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 154| 285244|22-12-2020|14-12-2020|Germany|Nordfriesland|54.37|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 155| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963143|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 156| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 157| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 158| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 159| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Larus fuscus|150|150|Gaviota sombría  2015-2019|5910|0.7157|
-| 160| 287605|29-01-2021|25-01-2021|Poland|Warzno|54.44|18.34|Domestic|Larus ridibundus|27|16|Gaviota reidora  2015-2019|5820|0.8273|
-| 161| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 162| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 163| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 164| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Larus ridibundus|||Gaviota reidora  2015-2019|5820|0.8273|
-| 165| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 166| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 167| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 168| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
-| 169| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057222|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 7 
-- *Id comarca*: SP28079
-- *Localización comarca*: MADRID (C.U.)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288307|05-02-2021|08-01-2021|England|Nr York|53.93|-1.17|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288806|12-02-2021|31-01-2021|Denmark|Mariager|56.65342|9.981646|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288790|12-02-2021|23-01-2021|Denmark|Klejtrup|56.575091|9.602314|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 14| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 16| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 62| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286711|15-01-2021|06-01-2021|France|SAINT-CHRISTOPHE-DU-LIGNERON|46.79176|-1.730452|Domestic|Larus ridibundus|100|100|Gaviota reidora  2015-2019|5820|0.8273|
-| 68| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 133| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 134| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 136| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 137| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 138| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 139| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 140| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 141| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 142| 288285|05-02-2021|29-01-2021|Germany|Lübeck|53.85|10.66|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 143| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 144| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 145| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 146| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 147| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 148| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 149| 286432|15-01-2021|03-01-2021|Germany|Freiensteinau|50.42|9.4|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 150| 286246|08-01-2021|03-01-2021|Germany|Freiensteinau|50.42|9.4|Domestic|Ciconia ciconia|15|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 151| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 152| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 153| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 154| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 155| 285244|22-12-2020|14-12-2020|Germany|Nordfriesland|54.37|9.08|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 156| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 157| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 158| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 159| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 160| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Larus ridibundus|||Gaviota reidora  2015-2019|5820|0.8273|
-| 161| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 162| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 163| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-
-
-### Alerta 8 
-- *Id comarca*: SP48020
-- *Localización comarca*: URIBE KOSTA-BILBAO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288306|05-02-2021|24-12-2020|Scotland|Nr Ellon|57.43|-2.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Philomachus pugnax||3|Combatiente  2015-2019|5170|0.4963|
-| 5| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 287338|26-01-2021|31-12-2020|Denmark|Viborg|56.5333|9.4744|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 10| 287177|26-01-2021|31-12-2020|Denmark|Viborg|56.5333|9.4744|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 11| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 12| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 288285|05-02-2021|29-01-2021|Germany|Lübeck|53.85|10.66|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 15| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 16| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 17| 285247|22-12-2020|10-12-2020|Germany|Pinneberg|53.7|9.71|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 18| 286016|08-01-2021|31-12-2020|Lithuania|Kaunas|54.8975|24.02|Domestic|Larus ridibundus|22|22|Gaviota reidora  2015-2019|5820|0.8273|
-| 19| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 20| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 21| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 22| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 23| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 24| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 25| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 9 
-- *Id comarca*: SP15009
-- *Localización comarca*: BETANZOS
-=======
 | 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 3| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 4| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288806|12-02-2021|31-01-2021|Denmark|Mariager|56.65342|9.981646000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 288806|12-02-2021|31-01-2021|Denmark|Mariager|56.65342|9.981646|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 7| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 8| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 9| 288790|12-02-2021|23-01-2021|Denmark|Klejtrup|56.575091|9.602314|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 10| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 11| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 12| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 13| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 14| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 15| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609000000004|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 16| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
 | 17| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.9203520000000001|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 288223|03-02-2021|07-01-2021|France|LOUER|43.758765999999994|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
+| 18| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 19| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
 | 20| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
+| 21| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
 | 22| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 23| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
 | 24| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
 | 25| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.9268360000000001|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 26| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 27| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
 | 28| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
 | 29| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.9179999999999999|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 30| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 31| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.0158040000000002|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
+| 32| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
 | 33| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 34| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 35| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
 | 36| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
 | 37| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.7474390000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
+| 38| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 39| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
 | 40| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 41| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.7823720000000001|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
+| 42| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
 | 43| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 44| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752000000004|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565000000004|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.763020000000004|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.8599969999999999|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287025|22-01-2021|09-01-2021|France|TILH|43.594677000000004|-0.8366020000000001|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545000000004|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
+| 45| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
+| 46| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 47| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 48| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
+| 49| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 50| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
 | 51| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
 | 52| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
 | 53| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
 | 54| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008000000004|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371000000005|-0.8200559999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 55| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
+| 56| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 57| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
 | 58| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 59| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
@@ -1674,51 +478,51 @@
 | 61| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 62| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 63| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.8739979999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 64| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 65| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 66| 286711|15-01-2021|06-01-2021|France|SAINT-CHRISTOPHE-DU-LIGNERON|46.79176|-1.730452|Domestic|Larus ridibundus|100|100|Gaviota reidora  2015-2019|5820|0.8273|
 | 67| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 68| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
 | 69| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.8709790000000001|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.7217359999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 70| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 71| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 72| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 73| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 74| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 75| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 76| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 77| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 78| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
 | 79| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
 | 80| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
 | 81| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 82| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
 | 83| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 84| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
 | 85| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.9303889999999999|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 86| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 87| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653847999999996|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 88| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 89| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
 | 90| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.9541299999999999|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
+| 91| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
 | 92| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 93| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 94| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.8614360000000001|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.7315010000000001|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
+| 95| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 96| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
 | 97| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219000000004|-0.7307319999999999|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
+| 98| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
 | 99| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
 | 100| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
 | 101| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 102| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 103| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
 | 104| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.9167200000000001|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153000000006|-0.8979790000000001|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
+| 105| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
+| 106| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
 | 107| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.7819619999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 108| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 109| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 110| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 111| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -1733,24 +537,24 @@
 | 120| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 121| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 122| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.7173350000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 123| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 124| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.9625370000000001|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.8037479999999999|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 285729|31-12-2020|25-12-2020|France|HINX|43.705189000000004|-0.9452440000000001|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 125| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 126| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 127| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
 | 128| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
 | 129| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
 | 130| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.9179649999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688753999999996|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 131| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 132| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 133| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 134| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628000000005|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 134| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 135| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 136| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
 | 137| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 138| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 138| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
 | 139| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 140| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 140| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 141| 288285|05-02-2021|29-01-2021|Germany|Lübeck|53.85|10.66|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
 | 142| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
 | 143| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -1785,9 +589,9 @@
 | 3| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
 | 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Philomachus pugnax||3|Combatiente  2015-2019|5170|0.4963|
 | 5| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 7| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 8| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 9| 287338|26-01-2021|31-12-2020|Denmark|Viborg|56.5333|9.4744|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
 | 10| 287177|26-01-2021|31-12-2020|Denmark|Viborg|56.5333|9.4744|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
 | 11| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
@@ -1817,28 +621,28 @@
 | 3| 285183|18-12-2020|07-12-2020|England|Kings Lynn|52.52|0.27|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
 | 4| 287607|29-01-2021|24-01-2021|Czech Republic|Starohaklovský rybník|48.9981|14.4114|Wild|Anser anser|5|5|Ánsar común  2015-2019|1610|0.4855|
 | 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
-| 6| 288807|12-02-2021|01-02-2021|Denmark|Slagerup|55.81489499999999|12.200137|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 7| 288792|12-02-2021|24-01-2021|Denmark|Frederikssund|55.794304000000004|12.032978|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 8| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 9| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504070999999996|8.719635|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
+| 6| 288807|12-02-2021|01-02-2021|Denmark|Slagerup|55.814895|12.200137|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 7| 288792|12-02-2021|24-01-2021|Denmark|Frederikssund|55.794304|12.032978|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 8| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 9| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504071|8.719635|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
 | 10| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 11| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 11| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 12| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 13| 288252|03-02-2021|30-01-2021|France|CAZAUBON|43.932275|-0.094569|Domestic|Anas platyrhynchos|8000||Ánade azulón  2015-2019|1860|0.8856|
-| 14| 288242|03-02-2021|25-01-2021|France|BONNEGARDE|43.569047999999995|-0.7243890000000001|Domestic|Anas platyrhynchos|4400|410|Ánade azulón  2015-2019|1860|0.8856|
-| 15| 288235|03-02-2021|15-01-2021|France|CASTANDET|43.812293|-0.35200000000000004|Domestic|Fulica atra|4000|4000|Focha común  2015-2019|4290|0.8092|
+| 14| 288242|03-02-2021|25-01-2021|France|BONNEGARDE|43.569048|-0.724389|Domestic|Anas platyrhynchos|4400|410|Ánade azulón  2015-2019|1860|0.8856|
+| 15| 288235|03-02-2021|15-01-2021|France|CASTANDET|43.812293|-0.352|Domestic|Fulica atra|4000|4000|Focha común  2015-2019|4290|0.8092|
 | 16| 288232|03-02-2021|14-01-2021|France|VIGNAU|43.7786|-0.2925|Domestic|Anas platyrhynchos|3850||Ánade azulón  2015-2019|1860|0.8856|
-| 17| 288230|03-02-2021|12-01-2021|France|CASTANDET|43.812293|-0.35200000000000004|Domestic|Fulica atra|500||Focha común  2015-2019|4290|0.8092|
-| 18| 287983|02-02-2021|26-01-2021|France|ANDREIN|43.401340000000005|-0.8878790000000001|Domestic|Anas platyrhynchos|9000|330|Ánade azulón  2015-2019|1860|0.8856|
+| 17| 288230|03-02-2021|12-01-2021|France|CASTANDET|43.812293|-0.352|Domestic|Fulica atra|500||Focha común  2015-2019|4290|0.8092|
+| 18| 287983|02-02-2021|26-01-2021|France|ANDREIN|43.40134|-0.887879|Domestic|Anas platyrhynchos|9000|330|Ánade azulón  2015-2019|1860|0.8856|
 | 19| 287979|02-02-2021|12-01-2021|France|BOURDALAT|43.839107|-0.226656|Domestic|Anas platyrhynchos|654|60|Ánade azulón  2015-2019|1860|0.8856|
-| 20| 287978|02-02-2021|09-01-2021|France|SAINT-MAURICE-SUR-ADOUR|43.806999999999995|-0.45998900000000004|Domestic|Fulica atra|464||Focha común  2015-2019|4290|0.8092|
-| 21| 287552|27-01-2021|18-01-2021|France|GESTAS|43.353683000000004|-0.8810610000000001|Domestic|Anas platyrhynchos|10200||Ánade azulón  2015-2019|1860|0.8856|
-| 22| 287545|28-01-2021|25-01-2021|France|BONNEGARDE|43.571521999999995|-0.7231810000000001|Domestic|Anas platyrhynchos|2600|150|Ánade azulón  2015-2019|1860|0.8856|
+| 20| 287978|02-02-2021|09-01-2021|France|SAINT-MAURICE-SUR-ADOUR|43.807|-0.459989|Domestic|Fulica atra|464||Focha común  2015-2019|4290|0.8092|
+| 21| 287552|27-01-2021|18-01-2021|France|GESTAS|43.353683|-0.881061|Domestic|Anas platyrhynchos|10200||Ánade azulón  2015-2019|1860|0.8856|
+| 22| 287545|28-01-2021|25-01-2021|France|BONNEGARDE|43.571522|-0.723181|Domestic|Anas platyrhynchos|2600|150|Ánade azulón  2015-2019|1860|0.8856|
 | 23| 287544|28-01-2021|24-01-2021|France|CASTANDET|43.788368|-0.371879|Domestic|Fulica atra|4400|850|Focha común  2015-2019|4290|0.8092|
 | 24| 287542|28-01-2021|23-01-2021|France|SAINTE-CHRISTIE-D''ARMAGNAC|43.7853|-0.0075|Domestic|Anas platyrhynchos|20||Ánade azulón  2015-2019|1860|0.8856|
-| 25| 287534|28-01-2021|22-01-2021|France|MONGUILHEM|43.851009999999995|-0.192053|Domestic|Anas platyrhynchos|2370||Ánade azulón  2015-2019|1860|0.8856|
-| 26| 287533|28-01-2021|22-01-2021|France|MONGUILHEM|43.851009999999995|-0.192053|Domestic|Anas platyrhynchos|500||Ánade azulón  2015-2019|1860|0.8856|
-| 27| 287531|28-01-2021|21-01-2021|France|SAINT-PERDON|43.85191|-0.5878399999999999|Domestic|Fulica atra|3187||Focha común  2015-2019|4290|0.8092|
+| 25| 287534|28-01-2021|22-01-2021|France|MONGUILHEM|43.85101|-0.192053|Domestic|Anas platyrhynchos|2370||Ánade azulón  2015-2019|1860|0.8856|
+| 26| 287533|28-01-2021|22-01-2021|France|MONGUILHEM|43.85101|-0.192053|Domestic|Anas platyrhynchos|500||Ánade azulón  2015-2019|1860|0.8856|
+| 27| 287531|28-01-2021|21-01-2021|France|SAINT-PERDON|43.85191|-0.58784|Domestic|Fulica atra|3187||Focha común  2015-2019|4290|0.8092|
 | 28| 287526|28-01-2021|20-01-2021|France|TOUJOUSE|43.834692|-0.179821|Domestic|Anas platyrhynchos|1094||Ánade azulón  2015-2019|1860|0.8856|
 | 29| 287516|28-01-2021|18-01-2021|France|PUYOO|43.543136|-0.911947|Domestic|Anas platyrhynchos|8|8|Ánade azulón  2015-2019|1860|0.8856|
 | 30| 287515|28-01-2021|18-01-2021|France|MEILHAN|43.846511|-0.691792|Domestic|Fulica atra|4200|70|Focha común  2015-2019|4290|0.8092|
@@ -1846,23 +650,23 @@
 | 32| 287504|28-01-2021|16-01-2021|France|ARSAGUE|43.582643|-0.801882|Domestic|Anas platyrhynchos|2040||Ánade azulón  2015-2019|1860|0.8856|
 | 33| 287503|28-01-2021|15-01-2021|France|CAZERES-SUR-L''ADOUR|43.792085|-0.326052|Domestic|Anas platyrhynchos|582||Ánade azulón  2015-2019|1860|0.8856|
 | 34| 287497|28-01-2021|13-01-2021|France|VIGNAU|43.771003|-0.294105|Domestic|Anas platyrhynchos|65|65|Ánade azulón  2015-2019|1860|0.8856|
-| 35| 287489|28-01-2021|12-01-2021|France|MAULEON-D''ARMAGNAC|43.923811|-0.11583299999999999|Domestic|Anas platyrhynchos|6000|50|Ánade azulón  2015-2019|1860|0.8856|
+| 35| 287489|28-01-2021|12-01-2021|France|MAULEON-D''ARMAGNAC|43.923811|-0.115833|Domestic|Anas platyrhynchos|6000|50|Ánade azulón  2015-2019|1860|0.8856|
 | 36| 287486|28-01-2021|08-01-2021|France|CAUNA|43.779112|-0.61732|Domestic|Fulica atra|1200||Focha común  2015-2019|4290|0.8092|
-| 37| 287108|22-01-2021|15-01-2021|France|BRETAGNE-DE-MARSAN|43.829107|-0.48004399999999997|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
+| 37| 287108|22-01-2021|15-01-2021|France|BRETAGNE-DE-MARSAN|43.829107|-0.480044|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
 | 38| 287105|22-01-2021|14-01-2021|France|SAINT-SEVER|43.79095|-0.490262|Domestic|Fulica atra|50|50|Focha común  2015-2019|4290|0.8092|
-| 39| 287098|22-01-2021|13-01-2021|France|CASTEX-D''ARMAGNAC|43.864253999999995|-0.143397|Domestic|Anas platyrhynchos|1000||Ánade azulón  2015-2019|1860|0.8856|
+| 39| 287098|22-01-2021|13-01-2021|France|CASTEX-D''ARMAGNAC|43.864254|-0.143397|Domestic|Anas platyrhynchos|1000||Ánade azulón  2015-2019|1860|0.8856|
 | 40| 287085|22-01-2021|12-01-2021|France|CASTEX-D''ARMAGNAC|43.855954|-0.157505|Domestic|Anas platyrhynchos|10000||Ánade azulón  2015-2019|1860|0.8856|
-| 41| 287077|22-01-2021|12-01-2021|France|HONTANX|43.816997|-0.23527800000000001|Domestic|Anas platyrhynchos|810|810|Ánade azulón  2015-2019|1860|0.8856|
+| 41| 287077|22-01-2021|12-01-2021|France|HONTANX|43.816997|-0.235278|Domestic|Anas platyrhynchos|810|810|Ánade azulón  2015-2019|1860|0.8856|
 | 42| 287076|22-01-2021|12-01-2021|France|AYZIEU|43.862763|-0.044144|Domestic|Anas platyrhynchos|2000||Ánade azulón  2015-2019|1860|0.8856|
 | 43| 287067|22-01-2021|11-01-2021|France|BONNEGARDE|43.570554|-0.722065|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 44| 287057|22-01-2021|11-01-2021|France|HAUT-MAUCO|43.818918|-0.5581020000000001|Domestic|Fulica atra|400|400|Focha común  2015-2019|4290|0.8092|
-| 45| 287056|22-01-2021|11-01-2021|France|BENQUET|43.818971000000005|-0.492831|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
-| 46| 287055|22-01-2021|11-01-2021|France|CAZERES-SUR-L''ADOUR|43.791835|-0.32574000000000003|Domestic|Anas platyrhynchos|597||Ánade azulón  2015-2019|1860|0.8856|
+| 44| 287057|22-01-2021|11-01-2021|France|HAUT-MAUCO|43.818918|-0.558102|Domestic|Fulica atra|400|400|Focha común  2015-2019|4290|0.8092|
+| 45| 287056|22-01-2021|11-01-2021|France|BENQUET|43.818971|-0.492831|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
+| 46| 287055|22-01-2021|11-01-2021|France|CAZERES-SUR-L''ADOUR|43.791835|-0.32574|Domestic|Anas platyrhynchos|597||Ánade azulón  2015-2019|1860|0.8856|
 | 47| 287051|22-01-2021|10-01-2021|France|CAZERES-SUR-L''ADOUR|43.770312|-0.266964|Domestic|Anas platyrhynchos|150|68|Ánade azulón  2015-2019|1860|0.8856|
-| 48| 287046|22-01-2021|10-01-2021|France|BENQUET|43.791610999999996|-0.498226|Domestic|Fulica atra|5500||Focha común  2015-2019|4290|0.8092|
+| 48| 287046|22-01-2021|10-01-2021|France|BENQUET|43.791611|-0.498226|Domestic|Fulica atra|5500||Focha común  2015-2019|4290|0.8092|
 | 49| 287044|22-01-2021|10-01-2021|France|HAUT-MAUCO|43.822318|-0.556297|Domestic|Fulica atra|500|160|Focha común  2015-2019|4290|0.8092|
 | 50| 287042|22-01-2021|10-01-2021|France|MAULEON-D''ARMAGNAC|43.910557|-0.191631|Domestic|Anas platyrhynchos|1500|50|Ánade azulón  2015-2019|1860|0.8856|
-| 51| 287029|22-01-2021|09-01-2021|France|HABAS|43.54934|-0.9472360000000001|Domestic|Anas platyrhynchos|50|26|Ánade azulón  2015-2019|1860|0.8856|
+| 51| 287029|22-01-2021|09-01-2021|France|HABAS|43.54934|-0.947236|Domestic|Anas platyrhynchos|50|26|Ánade azulón  2015-2019|1860|0.8856|
 | 52| 287017|22-01-2021|08-01-2021|France|HAUT-MAUCO|43.822318|-0.556297|Domestic|Fulica atra|150|150|Focha común  2015-2019|4290|0.8092|
 | 53| 287016|22-01-2021|08-01-2021|France|HAUT-MAUCO|43.822318|-0.556297|Domestic|Fulica atra|200|200|Focha común  2015-2019|4290|0.8092|
 | 54| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Aythya ferina|5|5|Porrón común  2015-2019|1980|0.8169|
@@ -1871,31 +675,31 @@
 | 57| 286729|15-01-2021|07-01-2021|France|SALLES-D''''ARMAGNAC|43.805868|-0.053058|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
 | 58| 286728|15-01-2021|07-01-2021|France|LAUJUZAN|43.812293|-0.125686|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
 | 59| 286725|15-01-2021|07-01-2021|France|LAMOTHE|43.7914|-0.65|Domestic|Fulica atra|2840|2800|Focha común  2015-2019|4290|0.8092|
-| 60| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Anas clypeata|||Pato cuchara  2015-2019|1940|0.8796|
+| 60| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Anas clypeata|||Pato cuchara  2015-2019|1940|0.8796|
 | 61| 286714|15-01-2021|06-01-2021|France|MONTEGUT|43.8753|-0.2|Domestic|Anas platyrhynchos|||Ánade azulón  2015-2019|1860|0.8856|
-| 62| 286713|15-01-2021|06-01-2021|France|CAUNA|43.7904|-0.6206619999999999|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
+| 62| 286713|15-01-2021|06-01-2021|France|CAUNA|43.7904|-0.620662|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
 | 63| 286706|15-01-2021|06-01-2021|France|MAURRIN|43.815481|-0.372816|Domestic|Fulica atra|200|10|Focha común  2015-2019|4290|0.8092|
 | 64| 286703|15-01-2021|05-01-2021|France|LICHOS|43.308662|-0.882178|Domestic|Anas platyrhynchos|2200|15|Ánade azulón  2015-2019|1860|0.8856|
 | 65| 286702|15-01-2021|05-01-2021|France|LICHOS|43.309271|-0.881972|Domestic|Anas platyrhynchos|1000||Ánade azulón  2015-2019|1860|0.8856|
-| 66| 286691|15-01-2021|05-01-2021|France|SAINT-GEIN|43.813396999999995|-0.319916|Domestic|Anas platyrhynchos|2100|639|Ánade azulón  2015-2019|1860|0.8856|
-| 67| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Anas clypeata|500|120|Pato cuchara  2015-2019|1940|0.8796|
-| 68| 286685|15-01-2021|04-01-2021|France|LAMOTHE|43.800509999999996|-0.6868029999999999|Domestic|Fulica atra|1000|250|Focha común  2015-2019|4290|0.8092|
+| 66| 286691|15-01-2021|05-01-2021|France|SAINT-GEIN|43.813397|-0.319916|Domestic|Anas platyrhynchos|2100|639|Ánade azulón  2015-2019|1860|0.8856|
+| 67| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Anas clypeata|500|120|Pato cuchara  2015-2019|1940|0.8796|
+| 68| 286685|15-01-2021|04-01-2021|France|LAMOTHE|43.80051|-0.686803|Domestic|Fulica atra|1000|250|Focha común  2015-2019|4290|0.8092|
 | 69| 286683|15-01-2021|04-01-2021|France|BAS-MAUCO|43.786935|-0.563469|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 70| 286678|15-01-2021|04-01-2021|France|SAINTE-CHRISTIE-D''''ARMAGNAC|43.793884000000006|-0.005935|Domestic|Anas platyrhynchos|4000|35|Ánade azulón  2015-2019|1860|0.8856|
-| 71| 286677|15-01-2021|03-01-2021|France|CAUNA|43.7904|-0.6206619999999999|Domestic|Fulica atra|700|700|Focha común  2015-2019|4290|0.8092|
+| 70| 286678|15-01-2021|04-01-2021|France|SAINTE-CHRISTIE-D''''ARMAGNAC|43.793884|-0.005935|Domestic|Anas platyrhynchos|4000|35|Ánade azulón  2015-2019|1860|0.8856|
+| 71| 286677|15-01-2021|03-01-2021|France|CAUNA|43.7904|-0.620662|Domestic|Fulica atra|700|700|Focha común  2015-2019|4290|0.8092|
 | 72| 286675|15-01-2021|03-01-2021|France|GRENADE-SUR-L''ADOUR|43.7733|-0.430883|Domestic|Fulica atra|300|300|Focha común  2015-2019|4290|0.8092|
-| 73| 286238|08-01-2021|05-01-2021|France|CASTANDET|43.824909999999996|-0.340805|Domestic|Anas platyrhynchos|200|200|Ánade azulón  2015-2019|1860|0.8856|
-| 74| 286236|08-01-2021|04-01-2021|France|ESTIRAC|43.496221000000006|0.031767000000000004|Domestic|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.8856|
+| 73| 286238|08-01-2021|05-01-2021|France|CASTANDET|43.82491|-0.340805|Domestic|Anas platyrhynchos|200|200|Ánade azulón  2015-2019|1860|0.8856|
+| 74| 286236|08-01-2021|04-01-2021|France|ESTIRAC|43.496221|0.031767|Domestic|Anas platyrhynchos|1|1|Ánade azulón  2015-2019|1860|0.8856|
 | 75| 286235|08-01-2021|04-01-2021|France|MAURRIN|43.816899|-0.372219|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
 | 76| 286219|08-01-2021|02-01-2021|France|BAIGTS-DE-BEARN|43.535475|-0.839377|Domestic|Anas platyrhynchos|500|30|Ánade azulón  2015-2019|1860|0.8856|
 | 77| 286213|08-01-2021|01-01-2021|France|SOUPROSSE|43.770092|-0.698624|Domestic|Fulica atra|71|10|Focha común  2015-2019|4290|0.8092|
-| 78| 286207|08-01-2021|31-12-2020|France|PRECHACQ-NAVARRENX|43.277198999999996|-0.72008|Domestic|Anas platyrhynchos|900|50|Ánade azulón  2015-2019|1860|0.8856|
-| 79| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
+| 78| 286207|08-01-2021|31-12-2020|France|PRECHACQ-NAVARRENX|43.277199|-0.72008|Domestic|Anas platyrhynchos|900|50|Ánade azulón  2015-2019|1860|0.8856|
+| 79| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
 | 80| 285500|24-12-2020|19-12-2020|France|LABATUT-RIVIERE|43.512723|0.037001|Domestic|Anas platyrhynchos|700|146|Ánade azulón  2015-2019|1860|0.8856|
 | 81| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Fulica atra||1|Focha común  2015-2019|4290|0.8092|
-| 82| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Fulica atra|50|25|Focha común  2015-2019|4290|0.8092|
+| 82| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Fulica atra|50|25|Focha común  2015-2019|4290|0.8092|
 | 83| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Fulica atra|147||Focha común  2015-2019|4290|0.8092|
-| 84| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
+| 84| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
 | 85| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Anser anser|2|1|Ánsar común  2015-2019|1610|0.4855|
 | 86| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 87| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -1917,380 +721,57 @@
 | 103| 286016|08-01-2021|31-12-2020|Lithuania|Kaunas|54.8975|24.02|Domestic|Larus ridibundus|22|22|Gaviota reidora  2015-2019|5820|0.8273|
 | 104| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 105| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 106| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266000000001|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
+| 106| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
 | 107| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
 | 108| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
 | 109| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
-| 110| 292117|22-03-2021|04-03-2021|Estonia|Tiskre|59.414080000000006|24.580348|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
-| 111| 292115|22-03-2021|01-03-2021|Estonia|v�äna-jõesuu beach|59.43458100000001|24.349695|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
-| 112| 292108|22-03-2021|05-03-2021|Estonia|v�äna-jõesuu beach|59.44514399999999|24.345703|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
+| 110| 292117|22-03-2021|04-03-2021|Estonia|Tiskre|59.41408|24.580348|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
+| 111| 292115|22-03-2021|01-03-2021|Estonia|v�äna-jõesuu beach|59.434581|24.349695|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
+| 112| 292108|22-03-2021|05-03-2021|Estonia|v�äna-jõesuu beach|59.445144|24.345703|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
 | 113| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 114| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
 | 115| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 116| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 117| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
 | 118| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 119| 293212|12-04-2021|01-03-2021|Germany|Blankensee|53.40953199999999|13.262707999999998|Domestic|Anser anser|70|70|Ánsar común  2015-2019|1610|0.4855|
-| 120| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451792999999999|Domestic|Anser anser|4|4|Ánsar común  2015-2019|1610|0.4855|
+| 119| 293212|12-04-2021|01-03-2021|Germany|Blankensee|53.409532|13.262708|Domestic|Anser anser|70|70|Ánsar común  2015-2019|1610|0.4855|
+| 120| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Anser anser|4|4|Ánsar común  2015-2019|1610|0.4855|
 | 121| 292917|06-04-2021|01-03-2021|Germany|Pritzwalk|53.220282|12.200828|Domestic|Ciconia ciconia||0|Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
+| 122| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
 
 
 ### Alerta 9 
 - *Id comarca*: SP15017
 - *Localización comarca*: A CORUÑA
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 287625|29-01-2021|13-01-2021|England|Nr Plymouth|50.41|-4.09|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.7878|
 | 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 4| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Larus ridibundus||1030|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Ardea cinerea|5000|5000|Garza real  2015-2019|1220|0.727|
-| 7| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 8| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 10| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Larus ridibundus|320|320|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 10 
-- *Id comarca*: SP15017
-- *Localización comarca*: A CORUÑA
-=======
 | 2| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Larus ridibundus||1030|Gaviota reidora  2015-2019|5820|0.8273|
 | 3| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 4| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Ardea cinerea|5000|5000|Garza real  2015-2019|1220|0.727|
-| 5| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 4| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Ardea cinerea|5000|5000|Garza real  2015-2019|1220|0.727|
+| 5| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 6| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778000000005|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 7| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 8| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 
 
 ### Alerta 10 
 - *Id comarca*: SP36039
 - *Localización comarca*: VIGO-O BAIXO MIÑO
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 287625|29-01-2021|13-01-2021|England|Nr Plymouth|50.41|-4.09|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.7878|
-<<<<<<< HEAD
-| 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 4| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Larus ridibundus||1030|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Ardea cinerea|5000|5000|Garza real  2015-2019|1220|0.727|
-| 7| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 8| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 10| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Larus ridibundus|320|320|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 11 
-- *Id comarca*: SP41095
-- *Localización comarca*: UTRERA (BAJO GUADALQUIVIR)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287625|29-01-2021|13-01-2021|England|Nr Plymouth|50.41|-4.09|Wild|Calidris alpina|3|3|Correlimos común  2015-2019|5120|0.5022|
-| 1| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 4| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 11| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 13| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 57| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 288283|05-02-2021|25-01-2021|Germany|Ostholstein|54.44|11.09|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 133| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 134| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 287599|28-01-2021|12-01-2021|Germany|Cuxhaven|53.44|8.59|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 136| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Limosa limosa|2|1|Aguja colinegra  2015-2019|5320|0.953|
-| 137| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 138| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 139| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Limosa limosa|4|4|Aguja colinegra  2015-2019|5320|0.953|
-| 140| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 141| 285200|18-12-2020|08-12-2020|Germany|Wittmund|53.45|7.82|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 142| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963143|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 143| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Limosa limosa|150|150|Aguja colinegra  2015-2019|5320|0.953|
-| 144| 287604|29-01-2021|24-01-2021|Poland|Kwakowo|54.37|17.02|Domestic|Larus ridibundus|1128|1128|Gaviota reidora  2015-2019|5820|0.8273|
-| 145| 285212|21-12-2020|15-12-2020|Poland|Lubosina|52.52|16.38|Domestic|Larus ridibundus|2000|200|Gaviota reidora  2015-2019|5820|0.8273|
-| 146| 284897|21-12-2020|16-12-2020|Poland|Kwakowo|54.37|17.02|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 147| 284896|21-12-2020|16-12-2020|Poland|Komilowo|54.36|17.05|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 148| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 149| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 150| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 151| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 152| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 153| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 154| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 155| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 156| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 157| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Anser anser|4|4|Ánsar común  2015-2019|1610|0.4855|
-| 158| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Larus ridibundus|3853|2384|Gaviota reidora  2015-2019|5820|0.8273|
-| 159| 292102|19-03-2021|03-03-2021|Czech Republic|Bose|50.5|15.02|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 160| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 12 
-- *Id comarca*: SP15057
-- *Localización comarca*: NOIA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287598|28-01-2021|14-01-2021|Northern Ireland|Nr Ards|54.57|-5.55|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.7878|
-| 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 7| 287128|22-01-2021|16-12-2020|Denmark|Pandrup|57.188299|9.689015|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Larus ridibundus|44|44|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 12| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 13 
-- *Id comarca*: SP15065
-- *Localización comarca*: O SAR-BARBANZA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287598|28-01-2021|14-01-2021|Northern Ireland|Nr Ards|54.57|-5.55|Wild|Phalacrocorax carbo|1||Cormorán grande  2015-2019|720|0.7878|
-| 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 9| 287128|22-01-2021|16-12-2020|Denmark|Pandrup|57.188299|9.689015|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Larus ridibundus|44|44|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 14| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 17| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 14 
-- *Id comarca*: SP06015
-- *Localización comarca*: BADAJOZ
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285367|23-12-2020|14-12-2020|England|Stratford-on-Avon|52.17|-1.79|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 1| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 4| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Vanellus vanellus||1030|Avefría europea  2015-2019|4930|0.5146|
-| 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 6| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 7| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 8| 287136|22-01-2021|05-01-2021|Denmark|Gilleleje|56.115209|12.31707|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 9| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 10| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 288283|05-02-2021|25-01-2021|Germany|Ostholstein|54.44|11.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 14| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 15| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 16| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Philomachus pugnax|150|150|Combatiente  2015-2019|5170|0.4963|
-| 17| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Larus ridibundus|320|320|Gaviota reidora  2015-2019|5820|0.8273|
-| 18| 287142|21-01-2021|19-12-2020|Sweden|Kävlinge|55.736107|12.974072|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 19| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799258|12.98228|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 20| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 21| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 22| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 23| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 24| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 25| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-
-
-### Alerta 15 
-- *Id comarca*: SP04013
-- *Localización comarca*: BAJO ANDARAX/CAMPO DE TABERNA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 6| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 292911|06-04-2021|07-03-2021|Sweden|Ale|57.97704|12.23825|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 8| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Larus ridibundus|||Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 16 
-- *Id comarca*: SP36038
-- *Localización comarca*: PONTEVEDRA-O MORRAZO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
 | 4| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 5| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 6| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 7| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 9| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Vanellus vanellus|200|180|Avefría europea  2015-2019|4930|0.5146|
-| 10| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 11| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 292911|06-04-2021|07-03-2021|Sweden|Ale|57.97704|12.23825|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 14| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-=======
-| 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 5| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 7| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778000000005|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 8| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 9| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 10| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
 | 11| 292911|06-04-2021|07-03-2021|Sweden|Ale|57.97704|12.23825|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
@@ -2308,13 +789,13 @@
 | 2| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 3| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 5| 288808|12-02-2021|01-02-2021|Denmark|Randers|56.466784999999994|9.991385000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 5| 288808|12-02-2021|01-02-2021|Denmark|Randers|56.466785|9.991385|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 6| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
 | 7| 287133|22-01-2021|03-01-2021|Denmark|Fårup|56.544261|9.853326|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 8| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333332999999996|13.0|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
+| 9| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
 | 10| 285244|22-12-2020|14-12-2020|Germany|Nordfriesland|54.37|9.08|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.5022|
-| 11| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778000000005|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 11| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 12| 286016|08-01-2021|31-12-2020|Lithuania|Kaunas|54.8975|24.02|Domestic|Larus ridibundus|22|22|Gaviota reidora  2015-2019|5820|0.8273|
 | 13| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 14| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
@@ -2355,46 +836,46 @@
 | 4| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 5| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 6| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609000000004|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
 | 8| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.9203520000000001|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 288223|03-02-2021|07-01-2021|France|LOUER|43.758765999999994|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
+| 9| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
 | 11| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
 | 12| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 13| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
 | 14| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
 | 15| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.9268360000000001|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 16| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 17| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
 | 18| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.9179999999999999|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 19| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 20| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
 | 21| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.0158040000000002|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
+| 22| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
 | 23| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 24| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 25| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
 | 26| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
 | 27| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.7474390000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
+| 28| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 29| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
 | 30| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 31| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.7823720000000001|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
+| 32| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
 | 33| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 34| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752000000004|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565000000004|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.763020000000004|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.8599969999999999|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287025|22-01-2021|09-01-2021|France|TILH|43.594677000000004|-0.8366020000000001|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545000000004|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
+| 35| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
+| 36| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 37| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 38| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
+| 39| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 40| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
 | 41| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
 | 42| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
 | 43| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
 | 44| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008000000004|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371000000005|-0.8200559999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 45| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
+| 46| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 47| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
 | 48| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 49| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
@@ -2402,50 +883,50 @@
 | 51| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 52| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 53| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.8739979999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 54| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 55| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 56| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 57| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
 | 58| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.8709790000000001|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.7217359999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 59| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 60| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 61| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 62| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 63| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 64| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 65| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 66| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 67| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
 | 68| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
 | 69| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
 | 70| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 71| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
 | 72| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 73| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
 | 74| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.9303889999999999|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 75| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 76| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653847999999996|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 77| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 78| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
 | 79| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.9541299999999999|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
+| 80| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
 | 81| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 82| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 83| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.8614360000000001|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.7315010000000001|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
+| 84| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 85| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
 | 86| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219000000004|-0.7307319999999999|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
+| 87| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
 | 88| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
 | 89| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
 | 90| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 91| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 92| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
 | 93| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.9167200000000001|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153000000006|-0.8979790000000001|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
+| 94| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
+| 95| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
 | 96| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.7819619999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 97| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 98| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 99| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 100| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -2460,24 +941,24 @@
 | 109| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 110| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 111| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.7173350000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 112| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 113| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.9625370000000001|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.8037479999999999|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 285729|31-12-2020|25-12-2020|France|HINX|43.705189000000004|-0.9452440000000001|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 114| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 115| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 116| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
 | 117| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
 | 118| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
 | 119| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.9179649999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688753999999996|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 120| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 121| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 122| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628000000005|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 123| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 124| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
 | 125| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Larus ridibundus|2|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 126| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 127| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Larus ridibundus|4|4|Gaviota reidora  2015-2019|5820|0.8273|
 | 128| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 129| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963142999999999|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
+| 129| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963143|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
 | 130| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 131| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
 | 132| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -2487,8 +968,8 @@
 | 136| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 137| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 138| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 139| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667000000002|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
-| 140| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057221999999996|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
+| 139| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
+| 140| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057222|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
 
 
 ### Alerta 14 
@@ -2522,24 +1003,24 @@
 | 4| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Vanellus vanellus||1030|Avefría europea  2015-2019|4930|0.5146|
 | 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
 | 6| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 7| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 8| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 9| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 7| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 8| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 9| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 10| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 11| 287136|22-01-2021|05-01-2021|Denmark|Gilleleje|56.115209|12.31707|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 12| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 13| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 12| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 13| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 14| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
 | 15| 288283|05-02-2021|25-01-2021|Germany|Ostholstein|54.44|11.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 16| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
 | 17| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
 | 18| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 19| 285545|28-12-2020|11-12-2020|Germany|Varel|53.398999999999994|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
+| 19| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
 | 20| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 21| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Philomachus pugnax|150|150|Combatiente  2015-2019|5170|0.4963|
 | 22| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Larus ridibundus|320|320|Gaviota reidora  2015-2019|5820|0.8273|
 | 23| 287142|21-01-2021|19-12-2020|Sweden|Kävlinge|55.736107|12.974072|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 24| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799257999999995|12.982280000000001|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 24| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799258|12.98228|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 25| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 26| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 27| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
@@ -2560,9 +1041,8 @@
 | 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 3| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
 | 4| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 5| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667000000002|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
-| 6| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057221999999996|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
+| 5| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
+| 6| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057222|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
 
 
 ### Alerta 17 
@@ -2586,67 +1066,12 @@
 
 
 ### Alerta 18 
-<<<<<<< HEAD
-- *Id comarca*: SP11004
-- *Localización comarca*: CAMPO DE GIBRALTAR
-=======
 - *Id comarca*: SP28013
 - *Localización comarca*: ARANJUEZ
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 1| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 2| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Vanellus vanellus|5000|5000|Avefría europea  2015-2019|4930|0.5146|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 5| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 6| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 7| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 8| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 9| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 22| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 23| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 24| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287152|22-01-2021|20-01-2021|Germany|Ganderkesee|53.02|8.45|Domestic|Ciconia ciconia|350|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 30| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 31| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 285240|22-12-2020|21-12-2020|Germany|Prinzhöfte|52.96|8.55|Domestic|Ciconia ciconia|380|80|Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 35| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 37| 285349|23-12-2020|10-12-2020|Norway|Eigersund|58.4467|5.984|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 38| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.297618|15.395141|Domestic|Vanellus vanellus|350|350|Avefría europea  2015-2019|4930|0.5146|
-| 40| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 41| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 42| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Tringa totanus|3853|2384|Archibebe común  2015-2019|5460|0.4385|
-
-
-### Alerta 19 
-- *Id comarca*: SP28013
-- *Localización comarca*: ARANJUEZ
-=======
 | 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 3| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
@@ -2655,12 +1080,12 @@
 | 6| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 7| 285547|28-12-2020|21-12-2020|Germany|Henstedt-Ulzburg|53.75|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 8| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 285545|28-12-2020|11-12-2020|Germany|Varel|53.398999999999994|8.09|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 9| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 10| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 11| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 12| 285204|18-12-2020|10-12-2020|Germany|Segeberg|53.78|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 13| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Ardea cinerea|320|320|Garza real  2015-2019|1220|0.727|
-| 14| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266000000001|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
+| 14| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 15| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Ciconia ciconia|20|20|Cigüeña blanca  2015-2019|1340|0.8684|
 | 16| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 17| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
@@ -2673,39 +1098,13 @@
 ### Alerta 19 
 - *Id comarca*: SP39009
 - *Localización comarca*: GAMA (BARCENA DE CICERO)
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 287373|18-01-2021|18-12-2020|Germany|Wilhelmshaven|52.756111|9.393056|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 285547|28-12-2020|21-12-2020|Germany|Henstedt-Ulzburg|53.75|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 8| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 285204|18-12-2020|10-12-2020|Germany|Segeberg|53.78|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 10| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Ardea cinerea|320|320|Garza real  2015-2019|1220|0.727|
-| 11| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Ciconia ciconia|20|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 16| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 17| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 18| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 20 
-- *Id comarca*: SP45168
-- *Localización comarca*: TOLEDO
-=======
 | 1| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
 | 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 3| 288799|12-02-2021|28-01-2021|Denmark|Villerslev|56.818376|8.476189999999999|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 3| 288799|12-02-2021|28-01-2021|Denmark|Villerslev|56.818376|8.47619|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 4| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
 | 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
 | 6| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
@@ -2725,71 +1124,12 @@
 ### Alerta 20 
 - *Id comarca*: SP20079
 - *Localización comarca*: KOSTA
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
-| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 5| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287373|18-01-2021|18-12-2020|Germany|Wilhelmshaven|52.756111|9.393056|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 285547|28-12-2020|21-12-2020|Germany|Henstedt-Ulzburg|53.75|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 10| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 285204|18-12-2020|10-12-2020|Germany|Segeberg|53.78|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 12| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Ardea cinerea|320|320|Garza real  2015-2019|1220|0.727|
-| 13| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Ciconia ciconia|20|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Anser anser|||Ánsar común  2015-2019|1610|0.4855|
-| 18| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 19| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 20| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 21| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 22| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 23| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 21 
-- *Id comarca*: SP06083
-- *Localización comarca*: MERIDA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 287606|29-01-2021|23-01-2021|Czech Republic|Hradiste Pisku|49.2928|14.1169|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 287150|22-01-2021|20-01-2021|Czech Republic|Zlivický rybník|49.3575|14.1044|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Ardea cinerea||3|Garza real  2015-2019|1220|0.727|
-| 6| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 7| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 8| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 9| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 10| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 11| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 12| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 13| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 14| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 17| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 18| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 19| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 20| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
-| 21| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057222|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 22 
-- *Id comarca*: SP33024
-- *Localización comarca*: GIJON
-=======
 | 3| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 4| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 5| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
@@ -2807,16 +1147,16 @@
 | 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 4| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
+| 5| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
 | 6| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
 | 7| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 9| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
 | 11| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 12| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 13| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Ciconia ciconia|1532|1532|Cigüeña blanca  2015-2019|1340|0.8684|
 | 14| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 15| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -2826,109 +1166,41 @@
 | 19| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 20| 285240|22-12-2020|21-12-2020|Germany|Prinzhöfte|52.96|8.55|Domestic|Ciconia ciconia|380|80|Cigüeña blanca  2015-2019|1340|0.8684|
 | 21| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 22| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266000000001|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
+| 22| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
 | 23| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
 | 24| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
 | 25| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 26| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 27| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Anas strepera|3853|2384|Ánade friso  2015-2019|1820|0.7986|
+| 27| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anas strepera|3853|2384|Ánade friso  2015-2019|1820|0.7986|
 
 
 ### Alerta 22 
 - *Id comarca*: SP06044
 - *Localización comarca*: DON BENITO
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 3| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 6| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 10| 287651|28-01-2021|20-01-2021|Germany|Vorpommern-Greifswald|53.633333|11.41666|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 11| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 12| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 23 
-- *Id comarca*: SP06044
-- *Localización comarca*: DON BENITO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 3| 287606|29-01-2021|23-01-2021|Czech Republic|Hradiste Pisku|49.2928|14.1169|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 287150|22-01-2021|20-01-2021|Czech Republic|Zlivický rybník|49.3575|14.1044|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 6| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 7| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 8| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289|8.272185|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Anas clypeata|4400|70|Pato cuchara  2015-2019|1940|0.8796|
-| 10| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Anas clypeata|3140||Pato cuchara  2015-2019|1940|0.8796|
-| 11| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.412|Domestic|Anas crecca|5|5|Cerceta común  2015-2019|1840|0.8058|
-| 12| 287535|28-01-2021|22-01-2021|France|MOMAS|43.464572|-0.442587|Domestic|Anas crecca|760|760|Cerceta común  2015-2019|1840|0.8058|
-| 13| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.516765|Domestic|Anas crecca|3200||Cerceta común  2015-2019|1840|0.8058|
-| 14| 287521|28-01-2021|19-01-2021|France|LONCON|43.4697|-0.416667|Domestic|Anas crecca|3378||Cerceta común  2015-2019|1840|0.8058|
-| 15| 287512|28-01-2021|17-01-2021|France|ARGELOS|43.586958|-0.624731|Domestic|Anas crecca|4848|86|Cerceta común  2015-2019|1840|0.8058|
-| 16| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.585157|Domestic|Anas crecca|7406||Cerceta común  2015-2019|1840|0.8058|
-| 17| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Anas clypeata|2500||Pato cuchara  2015-2019|1940|0.8796|
-| 18| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815|-0.616631|Domestic|Anas crecca|333|333|Cerceta común  2015-2019|1840|0.8058|
-| 19| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505923|-0.438404|Domestic|Anas crecca|1000|20|Cerceta común  2015-2019|1840|0.8058|
-| 20| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.598419|Domestic|Anas crecca|300||Cerceta común  2015-2019|1840|0.8058|
-| 21| 287008|22-01-2021|06-01-2021|France|MANT|43.592078|-0.514105|Domestic|Anas crecca|13000||Cerceta común  2015-2019|1840|0.8058|
-| 22| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 23| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.500281|Domestic|Anas crecca|2550|20|Cerceta común  2015-2019|1840|0.8058|
-| 24| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 25| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 26| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 27| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 29| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 30| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 31| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Anas acuta|1||Ánade rabudo  2015-2019|1890|0.6383|
-| 32| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 33| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 34| 285775|04-01-2021|02-01-2021|Sweden|Blentarp|55.573773|13.627695|Domestic|Vanellus vanellus|200|200|Avefría europea  2015-2019|4930|0.5146|
-| 35| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 36| 291307|04-03-2021|04-03-2021|Denmark|Kongsted|55.24|12.0427|Domestic|Larus ridibundus|||Gaviota reidora  2015-2019|5820|0.8273|
-| 37| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
-| 38| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 39| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 40| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anas crecca|3853|2384|Cerceta común  2015-2019|1840|0.8058|
-
-
-### Alerta 24 
-- *Id comarca*: SP39009
-- *Localización comarca*: GAMA (BARCENA DE CICERO)
-=======
 | 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
-| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 5| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289000000005|8.272185|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 5| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289|8.272185|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 6| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Anas clypeata|4400|70|Pato cuchara  2015-2019|1940|0.8796|
-| 7| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Anas clypeata|3140||Pato cuchara  2015-2019|1940|0.8796|
-| 8| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.41200000000000003|Domestic|Anas crecca|5|5|Cerceta común  2015-2019|1840|0.8058|
+| 7| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Anas clypeata|3140||Pato cuchara  2015-2019|1940|0.8796|
+| 8| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.412|Domestic|Anas crecca|5|5|Cerceta común  2015-2019|1840|0.8058|
 | 9| 287535|28-01-2021|22-01-2021|France|MOMAS|43.464572|-0.442587|Domestic|Anas crecca|760|760|Cerceta común  2015-2019|1840|0.8058|
-| 10| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.5167649999999999|Domestic|Anas crecca|3200||Cerceta común  2015-2019|1840|0.8058|
+| 10| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.516765|Domestic|Anas crecca|3200||Cerceta común  2015-2019|1840|0.8058|
 | 11| 287521|28-01-2021|19-01-2021|France|LONCON|43.4697|-0.416667|Domestic|Anas crecca|3378||Cerceta común  2015-2019|1840|0.8058|
 | 12| 287512|28-01-2021|17-01-2021|France|ARGELOS|43.586958|-0.624731|Domestic|Anas crecca|4848|86|Cerceta común  2015-2019|1840|0.8058|
-| 13| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.5851569999999999|Domestic|Anas crecca|7406||Cerceta común  2015-2019|1840|0.8058|
+| 13| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.585157|Domestic|Anas crecca|7406||Cerceta común  2015-2019|1840|0.8058|
 | 14| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Anas clypeata|2500||Pato cuchara  2015-2019|1940|0.8796|
-| 15| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815000000004|-0.616631|Domestic|Anas crecca|333|333|Cerceta común  2015-2019|1840|0.8058|
-| 16| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505922999999996|-0.438404|Domestic|Anas crecca|1000|20|Cerceta común  2015-2019|1840|0.8058|
-| 17| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.5984189999999999|Domestic|Anas crecca|300||Cerceta común  2015-2019|1840|0.8058|
+| 15| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815|-0.616631|Domestic|Anas crecca|333|333|Cerceta común  2015-2019|1840|0.8058|
+| 16| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505923|-0.438404|Domestic|Anas crecca|1000|20|Cerceta común  2015-2019|1840|0.8058|
+| 17| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.598419|Domestic|Anas crecca|300||Cerceta común  2015-2019|1840|0.8058|
 | 18| 287008|22-01-2021|06-01-2021|France|MANT|43.592078|-0.514105|Domestic|Anas crecca|13000||Cerceta común  2015-2019|1840|0.8058|
 | 19| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 20| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.5002810000000001|Domestic|Anas crecca|2550|20|Cerceta común  2015-2019|1840|0.8058|
+| 20| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.500281|Domestic|Anas crecca|2550|20|Cerceta común  2015-2019|1840|0.8058|
 | 21| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 22| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
 | 23| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -2936,13 +1208,13 @@
 | 25| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Anas acuta|1||Ánade rabudo  2015-2019|1890|0.6383|
 | 26| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
 | 27| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 28| 285775|04-01-2021|02-01-2021|Sweden|Blentarp|55.573772999999996|13.627695000000001|Domestic|Vanellus vanellus|200|200|Avefría europea  2015-2019|4930|0.5146|
+| 28| 285775|04-01-2021|02-01-2021|Sweden|Blentarp|55.573773|13.627695|Domestic|Vanellus vanellus|200|200|Avefría europea  2015-2019|4930|0.5146|
 | 29| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 30| 291307|04-03-2021|04-03-2021|Denmark|Kongsted|55.24|12.0427|Domestic|Larus ridibundus|||Gaviota reidora  2015-2019|5820|0.8273|
 | 31| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
 | 32| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
 | 33| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 34| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Anas crecca|3853|2384|Cerceta común  2015-2019|1840|0.8058|
+| 34| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anas crecca|3853|2384|Cerceta común  2015-2019|1840|0.8058|
 
 
 ### Alerta 23 
@@ -2955,78 +1227,33 @@
 | 1| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 2| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
 | 6| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
 | 7| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Vanellus vanellus|200|180|Avefría europea  2015-2019|4930|0.5146|
-| 8| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778000000005|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 8| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 9| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 
 
 ### Alerta 24 
 - *Id comarca*: SP11023
 - *Localización comarca*: LA JANDA
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 1| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 3| 288799|12-02-2021|28-01-2021|Denmark|Villerslev|56.818376|8.47619|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 4| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 7| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 8| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 9| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 10| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Tringa totanus|44|44|Archibebe común  2015-2019|5460|0.4385|
-| 11| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 25 
-- *Id comarca*: SP43155
-- *Localización comarca*: BAIX EBRE (TORTOSA)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285365|23-12-2020|12-12-2020|England|Kings Lynn|52.63|0.29|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
-| 1| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 2| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Tringa totanus|5000|5000|Archibebe común  2015-2019|5460|0.4385|
-| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 4| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 5| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 6| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 9| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 10| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 11| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 12| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 13| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 14| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Larus ridibundus|150|150|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Anas strepera|1|1|Ánade friso  2015-2019|1820|0.7986|
-| 17| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-=======
 | 1| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
 | 2| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
+| 3| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
 | 4| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
 | 5| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 6| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 9| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
 | 11| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 12| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 13| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
 | 14| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 15| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -3037,7 +1264,7 @@
 | 20| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 21| 285240|22-12-2020|21-12-2020|Germany|Prinzhöfte|52.96|8.55|Domestic|Ciconia ciconia|380|80|Cigüeña blanca  2015-2019|1340|0.8684|
 | 22| 285349|23-12-2020|10-12-2020|Norway|Eigersund|58.4467|5.984|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 23| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.29761800000001|15.395141|Domestic|Vanellus vanellus|350|350|Avefría europea  2015-2019|4930|0.5146|
+| 23| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.297618|15.395141|Domestic|Vanellus vanellus|350|350|Avefría europea  2015-2019|4930|0.5146|
 | 24| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
 | 25| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 
@@ -3054,64 +1281,32 @@
 | 3| 287606|29-01-2021|23-01-2021|Czech Republic|Hradiste Pisku|49.2928|14.1169|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 4| 287150|22-01-2021|20-01-2021|Czech Republic|Zlivický rybník|49.3575|14.1044|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
 | 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
-| 6| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 7| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 6| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 7| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
 | 8| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
 | 9| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
 | 10| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 11| 285545|28-12-2020|11-12-2020|Germany|Varel|53.398999999999994|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
+| 11| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
 | 12| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 13| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 14| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 
 ### Alerta 26 
-- *Id comarca*: SP14053
-- *Localización comarca*: POSADAS (VEGA DEL GUADALQUIVIR)
+- *Id comarca*: SP28014
+- *Localización comarca*: ARGANDA DEL REY
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-<<<<<<< HEAD
-| 0| 285365|23-12-2020|12-12-2020|England|Kings Lynn|52.63|0.29|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 1| 285188|18-12-2020|10-12-2020|England|Droitwich Spa|52.29|-2.12|Wild|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 2| 284880|18-12-2020|13-12-2020|England|Nr Hawes|54.37|-2.16|Domestic|Vanellus vanellus|17|17|Avefría europea  2015-2019|4930|0.5146|
-| 3| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288814|12-02-2021|01-01-2021|Denmark|Sønder Bjert|55.4594|9.5633|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Ardea cinerea||3|Garza real  2015-2019|1220|0.727|
-| 7| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 8| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 9| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Ardea cinerea|1||Garza real  2015-2019|1220|0.727|
-| 17| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 18| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 19| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 20| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Ardea cinerea|2|2|Garza real  2015-2019|1220|0.727|
-| 21| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 22| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 23| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 27 
-- *Id comarca*: SP46085
-- *Localización comarca*: LA RIBERA ALTA - CARLET
-=======
 | 0| 285366|23-12-2020|13-12-2020|England|Nr Lancashire|53.62|-2.86|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 1| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 2| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 3| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 5| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 6| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
 | 9| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 10| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 11| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -3126,75 +1321,26 @@
 ### Alerta 27 
 - *Id comarca*: SP43155
 - *Localización comarca*: BAIX EBRE (TORTOSA)
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285365|23-12-2020|12-12-2020|England|Kings Lynn|52.63|0.29|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
-<<<<<<< HEAD
-| 1| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 2| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 287599|28-01-2021|12-01-2021|Germany|Cuxhaven|53.44|8.59|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 7| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 8| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 9| 287138|20-01-2021|04-01-2021|Germany|Landsberg a. Lech|47.9|10.93|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 11| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 28 
-- *Id comarca*: SP36039
-- *Localización comarca*: VIGO-O BAIXO MIÑO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 7| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 8| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 10| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Vanellus vanellus|200|180|Avefría europea  2015-2019|4930|0.5146|
-| 11| 286341|08-01-2021|23-12-2020|Ireland|Coldross|53.347778|-6.259722|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 12| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 292911|06-04-2021|07-03-2021|Sweden|Ale|57.97704|12.23825|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 15| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 29 
-- *Id comarca*: SP11020
-- *Localización comarca*: CAMPIÑA
-=======
 | 1| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 2| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Tringa totanus|5000|5000|Archibebe común  2015-2019|5460|0.4385|
+| 2| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Tringa totanus|5000|5000|Archibebe común  2015-2019|5460|0.4385|
 | 3| 287606|29-01-2021|23-01-2021|Czech Republic|Hradiste Pisku|49.2928|14.1169|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
 | 4| 287150|22-01-2021|20-01-2021|Czech Republic|Zlivický rybník|49.3575|14.1044|Wild|Fulica atra|2|2|Focha común  2015-2019|4290|0.8092|
 | 5| 288814|12-02-2021|01-01-2021|Denmark|Sønder Bjert|55.4594|9.5633|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 6| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas penelope||3|Silbón europeo  2015-2019|1790|0.5264|
 | 7| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 8| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 9| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 10| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 11| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 11| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 12| 288843|12-02-2021|09-02-2021|Estonia|Tallinn|59.437222|24.745278|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 13| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 14| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 16| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Fulica atra|500|120|Focha común  2015-2019|4290|0.8092|
+| 15| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
+| 16| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|500|120|Focha común  2015-2019|4290|0.8092|
 | 17| 287624|29-01-2021|28-01-2021|Germany|Pottenstein|49.76|11.4|Domestic|Larus ridibundus|10|10|Gaviota reidora  2015-2019|5820|0.8273|
 | 18| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
 | 19| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
@@ -3222,16 +1368,16 @@
 | 0| 285365|23-12-2020|12-12-2020|England|Kings Lynn|52.63|0.29|Wild|Philomachus pugnax|1|1|Combatiente  2015-2019|5170|0.4963|
 | 1| 285187|18-12-2020|08-12-2020|England|Nr Weymouth|50.65|-2.6|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
 | 2| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
-| 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Fulica atra|5000|5000|Focha común  2015-2019|4290|0.8092|
+| 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Fulica atra|5000|5000|Focha común  2015-2019|4290|0.8092|
 | 4| 287607|29-01-2021|24-01-2021|Czech Republic|Starohaklovský rybník|48.9981|14.4114|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
 | 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
-| 6| 288808|12-02-2021|01-02-2021|Denmark|Randers|56.466784999999994|9.991385000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.8169|
-| 8| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504070999999996|8.719635|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
+| 6| 288808|12-02-2021|01-02-2021|Denmark|Randers|56.466785|9.991385|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 7| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.8169|
+| 8| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504071|8.719635|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
 | 9| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 10| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 10| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 11| 287133|22-01-2021|03-01-2021|Denmark|Fårup|56.544261|9.853326|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.8169|
+| 12| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Aythya ferina|1|1|Porrón común  2015-2019|1980|0.8169|
 | 13| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 14| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
 | 15| 288283|05-02-2021|25-01-2021|Germany|Ostholstein|54.44|11.09|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -3245,10 +1391,10 @@
 | 23| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Vanellus vanellus|44|44|Avefría europea  2015-2019|4930|0.5146|
 | 24| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 25| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 26| 288842|12-02-2021|31-01-2021|Poland|Mielno|54.183333|16.183332999999998|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 26| 288842|12-02-2021|31-01-2021|Poland|Mielno|54.183333|16.183333|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 27| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Larus ridibundus|320|320|Gaviota reidora  2015-2019|5820|0.8273|
 | 28| 287142|21-01-2021|19-12-2020|Sweden|Kävlinge|55.736107|12.974072|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 29| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799257999999995|12.982280000000001|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 29| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799258|12.98228|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 30| 292911|06-04-2021|07-03-2021|Sweden|Ale|57.97704|12.23825|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
 | 31| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 32| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Phalacrocorax carbo|||Cormorán grande  2015-2019|720|0.7878|
@@ -3262,437 +1408,6 @@
 
 
 ### Alerta 29 
-- *Id comarca*: SP37274
-- *Localización comarca*: SALAMANCA
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Calidris alpina||3|Correlimos común  2015-2019|5120|0.5022|
-| 3| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 287129|22-01-2021|19-12-2020|Denmark|Ringkøbing|56.072289|8.272185|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 9| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 288244|03-02-2021|27-01-2021|France|LESGOR|43.85147|-0.888077|Domestic|Ciconia ciconia|3100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 288220|03-02-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.724277|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287987|02-02-2021|27-01-2021|France|SAINT-VINCENT-DE-PAUL|43.779167|-1.002475|Domestic|Ciconia ciconia|8438||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.412|Domestic|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287535|28-01-2021|22-01-2021|France|MOMAS|43.464572|-0.442587|Domestic|Ciconia ciconia|760|760|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.516765|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287521|28-01-2021|19-01-2021|France|LONCON|43.4697|-0.416667|Domestic|Ciconia ciconia|3378||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287512|28-01-2021|17-01-2021|France|ARGELOS|43.586958|-0.624731|Domestic|Ciconia ciconia|4848|86|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287510|28-01-2021|17-01-2021|France|SAINT-JEAN-DE-LIER|43.782911|-0.885771|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.585157|Domestic|Ciconia ciconia|7406||Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287506|28-01-2021|16-01-2021|France|SOUPROSSE|43.803709|-0.729543|Domestic|Ciconia ciconia|873|39|Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815|-0.616631|Domestic|Ciconia ciconia|333|333|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287114|22-01-2021|16-01-2021|France|MEILHAN|43.870417|-0.721498|Domestic|Ciconia ciconia|376||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287106|22-01-2021|14-01-2021|France|ONARD|43.773501|-0.846205|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505923|-0.438404|Domestic|Ciconia ciconia|1000|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 287048|22-01-2021|10-01-2021|France|SOUPROSSE|43.814411|-0.719924|Domestic|Ciconia ciconia|89|89|Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 287039|22-01-2021|09-01-2021|France|MEILHAN|43.856018|-0.71371|Domestic|Ciconia ciconia|600|600|Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 287038|22-01-2021|09-01-2021|France|GOUSSE|43.774936|-0.892749|Domestic|Ciconia ciconia|740||Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.598419|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 287008|22-01-2021|06-01-2021|France|MANT|43.592078|-0.514105|Domestic|Ciconia ciconia|13000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 76| 286724|15-01-2021|07-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.500281|Domestic|Ciconia ciconia|2550|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286676|15-01-2021|03-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286243|08-01-2021|05-01-2021|France|SOUPROSSE|43.793353|-0.742613|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286242|08-01-2021|05-01-2021|France|SAINT-JEAN-DE-LIER|43.782172|-0.873712|Domestic|Ciconia ciconia|259||Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286239|08-01-2021|05-01-2021|France|SAINT-YAGUEN|43.902273|-0.772245|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 286222|08-01-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.724277|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 133| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 134| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 136| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 137| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 138| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 139| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 140| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 141| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 142| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 143| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 144| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 145| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 146| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 147| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 148| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 149| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 150| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 151| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 152| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 153| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 154| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 155| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 156| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 157| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 158| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 159| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 160| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 161| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 162| 288281|05-02-2021|15-01-2021|Germany|Rendsburg-Eckernförde|54.38|9.72|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 163| 288280|05-02-2021|14-01-2021|Germany|Steinburg|53.82|9.4|Wild|Ciconia ciconia|11|11|Cigüeña blanca  2015-2019|1340|0.8684|
-| 164| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 165| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 166| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 167| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 168| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 169| 287122|22-01-2021|08-01-2021|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.727|
-| 170| 287121|22-01-2021|08-01-2021|Germany|Steinburg|54.470038|9.51416|Wild|Ardea cinerea|9|9|Garza real  2015-2019|1220|0.727|
-| 171| 287120|22-01-2021|17-12-2020|Germany|Ostholstein|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 172| 287119|22-01-2021|15-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 173| 286820|20-01-2021|06-01-2021|Germany|Nordfriesland|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 174| 286819|20-01-2021|05-01-2021|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 175| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 176| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 177| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 178| 286748|15-01-2021|07-01-2021|Germany|Rendsburg-Eckernförde|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 179| 286747|15-01-2021|30-12-2020|Germany|Segeberg|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 180| 286746|15-01-2021|22-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 181| 286745|15-01-2021|22-12-2020|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 182| 286744|15-01-2021|16-12-2020|Germany|Steinburg|54.470038|9.51416|Wild|Ardea cinerea|14|14|Garza real  2015-2019|1220|0.727|
-| 183| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Vanellus vanellus|200|180|Avefría europea  2015-2019|4930|0.5146|
-| 184| 285547|28-12-2020|21-12-2020|Germany|Henstedt-Ulzburg|53.75|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 185| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 186| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 187| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 188| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 189| 285204|18-12-2020|10-12-2020|Germany|Segeberg|53.78|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 190| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 191| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 192| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 193| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 194| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
-| 195| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 196| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 197| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 198| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 199| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 200| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 201| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 202| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
-
-
-### Alerta 30 
-- *Id comarca*: SP01059
-- *Localización comarca*: ARABA-ALAVA
-=======
-| 2| 288841|12-02-2021|27-01-2021|Denmark|Bisserup|55.404861|11.353056|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288808|12-02-2021|01-02-2021|Denmark|Randers|56.466784999999994|9.991385000000001|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 287133|22-01-2021|03-01-2021|Denmark|Fårup|56.544261|9.853326|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 286426|15-01-2021|12-01-2021|Germany|Wardenburg|53.0|8.22|Domestic|Ardea cinerea|1315|315|Garza real  2015-2019|1220|0.727|
-| 7| 286282|13-01-2021|04-01-2021|Germany|Garrel|52.97|8.09|Domestic|Ardea cinerea|7288|11|Garza real  2015-2019|1220|0.727|
-| 8| 286281|13-01-2021|04-01-2021|Germany|Wardenburg|53.01|8.22|Domestic|Ardea cinerea|110|10|Garza real  2015-2019|1220|0.727|
-| 9| 285540|28-12-2020|26-12-2020|Germany|Garrel|52.92|8.1|Domestic|Ardea cinerea|2484|10|Garza real  2015-2019|1220|0.727|
-
-
-### Alerta 30 
-- *Id comarca*: SP48021
-- *Localización comarca*: BUSTURIALDEA
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 2| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 3| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 4| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 5| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
-| 6| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 132| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 133| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Vanellus vanellus|44|44|Avefría europea  2015-2019|4930|0.5146|
-| 134| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
-| 135| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 136| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 137| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 138| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
-
-
-### Alerta 31 
-- *Id comarca*: SP45165
-- *Localización comarca*: TALAVERA DE LA REINA
-=======
-| 2| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Vanellus vanellus|5000|5000|Avefría europea  2015-2019|4930|0.5146|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
-| 5| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 6| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 292912|06-04-2021|07-03-2021|Sweden|Ystad|55.45466999999999|13.86139|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 9| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 31 
-- *Id comarca*: SP11020
-- *Localización comarca*: CAMPIÑA
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-<<<<<<< HEAD
-| 2| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 3| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 8| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|500|120|Focha común  2015-2019|4290|0.8092|
-| 9| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Ciconia ciconia|1532|1532|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287373|18-01-2021|18-12-2020|Germany|Wilhelmshaven|52.756111|9.393056|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287152|22-01-2021|20-01-2021|Germany|Ganderkesee|53.02|8.45|Domestic|Ciconia ciconia|350|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 285240|22-12-2020|21-12-2020|Germany|Prinzhöfte|52.96|8.55|Domestic|Ciconia ciconia|380|80|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 23| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 24| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 25| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 26| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-
-
-### Alerta 32 
 - *Id comarca*: SP37274
 - *Localización comarca*: SALAMANCA
 
@@ -3710,205 +1425,298 @@
 | 9| 285540|28-12-2020|26-12-2020|Germany|Garrel|52.92|8.1|Domestic|Ardea cinerea|2484|10|Garza real  2015-2019|1220|0.727|
 
 
-### Alerta 33 
-- *Id comarca*: SP06063
-- *Localización comarca*: HERRERA DEL DUQUE
+### Alerta 30 
+- *Id comarca*: SP48021
+- *Localización comarca*: BUSTURIALDEA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 1| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Pluvialis apricaria||3|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 2| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 3| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Anas clypeata|4400|70|Pato cuchara  2015-2019|1940|0.8796|
-| 4| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Anas clypeata|3140||Pato cuchara  2015-2019|1940|0.8796|
-| 5| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.412|Domestic|Anas crecca|5|5|Cerceta común  2015-2019|1840|0.8058|
-| 6| 287535|28-01-2021|22-01-2021|France|MOMAS|43.464572|-0.442587|Domestic|Anas crecca|760|760|Cerceta común  2015-2019|1840|0.8058|
-| 7| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.516765|Domestic|Anas crecca|3200||Cerceta común  2015-2019|1840|0.8058|
-| 8| 287521|28-01-2021|19-01-2021|France|LONCON|43.4697|-0.416667|Domestic|Anas crecca|3378||Cerceta común  2015-2019|1840|0.8058|
-| 9| 287512|28-01-2021|17-01-2021|France|ARGELOS|43.586958|-0.624731|Domestic|Anas crecca|4848|86|Cerceta común  2015-2019|1840|0.8058|
-| 10| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.585157|Domestic|Anas crecca|7406||Cerceta común  2015-2019|1840|0.8058|
-| 11| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Anas clypeata|2500||Pato cuchara  2015-2019|1940|0.8796|
-| 12| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815|-0.616631|Domestic|Anas crecca|333|333|Cerceta común  2015-2019|1840|0.8058|
-| 13| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505923|-0.438404|Domestic|Anas crecca|1000|20|Cerceta común  2015-2019|1840|0.8058|
-| 14| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.598419|Domestic|Anas crecca|300||Cerceta común  2015-2019|1840|0.8058|
-| 15| 287008|22-01-2021|06-01-2021|France|MANT|43.592078|-0.514105|Domestic|Anas crecca|13000||Cerceta común  2015-2019|1840|0.8058|
-| 16| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 17| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.500281|Domestic|Anas crecca|2550|20|Cerceta común  2015-2019|1840|0.8058|
-| 18| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 286711|15-01-2021|06-01-2021|France|SAINT-CHRISTOPHE-DU-LIGNERON|46.79176|-1.730452|Domestic|Anas crecca|100|100|Cerceta común  2015-2019|1840|0.8058|
-| 20| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 22| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 23| 285247|22-12-2020|10-12-2020|Germany|Pinneberg|53.7|9.71|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 24| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 25| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Anas acuta|1||Ánade rabudo  2015-2019|1890|0.6383|
-| 26| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 27| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 28| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 29| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 30| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Anas acuta|1|1|Ánade rabudo  2015-2019|1890|0.6383|
-| 31| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 34 
-- *Id comarca*: SP10037
-- *Localización comarca*: CACERES
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 1| 288779|12-02-2021|14-01-2021|Denmark|Bramming2|55.504071|8.719635|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 2| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 3| 284822|17-12-2020|09-12-2020|Denmark|Nørre Nebel|55.8959|8.2143|Wild|Recurvirostra avosetta|1|1|Avoceta común  2015-2019|4560|0.4999|
-| 4| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 285546|28-12-2020|14-12-2020|Germany|Amt Neuhaus|53.39|8.09|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 7| 285545|28-12-2020|11-12-2020|Germany|Varel|53.399|8.09|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 8| 285244|22-12-2020|14-12-2020|Germany|Nordfriesland|54.37|9.08|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 9| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 35 
-- *Id comarca*: SP28014
-- *Localización comarca*: ARGANDA DEL REY
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 285244|22-12-2020|14-12-2020|Germany|Nordfriesland|54.37|9.08|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-
-
-### Alerta 36 
-- *Id comarca*: SP14052
-- *Localización comarca*: PEÑARROYA-PUEBLONUEVO (VALLE DEL GUADIATO)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 288814|12-02-2021|01-01-2021|Denmark|Sønder Bjert|55.4594|9.5633|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Pluvialis apricaria||3|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 4| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 5| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Vanellus vanellus|4400|70|Avefría europea  2015-2019|4930|0.5146|
-| 7| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Vanellus vanellus|3140||Avefría europea  2015-2019|4930|0.5146|
-| 8| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Vanellus vanellus|2500||Avefría europea  2015-2019|4930|0.5146|
-| 9| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 10| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 12| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 13| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
-| 14| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Vanellus vanellus|20|20|Avefría europea  2015-2019|4930|0.5146|
-| 15| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
-| 16| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 17| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 37 
-- *Id comarca*: SP26089
-- *Localización comarca*: LOGROÑO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 2| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 4| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 5| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 6| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|500|120|Focha común  2015-2019|4290|0.8092|
-| 7| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 8| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
-
-
-### Alerta 38 
-- *Id comarca*: SP31097
-- *Localización comarca*: ESTELLA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
-| 3| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 4| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 5| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 6| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|500|120|Focha común  2015-2019|4290|0.8092|
-| 7| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 0| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 1| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 2| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Vanellus vanellus|5000|5000|Avefría europea  2015-2019|4930|0.5146|
+| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
+| 5| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 6| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 292912|06-04-2021|07-03-2021|Sweden|Ystad|55.45467|13.86139|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 9| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 10| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 11| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
+| 12| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 
 
-### Alerta 39 
-- *Id comarca*: SP13053
-- *Localización comarca*: MANZANARES
+### Alerta 31 
+- *Id comarca*: SP11020
+- *Localización comarca*: CAMPIÑA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Philomachus pugnax||3|Combatiente  2015-2019|5170|0.4963|
-| 5| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 7| 288246|03-02-2021|28-01-2021|France|BENTAYOU-SEREE|43.394|-0.065|Domestic|Anas strepera|2900|100|Ánade friso  2015-2019|1820|0.7986|
-| 8| 288243|03-02-2021|27-01-2021|France|BENTAYOU-SEREE|43.391082|-0.069472|Domestic|Anas strepera|12600|20|Ánade friso  2015-2019|1820|0.7986|
-| 9| 287543|28-01-2021|23-01-2021|France|GARDERES|43.296408|-0.107359|Domestic|Anas strepera|200||Ánade friso  2015-2019|1820|0.7986|
-| 10| 287496|28-01-2021|13-01-2021|France|MONTANER|43.3456|-0.008|Domestic|Anas strepera|55|40|Ánade friso  2015-2019|1820|0.7986|
-| 11| 287104|22-01-2021|14-01-2021|France|GARDERES|43.282582|-0.111046|Domestic|Anas strepera|40|40|Ánade friso  2015-2019|1820|0.7986|
-| 12| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 14| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Anas crecca||1|Cerceta común  2015-2019|1840|0.8058|
-| 15| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Anas crecca|50|25|Cerceta común  2015-2019|1840|0.8058|
-| 16| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Anas crecca|147||Cerceta común  2015-2019|1840|0.8058|
-| 17| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Anas crecca|||Cerceta común  2015-2019|1840|0.8058|
+| 0| 285192|18-12-2020|16-12-2020|England|Nr Stroud|51.77|-2.36|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 1| 285191|18-12-2020|15-12-2020|England|Nr Stroud|51.74|-2.4|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas clypeata||3|Pato cuchara  2015-2019|1940|0.8796|
+| 3| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 4| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 5| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
+| 6| 288244|03-02-2021|27-01-2021|France|LESGOR|43.85147|-0.888077|Domestic|Ciconia ciconia|3100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 9| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
+| 11| 288220|03-02-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.724277|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 12| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
+| 13| 287987|02-02-2021|27-01-2021|France|SAINT-VINCENT-DE-PAUL|43.779167|-1.002475|Domestic|Ciconia ciconia|8438||Cigüeña blanca  2015-2019|1340|0.8684|
+| 14| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
+| 15| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 16| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 17| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.412|Domestic|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 18| 287535|28-01-2021|22-01-2021|France|MOMAS|43.464572|-0.442587|Domestic|Ciconia ciconia|760|760|Cigüeña blanca  2015-2019|1340|0.8684|
+| 19| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.516765|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
+| 20| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
+| 21| 287521|28-01-2021|19-01-2021|France|LONCON|43.4697|-0.416667|Domestic|Ciconia ciconia|3378||Cigüeña blanca  2015-2019|1340|0.8684|
+| 22| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 23| 287512|28-01-2021|17-01-2021|France|ARGELOS|43.586958|-0.624731|Domestic|Ciconia ciconia|4848|86|Cigüeña blanca  2015-2019|1340|0.8684|
+| 24| 287510|28-01-2021|17-01-2021|France|SAINT-JEAN-DE-LIER|43.782911|-0.885771|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
+| 25| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.585157|Domestic|Ciconia ciconia|7406||Cigüeña blanca  2015-2019|1340|0.8684|
+| 26| 287506|28-01-2021|16-01-2021|France|SOUPROSSE|43.803709|-0.729543|Domestic|Ciconia ciconia|873|39|Cigüeña blanca  2015-2019|1340|0.8684|
+| 27| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 28| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
+| 29| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
+| 30| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815|-0.616631|Domestic|Ciconia ciconia|333|333|Cigüeña blanca  2015-2019|1340|0.8684|
+| 31| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
+| 32| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 33| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
+| 34| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
+| 35| 287114|22-01-2021|16-01-2021|France|MEILHAN|43.870417|-0.721498|Domestic|Ciconia ciconia|376||Cigüeña blanca  2015-2019|1340|0.8684|
+| 36| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
+| 37| 287106|22-01-2021|14-01-2021|France|ONARD|43.773501|-0.846205|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
+| 38| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 39| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 40| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 41| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505923|-0.438404|Domestic|Ciconia ciconia|1000|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 42| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 43| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
+| 44| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 45| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
+| 46| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 47| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
+| 48| 287048|22-01-2021|10-01-2021|France|SOUPROSSE|43.814411|-0.719924|Domestic|Ciconia ciconia|89|89|Cigüeña blanca  2015-2019|1340|0.8684|
+| 49| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
+| 50| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 51| 287039|22-01-2021|09-01-2021|France|MEILHAN|43.856018|-0.71371|Domestic|Ciconia ciconia|600|600|Cigüeña blanca  2015-2019|1340|0.8684|
+| 52| 287038|22-01-2021|09-01-2021|France|GOUSSE|43.774936|-0.892749|Domestic|Ciconia ciconia|740||Cigüeña blanca  2015-2019|1340|0.8684|
+| 53| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
+| 54| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
+| 55| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 56| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 57| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
+| 58| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.598419|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
+| 59| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 60| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
+| 61| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
+| 62| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
+| 63| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 64| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
+| 65| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
+| 66| 287008|22-01-2021|06-01-2021|France|MANT|43.592078|-0.514105|Domestic|Ciconia ciconia|13000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 67| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 68| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 69| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 70| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
+| 71| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 72| 286724|15-01-2021|07-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 73| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 74| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 75| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.500281|Domestic|Ciconia ciconia|2550|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 76| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
+| 77| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 78| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 79| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 80| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 81| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 82| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 83| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 84| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 85| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 86| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 87| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 88| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 89| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 90| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
+| 91| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
+| 92| 286676|15-01-2021|03-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 93| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
+| 94| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
+| 95| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 96| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 97| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 98| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 99| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 100| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 101| 286243|08-01-2021|05-01-2021|France|SOUPROSSE|43.793353|-0.742613|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 102| 286242|08-01-2021|05-01-2021|France|SAINT-JEAN-DE-LIER|43.782172|-0.873712|Domestic|Ciconia ciconia|259||Cigüeña blanca  2015-2019|1340|0.8684|
+| 103| 286239|08-01-2021|05-01-2021|France|SAINT-YAGUEN|43.902273|-0.772245|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 104| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 105| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
+| 106| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 107| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
+| 108| 286222|08-01-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.724277|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 109| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 110| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 111| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 112| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 113| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
+| 114| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 115| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
+| 116| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 117| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
+| 118| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 119| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 120| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
+| 121| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 122| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
+| 123| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
+| 124| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
+| 125| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 126| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 127| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 128| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
+| 129| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
+| 130| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 131| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
+| 132| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 133| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
+| 134| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 135| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 136| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
+| 137| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 138| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 139| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 140| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 141| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 142| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 143| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 144| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 145| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
+| 146| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 147| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 148| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 149| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 150| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 151| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 152| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 153| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 154| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 155| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 156| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
+| 157| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 158| 288281|05-02-2021|15-01-2021|Germany|Rendsburg-Eckernförde|54.38|9.72|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 159| 288280|05-02-2021|14-01-2021|Germany|Steinburg|53.82|9.4|Wild|Ciconia ciconia|11|11|Cigüeña blanca  2015-2019|1340|0.8684|
+| 160| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
+| 161| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 162| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 163| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 164| 287122|22-01-2021|08-01-2021|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.727|
+| 165| 287121|22-01-2021|08-01-2021|Germany|Steinburg|54.470038|9.51416|Wild|Ardea cinerea|9|9|Garza real  2015-2019|1220|0.727|
+| 166| 287120|22-01-2021|17-12-2020|Germany|Ostholstein|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 167| 287119|22-01-2021|15-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 168| 286820|20-01-2021|06-01-2021|Germany|Nordfriesland|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 169| 286819|20-01-2021|05-01-2021|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 170| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
+| 171| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 172| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
+| 173| 286748|15-01-2021|07-01-2021|Germany|Rendsburg-Eckernförde|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 174| 286747|15-01-2021|30-12-2020|Germany|Segeberg|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 175| 286746|15-01-2021|22-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 176| 286745|15-01-2021|22-12-2020|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
+| 177| 286744|15-01-2021|16-12-2020|Germany|Steinburg|54.470038|9.51416|Wild|Ardea cinerea|14|14|Garza real  2015-2019|1220|0.727|
+| 178| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Vanellus vanellus|200|180|Avefría europea  2015-2019|4930|0.5146|
+| 179| 285547|28-12-2020|21-12-2020|Germany|Henstedt-Ulzburg|53.75|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 180| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 181| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
+| 182| 285204|18-12-2020|10-12-2020|Germany|Segeberg|53.78|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 183| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
+| 184| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
+| 185| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 186| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 187| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 188| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 189| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
+| 190| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 191| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
+
+
+### Alerta 32 
+- *Id comarca*: SP11004
+- *Localización comarca*: CAMPO DE GIBRALTAR
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
+| 1| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 2| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Vanellus vanellus|5000|5000|Avefría europea  2015-2019|4930|0.5146|
+| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
+| 4| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 5| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 6| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 7| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 8| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
+| 9| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
+| 11| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 12| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 13| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 14| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 15| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 16| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
+| 17| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 18| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 288332|09-02-2021|08-02-2021|Germany|Biendorf|54.04|11.68|Domestic|Ciconia ciconia|627|627|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 21| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Ciconia ciconia|1532|1532|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 19| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 20| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
+| 21| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 22| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 23| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 24| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287138|20-01-2021|04-01-2021|Germany|Landsberg a. Lech|47.9|10.93|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 286788|18-01-2021|14-01-2021|Germany|Ludwigslust-Parchim|53.56|10.98|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 25| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
+| 26| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 27| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 28| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Anas clypeata|150|150|Pato cuchara  2015-2019|1940|0.8796|
-| 30| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
-| 31| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Tringa totanus|20|20|Archibebe común  2015-2019|5460|0.4385|
-| 32| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
-| 33| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.297618|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
-| 34| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 35| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 37| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 38| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 39| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Ciconia ciconia|4|4|Cigüeña blanca  2015-2019|1340|0.8684|
+| 29| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 30| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 31| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
+| 32| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
+| 33| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 34| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
+| 35| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 36| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Tringa totanus|3853|2384|Archibebe común  2015-2019|5460|0.4385|
 
 
-### Alerta 40 
+### Alerta 33 
+- *Id comarca*: SP08200
+- *Localización comarca*: BAIX LLOBREGAT (SANT BOI)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
+| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
+| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
+| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 5| 288285|05-02-2021|29-01-2021|Germany|Lübeck|53.85|10.66|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.297618|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
+| 8| 290521|12-03-2021|23-02-2021|Hungary|Balatonlelle|46.223282|19.953879|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 9| 290520|12-03-2021|02-03-2021|Hungary|Mórahalom|46.223282|19.953879|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
+| 10| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
+| 11| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 12| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 13| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 14| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 15| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 16| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+
+
+### Alerta 34 
 - *Id comarca*: SP13082
 - *Localización comarca*: TOMELLOSO
 
@@ -3918,158 +1726,466 @@
 | 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 2| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Philomachus pugnax||3|Combatiente  2015-2019|5170|0.4963|
-| 5| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 8| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 288332|09-02-2021|08-02-2021|Germany|Biendorf|54.04|11.68|Domestic|Ciconia ciconia|627|627|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 12| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Ciconia ciconia|1532|1532|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 286788|18-01-2021|14-01-2021|Germany|Ludwigslust-Parchim|53.56|10.98|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
-| 19| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Tringa totanus|20|20|Archibebe común  2015-2019|5460|0.4385|
-| 20| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
-| 21| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 22| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
+| 5| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 288332|09-02-2021|08-02-2021|Germany|Biendorf|54.04|11.68|Domestic|Ciconia ciconia|627|627|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
+| 9| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Ciconia ciconia|1532|1532|Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 11| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 12| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 13| 286788|18-01-2021|14-01-2021|Germany|Ludwigslust-Parchim|53.56|10.98|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 14| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 15| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
+| 16| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Tringa totanus|20|20|Archibebe común  2015-2019|5460|0.4385|
+| 17| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
+| 18| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 
 
-### Alerta 41 
-- *Id comarca*: SP08200
-- *Localización comarca*: BAIX LLOBREGAT (SANT BOI)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa ochropus||3|Andarríos grande  2015-2019|5530|0.8382|
-| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288285|05-02-2021|29-01-2021|Germany|Lübeck|53.85|10.66|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.297618|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
-| 9| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 42 
-- *Id comarca*: SP26102
-- *Localización comarca*: NAJERA
+### Alerta 35 
+- *Id comarca*: SP01059
+- *Localización comarca*: ARABA-ALAVA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
 | 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 2| 288807|12-02-2021|01-02-2021|Denmark|Slagerup|55.814895|12.200137|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 3| 288792|12-02-2021|24-01-2021|Denmark|Frederikssund|55.794304|12.032978|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 5| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
+| 3| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
+| 5| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 6| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
+| 9| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
+| 11| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 12| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 13| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
+| 14| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 15| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 16| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
+| 17| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
+| 18| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
+| 19| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 20| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
+| 21| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
+| 22| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 23| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 24| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 25| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 26| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
+| 27| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 28| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
+| 29| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 30| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
+| 31| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
+| 32| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 33| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
+| 34| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
+| 35| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 36| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 37| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
+| 38| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 39| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
+| 40| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
+| 41| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
+| 42| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 43| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
+| 44| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
+| 45| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 46| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 47| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 48| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
+| 49| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 50| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 51| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
+| 52| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 53| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 54| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 55| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 56| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 57| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 58| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 59| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 60| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 61| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 62| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 63| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 64| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 65| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
+| 66| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
+| 67| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
+| 68| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
+| 69| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 70| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 71| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 72| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 73| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 74| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 75| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 76| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
+| 77| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 78| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
+| 79| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 80| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 81| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 82| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 83| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
+| 84| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 85| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
+| 86| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 87| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
+| 88| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 89| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 90| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
+| 91| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 92| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
+| 93| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
+| 94| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
+| 95| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 96| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 97| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 98| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
+| 99| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
+| 100| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 101| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
+| 102| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 103| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
+| 104| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 105| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 106| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
+| 107| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 108| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 109| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 110| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 111| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 112| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 113| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 114| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 115| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
+| 116| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 117| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 118| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 119| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 120| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 121| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 122| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 123| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 124| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 125| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 126| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
+| 127| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 128| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 129| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
+| 130| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 131| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 132| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
 
 
-### Alerta 43 
+### Alerta 36 
 - *Id comarca*: SP20063
 - *Localización comarca*: DONOSTIALDEA-BIDASOA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
+| 0| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 1| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus fuscus|5000|5000|Gaviota sombría  2015-2019|5910|0.7157|
 | 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 3| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 4| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 5| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 6| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Tringa totanus|3000|3000|Archibebe común  2015-2019|5460|0.4385|
-| 7| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 11| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 12| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
-| 14| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057222|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
+| 3| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
+| 4| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
+| 5| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
+| 6| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
+| 7| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Tringa totanus|3000|3000|Archibebe común  2015-2019|5460|0.4385|
+| 8| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 9| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 10| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 11| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 12| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 13| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
+| 14| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
+| 15| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057222|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
 
 
-### Alerta 44 
-- *Id comarca*: SP42173
-- *Localización comarca*: SORIA
+### Alerta 37 
+- *Id comarca*: SP41095
+- *Localización comarca*: UTRERA (BAJO GUADALQUIVIR)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 | 1| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 3| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 4| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Ardea cinerea|1||Garza real  2015-2019|1220|0.727|
-| 7| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
+| 3| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 5| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 7| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 8| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 9| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 10| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 11| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
+| 12| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 13| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 14| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 15| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 16| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
+| 17| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
+| 18| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 19| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 20| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
+| 21| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 22| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 23| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
+| 24| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
+| 25| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 26| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
+| 27| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
+| 28| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 29| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 30| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 31| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 32| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
+| 33| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 34| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
+| 35| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 36| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
+| 37| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
+| 38| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 39| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
+| 40| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
+| 41| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 42| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 43| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
+| 44| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 45| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
+| 46| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
+| 47| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
+| 48| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 49| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
+| 50| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
+| 51| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 52| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 53| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 54| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
+| 55| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
+| 56| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 57| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 58| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
+| 59| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 60| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 61| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 62| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 63| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 64| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 65| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 66| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 67| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 68| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 69| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 70| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
+| 71| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 72| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
+| 73| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
+| 74| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
+| 75| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
+| 76| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 77| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 78| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 79| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 80| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 81| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 82| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 83| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
+| 84| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 85| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
+| 86| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 87| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 88| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 89| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 90| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
+| 91| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 92| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
+| 93| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
+| 94| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
+| 95| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 96| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 97| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
+| 98| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 99| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
+| 100| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
+| 101| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
+| 102| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 103| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 104| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 105| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
+| 106| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
+| 107| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 108| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
+| 109| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 110| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
+| 111| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 112| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 113| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
+| 114| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 115| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 116| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 117| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 118| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 119| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 120| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 121| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 122| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
+| 123| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 124| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
+| 125| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 126| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 127| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 128| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 129| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
+| 130| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
+| 131| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
+| 132| 287599|28-01-2021|12-01-2021|Germany|Cuxhaven|53.44|8.59|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 133| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Limosa limosa|2|1|Aguja colinegra  2015-2019|5320|0.953|
+| 134| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 135| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 136| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Limosa limosa|4|4|Aguja colinegra  2015-2019|5320|0.953|
+| 137| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
+| 138| 285200|18-12-2020|08-12-2020|Germany|Wittmund|53.45|7.82|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 139| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963143|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
+| 140| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Limosa limosa|150|150|Aguja colinegra  2015-2019|5320|0.953|
+| 141| 287604|29-01-2021|24-01-2021|Poland|Kwakowo|54.37|17.02|Domestic|Larus ridibundus|1128|1128|Gaviota reidora  2015-2019|5820|0.8273|
+| 142| 285212|21-12-2020|15-12-2020|Poland|Lubosina|52.52|16.38|Domestic|Larus ridibundus|2000|200|Gaviota reidora  2015-2019|5820|0.8273|
+| 143| 284897|21-12-2020|16-12-2020|Poland|Kwakowo|54.37|17.02|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 144| 284896|21-12-2020|16-12-2020|Poland|Komilowo|54.36|17.05|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 145| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
+| 146| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 147| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 148| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 149| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 150| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 151| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
+| 152| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 153| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Larus ridibundus|3853|2384|Gaviota reidora  2015-2019|5820|0.8273|
 
 
-### Alerta 45 
+### Alerta 38 
+- *Id comarca*: SP46105
+- *Localización comarca*: RIBERA BAIXA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
+| 1| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.061|2.8271|Domestic|Anas crecca|5000|5000|Cerceta común  2015-2019|1840|0.8058|
+| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas clypeata||3|Pato cuchara  2015-2019|1940|0.8796|
+| 3| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 5| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 7| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
+| 8| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
+| 9| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 10| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 11| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
+| 12| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Limosa limosa|150|150|Aguja colinegra  2015-2019|5320|0.953|
+| 13| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 14| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 15| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+
+
+### Alerta 39 
 - *Id comarca*: SP43014
 - *Localización comarca*: MONTSIA (AMPOSTA)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 288312|06-02-2021|04-02-2021|Czech Republic|Starý u Sob slavi (pond)|49.2292|14.7428|Wild|Fulica atra|2|2|Focha común  2015-2019|4290|0.8092|
-| 1| 287606|29-01-2021|23-01-2021|Czech Republic|Hradiste Pisku|49.2928|14.1169|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 287150|22-01-2021|20-01-2021|Czech Republic|Zlivický rybník|49.3575|14.1044|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288814|12-02-2021|01-01-2021|Denmark|Sønder Bjert|55.4594|9.5633|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Philomachus pugnax||3|Combatiente  2015-2019|5170|0.4963|
-| 5| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 10| 288843|12-02-2021|09-02-2021|Estonia|Tallinn|59.437222|24.745278|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Anas clypeata|5|5|Pato cuchara  2015-2019|1940|0.8796|
-| 13| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|||Focha común  2015-2019|4290|0.8092|
-| 14| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Fulica atra|500|120|Focha común  2015-2019|4290|0.8092|
-| 15| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Larus michehellis|1|1|Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 16| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Larus michehellis||1|Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 17| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Larus michehellis|50|25|Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 18| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Larus michehellis|147||Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 19| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Larus michehellis|||Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 20| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 21| 287624|29-01-2021|28-01-2021|Germany|Pottenstein|49.76|11.4|Domestic|Larus ridibundus|10|10|Gaviota reidora  2015-2019|5820|0.8273|
-| 22| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 23| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 24| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 25| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 26| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 27| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 28| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 285381|23-12-2020|12-12-2020|Italy|ROVIGO - PORTO VIRO- VALLE CA'''' PASTA/1|44.968517|12.322283|Wild|Calidris minuta|2||Correlimos menudo  2015-2019|5010|0.3589|
-| 30| 285380|23-12-2020|12-12-2020|Italy|Porto Viro Valle cà pasta|44.968517|12.322283|Wild|Calidris minuta|2||Correlimos menudo  2015-2019|5010|0.3589|
-| 31| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.5022|
-| 32| 286016|08-01-2021|31-12-2020|Lithuania|Kaunas|54.8975|24.02|Domestic|Larus ridibundus|22|22|Gaviota reidora  2015-2019|5820|0.8273|
-| 33| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.953|
-| 34| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Ardea cinerea|320|320|Garza real  2015-2019|1220|0.727|
-| 35| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Tringa totanus|3000|3000|Archibebe común  2015-2019|5460|0.4385|
-| 36| 292119|22-03-2021|01-03-2021|Estonia|Schnelli pond|59.438035|24.736705|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 37| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 38| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 39| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 40| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 41| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 42| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 43| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 44| 293213|12-04-2021|26-02-2021|Germany|Klein Bünzow|53.926379|13.638153|Domestic|Ardea cinerea|29|27|Garza real  2015-2019|1220|0.727|
+| 1| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
+| 2| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 4| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Larus michehellis|1|1|Gaviota patiamarilla  2015-2019|5926|0.9033|
+| 7| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Larus michehellis||1|Gaviota patiamarilla  2015-2019|5926|0.9033|
+| 8| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Larus michehellis|50|25|Gaviota patiamarilla  2015-2019|5926|0.9033|
+| 9| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Larus michehellis|147||Gaviota patiamarilla  2015-2019|5926|0.9033|
+| 10| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Larus michehellis|||Gaviota patiamarilla  2015-2019|5926|0.9033|
+| 11| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
+| 12| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
+| 13| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
+| 14| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
+| 15| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
+| 16| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
+| 17| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 18| 285381|23-12-2020|12-12-2020|Italy|ROVIGO - PORTO VIRO- VALLE CA'''' PASTA/1|44.968517|12.322283|Wild|Calidris minuta|2||Correlimos menudo  2015-2019|5010|0.3589|
+| 19| 285380|23-12-2020|12-12-2020|Italy|Porto Viro Valle cà pasta|44.968517|12.322283|Wild|Calidris minuta|2||Correlimos menudo  2015-2019|5010|0.3589|
+| 20| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.5022|
+| 21| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.953|
+| 22| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Ardea cinerea|320|320|Garza real  2015-2019|1220|0.727|
+| 23| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Tringa totanus|3000|3000|Archibebe común  2015-2019|5460|0.4385|
+| 24| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 25| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 26| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 27| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 28| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 29| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
+| 30| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 31| 293213|12-04-2021|26-02-2021|Germany|Klein Bünzow|53.926379|13.638153|Domestic|Ardea cinerea|29|27|Garza real  2015-2019|1220|0.727|
 
 
-### Alerta 46 
+### Alerta 40 
+- *Id comarca*: SP22213
+- *Localización comarca*: SARIÑENA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
+| 1| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 2| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 3| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 7| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 8| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+
+
+### Alerta 41 
+- *Id comarca*: SP43148
+- *Localización comarca*: TARRAGONES (TARRAGONA)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
+| 1| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 2| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 3| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
+| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 286250|11-01-2021|04-01-2021|Hungary|Ács|47.690195|17.995825|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
+| 9| 286249|11-01-2021|04-01-2021|Hungary|Ács|47.68622|17.987319|Domestic|Vanellus vanellus||150|Avefría europea  2015-2019|4930|0.5146|
+| 10| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
+
+
+### Alerta 42 
+- *Id comarca*: SP50073
+- *Localización comarca*: CARIÑENA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
+| 1| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 2| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.297618|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
+| 3| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 4| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 5| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 6| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+
+
+### Alerta 43 
 - *Id comarca*: SP25120
 - *Localización comarca*: SEGRIA (LLEIDA)
 
@@ -4088,245 +2204,55 @@
 | 10| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 
 
-### Alerta 47 
-- *Id comarca*: SP06036
-- *Localización comarca*: CASTUERA
+### Alerta 44 
+- *Id comarca*: SP28005
+- *Localización comarca*: ALCALA DE HENARES
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
-| 1| 288804|12-02-2021|30-01-2021|Denmark|Hobro|56.637616|9.840482|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 2| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 4| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Vanellus vanellus|4400|70|Avefría europea  2015-2019|4930|0.5146|
-| 5| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.130879|Domestic|Vanellus vanellus|3140||Avefría europea  2015-2019|4930|0.5146|
-| 6| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Vanellus vanellus|2500||Avefría europea  2015-2019|4930|0.5146|
-| 7| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 8| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 9| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 10| 287140|20-01-2021|08-01-2021|Germany|Wesel|51.65|6.5|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 12| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 13| 285247|22-12-2020|10-12-2020|Germany|Pinneberg|53.7|9.71|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 14| 285243|22-12-2020|08-12-2020|Germany|Wesel|51.61|6.38|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 16| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 17| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 18| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 19| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 20| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 21| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 22| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
+| 1| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 2| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 3| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 4| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
+| 5| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 6| 287601|28-01-2021|18-01-2021|Germany|Oldenburg|53.12|8.33|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 8| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 9| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 290039|27-02-2021|27-02-2021|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Ciconia ciconia|51||Cigüeña blanca  2015-2019|1340|0.8684|
 
 
-### Alerta 48 
-- *Id comarca*: SP19130
-- *Localización comarca*: GUADALAJARA
+### Alerta 45 
+- *Id comarca*: SP13053
+- *Localización comarca*: MANZANARES
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
-| 1| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 2| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 287601|28-01-2021|18-01-2021|Germany|Oldenburg|53.12|8.33|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 11| 287343|25-01-2021|22-01-2021|Germany|Pirow|53.19|11.87|Domestic|Ardea cinerea|80|80|Garza real  2015-2019|1220|0.727|
-| 12| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 15| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 290039|27-02-2021|27-02-2021|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Ciconia ciconia|51||Cigüeña blanca  2015-2019|1340|0.8684|
+| 0| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 1| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
+| 2| 288246|03-02-2021|28-01-2021|France|BENTAYOU-SEREE|43.394|-0.065|Domestic|Anas strepera|2900|100|Ánade friso  2015-2019|1820|0.7986|
+| 3| 288243|03-02-2021|27-01-2021|France|BENTAYOU-SEREE|43.391082|-0.069472|Domestic|Anas strepera|12600|20|Ánade friso  2015-2019|1820|0.7986|
+| 4| 287543|28-01-2021|23-01-2021|France|GARDERES|43.296408|-0.107359|Domestic|Anas strepera|200||Ánade friso  2015-2019|1820|0.7986|
+| 5| 287496|28-01-2021|13-01-2021|France|MONTANER|43.3456|-0.008|Domestic|Anas strepera|55|40|Ánade friso  2015-2019|1820|0.7986|
+| 6| 287104|22-01-2021|14-01-2021|France|GARDERES|43.282582|-0.111046|Domestic|Anas strepera|40|40|Ánade friso  2015-2019|1820|0.7986|
+| 7| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
+| 8| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
+| 9| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Anas crecca||1|Cerceta común  2015-2019|1840|0.8058|
+| 10| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Anas crecca|50|25|Cerceta común  2015-2019|1840|0.8058|
+| 11| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Anas crecca|147||Cerceta común  2015-2019|1840|0.8058|
+| 12| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Anas crecca|||Cerceta común  2015-2019|1840|0.8058|
+| 13| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
+| 14| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
+| 15| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Anas clypeata|150|150|Pato cuchara  2015-2019|1940|0.8796|
+| 16| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.297618|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
+| 17| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
+| 18| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 19| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
+| 20| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
 
 
-### Alerta 49 
-- *Id comarca*: SP22213
-- *Localización comarca*: SARIÑENA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 50 
-- *Id comarca*: SP41024
-- *Localización comarca*: CARMONA (LOS ARCORES)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 1| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.57818|-0.818514|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 119| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 120| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 121| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 122| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 123| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 124| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Phalacrocorax carbo|4|4|Cormorán grande  2015-2019|720|0.7878|
-
-
-### Alerta 51 
-- *Id comarca*: SP19190
-- *Localización comarca*: MOLINA DE ARAGÓN
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 1| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 2| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333333|13.0|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 3| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 287341|25-01-2021|22-01-2021|Italy|Lugo|44.486571|11.88837|Domestic|Aythya ferina|||Porrón común  2015-2019|1980|0.8169|
-| 5| 285381|23-12-2020|12-12-2020|Italy|ROVIGO - PORTO VIRO- VALLE CA'''' PASTA/1|44.968517|12.322283|Wild|Aythya ferina|2||Porrón común  2015-2019|1980|0.8169|
-| 6| 285380|23-12-2020|12-12-2020|Italy|Porto Viro Valle cà pasta|44.968517|12.322283|Wild|Aythya ferina|2||Porrón común  2015-2019|1980|0.8169|
-
-
-### Alerta 52 
-- *Id comarca*: SP09194
-- *Localización comarca*: LERMA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 1| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098646|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 2| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 3| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 4| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 5| 292911|06-04-2021|07-03-2021|Sweden|Ale|57.97704|12.23825|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 6| 293213|12-04-2021|26-02-2021|Germany|Klein Bünzow|53.926379|13.638153|Domestic|Ardea cinerea|29|27|Garza real  2015-2019|1220|0.727|
-| 7| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Anas platyrhynchos|3853|2384|Ánade azulón  2015-2019|1860|0.8856|
-
-
-### Alerta 53 
+### Alerta 46 
 - *Id comarca*: SP39059
 - *Localización comarca*: REINOSA
 
@@ -4449,948 +2375,13 @@
 | 114| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
 
 
-### Alerta 54 
-- *Id comarca*: SP24010
-- *Localización comarca*: BAÑEZA LA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 1| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
-
-
-### Alerta 55 
-=======
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas clypeata||3|Pato cuchara  2015-2019|1940|0.8796|
-| 3| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 4| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 5| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 288244|03-02-2021|27-01-2021|France|LESGOR|43.85147|-0.888077|Domestic|Ciconia ciconia|3100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609000000004|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.9203520000000001|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 288223|03-02-2021|07-01-2021|France|LOUER|43.758765999999994|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 288220|03-02-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.7242770000000001|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287987|02-02-2021|27-01-2021|France|SAINT-VINCENT-DE-PAUL|43.779167|-1.002475|Domestic|Ciconia ciconia|8438||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287536|28-01-2021|22-01-2021|France|ARZACQ-ARRAZIGUET|43.537|-0.41200000000000003|Domestic|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287535|28-01-2021|22-01-2021|France|MOMAS|43.464572|-0.442587|Domestic|Ciconia ciconia|760|760|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287529|28-01-2021|20-01-2021|France|MANT|43.583438|-0.5167649999999999|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287521|28-01-2021|19-01-2021|France|LONCON|43.4697|-0.416667|Domestic|Ciconia ciconia|3378||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287512|28-01-2021|17-01-2021|France|ARGELOS|43.586958|-0.624731|Domestic|Ciconia ciconia|4848|86|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287510|28-01-2021|17-01-2021|France|SAINT-JEAN-DE-LIER|43.782911|-0.8857709999999999|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287509|28-01-2021|16-01-2021|France|CASTELNER|43.556875|-0.5851569999999999|Domestic|Ciconia ciconia|7406||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287506|28-01-2021|16-01-2021|France|SOUPROSSE|43.803709000000005|-0.729543|Domestic|Ciconia ciconia|873|39|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.9268360000000001|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287493|28-01-2021|12-01-2021|France|ARGELOS|43.588815000000004|-0.616631|Domestic|Ciconia ciconia|333|333|Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.9179999999999999|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287117|22-01-2021|18-01-2021|France|GRENADE|43.745578|1.271|Domestic|Ciconia ciconia|40000|800|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287114|22-01-2021|16-01-2021|France|MEILHAN|43.870416999999996|-0.721498|Domestic|Ciconia ciconia|376||Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.0158040000000002|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287106|22-01-2021|14-01-2021|France|ONARD|43.773501|-0.8462049999999999|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287078|22-01-2021|12-01-2021|France|LOUVIGNY|43.505922999999996|-0.438404|Domestic|Ciconia ciconia|1000|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.7474390000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287048|22-01-2021|10-01-2021|France|SOUPROSSE|43.814411|-0.719924|Domestic|Ciconia ciconia|89|89|Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.7823720000000001|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 287039|22-01-2021|09-01-2021|France|MEILHAN|43.856018|-0.7137100000000001|Domestic|Ciconia ciconia|600|600|Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 287038|22-01-2021|09-01-2021|France|GOUSSE|43.774936|-0.892749|Domestic|Ciconia ciconia|740||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752000000004|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565000000004|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.763020000000004|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.8599969999999999|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 287026|22-01-2021|09-01-2021|France|BASSERCLES|43.560864|-0.5984189999999999|Domestic|Ciconia ciconia|300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 287025|22-01-2021|09-01-2021|France|TILH|43.594677000000004|-0.8366020000000001|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545000000004|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008000000004|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 287008|22-01-2021|06-01-2021|France|MANT|43.592078|-0.514105|Domestic|Ciconia ciconia|13000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371000000005|-0.8200559999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286724|15-01-2021|07-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286717|15-01-2021|06-01-2021|France|UZAN|43.467208|-0.5002810000000001|Domestic|Ciconia ciconia|2550|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.8739979999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.8709790000000001|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.7217359999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286676|15-01-2021|03-01-2021|France|SOUPROSSE|43.770947|-0.712519|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.9303889999999999|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286243|08-01-2021|05-01-2021|France|SOUPROSSE|43.793353|-0.742613|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286242|08-01-2021|05-01-2021|France|SAINT-JEAN-DE-LIER|43.782171999999996|-0.873712|Domestic|Ciconia ciconia|259||Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286239|08-01-2021|05-01-2021|France|SAINT-YAGUEN|43.902273|-0.772245|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653847999999996|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.9541299999999999|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286222|08-01-2021|02-01-2021|France|SAINT-YAGUEN|43.882078|-0.7242770000000001|Domestic|Ciconia ciconia|600|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.8614360000000001|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.7315010000000001|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219000000004|-0.7307319999999999|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.9167200000000001|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153000000006|-0.8979790000000001|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.7819619999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 131| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 133| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 134| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 136| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 137| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 138| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 139| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 140| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.7173350000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 141| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 142| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.9625370000000001|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 143| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.8037479999999999|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 144| 285729|31-12-2020|25-12-2020|France|HINX|43.705189000000004|-0.9452440000000001|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 145| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 146| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 147| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 148| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.9179649999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 149| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688753999999996|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 150| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 151| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 152| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628000000005|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 153| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 154| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 155| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 156| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 157| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 158| 288281|05-02-2021|15-01-2021|Germany|Rendsburg-Eckernförde|54.38|9.72|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 159| 288280|05-02-2021|14-01-2021|Germany|Steinburg|53.82|9.4|Wild|Ciconia ciconia|11|11|Cigüeña blanca  2015-2019|1340|0.8684|
-| 160| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 161| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 162| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 163| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 164| 287122|22-01-2021|08-01-2021|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|3|3|Garza real  2015-2019|1220|0.727|
-| 165| 287121|22-01-2021|08-01-2021|Germany|Steinburg|54.470038|9.51416|Wild|Ardea cinerea|9|9|Garza real  2015-2019|1220|0.727|
-| 166| 287120|22-01-2021|17-12-2020|Germany|Ostholstein|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 167| 287119|22-01-2021|15-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 168| 286820|20-01-2021|06-01-2021|Germany|Nordfriesland|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 169| 286819|20-01-2021|05-01-2021|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 170| 286794|18-01-2021|17-01-2021|Germany|Wurster Nordseeküste|53.66|8.54|Domestic|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 171| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 172| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 173| 286748|15-01-2021|07-01-2021|Germany|Rendsburg-Eckernförde|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 174| 286747|15-01-2021|30-12-2020|Germany|Segeberg|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 175| 286746|15-01-2021|22-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 176| 286745|15-01-2021|22-12-2020|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 177| 286744|15-01-2021|16-12-2020|Germany|Steinburg|54.470038|9.51416|Wild|Ardea cinerea|14|14|Garza real  2015-2019|1220|0.727|
-| 178| 286427|15-01-2021|12-01-2021|Germany|Wurster Nordseeküste|53.67|8.54|Domestic|Vanellus vanellus|200|180|Avefría europea  2015-2019|4930|0.5146|
-| 179| 285547|28-12-2020|21-12-2020|Germany|Henstedt-Ulzburg|53.75|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 180| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 181| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 182| 285204|18-12-2020|10-12-2020|Germany|Segeberg|53.78|9.98|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 183| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 184| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
-| 185| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 186| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 187| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 188| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 189| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 190| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 191| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-
-
-### Alerta 32 
-- *Id comarca*: SP11004
-- *Localización comarca*: CAMPO DE GIBRALTAR
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287623|29-01-2021|26-01-2021|Belgium|Deerlijk|50.841|3.3626|Domestic|Pluvialis apricaria||1030|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 1| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 2| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Vanellus vanellus|5000|5000|Avefría europea  2015-2019|4930|0.5146|
-| 3| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 4| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 5| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 6| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 7| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 8| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287597|28-01-2021|06-01-2021|Germany|Aurich|53.6|7.13|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 20| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Vanellus vanellus|2|1|Avefría europea  2015-2019|4930|0.5146|
-| 21| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Vanellus vanellus|4|4|Avefría europea  2015-2019|4930|0.5146|
-| 26| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 27| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 285201|18-12-2020|11-12-2020|Germany|Aurich|53.57|7.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 30| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Vanellus vanellus|150|150|Avefría europea  2015-2019|4930|0.5146|
-| 32| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 34| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Pluvialis apricaria|1|1|Chorlito dorado europeo  2015-2019|4850|0.6332|
-| 35| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Tringa totanus|3853|2384|Archibebe común  2015-2019|5460|0.4385|
-
-
-### Alerta 33 
-- *Id comarca*: SP08200
-- *Localización comarca*: BAIX LLOBREGAT (SANT BOI)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288285|05-02-2021|29-01-2021|Germany|Lübeck|53.85|10.66|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.29761800000001|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 290521|12-03-2021|23-02-2021|Hungary|Balatonlelle|46.223282|19.953879|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 290520|12-03-2021|02-03-2021|Hungary|Mórahalom|46.223282|19.953879|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Tadorna tadorna|1|1|Tarro blanco  2015-2019|1730|0.7257|
-| 11| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 16| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 34 
-- *Id comarca*: SP13082
-- *Localización comarca*: TOMELLOSO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
-| 5| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 288332|09-02-2021|08-02-2021|Germany|Biendorf|54.04|11.68|Domestic|Ciconia ciconia|627|627|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Anas clypeata|1|1|Pato cuchara  2015-2019|1940|0.8796|
-| 9| 287633|01-02-2021|28-01-2021|Germany|Dömitz|53.12|11.31|Domestic|Ciconia ciconia|1532|1532|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 286788|18-01-2021|14-01-2021|Germany|Ludwigslust-Parchim|53.56|10.98|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266000000001|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
-| 16| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Tringa totanus|20|20|Archibebe común  2015-2019|5460|0.4385|
-| 17| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.4385|
-| 18| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-
-
-### Alerta 35 
-- *Id comarca*: SP01059
-- *Localización comarca*: ARABA-ALAVA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 287622|29-01-2021|16-01-2021|Belgium|Gent|51.0435|3.6884|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 1| 287149|22-01-2021|11-01-2021|Belgium|Gentbrugge|51.0295|3.7737|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
-| 3| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288245|03-02-2021|28-01-2021|France|SAINTE-MARIE-DE-GOSSE|43.550963|-1.254638|Domestic|Ciconia ciconia|4400|70|Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609000000004|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.9203520000000001|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 288223|03-02-2021|07-01-2021|France|LOUER|43.758765999999994|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287977|03-02-2021|25-01-2021|France|BIDACHE|43.470661|-1.1308790000000002|Domestic|Ciconia ciconia|3140||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.9268360000000001|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287500|28-01-2021|15-01-2021|France|BIDACHE|43.474423|-1.116476|Domestic|Ciconia ciconia|2500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.9179999999999999|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.0158040000000002|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.7474390000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.7823720000000001|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752000000004|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565000000004|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.763020000000004|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.8599969999999999|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287025|22-01-2021|09-01-2021|France|TILH|43.594677000000004|-0.8366020000000001|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545000000004|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008000000004|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371000000005|-0.8200559999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.8739979999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.8709790000000001|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.7217359999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.9303889999999999|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653847999999996|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.9541299999999999|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.8614360000000001|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.7315010000000001|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219000000004|-0.7307319999999999|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.9167200000000001|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153000000006|-0.8979790000000001|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.7819619999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.7173350000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.9625370000000001|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.8037479999999999|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 285729|31-12-2020|25-12-2020|France|HINX|43.705189000000004|-0.9452440000000001|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.9179649999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688753999999996|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628000000005|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Anser anser|3000|3000|Ánsar común  2015-2019|1610|0.4855|
-| 130| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 131| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 132| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Anser anser|3853|2384|Ánsar común  2015-2019|1610|0.4855|
-
-
-### Alerta 36 
-- *Id comarca*: SP20063
-- *Localización comarca*: DONOSTIALDEA-BIDASOA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 1| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Larus fuscus|5000|5000|Gaviota sombría  2015-2019|5910|0.7157|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 3| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5146|
-| 4| 287141|21-01-2021|19-12-2020|Sweden|Staffanstorp|55.630504|13.126266000000001|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 5| 285371|23-12-2020|20-12-2020|Sweden|Svedala|55.58036|13.25857|Domestic|Anser anser|20|20|Ánsar común  2015-2019|1610|0.4855|
-| 6| 285369|23-12-2020|09-12-2020|Sweden|Malmö|55.591725|13.0288|Wild|Anser anser|1||Ánsar común  2015-2019|1610|0.4855|
-| 7| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Tringa totanus|3000|3000|Archibebe común  2015-2019|5460|0.4385|
-| 8| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 10| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 12| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 13| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus fuscus|1|1|Gaviota sombría  2015-2019|5910|0.7157|
-| 14| 290048|02-03-2021|02-03-2021|Czech Republic|Praha-m sto (Císa ská louka)|50.083333|14.416667000000002|Wild|Vanellus vanellus|2||Avefría europea  2015-2019|4930|0.5146|
-| 15| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057221999999996|14.684167|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5146|
-
-
-### Alerta 37 
-- *Id comarca*: SP41095
-- *Localización comarca*: UTRERA (BAJO GUADALQUIVIR)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Larus ridibundus|5000|5000|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anser anser||3|Ánsar común  2015-2019|1610|0.4855|
-| 3| 288805|12-02-2021|30-01-2021|Denmark|Haderslev2|55.298161|9.517002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 9| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 10| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Anser anser|1|1|Ánsar común  2015-2019|1610|0.4855|
-| 12| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 13| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609000000004|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.9203520000000001|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 288223|03-02-2021|07-01-2021|France|LOUER|43.758765999999994|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.9268360000000001|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.9179999999999999|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.0158040000000002|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.7474390000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.7823720000000001|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752000000004|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565000000004|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.763020000000004|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.8599969999999999|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 287025|22-01-2021|09-01-2021|France|TILH|43.594677000000004|-0.8366020000000001|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545000000004|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008000000004|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371000000005|-0.8200559999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 56| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286715|15-01-2021|06-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.8739979999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.8709790000000001|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.7217359999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286689|15-01-2021|05-01-2021|France|POYARTIN|44.578179999999996|-0.8185140000000001|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.9303889999999999|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653847999999996|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.9541299999999999|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.8614360000000001|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.7315010000000001|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219000000004|-0.7307319999999999|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.9167200000000001|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153000000006|-0.8979790000000001|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.7819619999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.7173350000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.9625370000000001|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.8037479999999999|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 285729|31-12-2020|25-12-2020|France|HINX|43.705189000000004|-0.9452440000000001|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 124| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 125| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.9179649999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 126| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688753999999996|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 127| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628000000005|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 129| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 130| 288282|05-02-2021|25-01-2021|Germany|Dithmarschen|53.9|9.02|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 131| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 132| 287599|28-01-2021|12-01-2021|Germany|Cuxhaven|53.44|8.59|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 133| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Limosa limosa|2|1|Aguja colinegra  2015-2019|5320|0.953|
-| 134| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 135| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 136| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Limosa limosa|4|4|Aguja colinegra  2015-2019|5320|0.953|
-| 137| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 138| 285200|18-12-2020|08-12-2020|Germany|Wittmund|53.45|7.82|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 139| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963142999999999|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 140| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Limosa limosa|150|150|Aguja colinegra  2015-2019|5320|0.953|
-| 141| 287604|29-01-2021|24-01-2021|Poland|Kwakowo|54.37|17.02|Domestic|Larus ridibundus|1128|1128|Gaviota reidora  2015-2019|5820|0.8273|
-| 142| 285212|21-12-2020|15-12-2020|Poland|Lubosina|52.52|16.38|Domestic|Larus ridibundus|2000|200|Gaviota reidora  2015-2019|5820|0.8273|
-| 143| 284897|21-12-2020|16-12-2020|Poland|Kwakowo|54.37|17.02|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 144| 284896|21-12-2020|16-12-2020|Poland|Komilowo|54.36|17.05|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 145| 291985|20-03-2021|05-03-2021|Belgium|Erembodegem|50.9206|4.0602|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5146|
-| 146| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 147| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 148| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 149| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 150| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 151| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 152| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 153| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556270999999999|Domestic|Larus ridibundus|3853|2384|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 38 
-- *Id comarca*: SP46105
-- *Localización comarca*: RIBERA BAIXA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 285779|06-01-2021|25-12-2020|Belgium|Zedelgem|51.1047|3.1524|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 1| 285224|22-12-2020|14-12-2020|Belgium|Diksmuide|51.06100000000001|2.8271|Domestic|Anas crecca|5000|5000|Cerceta común  2015-2019|1840|0.8058|
-| 2| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas clypeata||3|Pato cuchara  2015-2019|1940|0.8796|
-| 3| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 8| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 9| 286785|18-01-2021|15-01-2021|Germany|Harburg|53.41|10.27|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 10| 286014|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.7175|21.1022|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 11| 286013|08-01-2021|08-01-2021|Lithuania|Klaipeda|55.67|21.1789|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Limosa limosa|150|150|Aguja colinegra  2015-2019|5320|0.953|
-| 13| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 14| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 15| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 39 
-- *Id comarca*: SP43014
-- *Localización comarca*: MONTSIA (AMPOSTA)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288312|06-02-2021|04-02-2021|Czech Republic|Starý u Sob slavi (pond)|49.2292|14.7428|Wild|Fulica atra|2|2|Focha común  2015-2019|4290|0.8092|
-| 1| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Tringa totanus||3|Archibebe común  2015-2019|5460|0.4385|
-| 2| 288775|12-02-2021|16-12-2020|Denmark|Ballerup|55.755373|12.356886|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 4| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Larus michehellis|1|1|Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 7| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Larus michehellis||1|Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 8| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Larus michehellis|50|25|Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 9| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Larus michehellis|147||Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 10| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Larus michehellis|||Gaviota patiamarilla  2015-2019|5926|0.9033|
-| 11| 288276|05-02-2021|28-01-2021|Germany|Berlin|52.43|13.42|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.8273|
-| 12| 287594|28-01-2021|15-01-2021|Germany|Hamburg|53.59|10.02|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
-| 13| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 14| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 15| 287374|18-01-2021|12-01-2021|Germany|Vorpommern-Rügen|54.333332999999996|13.0|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 16| 286776|18-01-2021|29-12-2020|Germany|Hamburg|53.48|10.15|Wild|Ardea cinerea|4|4|Garza real  2015-2019|1220|0.727|
-| 17| 285543|28-12-2020|18-12-2020|Germany|Hamburg|53.57|9.88|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 18| 285381|23-12-2020|12-12-2020|Italy|ROVIGO - PORTO VIRO- VALLE CA'''' PASTA/1|44.968517|12.322283|Wild|Calidris minuta|2||Correlimos menudo  2015-2019|5010|0.3589|
-| 19| 285380|23-12-2020|12-12-2020|Italy|Porto Viro Valle cà pasta|44.968517|12.322283|Wild|Calidris minuta|2||Correlimos menudo  2015-2019|5010|0.3589|
-| 20| 284906|16-12-2020|07-12-2020|Italy|Jesolo|45.496316|12.612958|Wild|Calidris alpina|1||Correlimos común  2015-2019|5120|0.5022|
-| 21| 285774|04-01-2021|27-12-2020|Netherlands|Ingen|51.96|5.48|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.953|
-| 22| 285223|22-12-2020|17-12-2020|Poland|Mielno|54.25|16.03|Domestic|Ardea cinerea|320|320|Garza real  2015-2019|1220|0.727|
-| 23| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Tringa totanus|3000|3000|Archibebe común  2015-2019|5460|0.4385|
-| 24| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 25| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 26| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 27| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 28| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 29| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Tringa totanus|1|1|Archibebe común  2015-2019|5460|0.4385|
-| 30| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 31| 293213|12-04-2021|26-02-2021|Germany|Klein Bünzow|53.926379000000004|13.638152999999999|Domestic|Ardea cinerea|29|27|Garza real  2015-2019|1220|0.727|
-
-
-### Alerta 40 
-- *Id comarca*: SP22213
-- *Localización comarca*: SARIÑENA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 288796|12-02-2021|26-01-2021|Denmark|Gjøl|57.076547|9.668002|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 288789|12-02-2021|23-01-2021|Denmark|Østerby2|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288788|12-02-2021|23-01-2021|Denmark|Østerby|57.052468000000005|9.538014|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 7| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 41 
-- *Id comarca*: SP43148
-- *Localización comarca*: TARRAGONES (TARRAGONA)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Larus ridibundus||3|Gaviota reidora  2015-2019|5820|0.8273|
-| 1| 288801|12-02-2021|28-01-2021|Denmark|Sødring2|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 288800|12-02-2021|28-01-2021|Denmark|Sødring|56.620162|10.329656|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 288786|12-02-2021|21-01-2021|Denmark|Udbyhøj Vasehuse|56.61114|10.306772|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
-| 5| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 286250|11-01-2021|04-01-2021|Hungary|Ács|47.690195|17.995825|Domestic|Vanellus vanellus|||Avefría europea  2015-2019|4930|0.5146|
-| 9| 286249|11-01-2021|04-01-2021|Hungary|Ács|47.68622|17.987319|Domestic|Vanellus vanellus||150|Avefría europea  2015-2019|4930|0.5146|
-| 10| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.8092|
-
-
-### Alerta 42 
-- *Id comarca*: SP50073
-- *Localización comarca*: CARIÑENA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
-| 1| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 2| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.29761800000001|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
-| 3| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 4| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 5| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 6| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 43 
-- *Id comarca*: SP25120
-- *Localización comarca*: SEGRIA (LLEIDA)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Anas crecca||3|Cerceta común  2015-2019|1840|0.8058|
-| 1| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 2| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 287140|20-01-2021|08-01-2021|Germany|Wesel|51.65|6.5|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 285243|22-12-2020|08-12-2020|Germany|Wesel|51.61|6.38|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 288273|05-02-2021|01-02-2021|Switzerland|Rhein|47.69|8.65|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-
-
-### Alerta 44 
-- *Id comarca*: SP28005
-- *Localización comarca*: ALCALA DE HENARES
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288813|12-02-2021|05-02-2021|Denmark|Valby|55.6487|12.5008|Domestic|Vanellus vanellus||3|Avefría europea  2015-2019|4930|0.5146|
-| 1| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 287601|28-01-2021|18-01-2021|Germany|Oldenburg|53.12|8.33|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 287139|20-01-2021|08-01-2021|Germany|Bremen|53.17|8.61|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 290039|27-02-2021|27-02-2021|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Ciconia ciconia|51||Cigüeña blanca  2015-2019|1340|0.8684|
-
-
-### Alerta 45 
-- *Id comarca*: SP13053
-- *Localización comarca*: MANZANARES
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288787|12-02-2021|23-01-2021|Denmark|Frøstrup3|57.101223|9.027235000000001|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 1| 287130|22-01-2021|20-12-2020|Denmark|Frøstrup2|57.098645999999995|9.021886|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 2| 288246|03-02-2021|28-01-2021|France|BENTAYOU-SEREE|43.394|-0.065|Domestic|Anas strepera|2900|100|Ánade friso  2015-2019|1820|0.7986|
-| 3| 288243|03-02-2021|27-01-2021|France|BENTAYOU-SEREE|43.391082|-0.069472|Domestic|Anas strepera|12600|20|Ánade friso  2015-2019|1820|0.7986|
-| 4| 287543|28-01-2021|23-01-2021|France|GARDERES|43.296408|-0.107359|Domestic|Anas strepera|200||Ánade friso  2015-2019|1820|0.7986|
-| 5| 287496|28-01-2021|13-01-2021|France|MONTANER|43.3456|-0.008|Domestic|Anas strepera|55|40|Ánade friso  2015-2019|1820|0.7986|
-| 6| 287104|22-01-2021|14-01-2021|France|GARDERES|43.282582|-0.111046|Domestic|Anas strepera|40|40|Ánade friso  2015-2019|1820|0.7986|
-| 7| 286813|19-01-2021|08-01-2021|France|ARTHUN|45.7731|4.03389|Wild|Larus ridibundus|5|5|Gaviota reidora  2015-2019|5820|0.8273|
-| 8| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Anas crecca|1|1|Cerceta común  2015-2019|1840|0.8058|
-| 9| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Anas crecca||1|Cerceta común  2015-2019|1840|0.8058|
-| 10| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Anas crecca|50|25|Cerceta común  2015-2019|1840|0.8058|
-| 11| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Anas crecca|147||Cerceta común  2015-2019|1840|0.8058|
-| 12| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Anas crecca|||Cerceta común  2015-2019|1840|0.8058|
-| 13| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 14| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Netta rufina|1|1|Pato colorado  2015-2019|1960|0.5384|
-| 15| 284840|16-12-2020|14-12-2020|Netherlands|Buitenpost|53.26|6.13|Domestic|Anas clypeata|150|150|Pato cuchara  2015-2019|1940|0.8796|
-| 16| 289511|25-02-2021|23-02-2021|Sweden|Linköping|58.29761800000001|15.395141|Domestic|Larus ridibundus|350|350|Gaviota reidora  2015-2019|5820|0.8273|
-| 17| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.953|
-| 18| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 19| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 20| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-
-
-### Alerta 46 
-- *Id comarca*: SP39059
-- *Localización comarca*: REINOSA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288782|12-02-2021|15-01-2021|Denmark|Husum-Ballum2|55.074034|8.662243|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
-| 1| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609000000004|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.9203520000000001|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 288223|03-02-2021|07-01-2021|France|LOUER|43.758765999999994|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.9268360000000001|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.9179999999999999|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.0158040000000002|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.7474390000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.7823720000000001|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752000000004|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565000000004|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.763020000000004|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.8599969999999999|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287025|22-01-2021|09-01-2021|France|TILH|43.594677000000004|-0.8366020000000001|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545000000004|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008000000004|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371000000005|-0.8200559999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.8739979999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.8709790000000001|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.7217359999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.9303889999999999|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653847999999996|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.9541299999999999|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.8614360000000001|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.7315010000000001|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219000000004|-0.7307319999999999|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.9167200000000001|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153000000006|-0.8979790000000001|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.7819619999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.7173350000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.9625370000000001|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.8037479999999999|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 285729|31-12-2020|25-12-2020|France|HINX|43.705189000000004|-0.9452440000000001|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.9179649999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688753999999996|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628000000005|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-
-
 ### Alerta 47 
 - *Id comarca*: SP17022
 - *Localización comarca*: BAIX EMPORDA (LA BISBAL)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 0| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
 | 1| 288812|12-02-2021|28-01-2021|Finland|Helsinki|60.1799|24.9398|Wild|Aythya fuligula|1|1|Porrón moñudo  2015-2019|2030|0.7349|
 | 2| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 3| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -5401,234 +2392,99 @@
 
 
 ### Alerta 48 
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 - *Id comarca*: SP17066
 - *Localización comarca*: ALT EMPORDA (FIGUERES)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-<<<<<<< HEAD
-| 0| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 1| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 2| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
-| 5| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 9| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
-| 11| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 12| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 14| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 16| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 17| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 19| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 20| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 23| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 24| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 26| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 27| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
-| 34| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
-| 35| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 36| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 37| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
-| 40| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 41| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
-| 42| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 43| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 44| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 45| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 47| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 48| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 49| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 52| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 53| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 55| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
-| 57| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
-| 58| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
-| 59| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 60| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
-| 62| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 63| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 64| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 66| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 68| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 69| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 71| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 72| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 73| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 76| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 78| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
-| 79| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 80| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 81| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 82| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 83| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 86| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 88| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 89| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
-| 90| 286094|06-01-2021|29-12-2020|France|POUILLON|43.630697|-0.958227|Domestic|Ciconia ciconia|18|18|Cigüeña blanca  2015-2019|1340|0.8684|
-| 91| 286091|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714393|-0.859927|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 92| 286090|06-01-2021|28-12-2020|France|GAMARDE-LES-BAINS|43.714388|-0.859893|Domestic|Ciconia ciconia|40|40|Cigüeña blanca  2015-2019|1340|0.8684|
-| 93| 286089|06-01-2021|28-12-2020|France|MISSON|43.611433|-0.946909|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 94| 286088|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.684092|-0.934816|Domestic|Ciconia ciconia|15||Cigüeña blanca  2015-2019|1340|0.8684|
-| 95| 286087|06-01-2021|28-12-2020|France|SORT-EN-CHALOSSE|43.682352|-0.930198|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 96| 286085|06-01-2021|24-12-2020|France|BERGOUEY|43.678583|-0.723513|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 97| 286008|06-01-2021|31-12-2020|France|BAIGTS|43.693087|-0.776061|Domestic|Ciconia ciconia|1632||Cigüeña blanca  2015-2019|1340|0.8684|
-| 98| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 99| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 100| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 101| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 103| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
-| 107| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 108| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 109| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 112| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 115| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 116| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 118| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 120| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 121| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 122| 287364|26-01-2021|20-01-2021|Germany|Bobenheim-Roxheim|49.58|8.36|Wild|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 123| 285541|28-12-2020|27-12-2020|Germany|Gudendorf|54.01|9.11|Domestic|Larus ridibundus|44|44|Gaviota reidora  2015-2019|5820|0.8273|
-| 124| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 125| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 126| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.8273|
-| 127| 292102|19-03-2021|03-03-2021|Czech Republic|Bose|50.5|15.02|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 128| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
-
-
-### Alerta 56 
-=======
-| 0| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938000000001|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 1| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609000000004|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 0| 288774|12-02-2021|07-12-2020|Denmark|Horsens2|55.82938|9.879323|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
+| 1| 288241|03-02-2021|25-01-2021|France|SAINT-PANDELON|43.668609|-1.032468|Domestic|Ciconia ciconia|14800|60|Cigüeña blanca  2015-2019|1340|0.8684|
 | 2| 288234|03-02-2021|15-01-2021|France|GAAS|43.622324|-1.03735|Domestic|Ciconia ciconia|10900|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 3| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.9203520000000001|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 4| 288223|03-02-2021|07-01-2021|France|LOUER|43.758765999999994|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
+| 3| 288224|03-02-2021|09-01-2021|France|GOOS|43.729587|-0.920352|Domestic|Ciconia ciconia|2730|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 4| 288223|03-02-2021|07-01-2021|France|LOUER|43.758766|-0.882509|Domestic|Ciconia ciconia|3200||Cigüeña blanca  2015-2019|1340|0.8684|
 | 5| 288219|03-02-2021|29-12-2020|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|500||Cigüeña blanca  2015-2019|1340|0.8684|
 | 6| 287547|28-01-2021|25-01-2021|France|GAAS|43.613713|-1.033007|Domestic|Ciconia ciconia|5402|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 7| 287538|28-01-2021|22-01-2021|France|GAAS|43.622324|-1.048926|Domestic|Ciconia ciconia|9120|20|Cigüeña blanca  2015-2019|1340|0.8684|
 | 8| 287525|28-01-2021|20-01-2021|France|SAINT-PANDELON|43.669538|-1.022093|Domestic|Ciconia ciconia|6900||Cigüeña blanca  2015-2019|1340|0.8684|
 | 9| 287514|28-01-2021|18-01-2021|France|GAAS|43.595753|-1.031065|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 10| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.9268360000000001|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 10| 287502|28-01-2021|15-01-2021|France|GOOS|43.7367|-0.926836|Domestic|Ciconia ciconia|1500|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 11| 287499|28-01-2021|14-01-2021|France|POMAREZ|43.615681|-0.814249|Domestic|Ciconia ciconia|1400||Cigüeña blanca  2015-2019|1340|0.8684|
 | 12| 287485|28-01-2021|07-01-2021|France|POMAREZ|43.637545|-0.870657|Domestic|Ciconia ciconia|1300||Cigüeña blanca  2015-2019|1340|0.8684|
-| 13| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.9179999999999999|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
+| 13| 287478|28-01-2021|05-01-2021|France|CLERMONT|43.653|-0.918|Domestic|Ciconia ciconia|300|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 14| 287477|28-01-2021|31-12-2020|France|POYARTIN|43.674287|-0.823249|Domestic|Ciconia ciconia|4800|250|Cigüeña blanca  2015-2019|1340|0.8684|
-| 15| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.0158040000000002|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
+| 15| 287109|22-01-2021|15-01-2021|France|SAUGNAC-ET-CAMBRAN|43.659002|-1.015804|Domestic|Ciconia ciconia|2350||Cigüeña blanca  2015-2019|1340|0.8684|
 | 16| 287092|22-01-2021|13-01-2021|France|GAMARDE-LES-BAINS|43.723365|-0.884043|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 17| 287086|22-01-2021|12-01-2021|France|AMOU|43.60853|-0.778648|Domestic|Ciconia ciconia|2000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 18| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
+| 18| 287080|22-01-2021|12-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|4000||Cigüeña blanca  2015-2019|1340|0.8684|
 | 19| 287075|22-01-2021|12-01-2021|France|GARREY|43.670577|-0.909033|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
 | 20| 287072|22-01-2021|11-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|260||Cigüeña blanca  2015-2019|1340|0.8684|
-| 21| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.7474390000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 22| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.7901560000000001|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
+| 21| 287069|22-01-2021|11-01-2021|France|SAINT-AUBIN|43.717476|-0.747439|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 22| 287053|22-01-2021|11-01-2021|France|CASTEL-SARRAZIN|43.604557|-0.790156|Domestic|Ciconia ciconia|250|45|Cigüeña blanca  2015-2019|1340|0.8684|
 | 23| 287050|22-01-2021|10-01-2021|France|CASSEN|43.764399|-0.855339|Domestic|Ciconia ciconia|3000|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 24| 287049|22-01-2021|10-01-2021|France|LOURQUEN|43.732057|-0.7868|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-| 25| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.7823720000000001|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
+| 25| 287047|22-01-2021|10-01-2021|France|LOURQUEN|43.729216|-0.782372|Domestic|Ciconia ciconia|31|31|Cigüeña blanca  2015-2019|1340|0.8684|
 | 26| 287041|22-01-2021|10-01-2021|France|GOOS|43.7294|-0.9|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 27| 287037|22-01-2021|09-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|480|480|Cigüeña blanca  2015-2019|1340|0.8684|
-| 28| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752000000004|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
-| 29| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565000000004|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 30| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.763020000000004|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
-| 31| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.8599969999999999|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
-| 32| 287025|22-01-2021|09-01-2021|France|TILH|43.594677000000004|-0.8366020000000001|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
-| 33| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545000000004|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
+| 28| 287034|22-01-2021|09-01-2021|France|BASTENNES|43.650752|-0.78442|Domestic|Ciconia ciconia|150|150|Cigüeña blanca  2015-2019|1340|0.8684|
+| 29| 287031|22-01-2021|09-01-2021|France|CAUPENNE|43.688565|-0.750184|Domestic|Ciconia ciconia|10|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 30| 287028|22-01-2021|09-01-2021|France|SOUPROSSE|43.76302|-0.726735|Domestic|Ciconia ciconia|300|300|Cigüeña blanca  2015-2019|1340|0.8684|
+| 31| 287027|22-01-2021|09-01-2021|France|GAMARDE-LES-BAINS|43.726788|-0.859997|Domestic|Ciconia ciconia|315||Cigüeña blanca  2015-2019|1340|0.8684|
+| 32| 287025|22-01-2021|09-01-2021|France|TILH|43.594677|-0.836602|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
+| 33| 287023|22-01-2021|08-01-2021|France|DONZACQ|43.661545|-0.791712|Domestic|Ciconia ciconia|724||Cigüeña blanca  2015-2019|1340|0.8684|
 | 34| 287021|22-01-2021|08-01-2021|France|CLERMONT|43.652143|-0.924193|Domestic|Ciconia ciconia|820||Cigüeña blanca  2015-2019|1340|0.8684|
 | 35| 287020|22-01-2021|08-01-2021|France|BASTENNES|43.646937|-0.773884|Domestic|Ciconia ciconia|660||Cigüeña blanca  2015-2019|1340|0.8684|
 | 36| 287018|22-01-2021|08-01-2021|France|CASTELNAU-CHALOSSE|43.6738|-0.841241|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
 | 37| 287013|22-01-2021|08-01-2021|France|MUGRON|43.75|-0.75|Domestic|Ciconia ciconia|40|15|Cigüeña blanca  2015-2019|1340|0.8684|
-| 38| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008000000004|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
-| 39| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371000000005|-0.8200559999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 38| 287010|22-01-2021|07-01-2021|France|SAINT-AUBIN|43.709008|-0.714133|Domestic|Ciconia ciconia|357||Cigüeña blanca  2015-2019|1340|0.8684|
+| 39| 287006|22-01-2021|06-01-2021|France|POYARTIN|43.672371|-0.820056|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 40| 287005|22-01-2021|05-01-2021|France|POYARTIN|43.67852|-0.851458|Domestic|Ciconia ciconia|500|120|Cigüeña blanca  2015-2019|1340|0.8684|
 | 41| 286999|22-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 42| 286997|22-01-2021|30-12-2020|France|MAYLIS|43.689096|-0.718388|Domestic|Ciconia ciconia|13650||Cigüeña blanca  2015-2019|1340|0.8684|
 | 43| 286723|15-01-2021|07-01-2021|France|CANDRESSE|43.7122|-0.983333|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 44| 286722|15-01-2021|07-01-2021|France|CASSEN|43.7614|-0.866667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 45| 286716|15-01-2021|06-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|1000|1000|Cigüeña blanca  2015-2019|1340|0.8684|
-| 46| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.8739979999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 46| 286712|15-01-2021|06-01-2021|France|POMAREZ|43.633501|-0.873998|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 47| 286710|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 48| 286709|15-01-2021|06-01-2021|France|GAUJACQ|43.6414|-0.733333|Domestic|Ciconia ciconia|60|5|Cigüeña blanca  2015-2019|1340|0.8684|
 | 49| 286708|15-01-2021|06-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 50| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.8709790000000001|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
-| 51| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.7217359999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 50| 286701|15-01-2021|05-01-2021|France|GAMARDE-LES-BAINS|43.7317|-0.870979|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
+| 51| 286700|15-01-2021|05-01-2021|France|NERBIS|43.749091|-0.721736|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 52| 286699|15-01-2021|05-01-2021|France|CAUPENNE|43.6836|-0.75|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 53| 286695|15-01-2021|05-01-2021|France|GIBRET|43.6872|-0.816667|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 54| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 54| 286692|15-01-2021|05-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 55| 286690|15-01-2021|05-01-2021|France|MUGRON|43.739857|-0.738689|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 56| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 56| 286682|15-01-2021|04-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 57| 286681|15-01-2021|04-01-2021|France|MUGRON|43.743742|-0.76132|Domestic|Ciconia ciconia|1000|550|Cigüeña blanca  2015-2019|1340|0.8684|
 | 58| 286680|15-01-2021|04-01-2021|France|LOURQUEN|43.728386|-0.77627|Domestic|Ciconia ciconia|48|48|Cigüeña blanca  2015-2019|1340|0.8684|
 | 59| 286674|15-01-2021|03-01-2021|France|POUILLON|43.6044|-1.0|Domestic|Ciconia ciconia|35|35|Cigüeña blanca  2015-2019|1340|0.8684|
 | 60| 286673|15-01-2021|03-01-2021|France|MIMBASTE|43.644655|-0.938263|Domestic|Ciconia ciconia|183|44|Cigüeña blanca  2015-2019|1340|0.8684|
-| 61| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.8390850000000001|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
+| 61| 286672|15-01-2021|03-01-2021|France|MONTFORT-EN-CHALOSSE|43.720011|-0.839085|Domestic|Ciconia ciconia|90|60|Cigüeña blanca  2015-2019|1340|0.8684|
 | 62| 286671|15-01-2021|02-01-2021|France|LAHOSSE|43.7128|-0.8|Domestic|Ciconia ciconia|1190|30|Cigüeña blanca  2015-2019|1340|0.8684|
 | 63| 286669|15-01-2021|29-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|50|10|Cigüeña blanca  2015-2019|1340|0.8684|
 | 64| 286667|15-01-2021|28-12-2020|France|BAIGTS|43.681162|-0.784628|Domestic|Ciconia ciconia|30|20|Cigüeña blanca  2015-2019|1340|0.8684|
-| 65| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.9303889999999999|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 65| 286666|15-01-2021|26-12-2020|France|SORT-EN-CHALOSSE|43.682941|-0.930389|Domestic|Ciconia ciconia|50|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 66| 286244|08-01-2021|05-01-2021|France|GOOS|43.731799|-0.926658|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 67| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653847999999996|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 67| 286230|08-01-2021|04-01-2021|France|BASTENNES|43.653848|-0.767243|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 68| 286229|08-01-2021|04-01-2021|France|SORT-EN-CHALOSSE|43.675549|-0.938384|Domestic|Ciconia ciconia|4400|200|Cigüeña blanca  2015-2019|1340|0.8684|
 | 69| 286226|08-01-2021|03-01-2021|France|GOUSSE|43.76696|-0.906012|Domestic|Ciconia ciconia|160|60|Cigüeña blanca  2015-2019|1340|0.8684|
-| 70| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.9541299999999999|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
+| 70| 286223|08-01-2021|02-01-2021|France|SORT-EN-CHALOSSE|43.687843|-0.95413|Domestic|Ciconia ciconia|90|14|Cigüeña blanca  2015-2019|1340|0.8684|
 | 71| 286220|08-01-2021|02-01-2021|France|BAIGTS|43.688184|-0.791566|Domestic|Ciconia ciconia|100|100|Cigüeña blanca  2015-2019|1340|0.8684|
 | 72| 286218|08-01-2021|02-01-2021|France|CAUPENNE|43.687675|-0.76955|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 73| 286216|08-01-2021|01-01-2021|France|CAUPENNE|43.675225|-0.761339|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 74| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.8614360000000001|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 75| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.7315010000000001|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
+| 74| 286215|08-01-2021|01-01-2021|France|GAMARDE-LES-BAINS|43.716362|-0.861436|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
+| 75| 286212|08-01-2021|01-01-2021|France|MUGRON|43.73388|-0.731501|Domestic|Ciconia ciconia|82|82|Cigüeña blanca  2015-2019|1340|0.8684|
 | 76| 286210|08-01-2021|31-12-2020|France|BASTENNES|43.64532|-0.779922|Domestic|Ciconia ciconia|12000||Cigüeña blanca  2015-2019|1340|0.8684|
-| 77| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219000000004|-0.7307319999999999|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
+| 77| 286208|08-01-2021|31-12-2020|France|GAUJACQ|43.624219|-0.730732|Domestic|Ciconia ciconia|110||Cigüeña blanca  2015-2019|1340|0.8684|
 | 78| 286206|08-01-2021|31-12-2020|France|NOUSSE|43.721182|-0.827708|Domestic|Ciconia ciconia|50|20|Cigüeña blanca  2015-2019|1340|0.8684|
 | 79| 286205|08-01-2021|31-12-2020|France|DONZACQ|43.674287|-0.823249|Domestic|Ciconia ciconia|6|6|Cigüeña blanca  2015-2019|1340|0.8684|
 | 80| 286203|08-01-2021|31-12-2020|France|SORT-EN-CHALOSSE|43.679863|-0.943943|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 81| 286202|08-01-2021|31-12-2020|France|GARREY|43.668155|-0.888986|Domestic|Ciconia ciconia|50|50|Cigüeña blanca  2015-2019|1340|0.8684|
 | 82| 286201|08-01-2021|31-12-2020|France|DONZACQ|43.663381|-0.808028|Domestic|Ciconia ciconia|250|250|Cigüeña blanca  2015-2019|1340|0.8684|
 | 83| 286200|08-01-2021|31-12-2020|France|CLERMONT|43.668019|-0.905041|Domestic|Ciconia ciconia|16|16|Cigüeña blanca  2015-2019|1340|0.8684|
-| 84| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.9167200000000001|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
-| 85| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153000000006|-0.8979790000000001|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
+| 84| 286198|08-01-2021|30-12-2020|France|SORT-EN-CHALOSSE|43.683926|-0.91672|Domestic|Ciconia ciconia|36|36|Cigüeña blanca  2015-2019|1340|0.8684|
+| 85| 286197|08-01-2021|30-12-2020|France|CLERMONT|43.655153|-0.897979|Domestic|Ciconia ciconia|900|900|Cigüeña blanca  2015-2019|1340|0.8684|
 | 86| 286195|08-01-2021|29-12-2020|France|HINX|43.708787|-0.90943|Domestic|Ciconia ciconia|12|12|Cigüeña blanca  2015-2019|1340|0.8684|
-| 87| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.7819619999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 87| 286100|06-01-2021|31-12-2020|France|BASTENNES|43.645086|-0.781962|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 88| 286098|06-01-2021|30-12-2020|France|GAUJACQ|43.659571|-0.746444|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 89| 286097|06-01-2021|30-12-2020|France|MAYLIS|43.697345|-0.714427|Domestic|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 90| 286095|06-01-2021|29-12-2020|France|MAYLIS|43.692207|-0.710987|Domestic|Ciconia ciconia|41|41|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -5643,24 +2499,24 @@
 | 99| 286005|06-01-2021|30-12-2020|France|GAUJACQ|43.640723|-0.750397|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 100| 285738|31-12-2020|28-12-2020|France|BERGOUEY|43.6714|-0.729491|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 101| 285735|31-12-2020|27-12-2020|France|POUILLON|43.59847|-0.974815|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 102| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.7173350000000001|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 102| 285734|31-12-2020|27-12-2020|France|BERGOUEY|43.671684|-0.717335|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 103| 285733|31-12-2020|26-12-2020|France|GAUJACQ|43.633694|-0.760936|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 104| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.9625370000000001|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
-| 105| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.8037479999999999|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
-| 106| 285729|31-12-2020|25-12-2020|France|HINX|43.705189000000004|-0.9452440000000001|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 104| 285731|31-12-2020|26-12-2020|France|HINX|43.708135|-0.962537|Domestic|Ciconia ciconia|4300|10|Cigüeña blanca  2015-2019|1340|0.8684|
+| 105| 285730|31-12-2020|25-12-2020|France|BAIGTS|43.675537|-0.803748|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
+| 106| 285729|31-12-2020|25-12-2020|France|HINX|43.705189|-0.945244|Domestic|Ciconia ciconia|100||Cigüeña blanca  2015-2019|1340|0.8684|
 | 107| 285728|31-12-2020|25-12-2020|France|BERGOUEY|43.671877|-0.728491|Domestic|Ciconia ciconia|10||Cigüeña blanca  2015-2019|1340|0.8684|
 | 108| 285727|31-12-2020|25-12-2020|France|SORT-EN-CHALOSSE|43.690468|-0.9102|Domestic|Ciconia ciconia|40|3|Cigüeña blanca  2015-2019|1340|0.8684|
 | 109| 285726|31-12-2020|25-12-2020|France|MYALIS|43.692931|-0.706043|Domestic|Ciconia ciconia|30|3|Cigüeña blanca  2015-2019|1340|0.8684|
-| 110| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.9179649999999999|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 111| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688753999999996|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 110| 285725|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.692043|-0.917965|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 111| 285724|31-12-2020|23-12-2020|France|SORT-EN-CHALOSSE|43.688754|-0.921726|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 112| 285723|31-12-2020|22-12-2020|France|BERGOUEY|43.67|-0.731061|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
-| 113| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334000000004|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 114| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628000000005|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
+| 113| 285717|30-12-2020|17-12-2020|France|Saint Geours de Maremne|43.682334|-1.206545|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
+| 114| 285355|22-12-2020|20-12-2020|France|BERGOUEY|43.665628|-0.726298|Domestic|Ciconia ciconia|1200|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 115| 285354|22-12-2020|19-12-2020|France|SORT en CHALOSSE|43.692886|-0.917952|Domestic|Ciconia ciconia|612|5|Cigüeña blanca  2015-2019|1340|0.8684|
 | 116| 285353|22-12-2020|14-12-2020|France|BENESSE-MAREMNE|43.628171|-1.385189|Domestic|Ciconia ciconia||1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 117| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669748999999996|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
+| 117| 285194|18-12-2020|14-12-2020|France|SAINT GEOURS DE MAREMNE|43.669749|-1.233152|Domestic|Ciconia ciconia|50|25|Cigüeña blanca  2015-2019|1340|0.8684|
 | 118| 284416|14-12-2020|11-12-2020|France|ANGRESSE|43.6608|-1.34066|Domestic|Ciconia ciconia|147||Cigüeña blanca  2015-2019|1340|0.8684|
-| 119| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334000000004|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
+| 119| 284269|10-12-2020|07-12-2020|France|SAINT GEOURS DE MAREMNE|43.682334|-1.206545|Domestic|Ciconia ciconia|||Cigüeña blanca  2015-2019|1340|0.8684|
 | 120| 288815|12-02-2021|08-02-2021|Germany|Treuchtlingen|48.98|10.89|Domestic|Ciconia ciconia|3|3|Cigüeña blanca  2015-2019|1340|0.8684|
 | 121| 287590|28-01-2021|11-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 122| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
@@ -5674,7 +2530,6 @@
 
 
 ### Alerta 49 
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 - *Id comarca*: SP08298
 - *Localización comarca*: OSONA (VIC)
 
@@ -5685,61 +2540,10 @@
 | 2| 287589|28-01-2021|07-01-2021|Germany|Konstanz|47.74|8.96|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 3| 287195|22-01-2021|13-01-2021|Germany|Kyffhäuserkreis|51.38|10.84|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 4| 286247|08-01-2021|05-01-2021|Germany|Bleicherode|51.45|10.64|Domestic|Ciconia ciconia|49|49|Cigüeña blanca  2015-2019|1340|0.8684|
-<<<<<<< HEAD
-| 5| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
+| 5| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
 | 6| 285247|22-12-2020|10-12-2020|Germany|Pinneberg|53.7|9.71|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 7| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963143|Wild|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
 | 8| 285775|04-01-2021|02-01-2021|Sweden|Blentarp|55.573773|13.627695|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
-
-
-### Alerta 57 
-- *Id comarca*: SP09018
-- *Localización comarca*: ARANDA DE DUERO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288281|05-02-2021|15-01-2021|Germany|Rendsburg-Eckernförde|54.38|9.72|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 1| 287122|22-01-2021|08-01-2021|Germany|Pinneberg|54.470038|9.51416|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.7878|
-| 2| 287121|22-01-2021|08-01-2021|Germany|Steinburg|54.470038|9.51416|Wild|Phalacrocorax carbo|9|9|Cormorán grande  2015-2019|720|0.7878|
-| 3| 287120|22-01-2021|17-12-2020|Germany|Ostholstein|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 4| 287119|22-01-2021|15-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 5| 286820|20-01-2021|06-01-2021|Germany|Nordfriesland|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 6| 286819|20-01-2021|05-01-2021|Germany|Dithmarschen|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 7| 286748|15-01-2021|07-01-2021|Germany|Rendsburg-Eckernförde|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 8| 286747|15-01-2021|30-12-2020|Germany|Segeberg|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 9| 286746|15-01-2021|22-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 10| 286745|15-01-2021|22-12-2020|Germany|Pinneberg|54.470038|9.51416|Wild|Phalacrocorax carbo|2|1|Cormorán grande  2015-2019|720|0.7878|
-| 11| 286744|15-01-2021|16-12-2020|Germany|Steinburg|54.470038|9.51416|Wild|Phalacrocorax carbo|14|14|Cormorán grande  2015-2019|720|0.7878|
-
-
-### Alerta 58 
-- *Id comarca*: SP42162
-- *Localización comarca*: SAN ESTEBAN DE GORMAZ
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 288281|05-02-2021|15-01-2021|Germany|Rendsburg-Eckernförde|54.38|9.72|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 1| 287122|22-01-2021|08-01-2021|Germany|Pinneberg|54.470038|9.51416|Wild|Phalacrocorax carbo|3|3|Cormorán grande  2015-2019|720|0.7878|
-| 2| 287121|22-01-2021|08-01-2021|Germany|Steinburg|54.470038|9.51416|Wild|Phalacrocorax carbo|9|9|Cormorán grande  2015-2019|720|0.7878|
-| 3| 287120|22-01-2021|17-12-2020|Germany|Ostholstein|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 4| 287119|22-01-2021|15-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 5| 286820|20-01-2021|06-01-2021|Germany|Nordfriesland|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 6| 286819|20-01-2021|05-01-2021|Germany|Dithmarschen|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 7| 286748|15-01-2021|07-01-2021|Germany|Rendsburg-Eckernförde|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 8| 286747|15-01-2021|30-12-2020|Germany|Segeberg|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 9| 286746|15-01-2021|22-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Phalacrocorax carbo|1|1|Cormorán grande  2015-2019|720|0.7878|
-| 10| 286745|15-01-2021|22-12-2020|Germany|Pinneberg|54.470038|9.51416|Wild|Phalacrocorax carbo|2|1|Cormorán grande  2015-2019|720|0.7878|
-| 11| 286744|15-01-2021|16-12-2020|Germany|Steinburg|54.470038|9.51416|Wild|Phalacrocorax carbo|14|14|Cormorán grande  2015-2019|720|0.7878|
-
-
-### Alerta 59 
-- *Id comarca*: SP42164
-- *Localización comarca*: SAN LEONARDO DE YAGÜE
-=======
-| 5| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 6| 285247|22-12-2020|10-12-2020|Germany|Pinneberg|53.7|9.71|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 284876|21-12-2020|17-12-2020|Germany|Schleswig-Holstein|54.209858|9.963142999999999|Wild|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
-| 8| 285775|04-01-2021|02-01-2021|Sweden|Blentarp|55.573772999999996|13.627695000000001|Domestic|Ciconia ciconia|200|200|Cigüeña blanca  2015-2019|1340|0.8684|
 
 
 ### Alerta 50 
@@ -5755,13 +2559,12 @@
 | 4| 286788|18-01-2021|14-01-2021|Germany|Ludwigslust-Parchim|53.56|10.98|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 5| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 6| 285248|22-12-2020|16-12-2020|Germany|Schleswig-Flensburg|54.33|9.34|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.8684|
-| 7| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451792999999999|Domestic|Ciconia ciconia|4|4|Cigüeña blanca  2015-2019|1340|0.8684|
+| 7| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Ciconia ciconia|4|4|Cigüeña blanca  2015-2019|1340|0.8684|
 
 
 ### Alerta 51 
 - *Id comarca*: SP09018
 - *Localización comarca*: ARANDA DE DUERO
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
@@ -5779,11 +2582,7 @@
 | 11| 286744|15-01-2021|16-12-2020|Germany|Steinburg|54.470038|9.51416|Wild|Phalacrocorax carbo|14|14|Cormorán grande  2015-2019|720|0.7878|
 
 
-<<<<<<< HEAD
-### Alerta 60 
-=======
 ### Alerta 52 
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087
 - *Id comarca*: SP24139
 - *Localización comarca*: SAHAGUN
 
@@ -5801,8 +2600,6 @@
 | 9| 286746|15-01-2021|22-12-2020|Germany|Dithmarschen|54.470038|9.51416|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.727|
 | 10| 286745|15-01-2021|22-12-2020|Germany|Pinneberg|54.470038|9.51416|Wild|Ardea cinerea|2|1|Garza real  2015-2019|1220|0.727|
 | 11| 286744|15-01-2021|16-12-2020|Germany|Steinburg|54.470038|9.51416|Wild|Ardea cinerea|14|14|Garza real  2015-2019|1220|0.727|
-<<<<<<< HEAD
-=======
 
 
 ### Alerta 53 
@@ -5828,4 +2625,3 @@
 | 3| 285542|28-12-2020|24-12-2020|Germany|Donaueschingen|47.92|8.58|Wild|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.8684|
 | 4| 292102|19-03-2021|03-03-2021|Czech Republic|Bose|50.5|15.02|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.8684|
 | 5| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Ciconia ciconia|5|5|Cigüeña blanca  2015-2019|1340|0.8684|
->>>>>>> 50035e2fb3edb50bb0b0a2c6d8896e3ab521b087

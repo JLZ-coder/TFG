@@ -36,7 +36,7 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 281385|02-11-2020|30-10-2020|England|DEAL|51.23|1.35|Domestic|Calidris alpina|6|2|Correlimos común  2015-2019|5120|0.6239|
-| 1| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798235999999996|11.631226|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.2829|
+| 1| 281662|06-11-2020|30-10-2020|Denmark|Sakskøbing|54.798236|11.631226|Wild|Tringa totanus|1||Archibebe común  2015-2019|5460|0.2829|
 | 2| 282423|13-11-2020|31-10-2020|Netherlands|Schiermonnikoog|53.4901|6.2023|Wild|Calidris alpina|1|1|Correlimos común  2015-2019|5120|0.6239|
 | 3| 281636|07-11-2020|01-11-2020|Netherlands|Holwerd|53.02|5.8|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.2303|
 | 4| 281635|07-11-2020|30-10-2020|Netherlands|Cornwerd|53.03|5.66|Wild|Ciconia ciconia|1|1|Cigüeña blanca  2015-2019|1340|0.2303|
