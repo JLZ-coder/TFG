@@ -121,8 +121,8 @@ class ReportBuilder(Builder):
 
                 filasBrotes += ("| "  + str(nBrote)  + "| " + str(brote)
                 + "|" + broteMongo['report_date'].strftime('%d-%m-%Y')  + "|" + broteMongo['observation_date'].strftime('%d-%m-%Y') + "|" + broteMongo['country']  + "|" + broteMongo['city'] 
-                + "|" + str(broteMongo['lat']) + "|" + str(broteMongo['long']) + "|" +broteMongo['epiunit']  + "|" + especie['cientifico']  + "|" + str(broteMongo['cases'])
-                + "|" + str(broteMongo['deaths'])  + "|" +especie['especie']  + "|" + str(especie["codigoE"]) + "|" + str(round(especie["probEspecie"],4)) + "|\n" )
+                + "|" + str(broteMongo['lat']) + "|" + str(broteMongo['long']) + "|" +broteMongo['epiunit']  + "|" + broteMongo["species"]  + "|" + str(broteMongo['cases'])
+                + "|" + str(broteMongo['deaths'])  + "|" +especie['cientifico']  + "|" + str(especie["codigoE"]) + "|" + str(round(especie["probEspecie"],4)) + "|\n" )
                 
                 filasBrotesCsv.append({
                     "ID": nBrote,"Nº Alerta": nAlerta,"Comarca": comarca['com_sgsa_n'],"ID CG": alerta['comarca_sg'], 
@@ -134,8 +134,8 @@ class ReportBuilder(Builder):
                     "Country": broteMongo['country'], "Location": broteMongo['city'], 
                     "Latitud": broteMongo['lat'], "Longitud": broteMongo['long'],
                     "Ponderacion brote": especie['probType'], "Riesgo brote": especie['riesgoBrote'],
-                    "An. Type": broteMongo['epiunit'],"Species": especie['cientifico'], "Cases": broteMongo['cases'], 
-                    "Deaths": broteMongo['deaths'],"Especie movimiento": especie['especie'], 
+                    "An. Type": broteMongo['epiunit'],"Species": broteMongo["species"], "Cases": broteMongo['cases'], 
+                    "Deaths": broteMongo['deaths'],"Especie movimiento": especie['cientifico'], 
                     "Cód.  Especie": especie["codigoE"], "Prob mov semanal":round(especie["probEspecie"],4)
                 })
                 nBrote+=1
@@ -166,9 +166,9 @@ class ReportBuilder(Builder):
         f.write(textoFinal)
         f.close()
 
-        #informePdfPath = self.reportPDF(informePath)
-        #informePdfName = informePdfPath.split("/")[-1]
-        #self.file_to_drive(informePdfPath, informePdfName, "alertas")
+        informePdfPath = self.reportPDF(informePath)
+        informePdfName = informePdfPath.split("/")[-1]
+        self.file_to_drive(informePdfPath, informePdfName, "alertas")
 
         return textoFinal
 

@@ -102,7 +102,7 @@ class ModelV1():
                 else:
                     probType = self.wild
 
-                contrBrote = (probMigra/100)*probType
+                contrBrote = probMigra * probType
                 nAlerta += contrBrote
                 broteEspecie[brote["oieid"]] = {"cientifico" : data['matrizEspecies']['Nombre científico'][brote["especie"]] ,
                 "especie": data['matrizEspecies']['Especie'][brote["especie"]], "codigoE": brote["especie"], 
@@ -129,17 +129,17 @@ class ModelV1():
                     temperaturaM = 66
 
                 riesgo = int(nAlerta * temperaturaM)
+                valor_riesgo = nAlerta * temperaturaM
             except:
                 data['tMin'][comarca] = "No data"
                 riesgo = int(nAlerta)
+                valor_riesgo = nAlerta
                 print("No hay temperatura en la semana {} para la comarca {}".format(semana, comarca))
-
-            if riesgo > 5:
-                riesgo = 5
 
             alertas["alertas"].append({
                 "comarca_sg" : comarca, 
-                "risk" : riesgo, 
+                "risk" : riesgo,
+                "valorRiesgo" : valor_riesgo, 
                 "temperatura": data['tMin'][comarca],  
                 "super": temperaturaM, 
                 "brotes": broteEspecie.copy(),

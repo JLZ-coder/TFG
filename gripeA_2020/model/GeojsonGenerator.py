@@ -28,9 +28,14 @@ class GeojsonGenerator:
             #Ruta informe
             uploader = gDriveUploader()
             ruta = uploader.get_url_from("InformeSemanal_{}.pdf".format(start.strftime("%d-%m-%Y")))
+
             if len(ruta) == 0:
                 ruta.append("No hay url")
+            
             for it in alertas["alertas"]:
+                if it['risk'] > 5:
+                    it['risk'] = 5
+
                 if it['risk'] != 0:
                     comarcas_de_alertlist.add(it['comarca_sg'])
                     cod_comarca = it['comarca_sg']
