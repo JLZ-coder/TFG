@@ -4,26 +4,40 @@
  - *Periodo de*: 19-10-2020 a 26-10-2020
 
 ## Sumario del informe 
- - *Número de comarcas ganaderas en alerta*: 14
- - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 58
+ - *Número de comarcas ganaderas en alerta*: 28
+ - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 28
 
 ## Tabla de alertas 
 | Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |
 |:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|1|19-10-2020|BAIX EBRE (TORTOSA)|SP43155|5|27|1|11.23|11.0276|
-|2|19-10-2020|CARTAYA (COSTA OCCIDENTAL)|SP21021|4|45|1|12.4|10.2516|
-|3|19-10-2020|UTRERA (BAJO GUADALQUIVIR)|SP41095|5|74|4|9.16|12.6223|
-|4|19-10-2020|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|5|55|2|10.8|11.3319|
-|5|19-10-2020|CAMPIÑA|SP11020|5|87|3|6.27|15.5824|
-|6|19-10-2020|MADRID (C.U.)|SP28079|5|48|2|4.54|18.104|
-|7|19-10-2020|LITORAL|SP11016|5|30|1|14.96|8.7854|
-|8|19-10-2020|RIBERA BAIXA|SP46105|4|15|1|10.72|11.3901|
-|9|19-10-2020|MERIDA|SP06083|3|11|1|4.8|17.6734|
-|10|19-10-2020|SALAMANCA|SP37274|4|5|2|-0.26|66|
-|11|19-10-2020|URIBE KOSTA-BILBAO|SP48020|4|19|1|7.8|13.8768|
-|12|19-10-2020|CAMPO DE GIBRALTAR|SP11004|3|37|1|14.61|8.9668|
-|13|19-10-2020|MONTALBÁN|SP44155|4|7|1|1.19|28.6079|
-|14|19-10-2020|CUENCA|SP16078|2|4|1|-0.45|66|
+|1|19-10-2020|BAIX EBRE (TORTOSA)|SP43155|1|4|6|11.23|11.0276|
+|2|19-10-2020|CARTAYA (COSTA OCCIDENTAL)|SP21021|1|1|1|12.4|10.2516|
+|3|19-10-2020|GAMA (BARCENA DE CICERO)|SP39009|1|1|1|10.34|11.6702|
+|4|19-10-2020|MANZANARES|SP13053|1|1|3|4.79|17.6967|
+|5|19-10-2020|ARABA-ALAVA|SP01059|1|1|3|4.34|18.4561|
+|6|19-10-2020|UTRERA (BAJO GUADALQUIVIR)|SP41095|1|9|14|9.16|12.6223|
+|7|19-10-2020|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|1|2|3|10.8|11.3319|
+|8|19-10-2020|TALAVERA DE LA REINA|SP45165|1|9|10|4.91|17.4894|
+|9|19-10-2020|CAMPIÑA|SP11020|1|2|2|6.27|15.5824|
+|10|19-10-2020|COLMENAR VIEJO|SP28045|1|3|3|6.31|15.5292|
+|11|19-10-2020|ARGANDA DEL REY|SP28014|1|3|3|3.77|19.5593|
+|12|19-10-2020|SEGRIA (LLEIDA)|SP25120|1|1|1|2.67|22.256|
+|13|19-10-2020|CALZADA DE CALATRAVA|SP13027|1|2|2|5.77|16.2322|
+|14|19-10-2020|ARANJUEZ|SP28013|1|1|1|2.4|23.0938|
+|15|19-10-2020|DON BENITO|SP06044|1|2|4|8.28|13.4066|
+|16|19-10-2020|MONTSIA (AMPOSTA)|SP43014|1|2|2|11.23|11.0276|
+|17|19-10-2020|MADRID (C.U.)|SP28079|1|2|6|4.54|18.104|
+|18|19-10-2020|CAMP D'ELX|SP03065|1|2|4|11.17|11.0675|
+|19|19-10-2020|HINOJOSA DEL DUQUE (PEDROCHES II )|SP14035|1|1|2|6.11|15.7809|
+|20|19-10-2020|CASTUERA|SP06036|1|2|4|8.28|13.4066|
+|21|19-10-2020|LA JANDA|SP11023|1|2|1|13.88|9.368|
+|22|19-10-2020|ÁGREDA|SP42004|1|1|1|2.39|23.1405|
+|23|19-10-2020|INCA|SP07027|1|1|2|6.9|14.8355|
+|24|19-10-2020|LITORAL|SP11016|1|1|1|14.96|8.7854|
+|25|19-10-2020|QUINTANAR DE LA ORDEN|SP45142|1|2|5|4.36|18.4304|
+|26|19-10-2020|PONFERRADA|SP24115|1|1|2|4.83|17.627|
+|27|19-10-2020|CARMONA (LOS ARCORES)|SP41024|1|1|1|10.8|11.3319|
+|28|19-10-2020|L'HORTA SUD-CATARROJA|SP46094|1|1|1|12.56|10.1531|
 
 
 ## Tablas de brotes de IAAP en Europa y su conexión a España a través de  movimientos de aves silvestres
@@ -33,12 +47,8 @@
 - *Localización comarca*: BAIX EBRE (TORTOSA)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.5701|
-| 1| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5156|
-| 2| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.5701|
-| 3| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Larus ridibundus|4||Gaviota reidora  2015-2019|5820|0.5701|
-| 4| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.5701|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Larus ridibundus|5820|0.5701|
 
 
 ### Alerta 2 
@@ -46,153 +56,239 @@
 - *Localización comarca*: CARTAYA (COSTA OCCIDENTAL)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5156|
-| 1| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Numenius arquata|1|1|Zarapito real  2015-2019|5410|0.3592|
-| 2| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Limosa limosa|1||Aguja colinegra  2015-2019|5320|0.5211|
-| 3| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Tringa totanus|4||Archibebe común  2015-2019|5460|0.3295|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Vanellus vanellus|4930|0.5156|
 
 
 ### Alerta 3 
+- *Id comarca*: SP39009
+- *Localización comarca*: GAMA (BARCENA DE CICERO)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Anas crecca|1840|0.5708|
+
+
+### Alerta 4 
+- *Id comarca*: SP13053
+- *Localización comarca*: MANZANARES
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Anas crecca|1840|0.5708|
+
+
+### Alerta 5 
+- *Id comarca*: SP01059
+- *Localización comarca*: ARABA-ALAVA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Anas clypeata|1940|0.6166|
+
+
+### Alerta 6 
 - *Id comarca*: SP41095
 - *Localización comarca*: UTRERA (BAJO GUADALQUIVIR)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Philomachus pugnax|1||Combatiente  2015-2019|5170|0.4867|
-| 1| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5211|
-| 2| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Limosa limosa|1||Aguja colinegra  2015-2019|5320|0.5211|
-| 3| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Anas acuta|4||Ánade rabudo  2015-2019|1890|0.668|
-| 4| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.5701|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Philomachus pugnax|5170|0.4867|
 
 
-### Alerta 4 
+### Alerta 7 
 - *Id comarca*: SP41087
 - *Localización comarca*: SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Limosa limosa|1||Aguja colinegra  2015-2019|5320|0.5211|
-| 1| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.7416|
-| 2| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Vanellus vanellus|1||Avefría europea  2015-2019|4930|0.5156|
-| 3| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Recurvirostra avosetta|4||Avoceta común  2015-2019|4560|0.2863|
-| 4| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.5701|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Limosa limosa|5320|0.5211|
 
 
-### Alerta 5 
+### Alerta 8 
+- *Id comarca*: SP45165
+- *Localización comarca*: TALAVERA DE LA REINA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 9 
 - *Id comarca*: SP11020
 - *Localización comarca*: CAMPIÑA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Ciconia ciconia|1||Cigüeña blanca  2015-2019|1340|0.2234|
-| 1| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5156|
-| 2| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.5701|
-| 3| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Pluvialis apricaria|4||Chorlito dorado europeo  2015-2019|4850|0.2396|
-| 4| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.2234|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
 
 
-### Alerta 6 
+### Alerta 10 
+- *Id comarca*: SP28045
+- *Localización comarca*: COLMENAR VIEJO
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 11 
+- *Id comarca*: SP28014
+- *Localización comarca*: ARGANDA DEL REY
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 12 
+- *Id comarca*: SP25120
+- *Localización comarca*: SEGRIA (LLEIDA)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 13 
+- *Id comarca*: SP13027
+- *Localización comarca*: CALZADA DE CALATRAVA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 14 
+- *Id comarca*: SP28013
+- *Localización comarca*: ARANJUEZ
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 15 
+- *Id comarca*: SP06044
+- *Localización comarca*: DON BENITO
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Vanellus vanellus|4930|0.5156|
+
+
+### Alerta 16 
+- *Id comarca*: SP43014
+- *Localización comarca*: MONTSIA (AMPOSTA)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Vanellus vanellus|4930|0.5156|
+
+
+### Alerta 17 
 - *Id comarca*: SP28079
 - *Localización comarca*: MADRID (C.U.)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.5701|
-| 1| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.5701|
-| 2| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.5701|
-| 3| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Larus ridibundus|4||Gaviota reidora  2015-2019|5820|0.5701|
-| 4| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.2234|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Larus ridibundus|5820|0.5701|
 
 
-### Alerta 7 
+### Alerta 18 
+- *Id comarca*: SP03065
+- *Localización comarca*: CAMP D'ELX
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Tringa ochropus|5530|0.6972|
+
+
+### Alerta 19 
+- *Id comarca*: SP14035
+- *Localización comarca*: HINOJOSA DEL DUQUE (PEDROCHES II )
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Vanellus vanellus|4930|0.5156|
+
+
+### Alerta 20 
+- *Id comarca*: SP06036
+- *Localización comarca*: CASTUERA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Vanellus vanellus|4930|0.5156|
+
+
+### Alerta 21 
+- *Id comarca*: SP11023
+- *Localización comarca*: LA JANDA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 22 
+- *Id comarca*: SP42004
+- *Localización comarca*: ÁGREDA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Ciconia ciconia|1340|0.2234|
+
+
+### Alerta 23 
+- *Id comarca*: SP07027
+- *Localización comarca*: INCA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Philomachus pugnax|5170|0.4867|
+
+
+### Alerta 24 
 - *Id comarca*: SP11016
 - *Localización comarca*: LITORAL
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Limosa limosa|1||Aguja colinegra  2015-2019|5320|0.5211|
-| 1| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5211|
-| 2| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Limosa limosa|1||Aguja colinegra  2015-2019|5320|0.5211|
-| 3| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Larus fuscus|4||Gaviota sombría  2015-2019|5910|0.4988|
-| 4| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Limosa limosa|2|2|Aguja colinegra  2015-2019|5320|0.5211|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Limosa limosa|5320|0.5211|
 
 
-### Alerta 8 
-- *Id comarca*: SP46105
-- *Localización comarca*: RIBERA BAIXA
+### Alerta 25 
+- *Id comarca*: SP45142
+- *Localización comarca*: QUINTANAR DE LA ORDEN
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Larus ridibundus|1|1|Gaviota reidora  2015-2019|5820|0.5701|
-| 1| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Larus ridibundus|1||Gaviota reidora  2015-2019|5820|0.5701|
-| 2| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Ardea cinerea|4||Garza real  2015-2019|1220|0.7416|
-| 3| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.5701|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Philomachus pugnax|5170|0.4867|
 
 
-### Alerta 9 
-- *Id comarca*: SP06083
-- *Localización comarca*: MERIDA
+### Alerta 26 
+- *Id comarca*: SP24115
+- *Localización comarca*: PONFERRADA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.7416|
-| 1| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Pluvialis apricaria|1||Chorlito dorado europeo  2015-2019|4850|0.2396|
-| 2| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.5701|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Vanellus vanellus|4930|0.5156|
 
 
-### Alerta 10 
-- *Id comarca*: SP37274
-- *Localización comarca*: SALAMANCA
+### Alerta 27 
+- *Id comarca*: SP41024
+- *Localización comarca*: CARMONA (LOS ARCORES)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.7416|
-| 1| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Ardea cinerea|1||Garza real  2015-2019|1220|0.7416|
-| 2| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Larus ridibundus|4||Gaviota reidora  2015-2019|5820|0.5701|
-| 3| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.5701|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Anas crecca|1840|0.5708|
 
 
-### Alerta 11 
-- *Id comarca*: SP48020
-- *Localización comarca*: URIBE KOSTA-BILBAO
+### Alerta 28 
+- *Id comarca*: SP46094
+- *Localización comarca*: L'HORTA SUD-CATARROJA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Ardea cinerea|1|1|Garza real  2015-2019|1220|0.7416|
-| 1| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Ardea cinerea|1||Garza real  2015-2019|1220|0.7416|
-| 2| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Larus ridibundus|4||Gaviota reidora  2015-2019|5820|0.5701|
-| 3| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Vanellus vanellus|2|2|Avefría europea  2015-2019|4930|0.5156|
-
-
-### Alerta 12 
-- *Id comarca*: SP11004
-- *Localización comarca*: CAMPO DE GIBRALTAR
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Vanellus vanellus|1|1|Avefría europea  2015-2019|4930|0.5156|
-| 1| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Ardea cinerea|1||Garza real  2015-2019|1220|0.7416|
-| 2| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Ciconia ciconia|2|2|Cigüeña blanca  2015-2019|1340|0.2234|
-
-
-### Alerta 13 
-- *Id comarca*: SP44155
-- *Localización comarca*: MONTALBÁN
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Limosa limosa|1|1|Aguja colinegra  2015-2019|5320|0.5211|
-| 1| 281610|07-11-2020|17-10-2020|Netherlands|Hippolytishoef|52.59|4.98|Wild|Limosa limosa|1||Aguja colinegra  2015-2019|5320|0.5211|
-| 2| 281607|07-11-2020|16-10-2020|Netherlands|Hippolytishoef|52.92|4.98|Wild|Larus ridibundus|4||Gaviota reidora  2015-2019|5820|0.5701|
-| 3| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Larus ridibundus|2|2|Gaviota reidora  2015-2019|5820|0.5701|
-
-
-### Alerta 14 
-- *Id comarca*: SP16078
-- *Localización comarca*: CUENCA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 281634|07-11-2020|18-10-2020|Netherlands|IJmuiden|52.46|4.61|Wild|Fulica atra|1|1|Focha común  2015-2019|4290|0.5641|
-| 1| 280799|23-10-2020|17-10-2020|Netherlands|Kockengen|52.13|4.95|Wild|Fulica atra|2|2|Focha común  2015-2019|4290|0.5641|
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 278779|18-09-2020|18-09-2020|Germany|Allwetterzoo Münster|51.9464|7.59167|Captive|Captive Guinea fowl|1||Fulica atra|4290|0.5641|

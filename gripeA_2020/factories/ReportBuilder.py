@@ -19,7 +19,7 @@ class ReportBuilder(Builder):
             pdfpath, old_ext = os.path.splitext(filepath)
             pdfpath += ".pdf"
 
-        output = pypandoc.convert_file(filepath, 'pdf', outputfile=pdfpath, extra_args=['-H', 'markdown/header.sty'])
+        output = pypandoc.convert_file(filepath, 'pdf', outputfile=pdfpath, extra_args=['-H', 'markdown/header.sty', '--latex-engine', 'xelatex', '+RTS', '-K512M', '-RTS'])
 
         return pdfpath
 
@@ -74,7 +74,7 @@ class ReportBuilder(Builder):
         cabeceraGenericaTablaBrotesAlertas = "\n\n## Tablas de brotes de IAAP en Europa y su conexión a España a través de  movimientos de aves silvestres"
         
         tablaBrotesAlertas = ("\n| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |\n" 
-        +"|:-:|:---------:|:----------------:|:-------------:|:--------------:|:-----------:|:------------:|:-----------:|:-------------:|:----------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|\n" )
+        +"|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|\n" )
 
         #CSV
         csvCabeceraAlertas = ["Nº","Fecha","Comarca","ID CG","Nº brotes","Nº mov. Riesgo","Grado alerta","Temperatura estimada","Supervivencia del virus en días"]
@@ -119,9 +119,12 @@ class ReportBuilder(Builder):
                 if 'city' not in broteMongo:
                     broteMongo['city'] = "Not especified"
 
+                if nBrote % 100 == 0 and nBrote != 0:
+                    filasBrotes += tablaBrotesAlertas
+
                 filasBrotes += ("| "  + str(nBrote)  + "| " + str(brote)
                 + "|" + broteMongo['report_date'].strftime('%d-%m-%Y')  + "|" + broteMongo['observation_date'].strftime('%d-%m-%Y') + "|" + broteMongo['country']  + "|" + broteMongo['city'] 
-                + "|" + str(broteMongo['lat']) + "|" + str(broteMongo['long']) + "|" +broteMongo['epiunit']  + "|" + broteMongo["species"]  + "|" + str(broteMongo['cases'])
+                + "|" + str(broteMongo['lat']) + "|" + str(broteMongo['long']) + "|" +broteMongo['epiunit']  + "|" + str(broteMongo["species"]).replace(",", " ")  + "|" + str(broteMongo['cases'])
                 + "|" + str(broteMongo['deaths'])  + "|" +especie['cientifico']  + "|" + str(especie["codigoE"]) + "|" + str(round(especie["probEspecie"],4)) + "|\n" )
                 
                 filasBrotesCsv.append({
@@ -133,8 +136,8 @@ class ReportBuilder(Builder):
                     "Observational date": broteMongo['observation_date'].strftime('%d-%m-%Y'), 
                     "Country": broteMongo['country'], "Location": broteMongo['city'], 
                     "Latitud": broteMongo['lat'], "Longitud": broteMongo['long'],
-                    "Ponderacion brote": especie['probType'], "Riesgo brote": especie['riesgoBrote'],
-                    "An. Type": broteMongo['epiunit'],"Species": broteMongo["species"], "Cases": broteMongo['cases'], 
+                    "Ponderacion brote": especie['probType'], "Riesgo brote":  round(especie['riesgoBrote'] * alerta['super'], 4),
+                    "An. Type": broteMongo['epiunit'],"Species": str(broteMongo["species"]).replace(",", " "), "Cases": broteMongo['cases'], 
                     "Deaths": broteMongo['deaths'],"Especie movimiento": especie['cientifico'], 
                     "Cód.  Especie": especie["codigoE"], "Prob mov semanal":round(especie["probEspecie"],4)
                 })
@@ -157,7 +160,7 @@ class ReportBuilder(Builder):
         else:
             textoFinal = cabecera + sumario
 
-        #Creamos csv brotes
+        #Creamos csv brotes y subimos al drive
         self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv)
 
         #Actualizacion

@@ -78,9 +78,6 @@ class GeojsonGenerator:
         f = open("geojson/alertas.geojson")
         json_alertas = json.load(f)
 
-        # # Quitamos las alertas de riesgo 0
-        # json_alertas["features"] = list(filter(lambda alerta: alerta["properties"]["reportDate"] > 0, alertas["alertas"]))
-
         latest_date = 0
         for alerta in json_alertas["features"]:
             if alerta["properties"]["reportDate"] > latest_date:

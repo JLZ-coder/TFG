@@ -97,6 +97,17 @@ class gDriveUploader:
 
     # Puede crear la carpeta si no existe, pero solo dentro de la carpeta principal del drive
     # Returns lista de urls para compartir
+    def trash_file(self, title, dest_folder=None):
+        existing_id = self.get_id_from(title, dest_folder)
+
+        for file_id in existing_id:
+            file1 = self.drive.CreateFile({"id": file_id})
+            file1.Trash()
+
+        return 0
+
+    # Puede crear la carpeta si no existe, pero solo dentro de la carpeta principal del drive
+    # Returns lista de urls para compartir
     def download_file(self, filename, foldername=None, rec_folder=None):
         localfolder = ""
         if rec_folder != None:
