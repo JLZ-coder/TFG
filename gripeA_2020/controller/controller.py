@@ -200,6 +200,7 @@ class Controller:
 
             # RUN MODEL
             self.model.setData(data_to_model)
+            print(">>> Running model...")
             alertas = self.model.run(current_week, current_week_end)
 
             alertas_list.append(alertas)

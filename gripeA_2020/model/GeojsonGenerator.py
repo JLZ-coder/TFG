@@ -301,8 +301,8 @@ class GeojsonGenerator:
 
                 json_brotes['features'].append(aux)
 
-        # Borramos las entradas antiguas de mas de un año
-        last_year_outbreaks = list(filter(lambda brote: most_recent_date - brote["properties"]["observationDate"] <= 31556926000, json_brotes["features"]))
+        # Borramos las entradas antiguas de mas de un año + 3 meses
+        last_year_outbreaks = list(filter(lambda brote: most_recent_date - brote["properties"]["observationDate"] <= (31556926 + 3 * 2629743) * 1000, json_brotes["features"]))
         last_year_outbreaks = list(filter(lambda brote: most_recent_date - brote["properties"]["observationDate"] >= 0, last_year_outbreaks))
         json_brotes["features"] = last_year_outbreaks
 
