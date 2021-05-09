@@ -161,7 +161,7 @@ def reset_routes(driver, routes, outbreaks, start):
 			outbreak_coord = (lat, long)
 			route_coord = (route_lat, route_long)
 
-			if geodesic(outbreak_coord, route_coord).kilometers <= 25:
+			if geodesic(outbreak_coord, route_coord).kilometers < 25:
 				aux = ("MATCH (a:Outbreak), (b:Region)  WHERE a.oieid = {} AND b.comarca_sg = '{}' "
 					"CREATE (a)-[:Route {{id: {}, especie: {}, lat: {}, long: {}, latR: {}, longR: {} }}]->(b);\n").format(
 						oieid, route_region,

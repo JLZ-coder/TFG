@@ -3,66 +3,11 @@ import os
 from neo4j import GraphDatabase
 from geopy.distance import geodesic
 import sys
-from datetime import datetime, time, timedelta, date
+from geolib import geohash
 
 # Usa los datos de migraciones en mongo para hacer un grafo en neo4j
 
 TAM_GEO = 4
-
-
-# Nodos de todos los brotes, solo una vez al principio.
-def reset_outbreaks(driver, outbreaks):
-	print(">>> Reset Outbreaks")
-	cursor = outbreaks.find({})
-
-	outbreak_nodes_query = ""
-	# (288337:Outbreak {oieid: 288337, lat: 54.47, long: -1.07})
-	for outbreak in cursor:
-		oieid = outbreak["oieid"]
-		lat = outbreak["lat"]
-		long = outbreak["long"]
-
-		aux = '(:Outbreak {{ oieid:{}, lat:{}, long:{} }} ),\n'.format(oieid, lat, long)
-		outbreak_nodes_query += aux
-
-	response = ""
-	if outbreak_nodes_query != "":
-		outbreak_nodes_query = "CREATE " + outbreak_nodes_query[:-2]
-		# Borra todo los brotes que hay en neo4j!!!!!
-		driver.session().run("MATCH (n:Outbreak) DETACH DELETE n")
-		response = driver.session().run(outbreak_nodes_query).value()
-
-	return response, outbreak_nodes_query
-
-# Nodos de los nuevos brotes
-def update_outbreaks(driver, outbreaks):
-	print(">>> Update Outbreaks")
-	cursor = outbreaks.find({})
-
-	response = driver.session().run('MATCH (x:Outbreak) RETURN x.oieid').values()
-
-	existing_oieid = set()
-	for oieid in response:
-		existing_oieid.add(oieid[0])
-
-	new_outbreaks = list(filter(lambda outbreak: outbreak["oieid"] not in existing_oieid, cursor))
-
-	outbreak_nodes_query = ""
-	# (ob_288337:Outbreak {oieid: 288337, lat: 54.47, long: -1.07})
-	for outbreak in new_outbreaks:
-		oieid = outbreak["oieid"]
-		lat = outbreak["lat"]
-		long = outbreak["long"]
-
-		aux = '(:Outbreak {{ oieid:{}, lat:{}, long:{} }} ),\n'.format(oieid, lat, long)
-		outbreak_nodes_query += aux
-
-	response = ""
-	if outbreak_nodes_query != "":
-		outbreak_nodes_query = "CREATE " + outbreak_nodes_query[:-2]
-		response = driver.session().run(outbreak_nodes_query).value()
-
-	return response, outbreak_nodes_query
 
 # Nodos de todas las comarcas, solo una vez al principio.
 def reset_regions(driver, regions):
@@ -89,9 +34,9 @@ def reset_regions(driver, regions):
 	return response, region_nodes_query
 
 # Nodos de los nuevos brotes
-def update_regions(driver, migrations):
+def update_regions(driver, regions):
 	print(">>> Update Regions")
-	cursor = migrations.find({})
+	cursor = regions.find({})
 
 	response = driver.session().run('MATCH (x:Region) RETURN x.comarca_sg').values()
 
@@ -99,41 +44,29 @@ def update_regions(driver, migrations):
 	for comarca_sg in response:
 		existing_comarca_sg.add(comarca_sg[0])
 
-	new_migrations = list(filter(lambda region: region["comarca_sg"] not in existing_comarca_sg, cursor))
+	new_regions = list(filter(lambda region: region["comarca_sg"] not in existing_comarca_sg, cursor))
 
-	migrations_nodes_query = ""
+	regions_nodes_query = ""
 	# (288337:Outbreak {comarca_sg: 288337, lat: 54.47, long: -1.07})
-	for region in new_migrations:
+	for region in new_regions:
 		comarca_sg = region["comarca_sg"]
 		lat = region["Latitud"]
 		long = region["Longitud"]
 
 		aux = "(:Region {{ comarca_sg:'{}', lat:{}, long:{} }} ),\n".format(comarca_sg, lat, long)
-		migrations_nodes_query += aux
+		regions_nodes_query += aux
 
 	response = ""
-	if migrations_nodes_query != "":
-		migrations_nodes_query = "CREATE " + migrations_nodes_query[:-2]
-		response = driver.session().run(migrations_nodes_query).value()
+	if regions_nodes_query != "":
+		regions_nodes_query = "CREATE " + regions_nodes_query[:-2]
+		response = driver.session().run(regions_nodes_query).value()
 
-	return response, migrations_nodes_query
+	return response, regions_nodes_query
 
 # Nodos de todas las comarcas, solo una vez al principio.
-def reset_routes(driver, routes, outbreaks, start):
+def reset_routes(driver, routes):
 	print(">>> Reset Routes")
-	cursor = routes.find({})
-
-	last_outbreaks = outbreaks.find({"observation_date" : {"$gte" : start}}, {"oieid" : 1})
-	last_oieid = set()
-	for outbreak in last_outbreaks:
-		last_oieid.add(outbreak["oieid"])
-	response_outbreaks = driver.session().run('MATCH (x:Outbreak) RETURN x.oieid, x.lat, x.long').values()
-	response_outbreaks = list(filter(lambda outbreak: outbreak[0] in last_oieid, response_outbreaks))
-
-	# response_regions = driver.session().run('MATCH (x:Region) RETURN x.comarca_sg, x.lat, x.long').values()
-	# existing_comarca_sg = set()
-	# for comarca_sg in response_regions:
-	# 	existing_comarca_sg.add(comarca_sg[0])
+	cursor = routes.find({}, no_cursor_timeout=True)
 
 	# Borra todo las comarcas que hay en neo4j!!!!!
 	driver.session().run("MATCH ()-[n:Route]->() DETACH DELETE n")
@@ -143,119 +76,137 @@ def reset_routes(driver, routes, outbreaks, start):
    	# WHERE a.oieid = 288337 AND b.comarca_sg = SP24108
 	# CREATE (a)-[:Route {id: 56356, especie: 70, lat: 54.47, long: -1.07, latR: 54.47, longR: -1.07 }]->(b)
 	total_ctr = 0
-	for outbreak in response_outbreaks:
-		oieid = outbreak[0]
-		lat = outbreak[1]
-		long = outbreak[2]
-		ctr = 0
-		print(">> Outbreak: {}".format(oieid))
-		for route in cursor:
-			route_id = route["Id"]
-			route_species = route["Especie"]
-			route_lat = route["Lat"]
-			route_long = route["Long"]
-			route_latR = route["LatR"]
-			route_longR = route["LongR"]
-			route_region = route["COMARCA_SG"]
+	for route in cursor:
+		route_geohash = route["geohash"][:TAM_GEO]
+		route_species = route["Especie"]
+		route_lat = route["Lat"]
+		route_long = route["Long"]
+		route_latR = route["LatR"]
+		route_longR = route["LongR"]
+		route_region = route["COMARCA_SG"]
 
-			outbreak_coord = (lat, long)
-			route_coord = (route_lat, route_long)
+		aux = ("MATCH (a:geoRegion), (b:Region)  WHERE a.region_geohash = '{}' AND b.comarca_sg = '{}' "
+			"CREATE (a)-[:Route {{especie: {}, lat: {}, long: {}, latR: {}, longR: {} }}]->(b);\n").format(
+				route_geohash, route_region,
+				route_species, route_lat, route_long, route_latR, route_longR)
 
-			if geodesic(outbreak_coord, route_coord).kilometers <= 25:
-				aux = ("MATCH (a:Outbreak), (b:Region)  WHERE a.oieid = {} AND b.comarca_sg = '{}' "
-					"CREATE (a)-[:Route {{id: {}, especie: {}, lat: {}, long: {}, latR: {}, longR: {} }}]->(b);\n").format(
-						oieid, route_region,
-						route_id, route_species, route_lat, route_long, route_latR, route_longR)
-
-				response = driver.session().run(aux).value()
-				route_nodes_query += aux
-				ctr += 1
-
-		print("> {} routes found".format(ctr))
-		total_ctr += ctr
-		cursor.rewind()
+		response = driver.session().run(aux).value()
+		route_nodes_query += aux
+		total_ctr += 1
+	cursor.close()
 
 	print(">>> {} routes found IN  TOTAL".format(total_ctr))
 	return response, route_nodes_query
 
 # Nodos de los nuevos brotes
-def update_routes(driver, routes, outbreaks, start):
+def update_routes(driver, routes):
 	print(">>> Update Routes")
-	cursor = routes.find({})
+	cursor = routes.find({}, no_cursor_timeout=True)
 
-	last_outbreaks = outbreaks.find({"observation_date" : {"$gte" : start}}, {"oieid" : 1})
-	last_oieid = set()
-	for outbreak in last_outbreaks:
-		last_oieid.add(outbreak["oieid"])
-	response_outbreaks = driver.session().run('MATCH (x:Outbreak) RETURN x.oieid, x.lat, x.long').values()
-	response_outbreaks = list(filter(lambda outbreak: outbreak[0] in last_oieid, response_outbreaks))
-
-	response = driver.session().run('MATCH (:Outbreak)-[x:Route]->(:Region) RETURN x.id').values()
+	response = driver.session().run('MATCH (:geoRegion)-[x:Route]->(:Region) RETURN x.especie, x.lat, x.long, x.latR, x.longR').values()
 
 	existing_routes = set()
-	for routes in response:
-		existing_routes.add(routes[0])
+	for route in response:
+		existing_routes.add(route)
 
-	new_routes = list(filter(lambda routes: routes["Id"] not in existing_routes, cursor))
+	new_routes = list(filter(lambda route: [route["Especie"], route["Lat"], route["Long"], route["LatR"], route["LongR"]] not in existing_routes, cursor))
 
 	route_nodes_query = ""
 	# MATCH (a:Outbreak), (b:Region)
    	# WHERE a.oieid = 288337 AND b.comarca_sg = SP24108
 	# CREATE (a)-[:Route {id: 56356, especie: 70, lat: 54.47, long: -1.07, latR: 54.47, longR: -1.07 }]->(b)
 	total_ctr = 0
-	for outbreak in response_outbreaks:
-		oieid = outbreak[0]
-		lat = outbreak[1]
-		long = outbreak[2]
-		ctr = 0
-		print(">> Outbreak: {}".format(oieid))
-		for route in new_routes:
-			route_id = route["Id"]
-			route_species = route["Especie"]
-			route_lat = route["Lat"]
-			route_long = route["Long"]
-			route_latR = route["LatR"]
-			route_longR = route["LongR"]
-			route_region = route["COMARCA_SG"]
+	for route in new_routes:
+		route_geohash = route["geohash"][:TAM_GEO]
+		route_species = route["Especie"]
+		route_lat = route["Lat"]
+		route_long = route["Long"]
+		route_latR = route["LatR"]
+		route_longR = route["LongR"]
+		route_region = route["COMARCA_SG"]
 
-			outbreak_coord = (lat, long)
-			route_coord = (route_lat, route_long)
+		aux = ("MATCH (a:geoRegion), (b:Region)  WHERE a.region_geohash = '{}' AND b.comarca_sg = '{}' "
+			"CREATE (a)-[:Route {{especie: {}, lat: {}, long: {}, latR: {}, longR: {} }}]->(b);\n").format(
+				route_geohash, route_region,
+				route_species, route_lat, route_long, route_latR, route_longR)
 
-			if geodesic(outbreak_coord, route_coord).kilometers <= 25:
-				aux = ("MATCH (a:Outbreak), (b:Region)  WHERE a.oieid = {} AND b.comarca_sg = '{}' "
-					"CREATE (a)-[:Route {{id: {}, especie: {}, lat: {}, long: {}, latR: {}, longR: {} }}]->(b);\n").format(
-						oieid, route_region,
-						route_id, route_species, route_lat, route_long, route_latR, route_longR)
-
-				response = driver.session().run(aux).value()
-				route_nodes_query += aux
-				ctr += 1
-
-		print("> {} routes found".format(ctr))
-		total_ctr += ctr
-		cursor.rewind()
+		response = driver.session().run(aux).value()
+		route_nodes_query += aux
+		total_ctr += 1
+	cursor.close()
 
 	print(">>> {} routes found IN  TOTAL".format(total_ctr))
 	return response, route_nodes_query
+
+# Nodos de todas las comarcas, solo una vez al principio.
+def reset_geoRegion(driver, routes):
+	print(">>> Reset geoRegion")
+	cursor = routes.find({})
+
+	geoRegion_nodes_query = ""
+	# (SP49108:route {comarca_sg: 'SP49108', lat: 54.47, long: -1.07})
+	geohash_set = set()
+	for route in cursor:
+		region_geohash = route["geohash"][:TAM_GEO]
+		lat, long = geohash.decode(region_geohash)
+		
+		if region_geohash not in geohash_set:
+			aux = "(:geoRegion {{ region_geohash:'{}', lat:{}, long:{} }} ),\n".format(region_geohash, lat, long)
+			geoRegion_nodes_query += aux
+			geohash_set.add(region_geohash)
+
+	response = ""
+	if geoRegion_nodes_query != "":
+		geoRegion_nodes_query = "CREATE " + geoRegion_nodes_query[:-2]
+		# Borra todo las comarcas que hay en neo4j!!!!!
+		driver.session().run("MATCH (n:geoRegion) DETACH DELETE n")
+		response = driver.session().run(geoRegion_nodes_query).value()
+
+	return response, geoRegion_nodes_query
+
+# Nodos de los nuevos brotes
+def update_geoRegion(driver, routes):
+	print(">>> Update geoRegion")
+	cursor = routes.find({})
+
+	response = driver.session().run('MATCH (x:geoRegion) RETURN x.region_geohash').values()
+
+	existing_region_geohash = set()
+	for region_geohash in response:
+		existing_region_geohash.add(region_geohash[0])
+
+	new_geoRegions = list(filter(lambda route: route["geohash"] not in existing_region_geohash, cursor))
+
+	geoRegion_nodes_query = ""
+	# (288337:Outbreak {comarca_sg: 288337, lat: 54.47, long: -1.07})
+	for route in new_geoRegions:
+		region_geohash = route["geohash"][:TAM_GEO]
+		lat, long = geohash.decode(region_geohash)
+
+		aux = "(:geoRegion {{ region_geohash:'{}', lat:{}, long:{} }} ),\n".format(region_geohash, lat, long)
+		geoRegion_nodes_query += aux
+
+	response = ""
+	if geoRegion_nodes_query != "":
+		geoRegion_nodes_query = "CREATE " + geoRegion_nodes_query[:-2]
+		response = driver.session().run(geoRegion_nodes_query).value()
+
+	return response, geoRegion_nodes_query
+
+def delete_all(driver):
+	# Borra todo las comarcas que hay en neo4j!!!!!
+	return driver.session().run("MATCH (n) DETACH DELETE n")
 
 def main(argv):
 	client= MongoClient('mongodb://localhost:27017/')
 	db = client.lv
 	routes = db.migrations
-	outbreaks = db.outbreaks
 	regions = db.comarcas
 	driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
-	start = date.today() + timedelta(days = -date.today().weekday())
-	#52 (un anio) + 12 (3 meses) semanas
-	this_many_weeks = 64
-	start -= timedelta(weeks=this_many_weeks)
-	#Convert to datetime
-	start = datetime.combine(start, datetime.min.time())
-
-	reset_outbreaks(driver, outbreaks)
 	reset_regions(driver, regions)
-	reset_routes(driver, routes, outbreaks, start)
+	reset_geoRegion(driver, routes)
+	reset_routes(driver, routes)
 
 	driver.close()
 	client.close()

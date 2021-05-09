@@ -107,3 +107,7 @@ Run model para semana 2021-05-03 00:00:00
 Generar alertas.geojson
 Generar brotes.geojson
 Generar rutas.geojson
+>>> Reset Regions
+>>> Reset geoRegion
+>>> Reset Routes
+>>> 28383 routes found IN  TOTAL
