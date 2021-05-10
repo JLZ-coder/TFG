@@ -89,6 +89,8 @@ class ReportBuilder(Builder):
         nBrote = 0
         allNBrotes = 0
 
+        brotes_set = set()
+
         #csv
         filasAlertasCsv = []
         filasBrotesCsv = []
@@ -115,6 +117,8 @@ class ReportBuilder(Builder):
             for brote, especie in alerta['brotes'].items():
                 cursor = list(brotes_db.find({'oieid': brote}))
                 broteMongo = cursor[0]
+
+                brotes_set.add(brote)
 
                 if 'city' not in broteMongo:
                     broteMongo['city'] = "Not especified"
@@ -152,7 +156,7 @@ class ReportBuilder(Builder):
             nBrote=0
 
         sumario = ("\n## Sumario del informe \n" +  " - *Número de comarcas ganaderas en alerta*: " + str(len(parameters['alertas']))
-        + "\n - *Número de brotes en Europa asociados con movimientos de riesgo a España*: {}".format(allNBrotes))
+        + "\n - *Número de brotes en Europa asociados con movimientos de riesgo a España*: {}".format(len(brotes_set)))
         
         #Volcar fichero
         if len(parameters['alertas']) > 0:
