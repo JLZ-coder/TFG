@@ -43,9 +43,9 @@ def main(argv):
     control = Controller(modelSelector, dataFact, geojsonGen)
 
     start = datetime(2021, 3, 8)
-    control.runOfflineTool()
+    # control.runOfflineTool()
     # Comenzando desde 52 semanas atras, un anio atras
-    # control.runOnlineTool(52)
+    control.runOnlineTool()
     return 0
 
 
