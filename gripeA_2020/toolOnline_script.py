@@ -9,7 +9,6 @@ from model.GeojsonGenerator import GeojsonGenerator
 from controller.controller import Controller
 from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
-from model.gdriveUploader import gDriveUploader
 import os
 from git import Repo
 from scripts.newOutbreaks_mongo import downloadOutbreaks
