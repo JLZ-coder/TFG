@@ -4,52 +4,52 @@ import os.path
 
 class gDriveUploader:
     def __init__(self):
-        folder = "pydrive/"
-        GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = folder + "client_secrets.json"
+        # folder = "pydrive/"
+        # GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = folder + "client_secrets.json"
         
         self.gauth = GoogleAuth()
 
-        # Try to load saved client credentials
-        self.gauth.LoadCredentialsFile(folder + "mycreds.txt")
-        if self.gauth.credentials is None:
-            # Authenticate if they're not there
-            self.gauth.GetFlow()
-            self.gauth.flow.params.update({'access_type': 'offline'})
-            self.gauth.flow.params.update({'approval_prompt': 'force'})
-            self.gauth.LocalWebserverAuth()
-        elif self.gauth.access_token_expired:
-            # Refresh them if expired
-            self.gauth.Refresh()
-        else:
-            # Initialize the saved creds
-            self.gauth.Authorize()
-        # Save the current credentials to a file
-        self.gauth.SaveCredentialsFile(folder + "mycreds.txt")
+        # # Try to load saved client credentials
+        # self.gauth.LoadCredentialsFile(folder + "mycreds.txt")
+        # if self.gauth.credentials is None:
+        #     # Authenticate if they're not there
+        #     self.gauth.GetFlow()
+        #     self.gauth.flow.params.update({'access_type': 'offline'})
+        #     self.gauth.flow.params.update({'approval_prompt': 'force'})
+        #     self.gauth.LocalWebserverAuth()
+        # elif self.gauth.access_token_expired:
+        #     # Refresh them if expired
+        #     self.gauth.Refresh()
+        # else:
+        #     # Initialize the saved creds
+        #     self.gauth.Authorize()
+        # # Save the current credentials to a file
+        # self.gauth.SaveCredentialsFile(folder + "mycreds.txt")
 
         self.drive = GoogleDrive(self.gauth)
 
     def re_auth(self):
-        folder = "pydrive/"
-        GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = folder + "client_secrets.json"
+        # folder = "pydrive/"
+        # GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = folder + "client_secrets.json"
         
         self.gauth = GoogleAuth()
 
-        # Try to load saved client credentials
-        self.gauth.LoadCredentialsFile(folder + "mycreds.txt")
-        if self.gauth.credentials is None:
-            # Authenticate if they're not there
-            self.gauth.GetFlow()
-            self.gauth.flow.params.update({'access_type': 'offline'})
-            self.gauth.flow.params.update({'approval_prompt': 'force'})
-            self.gauth.LocalWebserverAuth()
-        elif self.gauth.access_token_expired:
-            # Refresh them if expired
-            self.gauth.Refresh()
-        else:
-            # Initialize the saved creds
-            self.gauth.Authorize()
-        # Save the current credentials to a file
-        self.gauth.SaveCredentialsFile(folder + "mycreds.txt")
+        # # Try to load saved client credentials
+        # self.gauth.LoadCredentialsFile(folder + "mycreds.txt")
+        # if self.gauth.credentials is None:
+        #     # Authenticate if they're not there
+        #     self.gauth.GetFlow()
+        #     self.gauth.flow.params.update({'access_type': 'offline'})
+        #     self.gauth.flow.params.update({'approval_prompt': 'force'})
+        #     self.gauth.LocalWebserverAuth()
+        # elif self.gauth.access_token_expired:
+        #     # Refresh them if expired
+        #     self.gauth.Refresh()
+        # else:
+        #     # Initialize the saved creds
+        #     self.gauth.Authorize()
+        # # Save the current credentials to a file
+        # self.gauth.SaveCredentialsFile(folder + "mycreds.txt")
 
         self.drive = GoogleDrive(self.gauth)
 
