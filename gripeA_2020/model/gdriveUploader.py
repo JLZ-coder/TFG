@@ -29,29 +29,16 @@ class gDriveUploader:
         self.drive = GoogleDrive(self.gauth)
 
     def re_auth(self):
-        # folder = "pydrive/"
-        # GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = folder + "client_secrets.json"
-        
         self.gauth = GoogleAuth()
-
-        # # Try to load saved client credentials
-        # self.gauth.LoadCredentialsFile(folder + "mycreds.txt")
-        # if self.gauth.credentials is None:
-        #     # Authenticate if they're not there
-        #     self.gauth.GetFlow()
-        #     self.gauth.flow.params.update({'access_type': 'offline'})
-        #     self.gauth.flow.params.update({'approval_prompt': 'force'})
-        #     self.gauth.LocalWebserverAuth()
-        # elif self.gauth.access_token_expired:
-        #     # Refresh them if expired
-        #     self.gauth.Refresh()
-        # else:
-        #     # Initialize the saved creds
-        #     self.gauth.Authorize()
-        # # Save the current credentials to a file
-        # self.gauth.SaveCredentialsFile(folder + "mycreds.txt")
-
         self.drive = GoogleDrive(self.gauth)
+
+        file = "re_auth.txt"
+        text_file = open(file, "w", encoding="utf-8")
+        n = text_file.write("Fichero para subida a Drive y forzar el proceso de reautentificacion.")
+        text_file.close()
+
+        self.upload_file(file)
+        self.trash_file(file)
 
     # Puede crear la carpeta si no existe, pero solo dentro de la carpeta principal del drive
     # Returns lista de urls para compartir

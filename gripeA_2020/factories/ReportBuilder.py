@@ -165,7 +165,7 @@ class ReportBuilder(Builder):
             textoFinal = cabecera + sumario
 
         #Creamos csv brotes y subimos al drive
-        # self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv)
+        self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv)
 
         #Actualizacion
         informePath = "markdown/InformeSemanal_" + start.strftime("%d-%m-%Y") + ".md"
