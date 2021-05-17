@@ -16,25 +16,25 @@ from scripts.weather_mongo import cronTemp, prediction
 from scripts.geojson_github import from_geojson_to_github
 
 def main(argv):
-    # downloadOutbreaks()
+    downloadOutbreaks()
 
-    # cronTemp()
-    # prediction()
+    cronTemp()
+    prediction()
 
-    # dataBuilderList = list()
-    # dataBuilderList.append(OutbreakBuilder())
-    # dataBuilderList.append(TempBuilder())
-    # dataBuilderList.append(ComarcasBuilder())
-    # dataBuilderList.append(ReportBuilder())
-    # dataFact = Factory(dataBuilderList)
+    dataBuilderList = list()
+    dataBuilderList.append(OutbreakBuilder())
+    dataBuilderList.append(TempBuilder())
+    dataBuilderList.append(ComarcasBuilder())
+    dataBuilderList.append(ReportBuilder())
+    dataFact = Factory(dataBuilderList)
 
-    # modelSelector = ModelSelector()
+    modelSelector = ModelSelector()
 
-    # geojsonGen = GeojsonGenerator()
+    geojsonGen = GeojsonGenerator()
 
-    # control = Controller(modelSelector, dataFact, geojsonGen)
+    control = Controller(modelSelector, dataFact, geojsonGen)
 
-    # control.runOnlineTool()
+    control.runOnlineTool()
 
     from_geojson_to_github()   
 
