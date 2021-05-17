@@ -31,31 +31,31 @@ class ReportBuilder(Builder):
         alertasDrive = None
         brotesDrive = None
         #CSV Alertas
-        if not os.path.isfile("markdown/alertasDriveNewJoin.csv"): 
-            alertasDrive = codecs.open("markdown/alertasDriveNewJoin.csv", "wb+")  
+        if not os.path.isfile("markdown/alertasDriveNewJoin_2.csv"): 
+            alertasDrive = codecs.open("markdown/alertasDriveNewJoin_2.csv", "wb+")  
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)         
             writer.writeheader()
         else: 
-            alertasDrive = codecs.open("markdown/alertasDriveNewJoin.csv", "ab+") 
+            alertasDrive = codecs.open("markdown/alertasDriveNewJoin_2.csv", "ab+") 
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)
 
         writer.writerows(nuevasAlertas)
         alertasDrive.close()
-        self.file_to_drive("markdown/alertasDriveNewJoin.csv", "alertasNewJoin.csv", "alertas")
+        self.file_to_drive("markdown/alertasDriveNewJoin_2.csv", "alertasNewJoin_2.csv", "alertas")
 
         #CSV Brotes
         
-        if not os.path.isfile("markdown/brotesDriveNewJoin.csv"):
-            brotesDrive = codecs.open("markdown/brotesDriveNewJoin.csv", "wb+")
+        if not os.path.isfile("markdown/brotesDriveNewJoin_2.csv"):
+            brotesDrive = codecs.open("markdown/brotesDriveNewJoin_2.csv", "wb+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
             writer.writeheader()
         else:
-            brotesDrive = codecs.open("markdown/brotesDriveNewJoin.csv", "ab+")
+            brotesDrive = codecs.open("markdown/brotesDriveNewJoin_2.csv", "ab+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
 
         writer.writerows(nuevosBrotes)
         brotesDrive.close()
-        self.file_to_drive("markdown/brotesDriveNewJoin.csv", "brotesNewJoin.csv", "alertas")
+        self.file_to_drive("markdown/brotesDriveNewJoin_2.csv", "brotesNewJoin_2.csv", "alertas")
         
     def create(self, start, end, parameters):
         

@@ -5,7 +5,7 @@
 
 ## Sumario del informe 
  - *Número de comarcas ganaderas en alerta*: 27
- - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 78
+ - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 45
 
 ## Tabla de alertas 
 | Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |

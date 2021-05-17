@@ -48,59 +48,10 @@ Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1
 Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1690A
 Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1690B
 Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1700X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8309X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8325X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8368U
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8414A
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8416Y
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8489X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8500A
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 8523X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9001D
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9019B
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9051
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9087
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9091O
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9111
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9170
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9201K
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9208E
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9244X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9263X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9283X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9294E
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9381
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9381I
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9390
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9394X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9434
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9434P
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9569A
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9573X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9576C
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9585
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9619
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9698U
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9720X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9771
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9771C
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9784P
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9814A
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9898
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9981A
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9987P
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion 9990X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion B013X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion B278
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion B346X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion B434X
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion B893
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion B954
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion C139E
-Descripcion error: No hay datos que satisfagan esos criterios para la estacion C249I
-Run model para semana 2021-05-10 00:00:00
+Run model para semana 2021-05-17 00:00:00
 >>> Running model...
->>> Alertas total: 305
+>>> Alertas total: 308
 Update alertas.geojson
 Update brotes.geojson
 Update rutas.geojson
+Some error occured while pushing the code

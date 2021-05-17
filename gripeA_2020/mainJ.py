@@ -45,7 +45,7 @@ def main(argv):
     start = datetime(2021, 3, 8)
     # control.runOfflineTool()
     # Comenzando desde 52 semanas atras, un anio atras
-    control.runOnlineTool()
+    control.runOnlineTool(52)
     return 0
 
 

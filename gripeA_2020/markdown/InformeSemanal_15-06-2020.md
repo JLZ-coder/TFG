@@ -5,17 +5,17 @@
 
 ## Sumario del informe 
  - *Número de comarcas ganaderas en alerta*: 32
- - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 131
+ - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 49
 
 ## Tabla de alertas 
 | Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |
 |:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |1|15-06-2020|CALZADA DE CALATRAVA|SP13027|2|11|98|8.87|12.8702|
-|2|15-06-2020|L'HORTA SUD-CATARROJA|SP46094|1|1|4|17.46|7.5768|
-|3|15-06-2020|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|5|84|16|15.6|8.4563|
-|4|15-06-2020|ZARAGOZA|SP50297|1|1|2|12.96|9.9079|
-|5|15-06-2020|SEGRIA (LLEIDA)|SP25120|1|1|9|9.8|12.0918|
-|6|15-06-2020|BERGUEDA (BERGA)|SP08022|1|1|14|3.83|19.4417|
+|2|15-06-2020|ZARAGOZA|SP50297|1|1|2|12.96|9.9079|
+|3|15-06-2020|BERGUEDA (BERGA)|SP08022|1|1|14|3.83|19.4417|
+|4|15-06-2020|L'HORTA SUD-CATARROJA|SP46094|1|1|4|17.46|7.5768|
+|5|15-06-2020|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|5|84|16|15.6|8.4563|
+|6|15-06-2020|SEGRIA (LLEIDA)|SP25120|1|1|9|9.8|12.0918|
 |7|15-06-2020|PALMA|SP07040|21|21|3|15.04|8.7407|
 |8|15-06-2020|RIBERA BAIXA|SP46105|6|6|0|16.34|8.0926|
 |9|15-06-2020|CARTAYA (COSTA OCCIDENTAL)|SP21021|10|10|2|14.63|8.9591|
@@ -57,6 +57,24 @@
 
 
 ### Alerta 2 
+- *Id comarca*: SP50297
+- *Localización comarca*: ZARAGOZA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Larus ridibundus|5820|0.2669|
+
+
+### Alerta 3 
+- *Id comarca*: SP08022
+- *Localización comarca*: BERGUEDA (BERGA)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Ciconia ciconia|1340|0.7592|
+
+
+### Alerta 4 
 - *Id comarca*: SP46094
 - *Localización comarca*: L'HORTA SUD-CATARROJA
 
@@ -65,7 +83,7 @@
 | 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Fulica atra|4290|0.5567|
 
 
-### Alerta 3 
+### Alerta 5 
 - *Id comarca*: SP41087
 - *Localización comarca*: SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)
 
@@ -78,27 +96,9 @@
 | 4| 267002|24-03-2020|24-03-2020|Poland|Muszkowo|52.533333|14.966667|Domestic|Domestic Turkey||600|Anser anser|1610|0.1652|
 
 
-### Alerta 4 
-- *Id comarca*: SP50297
-- *Localización comarca*: ZARAGOZA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Larus ridibundus|5820|0.2669|
-
-
-### Alerta 5 
+### Alerta 6 
 - *Id comarca*: SP25120
 - *Localización comarca*: SEGRIA (LLEIDA)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Ciconia ciconia|1340|0.7592|
-
-
-### Alerta 6 
-- *Id comarca*: SP08022
-- *Localización comarca*: BERGUEDA (BERGA)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|

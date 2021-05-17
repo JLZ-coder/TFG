@@ -3,6 +3,7 @@ from git import Repo
 from datetime import date, datetime
 
 def from_geojson_to_github(): 
+    print("Subida de ficheros a github")
     copia_a_destino = "cp -r /home/caballes/TFG/gripeA_2020/geojson/. /home/caballes/applicacionWeb/GeoJSON/"
     os.system(copia_a_destino)
 
@@ -23,8 +24,9 @@ def from_geojson_to_github():
         origin = repo.remote('origin')
         origin.pull()
         origin.push()
-    except:
+    except Exception as e:
         print('Some error occured while pushing the code')
+        print(e)
         return 1
 
     return 0

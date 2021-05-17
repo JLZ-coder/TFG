@@ -95,7 +95,9 @@ class OutbreakBuilder(Builder):
             #         "serotype": brote['serotype'],
             #         "casos": brote['cases'],
             #         "especie":it['Especie'],
-            #         "nMov": 1
+            #         "nMov": 1,
+            #         "lat": brote["lat"],
+            #         "long": brote["long"]
             #     }
             #     if cod not in comarca_brotes:
             #         comarca_brotes[cod] = [valor]
@@ -148,7 +150,7 @@ class OutbreakBuilder(Builder):
                         comarca_brotes[cod] = [valor]
                     else:
                         comarca_brotes[cod].append(valor)
-
+            # Los 8 geohashes de alrededor
             geohashes_around = geohash.neighbours(geohash_del_brote)
             for geohash_around in geohashes_around:
                 #Rutas del brote, puede que no haya ninguna que conecte con España
@@ -173,7 +175,33 @@ class OutbreakBuilder(Builder):
                             comarca_brotes[cod] = [valor]
                         else:
                             comarca_brotes[cod].append(valor)
-
+            # Los 6 geohashes del norte y del sur, en el peor de los casos los 9 geohashes anteriores no cubren completamente el radio 
+            # de 25km por el norte o por el sur
+            n_and_s_geohashes = [geohash.neighbours(geohashes_around.ne).n, geohash.neighbours(geohashes_around.n).n, geohash.neighbours(geohashes_around.nw).n,
+                                geohash.neighbours(geohashes_around.se).s, geohash.neighbours(geohashes_around.s).s, geohash.neighbours(geohashes_around.sw).s]
+            for geohash_around in n_and_s_geohashes:
+                #Rutas del brote, puede que no haya ninguna que conecte con España
+                response = neo4j_db.session().run(f"MATCH (x:geoRegion)-[r]->(y:Region) WHERE x.region_geohash starts with '{geohash_around}' RETURN y.comarca_sg, r.especie, r.lat, r.long").values()
+                # relacion = ['SP49108', 70, 56.233, 4.24354]
+                for relacion in response:
+                    #Si el geohash destino esta en España
+                    outbreak_coord = (brote["lat"], brote["long"])
+                    route_coord = (relacion[2], relacion[3])
+                    if geodesic(outbreak_coord, route_coord).km < 25:
+                        cod = relacion[0]
+                        valor = {"oieid" : brote["oieid"],
+                                "epiunit" : brote["epiunit"],
+                                "serotype": brote['serotype'],
+                                "casos": brote['cases'],
+                                "especie":relacion[1],
+                                "nMov": 1,
+                                "lat": brote["lat"],
+                                "long": brote["long"]
+                            }
+                        if cod not in comarca_brotes:
+                            comarca_brotes[cod] = [valor]
+                        else:
+                            comarca_brotes[cod].append(valor)
 
         neo4j_db.close()
         client.close()

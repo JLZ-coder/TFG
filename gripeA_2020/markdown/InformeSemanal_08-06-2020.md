@@ -5,35 +5,35 @@
 
 ## Sumario del informe 
  - *Número de comarcas ganaderas en alerta*: 47
- - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 152
+ - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 49
 
 ## Tabla de alertas 
 | Nº | Fecha  | Comarca  | ID CG | Nº brotes | Nº mov. Riesgo | Grado alerta | Temperatura estimada  | Supervivencia del virus en días |
 |:-:|:-------:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |1|08-06-2020|CALZADA DE CALATRAVA|SP13027|3|25|185|11.19|11.0575|
-|2|08-06-2020|L'HORTA SUD-CATARROJA|SP46094|1|1|3|17.61|7.5067|
-|3|08-06-2020|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|5|84|14|17.69|7.475|
-|4|08-06-2020|ZARAGOZA|SP50297|1|1|1|15.1|8.7111|
-|5|08-06-2020|SEGRIA (LLEIDA)|SP25120|2|6|33|16.34|8.0926|
-|6|08-06-2020|BERGUEDA (BERGA)|SP08022|2|2|22|5.86|16.1169|
-|7|08-06-2020|CAMPO DE GIBRALTAR|SP11004|5|6|5|17.24|7.6733|
-|8|08-06-2020|TRUJILLO|SP10195|2|2|1|15.69|8.4135|
-|9|08-06-2020|CALAMOCHA|SP44050|1|1|7|11.5|10.8408|
-|10|08-06-2020|TOMELLOSO|SP13082|1|5|31|14.47|9.0436|
-|11|08-06-2020|OSONA (VIC)|SP08298|1|1|11|5.86|16.1169|
-|12|08-06-2020|GIJON|SP33024|1|1|0|13.53|9.5704|
-|13|08-06-2020|DEBAGOIENA|SP20074|1|1|0|11.46|10.87|
-|14|08-06-2020|LITORAL|SP11016|4|10|1|19.34|6.7746|
-|15|08-06-2020|LUGO|SP27028|1|1|0|9.89|12.0237|
+|2|08-06-2020|ZARAGOZA|SP50297|1|1|1|15.1|8.7111|
+|3|08-06-2020|BERGUEDA (BERGA)|SP08022|2|2|22|5.86|16.1169|
+|4|08-06-2020|L'HORTA SUD-CATARROJA|SP46094|1|1|3|17.61|7.5067|
+|5|08-06-2020|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|5|84|14|17.69|7.475|
+|6|08-06-2020|SEGRIA (LLEIDA)|SP25120|2|6|33|16.34|8.0926|
+|7|08-06-2020|TRUJILLO|SP10195|2|2|1|15.69|8.4135|
+|8|08-06-2020|CALAMOCHA|SP44050|1|1|7|11.5|10.8408|
+|9|08-06-2020|TOMELLOSO|SP13082|1|5|31|14.47|9.0436|
+|10|08-06-2020|OSONA (VIC)|SP08298|1|1|11|5.86|16.1169|
+|11|08-06-2020|CAMPO DE GIBRALTAR|SP11004|5|6|5|17.24|7.6733|
+|12|08-06-2020|LUGO|SP27028|1|1|0|9.89|12.0237|
+|13|08-06-2020|SIERO|SP33066|1|1|0|11.86|10.6017|
+|14|08-06-2020|CANTILLANA (VEGA DE SEVILLA)|SP41023|1|1|0|17.69|7.475|
+|15|08-06-2020|LITORAL|SP11016|4|10|1|19.34|6.7746|
 |16|08-06-2020|CASTUERA|SP06036|1|1|0|15.69|8.4135|
 |17|08-06-2020|SALDAÑA|SP34157|1|1|0|9.56|12.288|
-|18|08-06-2020|SIERO|SP33066|1|1|0|11.86|10.6017|
-|19|08-06-2020|BAJO ANDARAX/CAMPO DE TABERNA|SP04013|1|1|0|15.03|8.7482|
-|20|08-06-2020|DON BENITO|SP06044|4|4|0|15.69|8.4135|
-|21|08-06-2020|CANTILLANA (VEGA DE SEVILLA)|SP41023|1|1|0|17.69|7.475|
-|22|08-06-2020|SEGOVIA|SP40194|1|1|0|6.59|15.2001|
-|23|08-06-2020|FERROL|SP15036|1|1|0|15|8.763|
-|24|08-06-2020|GAMA (BARCENA DE CICERO)|SP39009|1|1|0|14.63|8.9566|
+|18|08-06-2020|GIJON|SP33024|1|1|0|13.53|9.5704|
+|19|08-06-2020|DON BENITO|SP06044|4|4|0|15.69|8.4135|
+|20|08-06-2020|FERROL|SP15036|1|1|0|15|8.763|
+|21|08-06-2020|BAJO ANDARAX/CAMPO DE TABERNA|SP04013|1|1|0|15.03|8.7482|
+|22|08-06-2020|GAMA (BARCENA DE CICERO)|SP39009|1|1|0|14.63|8.9566|
+|23|08-06-2020|DEBAGOIENA|SP20074|1|1|0|11.46|10.87|
+|24|08-06-2020|SEGOVIA|SP40194|1|1|0|6.59|15.2001|
 |25|08-06-2020|PALMA|SP07040|19|19|2|15.49|8.5138|
 |26|08-06-2020|RIBERA BAIXA|SP46105|6|6|0|17.31|7.641|
 |27|08-06-2020|CARTAYA (COSTA OCCIDENTAL)|SP21021|10|10|2|17.43|7.5896|
@@ -73,6 +73,25 @@
 
 
 ### Alerta 2 
+- *Id comarca*: SP50297
+- *Localización comarca*: ZARAGOZA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Larus ridibundus|5820|0.2059|
+
+
+### Alerta 3 
+- *Id comarca*: SP08022
+- *Localización comarca*: BERGUEDA (BERGA)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Ciconia ciconia|1340|0.6948|
+| 1| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
+
+
+### Alerta 4 
 - *Id comarca*: SP46094
 - *Localización comarca*: L'HORTA SUD-CATARROJA
 
@@ -81,7 +100,7 @@
 | 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Fulica atra|4290|0.5103|
 
 
-### Alerta 3 
+### Alerta 5 
 - *Id comarca*: SP41087
 - *Localización comarca*: SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)
 
@@ -94,16 +113,7 @@
 | 4| 267002|24-03-2020|24-03-2020|Poland|Muszkowo|52.533333|14.966667|Domestic|Domestic Turkey||600|Anser anser|1610|0.1615|
 
 
-### Alerta 4 
-- *Id comarca*: SP50297
-- *Localización comarca*: ZARAGOZA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Larus ridibundus|5820|0.2059|
-
-
-### Alerta 5 
+### Alerta 6 
 - *Id comarca*: SP25120
 - *Localización comarca*: SEGRIA (LLEIDA)
 
@@ -113,17 +123,44 @@
 | 1| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
 
 
-### Alerta 6 
-- *Id comarca*: SP08022
-- *Localización comarca*: BERGUEDA (BERGA)
+### Alerta 7 
+- *Id comarca*: SP10195
+- *Localización comarca*: TRUJILLO
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 267399|27-03-2020|24-03-2020|Germany|Limbach-Oberfrohna|50.85|12.75|Wild|Wild Anatidae (unidentified)|1|1|Ciconia ciconia|1340|0.6948|
-| 1| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
+| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1362|
+| 1| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
 
 
-### Alerta 7 
+### Alerta 8 
+- *Id comarca*: SP44050
+- *Localización comarca*: CALAMOCHA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
+
+
+### Alerta 9 
+- *Id comarca*: SP13082
+- *Localización comarca*: TOMELLOSO
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
+
+
+### Alerta 10 
+- *Id comarca*: SP08298
+- *Localización comarca*: OSONA (VIC)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
+
+
+### Alerta 11 
 - *Id comarca*: SP11004
 - *Localización comarca*: CAMPO DE GIBRALTAR
 
@@ -136,62 +173,34 @@
 | 4| 267002|24-03-2020|24-03-2020|Poland|Muszkowo|52.533333|14.966667|Domestic|Domestic Turkey||600|Tringa totanus|5460|0.1271|
 
 
-### Alerta 8 
-- *Id comarca*: SP10195
-- *Localización comarca*: TRUJILLO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1362|
-| 1| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
-
-
-### Alerta 9 
-- *Id comarca*: SP44050
-- *Localización comarca*: CALAMOCHA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
-
-
-### Alerta 10 
-- *Id comarca*: SP13082
-- *Localización comarca*: TOMELLOSO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
-
-
-### Alerta 11 
-- *Id comarca*: SP08298
-- *Localización comarca*: OSONA (VIC)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266986|23-03-2020|20-03-2020|Germany|Frohburg|51.05|12.56|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.6948|
-
-
 ### Alerta 12 
-- *Id comarca*: SP33024
-- *Localización comarca*: GIJON
+- *Id comarca*: SP27028
+- *Localización comarca*: LUGO
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Phalacrocorax carbo|720|0.1075|
+| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
 
 
 ### Alerta 13 
-- *Id comarca*: SP20074
-- *Localización comarca*: DEBAGOIENA
+- *Id comarca*: SP33066
+- *Localización comarca*: SIERO
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Anser anser|1610|0.1615|
+| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
 
 
 ### Alerta 14 
+- *Id comarca*: SP41023
+- *Localización comarca*: CANTILLANA (VEGA DE SEVILLA)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Pluvialis apricaria|4850|0.012|
+
+
+### Alerta 15 
 - *Id comarca*: SP11016
 - *Localización comarca*: LITORAL
 
@@ -201,15 +210,6 @@
 | 1| 269404|06-04-2020|30-03-2020|Poland|Muszkowo|52.533458|14.975568|Domestic|Domestic Unspecified bird|600|200|Anser anser|1610|0.1615|
 | 2| 267567|31-03-2020|23-03-2020|Poland|Muszkowo|52.5325|14.9725|Domestic|Domestic Unspecified bird|3500|600|Anser anser|1610|0.1615|
 | 3| 267002|24-03-2020|24-03-2020|Poland|Muszkowo|52.533333|14.966667|Domestic|Domestic Turkey||600|Anser anser|1610|0.1615|
-
-
-### Alerta 15 
-- *Id comarca*: SP27028
-- *Localización comarca*: LUGO
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
 
 
 ### Alerta 16 
@@ -231,24 +231,15 @@
 
 
 ### Alerta 18 
-- *Id comarca*: SP33066
-- *Localización comarca*: SIERO
+- *Id comarca*: SP33024
+- *Localización comarca*: GIJON
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
+| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Phalacrocorax carbo|720|0.1075|
 
 
 ### Alerta 19 
-- *Id comarca*: SP04013
-- *Localización comarca*: BAJO ANDARAX/CAMPO DE TABERNA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
-
-
-### Alerta 20 
 - *Id comarca*: SP06044
 - *Localización comarca*: DON BENITO
 
@@ -260,25 +251,7 @@
 | 3| 267002|24-03-2020|24-03-2020|Poland|Muszkowo|52.533333|14.966667|Domestic|Domestic Turkey||600|Anas crecca|1840|0.0173|
 
 
-### Alerta 21 
-- *Id comarca*: SP41023
-- *Localización comarca*: CANTILLANA (VEGA DE SEVILLA)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Pluvialis apricaria|4850|0.012|
-
-
-### Alerta 22 
-- *Id comarca*: SP40194
-- *Localización comarca*: SEGOVIA
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Anser anser|1610|0.1615|
-
-
-### Alerta 23 
+### Alerta 20 
 - *Id comarca*: SP15036
 - *Localización comarca*: FERROL
 
@@ -287,13 +260,40 @@
 | 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
 
 
-### Alerta 24 
+### Alerta 21 
+- *Id comarca*: SP04013
+- *Localización comarca*: BAJO ANDARAX/CAMPO DE TABERNA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Vanellus vanellus|4930|0.1362|
+
+
+### Alerta 22 
 - *Id comarca*: SP39009
 - *Localización comarca*: GAMA (BARCENA DE CICERO)
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Phalacrocorax carbo|720|0.1075|
+
+
+### Alerta 23 
+- *Id comarca*: SP20074
+- *Localización comarca*: DEBAGOIENA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Anser anser|1610|0.1615|
+
+
+### Alerta 24 
+- *Id comarca*: SP40194
+- *Localización comarca*: SEGOVIA
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 266942|21-03-2020|20-03-2020|Germany|Dornum|53.6309|7.4594|Domestic|Domestic Turkey|130|130|Anser anser|1610|0.1615|
 
 
 ### Alerta 25 

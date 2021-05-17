@@ -4,7 +4,7 @@
  - *Periodo de*: 10-05-2021 a 17-05-2021
 
 ## Sumario del informe 
- - *Número de comarcas ganaderas en alerta*: 305
+ - *Número de comarcas ganaderas en alerta*: 306
  - *Número de brotes en Europa asociados con movimientos de riesgo a España*: 116
 
 ## Tabla de alertas 
@@ -15,13 +15,13 @@
 |3|10-05-2021|UTRERA (BAJO GUADALQUIVIR)|SP41095|37|138|284|13.51|9.5787|
 |4|10-05-2021|ZAMORA|SP49275|9|9|12|11.21|11.0376|
 |5|10-05-2021|DON BENITO|SP06044|22|73|97|13.94|9.3346|
-|6|10-05-2021|ALMONTE (ENTORNO DE DOÑANA)|SP21005|39|198|258|15.49|8.5138|
+|6|10-05-2021|ALMONTE (ENTORNO DE DOÑANA)|SP21005|39|200|262|15.49|8.5138|
 |7|10-05-2021|AZUAGA|SP06014|8|10|7|11.51|10.8311|
 |8|10-05-2021|ALLARIZ|SP32001|4|4|3|7.31|14.3795|
 |9|10-05-2021|SIERO|SP33066|22|32|36|12.76|10.0296|
 |10|10-05-2021|BALAZOTE|SP02012|5|8|24|11.31|10.9682|
 |11|10-05-2021|ARANJUEZ|SP28013|25|72|205|11.03|11.1682|
-|12|10-05-2021|BADAJOZ|SP06015|30|69|114|13.29|9.7121|
+|12|10-05-2021|BADAJOZ|SP06015|30|70|114|13.29|9.7121|
 |13|10-05-2021|LITORAL|SP11016|39|104|248|17.3|7.6475|
 |14|10-05-2021|L'HORTA SUD-CATARROJA|SP46094|32|73|141|16.71|7.9168|
 |15|10-05-2021|TOMELLOSO|SP13082|20|86|620|11.69|10.7156|
@@ -31,7 +31,7 @@
 |19|10-05-2021|CAMP D'ELX|SP03065|17|27|47|15.33|8.5936|
 |20|10-05-2021|CARTAYA (COSTA OCCIDENTAL)|SP21021|35|157|625|15.04|8.7407|
 |21|10-05-2021|VIGO-O BAIXO MIÑO|SP36039|14|20|46|12.16|10.4063|
-|22|10-05-2021|CAMPIÑA|SP11020|26|108|607|12.64|10.0999|
+|22|10-05-2021|CAMPIÑA|SP11020|26|109|615|12.64|10.0999|
 |23|10-05-2021|UBEDA (LA LOMA)|SP23092|2|2|5|13.46|9.6118|
 |24|10-05-2021|RIBERA BAIXA|SP46105|25|45|71|16.71|7.9168|
 |25|10-05-2021|ALT EMPORDA (FIGUERES)|SP17066|27|32|100|12.07|10.4647|
@@ -40,12 +40,12 @@
 |28|10-05-2021|TARRAGONES (TARRAGONA)|SP43148|12|22|57|13.8|9.4151|
 |29|10-05-2021|CACERES|SP10037|14|28|52|11.36|10.9386|
 |30|10-05-2021|BAÑEZA LA|SP24010|3|3|15|8|13.6788|
-|31|10-05-2021|BAIX EBRE (TORTOSA)|SP43155|41|94|238|16.11|8.2027|
+|31|10-05-2021|BAIX EBRE (TORTOSA)|SP43155|42|95|243|16.11|8.2027|
 |32|10-05-2021|CASTUERA|SP06036|19|30|42|13.94|9.3346|
 |33|10-05-2021|ZARAGOZA|SP50297|4|4|2|14.74|8.8983|
 |34|10-05-2021|IZNALLOZ (MONTES ORIENTALES)|SP18105|2|2|7|12.09|10.4524|
-|35|10-05-2021|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|49|251|465|16.04|8.2374|
-|36|10-05-2021|CALZADA DE CALATRAVA|SP13027|8|121|1087|9.34|12.4653|
+|35|10-05-2021|SANLUCAR LA MAYOR (PONIENTE DE SEVILLA)|SP41087|49|253|473|16.04|8.2374|
+|36|10-05-2021|CALZADA DE CALATRAVA|SP13027|9|123|1110|9.34|12.4653|
 |37|10-05-2021|PLA DE L'ESTANY (BANYOLES)|SP17015|4|4|38|12.07|10.4647|
 |38|10-05-2021|OSONA (VIC)|SP08298|8|15|75|10.07|11.8781|
 |39|10-05-2021|TOLOSALDEA|SP20071|8|10|24|14.14|9.2232|
@@ -61,12 +61,12 @@
 |49|10-05-2021|CUELLAR|SP40063|1|1|6|9.33|12.4773|
 |50|10-05-2021|BELORADO|SP09048|1|1|6|10.2|11.7789|
 |51|10-05-2021|TALAVERA DE LA REINA|SP45165|21|32|129|11.6|10.7731|
-|52|10-05-2021|RIELLO|SP24132|4|4|32|6.37|15.4587|
+|52|10-05-2021|RIELLO|SP24132|5|5|40|6.37|15.4587|
 |53|10-05-2021|SIERRA DE CÁDIZ|SP11024|7|7|13|10.9|11.2599|
 |54|10-05-2021|A CORUÑA|SP15017|15|16|33|12.84|9.9772|
 |55|10-05-2021|KOSTA|SP20079|18|31|76|14.74|8.8983|
-|56|10-05-2021|URIBE KOSTA-BILBAO|SP48020|23|48|105|14.34|9.1134|
-|57|10-05-2021|BAIX EMPORDA (LA BISBAL)|SP17022|12|12|16|12.1|10.4431|
+|56|10-05-2021|URIBE KOSTA-BILBAO|SP48020|24|49|106|14.34|9.1134|
+|57|10-05-2021|BAIX EMPORDA (LA BISBAL)|SP17022|13|13|16|12.1|10.4431|
 |58|10-05-2021|CORIA|SP10067|10|10|12|12.54|10.162|
 |59|10-05-2021|GRADO|SP33026|2|2|2|12.76|10.0296|
 |60|10-05-2021|MONTSIA (AMPOSTA)|SP43014|28|49|120|16.11|8.2027|
@@ -76,7 +76,7 @@
 |64|10-05-2021|LERMA|SP09194|2|2|0|9.33|12.4773|
 |65|10-05-2021|GAMA (BARCENA DE CICERO)|SP39009|26|33|46|14.08|9.2608|
 |66|10-05-2021|SARIÑENA|SP22213|7|7|18|12.36|10.2787|
-|67|10-05-2021|LA JANDA|SP11023|16|21|39|16.04|8.2374|
+|67|10-05-2021|LA JANDA|SP11023|16|22|46|16.04|8.2374|
 |68|10-05-2021|PEÑARANDA DE BRACAMONTE|SP37246|1|1|0|8.36|13.3372|
 |69|10-05-2021|MALAGA (GUADAHORCE ORIENTAL)|SP29067|22|59|90|17.74|7.4498|
 |70|10-05-2021|MADRID (C.U.)|SP28079|27|80|371|10.9|11.2599|
@@ -108,7 +108,7 @@
 |96|10-05-2021|BARCELONES (BARCELONA)|SP08019|2|7|2|15.09|8.7185|
 |97|10-05-2021|PLA D'URGELL (MOLLERUSSA)|SP25137|4|4|7|13.14|9.7966|
 |98|10-05-2021|L'HORTA NORD|SP46126|7|7|7|16.71|7.9168|
-|99|10-05-2021|MERIDA|SP06083|16|26|48|11.36|10.9386|
+|99|10-05-2021|MERIDA|SP06083|17|27|50|11.36|10.9386|
 |100|10-05-2021|HUESCA|SP22125|1|1|0|12.36|10.2787|
 |101|10-05-2021|LEBRIJA (LAS MARISMAS)|SP41053|14|16|32|12.64|10.0999|
 |102|10-05-2021|OSUNA (CAMPIÑA/SIERRA SUR)|SP41068|2|2|0|13.04|9.8564|
@@ -125,7 +125,7 @@
 |113|10-05-2021|TERRA CHA CASTRO|SP27010|3|3|18|10.2|11.7789|
 |114|10-05-2021|PALMA|SP07040|12|12|30|14.44|9.059|
 |115|10-05-2021|IBIZA|SP07026|1|1|5|15.27|8.6228|
-|116|10-05-2021|MADRIDEJOS|SP45087|1|1|3|11.57|10.7924|
+|116|10-05-2021|MADRIDEJOS|SP45087|2|2|6|11.57|10.7924|
 |117|10-05-2021|HERRERA DEL DUQUE|SP06063|14|14|8|12.54|10.162|
 |118|10-05-2021|DEBABARRENA|SP20032|9|9|24|12.94|9.9165|
 |119|10-05-2021|LOGROÑO|SP26089|10|10|24|12.02|10.4972|
@@ -181,9 +181,9 @@
 |169|10-05-2021|FISTERRA|SP15028|3|3|6|12.34|10.2877|
 |170|10-05-2021|MANGANESES DE LA LAMPREANA|SP49108|2|2|7|10.27|11.7244|
 |171|10-05-2021|SANTO DOMINGO DE LA CALZADA|SP26138|2|2|2|10.2|11.7789|
-|172|10-05-2021|PEÑARROYA-PUEBLONUEVO (VALLE DEL GUADIATO)|SP14052|2|2|4|13.86|9.3828|
+|172|10-05-2021|PEÑARROYA-PUEBLONUEVO (VALLE DEL GUADIATO)|SP14052|3|3|6|13.86|9.3828|
 |173|10-05-2021|RIO ANDARAX/RIO NACIMIENTO|SP04030|3|3|10|14.77|8.8831|
-|174|10-05-2021|ZAFRA|SP06158|13|20|24|11.51|10.8311|
+|174|10-05-2021|ZAFRA|SP06158|13|22|28|11.51|10.8311|
 |175|10-05-2021|TORRELAVEGA|SP39087|23|35|36|15.33|8.5936|
 |176|10-05-2021|BRIVIESCA|SP09056|2|2|7|10.2|11.7789|
 |177|10-05-2021|AREVALO|SP05016|2|2|2|8.36|13.3372|
@@ -230,8 +230,8 @@
 |218|10-05-2021|TERRA DE SONEIRA|SP15093|2|2|0|13.49|9.5952|
 |219|10-05-2021|NAJERA|SP26102|1|1|0|7.63|14.0505|
 |220|10-05-2021|QUINTO|SP50222|3|3|22|11.33|10.9583|
-|221|10-05-2021|TERRA CHA VILALBA|SP27065|1|1|2|10.2|11.7789|
-|222|10-05-2021|ORDES|SP15059|2|2|3|12.51|10.1799|
+|221|10-05-2021|TERRA CHA VILALBA|SP27065|2|2|5|10.2|11.7789|
+|222|10-05-2021|ORDES|SP15059|3|3|5|12.51|10.1799|
 |223|10-05-2021|CORTEGANA (SIERRA OCCIDENTAL)|SP21025|3|3|0|12.16|10.4063|
 |224|10-05-2021|ESTEPONA (COSTA DE MALAGA)|SP29051|5|5|11|10.9|11.2599|
 |225|10-05-2021|LA PALMA DEL CONDADO (CONDADO DE HUELVA)|SP21054|3|3|0|15.17|8.6742|
@@ -279,42 +279,43 @@
 |267|10-05-2021|SARRIA|SP27057|2|2|4|10.2|11.7789|
 |268|10-05-2021|NAVALCARNERO|SP28096|1|1|9|11.36|10.9386|
 |269|10-05-2021|SEGOVIA|SP40194|1|1|8|5.73|16.2905|
-|270|10-05-2021|A MARIÑA ORIENTAL|SP27051|2|4|4|12.4|10.2516|
-|271|10-05-2021|ROA DE DUERO|SP09321|1|1|0|9.33|12.4773|
-|272|10-05-2021|A MARIÑA CENTRAL|SP27030|2|2|1|12.4|10.2516|
-|273|10-05-2021|SANTA MARIA DEL PARAMO|SP24157|1|1|0|8.53|13.1784|
-|274|10-05-2021|LUARCA|SP33034|1|1|0|13.27|9.7205|
-|275|10-05-2021|ALCAÑIZ|SP44013|1|1|5|11.33|10.9583|
-|276|10-05-2021|HUELMA (SIERRA MÁGINA)|SP23044|1|1|1|15.11|8.7037|
-|277|10-05-2021|IRURZUN|SP31904|1|1|0|15.4|8.5572|
-|278|10-05-2021|PIEDRAHITA|SP05186|1|1|0|4.6|18.0062|
-|279|10-05-2021|PILOÑA|SP33049|1|1|3|5.74|16.271|
-|280|10-05-2021|BENAVENTE|SP49021|1|1|2|10.27|11.7244|
-|281|10-05-2021|MORA|SP45106|1|1|3|11.57|10.7924|
-|282|10-05-2021|VALLADOLID|SP47186|4|4|8|8.93|12.82|
-|283|10-05-2021|VALLES OCCIDENTAL (SABADEL)|SP08187|1|1|2|15.09|8.7185|
-|284|10-05-2021|TAMARITE DE LITERA|SP22225|1|1|0|13.14|9.7966|
-|285|10-05-2021|PUEBLA DE GUZMAN (ANDEVALO OCCIDENTAL)|SP21058|1|1|1|15.04|8.7407|
-|286|10-05-2021|ALBARRACÍN|SP44009|3|3|0|9.34|12.4653|
-|287|10-05-2021|MIRANDA DE EBRO|SP09219|4|4|6|10.2|11.7789|
-|288|10-05-2021|CUENCA|SP16078|2|2|1|8.03|13.6463|
-|289|10-05-2021|BERGUEDA (BERGA)|SP08022|2|2|2|6.99|14.739|
-|290|10-05-2021|JAEN (CAMPIÑA DE JAEN)|SP23054|4|5|12|13.9|9.3586|
-|291|10-05-2021|CALAMOCHA|SP44050|1|1|1|10.34|11.6702|
-|292|10-05-2021|VILLALPANDO|SP49250|2|2|0|10.27|11.7244|
-|293|10-05-2021|TARANCON|SP16203|2|2|0|13.07|9.8392|
-|294|10-05-2021|CORRALES DEL BUELNA|SP39025|1|1|2|7.06|14.6594|
-|295|10-05-2021|A MARIÑA OCCIDENTAL|SP27066|1|1|1|13.47|9.6035|
-|296|10-05-2021|LA MARINA ALTA|SP03102|2|2|5|15.3|8.6082|
-|297|10-05-2021|GUIJUELO|SP37156|2|2|6|4.6|18.0062|
-|298|10-05-2021|SALDAÑA|SP34157|2|2|4|9.17|12.6102|
-|299|10-05-2021|LOS SERRANOS|SP46106|1|1|0|10.29|11.7135|
-|300|10-05-2021|PONTEDEUME|SP15069|1|1|0|12.84|9.9772|
-|301|10-05-2021|MEDINA DEL CAMPO|SP47085|1|1|0|8.93|12.82|
-|302|10-05-2021|ELCHE DE LA SIERRA|SP02030|2|4|34|13.7|9.472|
-|303|10-05-2021|URGELL (TARREGA)|SP25217|2|2|17|13.14|9.7966|
-|304|10-05-2021|SELVA (SANTA COLOMA DE FARNERS)|SP17180|1|1|1|12.1|10.4431|
-|305|10-05-2021|SAHAGUN|SP24139|1|1|6|9.17|12.6102|
+|270|10-05-2021|PUEBLA DE GUZMAN (ANDEVALO OCCIDENTAL)|SP21058|2|2|3|15.04|8.7407|
+|271|10-05-2021|A MARIÑA ORIENTAL|SP27051|2|4|4|12.4|10.2516|
+|272|10-05-2021|ROA DE DUERO|SP09321|1|1|0|9.33|12.4773|
+|273|10-05-2021|A MARIÑA CENTRAL|SP27030|2|2|1|12.4|10.2516|
+|274|10-05-2021|SANTA MARIA DEL PARAMO|SP24157|1|1|0|8.53|13.1784|
+|275|10-05-2021|LUARCA|SP33034|1|1|0|13.27|9.7205|
+|276|10-05-2021|ALCAÑIZ|SP44013|1|1|5|11.33|10.9583|
+|277|10-05-2021|HUELMA (SIERRA MÁGINA)|SP23044|1|1|1|15.11|8.7037|
+|278|10-05-2021|IRURZUN|SP31904|1|1|0|15.4|8.5572|
+|279|10-05-2021|PIEDRAHITA|SP05186|1|1|0|4.6|18.0062|
+|280|10-05-2021|PILOÑA|SP33049|2|2|6|5.74|16.271|
+|281|10-05-2021|MEDINA DE RIOSECO|SP47086|1|1|10|8.93|12.82|
+|282|10-05-2021|BENAVENTE|SP49021|1|1|2|10.27|11.7244|
+|283|10-05-2021|MORA|SP45106|1|1|3|11.57|10.7924|
+|284|10-05-2021|VALLADOLID|SP47186|4|4|8|8.93|12.82|
+|285|10-05-2021|VALLES OCCIDENTAL (SABADEL)|SP08187|1|1|2|15.09|8.7185|
+|286|10-05-2021|TAMARITE DE LITERA|SP22225|1|1|0|13.14|9.7966|
+|287|10-05-2021|ALBARRACÍN|SP44009|3|3|0|9.34|12.4653|
+|288|10-05-2021|MIRANDA DE EBRO|SP09219|4|4|6|10.2|11.7789|
+|289|10-05-2021|CUENCA|SP16078|2|2|1|8.03|13.6463|
+|290|10-05-2021|BERGUEDA (BERGA)|SP08022|2|2|2|6.99|14.739|
+|291|10-05-2021|JAEN (CAMPIÑA DE JAEN)|SP23054|4|5|12|13.9|9.3586|
+|292|10-05-2021|CALAMOCHA|SP44050|1|1|1|10.34|11.6702|
+|293|10-05-2021|VILLALPANDO|SP49250|2|2|0|10.27|11.7244|
+|294|10-05-2021|TARANCON|SP16203|2|2|0|13.07|9.8392|
+|295|10-05-2021|CORRALES DEL BUELNA|SP39025|1|1|2|7.06|14.6594|
+|296|10-05-2021|A MARIÑA OCCIDENTAL|SP27066|1|1|1|13.47|9.6035|
+|297|10-05-2021|LA MARINA ALTA|SP03102|2|2|5|15.3|8.6082|
+|298|10-05-2021|GUIJUELO|SP37156|2|2|6|4.6|18.0062|
+|299|10-05-2021|SALDAÑA|SP34157|2|2|4|9.17|12.6102|
+|300|10-05-2021|LOS SERRANOS|SP46106|1|1|0|10.29|11.7135|
+|301|10-05-2021|PONTEDEUME|SP15069|1|1|0|12.84|9.9772|
+|302|10-05-2021|MEDINA DEL CAMPO|SP47085|1|1|0|8.93|12.82|
+|303|10-05-2021|ELCHE DE LA SIERRA|SP02030|2|4|34|13.7|9.472|
+|304|10-05-2021|URGELL (TARREGA)|SP25217|2|2|17|13.14|9.7966|
+|305|10-05-2021|SELVA (SANTA COLOMA DE FARNERS)|SP17180|1|1|1|12.1|10.4431|
+|306|10-05-2021|SAHAGUN|SP24139|1|1|6|9.17|12.6102|
 
 
 ## Tablas de brotes de IAAP en Europa y su conexión a España a través de  movimientos de aves silvestres
@@ -488,13 +489,13 @@
 | 15| 291309|06-03-2021|06-03-2021|Denmark|Skælskør|55.253889|11.290278|Domestic|Domestic Turkey|||Anas clypeata|1940|0.1613|
 | 16| 291307|04-03-2021|04-03-2021|Denmark|Kongsted|55.24|12.0427|Domestic|Domestic Unspecified bird|||Anser anser|1610|0.2607|
 | 17| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Anas clypeata|1940|0.1613|
-| 18| 291962|19-03-2021|17-03-2021|Netherlands|Andijk|52.7413|5.19|Wild|Wild Phasianidae (unidentified):Phasianidae (incognita)(Phasianidae)|1|1|Anser anser|1610|0.2607|
+| 18| 291962|19-03-2021|17-03-2021|Netherlands|Andijk|52.7413|5.19|Wild|Wild Phasianidae (unidentified):Phasianidae (incognita)(Phasianidae)|1|1|Limosa limosa|5320|0.2165|
 | 19| 291961|19-03-2021|17-03-2021|Netherlands|Den haag|52.05|4.32|Wild|Wild Canada Goose:Branta canadensis(Anatidae)|1|1|Larus fuscus|5910|0.1451|
 | 20| 291960|19-03-2021|17-03-2021|Netherlands|Zevenhuizen Gn|53.11|6.3468|Wild|Wild Buzzard|1|1|Anser anser|1610|0.2607|
 | 21| 291959|19-03-2021|10-03-2021|Netherlands|Uitgeest|52.532|4.71|Wild|Wild Goose|1|1|Pluvialis apricaria|4850|0.0129|
 | 22| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Limosa limosa|5320|0.2165|
 | 23| 291957|19-03-2021|10-03-2021|Netherlands|Hoorn|52.6449|5.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Limosa limosa|5320|0.2165|
-| 24| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Larus fuscus|5910|0.1451|
+| 24| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Anser anser|1610|0.2607|
 | 25| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Anser anser|1610|0.2607|
 | 26| 291840|19-03-2021|10-03-2021|Netherlands|Andijk|52.745|5.21|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|3|3|Anser anser|1610|0.2607|
 | 27| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Anser anser|1610|0.2607|
@@ -962,7 +963,7 @@
 | 14| 291961|19-03-2021|17-03-2021|Netherlands|Den haag|52.05|4.32|Wild|Wild Canada Goose:Branta canadensis(Anatidae)|1|1|Ciconia ciconia|1340|0.9109|
 | 15| 291960|19-03-2021|17-03-2021|Netherlands|Zevenhuizen Gn|53.11|6.3468|Wild|Wild Buzzard|1|1|Pluvialis apricaria|4850|0.0129|
 | 16| 291959|19-03-2021|10-03-2021|Netherlands|Uitgeest|52.532|4.71|Wild|Wild Goose|1|1|Larus ridibundus|5820|0.3028|
-| 17| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1863|
+| 17| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Tringa totanus|5460|0.851|
 | 18| 291957|19-03-2021|10-03-2021|Netherlands|Hoorn|52.6449|5.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Ardea cinerea|1220|0.5194|
 | 19| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Limosa limosa|5320|0.2165|
 | 20| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Pluvialis apricaria|4850|0.0129|
@@ -1160,46 +1161,47 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 293272|12-04-2021|03-03-2021|Sweden|Hofterup|55.799258|12.98228|Wild|Wild Accipiter gentilis |1|1|Ardea cinerea|1220|0.5194|
-| 1| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Domestic Unspecified bird|3000|3000|Calidris alpina|5120|0.736|
-| 2| 292684|22-03-2021|04-03-2021|Estonia|haabneeme beach|59.333333|25.0|Wild|Wild Swan|2|2|Larus ridibundus|5820|0.3028|
-| 3| 292682|22-03-2021|08-03-2021|Estonia|liimala village|59.366667|27.05|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 4| 292121|31-03-2021|17-03-2021|Estonia|Saulepi|58.345489|23.787127|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 5| 292120|31-03-2021|16-03-2021|Estonia|Mahu|59.519422|26.717591|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 6| 292119|22-03-2021|01-03-2021|Estonia|Schnelli pond|59.438035|24.736705|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
-| 7| 292117|22-03-2021|04-03-2021|Estonia|Tiskre|59.41408|24.580348|Wild|Wild Grey Heron:Ardea cinerea(Ardeidae)|1|1|Larus ridibundus|5820|0.3028|
-| 8| 292115|22-03-2021|01-03-2021|Estonia|v�äna-jõesuu beach|59.434581|24.349695|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 9| 292113|22-03-2021|09-03-2021|Estonia|Aa beach|59.437717|27.149175|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 10| 292108|22-03-2021|05-03-2021|Estonia|v�äna-jõesuu beach|59.445144|24.345703|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 11| 292106|22-03-2021|08-03-2021|Estonia|V�äna-jõesuu beach|59.437186|24.351471|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 12| 292905|02-04-2021|10-03-2021|Poland|Wisznia Ma a|51.25|17.0683|Domestic|Domestic Unspecified bird|3381|37|Larus ridibundus|5820|0.3028|
-| 13| 291988|20-03-2021|12-03-2021|Belgium|Diksmuide|51.036|2.8554|Wild|Wild Common coot|3|3|Anas strepera|1820|0.7027|
-| 14| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Wild Goose|1|1|Larus ridibundus|5820|0.3028|
-| 15| 291984|20-03-2021|10-03-2021|Belgium|Arendonk|51.3249|5.1234|Wild|Wild Grey Heron:Ardea cinerea(Ardeidae)|1|1|Larus ridibundus|5820|0.3028|
-| 16| 291314|17-03-2021|17-03-2021|Denmark|Illebølle|54.87|10.7659|Domestic|Domestic Duck|||Tringa totanus|5460|0.851|
-| 17| 291313|17-03-2021|17-03-2021|Denmark|Sønderup|56.812|9.651|Domestic|Domestic Turkey|||Larus ridibundus|5820|0.3028|
-| 18| 293448|20-04-2021|06-04-2021|Finland|Helsinki|60.221|25.014|Wild|Wild Accipiter gentilis |1|1|Larus ridibundus|5820|0.3028|
-| 19| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Wild Gull|1|1|Larus ridibundus|5820|0.3028|
-| 20| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
-| 21| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
-| 22| 293277|29-03-2021|11-03-2021|Finland|Tuusula|60.3476|25.0037|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 23| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
-| 24| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
-| 25| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Wild Goose|1|1|Ciconia ciconia|1340|0.9109|
-| 26| 291961|19-03-2021|17-03-2021|Netherlands|Den haag|52.05|4.32|Wild|Wild Canada Goose:Branta canadensis(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
-| 27| 291960|19-03-2021|17-03-2021|Netherlands|Zevenhuizen Gn|53.11|6.3468|Wild|Wild Buzzard|1|1|Larus ridibundus|5820|0.3028|
-| 28| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Larus ridibundus|5820|0.3028|
-| 29| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Larus ridibundus|5820|0.3028|
-| 30| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Anas clypeata|1940|0.1613|
-| 31| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Anas crecca|1840|0.0158|
-| 32| 293216|12-04-2021|26-03-2021|Germany|Jürgenshagen|53.90808|11.834301|Domestic|Domestic Unspecified bird|55|55|Phalacrocorax carbo|720|0.1461|
-| 33| 293049|09-04-2021|27-03-2021|Germany|Schönfeld|51.364843|13.789124|Domestic|Domestic Unspecified bird|9|9|Ardea cinerea|1220|0.5194|
-| 34| 293028|09-04-2021|21-03-2021|Germany|Petersberg|51.6083|11.93347|Domestic|Domestic Unspecified bird|20||Fulica atra|4290|0.6831|
-| 35| 292102|19-03-2021|03-03-2021|Czech Republic|Bose|50.5|15.02|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
-| 36| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Wild Swan|5|5|Larus ridibundus|5820|0.3028|
-| 37| 292097|19-03-2021|05-03-2021|Czech Republic|Chomutov|49.6539|17.2428|Wild|Wild Swan|2|2|Larus ridibundus|5820|0.3028|
-| 38| 290046|01-03-2021|01-03-2021|Czech Republic|Krom  �ž (Kvasice)|49.298889|17.393056|Wild|Wild Swan|1||Larus ridibundus|5820|0.3028|
-| 39| 294642|30-04-2021|13-04-2021|Germany|peine (landkreis)|52.4|10.36|Wild|Wild Accipitridae (Accipitridae)|1|1|Larus ridibundus|5820|0.3028|
-| 40| 294641|30-04-2021|13-04-2021|Germany|wolfsburg|52.44|10.8|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Ciconia ciconia|1340|0.9109|
+| 1| 293209|13-04-2021|18-03-2021|Sweden|Årby|59.3836|16.5089|Wild|Wild Accipiter gentilis |1|1|Fulica atra|4290|0.6831|
+| 2| 290519|05-03-2021|02-03-2021|Sweden|Trelleborg|55.45|13.13|Domestic|Domestic Unspecified bird|3000|3000|Calidris alpina|5120|0.736|
+| 3| 292684|22-03-2021|04-03-2021|Estonia|haabneeme beach|59.333333|25.0|Wild|Wild Swan|2|2|Larus ridibundus|5820|0.3028|
+| 4| 292682|22-03-2021|08-03-2021|Estonia|liimala village|59.366667|27.05|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 5| 292121|31-03-2021|17-03-2021|Estonia|Saulepi|58.345489|23.787127|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 6| 292120|31-03-2021|16-03-2021|Estonia|Mahu|59.519422|26.717591|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 7| 292119|22-03-2021|01-03-2021|Estonia|Schnelli pond|59.438035|24.736705|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
+| 8| 292117|22-03-2021|04-03-2021|Estonia|Tiskre|59.41408|24.580348|Wild|Wild Grey Heron:Ardea cinerea(Ardeidae)|1|1|Larus ridibundus|5820|0.3028|
+| 9| 292115|22-03-2021|01-03-2021|Estonia|v�äna-jõesuu beach|59.434581|24.349695|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 10| 292113|22-03-2021|09-03-2021|Estonia|Aa beach|59.437717|27.149175|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 11| 292108|22-03-2021|05-03-2021|Estonia|v�äna-jõesuu beach|59.445144|24.345703|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 12| 292106|22-03-2021|08-03-2021|Estonia|V�äna-jõesuu beach|59.437186|24.351471|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 13| 292905|02-04-2021|10-03-2021|Poland|Wisznia Ma a|51.25|17.0683|Domestic|Domestic Unspecified bird|3381|37|Larus ridibundus|5820|0.3028|
+| 14| 291988|20-03-2021|12-03-2021|Belgium|Diksmuide|51.036|2.8554|Wild|Wild Common coot|3|3|Anas strepera|1820|0.7027|
+| 15| 291986|20-03-2021|05-03-2021|Belgium|Genk|50.9244|5.5397|Wild|Wild Goose|1|1|Larus ridibundus|5820|0.3028|
+| 16| 291984|20-03-2021|10-03-2021|Belgium|Arendonk|51.3249|5.1234|Wild|Wild Grey Heron:Ardea cinerea(Ardeidae)|1|1|Larus ridibundus|5820|0.3028|
+| 17| 291314|17-03-2021|17-03-2021|Denmark|Illebølle|54.87|10.7659|Domestic|Domestic Duck|||Tringa totanus|5460|0.851|
+| 18| 291313|17-03-2021|17-03-2021|Denmark|Sønderup|56.812|9.651|Domestic|Domestic Turkey|||Larus ridibundus|5820|0.3028|
+| 19| 293448|20-04-2021|06-04-2021|Finland|Helsinki|60.221|25.014|Wild|Wild Accipiter gentilis |1|1|Larus ridibundus|5820|0.3028|
+| 20| 293283|29-03-2021|02-03-2021|Finland|Helsinki|60.1964|25.0509|Wild|Wild Gull|1|1|Larus ridibundus|5820|0.3028|
+| 21| 293282|29-03-2021|25-02-2021|Finland|Helsinki|60.1922|25.0256|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
+| 22| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
+| 23| 293277|29-03-2021|11-03-2021|Finland|Tuusula|60.3476|25.0037|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 24| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
+| 25| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
+| 26| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Wild Goose|1|1|Ciconia ciconia|1340|0.9109|
+| 27| 291961|19-03-2021|17-03-2021|Netherlands|Den haag|52.05|4.32|Wild|Wild Canada Goose:Branta canadensis(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
+| 28| 291960|19-03-2021|17-03-2021|Netherlands|Zevenhuizen Gn|53.11|6.3468|Wild|Wild Buzzard|1|1|Larus ridibundus|5820|0.3028|
+| 29| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Larus ridibundus|5820|0.3028|
+| 30| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Larus ridibundus|5820|0.3028|
+| 31| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Anas clypeata|1940|0.1613|
+| 32| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Anas crecca|1840|0.0158|
+| 33| 293216|12-04-2021|26-03-2021|Germany|Jürgenshagen|53.90808|11.834301|Domestic|Domestic Unspecified bird|55|55|Phalacrocorax carbo|720|0.1461|
+| 34| 293049|09-04-2021|27-03-2021|Germany|Schönfeld|51.364843|13.789124|Domestic|Domestic Unspecified bird|9|9|Ardea cinerea|1220|0.5194|
+| 35| 293028|09-04-2021|21-03-2021|Germany|Petersberg|51.6083|11.93347|Domestic|Domestic Unspecified bird|20||Fulica atra|4290|0.6831|
+| 36| 292102|19-03-2021|03-03-2021|Czech Republic|Bose|50.5|15.02|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
+| 37| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Wild Swan|5|5|Larus ridibundus|5820|0.3028|
+| 38| 292097|19-03-2021|05-03-2021|Czech Republic|Chomutov|49.6539|17.2428|Wild|Wild Swan|2|2|Larus ridibundus|5820|0.3028|
+| 39| 290046|01-03-2021|01-03-2021|Czech Republic|Krom  �ž (Kvasice)|49.298889|17.393056|Wild|Wild Swan|1||Larus ridibundus|5820|0.3028|
+| 40| 294642|30-04-2021|13-04-2021|Germany|peine (landkreis)|52.4|10.36|Wild|Wild Accipitridae (Accipitridae)|1|1|Larus ridibundus|5820|0.3028|
+| 41| 294641|30-04-2021|13-04-2021|Germany|wolfsburg|52.44|10.8|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Ciconia ciconia|1340|0.9109|
 
 
 ### Alerta 32 
@@ -1292,10 +1294,10 @@
 | 32| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Anas crecca|1840|0.0158|
 | 33| 291957|19-03-2021|10-03-2021|Netherlands|Hoorn|52.6449|5.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Recurvirostra avosetta|4560|0.783|
 | 34| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Larus ridibundus|5820|0.3028|
-| 35| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Limosa limosa|5320|0.2165|
+| 35| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Anas crecca|1840|0.0158|
 | 36| 291840|19-03-2021|10-03-2021|Netherlands|Andijk|52.745|5.21|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|3|3|Limosa limosa|5320|0.2165|
 | 37| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Recurvirostra avosetta|4560|0.783|
-| 38| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Recurvirostra avosetta|4560|0.783|
+| 38| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Tringa totanus|5460|0.851|
 | 39| 293218|12-04-2021|10-03-2021|Germany|Stralsund|54.30053|13.074642|Domestic|Domestic Unspecified bird|3|2|Anas strepera|1820|0.7027|
 | 40| 293217|12-04-2021|11-03-2021|Germany|Semlow|54.174367|12.65655|Domestic|Domestic Unspecified bird|6177|19|Ardea cinerea|1220|0.5194|
 | 41| 293212|12-04-2021|01-03-2021|Germany|Blankensee|53.409532|13.262708|Domestic|Domestic Unspecified bird|70|70|Anser anser|1610|0.2607|
@@ -1317,11 +1319,12 @@
 | 0| 293207|13-04-2021|28-03-2021|Sweden|Vollsjö|55.6636|13.7772|Wild|Wild Strigidae (unidentified):Strigidae (incognita)(Strigidae)|1|1|Ciconia ciconia|1340|0.9109|
 | 1| 292912|06-04-2021|07-03-2021|Sweden|Ystad|55.45467|13.86139|Wild|Wild Herring Gull:Larus argentatus(Laridae)|1|1|Ciconia ciconia|1340|0.9109|
 | 2| 291961|19-03-2021|17-03-2021|Netherlands|Den haag|52.05|4.32|Wild|Wild Canada Goose:Branta canadensis(Anatidae)|1|1|Ciconia ciconia|1340|0.9109|
-| 3| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Domestic Unspecified bird|4|4|Ciconia ciconia|1340|0.9109|
-| 4| 293051|09-04-2021|24-03-2021|Germany|Döbeln|51.126655|13.047849|Domestic|Domestic Unspecified bird|6|2|Ciconia ciconia|1340|0.9109|
-| 5| 293049|09-04-2021|27-03-2021|Germany|Schönfeld|51.364843|13.789124|Domestic|Domestic Unspecified bird|9|9|Ciconia ciconia|1340|0.9109|
-| 6| 293047|09-04-2021|08-03-2021|Germany|Burgstädt|50.914741|12.810919|Domestic|Domestic Unspecified bird|11|11|Ciconia ciconia|1340|0.9109|
-| 7| 293029|09-04-2021|16-03-2021|Germany|Kalbe (Milde)|52.711742|11.398165|Domestic|Domestic Unspecified bird|12|12|Ciconia ciconia|1340|0.9109|
+| 3| 291960|19-03-2021|17-03-2021|Netherlands|Zevenhuizen Gn|53.11|6.3468|Wild|Wild Buzzard|1|1|Ciconia ciconia|1340|0.9109|
+| 4| 293211|12-04-2021|06-03-2021|Germany|Bergen auf RÜgen|54.396363|13.451793|Domestic|Domestic Unspecified bird|4|4|Ciconia ciconia|1340|0.9109|
+| 5| 293051|09-04-2021|24-03-2021|Germany|Döbeln|51.126655|13.047849|Domestic|Domestic Unspecified bird|6|2|Ciconia ciconia|1340|0.9109|
+| 6| 293049|09-04-2021|27-03-2021|Germany|Schönfeld|51.364843|13.789124|Domestic|Domestic Unspecified bird|9|9|Ciconia ciconia|1340|0.9109|
+| 7| 293047|09-04-2021|08-03-2021|Germany|Burgstädt|50.914741|12.810919|Domestic|Domestic Unspecified bird|11|11|Ciconia ciconia|1340|0.9109|
+| 8| 293029|09-04-2021|16-03-2021|Germany|Kalbe (Milde)|52.711742|11.398165|Domestic|Domestic Unspecified bird|12|12|Ciconia ciconia|1340|0.9109|
 
 
 ### Alerta 37 
@@ -1583,6 +1586,7 @@
 | 1| 291962|19-03-2021|17-03-2021|Netherlands|Andijk|52.7413|5.19|Wild|Wild Phasianidae (unidentified):Phasianidae (incognita)(Phasianidae)|1|1|Ardea cinerea|1220|0.5194|
 | 2| 291957|19-03-2021|10-03-2021|Netherlands|Hoorn|52.6449|5.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Ardea cinerea|1220|0.5194|
 | 3| 291840|19-03-2021|10-03-2021|Netherlands|Andijk|52.745|5.21|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|3|3|Ardea cinerea|1220|0.5194|
+| 4| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Ardea cinerea|1220|0.5194|
 
 
 ### Alerta 53 
@@ -1675,9 +1679,10 @@
 | 17| 291960|19-03-2021|17-03-2021|Netherlands|Zevenhuizen Gn|53.11|6.3468|Wild|Wild Buzzard|1|1|Pluvialis apricaria|4850|0.0129|
 | 18| 291959|19-03-2021|10-03-2021|Netherlands|Uitgeest|52.532|4.71|Wild|Wild Goose|1|1|Vanellus vanellus|4930|0.1863|
 | 19| 291957|19-03-2021|10-03-2021|Netherlands|Hoorn|52.6449|5.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Ardea cinerea|1220|0.5194|
-| 20| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Larus ridibundus|5820|0.3028|
-| 21| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Vanellus vanellus|4930|0.1863|
-| 22| 294014|26-04-2021|21-04-2021|Belgium|Waregem|50.8796|3.3486|Domestic|Domestic Unspecified bird|5||Larus ridibundus|5820|0.3028|
+| 20| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Vanellus vanellus|4930|0.1863|
+| 21| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Larus ridibundus|5820|0.3028|
+| 22| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Vanellus vanellus|4930|0.1863|
+| 23| 294014|26-04-2021|21-04-2021|Belgium|Waregem|50.8796|3.3486|Domestic|Domestic Unspecified bird|5||Larus ridibundus|5820|0.3028|
 
 
 ### Alerta 57 
@@ -1695,9 +1700,10 @@
 | 6| 293278|29-03-2021|24-02-2021|Finland|Helsinki|60.2214|25.0256|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Aythya fuligula|2030|0.0992|
 | 7| 293277|29-03-2021|11-03-2021|Finland|Tuusula|60.3476|25.0037|Wild|Wild Swan|1|1|Aythya fuligula|2030|0.0992|
 | 8| 293275|29-03-2021|28-02-2021|Finland|Espoo|60.1616|24.7335|Wild|Wild Mallard:Anas platyrhynchos(Anatidae)|1|1|Aythya fuligula|2030|0.0992|
-| 9| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Larus cachinnans|5927|0.0|
-| 10| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Larus cachinnans|5927|0.0|
-| 11| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Larus cachinnans|5927|0.0|
+| 9| 291959|19-03-2021|10-03-2021|Netherlands|Uitgeest|52.532|4.71|Wild|Wild Goose|1|1|Larus cachinnans|5927|0.0|
+| 10| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Larus cachinnans|5927|0.0|
+| 11| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Larus cachinnans|5927|0.0|
+| 12| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Larus cachinnans|5927|0.0|
 
 
 ### Alerta 58 
@@ -1892,7 +1898,7 @@
 | 8| 291959|19-03-2021|10-03-2021|Netherlands|Uitgeest|52.532|4.71|Wild|Wild Goose|1|1|Tringa totanus|5460|0.851|
 | 9| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Pluvialis apricaria|4850|0.0129|
 | 10| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Pluvialis apricaria|4850|0.0129|
-| 11| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Anas acuta|1890|0.0235|
+| 11| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Tringa totanus|5460|0.851|
 | 12| 293028|09-04-2021|21-03-2021|Germany|Petersberg|51.6083|11.93347|Domestic|Domestic Unspecified bird|20||Vanellus vanellus|4930|0.1863|
 | 13| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Larus fuscus|5910|0.1451|
 | 14| 294657|04-05-2021|20-04-2021|France|saint nicolas de port|48.6316|6.3041|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|2|Ciconia ciconia|1340|0.9109|
@@ -2432,9 +2438,10 @@
 | 10| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Ardea cinerea|1220|0.5194|
 | 11| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Pluvialis apricaria|4850|0.0129|
 | 12| 291551|19-03-2021|04-03-2021|Netherlands|Oostvoorne|51.91|4.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Ardea cinerea|1220|0.5194|
-| 13| 293049|09-04-2021|27-03-2021|Germany|Schönfeld|51.364843|13.789124|Domestic|Domestic Unspecified bird|9|9|Larus ridibundus|5820|0.3028|
-| 14| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Larus fuscus|5910|0.1451|
-| 15| 294641|30-04-2021|13-04-2021|Germany|wolfsburg|52.44|10.8|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Vanellus vanellus|4930|0.1863|
+| 13| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Vanellus vanellus|4930|0.1863|
+| 14| 293049|09-04-2021|27-03-2021|Germany|Schönfeld|51.364843|13.789124|Domestic|Domestic Unspecified bird|9|9|Larus ridibundus|5820|0.3028|
+| 15| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Larus fuscus|5910|0.1451|
+| 16| 294641|30-04-2021|13-04-2021|Germany|wolfsburg|52.44|10.8|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Vanellus vanellus|4930|0.1863|
 
 
 ### Alerta 100 
@@ -2670,6 +2677,7 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 291988|20-03-2021|12-03-2021|Belgium|Diksmuide|51.036|2.8554|Wild|Wild Common coot|3|3|Larus ridibundus|5820|0.3028|
+| 1| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Larus ridibundus|5820|0.3028|
 
 
 ### Alerta 117 
@@ -3397,7 +3405,8 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 291983|20-03-2021|05-03-2021|Belgium|Merelbeke|51.0203|3.7472|Wild|Wild Unspecified bird|1|1|Larus ridibundus|5820|0.3028|
-| 1| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Vanellus vanellus|4930|0.1863|
+| 1| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1863|
+| 2| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Vanellus vanellus|4930|0.1863|
 
 
 ### Alerta 173 
@@ -3422,9 +3431,9 @@
 | 2| 291963|19-03-2021|04-03-2021|Netherlands|Zutphen|52.12|6.22|Wild|Wild Goose|1|1|Vanellus vanellus|4930|0.1863|
 | 3| 291962|19-03-2021|17-03-2021|Netherlands|Andijk|52.7413|5.19|Wild|Wild Phasianidae (unidentified):Phasianidae (incognita)(Phasianidae)|1|1|Pluvialis apricaria|4850|0.0129|
 | 4| 291959|19-03-2021|10-03-2021|Netherlands|Uitgeest|52.532|4.71|Wild|Wild Goose|1|1|Vanellus vanellus|4930|0.1863|
-| 5| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Pluvialis apricaria|4850|0.0129|
+| 5| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1863|
 | 6| 291957|19-03-2021|10-03-2021|Netherlands|Hoorn|52.6449|5.09|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Pluvialis apricaria|4850|0.0129|
-| 7| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Pluvialis apricaria|4850|0.0129|
+| 7| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Vanellus vanellus|4930|0.1863|
 | 8| 291840|19-03-2021|10-03-2021|Netherlands|Andijk|52.745|5.21|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|3|3|Pluvialis apricaria|4850|0.0129|
 | 9| 292102|19-03-2021|03-03-2021|Czech Republic|Bose|50.5|15.02|Wild|Wild Swan|1|1|Larus ridibundus|5820|0.3028|
 | 10| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Wild Swan|5|5|Larus ridibundus|5820|0.3028|
@@ -4022,6 +4031,7 @@
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Limosa limosa|5320|0.2165|
+| 1| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Limosa limosa|5320|0.2165|
 
 
 ### Alerta 222 
@@ -4032,6 +4042,7 @@
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
 | 0| 291964|19-03-2021|04-03-2021|Netherlands|Moddergat|53.41|6.07|Wild|Wild Barnacle Goose:Branta leucopsis(Anatidae)|1|1|Vanellus vanellus|4930|0.1863|
 | 1| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1863|
+| 2| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Vanellus vanellus|4930|0.1863|
 
 
 ### Alerta 223 
@@ -4520,6 +4531,16 @@
 
 
 ### Alerta 270 
+- *Id comarca*: SP21058
+- *Localización comarca*: PUEBLA DE GUZMAN (ANDEVALO OCCIDENTAL)
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 291959|19-03-2021|10-03-2021|Netherlands|Uitgeest|52.532|4.71|Wild|Wild Goose|1|1|Vanellus vanellus|4930|0.1863|
+| 1| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Vanellus vanellus|4930|0.1863|
+
+
+### Alerta 271 
 - *Id comarca*: SP27051
 - *Localización comarca*: A MARIÑA ORIENTAL
 
@@ -4529,7 +4550,7 @@
 | 1| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Larus fuscus|5910|0.1451|
 
 
-### Alerta 271 
+### Alerta 272 
 - *Id comarca*: SP09321
 - *Localización comarca*: ROA DE DUERO
 
@@ -4538,7 +4559,7 @@
 | 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Pluvialis apricaria|4850|0.0129|
 
 
-### Alerta 272 
+### Alerta 273 
 - *Id comarca*: SP27030
 - *Localización comarca*: A MARIÑA CENTRAL
 
@@ -4548,7 +4569,7 @@
 | 1| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Larus fuscus|5910|0.1451|
 
 
-### Alerta 273 
+### Alerta 274 
 - *Id comarca*: SP24157
 - *Localización comarca*: SANTA MARIA DEL PARAMO
 
@@ -4557,7 +4578,7 @@
 | 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Pluvialis apricaria|4850|0.0129|
 
 
-### Alerta 274 
+### Alerta 275 
 - *Id comarca*: SP33034
 - *Localización comarca*: LUARCA
 
@@ -4566,7 +4587,7 @@
 | 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Pluvialis apricaria|4850|0.0129|
 
 
-### Alerta 275 
+### Alerta 276 
 - *Id comarca*: SP44013
 - *Localización comarca*: ALCAÑIZ
 
@@ -4575,7 +4596,7 @@
 | 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Ardea cinerea|1220|0.5194|
 
 
-### Alerta 276 
+### Alerta 277 
 - *Id comarca*: SP23044
 - *Localización comarca*: HUELMA (SIERRA MÁGINA)
 
@@ -4584,7 +4605,7 @@
 | 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 277 
+### Alerta 278 
 - *Id comarca*: SP31904
 - *Localización comarca*: IRURZUN
 
@@ -4593,7 +4614,7 @@
 | 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Anas crecca|1840|0.0158|
 
 
-### Alerta 278 
+### Alerta 279 
 - *Id comarca*: SP05186
 - *Localización comarca*: PIEDRAHITA
 
@@ -4602,16 +4623,26 @@
 | 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Anas crecca|1840|0.0158|
 
 
-### Alerta 279 
+### Alerta 280 
 - *Id comarca*: SP33049
 - *Localización comarca*: PILOÑA
 
 | ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
 |:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Vanellus vanellus|4930|0.1863|
+| 0| 291958|19-03-2021|10-03-2021|Netherlands|Oosterbierum|53.2401|5.5178|Wild|Wild Buzzard|1|1|Vanellus vanellus|4930|0.1863|
+| 1| 291955|19-03-2021|04-03-2021|Netherlands|Buren|53.45|5.87|Wild|Wild Common shelduck (Tadorna tadorna)|1|1|Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 280 
+### Alerta 281 
+- *Id comarca*: SP47086
+- *Localización comarca*: MEDINA DE RIOSECO
+
+| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
+|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
+| 0| 291956|19-03-2021|10-03-2021|Netherlands|Geervliet|51.8587|4.26|Wild|Wild Gadwall|1|1|Recurvirostra avosetta|4560|0.783|
+
+
+### Alerta 282 
 - *Id comarca*: SP49021
 - *Localización comarca*: BENAVENTE
 
@@ -4620,7 +4651,7 @@
 | 0| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 281 
+### Alerta 283 
 - *Id comarca*: SP45106
 - *Localización comarca*: MORA
 
@@ -4629,7 +4660,7 @@
 | 0| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Larus ridibundus|5820|0.3028|
 
 
-### Alerta 282 
+### Alerta 284 
 - *Id comarca*: SP47186
 - *Localización comarca*: VALLADOLID
 
@@ -4641,7 +4672,7 @@
 | 3| 294453|29-04-2021|16-04-2021|Germany|schleswig-flensburg (landkreis)|54.79|9.92|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Larus ridibundus|5820|0.3028|
 
 
-### Alerta 283 
+### Alerta 285 
 - *Id comarca*: SP08187
 - *Localización comarca*: VALLES OCCIDENTAL (SABADEL)
 
@@ -4650,7 +4681,7 @@
 | 0| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Larus ridibundus|5820|0.3028|
 
 
-### Alerta 284 
+### Alerta 286 
 - *Id comarca*: SP22225
 - *Localización comarca*: TAMARITE DE LITERA
 
@@ -4659,16 +4690,7 @@
 | 0| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Anas crecca|1840|0.0158|
 
 
-### Alerta 285 
-- *Id comarca*: SP21058
-- *Localización comarca*: PUEBLA DE GUZMAN (ANDEVALO OCCIDENTAL)
-
-| ID | Event ID | Reporting date |Observational date |Country |Location | Latitud | Longitud | An. Type | Species | Cases | Deaths | Especie movimiento |Cód.  Especie | Prob mov semanal |
-|:---:|:---------:|:-------------------:|:----------------:|:---------------------:|:-------------------------:|:------------:|:-----------:|:-------------:|:------------------------:|:--------:|:--------:|:----------------:|:--------------:|:------------------:|
-| 0| 291549|19-03-2021|17-03-2021|Netherlands|Den helder|52.93|4.73|Wild|Wild Gull|1|1|Vanellus vanellus|4930|0.1863|
-
-
-### Alerta 286 
+### Alerta 287 
 - *Id comarca*: SP44009
 - *Localización comarca*: ALBARRACÍN
 
@@ -4679,7 +4701,7 @@
 | 2| 293210|12-04-2021|08-03-2021|Germany|Stralsund|54.300562|13.074605|Domestic|Domestic Unspecified bird|18|18|Phalacrocorax carbo|720|0.1461|
 
 
-### Alerta 287 
+### Alerta 288 
 - *Id comarca*: SP09219
 - *Localización comarca*: MIRANDA DE EBRO
 
@@ -4691,7 +4713,7 @@
 | 3| 294641|30-04-2021|13-04-2021|Germany|wolfsburg|52.44|10.8|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 288 
+### Alerta 289 
 - *Id comarca*: SP16078
 - *Localización comarca*: CUENCA
 
@@ -4701,7 +4723,7 @@
 | 1| 293210|12-04-2021|08-03-2021|Germany|Stralsund|54.300562|13.074605|Domestic|Domestic Unspecified bird|18|18|Ardea cinerea|1220|0.5194|
 
 
-### Alerta 289 
+### Alerta 290 
 - *Id comarca*: SP08022
 - *Localización comarca*: BERGUEDA (BERGA)
 
@@ -4711,7 +4733,7 @@
 | 1| 293047|09-04-2021|08-03-2021|Germany|Burgstädt|50.914741|12.810919|Domestic|Domestic Unspecified bird|11|11|Ciconia ciconia|1340|0.9109|
 
 
-### Alerta 290 
+### Alerta 291 
 - *Id comarca*: SP23054
 - *Localización comarca*: JAEN (CAMPIÑA DE JAEN)
 
@@ -4723,7 +4745,7 @@
 | 3| 290039|27-02-2021|27-02-2021|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Domestic Chicken|51||Ciconia ciconia|1340|0.9109|
 
 
-### Alerta 291 
+### Alerta 292 
 - *Id comarca*: SP44050
 - *Localización comarca*: CALAMOCHA
 
@@ -4732,7 +4754,7 @@
 | 0| 293047|09-04-2021|08-03-2021|Germany|Burgstädt|50.914741|12.810919|Domestic|Domestic Unspecified bird|11|11|Ciconia ciconia|1340|0.9109|
 
 
-### Alerta 292 
+### Alerta 293 
 - *Id comarca*: SP49250
 - *Localización comarca*: VILLALPANDO
 
@@ -4742,7 +4764,7 @@
 | 1| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Domestic Turkey|3853|2384|Anas crecca|1840|0.0158|
 
 
-### Alerta 293 
+### Alerta 294 
 - *Id comarca*: SP16203
 - *Localización comarca*: TARANCON
 
@@ -4752,7 +4774,7 @@
 | 1| 292914|06-04-2021|04-03-2021|Germany|Küstriner Vorland|52.576933|14.556271|Domestic|Domestic Turkey|3853|2384|Anser anser|1610|0.2607|
 
 
-### Alerta 294 
+### Alerta 295 
 - *Id comarca*: SP39025
 - *Localización comarca*: CORRALES DEL BUELNA
 
@@ -4761,7 +4783,7 @@
 | 0| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 295 
+### Alerta 296 
 - *Id comarca*: SP27066
 - *Localización comarca*: A MARIÑA OCCIDENTAL
 
@@ -4770,7 +4792,7 @@
 | 0| 293061|09-04-2021|24-03-2021|England|west lancashire|53.57|-2.76|Wild|Wild Peregrin falcon:Falco peregrinus(Falconidae)|2|1|Larus fuscus|5910|0.1451|
 
 
-### Alerta 296 
+### Alerta 297 
 - *Id comarca*: SP03102
 - *Localización comarca*: LA MARINA ALTA
 
@@ -4780,7 +4802,7 @@
 | 1| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Wild Swan|5|5|Larus ridibundus|5820|0.3028|
 
 
-### Alerta 297 
+### Alerta 298 
 - *Id comarca*: SP37156
 - *Localización comarca*: GUIJUELO
 
@@ -4790,7 +4812,7 @@
 | 1| 292101|19-03-2021|03-03-2021|Czech Republic|Kn žmost|50.4747|15.0469|Wild|Wild Swan|5|5|Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 298 
+### Alerta 299 
 - *Id comarca*: SP34157
 - *Localización comarca*: SALDAÑA
 
@@ -4800,7 +4822,7 @@
 | 1| 290044|24-02-2021|24-02-2021|Czech Republic|Prague-East (Kv tnice)|50.057222|14.684167|Wild|Wild Swan|1||Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 299 
+### Alerta 300 
 - *Id comarca*: SP46106
 - *Localización comarca*: LOS SERRANOS
 
@@ -4809,7 +4831,7 @@
 | 0| 290039|27-02-2021|27-02-2021|Czech Republic|Plze -sever (Hn vnice)|49.728611|13.1025|Domestic|Domestic Chicken|51||Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 300 
+### Alerta 301 
 - *Id comarca*: SP15069
 - *Localización comarca*: PONTEDEUME
 
@@ -4818,7 +4840,7 @@
 | 0| 294014|26-04-2021|21-04-2021|Belgium|Waregem|50.8796|3.3486|Domestic|Domestic Unspecified bird|5||Larus ridibundus|5820|0.3028|
 
 
-### Alerta 301 
+### Alerta 302 
 - *Id comarca*: SP47085
 - *Localización comarca*: MEDINA DEL CAMPO
 
@@ -4827,7 +4849,7 @@
 | 0| 294014|26-04-2021|21-04-2021|Belgium|Waregem|50.8796|3.3486|Domestic|Domestic Unspecified bird|5||Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 302 
+### Alerta 303 
 - *Id comarca*: SP02030
 - *Localización comarca*: ELCHE DE LA SIERRA
 
@@ -4837,7 +4859,7 @@
 | 1| 294641|30-04-2021|13-04-2021|Germany|wolfsburg|52.44|10.8|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Ciconia ciconia|1340|0.9109|
 
 
-### Alerta 303 
+### Alerta 304 
 - *Id comarca*: SP25217
 - *Localización comarca*: URGELL (TARREGA)
 
@@ -4847,7 +4869,7 @@
 | 1| 294641|30-04-2021|13-04-2021|Germany|wolfsburg|52.44|10.8|Wild|Wild Anserinae (unidentified):Anserinae (incognita)(Anatidae)|1|1|Ciconia ciconia|1340|0.9109|
 
 
-### Alerta 304 
+### Alerta 305 
 - *Id comarca*: SP17180
 - *Localización comarca*: SELVA (SANTA COLOMA DE FARNERS)
 
@@ -4856,7 +4878,7 @@
 | 0| 294642|30-04-2021|13-04-2021|Germany|peine (landkreis)|52.4|10.36|Wild|Wild Accipitridae (Accipitridae)|1|1|Vanellus vanellus|4930|0.1863|
 
 
-### Alerta 305 
+### Alerta 306 
 - *Id comarca*: SP24139
 - *Localización comarca*: SAHAGUN
 
