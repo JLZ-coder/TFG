@@ -2,10 +2,19 @@ import math
 from datetime import datetime, timedelta, date
 import json
 from model.gdriveUploader import gDriveUploader
+import os
 
 class GeojsonGenerator:
     def __init__(self):
         pass
+
+    def store_old_geojson(self, old_geojson_folder, geojson_folder):
+        print("Guardando antiguos geojson")
+        if os.path.exists(geojson_folder):
+            copia_a_destino = f"cp -r {geojson_folder} {old_geojson_folder}"
+            os.system(copia_a_destino)
+        else:
+            print("La carpeta de geojson no existe")
 
     def generate_alerta(self, alertList, comarcasDict):
         print("Generar alertas.geojson")
@@ -131,7 +140,8 @@ class GeojsonGenerator:
         }
 
         for semana in outbreakComarca:
-            reportDate = semana.timestamp() * 1000
+            aux_semana = semana.replace(hour=1)
+            reportDate = aux_semana.timestamp() * 1000
             oieid_set = set()
 
             for cod_comarca in outbreakComarca[semana]:
@@ -178,7 +188,8 @@ class GeojsonGenerator:
             if semana.timestamp() * 1000 > most_recent_date:
                 most_recent_date = semana.timestamp() * 1000
 
-            reportDate = semana.timestamp() * 1000
+            aux_semana = semana.replace(hour=1)
+            reportDate = aux_semana.timestamp() * 1000
 
             oieid_set = set()
 
@@ -212,7 +223,7 @@ class GeojsonGenerator:
 
 
         # Borramos las entradas antiguas de mas de un año
-        last_year_routes = list(filter(lambda route: most_recent_date - float(route["properties"]["idAlerta"].split("_")[1]) <= 31556926000, json_rutas["features"]))
+        last_year_routes = list(filter(lambda route: most_recent_date - float(route["properties"]["idAlerta"].split("_")[1])<= 31556926000, json_rutas["features"]))
         last_year_routes = list(filter(lambda route: most_recent_date - float(route["properties"]["idAlerta"].split("_")[1]) >= 0, last_year_routes))
         json_rutas["features"] = last_year_routes
 

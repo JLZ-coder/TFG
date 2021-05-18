@@ -214,28 +214,32 @@ class Controller:
             print(">>> Alertas total: " + str(len(alertas["alertas"])))
 
             # Rellenar el informe semanal
-            reportPDF = self.dataFactory.createData("report",current_week, current_week_end, alertas)
+            # reportPDF = self.dataFactory.createData("report",current_week, current_week_end, alertas)
 
             #Actualizar current_week y current_week_end
             current_week = current_week_end
             current_week_end = current_week + timedelta(weeks = 1)
             i += 1
 
+        self.geojsonGen.store_old_geojson("/home/caballes/TFG/gripeA_2020/old_geojson/","/home/caballes/TFG/gripeA_2020/geojson/")
         if weeks == 0:
             geojson_alerta = self.geojsonGen.update_alerta(alertas_list, lista_comarcas)
             geojson_outbreak = self.geojsonGen.update_outbreak(brotes_por_semana)
             geojson_migration = self.geojsonGen.update_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
         else:
-            geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
-            geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
+            # geojson_alerta = self.geojsonGen.generate_alerta(alertas_list, lista_comarcas)
+            # geojson_outbreak = self.geojsonGen.generate_outbreak(brotes_por_semana)
             geojson_migration = self.geojsonGen.generate_migration(migrations_por_semana, lista_comarcas, brotes_por_semana)
 
-        text_file = open("geojson/alertas.geojson", "w", encoding="utf-8")
-        n = text_file.write(json.dumps(geojson_alerta, ensure_ascii=False))
-        text_file.close()
-        text_file = open("geojson/brotes.geojson", "w", encoding="utf-8")
-        n = text_file.write(json.dumps(geojson_outbreak, ensure_ascii=False))
-        text_file.close()
+        # print("Escribiendo sobre alertas.geojson")
+        # text_file = open("geojson/alertas.geojson", "w", encoding="utf-8")
+        # n = text_file.write(json.dumps(geojson_alerta, ensure_ascii=False))
+        # text_file.close()
+        # print("Escribiendo sobre brotes.geojson")
+        # text_file = open("geojson/brotes.geojson", "w", encoding="utf-8")
+        # n = text_file.write(json.dumps(geojson_outbreak, ensure_ascii=False))
+        # text_file.close()
+        print("Escribiendo sobre rutas.geojson")
         text_file = open("geojson/rutas.geojson", "w", encoding="utf-8")
         n = text_file.write(json.dumps(geojson_migration, ensure_ascii=False))
         text_file.close()
