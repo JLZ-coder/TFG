@@ -1,5 +1,5 @@
 import sys, json
-from factories.Factory import Factory
+'''from factories.Factory import Factory
 from factories.OutbreakBuilder import OutbreakBuilder
 from factories.TempBuilder import TempBuilder
 from factories.ComarcasBuilder import ComarcasBuilder
@@ -8,10 +8,12 @@ from model.ModelSelector import ModelSelector
 from model.GeojsonGenerator import GeojsonGenerator
 from controller.controller import Controller
 #from factories.ReportBuilder_copy import ReportBuilder
-#from factories.ReportBuilder import ReportBuilder
+'''
+from factories.ReportBuilder import ReportBuilder
+'''
 from pymongo import MongoClient
 from neo4j import GraphDatabase
-from datetime import datetime, timedelta, date
+from datetime import datetime, timedelta, date'''
 
 def toolOffLine(control):
 
@@ -72,7 +74,8 @@ def prueba():
 
 def main(argv):
 
-    prueba()
+    #prueba()
+    ReportBuilder().compress(2020)
     '''dataBuilderList = list()
     dataBuilderList.append(OutbreakBuilder())
     dataBuilderList.append(TempBuilder())

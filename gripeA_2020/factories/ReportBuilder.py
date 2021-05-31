@@ -8,6 +8,8 @@ import unicodecsv as csv
 import codecs
 import os
 from os import remove
+import zipfile
+
 class ReportBuilder(Builder):
     uploader = gDriveUploader()
 
@@ -26,37 +28,65 @@ class ReportBuilder(Builder):
     def file_to_drive(self, filepath, title=None, folder=None):
         self.uploader.upload_file(filepath, title, folder)
 
-    def load_csv(self, cabeceraAlertas, cabeceraBrotes, nuevasAlertas, nuevosBrotes):
+    def load_csv(self, cabeceraAlertas, cabeceraBrotes, nuevasAlertas, nuevosBrotes, year):
         #CSV generales
         alertasDrive = None
         brotesDrive = None
         #CSV Alertas
-        if not os.path.isfile("markdown/alertasDriveNewJoin_2.csv"): 
-            alertasDrive = codecs.open("markdown/alertasDriveNewJoin_2.csv", "wb+")  
+        alertasPath = "markdown/alertasDriveNewJoin_2_{}.csv".format(year)
+        if not os.path.isfile(alertasPath): 
+            alertasDrive = codecs.open(alertasPath, "wb+")  
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)         
             writer.writeheader()
         else: 
-            alertasDrive = codecs.open("markdown/alertasDriveNewJoin_2.csv", "ab+") 
+            alertasDrive = codecs.open(alertasPath, "ab+") 
             writer = csv.DictWriter(alertasDrive, fieldnames=cabeceraAlertas)
 
         writer.writerows(nuevasAlertas)
         alertasDrive.close()
-        self.file_to_drive("markdown/alertasDriveNewJoin_2.csv", "alertasNewJoin_2.csv", "alertas")
+        self.file_to_drive(alertasPath, "alertasNewJoin_2.csv", "alertas")
 
         #CSV Brotes
-        
-        if not os.path.isfile("markdown/brotesDriveNewJoin_2.csv"):
-            brotesDrive = codecs.open("markdown/brotesDriveNewJoin_2.csv", "wb+")
+        brotesPath = "markdown/brotesDriveNewJoin_2_{}.csv".format(year)
+        if not os.path.isfile(brotesPath):
+            brotesDrive = codecs.open(brotesPath, "wb+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
             writer.writeheader()
         else:
-            brotesDrive = codecs.open("markdown/brotesDriveNewJoin_2.csv", "ab+")
+            brotesDrive = codecs.open(brotesPath, "ab+")
             writer = csv.DictWriter(brotesDrive, fieldnames=cabeceraBrotes)
 
         writer.writerows(nuevosBrotes)
         brotesDrive.close()
-        self.file_to_drive("markdown/brotesDriveNewJoin_2.csv", "brotesNewJoin_2.csv", "alertas")
+        self.file_to_drive(brotesPath, "brotesNewJoin_2.csv", "alertas")
         
+    def compress(self, year):
+        #Se comprime y se guarda en /zips
+        #Solo zips de 2020 en adelante
+        if(year >=2020):
+            #Creamos el fichero zip
+            fileZip = zipfile.ZipFile("markdown/zips/{}.zip".format(year), "w")
+
+            #Recorremos la carpeta markdown y buscando los archivos de ese año y los guardamos en el zip 
+            for folder, subfolders, files in os.walk("markdown"):
+                for file in files:
+                    
+                    if file.endswith("{}.pdf".format(year)) or file == "alertasDriveNewJoin_2_{}.csv".format(year) or file == "brotesDriveNewJoin_2_{}.csv".format(year):
+                        #Guardamos el fichero pdf en el zip
+                        fileZip.write(os.path.join(folder, file), file)
+                        #Lo borramos de la carpeta 
+                        os.remove(os.path.join(folder, file))
+                        #Una vez almacenado en el zip lo borramos de drive tambien
+                        self.uploader.trash_file(file, "alertas")
+                        
+                    if file.endswith("{}.md".format(year)):
+                        os.remove(os.path.join(folder, file))
+
+            fileZip.close()
+            #Subimos comprimido a drive
+            self.file_to_drive("markdown/zips/{}.zip".format(year), "{}.zip".format(year), "alertas")    
+
+
     def create(self, start, end, parameters):
         
         client = MongoClient('mongodb://localhost:27017/')
@@ -163,9 +193,14 @@ class ReportBuilder(Builder):
             textoFinal = cabecera + sumario + cabeceraTablaAlertas + filasAlertas + cabeceraGenericaTablaBrotesAlertas + todosBrotes
         else:
             textoFinal = cabecera + sumario
-
+        #Almacenar en un zip todos los ficheros de un año
+        #Se guardaran en una carpeta
+        
+        #Si el zip del año pasado no existe se crea y se sube al drive
+        if not os.path.isfile("markdown/zips/{}.zip".format(str(start.year-1))):
+            self.compress(start.year-1)
         #Creamos csv brotes y subimos al drive
-        self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv)
+        self.load_csv(csvCabeceraAlertas, csvCabeceraBrotes, filasAlertasCsv, filasBrotesCsv, start.year)
 
         #Actualizacion
         informePath = "markdown/InformeSemanal_" + start.strftime("%d-%m-%Y") + ".md"
