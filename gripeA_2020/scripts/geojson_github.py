@@ -1,11 +1,13 @@
 import sys, json, os
 from git import Repo
 from datetime import date, datetime
+from git import Git
 
 def from_geojson_to_github(): 
     print("Subida de ficheros a github")
     copia_a_destino = "cp -r /home/caballes/TFG/gripeA_2020/geojson/. /home/caballes/applicacionWeb/GeoJSON/"
     os.system(copia_a_destino)
+
 
     repo_dir = '/home/caballes/applicacionWeb/'
     repo = Repo(repo_dir)
@@ -17,6 +19,7 @@ def from_geojson_to_github():
     now = datetime.now()
     today = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     try:
+        os.chdir(repo_dir)
         commit_message = 'Subida semanal de geojson ' + today
         repo.index.add(file_list)
         repo.git.add(update=True)

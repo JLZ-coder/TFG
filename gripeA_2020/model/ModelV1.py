@@ -78,6 +78,8 @@ class ModelV1():
         nAlerta = 0
         #Csv
         totalMov = 0
+        #Numero de brotes por comarca
+        brote_por_comarca = set()
         # Para cada comarca
         for comarca, brotes in data['comarca_brotes'].items():
             nAlerta = 0
@@ -85,6 +87,7 @@ class ModelV1():
             broteEspecie.clear()
             casosTotales = 0
             totalMov = 0
+            brote_por_comarca.clear()
             # Se recorren los brotes asociados a la comarca, se hace el sumatorio de los resultados de la formula (probMigra/100) * probType
             # probMigra, la probabilidad de que migra la especie de la ruta asociada a un brote
             # probType, la probabilidad asociada al tipo de brote (wild, captive, domestic)
@@ -104,9 +107,17 @@ class ModelV1():
 
                 contrBrote = probMigra * probType
                 nAlerta += contrBrote
-                broteEspecie[brote["oieid"]] = {"cientifico" : data['matrizEspecies']['Nombre científico'][brote["especie"]] ,
+                ruta = {"cientifico" : data['matrizEspecies']['Nombre científico'][brote["especie"]] ,
                 "especie": data['matrizEspecies']['Especie'][brote["especie"]], "codigoE": brote["especie"], 
                 "probEspecie": probMigra, "probType": probType, "riesgoBrote": contrBrote}
+
+                if brote["oieid"] not in broteEspecie:
+                    broteEspecie[brote["oieid"]] = [ruta]
+                else:
+                    broteEspecie[brote["oieid"]].append(ruta)
+
+                brote_por_comarca.add(brote["oieid"])
+
 
                 totalMov += brote["nMov"]
                 if brote['casos'] != "":
@@ -144,6 +155,6 @@ class ModelV1():
                 "super": temperaturaM, 
                 "brotes": broteEspecie.copy(),
                 "movRiesgo": totalMov })
-            alertas["nBrotes"] += len(broteEspecie)
+            alertas["nBrotes"] += len(brote_por_comarca)
         
         return alertas

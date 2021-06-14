@@ -167,21 +167,34 @@ class gDriveUploader:
 
         return lista_fileurl
 
-    def get_file_from(self, filename, foldername=None):
+    def get_file_from(self, filename=None, foldername=None):
 
         files = []
 
-        if foldername == None:
-            files = self.drive.ListFile(
-                {'q': "title='" + filename + "' and trashed=false"}).GetList()
-        else:
+        if filename == None and foldername == None:
+            return files
+
+        if filename == None:
             folders = self.drive.ListFile(
                 {'q': "title='" + foldername + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
 
             for folder in folders:
                 if folder['title'] == foldername:
                     files = self.drive.ListFile(
-                        {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and trashed=false"}).GetList()
+                        {'q': "'"+ folder['id'] +"' in parents and trashed=false"}).GetList()
+
+        else:
+            if foldername == None:
+                files = self.drive.ListFile(
+                    {'q': "title='" + filename + "' and trashed=false"}).GetList()
+            else:
+                folders = self.drive.ListFile(
+                    {'q': "title='" + foldername + "' and mimeType='application/vnd.google-apps.folder' and trashed=false"}).GetList()
+
+                for folder in folders:
+                    if folder['title'] == foldername:
+                        files = self.drive.ListFile(
+                            {'q': "title='" + filename + "' and '"+ folder['id'] +"' in parents and trashed=false"}).GetList()
 
         return files
 

@@ -150,10 +150,12 @@ def downloadOutbreaks():
     df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
     for i in df.index:
         
-        if df['observation_date'][i] == "No Data":
-            dateOutbreak = df['report_date'][i]
-        else:
-            dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d') 
+        # if df['observation_date'][i] == "No Data":
+        #     dateOutbreak = df['report_date'][i]
+        # else:
+        #     dateOutbreak = datetime.strptime(df['observation_date'][i], '%Y-%m-%d') 
+
+        dateOutbreak = df['report_date'][i]
 
         if dateOutbreak >= lastWeek and dateOutbreak <= monday:
             continue

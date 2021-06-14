@@ -8,10 +8,10 @@ class GeojsonGenerator:
     def __init__(self):
         pass
 
-    def store_old_geojson(self, old_geojson_folder, geojson_folder):
+    def store_old_geojson(self, geojson_folder, old_geojson_folder):
         print("Guardando antiguos geojson")
         if os.path.exists(geojson_folder):
-            copia_a_destino = f"cp -r {geojson_folder} {old_geojson_folder}"
+            copia_a_destino = f"cp -r {geojson_folder}* {old_geojson_folder}"
             os.system(copia_a_destino)
         else:
             print("La carpeta de geojson no existe")
@@ -42,8 +42,7 @@ class GeojsonGenerator:
                 ruta.append("No hay url")
             
             for it in alertas["alertas"]:
-                if it['risk'] > 5:
-                    it['risk'] = 5
+                it['risk'] = risk_to_alertLevel(it['risk'])
 
                 if it['risk'] != 0:
                     comarcas_de_alertlist.add(it['comarca_sg'])
@@ -81,7 +80,25 @@ class GeojsonGenerator:
         f = open("geojson/alertas.geojson")
         json_alertas = json.load(f)
 
-        most_recent_date = 0
+        starting_date_update = 0
+        cnt = 0
+        for alertas in alertList:
+            start = alertas["start"]
+            end = alertas["end"]
+            start = start.replace(hour=1)
+            end = end.replace(hour=1)
+            if cnt == 0:
+                starting_date_update = start.timestamp() * 1000
+
+            if start.timestamp() * 1000 < starting_date_update:
+                starting_date_update = start.timestamp() * 1000
+
+            cnt += 1
+
+        # Borramos las entradas antiguas de mas de un año y las entradas posteriores a la ejecucion para que no se superpongan
+        last_year_alerts = list(filter(lambda alerta: starting_date_update - alerta["properties"]["reportDate"] < 31556926000, json_alertas["features"]))
+        last_year_alerts = list(filter(lambda alerta: starting_date_update - alerta["properties"]["reportDate"] > 0, last_year_alerts))
+        json_alertas["features"] = last_year_alerts
 
         for alertas in alertList:
             start = alertas["start"]
@@ -95,13 +112,9 @@ class GeojsonGenerator:
 
             if len(ruta) == 0:
                 ruta.append("No hay url")
-
-            if start.timestamp() * 1000 > most_recent_date:
-                most_recent_date = start.timestamp() * 1000
             
             for it in alertas["alertas"]:
-                if it['risk'] > 5:
-                    it['risk'] = 5
+                it['risk'] = risk_to_alertLevel(it['risk'])
 
                 if it['risk'] != 0:
                     cod_comarca = it['comarca_sg']
@@ -123,12 +136,7 @@ class GeojsonGenerator:
                         }
                     }
                     json_alertas["features"].append(aux)
-        
-        # Borramos las entradas antiguas de mas de un año y las entradas posteriores a la ejecucion para que no se superpongan
-        last_year_alerts = list(filter(lambda alerta: most_recent_date - alerta["properties"]["reportDate"] <= 31556926000, json_alertas["features"]))
-        last_year_alerts = list(filter(lambda alerta: most_recent_date - alerta["properties"]["reportDate"] >= 0, last_year_alerts))
-
-        json_alertas["features"] = last_year_alerts
+    
 
         return json_alertas
 
@@ -184,10 +192,23 @@ class GeojsonGenerator:
         json_rutas = json.load(f)
 
         most_recent_date = 0
+        cnt = 0
         for semana in outbreakComarca:
-            if semana.timestamp() * 1000 > most_recent_date:
-                most_recent_date = semana.timestamp() * 1000
+            aux_semana = semana.replace(hour=1)
+            reportDate = aux_semana.timestamp() * 1000
+            if cnt == 0:
+                most_recent_date = reportDate
+            
+            if reportDate < most_recent_date:
+                most_recent_date = reportDate
+            cnt += 1
 
+        # Borramos las entradas antiguas de mas de un año
+        last_year_routes = list(filter(lambda route: most_recent_date - float(route["properties"]["idAlerta"].split("_")[1]) < 31556926000, json_rutas["features"]))
+        last_year_routes = list(filter(lambda route: most_recent_date - float(route["properties"]["idAlerta"].split("_")[1]) > 0, last_year_routes))
+        json_rutas["features"] = last_year_routes
+
+        for semana in outbreakComarca:
             aux_semana = semana.replace(hour=1)
             reportDate = aux_semana.timestamp() * 1000
 
@@ -220,12 +241,6 @@ class GeojsonGenerator:
                                 }
                             }
                         json_rutas["features"].append(aux)
-
-
-        # Borramos las entradas antiguas de mas de un año
-        last_year_routes = list(filter(lambda route: most_recent_date - float(route["properties"]["idAlerta"].split("_")[1])<= 31556926000, json_rutas["features"]))
-        last_year_routes = list(filter(lambda route: most_recent_date - float(route["properties"]["idAlerta"].split("_")[1]) >= 0, last_year_routes))
-        json_rutas["features"] = last_year_routes
 
         return json_rutas
 
@@ -280,10 +295,22 @@ class GeojsonGenerator:
         json_brotes = json.load(f)
 
         most_recent_date = 0
+        cnt = 0
+        for semana in outbreaklist:
+            if cnt == 0:
+                most_recent_date = semana.timestamp() * 1000
+
+            if semana.timestamp() * 1000 < most_recent_date:
+                most_recent_date = semana.timestamp() * 1000
+
+            cnt += 1
+
+        # Borramos las entradas antiguas de mas de un año + 3 meses
+        last_year_outbreaks = list(filter(lambda brote: most_recent_date - brote["properties"]["observationDate"] < (31556926 + 3 * 2629743) * 1000, json_brotes["features"]))
+        last_year_outbreaks = list(filter(lambda brote: most_recent_date - brote["properties"]["observationDate"] > 0, last_year_outbreaks))
+        json_brotes["features"] = last_year_outbreaks
 
         for semana in outbreaklist:
-            if semana.timestamp() * 1000 > most_recent_date:
-                most_recent_date = semana.timestamp() * 1000
             
             for it in outbreaklist[semana]:
                 
@@ -312,9 +339,21 @@ class GeojsonGenerator:
 
                 json_brotes['features'].append(aux)
 
-        # Borramos las entradas antiguas de mas de un año + 3 meses
-        last_year_outbreaks = list(filter(lambda brote: most_recent_date - brote["properties"]["observationDate"] <= (31556926 + 3 * 2629743) * 1000, json_brotes["features"]))
-        last_year_outbreaks = list(filter(lambda brote: most_recent_date - brote["properties"]["observationDate"] >= 0, last_year_outbreaks))
-        json_brotes["features"] = last_year_outbreaks
-
         return json_brotes
+
+def risk_to_alertLevel(risk):
+    ret_level = 0
+    if risk <= 50: 
+        ret_level = 0
+    elif 50 < risk <= 100:
+        ret_level = 1
+    elif 100 < risk <= 150:
+        ret_level = 2
+    elif 150 < risk <= 300:
+        ret_level = 3
+    elif 300 < risk <= 2000:
+        ret_level = 4
+    elif 2000 < risk:
+        ret_level = 5
+
+    return ret_level

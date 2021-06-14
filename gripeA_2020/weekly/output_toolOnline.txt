@@ -48,10 +48,14 @@ Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1
 Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1690A
 Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1690B
 Descripcion error: No hay datos que satisfagan esos criterios para la estacion 1700X
-Run model para semana 2021-05-17 00:00:00
+Run model para semana 2021-06-14 00:00:00
 >>> Running model...
->>> Alertas total: 308
+>>> Alertas total: 333
+Guardando antiguos geojson
 Update alertas.geojson
 Update brotes.geojson
 Update rutas.geojson
-Some error occured while pushing the code
+Escribiendo sobre alertas.geojson
+Escribiendo sobre brotes.geojson
+Escribiendo sobre rutas.geojson
+Subida de ficheros a github

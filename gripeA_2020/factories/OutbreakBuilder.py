@@ -20,7 +20,7 @@ class OutbreakBuilder(Builder):
         neo4j_db = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "1234"))
 
         listaBrotes = list(brotes_db.find({"observation_date" : {"$gte" : start, "$lt" : end}}))
-
+    
         tablaGeoComarca = json.load(open("data/tablaGeoComarca4.txt",  encoding='utf-8'))
 
         comarca_brotes = dict()
