@@ -1,7 +1,5 @@
 from .Builder import Builder
 from pymongo import MongoClient
-import markdown
-import pypandoc
 import os
 from model.gdriveUploader import gDriveUploader
 import unicodecsv as csv
@@ -27,7 +25,6 @@ class ReportBuilder(Builder):
             os.system(converion)
         else:
             print(f"El fichero markdown {filepath} no existe")
-        # output = pypandoc.convert_file(filepath, 'pdf', outputfile=pdfpath, extra_args=['-H', 'markdown/header.sty', '--latex-engine', 'xelatex', '+RTS', '-K512M', '-RTS'])
         # pandoc -H markdown/header.sty +RTS -K512M -RTS -o markdown/InformeSemanal_28-12-2020.pdf markdown/InformeSemanal_28-12-2020.md
         return pdfpath
 

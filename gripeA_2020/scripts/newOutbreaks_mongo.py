@@ -2,7 +2,6 @@ import requests
 from pymongo import MongoClient
 import sys
 import pandas as pd
-from bs4 import BeautifulSoup
 import json
 from datetime import datetime, timedelta, date
 import pygeohash as geohash
