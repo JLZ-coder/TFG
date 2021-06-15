@@ -292,8 +292,8 @@ class Controller:
         lista_comarcas = self.dataFactory.createData("comarcas", None, None, None)
 
         #Probabilidad Migracion
-        file = "data/Datos especies1.xlsx"
-        matrizEspecies = pd.read_excel(file, 'Prob_migracion', skiprows=3, usecols='A:AY', header=0, index_col=2)
+        file = "data/Datos_especies_nuevo.xlsx"
+        matrizEspecies = pd.read_excel(file, 'PROB MOV', skiprows=3, usecols='A:AY', header=0, index_col=2)
 
         #DATA SENT TO MODEL
         data_to_model= dict()

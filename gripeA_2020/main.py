@@ -10,7 +10,6 @@ from controller.controller import Controller
 from factories.ReportBuilder import ReportBuilder
 from datetime import datetime, timedelta, date
 from model.gdriveUploader import gDriveUploader
-from scripts.geojson_github import from_geojson_to_github
 
 # def toolOffLine(control):
 
@@ -48,10 +47,7 @@ def main(argv):
     # control.runOfflineTool()
     # Comenzando desde 52 semanas atras, un anio atras
     control.runOnlineTool(52)
-    
 
-    from_geojson_to_github()
-    
     return 0
 
 
